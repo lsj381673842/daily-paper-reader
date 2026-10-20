@@ -1,52 +1,12 @@
 {
-  "generated_at": "2026-10-20T05:02:24.446196+00:00",
-  "updated_date": "20261011-20261020",
+  "generated_at": "2026-10-20T20:13:54.850995+00:00",
+  "updated_date": "20261020",
   "carryover_days": 9,
   "tag_states": {
     "algebra-rep": {
-      "updated_date": "20261011-20261020",
+      "updated_date": "20261020",
       "carryover_days": 9,
-      "items": [
-        {
-          "id": "2610.23592v1",
-          "source": "arxiv",
-          "title": "Locally Gorenstein algebras, a generalization of Gorenstein algebras",
-          "abstract": "For an Artin algebra $Λ$, we define the class of locally Gorenstein modules, which is a generalization of semi-Gorenstein projective modules and, therefore, a generalization of projective Gorenstein modules. For a locally Gorenstein module $X\\in{\\rm mod}\\ Λ$ we construct $\\underline{χ}_X$ a subcategory of $\\underline{\\rm mod}$ $Λ$ and we prove that the syzygy functor is faithful and full on $\\underline{χ}_X$. Using that, we prove that the Igusa-Todorov functions $φ$ and $ψ$ vanish on the family of locally Gorenstein modules. Finally, using locally Gorenstein modules, we define the locally Gorenstein algebras, a generalization of Gorenstein algebras, and we prove that their finitistic, and the $φ$ and $ψ$ dimensions are finite.",
-          "authors": [
-            "Leonardo Alarcon",
-            "María Andrea Gatica",
-            "Marcelo Lanzilotta"
-          ],
-          "primary_category": "math.AC",
-          "categories": [
-            "math.AC",
-            "math.RT"
-          ],
-          "published": "2026-10-16T15:12:20+00:00",
-          "link": "https://arxiv.org/pdf/2610.23592v1",
-          "tags": [
-            "keyword:algebra-rep",
-            "query:algebra-rep"
-          ],
-          "llm_score": 8.0,
-          "llm_evidence_en": "Homological methods for Artin algebras: syzygies and Igusa-Todorov functions",
-          "llm_evidence_cn": "Artin代数的同调方法：syzygy与Igusa-Todorov函数",
-          "llm_evidence": "Artin代数的同调方法：syzygy与Igusa-Todorov函数",
-          "canonical_evidence": "Artin代数的同调方法：syzygy与Igusa-Todorov函数",
-          "llm_tldr_en": "Defines locally Gorenstein modules over Artin algebras, proves the syzygy functor is full and faithful on a subcategory and that Igusa-Todorov functions vanish, yielding finiteness of dimensions for locally Gorenstein algebras.",
-          "llm_tldr_cn": "论文针对Gorenstein代数理论，对Artin代数Λ引入局部Gorenstein模这一比半Gorenstein投射模更广的概念。作者构造稳定模范畴的子范畴并证明syzygy函子在其上满忠实，进而证明Igusa-Todorov函数φ和ψ在局部Gorenstein模上为零。据此定义局部Gorenstein代数并证明其finitistic维数与φ、ψ维数有限，推广了Gorenstein代数理论。",
-          "llm_tldr": "论文针对Gorenstein代数理论，对Artin代数Λ引入局部Gorenstein模这一比半Gorenstein投射模更广的概念。作者构造稳定模范畴的子范畴并证明syzygy函子在其上满忠实，进而证明Igusa-Todorov函数φ和ψ在局部Gorenstein模上为零。据此定义局部Gorenstein代数并证明其finitistic维数与φ、ψ维数有限，推广了Gorenstein代数理论。",
-          "llm_tags": [
-            "query:algebra-rep"
-          ],
-          "matched_query_tag": "query:algebra-rep",
-          "matched_query_text": "homological methods in representation theory",
-          "matched_requirement_id": "req-6",
-          "selection_source": "carryover_cache",
-          "paper_id": "2610.23592v1",
-          "carry_days": 1
-        }
-      ]
+      "items": []
     }
   }
 }

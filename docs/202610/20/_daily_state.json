@@ -1,0 +1,137 @@
+{
+  "date": "20261020",
+  "date_label": "",
+  "generated_at": "2026-10-20 20:16:56 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2610.25312v1",
+      "route": "202610/20/2610.25312v1-derived-equivalence-classification-of-twisted-and-generalized-multifold-extensions-of-affine-type",
+      "title": "Derived equivalence classification of twisted and generalized multifold extensions of affine type",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "通过导出范畴对代数进行导出与稳定等价分类",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.23592v1",
+      "route": "202610/20/2610.23592v1-locally-gorenstein-algebras-a-generalization-of-gorenstein-algebras",
+      "title": "Locally Gorenstein algebras, a generalization of Gorenstein algebras",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "用 syzygy 与 Igusa-Todorov 函数研究 Artin 代数的同调性质",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.25485v1",
+      "route": "202610/20/2610.25485v1-an-explicit-dennis-trace-and-its-compatibility-with-koszul-duality",
+      "title": "An explicit Dennis trace and its compatibility with Koszul duality",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "Dennis迹、Hochschild同调与导出Koszul对偶",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.26302v1",
+      "route": "202610/20/2610.26302v1-additive-invariants-of-finite-dimensional-dg-algebras",
+      "title": "Additive invariants of Finite-dimensional DG-algebras",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "带关系DG箭图与同调加性不变量",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.22669v1",
+      "route": "202610/20/2610.22669v1-string-functions-and-cyclotomic-hecke-algebras",
+      "title": "String functions and cyclotomic Hecke algebras",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "分圆Hecke代数的单模与块生成函数",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.23778v1",
+      "route": "202610/20/2610.23778v1-dg-models-for-derived-differential-operators",
+      "title": "Dg models for derived differential operators",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "微分分级增强、Koszul对偶与三角等价",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.25198v1",
+      "route": "202610/20/2610.25198v1-finitely-enhanced-nontopological-triangulated-categories",
+      "title": "Finitely enhanced nontopological triangulated categories",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "非拓扑三角范畴与厚子范畴",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    },
+    {
+      "paper_id": "2610.26196v1",
+      "route": "202610/20/2610.26196v1-simple-shifted-monoidal-derived-equivalences-for-tensor-categories",
+      "title": "Simple-shifted monoidal derived equivalences for tensor categories",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "张量范畴间的单项导出等价可推出张量等价",
+      "first_seen_at": "2026-10-20 20:16:56 UTC",
+      "updated_at": "2026-10-20 20:16:56 UTC"
+    }
+  ]
+}

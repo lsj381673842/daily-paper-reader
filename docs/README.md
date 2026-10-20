@@ -48,17 +48,17 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-10-11 ~ 2026-10-20</span>
+      <span class="dpr-home-dashboard-kicker">2026-10-20</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">共 17 篇</strong>
+    <strong class="dpr-home-dashboard-count">共 8 篇</strong>
   </div>
   <dl class="dpr-home-dashboard-stats">
     <div class="dpr-home-dashboard-stat"><dt>累计更新</dt><dd>1 次</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>6</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>11</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>1</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>7</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-10-20 05:06:49 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-10-20 20:16:56 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -69,7 +69,9 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>本周期（10月11–20日）围绕代数表示论筛读17篇论文，精读6篇、速读11篇，其中两篇精读评分最高，均为9.0分。最值得看的是《Cohen-Macaulay truncated path and Nakayama algebras》与《Representation Type and Schurian Finiteness of Tits Algebras》；速读中Gorenstein-投射模的Gordon–Green型结果也值得留意。普通读者可先读这两篇9.0分精读，再按兴趣从8.0分速读文章中挑选延伸阅读。</p>
+<p>今日完成 8 篇代数方向论文筛选，1 篇精读、7 篇速读，重点锁定仿射型的扭曲与广义多重扩张的导出等价分类。</p>
+<p>最值得看的是精读文《Derived equivalence classification of twisted and generalized multifold extensions of affine type》（9.0/10），速读可顺带关注局部 Gorenstein 代数、Dennis 迹与 Koszul 对偶兼容性、有限维 DG 代数加性不变量。</p>
+<p>普通读者建议先读精读文的摘要与主定理，再用速读文补齐 Gorenstein、迹映射和 DG 代数背景。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -78,12 +80,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">精读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">6 篇</strong>
+    <strong class="dpr-home-dashboard-count">1 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Cohen-Macaulay truncated path and Nakayama algebras">Cohen-Macaulay truncated path and Nakayama algebras</span></li><li><span class="dpr-home-dashboard-paper-title" title="Representation Type and Schurian Finiteness of Tits Algebras">Representation Type and Schurian Finiteness of Tits Algebras</span></li><li><span class="dpr-home-dashboard-paper-title" title="Superdecomposable Complete Path Algebras">Superdecomposable Complete Path Algebras</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Derived equivalence classification of twisted and generalized multifold extensions of affine type">Derived equivalence classification of twisted and generalized multifold extensions of affine type</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>6</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>1</strong></span></div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-skim-card">
   <div class="dpr-home-dashboard-header">
@@ -91,12 +93,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">速读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">11 篇</strong>
+    <strong class="dpr-home-dashboard-count">7 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="A Gordon--Green-type result for Gorenstein-projective modules">A Gordon--Green-type result for Gorenstein-projective modules</span></li><li><span class="dpr-home-dashboard-paper-title" title="Linear Laurent phenomenon algebras are of finite type">Linear Laurent phenomenon algebras are of finite type</span></li><li><span class="dpr-home-dashboard-paper-title" title="Minimal presentations of finite-dimensional representations of pseudocompact algebras">Minimal presentations of finite-dimensional representations of pseudocompact algebras</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Locally Gorenstein algebras, a generalization of Gorenstein algebras">Locally Gorenstein algebras, a generalization of Gorenstein algebras</span></li><li><span class="dpr-home-dashboard-paper-title" title="An explicit Dennis trace and its compatibility with Koszul duality">An explicit Dennis trace and its compatibility with Koszul duality</span></li><li><span class="dpr-home-dashboard-paper-title" title="Additive invariants of Finite-dimensional DG-algebras">Additive invariants of Finite-dimensional DG-algebras</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>11</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>7</strong></span></div>
 </section>
 </div>
 

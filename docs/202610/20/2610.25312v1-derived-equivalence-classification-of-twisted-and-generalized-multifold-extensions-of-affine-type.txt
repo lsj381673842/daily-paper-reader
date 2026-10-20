@@ -1,0 +1,2599 @@
+DERIVED EQUIVALENCE CLASSIFICATION OF TWISTED AND
+GENERALIZED MULTIFOLD EXTENSIONS OF AFFINE TYPE
+HIDETO ASASHIBA
+Abstract. Let B be a piecewise hereditary algebra of affine type over an algebraically
+closed field. In this paper we give a derived and stable equivalence classification of
+twisted multifold extensions of B. The types eD and eE are already covered by the
+classification for tree type. We therefore consider the remaining types eAp,q. We show
+that the nth power of the Nakayama functor on the full subcategory of a transjective
+component determines the twist, including its action on morphisms, up to conjugacy in
+the derived Picard group of a hereditary algebra. Together with the hereditary derived
+type and the folding number, this gives a complete invariant for derived equivalence,
+and also for stable triangle equivalence. We then compute these conjugacy classes in
+the unbalanced, balanced, bypass, and Kronecker cases, keeping the finite rotation data.
+Finally, by the normalization theorem of Asashiba–Kimura–Nakashima–Yoshiwaki, we
+obtain the same classification for generalized multifold extensions with nonzero integer
+jump.
+1. Introduction and the classification theorem
+The derived and stable equivalence classification of twisted multifold extensions of
+piecewise hereditary algebras of tree type was established in [1]. Its type consists of the
+underlying tree, the folding number, and a conjugacy class of graph automorphisms.
+The affine diagrams f
+Dr and eE6, eE7, eE8 therefore require no new tree-type argument.
+The remaining affine case is an acyclic orientation of a cycle. In this case the action on
+the vertices of the Auslander–Reiten quiver does not, in general, determine the twist:
+an additional parameter can occur in the action on morphisms.
+We first recall the notation for multifold extensions. Let B be a finite-dimensional
+basic algebra, and let bB be its repetitive category. For each i ∈Z, the objects x[i] = (x, i),
+with x an object of B, form a full subcategory B[i] isomorphic to B. We call B[i] the
+ith layer of bB. The Nakayama automorphism νB sends x[i] to x[i+1] and hence sends
+B[i] to B[i+1].
+For ϕ ∈Aut(B), let bϕ be its standard lift to bB, which preserves the layer index. For
+n ≥1, the twisted n-fold extension of B by ϕ is
+T n
+ϕ (B) := bB/⟨bϕνn
+B⟩.
+We call B the base algebra and n the folding number of this presentation of T n
+ϕ (B).
+Here the quotient is the classical orbit category, which we identify with its associated
+basic algebra.
+More generally, we say that an automorphism g of bB has jump n ∈Z if
+g(B[i]) = B[i+n]
+for every i ∈Z.
+Thus g shifts every layer by the same integer n. For such an automorphism with n̸ = 0,
+we call bB/⟨g⟩a generalized multifold extension of B. In particular, bϕνn
+B has jump n, so
+2020 Mathematics Subject Classification. Primary 16E35; Secondary 16D50, 16G20, 16G70.
+Key words and phrases. Derived equivalence; repetitive algebra; twisted multifold extension; affine
+type; mesh category; derived Picard group.
+1
+arXiv:2610.25312v1  [math.RT]  18 Oct 2026
+
+
+2
+HIDETO ASASHIBA
+twisted multifold extensions are special cases. Replacing g by g−1 does not change the
+orbit algebra and allows us to assume that n > 0. We give the detailed constructions
+and conventions in Section 2.
+We distinguish our terminology from that of [8]. In that paper, a selfinjective algebra
+of Euclidean type is an orbit algebra
+bB/G with B tilted from a hereditary algebra
+whose underlying graph is an extended Dynkin diagram and G an admissible group of
+automorphisms. In the present paper, the base algebra is only required to be piecewise
+hereditary: by this we mean that it is derived equivalent to a hereditary algebra. When
+that hereditary algebra has an extended Dynkin diagram, we say that the base algebra
+is of affine type. The extensions considered here inherit this designation from their base
+algebras. Thus we use Euclidean type when discussing the tilted-base setting of [8], and
+affine type for our piecewise hereditary setting. This is a convention of the present paper,
+not a distinction between two kinds of underlying diagrams. We do not require the base
+algebra to be tilted. Our arguments use a derived equivalence with a hereditary algebra
+together with Happel’s equivalence for the repetitive algebra.
+The motivation for the present paper comes from the counterexamples of Asashiba,
+Itaba and Saorín [7]. Bocian, Holm and Skowroński [8, Theorem 1] claimed a complete
+derived equivalence classification of weakly symmetric algebras of Euclidean type with
+singular Cartan matrix. The family (Λλ)λ∈k× introduced in [7] satisfies these hypotheses.
+However, its members with λ̸ = 1 are missing from that classification up to derived
+equivalence. By [7, Propositions 2.1 and 2.4], the algebras Λλ = T 1
+ϕλ(B), where B is
+hereditary of type eA3,2, have isomorphic stable Auslander–Reiten quiver for all λ ∈k×.
+On the other hand, [7, Theorem 3.1] gives
+dimk HH2(Λλ) =
+
+
+
+1,
+λ̸ = 1,
+2,
+λ = 1.
+Hence Λλ with λ̸ = 1 is not derived equivalent to Λ1. These counterexamples show that
+the stable Auslander–Reiten quiver does not contain all the information required for the
+classification.
+In this paper we record the action on morphisms and classify, up to derived equivalence,
+twisted multifold extensions together with generalized multifold extensions having
+nonzero integer jump, over piecewise hereditary bases of affine type. This family includes
+all the algebras Λλ above. We do not restrict the base to be tilted, nor do we impose
+weak symmetry on the extensions. In particular, we prove that, for λ, µ ∈k×,
+Λλ
+der
+∼Λµ
+⇐⇒
+λ = µ
+(see Corollary 9.2). This proves the conjecture stated in the acknowledgments of [7]. A
+generalization of the results of this paper will be treated in a subsequent paper.
+We use the term transjective component as follows.
+For a connected hereditary
+algebra H of infinite representation type, let T be the Auslander–Reiten component
+of Db(mod H) containing the indecomposable projective modules.
+Its vertices are
+represented by the indecomposable preprojective modules and the objects I[−1] with
+I indecomposable preinjective. We call T and its shifts the transjective components.
+These are the irregular components in the terminology of [10, Definition 2.2]. For the
+selfinjective extensions considered below, we use the same term for the corresponding
+stable Auslander–Reiten components obtained through Happel’s equivalence and the
+stable pushdown functor.
+We first identify the full subcategory on a transjective component of the stable module
+category of a twisted n-fold extension with the mesh category of the repetition of a
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+3
+hereditary quiver. We then show that the nth power of the Nakayama functor determines
+the inverse twist on this category. By the restriction theorem of Miyachi–Yekutieli [10],
+equivalence of these functors is expressed as conjugacy in the derived Picard group. The
+converse follows from equivariant tilting.
+Throughout the main text we fix an algebraically closed field k. All algebras are
+assumed to be finite-dimensional, basic, and connected, and all functors and equivalences
+to be k-linear. By a stable equivalence we mean a triangle equivalence between the
+stable module categories of selfinjective algebras. (Appendix C shows that the triangle
+assumption can be omitted in the classification theorem. We give this refinement
+separately so that readers interested only in the derived equivalence classification may
+omit that appendix.)
+We use the following set of hereditary derived types:
+∆∈{ eAp,q | p ≥q ≥1} ∪{f
+Dr | r ≥4} ∪{ eE6, eE7, eE8}.
+(1.1)
+Here eAp,q has p + q vertices and records the two orientation numbers of the cycle; eA1,1
+denotes the Kronecker type. Thus ∆records more than the unoriented affine diagram
+in type eA.
+A triangle equivalence F : Db(mod B) −→Db(mod C) is called standard if it is
+naturally isomorphic, as a triangle functor, to −⊗L
+B X for some two-sided tilting complex
+X of B-C-bimodules; see [12]. For each equivalence F, we choose a quasi-inverse and
+denote it by F −, so that
+F −F ∼= Id,
+FF −∼= Id
+naturally as triangle functors.
+We regard DPick(H) as the group of natural-isomorphism classes of standard derived
+autoequivalences of Db(mod H), with multiplication induced by composition. For such
+an autoequivalence G, we denote its natural-isomorphism class by cl(G).
+Fix a hereditary algebra H∆of each type. If B is piecewise hereditary of type ∆,
+choose a standard equivalence
+F : Db(mod B) −→Db(mod H∆).
+For ϕ ∈Aut(B), let Φ be the induced derived autoequivalence, with the convention that
+ΦB(-, x) ∼= B(-, ϕx). Set
+γB,ϕ = cl(FΦF −) ∈DPick(H∆).
+(1.2)
+Since any two quasi-inverses of F are naturally isomorphic, this element is independent
+of the choice of F −.
+Let F ′ be another standard equivalence with the same source and target.
+Put
+U = F ′F −and choose U −= F(F ′)−as a quasi-inverse of U. Then
+F ′Φ(F ′)−∼= U(FΦF −)U −
+naturally as triangle functors. Hence the element defined using F ′ is
+cl(U) γB,ϕ cl(U)−1.
+Thus the conjugacy class of γB,ϕ is independent of the choice of F.
+From now on, when an autoequivalence F is regarded as an element of DPick(H), we
+write F for cl(F) and F −1 for cl(F)−1 = cl(F −). When an actual quasi-inverse functor
+is needed, we retain the notation F −. For an element γ ∈DPick(H), the brackets [γ]
+denote its conjugacy class. In particular, [F] denotes the conjugacy class of cl(F) under
+this convention.
+
+
+4
+HIDETO ASASHIBA
+Definition 1.1. For a presentation Λ = T n
+ϕ (B), n ≥1, define
+typaff(Λ) = (∆, n, [γB,ϕ]).
+Here the subscript aff stands for affine. The independence of this triple from the
+presentation follows from Theorem 1.2.
+The third component is not an arbitrary
+conjugacy class in DPick(H∆). It must be represented by FΦF −, where B is a piecewise
+hereditary algebra of type ∆, ϕ ∈Aut(B), Φ is the derived autoequivalence induced by
+ϕ, and F : Db(mod B) →Db(mod H∆) is a standard equivalence.
+Theorem 1.2. Let Λ = T n
+ϕ (B) and Λ′ = T n′
+ψ (B′) be twisted multifold extensions of
+piecewise hereditary algebras of affine type. The following are equivalent:
+(1) Λ and Λ′ are derived equivalent;
+(2) Λ and Λ′ are stably equivalent;
+(3) typaff(Λ) = typaff(Λ′).
+The same criterion holds for generalized multifold extensions with nonzero integer
+jump, after choosing the generator with positive jump and applying the normalization in
+Theorem 8.1.
+In tree type the third entry is exactly the conjugacy-class datum in [1, Definition 8.2].
+In type eA the explicit possibilities are given by Theorem 6.1.
+The third component of our invariant is a conjugacy class, not merely the order of a
+representative. Even for graph automorphisms, two elements of the same order need
+not be conjugate. For example, the automorphism group of the graph f
+D4 is S4, acting
+on its four outer vertices. The permutations (12) and (12)(34) both have order two,
+but they are not conjugate. Thus replacing the conjugacy class by the order would lose
+information needed for the classification.
+A further point occurs in the balanced case p = q = m > 1. Consider the twists whose
+graph part is a rotation. Write their parameters as (λ, a), where λ ∈k× is the scalar
+parameter and a ∈Z/mZ specifies the power ra of a rotation r of order m. As shown
+in Theorem 6.1, two such pairs represent the same conjugacy class precisely when they
+are equal or are related by
+(λ, a) 7−→(λ−1, −a).
+The scalar and the rotation are therefore inverted simultaneously, not independently.
+For example, over C with m = 3, the pair (2, 1) is identified with (1/2, 2), but with
+neither (2, 2) nor (1/2, 1). Consequently, recording the scalar up to inversion and the
+rotation up to inversion separately would identify distinct conjugacy classes.
+The new part of the proof is the eA case. Combining this with the tree-type classification
+and the normalization of generalized extensions gives the statement for all affine types.
+Within the family in Theorem 1.2, we impose no further assumption of symmetry,
+polynomial growth, or a specified representation type. The classification concerns this
+family of extensions.
+This paper is organized as follows. In Section 2 we recall the conventions and results
+used in the proof. Section 3 explains the tree cases. In Sections 4 and 5 we prove the
+criterion in type eA and the reduction to hereditary algebras. We compute the parameters
+in Section 6 and list the tree-type parameters in Section 7. Section 8 treats generalized
+extensions, and Section 9 gives consequences and examples. Appendix A gives the
+equivariant tilting argument. Appendix B recalls the identification of the Picard group
+of a basic algebra with its outer automorphism group and with natural-isomorphism
+classes of automorphisms of the associated category. Appendix C proves that the
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+5
+classification remains valid for k-linear equivalences of stable module categories that are
+not assumed to be triangle equivalences.
+2. Preliminaries and conventions
+Let B be a finite-dimensional basic connected k-algebra. Fix a complete set B0 of
+pairwise orthogonal primitive idempotents of B. We regard B as the finite k-category
+with object set B0 and morphism spaces B(x, y) = yBx for x, y ∈B0. Throughout this
+paper, automorphisms of B and of its repetitive category bB mean automorphisms of
+k-categories. They are allowed to permute the objects.
+We use the following notation for the repetitive category bB, as in [4, Definition 1.1]
+and [5, Definition 1.2]. Its objects are
+x[i] := (x, i)
+(x ∈B0, i ∈Z),
+and its morphism spaces are given by
+bB(x[i], y[j]) =
+
+
+
+
+
+
+
+B(x, y),
+j = i,
+DB(y, x),
+j = i + 1,
+0,
+otherwise.
+We call B[i] and B[i+1] adjacent layers. A morphism x[i] →y[i] is called a same-layer
+morphism, and a morphism x[i] →y[i+1] an adjacent-layer morphism.
+For f ∈B(x, y) (resp. β ∈DB(y, x)), we denote the corresponding morphism from
+x[i] to y[i] (resp. from x[i] to y[i+1]) by f [i] (resp. β[i]).
+We write D = Homk(-, k) for the
+vector-space dual and gf = g ◦f for composition. To specify composition in bB, consider
+composable morphisms
+x[i]
+f−→y[j]
+g−→z[ℓ].
+There are four cases in which both morphism spaces can be nonzero. In the formulas
+below, the same letters denote the corresponding morphisms or linear functionals in B
+and DB.
+(1) If j = ℓ= i, then f ∈B(x, y) and g ∈B(y, z). Their composite is the ordinary
+composite gf ∈B(x, z). Thus g[i]f [i] = (gf)[i].
+(2) If j = i and ℓ= i + 1, then f ∈B(x, y) and g ∈DB(z, y). Their composite is
+the functional gf ∈DB(z, x) given by
+(gf)(h) = g(fh)
+
+h ∈B(z, x)
+
+.
+Here fh ∈B(z, y), so the evaluation on the right is defined.
+(3) If j = ℓ= i + 1, then f ∈DB(y, x) and g ∈B(y, z). Their composite is the
+functional gf ∈DB(z, x) given by
+(gf)(h) = f(hg)
+
+h ∈B(z, x)
+
+.
+Here hg ∈B(y, x).
+(4) If j = i + 1 and ℓ= i + 2, then f ∈DB(y, x) and g ∈DB(z, y). In this case
+gf = 0, since bB(x[i], z[i+2]) = 0.
+The second and third cases use the B-B-bimodule structure of DB.
+We denote by B[i] the full subcategory on the objects x[i], where x ∈B0.
+The
+embedding of the ith layer is
+1[i] : B −→B[i] ⊆bB,
+x 7−→x[i],
+f 7−→f [i].
+
+
+6
+HIDETO ASASHIBA
+The Nakayama automorphism νB increases the layer index by one:
+νB(x[i]) = x[i+1],
+νB(f [i]) = f [i+1],
+νB(β[i]) = β[i+1].
+Let ϕ ∈Aut(B) be a k-category automorphism. Its standard lift bϕ ∈Aut( bB) is defined
+by
+bϕ(x[i]) = ϕ(x)[i],
+bϕ(f [i]) = ϕ(f)[i].
+For β ∈DB(y, x), define βϕ ∈DB(ϕ(y), ϕ(x)) by
+βϕ(h) = β
+
+ϕ−1(h)
+
+
+h ∈B(ϕ(y), ϕ(x))
+
+,
+bϕ(β[i]) = (βϕ)[i].
+Thus the action on these functionals is the dual of ϕ−1. The standard lift preserves
+every layer index and commutes with νB. In particular, the following square commutes
+strictly:
+B[i]
+B[i]
+B[i+1]
+B[i+1].
+bϕ
+νB
+νB
+bϕ
+The notation X[i] denotes the shift of a complex. It is distinct from the notation x[i] for
+an object in the ith layer.
+We use the classical k-linear orbit category. Let g be an automorphism of bB with
+nonzero integer jump, and set G = ⟨g⟩. The objects of bB/G are the G-orbits of objects
+of bB. For each orbit, choose one representative object. If X is the chosen representative,
+write
+GX = {grX | r ∈Z}
+for its orbit. Using the chosen representatives X, Y , we identify
+( bB/G)(GX, GY ) ∼=
+M
+r∈Z
+bB(grX, Y ).
+Under these identifications, the composite of ur : grX →Y and vs : gsY →Z is
+represented by
+vs ∗ur = vsgs(ur) : gs+rX −→Z.
+Composition on arbitrary morphisms is obtained by bilinearity. Choosing different
+representatives gives an isomorphic k-category. Its associated basic algebra is the direct
+sum of its morphism spaces, with multiplication given by composition and zero for
+noncomposable morphisms.
+Definition 2.1. For ϕ ∈Aut(B) and an integer n ≥1, the twisted n-fold extension is
+the orbit category, or its associated basic algebra,
+T n
+ϕ (B) = bB/⟨bϕνn
+B⟩.
+(2.1)
+A generalized multifold extension considered here is bB/⟨g⟩, where g ∈Aut( bB) has a
+nonzero integer jump: there is an integer n̸ = 0 such that
+g(B[i]) = B[i+n]
+(i ∈Z).
+Replacing g by g−1 does not change the acting group and permits us to assume n > 0.
+These orbit algebras are finite-dimensional and selfinjective. Here mod B denotes the
+category of finite-dimensional right B-modules, and Db(mod B) its bounded derived
+category. We write mod bB for the stable category of finite-dimensional right bB-modules:
+its morphisms are module homomorphisms modulo those that factor through projective
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+7
+modules.
+When B has finite global dimension, Happel’s equivalence is a triangle
+equivalence
+EB : Db(mod B)
+∼
+−−→mod bB
+[9, Theorem II.4.9].
+(2.2)
+Let Ωdenote the syzygy functor on the stable category. The translation of this
+triangulated category is Ω−1, so
+EB ◦[1] ∼= Ω−1 ◦EB
+as triangle functors. These functors are naturally isomorphic; we do not identify them
+as equal functors.
+Let N denote the Nakayama functor induced on the stable category, and let τ denote
+the Auslander–Reiten translation. The natural isomorphism N ∼= Ω−2τ gives, for a
+hereditary algebra H, the following compatibility with Happel’s equivalence:
+Db(mod H)
+mod c
+H
+Db(mod H)
+mod c
+H.
+EH
+τ[2]
+Nb
+H
+EH
+EH ◦τ[2] ∼= Nb
+H ◦EH.
+This square commutes up to natural isomorphism. The symbol τ on the derived side
+denotes its Auslander–Reiten translation.
+We next recall two results used below. Write prj B for the category of finitely generated
+projective right B-modules and K b(prj B) for its bounded homotopy category. For a
+subcategory E , thick(E ) denotes the smallest triangulated subcategory containing E
+and closed under direct summands. A tilting spectroid for B is a full subcategory E of
+K b(prj B) on pairwise nonisomorphic indecomposable objects such that
+K b(prj B)(U, V [r]) = 0
+(U, V ∈E , r̸ = 0),
+thick(E ) = K b(prj B).
+For ϕ ∈Aut(B), let Φ be the induced derived autoequivalence, with the convention
+ΦB(-, x) ∼= B(-, ϕ(x)) used in Section 1.
+For finite-dimensional k-algebras A and B, we say the A and B are derived equivalent,
+and write A
+der
+∼B if there is a k-linear triangle equivalence
+Db(mod A) ≃Db(mod B).
+Proposition 2.2 (Equivariant tilting). Suppose that a tilting spectroid E for B is stable
+under Φ up to isomorphisms, and that E ≃C. After replacing E by an isomorphic
+tilting spectroid that is strictly stable under the induced action, transport that action to
+an automorphism ψ of C. Then
+T n
+ϕ (B)
+der
+∼T n
+ψ(C)
+(n ≥1).
+If C(x, x) = k at every vertex, replacing the transported action by a naturally isomorphic
+action does not change the orbit algebra up to isomorphism.
+Proof. The first assertion. We first construct a transported automorphism ψ of C such
+that
+T n
+ϕ (B)
+der
+∼T n
+ψ(C)
+(n ≥1).
+Work in the formal additive-hull model of K b(prj B), and denote by eϕ the automorphism
+induced by ϕ. By [1, Remark 3.5], we may replace E by an isomorphic tilting spectroid
+E ′ that is strictly stable under eϕ. Choose an isomorphism J : E ′ →C and define
+ψ = J( eϕ|E ′)J−1.
+
+
+8
+HIDETO ASASHIBA
+Here J is an isomorphism of categories, so J−1 is its inverse functor. Then the following
+diagram commutes:
+E ′
+C
+E ′
+C.
+J
+eϕ|E ′
+ψ
+J
+Therefore [1, Proposition 3.6] gives T n
+ϕ (B)
+der
+∼T n
+ψ(C) for every n ≥1.
+The last assertion. Assume that C(x, x) = k1x for every object x. Let ψ′ be an
+automorphism of C naturally isomorphic to ψ. We prove that
+T n
+ψ(C) ∼= T n
+ψ′(C)
+(n ≥1).
+Choose a natural isomorphism α : ψ ⇒ψ′. Since C is skeletal, ψ(x) = ψ′(x) for every x.
+Hence αx = cx1ψ(x) for some cx ∈k×. For each f ∈C(x, y), naturality gives
+cyψ(f) = ψ′(f)cx.
+Fix n ≥1 and put
+g = bψνn
+C,
+h = c
+ψ′νn
+C.
+These automorphisms have the same action on objects and have jump n. In the notation
+of [5], their induced automorphisms g0, h0 of C are ψ, ψ′, respectively. Thus the map
+x 7→cx satisfies the hypothesis of [5, Theorem 4.4]. That theorem gives
+T n
+ψ(C) = bC/⟨g⟩∼= bC/⟨h⟩= T n
+ψ′(C).
+This proves the last assertion.
+□
+For a quiver Q, write ZQ for its repetition quiver and Imesh for the ideal generated
+by its mesh relations. Thus k(ZQ, Imesh) is the mesh category. For a k-category B,
+Outk(B) denotes the group of autoequivalences modulo natural isomorphism. As in
+Section 1, DPick(H) is the derived Picard group: the group of natural-isomorphism
+classes of standard derived autoequivalences.
+Proposition 2.3 (Full mesh category and restriction). Let H = kQ be connected
+hereditary of infinite representation type. Let B be the full subcategory of Db(mod H)
+on representatives of the transjective component containing the projective modules. Then
+MQ := k(ZQ, Imesh) ≃B,
+DPick(H) ∼= Outk(B) × Z.
+(2.3)
+We describe the second isomorphism explicitly. Let F be a standard derived autoequiv-
+alence of H. There is a unique integer m such that F sends the chosen transjective
+component to its shift by m. Set
+G = [−m] ◦F.
+Then G preserves the chosen component. For each object X of B, choose an object
+G0(X) of B such that G(X) ∼= G0(X). Fix an isomorphism
+θX : G(X) −→G0(X).
+For each morphism f : X →Y in B, define
+G0(f) = θY ◦G(f) ◦θ−1
+X .
+This defines an autoequivalence G0 : B −→B. Its natural-isomorphism class does not
+depend on the choices of representatives and isomorphisms. The second isomorphism
+sends the class of F to
+
+cl(G0), m
+
+∈Outk(B) × Z.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+9
+In particular, the class of the shift functor [m] corresponds to (1, m). The second factor
+is central in DPick(H).
+Proof. Apply [10, Theorems 2.6 and 3.7]. The first assertion is an equivalence with the
+full subcategory B, including all its morphisms, not only irreducible morphisms.
+□
+Remark 2.4 (Outer automorphism groups). Out(B) is the outer automorphism group
+of B, and Out0(B) is its identity component as an algebraic group. Derived equivalence
+preserves this identity component; see [13, Theorem 4.6 and Section 4.2.3].
+More
+explicitly, a standard derived equivalence F : Db(mod B) →Db(mod H) identifies
+Out0(B) with Out0(H) by conjugation, as algebraic groups; see [14, Theorem 1]. The
+Picard group Pic(B) is the group of isomorphism classes of invertible B-B-bimodules,
+with multiplication induced by tensor product. For a basic algebra, we identify Pic(B)
+with Out(B). The quotient Out(B)/ Out0(B) is finite.
+Here Out(B) = Outk(B) = Autk(B)/ Inn(B), where Inn(B) denotes the group of
+inner automorphisms of the algebra B. Connectedness is taken in the Zariski topology.
+We regard Outk(B) as a subgroup of DPick(B) by sending each outer automorphism
+class to the class of its induced standard derived autoequivalence. This assignment is
+well-defined because every inner automorphism induces a functor naturally isomorphic
+to the identity functor. Conversely, an automorphism inducing such a functor is inner,
+so the resulting homomorphism is injective. By [14, Theorem 1], the subgroup Out0(B)
+is normal in DPick(B).
+3. The classification in tree type
+Let B be piecewise hereditary of type ∆, where ∆is f
+Dr or one of the three eE types.
+Fix ϕ ∈Aut(B) and n ≥1. The underlying graph of ∆is a tree.
+Put
+Aut0(∆) = {σ ∈Aut(∆) | σ fixes a vertex of ∆}.
+This is a subgroup of Aut(∆). An orientation Q∆of ∆is called admissible if
+Aut(Q∆) = Aut0(∆),
+where we regard each quiver automorphism as an automorphism of the underlying tree.
+Choose such an orientation by [1, Lemma 4.1], and put H∆= kQ∆. The hereditary
+reduction in [1, Lemma 5.4 and Proposition 5.5] gives
+T n
+ϕ (B)
+der
+∼T n
+kσ(H∆)
+for some σ ∈Aut(Q∆). Here kσ is the automorphism of the path category that sends
+each vertex and each arrow to its image under σ.
+The Main Theorem of [1] says that the complete invariant is
+(∆, n, σ).
+(3.1)
+Here σ denotes the conjugacy class of σ in Aut(∆), the automorphism group of the
+unoriented tree. For fixed ∆and n ≥1, the set of all possible third components is
+exactly
+{σ | σ ∈Aut0(∆)}.
+Indeed, the hereditary reduction above shows that the third component of every extension
+considered here belongs to this set. Conversely, every σ ∈Aut0(∆) = Aut(Q∆) defines
+an automorphism kσ of H∆, and
+T n
+kσ(H∆)
+
+
+10
+HIDETO ASASHIBA
+has type (∆, n, σ). Thus every class in the displayed set occurs. There is no further
+connected scalar parameter. Indeed Out0(H∆) = 1 by [10, Proposition 1.7]. Under
+(2.3), the realizable conjugacy classes of derived autoequivalences are the classes in (3.1):
+restriction gives the action on the repetition quiver, and passage to its τ-orbits gives σ.
+Conjugacy here is taken in Aut(∆). More explicitly, for σ, σ′ ∈Aut(Q∆),
+σ = σ′
+⇐⇒
+σ′ = ρσρ−1
+for some ρ ∈Aut(∆).
+The automorphism ρ need not preserve the orientation of Q∆. This case is handled
+by the equivariant tilting construction in the proof of the Main Theorem of [1], which
+allows a change of hereditary orientation. This proves Theorem 1.2 for the tree types.
+Moreover, by [1, Proposition 8.1], if two twisted extensions are stably equivalent and
+one has tree type, then the other has the same underlying tree type. Hence it remains
+to consider the types eAp,q.
+4. Recovering the affine twist from a full component
+Fix H = kQ of type eAp,q, ϕ ∈Aut(H), and n ≥1. Write E = T n
+ϕ (H) and g = bϕνn
+H.
+Let π : c
+H →E be the canonical covering functor. The pull-up functor
+π
+• : Mod E −→Mod c
+H
+is the restriction functor along π. Thus π
+•N = N ◦π for each right E-module N. Its
+left adjoint is the push-down functor
+π• = - ⊗b
+H E : Mod c
+H −→Mod E,
+where E is regarded as a c
+H-E-bimodule via π. For each object x of c
+H, we have
+π•
+c
+H(-, x)
+ ∼= E(-, πx).
+Since π• preserves direct sums and direct summands, it sends projective modules to
+projective modules. Moreover, every finitely generated module is a quotient of a finite
+direct sum of representable modules. Since π• is right exact, it also preserves finitely
+generated modules. Thus it restricts to a functor
+π• : mod c
+H −→mod E.
+By the covering property, E, regarded as a left c
+H-module via π, is projective and hence
+flat. Therefore π• is exact. It follows that π• induces a triangle functor
+π∗: mod c
+H −→mod E,
+which we call the stable pushdown functor.
+Let R : Db(mod H) →mod c
+H be Happel’s equivalence, chosen so that its restriction
+to mod H is the canonical embedding. We use the composite functor
+P = π∗R : Db(mod H) −→mod E.
+Write Φ for the derived autoequivalence induced by ϕ, with the convention fixed in
+Section 1. Let bΦ and Γ be the autoequivalences of mod c
+H induced by bϕ and g, respectively.
+Our next aim is to identify the autoequivalence corresponding to Γ under R. We first
+prove the following lemma.
+Lemma 4.1. Let P be the full subcategory of Db(mod H) consisting of finitely generated
+projective H-modules regarded as complexes concentrated in degree zero, and let ι : P →
+Db(mod H) be the inclusion. Let F be a standard autoequivalence of Db(mod H). If
+there is a natural isomorphism η : Fι =⇒ι, then F ∼= Id.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+11
+Proof. Choose a two-sided tilting complex T and a natural isomorphism
+ξ : - ⊗L
+H T =⇒F.
+The components of η and ξ at H give isomorphisms
+T
+ξH
+−→F(H)
+ηH
+−→H
+in Db(mod H). Hence Hi(T) = 0 for i̸ = 0, and therefore T ∼= H0(T) in the derived
+category of H-H-bimodules. Set
+θ = H0(ηHξH) : H0(T) −→H.
+This is an isomorphism of right H-modules. We show that it is also left H-linear.
+For a ∈H, let ℓa : H →H be left multiplication by a. The morphism ℓa is right
+H-linear, and ℓa ⊗L
+H T is left multiplication by a on T. The naturality of ξ and η
+therefore gives
+H0(T)
+H0(T)
+H
+H.
+a·-
+θ
+θ
+ℓa
+Thus θ(at) = aθ(t) for all a ∈H and t ∈H0(T). Consequently, θ is an isomorphism of
+H-H-bimodules, and T ∼= H in their derived category. It follows that
+F ∼= - ⊗L
+H T ∼= - ⊗L
+H H ∼= Id.
+□
+Lemma 4.2. The following statements hold.
+(1) There is a natural isomorphism RΦ ∼= bΦR. Thus the following diagram commutes
+up to natural isomorphism:
+Db(mod H)
+mod c
+H
+Db(mod H)
+mod c
+H.
+R
+Φ
+bΦ
+R
+(2) Set
+G = Φτ n[2n].
+(4.1)
+Then there is a natural isomorphism RG ∼= ΓR.
+Proof. (1) Let R−and Φ−be quasi-inverses of R and Φ, respectively, and set
+F = Φ−R−bΦR.
+By [1, Lemma 2.7], the restrictions of bΦR and RΦ to mod H are naturally isomorphic.
+Thus we obtain natural isomorphisms
+Fι = Φ−R−bΦRι
+∼= Φ−R−RΦι
+∼= Φ−Φι
+∼= ι.
+
+
+12
+HIDETO ASASHIBA
+Their composite gives a natural isomorphism η : Fι =⇒ι.
+Thus the hypothesis
+concerning η in Lemma 4.1 is satisfied. By [10, Theorem 1.8], F is standard. Applying
+Lemma 4.1, we obtain F ∼= Id, and hence RΦ ∼= bΦR.
+(2) Let Nb
+H be the stable Nakayama functor. As recalled after (2.2), there is a natural
+isomorphism
+Rτ[2] ∼= Nb
+HR.
+Since g = bϕνn
+H, its induced functor satisfies Γ ∼= bΦN n
+b
+H. Using (1), we obtain
+RG = RΦτ n[2n]
+∼= bΦRτ n[2n]
+∼= bΦN n
+b
+HR
+∼= ΓR.
+This proves (2).
+□
+We now recall the full subcategory B ⊆Db(mod H) of Proposition 2.3. It has one
+representative of each isomorphism class of indecomposable objects in the transjective
+component containing the projective modules. These objects are the preprojective
+modules in degree zero and the preinjective modules shifted by [−1]. Both τ and Φ
+preserve this component. Their restrictions to the chosen representatives are understood
+up to natural isomorphism. By (4.1), G sends this component to its shift by [2n].
+Lemma 4.3. For any X, Y ∈B and any nonzero integer j, we have
+HomDb(mod H)(GjX, Y ) = 0.
+Proof. Because Φ and τ preserve the chosen transjective component, we can write
+Φjτ njX ∼= M[a] and Y ∼= L[b], where M, L are H-modules and a, b ∈{0, −1}. Thus
+HomDb(mod H)(GjX, Y ) ∼= Extd
+H(M, L),
+d = b −a −2nj.
+The possible degrees give the following reduction:
+case
+degree
+reason for vanishing
+j > 0
+d ≤−1
+negative degree between modules
+j < 0, d ≥2
+d ≥2
+H is hereditary
+j < 0, d = 1
+n = 1, j = −1, a = 0, b = −1
+considered below.
+In the last case, M is preprojective and L is preinjective. If M is projective, then
+Ext1
+H(M, L) = 0. Otherwise Auslander–Reiten duality and the absence of morphisms
+from preinjectives to preprojectives give
+D Ext1
+H(M, L) ∼= HomH(L, τM) = 0.
+Here HomH denotes morphisms modulo those factoring through injective modules; it is
+zero because already HomH(L, τM) = 0.
+□
+Lemma 4.4. The restriction P|B is an equivalence onto the full subcategory Cϕ on
+one transjective component of mod E. The stable Auslander–Reiten quiver of E has
+exactly 2n transjective components, each isomorphic to ZQ. All its other components
+are τ-periodic. The functor Ωpermutes the transjective components transitively.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+13
+Proof. For X, Y ∈Db(mod H), the covering formula, followed by Happel’s equivalence,
+gives
+HomE(PX, PY ) ∼=
+M
+j∈Z
+Hom b
+H(gjRX, RY )
+∼=
+M
+j∈Z
+HomDb(mod H)(GjX, Y ).
+(4.2)
+In the first line, gj denotes the induced action on modules. We show that the covering
+isomorphism on module morphisms induces the first isomorphism in (4.2). For A = c
+H
+or E, and for any U, V ∈mod A , let IA (U, V ) be the subspace of morphisms that
+factor through a finitely generated projective A -module. For any M, N ∈mod c
+H, the
+canonical covering isomorphism is
+ΨM,N :
+M
+j∈Z
+Hom b
+H(gjM, N)
+∼
+=
+−−→HomE(π•M, π•N).
+We claim that
+Ψ−1
+M,N
+
+IE(π•M, π•N)
+
+=
+M
+j∈Z
+Ib
+H(gjM, N).
+To prove the inclusion from left to right, take any f ∈IE(π•M, π•N). Every finitely
+generated projective E-module is a direct summand of a finite direct sum of modules
+E(-, πx), and
+E(-, πx) ∼= π•
+c
+H(-, x)
+
+.
+Thus we can choose a finitely generated projective c
+H-module Q and a factorization
+π•M
+π•Q
+π•N.
+u
+f
+v
+Write
+Ψ−1
+M,Q(u) = (ur)r∈Z,
+Ψ−1
+Q,N(v) = (vs)s∈Z,
+where
+ur : grM →Q,
+vs : gsQ →N.
+Both families have finite support. By the composition rule for the canonical covering
+maps, for each t ∈Z we have
+
+Ψ−1
+M,N(f)
+
+t =
+X
+r+s=t
+vs ◦gs(ur).
+For each pair (r, s), the corresponding summand has the factorization
+gr+sM
+gsQ
+N.
+gs(ur)
+vs◦gs(ur)
+vs
+Since gsQ is projective and the sum is finite,
+
+Ψ−1
+M,N(f)
+
+t ∈Ib
+H(gtM, N)
+(t ∈Z).
+This proves the first inclusion.
+Conversely, take any j ∈Z and any morphism h ∈Ib
+H(gjM, N). Choose a factoriza-
+tion
+gjM
+a−→Q
+b−→N,
+h = ba,
+
+
+14
+HIDETO ASASHIBA
+with Q finitely generated projective. Applying π• and using the canonical isomorphism
+π•gjM ∼= π•M, we obtain a factorization of its image under ΨM,N through the projective
+module π•Q. Taking finite sums proves the reverse inclusion.
+The claimed equality now allows us to take quotients by these subspaces, and gives
+M
+j∈Z
+Hom b
+H(gjM, N) ∼= HomE(π•M, π•N).
+Applying this to modules representing RX and RY proves the first isomorphism in
+(4.2).
+For the second isomorphism, Lemma 4.2(2) gives a natural isomorphism RGj ∼= ΓjR
+for each j ∈Z. Here Γj is the functor denoted by gj on stable modules in (4.2). Since
+R is fully faithful, for any X, Y ∈Db(mod H) and any j ∈Z, we obtain
+Hom b
+H(gjRX, RY ) ∼= Hom b
+H(RGjX, RY )
+∼= HomDb(mod H)(GjX, Y ).
+Taking the direct sum over all j ∈Z proves the second isomorphism in (4.2).
+For X, Y ∈B, Lemma 4.3 leaves only the summand j = 0 in (4.2). Thus pushdown
+induces isomorphisms
+HomB(X, Y )
+∼
+−−→HomE(PX, PY ).
+This is full faithfulness on all morphisms, including morphisms that are not irreducible.
+The repetitive category of a hereditary algebra is locally support-finite by [1,
+Lemma 6.1].
+Its pushdown is therefore essentially surjective, and the component
+calculation in [1, Lemma 6.2] applies to the entire stable Auslander–Reiten quiver. The
+transjective components in Db(mod H) are the successive shifts B[t], indexed by t ∈Z.
+These are distinct Auslander–Reiten components, although each has translation quiver
+isomorphic to ZQ. The action of G is
+B[t] 7−→B[t + 2n].
+Consequently the components in mod E are indexed by Z/(2n)Z, not by the common
+isomorphism type ZQ. The component calculation also identifies the essential image of
+P|B with the component indexed by 0; this proves essential surjectivity onto Cϕ. The
+remaining hereditary affine components are tubes and remain τ-periodic. Finally,
+Ω: t mod 2n 7−→t −1 mod 2n,
+so Ωacts transitively on these 2n components.
+□
+Lemma 4.5 (The return functor). Let NE : mod E →mod E be the stable Nakayama
+functor. The functors
+N n
+EP|B,
+PΦ−|B : B →mod E
+are naturally isomorphic:
+N n
+EP|B ∼= PΦ−|B.
+(4.3)
+In particular, N n
+E preserves Cϕ up to isomorphism. Here Φ−denotes a chosen quasi-
+inverse of Φ, as in Section 1.
+Proof. We first check that pushdown commutes with the Nakayama functors by a natural
+isomorphism. For this purpose we use the duality on morphism spaces, as follows. For
+arbitrary objects x, y of c
+H, the repetitive duality
+Dc
+H(x, y) ∼= c
+H(y, νHx)
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+15
+is compatible with νH and with the standard lift bϕ; on the morphism spaces DH(y, x)
+between adjacent layers, the latter uses the inverse dual action. Summing this duality
+over the orbit identifies the descended νH with the Nakayama functor of the orbit
+category. More explicitly, reindexing the finite sums uses
+D
+M
+j
+c
+H(x, gjy) ∼=
+M
+j
+c
+H(gjy, νHx) ∼=
+M
+j
+c
+H(y, g−jνHx).
+The identification is natural on projectives and extends to modules by projective
+presentations. In terms of the two separate functors introduced above, it says
+NEπ∗∼= π∗Nb
+H,
+NEP ∼= Pτ[2].
+The canonical orbit isomorphism is π∗g ∼= π∗, or, after composition with R, PG ∼= P.
+The standard lift commutes with νH, so these natural isomorphisms give
+N n
+EPΦ ∼= Pτ n[2n]Φ ∼= PΦτ n[2n] = PG ∼= P.
+Composing with a quasi-inverse of Φ proves (4.3). Equivalently, the following square
+commutes up to the resulting natural isomorphism:
+B
+Cϕ
+B
+Cϕ.
+P|B
+Φ−|B
+Nn
+E|Cϕ
+P|B
+□
+Theorem 4.6 (Hereditary affine criterion). For ϕ, ψ ∈Aut(H) and n, n′ ≥1, the
+following are equivalent:
+(1) T n
+ϕ (H) and T n′
+ψ (H) are derived equivalent;
+(2) they are stably equivalent;
+(3) n = n′ and Φ, Ψ are conjugate in DPick(H).
+Proof. (1) ⇒(2). By Rickard’s theorem [11], a derived equivalence between selfinjective
+algebras induces a triangle equivalence between their stable module categories.
+(2) ⇒(3). Put Eϕ = T n
+ϕ (H) and Eψ = T n′
+ψ (H), and let V : mod Eϕ →mod Eψ be a
+triangle equivalence as in (2). The nonperiodic components are exactly the transjective
+ones, so Lemma 4.4 gives 2n = 2n′ and hence n = n′. By the transitive action of Ω,
+we may compose V with a power of Ωon the target so that it takes Cϕ to Cψ, up to
+isomorphism.
+Let Sϕ = ΩNEϕ and Sψ = ΩNEψ be the stable Serre functors. Since V is a triangle
+equivalence, it commutes with suspension and hence with its quasi-inverse Ω. It also
+intertwines the Serre functors. Thus we have natural isomorphisms
+V Ω∼= ΩV,
+V Sϕ ∼= SψV.
+Using the definitions of Sϕ and Sψ, we obtain
+ΩV NEϕ ∼= V ΩNEϕ = V Sϕ ∼= SψV = ΩNEψV.
+Applying a quasi-inverse of Ωgives a natural isomorphism
+V NEϕ ∼= NEψV.
+
+
+16
+HIDETO ASASHIBA
+Denote the equivalences in Lemma 4.4 by Pϕ : B →Cϕ and Pψ : B →Cψ, and choose
+a quasi-inverse P −
+ψ of Pψ. Define
+U = P −
+ψ
+
+V |Cϕ
+
+Pϕ : B →B.
+Using the return isomorphisms, we obtain the following square, which commutes up to
+natural isomorphism:
+B
+B
+B
+B.
+U
+Φ−|B
+Ψ−|B
+U
+By Proposition 2.3, there exists a standard derived autoequivalence
+eU : Db(mod H) →Db(mod H)
+which preserves the transjective component containing the indecomposable projective
+modules and whose restriction to B is naturally isomorphic to U. Here the restriction
+to B is understood by choosing representatives in B, as in Proposition 2.3. Both Φ
+and Ψ also preserve this component. Thus eUΦ−and Ψ−eU preserve this component, and
+the preceding commutative diagram shows that their restrictions to B are naturally
+isomorphic. Under the second isomorphism in (2.3), the classes of these two functors
+have the same image: their restrictions to B are naturally isomorphic, and the integer
+associated with each functor is zero because each preserves the chosen component.
+Since this isomorphism is injective, the two classes are equal. Hence there is a natural
+isomorphism
+eUΦ−∼= Ψ−eU.
+Equivalently, Φ and Ψ are conjugate in DPick(H). This proves (3).
+(3) ⇒(1).
+Suppose (3) holds.
+Choose a standard derived autoequivalence U :
+Db(mod H) →Db(mod H) and a natural isomorphism ΦU ∼= UΨ. For each object x of
+H, put
+Px := H(-, x).
+Let E be the full subcategory of Db(mod H) whose objects are
+U(Px)
+(x ∈H0).
+Thus, for any x, y ∈H0, we have
+E (U(Px), U(Py)) = Db(mod H)(U(Px), U(Py)).
+It is a tilting spectroid and the restriction of U to the full subcategory on the inde-
+composable projective H-modules is an equivalence onto E . Let η : ΦU ⇒UΨ be the
+chosen natural isomorphism. For each object x of H, let
+κx : Ψ(Px) →Pψ(x)
+be the canonical isomorphism induced by ψ, and put
+θx : Φ(U(Px))
+ηPx
+−−→U(Ψ(Px))
+U(κx)
+−−−→U(Pψ(x)).
+Since U(Pψ(x)) is an object of E , these isomorphisms show that E is stable under Φ up
+to isomorphisms.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+17
+We also describe the action on morphisms. For each morphism f : x →y in H, put
+Pf := H(-, f) : Px →Py. By the naturality of η and of the canonical isomorphisms κx,
+the following diagram commutes:
+Φ(U(Px))
+Φ(U(Py))
+U(Pψ(x))
+U(Pψ(y)).
+Φ(U(Pf))
+θx
+θy
+U(Pψ(f))
+Thus, after identifying Φ(U(Px)) with U(Pψ(x)) by θx, the action on each morphism
+U(Pf) is given by
+θy ◦Φ(U(Pf)) ◦θ−1
+x
+= U(Pψ(f)).
+By the Yoneda lemma and the full faithfulness of U, every morphism in E has the form
+U(Pf) for a unique morphism f in H. Hence the action transported to the projective
+spectroid of H agrees with the action induced by ψ, on both objects and morphisms.
+Thus Proposition 2.2 gives the desired derived equivalence for every n. Appendix A
+explains how the natural isomorphism η : ΦU ⇒UΨ is used to construct the equivariant
+equivalence for the infinite cyclic actions and to obtain the derived equivalence of the
+orbit algebras. The isomorphisms θx above are sufficient; we do not require the equalities
+Φ(U(Px)) = U(Pψ(x)).
+□
+Proposition 4.7 (Recovering the hereditary type). The stable category of a hereditary
+affine twisted extension determines ∆and n.
+Proof. We first recover n. By Lemma 4.4, there are exactly 2n nonperiodic components
+in the stable Auslander–Reiten quiver. The same assertion holds in the affine tree types:
+the proof uses the vanishing between the shifted transjective components, and all the
+remaining components are τ-periodic. Thus the number of nonperiodic components
+determines n.
+We next recover ∆. Choose one nonperiodic component Γ and write
+Γ ∼= ZQ,
+where H = kQ is the hereditary algebra used in the extension. Identifying Γ with ZQ
+via this isomorphism, consider the projection
+π0 : Γ0 →Q0,
+(i, v) 7→v,
+where Γ0 and Q0 denote the vertex sets. Since τ(i, v) = (i −1, v), the fibers of π0 are
+precisely the τ-orbits. Thus π0 induces a bijection from the set of τ-orbits of vertices of
+Γ to Q0. For each arrow u →v in Q, the repetition quiver has arrows
+(i, u) →(i, v),
+(i, v) →(i + 1, u)
+(i ∈Z),
+and every arrow of Γ has one of these forms. Consequently, two distinct vertices u, v of
+Q are adjacent in the underlying unoriented graph if and only if an arrow of Γ joins
+π−1
+0 (u) and π−1
+0 (v) in either direction. Hence we recover adjacency in the underlying
+graph from Γ and τ. We distinguish the following three cases.
+(a) The underlying graph of Q is a tree. The adjacency described above recovers this
+tree from Γ. It therefore determines which of the types f
+Dr, eE6, eE7, and eE8 occurs.
+(b) The underlying graph of Q is a cycle of length at least three. The adjacency described
+above recovers the cycle. To determine its type, we also recover the numbers p and q
+of arrows in its two cyclic directions. Choose one of these directions, and let p be the
+
+
+18
+HIDETO ASASHIBA
+number of arrows pointing in this direction and q the number pointing in the opposite
+direction.
+Recall that, for each arrow a : u →v of Q and each integer i, the repetition quiver
+has arrows
+(i, u) −→(i, v),
+(i, v) −→(i + 1, u),
+and τ(i, u) = (i −1, u). Starting at a vertex x of Γ, follow arrows whose successive
+τ-orbits go once around the cycle in the chosen direction. At each step there is a unique
+such arrow. The first coordinate stays unchanged at each of the p steps agreeing with
+the orientation of Q, and increases by one at each of the other q steps. Hence the
+resulting path ends at τ −qx. Going around the cycle in the opposite direction similarly
+gives a path ending at τ −px. Thus the two lifted paths have the form
+x = x0 −→x1 −→· · · −→xp+q = τ −qx,
+x = y0 −→y1 −→· · · −→yp+q = τ −px.
+These paths are determined by the translation quiver Γ once x and a cyclic direction are
+chosen. Consequently, Γ determines the unordered pair {p, q}. Our convention p ≥q
+then determines the type eAp,q.
+(c) Q is the Kronecker quiver. In this case Γ has exactly two τ-orbits. For a vertex x in
+either orbit, there are two parallel arrows from x to a vertex in the other orbit. These
+properties distinguish the Kronecker case, which has type eA1,1.
+A triangle equivalence of stable categories preserves the stable Auslander–Reiten
+quiver, including its translation and arrow multiplicities. It therefore preserves the data
+used above. Thus the stable category determines both ∆and n.
+□
+For comparison, if Λ = T n
+ϕ (B) and ∆is known, the folding number can also be read
+from the Grothendieck group K0(mod Λ). We write K0(Λ) := K0(mod Λ) and denote
+by |∆| the number of vertices of ∆. Then
+n = rank K0(Λ)
+|∆|
+,
+|∆| =
+
+
+
+p + q
+if ∆= eAp,q,
+r + 1
+if ∆= f
+Dr or eEr.
+(4.4)
+5. Piecewise hereditary reduction in type eA
+Remark 5.1 (Choice of the hereditary quiver). In this section we reduce the case
+of type eA to hereditary algebras. For this purpose, we choose the orientation of the
+underlying cycle so that the rotations needed below preserve the directions of the arrows
+and hence define quiver automorphisms. When gcd(p, q) > 1, an orientation with a
+unique source does not realize all of them. We use the following models:
+• If p > q, put d = gcd(p, q) and orient the cycle by the repeated word (+p/d−q/d)d.
+Its quiver automorphism group is cyclic of order d, and we denote it by Cd.
+• If p = q = m > 1, use the 2m-cycle with alternating arrow directions. Its quiver
+automorphism group is generated by the rotation through two vertices and a
+reflection fixing a vertex. These automorphisms preserve the sources and the
+sinks. The group is dihedral of order 2m, and we denote it by D2m.
+• For (p, q) = (1, 1), use the two-arrow Kronecker quiver.
+Here + and −refer to the two directions around a fixed traversal of the cycle. All
+orientations with the same two orientation numbers give the same hereditary derived
+type. In the remainder of this section, Q is the chosen quiver and H = kQ.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+19
+For the chosen algebra H = kQ, we have Out0(H) ⊆Outk(H) = Pic(H), since H is
+basic (see Remark 2.4).
+Lemma 5.2. Let qH : DPick(H) →DPick(H)/ Out0(H) be the quotient homomorphism.
+For the models in Remark 5.1, every finite subgroup of DPick(H)/ Out0(H) is contained
+in qH(Pic(H)).
+Proof. Put d := gcd(p, q). First suppose p + q ≥3. The projection (i, v) 7→v identifies
+the τ-orbits of vertices of ZQ with the vertices of the underlying unoriented cycle of
+Q. Every automorphism of ZQ commuting with τ therefore induces a symmetry of
+this cycle. We determine which symmetries lift to such automorphisms and describe
+their lifts. We first construct a lift of the clockwise rotation by one vertex. Label the
+vertices of the underlying cycle clockwise as v0, . . . , vp+q−1, with indices taken modulo
+p + q. Choose this direction so that p arrows of Q point clockwise and q arrows point
+counterclockwise. Recall that τ(i, vj) = (i −1, vj) in ZQ. For each i ∈Z and each j,
+the arrow in ZQ which starts at (i, vj) and follows the cycle clockwise is
+
+
+
+(i, vj) →(i, vj+1),
+if vj →vj+1 in Q,
+(i, vj) →(i + 1, vj+1),
+if vj+1 →vj in Q.
+Sending each vertex to the endpoint of this arrow defines an automorphism of the
+translation quiver ZQ. Let ρ be its inverse. Explicitly,
+ρ(i, vj+1) =
+
+
+
+(i, vj),
+if vj →vj+1 in Q,
+(i −1, vj),
+if vj+1 →vj in Q.
+Then ρ and τ commute, and their relation is
+ρp+q = τ q.
+Indeed a full clockwise traversal has endpoint τ −qx, as in Proposition 4.7. A lift of a
+fixed cycle symmetry is determined up to a power of τ. A reversing symmetry can have
+a commuting lift only if the two monodromies agree, that is, if p = q.
+Put x = ρ and y = τρ−1. The orientation-preserving group is
+L(p, q) = ⟨x, y | xy = yx, xp = yq⟩∼= Z ⊕Z/dZ.
+(5.1)
+If p > q, its finite-order elements form precisely the subgroup generated by
+r = xp/d y−q/d = ρ(p+q)/d τ −q/d.
+(5.2)
+The element r has order d, and the subgroup ⟨r⟩is the rotation group of the chosen
+periodic orientation. The component shift supplies an additional infinite cyclic factor
+in DPic(H)/ Out0(H), by [10, Theorem 0.1]. Thus every finite subgroup lies in the
+indicated Cd.
+Suppose that p = q = m > 1. For the alternating quiver Q, choose the clockwise
+labelling v0, . . . , v2m−1 so that the vertices with even indices are sources and those with
+odd indices are sinks. Indices are taken modulo 2m. The reflection
+vj 7−→v−j
+preserves the directions of the arrows of Q. It extends to an automorphism s of ZQ by
+s(i, vj) = (i, v−j).
+For each arrow u →v of ZQ, its image under s is the unique arrow s(u) →s(v). Then
+s2 = 1,
+sτ = τs,
+sρs−1 = τρ−1.
+
+
+20
+HIDETO ASASHIBA
+Recall that x = ρ and y = τρ−1. Thus
+sxs−1 = y,
+sys−1 = x.
+The group of automorphisms of ZQ commuting with τ is therefore
+L(m, m) ⋊⟨s⟩.
+Put r = xy−1. Then r has order m, and
+srs−1 = r−1.
+There is also a direct geometric description of its finite part. Write (i, v) for a vertex of
+the repetition quiver ZQ, and define its height by
+h(i, v) =
+
+
+
+2i,
+v is a source of Q,
+2i + 1,
+v is a sink of Q.
+Every arrow raises height by one. For an automorphism f of this translation quiver, the
+difference h(fw) −h(w) has the same value at both ends of every arrow. Connectedness
+makes this difference independent of the vertex w. It therefore defines a homomorphism
+c : Aut(ZQ, τ) −→Z,
+c(f) = h(fw) −h(w).
+The union of the height-0 and height-1 vertices is precisely the alternating slice Q.
+Hence c(f) = 0 implies that f preserves this slice. Its restriction is an automorphism
+of Q, and commutation with τ determines f on the whole repetition. Conversely, each
+automorphism of Q extends in this way. Thus
+Ker c ∼= Aut(Q) = D2m.
+Since Z has no nontrivial finite subgroup, every finite subgroup of Aut(ZQ, τ) lies in
+this kernel. Its separate component-shift coordinate is also zero.
+For the Kronecker quiver, [10, Theorem 4.3 and Remark 4.4] give
+DPick(H) ∼= Z2 × PGL2(k),
+Pic(H) = Out0(H) = PGL2(k).
+(5.3)
+The quotient is torsion-free. Finally, for the other models the inverse image of the
+slice automorphism group in DPic(H) is exactly Pic(H): the kernel is Out0(H) and the
+slice stabilizer is Out0(H) ⋊Aut(Q), by [10, Proposition 1.7 and Theorem 0.1]. This
+completes the proof.
+□
+Remark 5.3. The finite subgroup in (5.1) must be retained. For example, type eA4,2
+has a hereditary orientation with a rotation of order two. The above calculation uses
+the general restriction theorem of [10] and the repetition quiver directly; no torsion-free
+formula for the entire affine vertex group is being assumed.
+Proposition 5.4 (Hereditary reduction). Let B be piecewise hereditary of type eAp,q, and
+let H be the model chosen in Remark 5.1. There is a tilting spectroid for B, equivalent
+to H, which is stable up to isomorphisms under every automorphism of B. In particular,
+for every ϕ and every n ≥1,
+T n
+ϕ (B)
+der
+∼T n
+θ (H)
+for some θ ∈Aut(H).
+More precisely, for a chosen standard equivalence F
+:
+Db(mod B) →Db(mod H) with quasi-inverse F −, the induced derived action of θ is
+naturally isomorphic to FΦF −.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+21
+Proof. Choose a standard equivalence F : Db(mod B) →Db(mod H) and a quasi-inverse
+F −. Write F Pic(B)F −1 for the subgroup of DPick(H) obtained by conjugating classes,
+as in Section 1. Conjugation identifies Out0(B) with Out0(H) by [14, Theorem 1].
+Put
+K := qH
+
+F Pic(B)F −1
+.
+Since B is basic, we have Pic(B) = Outk(B). The algebraic group Outk(B) has only
+finitely many connected components, and each of them is a coset of Out0(B). Hence
+Pic(B)/ Out0(B) is finite. Since conjugation by F identifies Out0(B) with Out0(H), it
+induces an isomorphism
+Pic(B)/ Out0(B) ∼= K.
+Therefore K is finite.
+Lemma 5.2 gives K ⊆qH(Pic(H)). Since KerqH = Out0(H) ⊆
+Pic(H), taking inverse images gives the required inclusion:
+F Pic(B)F −1 ⊆q−1
+H (K) ⊆q−1
+H
+
+qH(Pic(H))
+
+= Pic(H).
+Thus every transported automorphism preserves the projective spectroid of H up to
+isomorphism. Let E be the full subcategory of Db(mod B) on the objects F −(Px), where
+Px runs through the indecomposable projective H-modules. This is a tilting spectroid
+equivalent to H. For each ϕ ∈Aut(B), the inclusion just proved gives an automorphism
+θ ∈Aut(H), with induced derived functor Θ, and a natural isomorphism
+FΦF −∼= Θ,
+hence
+ΦF −∼= F −Θ.
+Since Θ permutes the projectives up to isomorphism, this proves that E is Φ-stable.
+The same E works for every ϕ, but no coherent action of the whole automorphism group
+is needed: Proposition 2.2 is applied separately to the cyclic action generated by the
+chosen ϕ.
+□
+Proof of Theorem 1.2 for twisted extensions. Recall that
+Λ = T n
+ϕ (B),
+Λ′ = T n′
+ψ (B′).
+Here B and B′ are piecewise hereditary algebras of affine type, ϕ ∈Aut(B), ψ ∈Aut(B′),
+and n, n′ ≥1.
+(1) ⇒(2). As in the proof of Theorem 4.6, this follows from Rickard’s theorem [11]: a
+derived equivalence between selfinjective algebras induces a triangle equivalence between
+their stable module categories.
+(2) ⇒(3). Suppose that Λ and Λ′ are stably equivalent. The tree cases and their
+separation from type eA were handled in Section 3. We may therefore assume that both
+B and B′ have type eA. Apply Proposition 5.4 to (B, ϕ). There are a chosen hereditary
+model H and an automorphism ϕ0 ∈Aut(H) such that
+Λ = T n
+ϕ (B)
+der
+∼T n
+ϕ0(H) =: E.
+Apply the same proposition separately to (B′, ψ). There are a chosen hereditary model
+H′ and an automorphism ψ0 ∈Aut(H′) such that
+Λ′ = T n′
+ψ (B′)
+der
+∼T n′
+ψ0(H′) =: E′.
+By (1) ⇒(2), these reduction equivalences also induce stable equivalences. Hence E
+and E′ are stably equivalent. By Proposition 4.7, H and H′ have the same hereditary
+type ∆, and n = n′. Since we use the fixed model for each type, we have H = H′ = H∆.
+The implication (2) ⇒(3) of Theorem 4.6 now shows that the derived autoequivalences
+induced by ϕ0 and ψ0 are conjugate in DPick(H∆). By Proposition 5.4, their conjugacy
+
+
+22
+HIDETO ASASHIBA
+classes are precisely those obtained by transporting the original actions of ϕ and ψ.
+Thus all three components of the two triples agree, and hence typaff(Λ) = typaff(Λ′).
+(3) ⇒(1). Suppose that typaff(Λ) = typaff(Λ′). Thus B and B′ have the same hereditary
+type ∆, n = n′, and the third components of their triples agree. The tree-type case was
+proved in Section 3. We may therefore assume that ∆has type eA.
+Apply Proposition 5.4 to (B, ϕ), using the chosen hereditary algebra H∆. There is an
+automorphism ϕ0 ∈Aut(H∆) such that
+Λ = T n
+ϕ (B)
+der
+∼T n
+ϕ0(H∆) =: E.
+Apply the same proposition separately to (B′, ψ), using the same H∆. There is an
+automorphism ψ0 ∈Aut(H∆) such that
+Λ′ = T n′
+ψ (B′)
+der
+∼T n′
+ψ0(H∆) =: E′.
+By Proposition 5.4, the derived autoequivalences induced by ϕ0 and ψ0 represent
+the third components of the original triples. Since these components agree, the two
+induced autoequivalences are conjugate in DPick(H∆). By the implication (3) ⇒(1) of
+Theorem 4.6, we have E
+der
+∼E′. Therefore (1) follows because
+Λ
+der
+∼E
+der
+∼E′ der
+∼Λ′.
+We now prove that the triple in Definition 1.1 is independent of the chosen presentation.
+Suppose that an algebra A has two presentations as twisted multifold extensions:
+A ∼= T n
+ϕ (B),
+A ∼= T n′
+ψ (B′).
+Then T n
+ϕ (B) and T n′
+ψ (B′) are isomorphic, and hence stably equivalent. Applying (2) ⇒
+(3), which we have just proved, we obtain
+(∆, n, [γB,ϕ]) = (∆′, n′, [γB′,ψ]),
+where ∆and ∆′ are the hereditary types of B and B′, respectively. Thus the two
+presentations give the same triple, as required.
+□
+6. Explicit parameters in type eA
+The preceding sections establish the type as a complete invariant for derived and stable
+equivalence of twisted multifold extensions. Our next aim is to determine explicitly all
+types that actually occur. In this section we treat the affine types ˜A; the affine types ˜D
+and ˜E are treated in Section 7. Since the folding number can be any positive integer, it
+remains to determine the possible third components of the type. For each affine type ∆,
+we start with the set
+S∆:=
+n
+γB,ϕ
+ B is piecewise hereditary of type ∆, ϕ ∈Aut(B)
+o
+⊆DPick(H∆),
+where γB,ϕ is defined using the standard equivalences chosen in Section 1. Our task is to
+determine the set of conjugacy classes represented by these elements. By Proposition 5.4,
+n
+[γ] | γ ∈S∆
+o
+=
+n
+[x] | x ∈Pick(H∆)
+o
+,
+where all conjugacy classes are taken in DPick(H∆). Indeed, the hereditary reduction
+allows each transported twist to be represented by an ordinary automorphism of H∆.
+Conversely, since H∆is basic, every element of Pick(H∆) comes from such an auto-
+morphism and is realized by taking B = H∆. We determine this set in three steps.
+First, we describe the elements of Pick(H∆) = Outk(H∆) by explicit parameters. Next,
+we determine their conjugacy classes within Pick(H∆). Finally, we determine whether
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+23
+distinct classes obtained in this way become identified under conjugation in the larger
+group DPick(H∆). This last step is necessary because the third component of the type
+is a conjugacy class in the derived Picard group, not merely in the Picard group.
+For twists that rescale arrows, we define the scalar coordinate λ ∈k× by fixing a
+direction around the underlying cycle. Take the product of the arrow scalars along this
+direction, using the inverse scalar when an arrow points against it. This product is
+called the holonomy. Reversing the chosen direction replaces λ by λ−1. We keep the
+direction fixed when comparing parameters. The cases p > q = 1 (the bypass case) and
+p = q = 1 (the Kronecker case) can also have twists that mix paths or arrows; their
+parameters are described separately below.
+Theorem 6.1. For fixed ∆= eAp,q and n ≥1, the derived equivalence classes, equivalently
+the stable equivalence classes, are parametrized by
+Type
+Parameter set
+p > q > 1, d = gcd(p, q)
+k× × Z/dZ
+p = q = m > 1
+(k× × Z/mZ)/∼⊔{R}
+p > q = 1
+k× ⊔{J}
+p = q = 1
+k×/(λ ∼λ−1) ⊔{J}
+Here Z/dZ and Z/mZ record the finite rotation exponent. In the second row there is
+one simultaneous identification:
+(λ, a) ∼(λ−1, −a).
+Thus the two coordinates cannot be inverted independently. The symbol R denotes the
+single reflection class. The symbol J denotes the nonidentity unipotent class, whose
+representatives are given below. The identity is represented by scalar 1 and, when there
+is a rotation coordinate, exponent 0. The symbol ⊔means that the displayed extra class
+is added as a separate point.
+We prove the four rows of Theorem 6.1 in the following four subsections, respectively.
+For the first row, we first compute the group in Lemma 6.2.
+6.1. The mesh group when p, q > 1. Let H = kQ be the chosen hereditary algebra.
+As in Proposition 2.3, let B be the full subcategory of Db(mod H) obtained by choosing
+one representative of each isomorphism class of indecomposable objects in the transjective
+component containing the projective H-modules.
+Lemma 6.2. If p, q > 1, the full component automorphism group is
+Outk(B) ∼=
+
+
+
+k× × L(p, q),
+p > q,
+(k× × L(m, m)) ⋊⟨s⟩,
+p = q = m,
+(6.1)
+where, in the second line, s(λ, x, y)s = (λ−1, y, x).
+Proof. The vertex group was computed in Lemma 5.2. We describe its kernel and its lift
+to the mesh category. In the grid model of the repetition, the two families of arrows are
+related by the mesh squares; the periodic identification has relatively directed lengths p
+and q. For p, q > 1 there is no path of length greater than one with the same endpoints
+as an arrow. Indeed a second path would change the two nonnegative step counts by a
+nonzero multiple of (p, −q), starting from (1, 0) or (0, 1), which is impossible with both
+p, q > 1. Consequently an object-fixing mesh automorphism only rescales arrows.
+
+
+24
+HIDETO ASASHIBA
+Preserving each mesh relation says that the products of the rescaling factors along
+its two sides are equal. Modulo rescaling at vertices, these are multiplicative cocycles
+on the square complex of the repetition. Its universal cover is the grid and its periodic
+quotient is a cylinder, so the remaining datum is its single multiplicative holonomy, an
+element of k×. Equivalently, one can propagate a vertex rescaling along a spanning tree
+and use the mesh squares to leave exactly the product around the cycle.
+There is a splitting on the vertex group: send every arrow to the arrow with the
+transported endpoints. There are no parallel arrows in this case. These literal quiver
+actions preserve the polarization and the mesh sums and satisfy the same group relations
+as their vertex permutations. Translations preserve the holonomy, whereas a reversal
+inverts it. This proves (6.1).
+□
+For the periodic unbalanced orientation, every ordinary twist modulo inner automor-
+phisms is λra, with a ∈Z/dZ. The group in the first line of (6.1) is abelian. The extra
+shift factor in (2.3) is central. Thus two such twists are derived conjugate if and only if
+both λ and a are equal. This proves the first row of Theorem 6.1.
+6.2. Balanced type and simultaneous conjugacy. Let p = q = m > 1. Ordinary
+twists on the alternating model of Remark 5.1 have the forms λra and λras. Here
+r = xy−1 has order m, and
+xsx−1 = rs.
+(6.2)
+First consider twists of the form λra. Conjugation by the abelian normal subgroup fixes
+them. The reflection s reverses both the cycle direction and the rotation:
+sλs−1 = λ−1,
+srs−1 = r−1,
+s(λra)s−1 = λ−1r−a.
+Hence the same conjugation changes both coordinates.
+λra
+λ−1r−a
+conjugation by s
+(λ, a)
+(λ−1, −a)
+These are exactly the identifications in the second row of the table.
+Next consider twists of the form λras. Since s reverses the direction around the cycle,
+we have sts−1 = t−1 for every t ∈k×. Hence
+t(λras)t−1 = tλra(st−1) = tλrats = t2λras.
+Choose t with t2 = λ−1. Such a nonzero t exists because k is algebraically closed, also
+in characteristic two. This makes the scalar equal to 1. Relation (6.2) then changes a
+by one, so every exponent can be reduced to zero. All reflection twists therefore belong
+to the one class R. This proves the second row.
+Example 6.3. For m = 3 over C, we show directly that 2r and 2r2 are not conjugate
+in DPick(H). Put A = k× × L(3, 3). By Proposition 2.3 and Lemma 6.2, we have
+DPick(H) ∼= (A ⋊⟨s⟩) × Z.
+The shift factor Z is central, so it does not affect conjugation. Every element of A ⋊⟨s⟩
+has the form h or hs for some h ∈A. Since A is abelian, for every h ∈A we have
+h(λra)h−1 = λra
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+25
+and
+(hs)(λra)(hs)−1 = h
+
+s(λra)s−1
+h−1
+= h(λ−1r−a)h−1
+= λ−1r−a.
+Thus the conjugacy classes of 2r and 2r2 in DPick(H) are, respectively,
+{2r, (1/2)r2},
+{2r2, (1/2)r}.
+Here we use r3 = 1. Since r has order 3 and 2̸ = 1/2 in C, these two conjugacy classes
+are distinct. In terms of the parameters, they are
+{(2, 1), (1/2, 2)},
+{(2, 2), (1/2, 1)}.
+However, the graph parts r and r2 are conjugate by s, and the scalar parts of 2r and 2r2
+are both 2. Thus recording the graph conjugacy class and the scalar modulo inversion
+separately does not distinguish these two conjugacy classes in DPick(H). The reason is
+that conjugation by s inverts both parts simultaneously:
+s(λra)s−1 = λ−1r−a.
+Therefore these two separate data do not form a complete invariant.
+The graph component corresponds to the third component of [1, Definition 8.2], and is
+given by a conjugacy class. Its order alone is insufficient. In the balanced case, the graph
+component and the scalar are transformed by the same conjugation, as the example
+above shows.
+6.3. The bypass case p > q = 1. Let H = kQ be the path category of the quiver Q
+with objects 0, 1, . . . , p, arrows αi : i −1 →i for 1 ≤i ≤p, and an additional arrow
+b : 0 →p. Let P be the path from 0 to p consisting of α1, . . . , αp. Thus H(0, p) has
+basis b, P. We first determine the conjugacy classes in Pick(H), and then show that
+distinct such classes remain distinct in DPick(H).
+(1) Automorphisms of the category and their conjugacy classes. Since H(i, j)̸ =
+0 if and only if i ≤j, every automorphism of H fixes every object. First consider
+any k-linear endomorphism ϕ of H that fixes every object, without assuming that ϕ is
+invertible. Since H(i −1, i) = kαi, there is a scalar ci ∈k such that
+ϕ(αi) = ciαi
+(1 ≤i ≤p).
+Similarly, since b and P form a basis of H(0, p), there are scalars d, e ∈k such that
+ϕ(b) = db + eP.
+Since ϕ preserves composition, the first formula also gives
+ϕ(P) = (c1 · · · cp)P.
+Now suppose that ϕ is an automorphism. Its restriction to each one-dimensional space
+H(i −1, i) is invertible, so ci̸ = 0 for every i. Its restriction to H(0, p) is also invertible.
+If d = 0, then both ϕ(b) and ϕ(P) would belong to the one-dimensional subspace kP,
+contradicting this invertibility. Hence d̸ = 0 as well. Thus, for an automorphism, the
+coefficients satisfy ci, d ∈k× and e ∈k.
+We normalize ϕ up to natural isomorphism. Choose ti ∈k× for 0 ≤i ≤p, and define
+an automorphism ψ of H by
+ψ(i) = i,
+ψ(f) = tj
+ti
+ϕ(f)
+for f ∈H(i, j).
+
+
+26
+HIDETO ASASHIBA
+The components
+ηi = ti1i : ϕ(i) −→ψ(i)
+define a natural isomorphism η : ϕ =⇒ψ. Indeed, for every f ∈H(i, j), we have
+ψ(f)ηi = tj
+ti
+ϕ(f)ti1i = tj1jϕ(f) = ηjϕ(f),
+which is precisely the naturality condition.
+For each a ∈k× and v ∈k, let ϕa,v be the automorphism fixing all objects and given
+on arrows by
+ϕa,v(α1) = aα1,
+ϕa,v(αi) = αi
+(2 ≤i ≤p),
+ϕa,v(b) = b + vP.
+In particular, ϕa,v(P) = aP. We now choose the scalars ti so that ψ has one of these
+normal forms. To ensure that ψ(αi) = αi for 2 ≤i ≤p and that the coefficient of b in
+ψ(b) is 1, we require
+ti
+ti−1
+= c−1
+i
+(2 ≤i ≤p),
+tp
+t0
+= d−1.
+These conditions can be satisfied by setting t0 = 1, tp = d−1, and defining ti−1 = citi
+successively for i = p, p −1, . . . , 2. With this choice, ψ = ϕa,v, where
+a = c1 · · · cp
+d
+,
+v = e
+d.
+Here d and e are the coefficients in ϕ(b) = db + eP. Thus every automorphism of H is
+naturally isomorphic to one of these normalized automorphisms.
+The parameters of a normalized automorphism are uniquely determined by its natural-
+isomorphism class. Indeed, suppose that
+η : ϕa,v =⇒ϕa′,v′
+is a natural isomorphism. Since H(i, i) = k1i, its components have the form ηi = ti1i,
+where ti ∈k×. Naturality for b gives
+t0(b + v′P) = tp(b + vP).
+Comparing the coefficients of b gives t0 = tp, and comparing the coefficients of P then
+gives v = v′. Naturality for αi, with 2 ≤i ≤p, gives ti−1 = ti. Hence
+t0 = t1 = · · · = tp.
+Finally, naturality for α1 gives
+a′t0 = at1,
+and therefore a′ = a. Conversely, equal parameters give the same automorphism. This
+proves the uniqueness of the parameters.
+We write (a, v) for the element of Pick(H) represented by ϕa,v. Composition and
+inversion are given by
+(a, v)(a′, v′) = (aa′, v + av′),
+(a, v)−1 = (a−1, −a−1v).
+This is also the multiplication law for the affine transformations z 7→az + v. Their
+group is denoted by Aff1(k). Thus
+Pick(H) ∼= Aff1(k).
+This description agrees with [10, Theorem 4.5(2)].
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+27
+For every (c, w) ∈Aff1(k), we obtain
+(c, w)(a, v)(c, w)−1 = (a, cv + (1 −a)w).
+(6.3)
+The following formulas give a representative of each conjugacy class:
+(1, −v/(1 −a))(a, v)(1, v/(1 −a)) = (a, 0)
+(a̸ = 1),
+(1, 0) = 1l,
+(v−1, 0)(1, v)(v, 0) = (1, 1)
+(v̸ = 0).
+(6.4)
+Conjugation preserves a, and the identity cannot be conjugate to a nonidentity element.
+Therefore a complete set of representatives of the conjugacy classes in Pick(H) is
+(a, 0)
+(a ∈k×),
+(1, 1).
+The class represented by (1, 1) is denoted by J. Its representative fixes every αi and
+sends b to b + P.
+(2) Conjugation in the derived Picard group. We show that conjugation in
+DPick(H) gives no further identifications among the classes found in (1). It remains to
+show that conjugation in DPick(H) gives no further identifications among the conjugacy
+classes in Pick(H). Our strategy is to use the algebraic group structure to control this
+conjugation action. More precisely, we will show that its restriction to the translation
+subgroup U = {(1, u) | u ∈k} is multiplication by a nonzero scalar. The conjugation
+relation between G and U will then force the first coordinate a to be preserved. Together
+with (6.4), this will imply that each conjugacy class is preserved.
+For this purpose, we use [14, Theorem 1], which states that conjugation by an element
+of DPick(H) restricts to an automorphism of the algebraic group Out0(H). To apply
+this theorem to the whole group G = Pick(H), we first show that Pick(H) = Out0(H).
+Since H is basic, we may make the identification Pick(H) = Outk(H); see Appendix B.
+The normalization in (1) gives an isomorphism
+Outk(H) ∼= Aff1(k)
+also as algebraic groups. Indeed, the normalized parameters
+a = c1 · · · cp
+d
+,
+v = e
+d
+are regular functions on the group of object-fixing automorphisms, since d̸ = 0. They
+are constant on natural-isomorphism classes. The inverse parametrization is induced
+by the regular family of normalized automorphisms (a, v) 7→ϕa,v. Thus the underlying
+variety of Outk(H) is k× × k, which is connected. Consequently,
+Out0(H) = Outk(H) = Pick(H).
+Put G = Aff1(k), identified with this subgroup of DPick(H), and put
+U = {(1, u) | u ∈k}.
+The group U consists of the translations z 7→z + u.
+First we show that U is the commutator subgroup of G. The map G →k×, (a, v) 7→a,
+is a group homomorphism with kernel U, where k× is abelian. Hence every commutator
+belongs to U. Conversely, choose c0 ∈k× with c0̸ = 1; such an element exists because k
+is algebraically closed. For every w ∈k, we have
+(c0, 0)(1, w)(c0, 0)−1(1, w)−1 = (1, (c0 −1)w).
+For every u ∈k, taking w = u/(c0 −1) expresses (1, u) as a commutator. This proves
+the assertion. In particular, every group automorphism of G preserves U.
+
+
+28
+HIDETO ASASHIBA
+Now take any F ∈DPick(H). By [14, Theorem 1], conjugation by F induces an
+automorphism of algebraic groups
+θ : G →G,
+g 7−→FgF −1,
+where we use G ∼= Out0(H). We use the algebraic nature of θ only in the following step.
+Since θ(U) = U, there is a bijection f : k →k such that
+θ(1, u) = (1, f(u))
+for every u ∈k.
+The coordinate u identifies U with the affine line. Here we use the fact that θ is an
+automorphism of algebraic groups, not merely of abstract groups. Since U ∼= A1
+k and
+both θ and θ−1 are morphisms of algebraic varieties, the induced map f and its inverse
+are polynomial maps. Their composite is the identity polynomial, so
+deg(f) deg(f −1) = 1.
+Thus f has degree one. Since θ preserves the identity, f(0) = 0. Therefore, f(u) = cu
+for some c ∈k×. Consequently,
+θ(1, u) = (1, cu)
+for every u ∈k.
+This argument is valid in every characteristic.
+Let g = (a, v) ∈G, and write θ(g) = (a′, v′). For every u ∈k, direct calculation gives
+g(1, u)g−1 = (1, au).
+Applying θ to both sides, we obtain
+(1, cau) = θ
+
+g(1, u)g−1
+= θ(g)(1, cu)θ(g)−1
+= (1, a′cu).
+Taking u = 1 and using c̸ = 0, we obtain a = a′. Thus θ preserves the first coordinate.
+We now apply (6.4) to the images of the representatives found in (1).
+• For a̸ = 1, write θ(a, 0) = (a, v′). The first formula shows that θ(a, 0) is conjugate
+in G to (a, 0).
+• Since θ is a group automorphism, θ(1, 0) = (1, 0).
+• We have θ(1, 1) = (1, c) with c̸ = 0. The third formula, applied with v = c, shows
+that θ(1, 1) is conjugate in G to (1, 1).
+Thus, in each of the three cases, the image under θ of the chosen representative is
+conjugate in G to that representative. Hence θ sends each conjugacy class in G = Pick(H)
+to itself. Since F ∈DPick(H) was arbitrary and θ(g) = FgF −1, conjugation in DPick(H)
+gives no further identifications among these classes. Therefore the representatives found
+in (1) give exactly the conjugacy classes in DPick(H) that meet Pick(H). This proves
+the third row of Theorem 6.1.
+6.4. The Kronecker case. Under the decomposition in (5.3), Pick(H) corresponds to
+{0} × PGL2(k). For any z ∈Z2 and h, x ∈PGL2(k), we have
+(z, h)(0, x)(z, h)−1 = (0, hxh−1).
+Thus conjugation in DPick(H) gives no further identifications among elements of Pick(H)
+beyond conjugation in Pick(H) itself. It therefore suffices to determine the conjugacy
+classes in PGL2(k).
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+29
+For A ∈GL2(k), write [A] for its image in PGL2(k). Then [A] and [B] are conjugate
+if and only if B = cPAP −1 for some P ∈GL2(k) and c ∈k×. Since k is algebraically
+closed, Jordan normal form gives the following two cases.
+(1) Diagonalizable matrices. Let α, β ∈k× be the eigenvalues of A. By conjugation
+and multiplication by β−1, we obtain the representative
+Dλ =
+"
+λ
+0
+0
+1
+#
+,
+λ = α/β ∈k×.
+Conjugation preserves the unordered pair of eigenvalues, and multiplication by a nonzero
+scalar preserves their ratio. Thus [Dλ] and [Dµ] are conjugate if and only if µ = λ or
+µ = λ−1, the latter possibility corresponding to interchanging the two eigenvalues. The
+value λ = 1 gives the identity class.
+(2) Non-diagonalizable matrices. In this case, A is conjugate to a single Jordan block
+with a nonzero eigenvalue. Multiplication by a nonzero scalar followed by conjugation
+gives the representative
+J =
+"
+1
+1
+0
+1
+#
+.
+Thus all non-diagonalizable matrices represent a single conjugacy class in PGL2(k),
+namely the nontrivial unipotent class represented by J.
+Since diagonalizability is preserved by conjugation and multiplication by a nonzero
+scalar, the class in (2) is distinct from every class in (1). The two cases exhaust all
+invertible 2 × 2 matrices, so the classes listed above exhaust all conjugacy classes in
+PGL2(k). This classification is valid in arbitrary characteristic and proves the last row
+of Theorem 6.1.
+7. The finite parameters in the affine tree types
+We now list all possible third components of the type for the affine tree types. These
+are conjugacy classes in DPick(H∆), as in Definition 1.1.
+By Section 3, they are
+parametrized by those conjugacy classes in Aut(∆) that have representatives in Aut0(∆),
+via
+σ 7−→[γH∆,kσ].
+The table lists representatives σ of these graph conjugacy classes. The last column gives
+the number of corresponding realizable conjugacy classes in DPick(H∆).
+Type
+∆
+Representatives of realizable
+graph classes: σ
+Number of
+classes
+f
+D4
+1, (12), (12)(34), (123), (1234) in S4
+5
+f
+Dr, even r ≥6
+1, a, ab, s, as
+5
+f
+Dr, odd r ≥5
+1, a, ab
+3
+eE6
+1, (12), (123) in S3
+3
+eE7
+1, the nontrivial symmetry
+2
+eE8
+1
+1
+Here, for f
+Dr with r ≥5, a and b exchange the two terminal leaves at the two respective
+forks, and s interchanges the forks. The graph automorphism group has presentation
+⟨a, b, s | a2 = b2 = s2 = 1, ab = ba, sas = b⟩
+
+
+30
+HIDETO ASASHIBA
+and conjugacy classes
+{1},
+{a, b},
+{ab},
+{s, abs},
+{as, bs}.
+For even r there is a central vertex, fixed by the whole group. For odd r the last two
+classes exchange the endpoints of the central edge and have no fixed vertex. They
+therefore do not occur as ordinary twists on an admissible orientation. Nevertheless the
+ambient conjugacy group remains the full graph automorphism group, so a and b are
+identified. For f
+D4, permutation of the four leaves gives S4. For eE6, permutation of the
+three equal arms gives S3; the other two exceptional diagrams give the groups shown.
+Each representative σ in the table and each positive integer n give the type
+
+∆, n, [γH∆,kσ]
+
+.
+Remark 7.1. In the representation-finite classification, the third component of the
+type is given by the torsion order. In the present setting, however, the order of the
+graph automorphism does not suffice: its conjugacy class must be retained. For example,
+in type f
+D4, the automorphisms (12) and (12)(34) both have order two but belong to
+distinct conjugacy classes in S4. Both classes are realizable and, for the same positive
+integer n, give distinct types.
+8. Generalized multifold extensions
+Let g ∈Aut( bB) have nonzero integer jump. Replace g by g−1 if necessary, so that its
+jump is n > 0. This leaves the orbit algebra unchanged because ⟨g⟩= ⟨g−1⟩. Thus g
+moves every layer by the positive integer n, as in Section 2. The notation g is reserved for
+this automorphism of the repetition; ϕ continues to denote an ordinary automorphism
+of B. A general g need not have the form bϕνn
+B.
+To extract an ordinary automorphism, first remove the jump on the right and then
+restrict to the zeroth layer. With the layer embeddings 1[i] : B −→B[i], put
+g0 := (1[0])−1gν−n
+B 1[0] ∈Aut(B).
+The order in this formula is part of the convention:
+B
+1[0]
+−−−→B[0]
+ν−n
+B
+−−−→B[−n]
+g
+−−→B[0]
+(1[0])−1
+−−−−−→B.
+For g = bϕνn
+B, this gives g0 = ϕ. For a general g, we do not assume that g and νB
+commute on morphisms. The definition of g0 follows the convention in [5].
+Theorem 8.1 (Asashiba–Kimura–Nakashima–Yoshiwaki). Let B be piecewise hereditary.
+Choose the positive-jump generator g ∈Aut( bB) of the cyclic action, with jump n > 0.
+For the automorphism g0 defined above, there is an isomorphism of Z-graded categories
+bB/⟨g⟩∼= T n
+g0(B).
+(8.1)
+Proof. This is [5, Corollary 5.3]. Its hypothesis is that B is piecewise hereditary; there
+is no tree hypothesis in the statement. The proof uses the absence of nonzero oriented
+cycles from [5, Lemma 5.2], followed by [5, Corollary 4.7].
+□
+The cited result allows any nonzero integer jump. We use its positive-jump case, so the
+right-hand side is exactly the twisted extension defined in Section 2. The automorphism
+g0 is always computed after choosing the positive-jump generator. The automorphism
+g0 is defined on morphisms as well as on objects; we retain its full action on B, not
+merely its permutation of the objects.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+31
+Corollary 8.2. For generalized multifold extensions of piecewise hereditary algebras of
+the types listed in formula (1.1), with nonzero integer jump, choose the positive-jump
+generator g and let Φ0 be the standard autoequivalence induced by g0. The complete
+derived and stable equivalence invariant is
+
+∆, n, [cl(FΦ0F −)]
+
+,
+n > 0.
+Here F is a standard derived equivalence from B to the chosen hereditary model H∆,
+and F −is its chosen quasi-inverse. The symbol cl takes the natural-isomorphism class
+of the autoequivalence. The brackets then take its conjugacy class in DPick(H∆), as in
+Section 1. The explicit third components are those of Theorem 6.1 and Section 7.
+Proof. Choose the positive-jump generator and apply Theorem 8.1. An isomorphism of
+graded categories is also an isomorphism after forgetting the grading. Apply Theorem 1.2
+to the resulting twisted extensions. This proves the assertion and makes the invariant
+independent of the chosen presentation. Conversely, every representative in the tables is
+a twisted extension and hence is a generalized extension. This proves the last assertion
+of Theorem 1.2.
+□
+The tree-type generalized classification of [4] is consistent with this statement. Its
+tree-specific reduction to the action on objects should not be used in type eA. In that type,
+the morphism action can retain a scalar parameter. The isomorphism in formula (8.1)
+reduces the classification to that of T n
+g0(B), with the full automorphism g0 retained. In
+particular, it does not replace g0 by its action on objects alone.
+9. Consequences and examples
+Example 9.1 (The two-arm scalar family). Let B be the path algebra of two paths
+from a common source to a common sink, of lengths p and q, with p > q > 1. Let ϕλ fix
+the vertices and all arrows except one arrow on the first path, which it multiplies by
+λ ∈k×. Normalize the cycle holonomy so that this twist has coordinate λ. Then
+T n
+ϕλ(B)
+der
+∼T n′
+ϕµ(B)
+⇐⇒
+n = n′ and λ = µ.
+(9.1)
+These twists have trivial finite rotation component. The same criterion holds for stable
+equivalence. In particular it applies to the two-arm (3, 2) family. Here dimk B = 14, so
+its one-fold extensions have dimension 28.
+Corollary 9.2. Let Λλ (λ ∈k×) be the algebras of [7]. For λ, µ ∈k×, the following are
+equivalent:
+(1) Λλ
+der
+∼Λµ;
+(2) the algebras Λλ and Λµ are stably equivalent;
+(3) λ = µ.
+Proof. By the proof of [7, Proposition 2.1],
+Λλ ∼= T 1
+ϕλ(B),
+where B is hereditary of type eA3,2 and ϕλ multiplies one arrow on the path of length
+3 by λ and fixes the other arrows and all vertices. Choose the direction around the
+underlying cycle so that the scalar parameter of this automorphism is λ. Since 3 > 2 > 1
+and gcd(3, 2) = 1, the first row of Theorem 6.1 has only this scalar parameter. Two
+such parameters represent the same conjugacy class if and only if they are equal. The
+assertion follows from Theorem 1.2.
+□
+
+
+32
+HIDETO ASASHIBA
+Example 9.3 (Equal arms). For the analogous diagonal family with p = q = m > 1,
+the rotation component is again zero, and the criterion becomes
+n = n′,
+λ = µ or λ = µ−1.
+Once a nontrivial rotation is allowed, this must be replaced by the joint relation
+(λ, a) ∼(λ−1, −a), as in Theorem 6.1.
+Remark 9.4 (The folding number and the return action). The folding number and the
+scalar are different parts of the invariant:
+n = number of layers in the orbit,
+λ = scalar coordinate of the twist.
+Equation (4.3) recovers the twist itself from the nth power of the Nakayama functor. It
+does not replace λ by λn. Thus the scalar identifications remain those in Theorem 6.1,
+for each folding number.
+Remark 9.5 (Scope of the invariant). The invariant uses a full functor on a full
+transjective component. It is therefore finer than the induced permutation of the stable
+Auslander–Reiten vertices. The classification also does not assert that the ordinary
+Hochschild cohomology algebra is a complete invariant.
+Appendix A. Equivariant repetitive tilting
+We first recall the gluing theorem used in this appendix. Here I is a small category,
+and k-Cat denotes the 2-category of small k-linear categories.
+The 1-morphisms and 2-morphisms in this 2-category are k-linear functors and natural
+transformations, respectively. A colax functor assigns categories X (i) and functors
+X (a) : X (i) →X (j) to arrows a : i →j, together with natural transformations
+X (1i) ⇒IdX (i),
+X (ba) ⇒X (b)X (a),
+satisfying the unit and associativity coherence axioms. An ordinary functor is the case
+in which these transformations are identities. In the application below, I = Z has one
+object, and the functors are given by powers of an automorphism.
+The Grothendieck construction has objects (i, x), with x ∈X (i), and morphism
+spaces
+Gr(X )((i, x), (j, y)) =
+M
+a∈I(i,j)
+X (j)(X (a)x, y).
+Composition uses the functors and the colax structure maps; for a group action it
+is the orbit composition specified in Section 2. For general small categories, derived
+equivalence in the following theorem refers to the derived categories D(Mod -) of all
+right modules. The finite-dimensional orbit algebras below are considered with their
+bounded derived categories of finite-dimensional modules.
+A colax functor X : I →k-Cat is called k-flat if, for every object i of I and all
+objects x, y of X (i), the morphism space X (i)(x, y) is a flat k-module. In particular,
+this condition is automatic when k is a field.
+Theorem A.1 ([3], Theorem 8.2). Let X , X ′ : I →k-Cat be colax functors, and
+assume that X is k-flat. If there is a tilting colax functor T for X which is equivalent
+to X ′ as a colax functor, then Gr(X ) and Gr(X ′) are derived equivalent.
+Here a tilting colax functor for X is a colax subfunctor T of K b(prj X ) such that
+each T (i) is a tilting subcategory of K b(prj X (i)) and the inclusion T →K b(prj X )
+is I-equivariant; see [3, Definition 7.4]. The equivariance data consist of coherent natural
+isomorphisms, rather than strict equalities.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+33
+We apply this theorem to the actions of Z on the repetitive categories defining the
+twisted multifold extensions. The main task is therefore to construct an equivariant
+tilting subcategory over one repetitive category which is equivariantly equivalent to the
+other. The proposition below carries out this construction.
+Proposition A.2. Let U : Db(mod C) →Db(mod B) be a standard derived equivalence,
+and suppose that ϕ ∈Aut(B) and ψ ∈Aut(C) satisfy ΦU ∼= UΨ naturally. Then T n
+ϕ (B)
+and T n
+ψ(C) are derived equivalent for every n ≥1.
+Proof. Fix n ≥1, and put
+gB = bϕνn
+B,
+gC = bψνn
+C.
+Regard Z as a category with one object ∗. Let XB and XC be the functors determined
+by these actions, so that
+XB(∗) = bB,
+XC(∗) = bC.
+Their Grothendieck constructions are the corresponding orbit categories, whose finite
+skeletons are T n
+ϕ (B) and T n
+ψ(C), respectively.
+We will apply Theorem A.1 with
+X = XB,
+X ′ = XC.
+Flatness is automatic because k is a field. Thus it remains to construct a tilting colax
+functor T for XB and an equivalence XC ≃T of colax functors.
+We do this in three steps. First, U and the natural isomorphism ΦU ∼= UΨ give
+equivariant tilting data over the bases B and C. Second, we extend these data to the
+repetitive categories, obtaining a gB-stable tilting subcategory
+bE of K b(prj bB) and
+an equivariant equivalence bC →bE . Finally, we take T (∗) = bE and apply the gluing
+theorem.
+(1) Tilting data over the bases. For x ∈C0, put Px = C(-, x) and choose a bounded
+complex Tx of projective B-modules representing U(Px). Since U is a derived equivalence,
+we have
+K b(prj B)(Tx, Ty[r]) = 0
+(r̸ = 0),
+thick{Tx | x ∈C0} = K b(prj B).
+Choose a natural isomorphism η : ΦU ⇒UΨ. Using ΨPx ∼= Pψx and iterating η and its
+inverse gives
+ΦjTx ∼= Tψjx
+(x ∈C0, j ∈Z).
+Define E to be the full subcategory of K b(prj B) with object set
+E0 = {ΦjTx | x ∈C0, j ∈Z}.
+Every object added to {Tx | x ∈C0} is therefore isomorphic to one of the Tx. Hence E
+is a small tilting subcategory, Φ(E ) = E , and restriction of U to the projective spectroid
+gives an equivalence
+C
+∼
+−−→E ,
+x 7−→Tx.
+We do not require E to be basic.
+The iterates of η are compatible with addition in Z, so this equivalence is Z-equivariant
+for the actions generated by ψ and Φ|E . There is no finite-order relation to check, since
+the acting group is Z, even when ϕ or ψ has finite order.
+
+
+34
+HIDETO ASASHIBA
+(2) Passage to the repetitive categories. We may use formal additive hulls as
+models for the projective categories, so that the actions on complexes are given termwise.
+For i ∈Z, define the additive functor
+Li : prj B −→prj bB,
+B(-, x) 7−→bB(-, x[i]).
+On morphisms between representable projectives, Li is induced by f 7→f [i]; extend it
+to finite direct sums and direct summands. For a complex X, put
+(X[i])r = Li(Xr),
+dr
+X[i] = Li(dr
+X).
+We call X 7→X[i] placement in the ith layer. It does not change cohomological degrees
+and is distinct from the shift X[i]. The terms same-layer and adjacent-layer also apply
+to morphisms X[i] →Y [i] and X[i] →Y [i+1], respectively.
+Let bE be the full subcategory of K b(prj bB) on these complexes.
+The definition of bB gives natural isomorphisms of complexes
+Hom
+•
+b
+B(X[i], Y [j]) ∼=
+
+
+
+
+
+
+
+Hom
+•
+B(X, Y ),
+j = i,
+D Hom
+•
+B(Y, X),
+j = i + 1,
+0,
+j /∈{i, i + 1},
+where the second line uses the usual differential of the dual complex. Since E is tilting,
+these complexes have zero cohomology in every nonzero degree. Moreover, E generates
+K b(prj B), so
+B(-, x) ∈thick(E )
+(x ∈B0).
+For each i ∈Z, the functor X 7→X[i] preserves shifts, triangles, and direct summands.
+Hence
+bB(-, x[i]) =
+
+B(-, x)
+[i]
+∈thick{X[i] | X ∈E }
+⊆thick( bE )
+(x ∈B0).
+As x ∈B0 and i ∈Z vary, the modules bB(-, x[i]) form all the indecomposable projective
+bB-modules, up to isomorphism. Thus
+bE generates K b(prj bB). Hence
+bE is a tilting
+subcategory of K b(prj bB).
+Taking degree-zero cohomology in the displayed formula gives
+K b(prj bB)(X[i], Y [j]) ∼=
+
+
+
+
+
+
+
+E (X, Y ),
+j = i,
+DE (Y, X),
+j = i + 1,
+0,
+j /∈{i, i + 1}.
+These identifications also describe composition. For λ ∈DE (Y, X), a : X′ →X, and
+b : Y →Y ′ in E , the dual bimodule action is
+(bλa)(h) = λ(ahb)
+
+h ∈E (Y ′, X′)
+
+.
+The composite of two adjacent-layer morphisms is zero. Thus bE has the morphisms and
+composition of the repetition of E .
+Write F : C →E for the equivalence constructed in (1), and put
+Fx,y : C(x, y)
+∼
+−−→E (Fx, Fy),
+f 7−→F(f).
+Its extension bF : bC →bE is given on objects by
+bF(x[i]) = (Fx)[i].
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+35
+On same-layer morphisms it uses Fx,y, whereas on adjacent-layer morphisms it uses
+DC(y, x)
+D(F −1
+y,x)
+−−−−−→DE (Fy, Fx),
+λ 7−→λ ◦F −1
+y,x.
+The dual bimodule formula above shows that these maps respect composition. Since F
+is fully faithful and essentially surjective, so is bF.
+We next make the equivariance explicit.
+Let GB denote the autoequivalence of
+K b(prj bB) induced by gB. On the layer placements, we have
+GB(X[i]) = (ΦX)[i+n],
+gC(x[i]) = (ψx)[i+n].
+On same-layer morphisms, GB uses Φ; on adjacent-layer morphisms, it uses the inverse
+dual of the corresponding isomorphism on morphism spaces, together with the shift of the
+layer index by n. Restricting the natural isomorphism chosen in (1) gives η : ΦF ⇒Fψ.
+Define
+bη : GB bF ⇒bFgC,
+bηx[i] = (ηx)[i+n] : (ΦFx)[i+n] −→(Fψx)[i+n].
+Thus its components are obtained by placing the components of η in the appropriate
+layer. Its naturality means that, for every morphism u : z →z′ in bC,
+bF(gCu) bηz = bηz′ GB( bF(u)).
+For same-layer morphisms, this is the naturality of η. For adjacent-layer morphisms, it
+follows from the same naturality identity by the inverse-dual construction above and
+the dual bimodule formula. The construction is independent of the layer index, so it
+commutes with translation of the layers. Iterating bη and its inverse, as in (1), therefore
+makes bF equivariant for the Z-actions generated by gC and gB.
+Finally, Φ(E ) = E and GB(X[i]) = (ΦX)[i+n] give
+GB( bE ) = bE .
+The action on bE is the restriction of GB, so its inclusion into K b(prj bB) is equivariant.
+(3) Application of the gluing theorem. Define the colax functor T by
+T (∗) = bE ,
+T (r) = Gr
+B|b
+E
+(r ∈Z).
+By (2), bE is tilting and its inclusion into K b(prj bB) is equivariant. Thus T is a tilting
+colax functor for XB in the sense of [3, Definition 7.4]. Moreover, the equivariant
+equivalence ( bF, bη) constructed in (2) gives
+XC ≃T
+as colax functors
+by [3, Lemma 7.1]. Since XB is k-flat, all hypotheses of Theorem A.1 are satisfied.
+Hence
+D(Mod Gr(XB)) ≃D(Mod Gr(XC)).
+The two Grothendieck constructions are the orbit categories for gB and gC, with finite
+skeletons T n
+ϕ (B) and T n
+ψ(C), respectively. Passing to these skeletons and restricting the
+resulting tilting equivalence to bounded derived categories gives
+Db(mod T n
+ϕ (B)) ≃Db(mod T n
+ψ(C)).
+This proves the assertion.
+□
+Appendix B. Some standard facts used in the proofs
+We recall some standard facts used in the main text, including the reasons for the
+identifications involved.
+
+
+36
+HIDETO ASASHIBA
+B.1. Picard groups of basic algebras. For a finite-dimensional k-algebra B, let
+Pick(B) denote the group of isomorphism classes of invertible k-central B-B-bimodules,
+with multiplication induced by ⊗B. Here k-central means that the two actions of k
+agree. For ϕ ∈Autk(B), write 1Bϕ for the bimodule whose underlying vector space is B
+and whose actions are
+b · x · c = bxϕ(c).
+Proposition B.1. If B is basic, the assignment ϕ 7→1Bϕ induces an isomorphism
+Outk(B)
+∼
+−−→Pick(B).
+Proof. We use left modules in this proof. First, the bimodule isomorphism
+1Bϕ ⊗B 1Bψ −→1Bϕψ,
+x ⊗y 7−→xϕ(y),
+shows that the assignment is a group homomorphism.
+We next show where the assumption that B is basic enters. Let M be an invertible
+k-central B-B-bimodule. The functor F = M ⊗B −is an equivalence of left module
+categories, so it permutes the isomorphism classes of indecomposable projective modules.
+Since B is basic, its left regular module has a decomposition
+BB ∼= P1 ⊕· · · ⊕Pr,
+where the Pi represent all these classes, each occurring exactly once. Consequently,
+BM ∼= F(BB) ∼=
+r
+M
+i=1
+F(Pi) ∼=
+r
+M
+i=1
+Pi ∼= BB.
+Choose such a left module isomorphism and use it to transport the right action of B
+on M to B. Every endomorphism of the left regular module is right multiplication by a
+unique element of B. Thus the transported action has the form
+x · b = xϕ(b)
+for a unital k-algebra homomorphism ϕ : B →B. Moreover, full faithfulness of F gives
+an isomorphism
+EndB(BB)
+∼
+−−→EndB(BM),
+which sends right multiplication by b on B to the right action of b on M. Under the
+chosen identification BM ∼= BB, this is precisely the map induced by ϕ. Hence ϕ is an
+automorphism and M ∼= 1Bϕ. This proves surjectivity.
+Finally, a left module isomorphism 1Bϕ →1Bψ has the form x 7→xu for a unit
+u ∈B×. It is a bimodule homomorphism if and only if
+ϕ(b)u = uψ(b)
+for every b ∈B,
+or equivalently ψ(b) = u−1ϕ(b)u. Thus the two bimodules are isomorphic exactly when
+ϕ and ψ have the same image in Outk(B). This proves the assertion.
+□
+This is the isomorphism underlying the identification Outk(B) = Pick(B) in the main
+text. For the right-module convention used there, the corresponding autoequivalence is
+X 7−→X ⊗B ϕB1,
+where ϕB1 has left action b · x = ϕ(b)x and the usual right action. It is the inverse
+bimodule of 1Bϕ. With this convention, multiplication of automorphisms corresponds to
+composition of autoequivalences.
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+37
+We also explain the categorical interpretation. Choose a complete set e1, . . . , er of
+primitive orthogonal idempotents of B, and let C be the category with objects 1, . . . , r
+and
+C (i, j) = ejBei.
+A categorical automorphism of C gives an algebra automorphism of B that permutes
+the chosen idempotents.
+Every outer automorphism class has such a representative. Indeed, for α ∈Autk(B),
+put fi = α(ei). Since B is basic, there is a permutation σ such that Bfi ∼= Beσ(i) for
+every i. The direct sum of chosen isomorphisms is an automorphism of the left regular
+module, hence is right multiplication by a unit v. It follows that
+fiv = veσ(i),
+v−1α(ei)v = eσ(i).
+Thus composing α with an inner automorphism gives an automorphism that permutes
+the chosen idempotents.
+Lastly, let ϕ, ψ be categorical automorphisms of C . A natural isomorphism η : ϕ ⇒ψ
+consists of invertible morphisms
+ui ∈eψ(i)Beϕ(i)
+such that ψ(a)ui = ujϕ(a) for a ∈ejBei. The element u = P
+i ui is a unit of B, and
+these equalities say precisely that
+ψ(b) = uϕ(b)u−1
+(b ∈B).
+Conversely, any such inner relation gives a natural isomorphism, with components
+ui = ueϕ(i). Consequently, Outk(B), and hence Pick(B), can be identified with the
+group of natural-isomorphism classes of automorphisms of C . No assumption that these
+automorphisms fix every object is needed.
+Appendix C. Equivalences of stable categories without triangle
+structures
+The main text uses stable equivalence in the sense of a k-linear triangle equivalence.
+In this appendix we show that the classification in Theorem 1.2 remains valid if one
+assumes only a k-linear equivalence of the stable module categories. Readers interested
+only in the equivalence between conditions (1) and (3) of that theorem may omit this
+appendix: none of the arguments in the main text depends on it.
+The point is that a k-linear equivalence preserves the Serre functor, even when it is
+not assumed to preserve the suspension functor. We use a power of the Serre functor to
+recover the twist on a full transjective component. The theorem of Miyachi–Yekutieli
+then provides the standard derived equivalence needed to interpret this recovery as
+conjugacy in the derived Picard group.
+C.1. The Serre functor on a full component. We first record that the component
+arguments used above apply to every affine hereditary type.
+Lemma C.1. Let H = kQ be connected hereditary of affine type, let ϕ ∈Aut(H), and
+let n ≥1. Put E = T n
+ϕ (H), and use the notation P : Db(mod H) →mod E and B from
+Section 4. Then the conclusions of Lemma 4.4 and Lemma 4.5 hold for E. Moreover,
+there are natural isomorphisms
+τEP ∼= PτH,
+and
+N n
+EP|B ∼= PΦ−|B.
+
+
+38
+HIDETO ASASHIBA
+Proof. We explain why the arguments do not require type eA. The covering formula in
+(4.2) holds for every hereditary H, with
+G = Φτ n
+H[2n].
+Every object Z ∈B is isomorphic to exactly one of the following two kinds of objects:
+(1) an indecomposable preprojective H-module, regarded as a complex concentrated
+in degree zero;
+(2) I[−1], where I is an indecomposable preinjective H-module.
+Consequently, there is a unique integer c ∈{0, −1} and, up to isomorphism, a unique
+indecomposable H-module N such that Z ∼= N[c]. If c = 0, then N is preprojective;
+if c = −1, then N is preinjective. The uniqueness of c follows from the degree of the
+unique nonzero cohomology module of Z.
+Now fix X, Y ∈B and j ∈Z \ {0}. Both Φ and τH preserve B up to isomorphism.
+Applying the preceding description to Φjτ nj
+H X and Y , we obtain uniquely determined
+integers a, b ∈{0, −1} and indecomposable H-modules M, L, unique up to isomorphism,
+such that
+Φjτ nj
+H X ∼= M[a],
+Y ∼= L[b].
+Here M is preprojective if a = 0 and preinjective if a = −1; likewise, L is preprojective
+if b = 0 and preinjective if b = −1. Then
+HomDb(mod H)(GjX, Y ) ∼= Ext b−a−2nj
+H
+(M, L).
+Since H is hereditary, the right-hand side vanishes unless the exponent is 0 or 1. For
+j̸ = 0, the only possible exception is j = −1, n = 1, a = 0, and b = −1. In that case it
+is an extension from a preprojective module to a preinjective module, and is again zero.
+Thus the vanishing argument of Lemma 4.3 applies to every affine type. The covering
+formula therefore proves full faithfulness of P|B exactly as in Lemma 4.4.
+The remaining component argument also applies unchanged. The transjective compo-
+nents in Db(mod H) are B[t], and G sends B[t] to B[t+2n]. The local support-finiteness
+and component calculation used in the proof of Lemma 4.4 hold for every affine heredi-
+tary algebra. Hence the stable Auslander–Reiten quiver of E has exactly 2n transjective
+components, and all other components are τ-periodic. The functor ΩE permutes the
+transjective components transitively.
+Finally, the proof of Lemma 4.5 uses repetitive duality and its compatibility with bϕ
+and νH, not the underlying graph of Q. It gives natural isomorphisms
+NEP ∼= PτH[2],
+N n
+EP|B ∼= PΦ−|B.
+Since P is a triangle functor, ΩEP ∼= P[−1]. Using the first of the above natural
+isomorphisms and τE ∼= Ω2
+ENE, we obtain
+τEP ∼= Ω2
+ENEP ∼= Ω2
+EPτH[2] ∼= P[−2]τH[2] ∼= PτH.
+□
+Recall that a Serre functor on a Hom-finite k-linear category D is an autoequivalence
+S equipped with bifunctorial isomorphisms
+D HomD(X, Y ) ∼= HomD(Y, SX).
+This definition uses only the k-linear category, not a triangle structure. Consequently, if
+V : D →D′ is a k-linear equivalence and S, S′ are Serre functors, then
+V S ∼= S′V
+(C.1)
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+39
+naturally: transporting S along V gives a Serre functor on D′, and Serre functors are
+unique up to natural isomorphism.
+For a finite-dimensional selfinjective algebra E, the stable module category has Serre
+functor
+SE ∼= ΩENE.
+Indeed, Auslander–Reiten duality and the triangle structure of mod E identify
+D HomE(X, Y ) with HomE(Y, Ω−1
+E τEX), and Ω−1
+E τE ∼= ΩENE. The existence of this
+triangle structure is used here to identify the Serre functor; an equivalence between
+stable categories need not preserve that structure in order to satisfy (C.1).
+Lemma C.2. Under the hypotheses of Lemma C.1, there is a natural isomorphism
+S2n
+E P|B ∼= Pτ n
+HΦ−|B.
+(C.2)
+In particular, S2n
+E preserves the full component Cϕ up to isomorphism.
+Proof. The Nakayama functor commutes naturally with syzygy. Since SE ∼= ΩENE and
+τE ∼= Ω2
+ENE, we obtain
+S2n
+E ∼= τ n
+EN n
+E.
+Using Lemma C.1, we therefore have
+S2n
+E P|B ∼= τ n
+EN n
+EP|B
+∼= τ n
+EPΦ−|B
+∼= Pτ n
+HΦ−|B.
+Both τH and Φ−preserve B up to isomorphism, proving the last assertion.
+□
+C.2. Recovery of the type.
+Proposition C.3. Let Λ and Λ′ be as in Theorem 1.2. If their stable module categories
+are equivalent as k-linear categories, then typaff(Λ) = typaff(Λ′). No compatibility of the
+given equivalence with the suspension functors is assumed.
+Proof. (1) Reduction to hereditary bases. Use Proposition 5.4 in type eA and the
+hereditary reduction recalled in Section 3 for the tree types. These reductions are derived
+equivalences and hence induce triangle equivalences of stable categories. Composing
+with them preserves the hypothesis of a k-linear equivalence of stable categories. It
+therefore suffices to treat hereditary extensions
+E = T n
+ϕ (H),
+E′ = T n′
+ψ (H′).
+Let V : mod E →mod E′ be a k-linear equivalence.
+(2) Recovery of the hereditary type and n. An equivalence of stable module
+categories of selfinjective algebras with no block of Loewy length two induces an isomor-
+phism of their stable Auslander–Reiten translation quivers; see [6, Corollary X.1.9]. The
+algebras E and E′ satisfy this hypothesis. Indeed, they are connected and representation-
+infinite, whereas a connected selfinjective algebra of Loewy length two is a representation-
+finite Nakayama algebra.
+Thus V preserves the translation quiver, including arrow multiplicities and the
+translation on vertices. By Lemma C.1, the number of nonperiodic components is 2n for
+E and 2n′ for E′. Hence n = n′. The reconstruction from one such translation quiver in
+the proof of Proposition 4.7 also applies, and gives the same hereditary type ∆. We
+may therefore use the common chosen hereditary model H = H∆for both extensions.
+
+
+40
+HIDETO ASASHIBA
+This use of Auslander–Reiten translation concerns vertices of the translation quiver
+only. We do not infer a natural isomorphism V τE ∼= τE′V from it.
+(3) Comparison on a full component. Write
+Pϕ : B −→Cϕ,
+Pψ : B −→Cψ
+for the full-component equivalences supplied by Lemma C.1. Since ΩE′ acts transitively
+on the transjective components, we may compose V with a suitable power of ΩE′ so that
+it sends Cϕ to Cψ up to isomorphism. This does not require V to commute with syzygy.
+Choose a quasi-inverse of Pψ and obtain a k-linear equivalence U : B →B with
+PψU ∼= V Pϕ.
+The equivalence V preserves the Serre functors by (C.1). Applying (C.2) to both sides
+gives
+PψUτ n
+HΦ−∼= V Pϕτ n
+HΦ−
+∼= V S2n
+E Pϕ
+∼= S2n
+E′V Pϕ
+∼= S2n
+E′PψU
+∼= Pψτ n
+HΨ−U.
+Here all functors are restricted to B where appropriate. Since Pψ is fully faithful, we
+obtain a natural isomorphism
+Uτ n
+HΦ−|B ∼= τ n
+HΨ−U.
+(C.3)
+(4) Passage to the derived Picard group. At this point U is only an equivalence of
+the full category B. We use [10, Theorem 3.7], in the form stated in Proposition 2.3, to
+obtain a standard derived autoequivalence eU of H which preserves the chosen transjective
+component and whose restriction to B is naturally isomorphic to U.
+The same theorem says that restriction is injective on the subgroup of DPick(H)
+preserving this component. Indeed, this subgroup corresponds to the first factor in (2.3);
+the second factor records shifts to other transjective components. Both sides of (C.3)
+are restrictions of standard derived autoequivalences preserving the chosen component.
+Consequently,
+eUτ n
+HΦ−∼= τ n
+HΨ−eU
+as derived functors.
+The class of τH is central in DPick(H) by [10, Lemma 3.1]. We can therefore cancel
+τ n
+H and obtain
+eUΦ−∼= Ψ−eU,
+equivalently
+eUΦ eU −∼= Ψ.
+Thus the twists are conjugate in DPick(H). Together with (2), this proves equality of
+all three components of the type.
+For generalized multifold extensions with nonzero integer jump, first apply Theorem 8.1
+as in the main text. The preceding argument then applies to the resulting twisted
+multifold extensions.
+□
+Remark C.4. Under the hypotheses of Theorem 1.2, consider the additional condition
+(2’)
+mod Λ ≃mod Λ′
+as k-linear categories.
+By the main theorem and Proposition C.3, we have
+(1) =⇒(2) =⇒(2’) =⇒(3) =⇒(1).
+
+
+MULTIFOLD EXTENSIONS OF AFFINE TYPE
+41
+Hence these four conditions are equivalent. In particular, the classification remains valid
+when condition (2) is replaced by (2’), without assuming that the stable-category equiv-
+alence is a triangle functor. The same observation applies to the family in Corollary 9.2.
+Acknowledgments
+The author has been working on the questions considered here since 2015. This work
+was partially supported by JSPS Grant-in-Aid for Challenging Exploratory Research
+25610003, Scientific Research (B) 25287001, Scientific Research (C) 18K03207 and
+25K06922, and by Osaka Central Advanced Mathematical Institute (MEXT Promotion
+of Distinctive Joint Research Center Program JPMXP0723833165).
+Declaration of AI assistance
+The author used OpenAI’s ChatGPT to assist with mathematical discussions, the
+formulation and examination of proof arguments, literature searches, and the preparation
+and revision of the text and LaTeX source. The author takes full responsibility for the
+mathematical claims, proofs, references, and all other content of this paper.
+
+
+42
+HIDETO ASASHIBA
+References
+[1] H. Asashiba, Derived and stable equivalence classification of twisted multifold extensions of piecewise
+hereditary algebras of tree type, J. Algebra 249 (2002), 345–376. doi:10.1006/jabr.2001.9063.
+[2] H. Asashiba, A generalization of Gabriel’s Galois covering functors and derived equivalences, J.
+Algebra 334 (2011), 109–149. doi:10.1016/j.jalgebra.2011.03.002.
+[3] H. Asashiba,
+Gluing derived equivalences together,
+Adv. Math. 235 (2013),
+134–160.
+doi:10.1016/j.aim.2012.10.021.
+[4] H. Asashiba and M. Kimura, Derived equivalence classification of generalized multifold extensions
+of piecewise hereditary algebras of tree type, Algebra Discrete Math. 19 (2015), no. 2, 145–161.
+[5] H. Asashiba, M. Kimura, K. Nakashima and M. Yoshiwaki, On isomorphisms of generalized
+multifold extensions of algebras without nonzero oriented cycles, Comm. Algebra 49 (2021), no. 3,
+1048–1070. doi:10.1080/00927872.2020.1826958.
+[6] M. Auslander, I. Reiten and S. O. Smalø, Representation Theory of Artin Algebras, Cambridge
+Studies in Advanced Mathematics, vol. 36, Cambridge University Press, Cambridge, 1995.
+[7] H. Asashiba, A. Itaba and M. Saorin, On a derived equivalence classification of weakly symmetric
+algebras of Euclidean type, arXiv:2610.15517 [math.RT], 2026. https://arxiv.org/abs/2610.
+15517.
+[8] R. Bocian, T. Holm and A. Skowroński, Derived equivalence classification of weakly sym-
+metric algebras of Euclidean type, J. Pure Appl. Algebra 191 (2004), nos. 1–2, 43–74.
+doi:10.1016/j.jpaa.2003.12.003.
+[9] D. Happel, Triangulated Categories in the Representation Theory of Finite-Dimensional Alge-
+bras, London Mathematical Society Lecture Note Series, vol. 119, Cambridge University Press,
+Cambridge, 1988.
+[10] J.-I. Miyachi and A. Yekutieli, Derived Picard groups of finite-dimensional hereditary algebras,
+Compositio Math. 129 (2001), 341–368. doi:10.1023/A:1012579131516.
+[11] J. Rickard, Derived categories and stable equivalence, J. Pure Appl. Algebra 61 (1989), no. 3,
+303–317. doi:10.1016/0022-4049(89)90081-9.
+[12] J. Rickard, Derived equivalences as derived functors, J. London Math. Soc. (2) 43 (1991), no. 1,
+37–48.
+[13] R. Rouquier, Automorphismes, graduations et catégories triangulées, J. Inst. Math. Jussieu 10
+(2011), no. 3, 713–751. doi:10.1017/S1474748011000089.
+[14] A. Yekutieli, The derived Picard group is a locally algebraic group, Algebr. Represent. Theory 7
+(2004), 53–57. doi:10.1023/B:ALGE.0000019383.78214.31.
+Department of Mathematics, Faculty of Science, Shizuoka University, 836 Ohya,
+Suruga-ku, Shizuoka, 422-8529, Japan
+Institute for Advanced Study, KUIAS, Kyoto University, Yoshida Ushinomiya-cho,
+Sakyo-ku, Kyoto 606-8501, Japan
+Osaka Central Advanced Mathematical Institute, 3-3-138 Sugimoto, Sumiyoshi-ku,
+Osaka, 558-8585, Japan
+Email address: asashiba.hideto@shizuoka.ac.jp

@@ -1,0 +1,312 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-20T20:13:54.849908+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 7,
+    "quick_skim_target": 11,
+    "quick_selected": 7
+  },
+  "deep_dive": [
+    {
+      "id": "2610.25312v1",
+      "source": "arxiv",
+      "title": "Derived equivalence classification of twisted and generalized multifold extensions of affine type",
+      "abstract": "Let $B$ be a piecewise hereditary algebra of affine type over an algebraically closed field. In this paper we give a derived and stable equivalence classification of twisted multifold extensions of $B$. The types $\\widetilde D$ and $\\widetilde E$ are already covered by the classification for tree type. We therefore consider the remaining types $\\widetilde{A}_{p,q}$. We show that the $n$th power of the Nakayama functor on the full subcategory of a transjective component determines the twist, including its action on morphisms, up to conjugacy in the derived Picard group of a hereditary algebra. Together with the hereditary derived type and the folding number, this gives a complete invariant for derived equivalence, and also for stable triangle equivalence. We then compute these conjugacy classes in the unbalanced, balanced, bypass, and Kronecker cases, keeping the finite rotation data. Finally, by the normalization theorem of Asashiba--Kimura--Nakashima--Yoshiwaki, we obtain the same classification for generalized multifold extensions with nonzero integer jump.",
+      "authors": [
+        "Hideto Asashiba"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.CT",
+        "math.RA"
+      ],
+      "published": "2026-10-18T14:43:46+00:00",
+      "link": "https://arxiv.org/pdf/2610.25312v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "derived and stable equivalence classification of algebras via derived categories",
+      "llm_evidence_cn": "通过导出范畴对代数进行导出与稳定等价分类",
+      "llm_evidence": "通过导出范畴对代数进行导出与稳定等价分类",
+      "canonical_evidence": "通过导出范畴对代数进行导出与稳定等价分类",
+      "llm_tldr_en": "Classifies twisted multifold extensions of piecewise hereditary algebras of affine type up to derived and stable equivalence using the Nakayama functor, hereditary derived type and folding number.",
+      "llm_tldr_cn": "论文针对仿射型分段遗传代数的扭多重扩张缺少完整导出等价与稳定等价分类的问题展开研究。作者考察 transjective 分支全子范畴上 Nakayama 函子 n 次幂对 twist 及其态射作用的决定作用，并结合遗传导出型与折叠数构造不变量。结果表明该不变量在剩余的 A 型情形下完全刻画导出等价，并同样适用于稳定等价。这一分类补全了树型之外仿射型代数的导出等价理论，为导出 Picard 群相关研究提供工具。",
+      "llm_tldr": "论文针对仿射型分段遗传代数的扭多重扩张缺少完整导出等价与稳定等价分类的问题展开研究。作者考察 transjective 分支全子范畴上 Nakayama 函子 n 次幂对 twist 及其态射作用的决定作用，并结合遗传导出型与折叠数构造不变量。结果表明该不变量在剩余的 A 型情形下完全刻画导出等价，并同样适用于稳定等价。这一分类补全了树型之外仿射型代数的导出等价理论，为导出 Picard 群相关研究提供工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2610.23592v1",
+      "source": "arxiv",
+      "title": "Locally Gorenstein algebras, a generalization of Gorenstein algebras",
+      "abstract": "For an Artin algebra $Λ$, we define the class of locally Gorenstein modules, which is a generalization of semi-Gorenstein projective modules and, therefore, a generalization of projective Gorenstein modules. For a locally Gorenstein module $X\\in{\\rm mod}\\ Λ$ we construct $\\underline{χ}_X$ a subcategory of $\\underline{\\rm mod}$ $Λ$ and we prove that the syzygy functor is faithful and full on $\\underline{χ}_X$. Using that, we prove that the Igusa-Todorov functions $φ$ and $ψ$ vanish on the family of locally Gorenstein modules. Finally, using locally Gorenstein modules, we define the locally Gorenstein algebras, a generalization of Gorenstein algebras, and we prove that their finitistic, and the $φ$ and $ψ$ dimensions are finite.",
+      "authors": [
+        "Leonardo Alarcon",
+        "María Andrea Gatica",
+        "Marcelo Lanzilotta"
+      ],
+      "primary_category": "math.AC",
+      "categories": [
+        "math.AC",
+        "math.RT"
+      ],
+      "published": "2026-10-16T15:12:20+00:00",
+      "link": "https://arxiv.org/pdf/2610.23592v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "homological study of Artin algebras via syzygies and Igusa-Todorov functions",
+      "llm_evidence_cn": "用 syzygy 与 Igusa-Todorov 函数研究 Artin 代数的同调性质",
+      "llm_evidence": "用 syzygy 与 Igusa-Todorov 函数研究 Artin 代数的同调性质",
+      "canonical_evidence": "用 syzygy 与 Igusa-Todorov 函数研究 Artin 代数的同调性质",
+      "llm_tldr_en": "Introduces locally Gorenstein modules and algebras generalizing Gorenstein algebras, shows the syzygy functor is full and faithful on a subcategory, that Igusa-Todorov functions vanish, and that finitistic and phi/psi dimensions are finite.",
+      "llm_tldr_cn": "论文针对 Gorenstein 模与 Gorenstein 代数框架的局限，提出更一般的局部 Gorenstein 模概念。作者构造 mod Λ 的子范畴并证明 syzygy 函子在其上满且忠实，进而说明 Igusa-Todorov 函数 φ 与 ψ 在局部 Gorenstein 模上取零。基于此定义局部 Gorenstein 代数，证明其 finitistic 维数以及 φ、ψ 维数均有限。该结果把经典 Gorenstein 代数的有限性结论推广到更广的代数类，为同调维数研究提供新工具。",
+      "llm_tldr": "论文针对 Gorenstein 模与 Gorenstein 代数框架的局限，提出更一般的局部 Gorenstein 模概念。作者构造 mod Λ 的子范畴并证明 syzygy 函子在其上满且忠实，进而说明 Igusa-Todorov 函数 φ 与 ψ 在局部 Gorenstein 模上取零。基于此定义局部 Gorenstein 代数，证明其 finitistic 维数以及 φ、ψ 维数均有限。该结果把经典 Gorenstein 代数的有限性结论推广到更广的代数类，为同调维数研究提供新工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "homological methods in representation theory",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.22669v1",
+      "source": "arxiv",
+      "title": "String functions and cyclotomic Hecke algebras",
+      "abstract": "In this paper we study the Kleshchev multipartitions that label simple modules of certain cyclotomic Hecke algebras with parameters $1$ and $-1$. The $2$-residue statistic divides these multipartitions into blocks. We deduce a bivariate generating function for the blocks using representation theory. We also relate the generating functions of multipartitions in a fixed block to string functions associated by Kac and Peterson to irreducible highest weight modules of a type $A_1^{(1)}$ affine Lie algebra. By considering matrices formed by these generating functions, we reprove some results of Kac--Peterson on string functions using the Macdonald identities of Rosengren--Schlosser. As an application, we obtain new infinite product formulas for these generating functions.",
+      "authors": [
+        "Dennis Stanton",
+        "Ting Xue",
+        "Ae Ja Yee"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.CO"
+      ],
+      "published": "2026-10-15T21:36:20+00:00",
+      "link": "https://arxiv.org/pdf/2610.22669v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "simple modules of cyclotomic Hecke algebras and block generating functions",
+      "llm_evidence_cn": "分圆Hecke代数的单模与块生成函数",
+      "llm_evidence": "分圆Hecke代数的单模与块生成函数",
+      "canonical_evidence": "分圆Hecke代数的单模与块生成函数",
+      "llm_tldr_en": "Kleshchev multipartitions labeling simple modules of cyclotomic Hecke algebras with parameters 1 and -1 are partitioned into blocks by the 2-residue statistic, yielding bivariate generating functions linked to affine Lie algebra string functions.",
+      "llm_tldr_cn": "该文研究参数为1与-1的分圆Hecke代数的单模标号问题，关注标记这些单模的Kleshchev多分拆及其块结构。作者利用表示论按2-剩余统计量对多分拆分块，推导出块的双变量生成函数。进一步将固定块内的生成函数与A_1^{(1)}型仿射李代数的弦函数相联系，并用Macdonald恒等式重新证明Kac-Peterson的部分结果，还得到新的无穷乘积公式。",
+      "llm_tldr": "该文研究参数为1与-1的分圆Hecke代数的单模标号问题，关注标记这些单模的Kleshchev多分拆及其块结构。作者利用表示论按2-剩余统计量对多分拆分块，推导出块的双变量生成函数。进一步将固定块内的生成函数与A_1^{(1)}型仿射李代数的弦函数相联系，并用Macdonald恒等式重新证明Kac-Peterson的部分结果，还得到新的无穷乘积公式。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "Articles about modular representations, Auslander Reiten theory, and finite dimensional algebras",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.25485v1",
+      "source": "arxiv",
+      "title": "An explicit Dennis trace and its compatibility with Koszul duality",
+      "abstract": "In this paper, we construct explicit Dennis trace maps from algebraic $K$-theory to Hochschild homology for dg module and curved dg comodule categories, and prove their compatibility with derived Koszul duality. For this, we construct a natural chain map $τ$ from the chains on the newly defined thickened nerve to the total complex of the dg cyclic nerve, with explicit formulas incorporating morphisms and coherent higher homotopies, which generalizes McCarthy's approach. This $τ$ construction works both for modules over dg algebras and for cdg comodules over counital conilpotent curved dg coalgebras. Combining the $τ$ with the dg-enriched Waldhausen $S_\\bullet$-construction and a Hochschild delooping theorem yields the Dennis trace maps. For thick subcategories corresponding under derived Koszul duality, we prove that the induced $K$-theory equivalences and Hochschild homology isomorphisms fit into natural commutative diagrams with these trace maps.",
+      "authors": [
+        "Maozhou Huang"
+      ],
+      "primary_category": "math.KT",
+      "categories": [
+        "math.KT"
+      ],
+      "published": "2026-10-18T19:17:07+00:00",
+      "link": "https://arxiv.org/pdf/2610.25485v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Dennis trace, Hochschild homology and derived Koszul duality",
+      "llm_evidence_cn": "Dennis迹、Hochschild同调与导出Koszul对偶",
+      "llm_evidence": "Dennis迹、Hochschild同调与导出Koszul对偶",
+      "canonical_evidence": "Dennis迹、Hochschild同调与导出Koszul对偶",
+      "llm_tldr_en": "The paper constructs explicit Dennis trace maps from algebraic K-theory to Hochschild homology compatible with derived Koszul duality, generalizing McCarthy's approach.",
+      "llm_tldr_cn": "论文研究代数K理论到Hochschild同调的Dennis迹构造问题。作者对新定义的加厚神经与dg循环神经全复形构造显式链映射，兼容导出Koszul对偶，并推广McCarthy方法。结合dg Waldhausen S构造与Hochschild去环路定理得到Dennis迹，适用于dg代数模与curved dg余代数余模，为导出范畴与同调方法提供工具。",
+      "llm_tldr": "论文研究代数K理论到Hochschild同调的Dennis迹构造问题。作者对新定义的加厚神经与dg循环神经全复形构造显式链映射，兼容导出Koszul对偶，并推广McCarthy方法。结合dg Waldhausen S构造与Hochschild去环路定理得到Dennis迹，适用于dg代数模与curved dg余代数余模，为导出范畴与同调方法提供工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "homological methods in representation theory",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.23778v1",
+      "source": "arxiv",
+      "title": "Dg models for derived differential operators",
+      "abstract": "We show that for any algebra $R$ that is essentially of finite type over a field $k$, the derived functors of Smith-Van den Bergh admit a dg enhancement. In particular, for any $R$-module $M$ one can associate a dg algebra of differential operators $E_M$ whose cohomology is a nilpotent thickening of the (classical) ring of $k$-linear differential operators on $M$. We show that these dg algebras fit into a framework of Koszul duality due to Dwyer-Greenlees and specializes to a derived ring of differential operators studied by Yang when $M=R$ and $k=\\mathbb{C}$. In particular, upon fixing a presentation $R=S/I$ with $S$ essentially smooth, we show a derived Kashiwara's equivalence, namely that whenever $\\mathrm{supp}_S(M)=\\mathrm{V}(I)$ then there is an equivalence of triangulated categories between the derived category of dg ${E}_M$-modules and the derived category of $D$-modules on $S$ that are set-theoretically supported on $I$. Finally, in the case of positive characteristic, we show that the dg algebra ${E}_M$ admits a description in terms of the Frobenius endomorphism akin to the classical description of differential operators, and the proof employs simplicial techniques to obtain a result of independent interest in commutative algebra.",
+      "authors": [
+        "Jack Jeffries",
+        "Devlin Mallory",
+        "Claudia Miller",
+        "Josh Pollitz",
+        "Eamon Quinlan-Gallego"
+      ],
+      "primary_category": "math.AC",
+      "categories": [
+        "math.AC",
+        "math.AG"
+      ],
+      "published": "2026-10-16T17:12:36+00:00",
+      "link": "https://arxiv.org/pdf/2610.23778v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "dg enhancements, Koszul duality and triangulated equivalences",
+      "llm_evidence_cn": "微分分级增强、Koszul对偶与三角等价",
+      "llm_evidence": "微分分级增强、Koszul对偶与三角等价",
+      "canonical_evidence": "微分分级增强、Koszul对偶与三角等价",
+      "llm_tldr_en": "Shows that derived functors of Smith-Van den Bergh admit dg enhancements, associating a dg algebra of differential operators to each module and fitting it into Koszul duality with a derived Kashiwara equivalence.",
+      "llm_tldr_cn": "论文研究Smith-Van den Bergh导出函子的分级增强问题。作者证明对本质有限型的代数，可为任意模关联一个微分算子微分分级代数，其上同调是经典微分算子环的幂零加厚，并将其纳入Dwyer-Greenlees的Koszul对偶框架。进一步在光滑呈现下证明导出的Kashiwara等价，把三角范畴与D模理论联系起来。",
+      "llm_tldr": "论文研究Smith-Van den Bergh导出函子的分级增强问题。作者证明对本质有限型的代数，可为任意模关联一个微分算子微分分级代数，其上同调是经典微分算子环的幂零加厚，并将其纳入Dwyer-Greenlees的Koszul对偶框架。进一步在光滑呈现下证明导出的Kashiwara等价，把三角范畴与D模理论联系起来。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.26302v1",
+      "source": "arxiv",
+      "title": "Additive invariants of Finite-dimensional DG-algebras",
+      "abstract": "Orlov has shown that additive invariants such as K-theory and Hochschild homology of smooth finite-dimensional DG-algebras behave similarly to those of finite-dimensional algebras. The similarities only go so far: there are examples of finite-dimensional DG-algebras with vanishing and uncountable Grothendieck groups. We show that for DG-quivers with relations, the Grothendieck groups are free of the expected rank and that, in the smooth case, all additive invariants are determined by the base field. We use our results to rule out certain finite-dimensional DG-algebras from being phantoms.",
+      "authors": [
+        "Isambard Goodbody"
+      ],
+      "primary_category": "math.KT",
+      "categories": [
+        "math.KT",
+        "math.AG"
+      ],
+      "published": "2026-10-19T12:51:04+00:00",
+      "link": "https://arxiv.org/pdf/2610.26302v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "DG-quivers with relations and homological additive invariants",
+      "llm_evidence_cn": "带关系DG箭图与同调加性不变量",
+      "llm_evidence": "带关系DG箭图与同调加性不变量",
+      "canonical_evidence": "带关系DG箭图与同调加性不变量",
+      "llm_tldr_en": "The paper computes Grothendieck groups of DG-quivers with relations, showing they are free of expected rank and that smooth additive invariants are determined by the base field, ruling out phantom DG-algebras.",
+      "llm_tldr_cn": "针对有限维DG代数加性不变量行为尚不完全清楚的问题，作者研究带关系DG箭图的格罗滕迪克群。证明其为预期秩的自由群，并在光滑情形下证明所有加性不变量由基域决定。由此可排除某些有限维DG代数成为phantom，推进了对DG代数同调不变量的认识。",
+      "llm_tldr": "针对有限维DG代数加性不变量行为尚不完全清楚的问题，作者研究带关系DG箭图的格罗滕迪克群。证明其为预期秩的自由群，并在光滑情形下证明所有加性不变量由基域决定。由此可排除某些有限维DG代数成为phantom，推进了对DG代数同调不变量的认识。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "homological methods in representation theory",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.25198v1",
+      "source": "arxiv",
+      "title": "Finitely enhanced nontopological triangulated categories",
+      "abstract": "Over every nonzero commutative ring $R$, we construct a nontopological triangulated category over $R$, whose finitely generated thick subcategories are alegbraic, while the scalar action of $R$ is faithful.",
+      "authors": [
+        "Chencheng Zhang"
+      ],
+      "primary_category": "math.CT",
+      "categories": [
+        "math.CT",
+        "math.AT"
+      ],
+      "published": "2026-10-18T11:40:36+00:00",
+      "link": "https://arxiv.org/pdf/2610.25198v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "nontopological triangulated categories and thick subcategories",
+      "llm_evidence_cn": "非拓扑三角范畴与厚子范畴",
+      "llm_evidence": "非拓扑三角范畴与厚子范畴",
+      "canonical_evidence": "非拓扑三角范畴与厚子范畴",
+      "llm_tldr_en": "Constructs, over every nonzero commutative ring, a nontopological triangulated category whose finitely generated thick subcategories are algebraic while the scalar action of the ring remains faithful.",
+      "llm_tldr_cn": "论文关注三角范畴的构造问题，旨在给出非拓扑三角范畴的具体实例。作者对任意非零交换环构造了一个非拓扑三角范畴，并证明其有限生成厚子范畴是代数的，同时该环的标量作用是忠实的。这为三角范畴理论提供了新的构造性例子，深化了对厚子范畴与标量作用之间关系的理解。",
+      "llm_tldr": "论文关注三角范畴的构造问题，旨在给出非拓扑三角范畴的具体实例。作者对任意非零交换环构造了一个非拓扑三角范畴，并证明其有限生成厚子范畴是代数的，同时该环的标量作用是忠实的。这为三角范畴理论提供了新的构造性例子，深化了对厚子范畴与标量作用之间关系的理解。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.26196v1",
+      "source": "arxiv",
+      "title": "Simple-shifted monoidal derived equivalences for tensor categories",
+      "abstract": "In this paper, we investigate monoidal derived equivalences between tensor categories with infinitely many isomorphism classes of simple objects. We introduce the notion of a simple-shifted monoidal derived equivalence and prove that a simple-shifted monoidal derived equivalence gives rise to a tensor equivalence. In addition, we investigate which tensor categories have the property that every monoidal derived equivalence between them is necessarily simple-shifted, and we establish some sufficient conditions for this property. As a corollary, we show that a monoidal derived equivalence between pointed tensor categories implies a tensor equivalence between them.",
+      "authors": [
+        "Jing Yu"
+      ],
+      "primary_category": "math.CT",
+      "categories": [
+        "math.CT"
+      ],
+      "published": "2026-10-19T11:24:33+00:00",
+      "link": "https://arxiv.org/pdf/2610.26196v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "monoidal derived equivalences between tensor categories yielding tensor equivalences",
+      "llm_evidence_cn": "张量范畴间的单项导出等价可推出张量等价",
+      "llm_evidence": "张量范畴间的单项导出等价可推出张量等价",
+      "canonical_evidence": "张量范畴间的单项导出等价可推出张量等价",
+      "llm_tldr_en": "The authors study monoidal derived equivalences between tensor categories with infinitely many simples, introducing simple-shifted monoidal derived equivalence and proving it yields a tensor equivalence, with conditions and a pointed-category corollary.",
+      "llm_tldr_cn": "针对具有无穷多同构类单对象的张量范畴，作者研究其间的单项导出等价问题。文中引入简单移位单项导出等价的概念，并证明此类等价可诱导出张量等价。作者进一步给出使每个单项导出等价都必为简单移位的充分条件，并证明指针张量范畴间的单项导出等价蕴含张量等价，从而深化了导出等价与范畴结构的关系。",
+      "llm_tldr": "针对具有无穷多同构类单对象的张量范畴，作者研究其间的单项导出等价问题。文中引入简单移位单项导出等价的概念，并证明此类等价可诱导出张量等价。作者进一步给出使每个单项导出等价都必为简单移位的充分条件，并证明指针张量范畴间的单项导出等价蕴含张量等价，从而深化了导出等价与范畴结构的关系。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

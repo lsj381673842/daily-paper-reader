@@ -1,0 +1,1782 @@
+Locally Gorenstein algebras,
+a generalization of Gorenstein algebras
+Leonardo Alarcon, María Andrea Gatica, Marcelo Lanzilotta
+Abstract
+For an Artin algebra Λ, we define the class of locally Gorenstein modules, which is a generaliza-
+tion of semi-Gorenstein projective modules and, therefore, a generalization of projective Gorenstein
+modules. For a locally Gorenstein module X ∈mod Λ we construct χX a subcategory of mod Λ
+and we prove that the syzygy functor is faithful and full on χX.
+Using that, we prove that the
+Igusa-Todorov functions ϕ and ψ vanish on the family of locally Gorenstein modules. Finally, using
+locally Gorenstein modules, we define the locally Gorenstein algebras, a generalization of Gorenstein
+algebras, and we prove that their finitistic, and the ϕ and ψ dimensions are finite.
+Keywords: Semi-Gorenstein modules,Locally Gorenstein modules, Locally Gorenstein algebras, Finitistic
+dimension, Igusa-Todorov functions, Morita context algebra.
+1
+Introduction
+In this work Λ will denote an Artin algebra over a commutative artinian ring with unity R, where mod Λ
+will denote the category of finitely generated left modules. In addition modΛ will denote the quotient of
+mod Λ by the ideal of morphisms which factorize by projectives modules in mod Λ.
+The concept of Gorenstein projective module (see 2.1) goes back to a work of Auslander and Bridger
+in 1969 [2], where the G-dimension of a finitely generated module over a Noetherian ring has been
+introduced. Enochs and Jenda in 1995 [7] defined the concept of Gorenstein projective module, and now
+a day is clear that a module M is Gorenstein projective if and only if the G-dimension of M is zero.
+Among the many properties that Gorenstein projective modules satisfy, we highlight the following
+two: on the one hand, Gorenstein projective modules are semi-Gorenstein projective modules, that is,
+they belong to ⊥Λ (see 2.2) and, on the other hand, they vanish for the Igusa-Todorov functions (see 2.2
+and [14]).
+In this work we introduce a new concept locally Gorenstein projective modules (see Definition 3.1)
+that generalize semi-Gorenstein projective modules (and therefore also Gorenstein projective modules)
+but, nevertheless, the Igusa - Todorov functions still have a value of zero on this family of modules (see
+Theorem 2).
+It is worth noting that to prove Theorem 2 we use a construction similar to that used by Auslander and
+Bridge in [2], namely, starting from a locally Gorenstein projective module we construct a full subcategory
+of modΛ, which we denote by χX, and we prove that the functor Ωrestricted to χX is faithful and full
+(see Theorem 1).
+From the locally Gorenstein projective modules, we define the locally Gorenstein algebras (see Def-
+inition 5.1) by generalizing the concept of Gorenstein algebras defined by Auslander and Reiten (see
+[3]). Gorenstein algebras have very nice homological behaviors, their homological dimensions: finitistic
+dimension, ϕ-dimension and ψ-dimension are finite, and therefore satisfy the finitistic Conjecture. These
+properties are still preserved in the generalization to locally Gorenstein algebras (see Proposition 5.4
+and Theorem 3). It is worth mentioning at this point that there are at least, two families of algebras
+which also generalize Gorenstein algebras. We are referring to virtually Gorenstein algebras, defined by
+Beligiannis and Reiten in [5]; and weakly Gorenstein algebras, defined by Ringel and Zhang in [18]. In
+a recent paper, Li is said to have shown that every virtually Gorenstein algebra is weakly Gorenstein
+(see [16]). The new family of algebras that we define, locally Gorenstein algebras, does not coincide with
+1
+arXiv:2610.23592v1  [math.AC]  16 Oct 2026
+
+
+2
+PRELIMINARIES
+any of these families. For example the bound quiver algebra given by the quiver
+1
+α
+:
+β / 2 and the
+relations {α2, βα} is virtually Gorenstein and also weakly Gorenstein but is not locally Gorenstein.
+Finally, in 5.2, we study locally Gorenstein algebras arising from a Morita context (see [1], [9]). We
+establish sufficient conditions for a Morita context algebra to be locally Gorenstein, thus obtaining a
+considerable family of examples of such type of algebras.
+2
+Preliminaries
+2.1
+Λ-Gproj and ⊥Λ
+In this section, we recall the definition of Gorenstein algebra, as well as the definition of projective Goren-
+stein modules over an Artin algebra.
+An Artin algebra Λ is a Gorenstein algebra if the id(ΛΛ) < ∞and the id(ΛΛ) < ∞. In addition, we
+say that Λ is n-Gorenstein if n is the smallest integer such that id(ΛΛ) ≤n and id(ΛΛ) ≤n.
+A complex of projective modules is totally acyclic if it is an exact sequence of projective Λ-modules:
+(P, p) :
+· · ·
+p−2 / P−1
+p−1 / P0
+p0
+/ P1
+p1
+/ · · ·
+and the complex:
+HomΛ((P, p), Λ) :
+· · ·
+p∗
+1 / HomΛ(P1, Λ)
+p∗
+0
+/ HomΛ(P0, Λ)
+p∗
+−1 / HomΛ(P−1, Λ)
+p∗
+−2 / · · ·
+is also exact.
+A finitely generated Λ-module G is said to be Gorenstein projective, provided that there is a totally
+acyclic complex (P, p) of projective modules such that G ∼= Ker(p0).
+In particular, for all i ∈Z, the Λ-module Ker(pi) is Gorenstein projective. We will denote by Λ-Gproj
+the full subcategory of mod Λ determined by the Gorenstein projective Λ-modules.
+We will denote with ⊥Λ the subfamily of the semi-Gorenstein projective modules of mod Λ (see [18]),
+that is, the subfamily defined by ⊥Λ = {X ∈mod Λ : Exti
+Λ(X, Λ) = 0, ∀i ≥1}.
+Remark 2.1.
+1. Let X be a Λ-module and let
+· · ·
+q2
+/ Q1
+q1
+/ Q0
+q0
+/ X
+/ 0
+be a projective resolution of X. Then, X ∈⊥Λ if an only if the sequence
+(∗) 0
+/ HomΛ(X, Λ)
+q∗
+0
+/ HomΛ(Q0, Λ)
+q∗
+1
+/ HomΛ(Q1, Λ)
+q∗
+2
+/ · · ·
+is exact. In fact, the sequence (∗) is exact if an only if Exti
+Λ(X, Λ) = 0 for all i ≥1, thus the
+sequence (∗) is exact if an only if X ∈⊥Λ.
+2. All Gorenstein projective Λ-modules belong to ⊥Λ, that is, Λ −Gproj ⊆⊥Λ. In fact, let M be a
+Gorenstein projective Λ-module. By definition, there is an acyclic complex, (P, p), of projective
+modules:
+(P, p) =
+· · ·
+p−2 / P−1
+p−1 / P0
+p0
+/ P1
+p1
+/ · · ·
+with M ∼= Ker(p0), such that the following sequence:
+· · ·
+p∗
+1
+/ HomΛ(P1, Λ)
+p∗
+0
+/ HomΛ(P0, Λ)
+p∗
+−1 / HomΛ(P−1, Λ)
+p∗
+−2 / · · ·
+is exact.
+Then Exti
+Λ(M, Λ) = Ker(p∗
+−(i+1))/Im(p∗
+−i) = 0 for all i ≥1.
+2
+
+
+2
+PRELIMINARIES
+The following provides a characterisation of n-Gorenstein algebras.
+Theorem 2.2. [6] Let Λ be an Artin algebra and let n ≥0. Then, Λ is n-Gorenstein if an only if
+Λ-Gproj= Ωn(mod Λ).
+Remark 2.3. If Λ is a n-Gorenstein algebra then Λ-Gproj= ⊥Λ [6, Theorem 2.3.3].
+2.2
+Igusa-Todorov functions
+In this section we recall the definitions and some properties of the functions defined by K. Igusa and G.
+Todorov in [13].
+Let K0 be the quotient of the free abelian group generated by the symbols of the form [M], where
+M ∈mod Λ, by the subgroup generated by
+1. [A] −[B] −[C] if A ∼= C ⊕B, with A, B, C in mod Λ.
+2. [P] if P is a projective Λ-module.
+Note that K0 is the free abelian group generated by the isomorphic classes of non-projective in-
+decomposable Λ-modules.
+Then syzygy Ωdefines the morphism of groups Ω: K0 →K0 given by
+Ω([M]) = [Ω(M)] for all [M] in K0.
+For each free group X, rg X denotes the rank of X. Given a finitely generated Λ module M, we
+denote by ⟨add M⟩the subgroup of K0 generated by the indecomposable direct summands of M.
+We recall that the first Igusa-Todorov function or function ϕ of Igusa-Todorov of M ∈mod Λ
+is defined as the smallest non-negative integer, ϕ(M), such that:
+rg Ωϕ(M)(⟨add M⟩) = rg Ωϕ(M)+s(⟨add M⟩),
+or equivalently, the smallest non-negative integer such that:
+Ω: Ωϕ(M)+s(⟨add M⟩) →Ω(Ωϕ(M)+s(⟨add M⟩))
+is a monomorphism for all s ∈N.
+Proposition 2.4. [13] Let M and N be modules in mod Λ, then the following statements hold:
+1. If pd(M) < ∞then ϕ(M) = pd(M).
+2. If M is indecomposable with pd(M) = ∞, then ϕ(M) = 0.
+3. ϕ(M) ≤ϕ(M ⊕N).
+4. ϕ(sM) = ϕ(M) for all s ∈N, where sM denote the direct sum of M s-times.
+The second Igusa-Todorov function or function ψ of Igusa-Todorov of M ∈mod Λ is defined
+as
+ψ(M) = ϕ(M) + max{pd(N) : N|Ωϕ(M)(M) with pd(N) < ∞},
+where N|L denotes that N is a direct summand of L.
+Proposition 2.5. [13] Let M, N be in mod Λ. Then:
+1. If pd(M) < ∞then ψ(M) = pd(M).
+2. ψ(M) ≤ψ(M ⊕N).
+3. ψ(sM) = ψ(M) for all s ∈N.
+4. If N|ΩnM such that n ≤ϕ(M) and pd(N) < ∞, then pdN + n ≤ψ(M).
+Proposition 2.6. [12] For each module M in mod Λ, the following inequalities hold:
+1. ϕ(M) ≤ϕ(Ω(M)) + 1.
+3
+
+
+2
+PRELIMINARIES
+2. ψ(M) ≤ψ(Ω(M)) + 1.
+Finally, we recall that the ϕ-dimension of Λ and ψ-dimension of Λ are defined as ϕ-dim(Λ) =
+sup{ϕ(M) : M ∈mod Λ} and ψ-dim(Λ) = sup{ψ(M) : M ∈mod Λ}, respectively.
+Proposition 2.7. Let Λ be an Artin algebra.Then, the following inequalities hold:
+fin.dim(Λ) ≤ϕ-dim(Λ) ≤ψ-dim(Λ) ≤gl.dim(Λ).
+where fin.dim(Λ) and gl.dim(Λ) denotes the finitistic dimension and global dimension of Λ, respectively.
+2.3
+Morita context algebras
+Let A and B be two Artin algebras, a Morita context is a 6-tuple M = (A, M, N, B, α, β) where BMA is a
+B-A-bimodule, ANB is an A-B-bimodule and the maps β : M ⊗A N →B, α : N ⊗B M →A are B-B and
+A-A-bimodule homomorphisms respectively, satisfying the following associativity conditions, ∀m, m′ ∈
+M, ∀n, n′ ∈N:
+β(m ⊗n)m′ = mα(n ⊗m′) and nβ(m ⊗n′) = α(n ⊗m)n′.
+From the Morita context M = (A, M, N, B, α, β) we define the Morita ring
+Λ(α,β) =
+ A
+ANB
+BMA
+B
+
+where the addition is the usual one and the multiplication is given by
+ a
+n
+m
+b
+
+.
+ a′
+n′
+m′
+b′
+
+=
+aa′ + α(n ⊗m′)
+an′ + nb′
+ma′ + bm′
+bb′ + β(m ⊗n′)
+
+.
+Now we recall the description of modules on Morita rings Λ(α,β). Any left Λ(α,β)-module can be
+represented by a 4-tupla (X, Y, f, g) where X ∈mod A, Y ∈mod B, f ∈HomB(M ⊗A X, Y) and g ∈
+HomA(N ⊗B Y, X) such that the following diagrams commute:
+N ⊗B M ⊗A X
+α⊗IdX
+
+IdN⊗f
+/ N ⊗B Y
+g
+
+A ⊗A X
+≃
+/ X
+M ⊗A N ⊗B Y
+β⊗IdY
+
+IdM⊗g
+/ M ⊗A X
+f
+
+B ⊗B Y
+≃
+/ Y
+.
+We denote αX and βY the compositions of the following morphisms:
+αX : N ⊗B M ⊗A X
+α⊗IdX
+/ A ⊗A X
+≃
+/ X , βY : M ⊗A N ⊗B Y
+β⊗IdY
+/ B ⊗B Y
+≃
+/ Y.
+A Λ(α,β)-morphism (X, Y, f, g) →(X′, Y ′, f ′, g′) is a pair (a, b) of morphisms, with a ∈HomA(X, X′)
+and b ∈HomB(Y, Y′) such that the following diagrams are commutative:
+M ⊗A X
+f
+/
+IdM⊗a
+
+Y
+b
+
+M ⊗A X′
+f ′
+/ Y ′
+N ⊗B Y
+g
+/
+IdN⊗b
+
+X
+a
+
+N ⊗B Y ′
+g′
+/ X′
+.
+Let us observe that a Λ(α,β)-module is an indecomposable projective Λ(α,β)-module if and only if it has
+the form (P, M⊗AP, IdM⊗P , αP ) or the form (N⊗BQ, Q, βQ, IdN⊗Q) where P and Q are indecomposable
+projective A-module and B-module, respectively.
+Observe that the Λ(0,0) indecomposable projective
+modules are represented as (P, M ⊗A P, IdM⊗P , 0) or (N ⊗B Q, Q, 0, IdN⊗Q) with P and Q as before.
+Finally, let us recall the following functors:
+4
+
+
+3
+LOCALLY GORENSTEIN MODULES: DEFINITIONS AND BASIC PROPERTIES
+1. The functor TA : ModA →ModΛ is defined by TA(X) = (X, M ⊗A X, IdM⊗AX, αX) on the objects
+and if a : X →X′ is a A -morphism then TA(a) = (a, M ⊗a).
+2. The functor UA : ModΛ →ModA is defined by UA((X, Y, f, g)) = X on the objects and if
+(a, b) : (X, Y, f, g) →(X′, Y ′, f ′, g′) is a Λ-morphism then UA((a, b)) = a.
+3. The functor TB : ModB →ModΛ is defined by TB(Y ) = (N ⊗B Y, Y, βY , IdN⊗BY ) on the objects
+and if b : Y →Y ′ is a B -morphism then TB(b) = (N ⊗b, b).
+4. The functor UB : ModΛ →ModB is defined by UB((X, Y, f, g)) = Y on the objects and if
+(a, b) : (X, Y, f, g) →(X′, Y ′, f ′, g′) is a Λ-morphism then UB((a, b)) = b.
+Proposition 2.8. [9] The pairs (TA, UA) and (TB, UB) are adjoint pairs of functors.
+3
+Locally Gorenstein modules: definitions and basic properties
+3.1
+Locally Gorenstein modules: definitions and basic properties
+Definition 3.1. Let X be a finitely generated Λ-module and PΛX = {P1, ..., Pr} the set of all inde-
+composable projective modules that are direct summands of projective modules at the minimal projective
+resolution of X. We say that X is a locally Gorenstein module if Extm
+Λ (X, Pj) = 0 for all Pj ∈PΛX
+and for all m ≥1.
+Examples 3.2.
+1. Let Λ be an Artin algebra. Then:
+(a) All projective modules are locally Gorenstein modules.
+(b) Let
+P
+be
+the
+class
+of
+all
+projective
+Λ-modules
+with
+finite
+injective
+dimension,
+n = maxPi∈P{id(Pi)} and X a Λ-module with infinite projective dimension such that the
+class PΛΩn(X) ⊆P. Then Ωm(X) is a locally Gorenstein module, for all m ≥n.
+2. Consider the following radical square zero algebra Λ = kQ/F 2 where Q is defined as follows:
+1
+/ 2
+/ 3
+/ 4 d
+The simple S4 is a locally Gorenstein module.
+Proposition 3.3. Let Λ be an Artin algebra and M a Λ-module. Then, M is locally Gorenstein if and
+only if, HomΛ(−, Pj), with Pj in PΛM, is exact on any projective resolution of M.
+Corollary 3.4. Let Λ be an Artin algebra, then the following inclusions hold:
+Λ −Gproj ⊆
+⊥Λ ⊆{locally Gorenstein modules}.
+Proposition 3.5. Let Λ be an Artin algebra and M a locally Gorenstein module. Then the following
+statements hold:
+1. if M is non-projective then pd(M) = ∞,
+2. each direct summand of M is a locally Gorenstein module,
+3. Ωn(M) is a locally Gorenstein module, for all non-negative integer n.
+Proof.
+1. If pd(M) = n < ∞then Extn
+Λ(M, P)̸ = 0, for some P ∈PΛM, which is a contradiction.
+2. Let M ′ be a direct summand of M. The result follows from the fact that PΛM ′ ⊆PΛM and from
+the additivity of the bifunctor Exti
+Λ(−, −).
+3. It follows from PΛΩn(M) ⊆PΛM and the isomorphisms Exti
+Λ(Ωn(M), −) = Exti+n
+Λ
+(M, −), i ≥1.
+5
+
+
+4
+IGUSA - TODOROV FUNCTIONS VANISH ON LOCALLY GORENSTEIN MODULES
+Remark 3.6. The direct sum of locally Gorenstein modules is not necessarily a locally Gorenstein module.
+In fact, in Example 3.2.2 the modules P3 and S4 are locally Gorenstein modules, but P3 ⊕S4 is not a
+locally Gorenstein module. However, if X and Y are locally Gorenstein modules such that PΛX = PΛY
+then X ⊕Y is a locally Gorenstein module.
+In the next session we will demonstrate that both Igusa-Todorov functions ϕ and ψ vanish on the
+family of locally Gorenstein modules. Previously we need the following result.
+Proposition 3.7. Let Λ be an Artin algebra and M a Λ-module. If M is a locally Gorenstein module
+then ϕ(M) = ψ(M).
+Proof. Suppose ϕ(M) = n. Since M is a locally Gorenstein module then Ωn(M) is a locally Gorenstein
+module, and then any direct summand of Ωn(M) is a locally Gorenstein module. So each direct summand
+of Ωn(M) is projective or has an infinite projective dimension.
+Therefore max{pd(N) / N|Ωn(M) with pd(N) < ∞} = 0 and ψ(M) = ϕ(M).
+4
+Igusa - Todorov functions vanish on locally Gorenstein modules
+Let X be a locally Gorenstein Λ-module and PΛX = {P1, P2, ..., Pr} the set of all indecomposable
+projective direct summands of projective modules at one minimal projective resolution of X. We will
+consider a full subcategory of mod Λ determined by add((L
+i≥0 Ωi(X))⊕(Lr
+j=1 Pj)), we will denote this
+subcategory with χX. We will also denote with χX, or simply χ, the subcategory stable by projectives
+in add(PΛX), that is:
+• The objects of χX are the objects of χX.
+• HomχX(M, N) =
+HomχX (M,N)
+PχX (M,N) , where PχX (M, N) is the set of morphisms from M to N that factor
+through a projective in add(PΛX).
+• The composition is that induced by χX.
+Lemma 4.1. Let f : M →N be a morphisms in χX. Then f = 0 in χXif and only if f = 0 in mod Λ.
+In particular, χXis a full subcategory of mod Λ.
+Proof. If f = 0 in χXthen f = 0 in mod Λ.
+Conversely, if f = 0 in mod Λ then there exist a projective module P in mod Λ and two morphisms
+h : M →P and j : P →N such that f = jh. Let’s see that f factors through a projective module in
+χX. Indeed, consider the following commutative diagram in mod Λ
+M
+h
+~}}}}}}}}
+f
+
+P
+u
+|y y y y
+j
+@
+@
+@
+@
+@
+@
+@
+@
+0
+/ Ω(N)
+ιN / P0(N)
+πN
+/ N
+/ 0
+Since πN is an epimorphism and P is a projective module, there is u : P →P0(N) such that j = πNu.
+Then f = jh = πNuh. Now, taking uh : M →P0(N) we have that f factors through P0(N), with
+M, N, P0(N) objects in χX and uh, πN, morphisms in χX.
+As a consequence of the proof of the last Lemma, we obtain:
+Remark 4.2. Let f : M →N be a morphisms in χX. Then f = 0 in χXif and only if f : M →N
+factors through P0(N).
+Lemma 4.3. Let X be a locally Gorenstein Λ-module. If M ∈χX, then Extm
+Λ (M, P) = 0 ∀m ≥1,
+∀P ∈PΛX.
+6
+
+
+4
+IGUSA - TODOROV FUNCTIONS VANISH ON LOCALLY GORENSTEIN MODULES
+Proof. Let M be in χX, that is, M = (Ln
+i=0 Xi) ⊕P ′, where each Xi is a finite sum of summands direct
+of Ωi(X) and P ′ is a finite sum of projective modules in PΛX. From the additivity in the first variable
+of bifunctor Extm
+Λ , we have that
+Extm
+Λ (M, P) = Extm
+Λ (
+n
+M
+i=0
+Xi, P) ⊕Extm
+Λ (P ′, P).
+Since P ′ is a projective module we have that Extm
+Λ (P ′, P) = 0 for all m ≥1. Then
+Extm
+Λ (M, P) =
+n
+M
+i=0
+Extm
+Λ (Xi, P) ∀m ≥1.
+We know that Extm+i
+Λ
+(X, P) = 0 for all m + i ≥1 and for all P ∈PΛX. Then for m ≥1 we have that
+Extm
+Λ (Xi, P) |
+M
+finite
+Extm
+Λ (Ωi(X), P) =
+M
+finite
+Extm+i
+Λ
+(X, P) = 0.
+Therefore Extm
+Λ (M, P) = 0 for all m ≥1 and for all P en PΛX.
+Observe that, in the proof of the last Lemma we have demonstrated that M ∈χX, is also locally
+Gorenstein, if X is.
+Now we presents the central result of this work.
+Theorem 1. The functor Ω|χX from χX to χX, is full and faithful.
+Proof. For simplicity, in this proof we will write Ωinstead of Ω|χX.
+We start showing that Ωis well defined on the objects, i.e., Ω(M) is an object in χX, for all M in χX.
+Let M be an object in χX, i.e., M = (Ln
+i=0 Xi)⊕P where each Xi is a finite sum of summands of Ωi(X),
+and P is a finite sum of projectives of PΛX = {P1, ..., Pr}. We have that Ω(M) = Ω(Ln
+i=0 Xl) ⊕Ω(P) =
+Ln
+i=0 Ω(Xi) ⊕0, where each Ω(Xi) is a finite sum of summands of Ωi+1(X), so Ω(M) is an object of χX.
+Therefore Ω(Obj(χX)) ⊆Obj(χX).
+Now, lets see that Ωis well defined on morphism, i.e., if f : M →N is a morphisms in χXsuch that
+f = 0, then Ω(f) = 0 in χX, where Ω(f) = Ω(f).
+Let f : M →N be a zero morphism in χX, that is f = 0 in χX. By Remark 4.2, f factors through the
+projective cover πN : P0(N) →N, i.e., there exists t : M →P0(N) such that πNt = f.
+Therefore we have the following diagram, where the squares and the lower triangle are commutative
+0
+/ Ω(M)
+ιM /
+Ω(f)
+
+P0(M)
+πM
+/
+p
+
+M
+t
+|y y y y y
+/
+f
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+Since fπM = πNp, we have
+0 = πNp −fπM = πNp −πNtπM = πN(p −tπM).
+Then, by the universal property of the kernel, there exists α : P0(M) →Ω(N) such that ιNα = p −tπM.
+Now we have the following diagram
+0
+/ Ω(M)
+ιM /
+Ω(f)
+
+P0(M)
+πM
+/
+p
+
+α
+zu u u u u
+M
+t
+|y y y y y
+/
+f
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+7
+
+
+4
+IGUSA - TODOROV FUNCTIONS VANISH ON LOCALLY GORENSTEIN MODULES
+and ιNαιM = (p −tπM)ιM = pιM −tπMιM = pιM. On the other hand, using that pιM = ιNΩ(f) we get
+that ιNαιM = ιNΩ(f). Then αιM = Ω(f), since ιN is a monomorphism.
+We have now the following commutative diagram
+Ω(M)
+Ω(f)
+
+ιM
+$H
+H
+H
+H
+H
+H
+H
+H
+H
+P0(M)
+α
+zvvvvvvvvv
+with P0(M) in χX.
+Ω(N)
+Therefore Ω(f) factors through P0(M) and then we have that Ω(f) = 0 in χX.
+Finally we prove that the functor Ω: χX →χX is faithful and full.
+Let M, N ∈χX and consider Ω: χX(M, N) →χX(Ω(M), Ω(N)). We can show that there exists
+H : χX(Ω(M), Ω(N)) →χX(M, N) such that
+HΩ|χX(M,N) = IdχX(M,N) and Ω|χX(M,N)H = IdχX(Ω(M),Ω(N)).
+As a matter of fact, to define H, consider the following commutative diagram:
+0
+
+0
+
+0
+
+0
+/ HomΛ(M,Ω(N))
+π∗
+M /
+ιN∗
+
+HomΛ(P0(M),Ω(N))
+ι∗
+M
+/
+ιN∗
+
+HomΛ(Ω(M),Ω(N))
+/
+ιN∗
+
+Ext1
+Λ(M,Ω(N))
+0
+/ HomΛ(M,P0(N))
+π∗
+M /
+πN∗
+
+HomΛ(P0(M),P0(N))
+ι∗
+M
+/
+πN∗
+
+HomΛ(Ω(M),P0(N))
+Lemma 4.3/
+πN∗
+
+0=Ext1
+Λ(M,P0(N))
+(I)
+0
+/ HomΛ(M,N)
+π∗
+M
+/
+
+HomΛ(P0(M),N)
+ι∗
+M
+/
+
+HomΛ(Ω(M),N)
+/
+
+Ext1
+Λ(M,N)
+Ext1
+Λ(M,Ω(N))
+0
+Ext1
+Λ(Ω(M),Ω(N))
+obtained from the exact sequences of the following commutative diagram:
+0
+/ Ω(M)
+ιM /
+Ω(f)
+
+P0(M)
+πM
+/
+p
+
+M
+/
+f
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+Define H : χ(Ω(M), Ω(N)) →χ(M, N) in the following way:
+Given g : Ω(M) →Ω(N) in χX, let g : Ω(M) →Ω(N) be a representative class of g. From diagram (I) it
+follows that ιN∗(g) = ιNg ∈HomΛ(Ω(M), P0(N)), and since ι∗
+M is an epimorphism we know that there
+exits p : P0(M) →P0(N) such that
+ι∗
+M(p) = ιN∗(g).
+Since πN∗ιN∗= 0 we have 0 = πN∗ιN∗(g) = πN∗ι∗
+M(p). So, by the commutativity of the second lower
+square of the diagram (I), we know that ι∗
+MπN∗(p) = 0. Then πN∗(p) ∈Ker(ι∗
+M) = Im(π∗
+M) and there
+exists h ∈HomΛ(M, N) such that π∗
+M(h) = πN∗(p).
+At this point, we have the following commutative diagram:
+0
+/ Ω(M)
+ιM /
+g
+
+P0(M)
+πM
+/
+p
+
+
+
+M
+/
+h
+
+
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+8
+
+
+4
+IGUSA - TODOROV FUNCTIONS VANISH ON LOCALLY GORENSTEIN MODULES
+We define
+H : χ(Ω(M), Ω(N)) →χ(M, N) with H(g) = h
+where π∗
+M(h) = πN∗(p) with p such that ι∗
+M(p) = ιN∗(g).
+Let’s see that H is well defined, i.e, H does not depend on the choice of p and if g = 0 in χXthen h = 0
+in χX.
+Let p, p′ ∈HomΛ(P0(M), P0(N)) such that ι∗
+M(p) = ιN∗(g), πN∗(p) = π∗
+M(h), ι∗
+M(p′) = ιN∗(g) and
+πN∗(p′) = π∗
+M(h′) with h, h′ ∈HomΛ(M, N). Since ι∗
+M(p) = ι∗
+M(p′) we have that ι∗
+M(p −p′) = 0 and
+p−p′ ∈Ker(ι∗
+M) = Im(π∗
+M). So, there is α : M →P0(N) such that π∗
+M(α) = p−p′. By the commutativity
+of the left lower square of the diagram (I), we have that π∗
+MπN∗(α) = πN∗π∗
+M(α) = πN∗(p −p′) =
+πN∗(p) −πN∗(p′) = π∗
+M(h) −π∗
+M(h′) = π∗
+M(h −h′). Now, knowing that π∗
+M is a monomorphism, we get
+that πN∗(α) = h −h′.
+Therefore, we have the following commutative diagram
+M
+h−h′
+
+α
+#F
+F
+F
+F
+F
+F
+F
+F
+F
+P0(N)
+πN
+{xxxxxxxx
+N
+where h −h′ factors through P0(N), with P0(N) in χX. By Remark 4.2, h −h′ = 0 in χX, i.e., h = h′
+in χX, so H : χ(Ω(M), Ω(N)) →χ(M, N) does not depend on the choice of p.
+Now we will show that if H(g) = h with g = 0 in χX, then h = 0 in χX.
+By Remark 4.2, since g = 0 in χX, g factors through P0(Ω(N)), we have the following commutative
+diagram
+0
+/ Ω(M)
+t
+yssssssssss
+ιM /
+g
+
+P0(M)
+πM
+/
+p
+
+M
+/
+h
+
+0
+P0(Ω(N))
+ϵ
+%K
+K
+K
+K
+K
+K
+K
+K
+K
+K
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+where g = ϵt.
+Considering the pushout of the morphisms ιM and t, (PO, ιM, t), we have the following commutative
+diagram
+0
+/ Ω(M)
+ιM
+/
+t
+
+P0(M)
+πM
+/
+r
+
+M
+/ 0
+(II)
+δ :
+0
+/ P0(Ω(N))
+s
+/ PO
+/ M
+/ 0
+Since P0(Ω(N)) and M are objects in χX, we have that Extm
+Λ (M, P0(Ω(N)) = 0 for all m ≥1, by Lemma
+4.3, in particular Ext1
+Λ(M, P0(Ω(N)) = 0 and then the short exact sequence δ splits. So there exists a
+morphism z′ : PO →P0(Ω(N)) such that z′s = idP0(Ω(N)).
+9
+
+
+4
+IGUSA - TODOROV FUNCTIONS VANISH ON LOCALLY GORENSTEIN MODULES
+Taking z = z′r : P0(M) →P0(Ω(N)) we have the following diagram
+0
+/ Ω(M)
+t
+yssssssssss
+ιM /
+g
+
+P0(M)
+z
+tjjjjjjjjjjjjjjjjj
+πM
+/
+p
+
+M
+/
+h
+
+0
+(III)
+P0(Ω(N))
+ϵ
+%K
+K
+K
+K
+K
+K
+K
+K
+K
+K
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+Let’s show that g = ϵzιM. By diagram (II), we have st = rιM. Then z′st = z′rιM. From z′s = idP0(Ω(N))
+and z′rιM = zιM, it follows that t = zιM. By diagram (III), g = ϵt = ϵzιM, wich means that, g =
+ι∗
+M(ϵz). So, we have the following diagram with the commutative squares and the commutative upper
+triangle
+0
+/ Ω(M)
+ιM /
+g
+
+P0(M)
+πM
+/
+p
+
+ϵz
+zuuuuuuuuu
+M
+/
+h
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+From pιM = ιNg = ιNϵzιM it follows that (p −ιNϵz)ιM = 0, i.e., ι∗
+M(p −ιNϵz) = 0.
+Then p −
+ιNϵz ∈Ker(ι∗
+M) = Im(π∗
+M). Since the middle row of the diagram (I) is exact, there is a morphism
+β : M →P0(N) such that p −ιNϵz = π∗
+M(β) = βπM.
+By the commutativity of lower left square of the diagram (I), we have
+π∗
+MπN∗(β) = πN∗π∗
+M(β) = πN∗(p −ιNϵz) = πN∗(p) −πN∗(ιNϵz) = πN∗(p).
+On the other hand, by the definition of H, we know that πN∗(p) = π∗
+M(h). So, we obtain
+π∗
+MπN∗(β) = πN∗(p) = π∗
+M(h).
+And then, since π∗
+M is a monomorphism, we have πN∗(β) = h, i.e, πNβ = h. Therefore h factors through
+P0(N) and h = 0 in χX.
+It only remains to prove that the compositions of the maps H : χ(Ω(M), Ω(N)) →χ(M, N) and
+Ω: χ(M, N) →χ(Ω(M), Ω(N)) are the corresponding identities.
+First, using the diagram (I), let’s show that HΩ= idχ(M,N), i.e, HΩ(f) = f for all f in χ(M, N). If
+f ∈HomΛ(M, N) is a representative of f, we know that π∗
+M(f) = fπM ∈HomΛ(P0(M), N). Since
+πN∗is an epimorphism, there is p′ : P0(M) →P0(N) such that πN∗(p′) = π∗
+M(f). Also, for p′ we have
+πN∗(p′ιM) = πN∗ι∗
+M(p′) = ι∗
+MπN∗(p′) = ι∗
+M(π∗
+M(f)) = 0. So, p′ιM ∈Ker(πN∗) = Im(ιN∗), from where
+there exists g ∈HomΛ(Ω(M), Ω(N)) such that ιN∗(g) = ι∗
+M(p′). Then, by the definition of H, we have
+that H(g) = f.
+Considering the commutative diagram
+0
+/ Ω(M)
+ιM /
+
+g
+Ω(f)
+
+P0(M)
+πM
+/
+
+p′
+p
+
+M
+/
+f
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+we obtain, by the construction of g and the definition of Ω(f), that g −Ω(f) factors through a projective
+module P in mod Λ. Even more, by Remark 4.2, g −Ω(f) factors through P0(Ω(N)) and g −Ω(f) = 0
+in χX. Then g = Ω(f) in χXand HΩ(f) = H(Ω(f)) = H(g) = f.
+To show that ΩH = idχ(Ω(M),Ω(N)), let’s consider g in χ(Ω(M), Ω(N)) and let h = H(g), with h in
+χ(M, N). By the definition of H, there exists p : P0(M) →P0(N) such that the following diagram is
+10
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+commutative
+0
+/ Ω(M)
+ιM /
+g
+
+P0(M)
+πM
+/
+p
+
+M
+/
+h
+
+0
+0
+/ Ω(N)
+ιN
+/ P0(N)
+πN
+/ N
+/ 0
+where g ∈HomΛ(Ω(M), Ω(N)) and h ∈HomΛ(M, N) are representatives of g y h, respectively. Since
+the definition of Ω: mod Λ →mod Λ does not depend on the lift considered, let´s calculate Ω(h) taking
+the last mentioned morphism p : P0(M) →P0(N). Then, since the above diagram is commutative, we
+have that Ω(h) = g in mod Λ. So, Ω(h) = g in χX. Finally, Ω(H(g)) = Ω(h) = g.
+Corollary 4.4. Under the conditions of the previous theorem H : χ(Ω(M), Ω(N)) →χ(M, N) and
+Ω: χ(M, N) →χ(Ω(M), Ω(N)) are inverse maps.
+Theorem 2. Let X be a locally Gorenstein module. If M belongs to χX, then ϕ(M) = 0.
+Proof. Let [χX] be the subgroup of K0 generated by the classes of indecomposable modules in χX. Let’s
+probe that Ω|[χX] is injective. Let [X1] and [X2] be in [χX] such that Ω([X1]) = Ω([X2]). From the
+definition of Ωwe have that [Ω(X1)] = [Ω(X2)] and from Proposition 3.1 of [8] we have that Ω(X1) ∼=
+Ω(X2) in mod Λ and therefore Ω(X1) ∼= Ω(X2) in χX. Then there are morphisms f : Ω(X1) →Ω(X2)
+and g : Ω(X2) →Ω(X1) such that gf = idΩ(X1) and fg = idΩ(X2).
+From Corollary 4.4, Ωand H are inverse maps, we have that gf = Ω(H(g))Ω(H(f)) = Ω(H(g)H(f)).
+So, from Ω(idX1) = idΩ(X1) = gf we have that Ω(idX1) = gf = Ω(H(g)H(f)). Therefore, since Ωis
+a faithful functor we have that idX1 = H(g)H(f). Analogously, idX2 = H(f)H(g). Then X1 ∼= X2 in
+χXand therefore X1 ∼= X2 in modΛ. Now, from [8] we get [X1] = [X2] in K0 and therefore [X1] = [X2]
+in [χX].
+Finally, Ω|[χX] is injective and ϕ(M) = 0 for all M en χX.
+Corollary 4.5. Let X be a locally Gorenstein module. If M is in χX, then ψ(M) = 0.
+As a corollary, we obtain further proof of the following result, previously demonstrated in [14].
+Corollary 4.6. [14] If M ∈⊥Λ, that is, M is a semi-Gorenstein projective, then ϕ(M) = ψ(M) = 0.
+In particular, if M is a Gorenstein projective Λ-module, then ϕ(M) = ψ(M) = 0.
+5
+The n-locally Gorenstein algebras
+The homological dimensions defined with the Igusa-Todorov functions are related with the finitistic
+dimension and global dimension. Indeed, the following inequalities are satisfied:
+fin.dim(Λ) ≤ϕ-dim(Λ) ≤ψ-dim(Λ) ≤gl.dim(Λ).
+5.1
+Definition, examples and firsts results
+In this section we define the n-locally Gorenstein algebras, and we calculate the finitistic dimension, the
+ϕ-dimension and the ψ-dimension for this family of algebras. Finally, we exhibit examples of families of
+n-locally Gorenstein algebras.
+Definition 5.1. An Artin algebra Λ will be called n-locally Gorenstein if each module X in Ωn(mod Λ)
+is locally Gorenstein, that is, for all X ∈Ωn(mod Λ) we have that Extm
+Λ (X, P) = 0 for all m ≥1 and for
+all P ∈PΛX.
+Examples 5.2.
+1. Selfinjective algebras are 0-locally Gorenstein.
+11
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+2. The n-Gorenstein algebras are n-locally Gorenstein algebras, because Ωn(mod Λ) ⊆GΛ.
+3. In fact, the hypothesis id(ΛΛ) = n < ∞, is sufficient to show that Λ is an n-locally Gorenstein
+algebra. This follows from Example 3.2 (b), and also from the known fact that findim(Λ) ≤n.
+4. A one-point extension Λ[M] of a n-Gorenstein algebra Λ, is a (n + 1)-locally Gorenstein algebra.
+For this purpose observe that Ω(mod Λ[M]) ⊆mod Λ.
+Example 5.3. Consider the Nakayama algebra Λ = kQ/I given by the following quiver:
+Q
+=
+1
+α
+' 2
+β
+f
+and by the ideal I = ⟨αβα⟩. Then Λ is not a Gorenstein algebra but it’s a 2-locally Gorenstein algebra.
+Let Λ be a n-locally Gorenstein algebra. Then, by definition, Ωn(M) is a locally Gorenstein module, for
+any M ∈mod Λ. This is the key to being able to prove that all n-locally Gorenstein algebras verify the
+finitistic dimension conjecture. Although the result also arises as a corollary of the forthcoming Theorem
+3, because fin.dim(Λ) ≤ϕ-dim(Λ), we give a direct proof of it, as it involves the famous finitistic dimension
+conjecture.
+Proposition 5.4. The finitistic dimension of a n-locally Gorenstein algebra Λ is finite:
+fin.dim(Λ) ≤n.
+Proof. Let M be a Λ-module of finite projective dimension. Then, pd(Ωn(M)) < ∞and so Ωn(M) is
+projective by Proposition 3.5.1. Therefore, pd(M) ≤n and fin.dim(Λ) ≤n < ∞.
+Recently, in [4] and [10], examples of algebras with finite finitistic dimension and infinite ϕ-dim- dimension
+were exhibited. However, if Λ is a n-locally Gorenstein algebra then both dimensions are finite, as the
+following theorem shows.
+Theorem 3. Let Λ be a n-locally Gorenstein algebra. Then
+ϕ-dim(Λ) ≤n < ∞.
+Proof. If M ∈mod Λ then Ωn(M) is a locally Gorenstein module by Proposition 3.5.3.. From Theorem
+2 we have that ϕ(Ωn(M)) = 0, and from Proposition 1.4.7 [11]
+ϕ(M) ≤ϕ(Ωn(M)) + n = 0 + n = n,
+and then ϕ-dim(Λ) ≤n < ∞.
+Corollary 5.5. Let Λ be a n-locally Gorenstein algebra. Then
+ϕ-dim(Λ) = ψ-dim(Λ) ≤n < ∞.
+Proof. If M ∈mod Λ then Ωn(M) is a locally Gorenstein module, then:
+ψ(M) ≤ψ(Ωn(M)) + n = ϕ(Ωn(M) + n = 0 + n,
+where the equalities hold by Proposition 3.7 and Theorem 2. Finally, from definition, ϕ(X) ≤ψ(X), for
+any X ∈mod Λ, and the result is done.
+12
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+5.2
+Morita context algebras that are locally Gorenstein
+Given A and B two Artin locally Gorenstein algebras, the goal of this section is to show that the algebra
+Λ(0,0) =
+ A
+ANB
+BMA
+B
+
+, given by a Morita context, is also locally Gorenstein, when certain conditions
+are imposed on the bimodules BMA and ANB.
+Proposition 5.6. Let be Λ(0,0) =
+ A
+ANB
+BMA
+B
+
+an algebra arising from a Morita context, X be an
+A-module and Y be a B-module. Then:
+1. If P0(X) is the projective cover of X in mod A then (P0(X), M ⊗A P0(X), IdM⊗P0(X), 0) is the
+projective cover of (X, 0, 0, 0) in mod Λ(0,0).
+2. If Q0(Y ) is the projective cover of Y in mod B then (N ⊗B Q0(Y ), Q0(Y ), 0, IdN⊗Q0(Y )) is the
+projective cover of (0, Y, 0, 0) in mod Λ(0,0).
+Proof. We show only 1. because 2. is analogous. Let p : P0(X) →X be the projective cover of X on
+mod A.
+It is clear that (p, 0) : (P0(X), M ⊗A P0(X), IdM⊗P0(X), 0) →(X, 0, 0, 0) is an epimorphism of Λ(0,0)-
+modules. We need to show that (p, 0) is a minimal morphism: let (a′, b′) : (X′, Y ′, f, g) →(P0(X), M ⊗
+P0(X), IdM⊗P0(X), 0) be a Λ(0,0)-morphism such that (p, 0) ◦(a′, b′) is an epimorphism. We must show
+that (a′, b′) is an epimorphism. On the one hand, we remark that a′ is an epimorphism since p is a
+minimal morphism.
+On the other hand, from the commutative diagram
+M ⊗A X′
+IdM⊗a′
+
+f
+/ Y ′
+b′
+
+M ⊗A P0(X)IdM⊗P0(X)
+/ M ⊗A P0(X)
+we have that b′ ◦f = IdM⊗P0(X) ◦(IdM ⊗a′), and since IdM⊗P0(X) ◦(IdM ⊗a′) is an epimorphism
+(because we proved above that a′ is an epimorphism) we have that b′ it is also an epimorphism.
+Proposition 5.7. Let A and B be Artin algebras and Λ(0,0) =
+
+A
+ANB
+BMA
+B
+
+be the algebra associated
+with the Morita context. Let X an A-module such that M ⊗A P = 0 for all P ∈PAX and Y be an
+B-module such that N ⊗B Q = 0 for all Q ∈PBY . Then:
+1. If ...
+/ Pn
+/ ...
+/ P1
+/ P0
+/ X
+/ 0 is the minimal projective resolution of
+X in mod A then
+...
+/ (Pn, 0, 0, 0)
+/ ...
+/ (P1, 0, 0, 0)
+/ (P0, 0, 0, 0)
+/ (X, 0, 0, 0)
+/ 0
+is the minimal projective resolution of (X, 0, 0, 0) in mod Λ(0,0).
+2. Ωn
+Λ((X, 0, 0, 0)) = (Ωn
+A(X), 0, 0, 0) for all n ≥0.
+3. If ...
+/ Qn
+/ ...
+/ Q1
+/ Q0
+/ Y
+/ 0 is the minimal projective resolution of
+Y in mod B then
+...
+/ (0, Qn, 0, 0)
+/ ...
+/ (0, Q1, 0, 0)
+/ (0, Q0, 0, 0)
+/ (0, Y, 0, 0)
+/ 0
+is the minimal projective resolution of (0, Y, 0, 0) in mod Λ(0,0).
+4. Ωn
+Λ((0, Y, 0, 0)) = (0, Ωn
+B(Y ), 0, 0) for all n ≥0.
+13
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+Proof. By Proposition 5.6 1. and M ⊗AP = 0 for all P ∈PAX, we have that ((P0(Ωn
+AX)), 0, 0, 0), (pn, 0))
+is the projective cover of (Ωn
+A(X), 0, 0, 0) for all n ≥0, so 1 and 2 hold.
+A similar argument proves 3 and 4.
+Corollary 5.8. Let A and B be Artin algebras and Λ(0,0) =
+ A
+ANB
+BMA
+B
+
+be the algebra associated
+with the Morita context. Let X an A-module such that M ⊗A P = 0 for all P ∈PAX and let Y be an
+B-module such that N ⊗B Q = 0 for all Q ∈PBY . Then every projective Λ(0,0)-module in PΛ(X, Y, 0, 0)
+has the form (P, Q, 0, 0) with P ∈PAX and Q ∈PBY .
+If we assume that A is a n-locally Gorenstein algebra and that B is a m-locally Gorenstein algebra, then
+we want to show that Λ(0,0) =
+
+A
+ANB
+BMA
+B
+
+, under certain conditions on the bimodules M and N, is
+a (l + 1)-locally Gorenstein algebra, with l = max{m, n}.
+Lemma 5.9. Let A and B n and m locally Gorenstein algebras, respectively, and let BMA and ANB
+projective bimodules such that M ⊗A N = 0 and N ⊗B M = 0. We consider Λ(0,0) the algebra associated
+with the Morita context. If for each X ∈Ωn(mod A) we have that M ⊗A P = 0 for all P ∈PAX and
+for each Y ∈Ωm(mod B) we have that N ⊗B Q = 0 for all Q ∈PBY , then for each (X, Y, f, g) ∈
+Ωt(mod Λ(0,0)) where t =max{n, m}, the following statements hold:
+ΩΛ(X, Y, f, g) = (ΩA(X), 0, 0, 0) ⊕(0, ΩB(Y ), 0, 0), where X ∈Ωt
+A(mod A) and Y ∈Ωt
+B(mod B).
+Proof. We observe that if t = 0 then A and B are 0-locally Gorenstein algebras. So, the conditions: for
+each X ∈Ωn(mod A) we have that M ⊗A P = 0 for all P ∈PAX and for each Y ∈Ωm(mod B) we have
+that N ⊗B Q = 0 for all Q ∈PBY , imply that M = 0 and N = 0. Then, Λ(0,0) = A × B is a product of
+algebras A and B. The result follows directly.
+We assume t ≥1, let (X, Y, f, g) ∈Ωt(mod Λ(0,0)) then there is (X′, Y ′, f ′, g′) ∈mod Λ(0,0) such that
+(X, Y, f, g) = Ωt
+Λ((X′, Y ′, f ′, g′)).
+Then we have that:
+(X, Y, f, g)
+= Ωt−1
+Λ
+(ΩΛ(X′, Y ′, f ′, g′))
+= Ωt−1
+Λ
+((ΩA(X′), M ⊗A P X′
+0 , 1 ⊗i0, 0) ⊕(N ⊗B QY ′
+0 , ΩB(Y ′), 0, 1 ⊗j0))
+= Ωt−2
+Λ
+(ΩΛ((ΩA(X′), M ⊗A P X′
+0 , 1 ⊗i0, 0)) ⊕ΩΛ((N ⊗B QY ′
+0 , ΩB(Y ′), 0, 1 ⊗j0)))
+= Ωt−2
+Λ
+(ΩΛ((ΩA(X′), 0, 0, 0)) ⊕ΩΛ((0, ΩB(Y ′), 0, 0)))
+= Ωt−1
+Λ
+((ΩA(X′), 0, 0, 0) ⊕(0, ΩB(Y ′), 0, 0))(∗).
+where the second and fourth equalities are satisfied by Proposition 3.3 [17] and by (2) and (3) of Remark
+2.12 of [15], respectively. Finally, by (4) and (5) of Remark 2.12 of [15] we have that
+(X, Y, f, g)
+= ΩΛ((Ωt−1
+A (X′), 0, 0, 0) ⊕(0, Ωt−1
+B (Y ′), 0, 0)),
+so
+(X, Y, f, g)
+= ΩΛ((Ωt−1
+A (X′), 0, 0, 0)) ⊕ΩΛ((0, Ωt−1
+B (Y ′), 0, 0))
+= (Ωt
+A(X′), M ⊗A P
+Ωt−1
+A
+(X′)
+0
+, 1 ⊗i0, 0) ⊕(N ⊗B P
+Ωt−1
+B
+(Y ′)
+0
+, Ωt
+B(Y ′), 0, 1 ⊗j0)
+where the second equality is satisfied by Proposition 3.3 of [17]. Note that from the last equality we have
+that Ωt
+A(X′) is a direct summand of X and Ωt
+A(Y ′) is a direct summand of Y .
+Then, applying ΩΛ to the last equality in (∗), we have that
+ΩΛ(X, Y, f, g)
+= Ωt
+Λ((ΩA(X′), 0, 0, 0) ⊕(0, ΩB(Y ′), 0, 0))
+= ΩΛ((Ωt
+A(X′), 0, 0, 0) ⊕(0, Ωt
+B(Y ′), 0, 0))
+= (Ωt+1
+A (X′), 0, 0, 0) ⊕(0, Ωt+1
+B (Y ′), 0, 0))
+where the second equality is satisfied by Remark 2.12 of [15], and the third equality is satisfied by
+Proposition 5.7 since Ωt
+A(X′) is a direct summand of X and Ωt
+A(Y ′) is a direct summand of Y .
+Taking X = Ωt
+A(X′) e Y = Ωt
+B(Y ′), we have what we desired.
+14
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+Note that in the previous proof, for the case t = 0, have that Λ(0,0) = A × B is a 0-locally Gorenstein
+algebra (and therefore 1-locally Gorenstein algebra).
+Theorem 4. Let A and B n and m locally Gorenstein algebras, respectively, and let BMA and ANB
+projective bimodules such that M ⊗A N = 0 and N ⊗B M = 0. Let Λ(0,0) =
+ A
+ANB
+BMA
+B
+
+, be the
+algebra associated with the Morita context. If for each X ∈Ωn(mod A) we have that M ⊗A P = 0 for all
+P ∈PAX and for each Y ∈Ωm(mod B) we have that N ⊗B Q = 0 for all Q ∈PBY , then:
+(1) all the modules in Ωt+1
+Λ
+(mod Λ) are locally Gorenstein Λ-modules, with t = max{m, n};
+(2) Λ(0,0) is a t + 1 locally Gorenstein algebra.
+Proof.
+(1) Let t = max{m, n} and let (X′, Y ′, f ′, g′) be a Λ-module in Ωt+1(mod Λ). Then, there is
+(X, Y, f, g) ∈Ωt(mod Λ) such that ΩΛ((X, Y, f, g)) = (X′, Y ′, f ′, g′).
+By the previous Lemma we have that:
+(X′, Y ′, f ′, g′) = ΩΛ(X, Y, f, g) = (ΩA(X), 0, 0, 0) ⊕(0, ΩB(Y ), 0, 0)
+where X ∈Ωt
+A(mod A) and Y ∈Ωt
+B(mod B), and therefore each one of them is locally Gorenstein,
+as A-module, B-module, respectively. This implies that X′ = ΩA(X); Y ′ = ΩB(Y ) and:
+PΛ(X′, Y ′, f ′, g′) = PΛ(X′, Y ′, 0, 0) = PΛ(ΩA(X), 0, 0, 0) ∪PΛ(0, ΩB(Y ), 0, 0).
+So, we have to show that Exti
+Λ((X′, Y ′, 0, 0), (P, Q, 0, 0)) = 0 for all i ≥1 and for all (P, Q, 0, 0) ∈
+PΛ(X′, Y ′, 0, 0).
+From the projective resolutions:
+· · ·
+/ P2
+/ P1
+/ P0
+/ ΩA(X)
+/ 0
+in mod A,
+and
+· · ·
+/ Q2
+/ Q1
+/ Q0
+/ ΩB(Y )
+/ 0
+in mod B,
+we obtain, since M ⊗A P = 0, ∀P ∈PAX and N ⊗B Q = 0, ∀Q ∈PBY , the following exact
+sequences:
+· · ·
+/ TA(P2)
+/ TA(P1)
+/ TA(P0)
+/ (ΩA(X), 0, 0, 0)
+/ 0
+and
+· · ·
+/ TB(Q2)
+/ TB(Q1)
+/ TB(Q0)
+/ (0, ΩB(Y ), 0, 0)
+/ 0 .
+Then, since the pairs of functors (TA, UA) and (TB, UB) are pairs of adjoint functors we have:
+HomΛ((ΩA(X), 0, 0, 0), (P, 0, 0, 0))
+
+/ HomΛ(TA(P0), (P, 0, 0, 0))
+≃
+
+/ HomΛ(TA(P1), (P, 0, 0, 0))
+≃
+
+/ HomΛ(TA(P2), (P, 0, 0, 0)) · · ·
+≃
+
+HomA(ΩA(X), P )
+/ HomA(P0, P )
+/ HomA(P1, P )
+/ HomA(P2, P )
+· · ·
+and
+HomΛ(0, (ΩB(Y ), 0, 0), (0, Q, 0, 0))
+
+/ HomΛ(TB(Q0), (0, Q, 0, 0))
+≃
+
+/ HomΛ(TB(Q1), (0, Q, 0, 0))
+≃
+
+/ HomΛ(TB(Q2), (0, Q, 0, 0)) · · ·
+≃
+
+HomB(ΩB(Y ), Q)
+/ HomB(Q0, Q)
+/ HomB(Q1, Q)
+/ HomB(Q2, Q)
+· · ·
+where from
+15
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+Exti
+Λ((ΩA(X), 0, 0, 0), (P, 0, 0, 0)) ≃Exti
+A(ΩA(X), P)
+and
+Exti
+Λ(0, (ΩB(Y ), 0, 0), (0, Q, 0, 0)) ≃Exti
+B(ΩB(Y ), Q).
+Therefore, for (P, Q, 0, 0) ∈PΛ(X′, Y ′, 0, 0), we have that:
+Exti
+Λ((X′, Y ′, f ′, g′), (P, Q, 0, 0)) = Exti
+Λ(ΩΛ((X, Y, f, g)), (P, Q, 0, 0)) =
+= Exti
+Λ((ΩA(X), 0, 0, 0) ⊕(0, ΩB(Y ), 0, 0)), (P, Q, 0, 0)) =
+= Exti
+Λ((ΩA(X), 0, 0, 0), (P, Q, 0, 0)) ⊕Exti
+Λ((0, ΩB(Y ), 0, 0), (P, Q, 0, 0)) ≃
+Exti
+A(ΩA(X), P) ⊕Exti
+B(ΩB(Y ), Q) = 0, ∀i ≥1.
+The last equality follows from the fact that ΩA(X) and ΩB(Y ) are locally Gorenstein modules, as
+A-module, B-module, respectively, and that P ∈PAX′ ⊆PAΩA(X) and Q ∈PBY ′ ⊆PBΩB(Y ),
+for what was shown before.
+(2) Is a direct consequence of the first item.
+5.3
+Examples constructed via Morita contexts
+We present here four examples, constructed via Morita contexts, two respecting the hypotheses of The-
+orem 4 and two in which the hypotheses do not hold. In one of these examples, we take non-projective
+bimodules, and in the second on, the tensors between the bimodules are not zero. However, the second
+of these examples is also a locally Gorenstein algebra.
+The following example verifies the hypotheses of Theorem 4, generating a new locally Gorenstein algebra
+from locally Gorenstein algebras, using the Morita context.
+Example 5.10. Let Q be the quiver:
+5
+$
+4
+o
+3
+o
+2
+o
+1
+o
+We consider the algebra Λ(0,0) =
+
+A
+N
+M
+B
+
+arising from a Morita context, talking A = B = KQ/F 2
+and the bimodules M = Be6 ⊗e3A and N = Ae1 ⊗e8B. Observe that A and B are 4-locally Gorenstein
+algebras.
+The associated quiver to Λ(0,0) is:
+5
+$
+4
+o
+3
+o
+
+2
+o
+1
+o
+10
+'
+9
+o
+8
+o
+I
+7
+o
+6
+o
+.
+Observe that there is no new relations.
+The algebra Λ(0,0) is a 4-locally Gorenstein algebra, just like A and B.
+Next we give an example of a locally Gorenstein infinite type representation algebra.
+16
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+Example 5.11. We consider a double point extension of the famous selfinjective algebra given by Liu
+and Schulz, [19], obtaining an Artin algebra given by the following quiver:
+Q :
+3
+α3
+:
+α4
+Z
+α5
+
+2
+α2
+o
+1
+α1
+o
+and the relations: I = {α2α1, α2
+3, α2
+4, α2
+5, α4α3 + rα3α4, α5α4 + rα3α5, α3α5 + rα5α3}, where r ∈k
+is a non zero element of an algebraically closed field k.
+Now we consider the Morita context algebra defined by: Λ(0,0) =
+ A
+N
+M
+B
+
+, taking A = B = kQ/I
+and the bimodules BMA and ANB such that the quiver of Λ(0,0) is:
+3
+α3
+:
+α4
+Z
+α5
+
+2
+α2
+o
+1
+α1
+o
+β1
+
+3′
+α′
+3
+8
+α′
+4
+Z
+α′
+5
+
+2′
+α′
+2
+o
+1′
+α′
+1
+o
+β2
+X1111111111111
+with no new relations. By Theorem 4 we get a locally Gorenstein infinite representation type algebra.
+Next is an example where the bimodules BMA and ANB are not projective. We show that the algebra
+Λ(0,0), obtained is not locally Gorenstein.
+Example 5.12. Let Q be the quiver:
+Q :
+3
+$
+2
+o
+1
+o
+We consider the algebra Λ(0,0) =
+ A
+N
+M
+B
+
+arising from a Morita context, taking A = KQ/F 2, B = K
+and the bimodules BMA and ANB, in such a way that the quiver associated with Λ(0,0) is:
+3
+β1
+
+α3
+$
+2
+α2
+o
+1
+α1
+o
+4
+β2
+O
+and the set of relations is: {α2α1, α3α2, α2
+3, β1α2, β2β1, α1β2}.
+First observe that above construction implies both BMA and ANB are not projective bimodules. The
+indecomposable projective Λ(0,0)-modules and indecomposable injective Λ(0,0)-modules can be represented
+as:
+P1 : 1
+2
+P2 : 2
+3
+P3 :
+3
+3 4
+4
+P4 : 4
+1
+I1 : 4
+1
+I2 : 1
+2
+I3 : 3 2
+3
+I4 :
+3
+3
+4
+17
+
+
+5
+THE n-LOCALLY GORENSTEIN ALGEBRAS
+The minimal projective resolution of S3 is:
+· · ·
+P3 ⊕P3
+<<<<<<<<
+/ P3 ⊕P2
+<<<<<<<<
+/ P3 ⊕P1
+<<<<<<<<
+/ P3 ⊕P4
+/
+<<<<<<<<
+P3
+/ S3
+/ 0
+3
+4 ⊕3
+@
+3
+4 ⊕2
+@
+3
+4 ⊕1
+@
+3
+4 ⊕4
+E
+
+
+
+
+
+
+Then S3 is a direct summand of Ω4k(S3) for all k ≥0, so S3 its in Ω4k(mod Λ(0,0)) for all k ≥0.
+On the other hand, since Ext1
+Λ(0,0)(S3, P3)̸ = 0 we have that Ext4k+1
+Λ(0,0)(S3, P3)̸ = 0 for all t ≥0, and so S3
+is not locally Gorenstein module, because PS3 = {P1, P2, P3, P4}.
+Therefore Λ(0,0) is not locally Gorenstein algebra.
+Example 5.13. Let’s consider again the initial algebra given in the Example 5.11, that is the algebra
+given by the quiver:
+Q :
+3
+α3
+:
+α4
+Z
+α5
+
+2
+α2
+o
+1
+α1
+o
+and the set of relations I = {α2α1, α2
+3, α2
+4, α2
+5, α4α3 + rα3α4, α5α4 + rα3α5, α3α5 + rα5α3}, where
+r ∈k is a non zero element of an algebraically closed field k.
+Now we consider the Morita context algebra defined by: Λ(0,0) =
+ A
+N
+M
+B
+
+, taking A = B = kQ/I
+and the bimodules BMA and ANB such that the quiver is given by:
+3
+α3
+:
+α4
+Z
+α5
+
+2
+α2
+o
+1
+α1
+o
+β1
+
+3′
+α′
+3
+8
+α′
+4
+Z
+α′
+5
+
+2′
+α′
+2
+o
+1′
+α′
+1
+o
+β2
+J
+and the set of relations is given by:
+I′ = {α2α1, α2
+3, α2
+4, α2
+5, α4α3 + rα3α4, α5α4 + rα3α5, α3α5 + rα5α3, β1β2, β2β1,
+α′
+2α′
+1, α′2
+3 , α′2
+4 , α′2
+5 , α′
+4α′
+3 + rα′
+3α′
+4, α′
+5α4 + r′α′
+3α′
+5, α′
+3α′
+5 + rα′
+5α′
+3}.
+Although this example does not satisfy the hypotheses of Theorem 4, namely, M ⊗A N̸ = 0̸ = N ⊗B M,
+it can be shown using Example 5.2 (3) that the algebra Λ(0,0) is 3-locally Gorenstein.
+Acknowledgements
+Author L.A. is grateful to Asociación de Universidades Grupo Montevideo for funding a one-month
+research stay at Instituto de Matemática y Estadística “Rafael Laguardia”, Universidad de la República,
+which enabled the development of this study.
+18
+
+
+REFERENCES
+References
+[1] Shimshon Amitsur. Rings of quotients and Morita contexts. Journal of Algebra, 17(2):273–298, 1971.
+[2] Maurice Auslander and Mark Bridger. Stable module theory. Number 94. American Mathematical
+Soc., 1969.
+[3] Maurice Auslander and Idun Reiten. Applications of contravariantly finite subcategories. Advances
+in Mathematics, 86(1):111–152, 1991.
+[4] Marcos Barrios and Gustavo Mata. On algebras of Ωn-finite and Ω∞-infinite representation type.
+Journal of Algebra and its Applications, 23(11):17pp., 2024.
+[5] Apostolos Beligiannis and Idun Reiten. Homological and homotopical aspects of torsion theories.
+American Mathematical Soc., 2007.
+[6] Xiao-Wu Chen. Gorenstein homological algebra of Artin algebras. arXiv:1712.04587, 2017.
+[7] Edgar Enochs and Overtoun Jenda. Gorenstein injective and projective modules. Mathematische
+Zeitschrift, 220(1):611–633, 1995.
+[8] Sônia Maria Fernandes, Marcelo Lanzilotta, and Octavio Mendoza Hernández. The ϕ-dimension: A
+new homological measure. Algebras and Representation Theory, 18(2):463–476, 2015.
+[9] Edward Green and Chrysostomos Psaroudakis. On Artin algebras arising from Morita contexts.
+Algebras and Representation Theory, 17:1485–1525, 2014.
+[10] Eric Hanson and Kiyoshi Igusa. A counterexample to the ϕ-dimension conjecture. Mathematische
+Zeitschrift, 300(1):807–826, 2022.
+[11] François Huard and Marcelo Lanzilotta. Self-injective right artinian rings and Igusa-Todorov func-
+tions. Algebras and Representation Theory, 16(3):765–770, 2013.
+[12] François Huard, Marcelo Lanzilotta, and Octavio Mendoza. An approach to the finitistic dimension
+conjecture. Journal of Algebra, 319(9):3918–3934, 2008.
+[13] Kiyoshi Igusa and Gordana Todorov. On the finitistic global dimension conjecture for Artin algebras.
+Representations of algebras and related topics, 45:201–204, 2005.
+[14] Marcelo Lanzilotta and Gustavo Mata. Igusa-Todorov functions for Artin algebras. Journal of Pure
+and Applied Algebra, 222(1):202–212, 2018.
+[15] Marcelo Lanzilotta and José Vivero. Generalised Lat-Igusa-Todorov algebras and Morita contexts.
+Algebras and Representation Theory, 27(6):2045–2066, 2024.
+[16] Weiqing Li. Virtually Gorenstein Artin algebras are weakly Gorenstein. arXiv:2608.10049, 2026.
+[17] Yajun Ma and Nanqing Ding. Igusa-Todorov algebras over Morita rings. Journal of Algebra and its
+Applications, 22(08):15pp., 2023.
+[18] Claus Ringel and Pu Zhang. Gorenstein-projective and semi-Gorenstein-projective modules. Algebra
+& Number Theory, 14(1):1–36, 2020.
+[19] Claus Michael Ringel. The Liu-Schulz example. In Representation theory of algebras. Amer. Math.
+Soc., Providence, RI. Canad. Math. Soc. Conf. Proc. 18, pages 587–600. Citeseer, 1996.
+19

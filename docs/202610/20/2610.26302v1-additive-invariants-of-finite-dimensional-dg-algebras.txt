@@ -1,0 +1,546 @@
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL
+DG-ALGEBRAS
+ISAMBARD GOODBODY
+Abstract. Orlov has shown that additive invariants such as K-theory and Hochschild
+homology of smooth finite-dimensional DG-algebras behave similarly to those of finite-
+dimensional algebras. The similarities only go so far: there are examples of finite-
+dimensional DG-algebras with vanishing and uncountable Grothendieck groups. We
+show that for DG-quivers with relations, the Grothendieck groups are free of the
+expected rank and that, in the smooth case, all additive invariants are determined by
+the base field. We use our results to rule out certain finite-dimensional DG-algebras
+from being phantoms.
+Contents
+1.
+Introduction
+1
+2.
+Preliminaries
+2
+3.
+An Upper Bound
+4
+4.
+A Lower Bound
+5
+5.
+The Simple-Projective bijection
+6
+6.
+Phantoms
+8
+7.
+Hochschild Homology
+9
+References
+10
+1. Introduction
+In [Orl20], the Grothendieck group of a smooth finite-dimensional DG-algebra was
+shown to be free and of finite but unknown rank. The goal of this note was to address
+the following problem.
+Problem 1.1 ([Orl20, Problem 2.22]). Find the rank of the Grothendieck group of
+smooth finite-dimensional DG-algebras.
+The Grothendieck group of a finite-dimensional algebra (smooth or not) is free of rank
+given by the number of indecomposable projectives or equivalently the number of sim-
+ples. The Grothendieck group of a finite-dimensional DG-algebra can behave very dif-
+ferently: there are smooth finite-dimensional DG-algebras with vanishing Grothendieck
+groups (Section 6) and there are finite-dimensional DG-algebras whose Grothendieck
+groups are uncountable (Remark 3.1). To prove some positive results we focus on the
+following class of finite-dimensional DG-algebras.
+Date: October 20, 2026.
+1
+arXiv:2610.26302v1  [math.KT]  19 Oct 2026
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+2
+Definition 1.2. We say that a DG-algebra A over a field k is a DG-quiver with relations
+if the following conditions hold.
+(1) The underlying algebra of A is finite-dimensional and given by kQ/I where Q
+is a finite quiver and I is an admissible ideal.
+(2) The differential d of A satisfies d(e) = 0 for every idempotent e.
+We let Nproj denote the number of isomorphism classes of indecomposable sum-
+mands of A in its derived category. The maximal semisimple quotient A/J+ of A was
+constructed in [Orl20] and we let Nsim denote the number of isomorphism classes of
+indecomposable summands of A/J+. Recall that an additive invariant is any invari-
+ant which sends semi-orthogonal decompositions to direct sums.
+Examples include
+K-theory, Hochschild homology and its variants.
+Theorem 1.3 (Corollary 5.6). Let A be a DG-quiver with relations. There are isomor-
+phisms
+ZNproj ≃K0(A)
+∼−→K0(A/J+) ≃ZNsim
+Suppose A is additionally smooth, then
+U(A) ≃U(A/J+) ≃U(k)
+L Nsim
+for any additive invariant U.
+A phantom is a smooth and proper DG-algebra A such that all of the additive invari-
+ants of A vanish. A result of [Efi23] shows that every phantom is quasi-isomorphic to a
+finite-dimensional DG-algebra. Combined with some results on Hochschild homology,
+we can rule out certain finite-dimensional DG-algebras from being phantoms.
+Theorem 1.4. Suppose A is a phantom finite-dimensional DG-algebra.
+(1) For every primitive idempotent e of A d(e)̸ = 0.
+(2) The map H0(A) →H0(A/J+) is not epi.
+(3) The underlying algebra of A is not basic.
+(4) HH1(H∗(A))̸ = 0.
+(5) If k is perfect, then H∗(A) has infinite global dimension.
+Acknowledgements. Some of this work was completed during my PhD and I’m grate-
+ful to my supervisor at the time, Greg Stevenson, for his guidance.
+2. Preliminaries
+Throughout k will denote a field. We let Ae := A ⊗k Aop denote the enveloping
+algebra of A. The derived category of A will be denoted D(A), the perfect complexes
+Dperf(A) and the modules with finite-dimensional cohomology Dfd(A). The following
+notions are noncommutative analogues of smooth and proper schemes. See [Orl16] for
+results making this precise.
+Definition 2.1. Let A be a DG-algebra.
+(1) A is smooth if A ∈Dperf(Ae).
+(2) A is proper if H∗(A) is finite-dimensional.
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+3
+(3) A is finite-dimensional if Ai is finite-dimensional for every i and Ai = 0 for
+|i| >> 0.
+(4) A proper DG-algebra A is regular if Dfd(A) = Dperf(A).
+Remark 2.2. Every finite-dimensional DG-algebra is clearly proper but the converse
+is not true (e.g. [Goo24, Remark 2.4]). Recall that a DG-algebra A is connective if
+Hi(A) = 0 for i > 0 and coconnective if Hi(A) = 0 for i < 0. By [Goo26, Appendix
+A] or [RS22, Corollary 3.12] any proper connective DG-algebra is quasi-isomorphic to
+a finite-dimensional DG-algebra. It follows from [KN13], that any regular proper co-
+connective DG-algebra with semi-simple H0 is quasi-isomorphic to a finite-dimensional
+DG-algebra.
+Remark 2.3. By [Orl20, Corollary 2.20], finite-dimensional DG-algebras are exactly
+those proper DG-algebras which admit categorical resolutions with full exceptional
+collections.
+In particular, a projective scheme X is derived equivalent to a finite-
+dimensional DG-algebra if and only if it admits such a categorical resolution. This is
+conjecturally related to rationality of X (see [Orl20, Conjecture 3.6], [LZ26], [Wei16]).
+In particular, if X is a rational curve, it follows from [BDG17] or [KL15] (see also
+[Wei16, Proposition 4.1]) that Dperf(C) is equivalent the perfect derived category of a
+finite-dimensional DG-algebra.
+Definition 2.4 ([Orl20, Definition 2.3]). If A is a finite-dimensional DG-algebra, let J
+denote the radical of the underlying algebra of A and
+J−:= {x ∈J | d(x) ∈J}
+J+ = J + d(J)
+Remark 2.5. The DG-ideals J−and J+ are quasi-isomorphic. The ideal J−is nilpotent
+and A/J+ is derived equivalent to a product of division algebras by [Orl20, Proposition
+2.16]. In this way A/J+ ≃A/J−behaves like the maximal semisimple quotient of a
+finite-dimensional algebra.
+The above construction can be used to prove the following. We don’t know if the
+statement is true for all proper DG-algebras.
+Proposition 2.6. Let A be a finite-dimensional DG-algebra such that A/J+ is k-
+separable. Then the following are equivalent.
+(1) A is regular
+(2) A is smooth
+(3) Dperf(A) admits a strong generator.
+Proof. If A is regular, then A/J+ is a strong generator of Dperf(A). Indeed this follows
+from a radical filtration argument (e.g. [Goo24, Theorem 2.14]) combined with [Orl20,
+Proposition 2.5]. If Dperf(A) has a strong generator, then the inclusion Dperf(A) ,→
+Dperf( ˜A) where ˜A is the Auslander algebra of [Orl20], admits a right adjoint by [BvdB03,
+Theorem 1.3]. As A/J+ is k-separable, ˜A is smooth by [Orl20, Theorem 2.19]. Hence A
+is smooth by [LS14, Theorem 3.24]. If A is smooth then A is regular by [KS25, Lemma
+3.8].
+□
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+4
+Being finite-dimensional places strong constraints on invariants. The Grothendieck
+group of a DG-algebra A is defined as K0(A) := K0(Dperf(A)). The Hochschild homol-
+ogy of A is HH∗(A) := H−∗(A ⊗L
+Ae A). Both of the following results fail for general
+smooth and proper DG-algebras.
+Theorem 2.7. Let A be a regular finite-dimensional DG-algebra.
+(1) ([Orl20, Corollary 2.21]) The Grothendieck group K0(A) is free and finitely gen-
+erated.
+(2) ([Goo24, Corollary 2.23]) If A/J+ is k-separable, HHn(A) = 0 for n̸ = 0.
+In order to address Problem 1.1 we make the following definitions.
+Definition 2.8. Let A be a finite-dimensional DG-algebra.
+(1) Let Nproj be the number of isomorphism classes of indecomposable summands
+of A in D(A).
+(2) Let Nsim be the number of isomorphism classes of indecomposable summands
+of A/J+ in D(A).
+3. An Upper Bound
+In this section, we provide some conditions for the Grothendieck group of a finite-
+dimensional DG-algebra to be finitely generated.
+Remark 3.1. We can produce examples of finite-dimensional DG-algebras with badly
+behaved invariants using Remark 2.3. If X is the nodal cubic over C, there is a finite-
+dimensional DG-algebra such that Dperf(X) ≃Dperf(A). Hence K0(A) ≃K0(X) =
+Z ⊕Z ⊕C× which is not finitely generated.
+Lemma 3.2. Let A be a finite-dimensional DG-algebra such that d(e) = 0 for each
+idempotent e ∈A. Then any M ∈Dperf(A) is quasi-isomorphic to a module with a
+filtration.
+0 = M0 ⊆M1 ⊆· · · ⊆Mn = M
+such that Mi/Mi−1 is a finite sum of shifts of summands of A.
+Proof. Recall that M is a summand in D(A) of a finite semi-free A-module F i.e. one
+with a filtration as in the statement. As in the proof of [Orl20, Proposition 2.5], we can
+assume that M is a strict summand of F as a DG-module not just up to homotopy.
+Since F is semifree, there is a finite set S = ⊔0≤i≤nSi ⊆F of homogenous elements
+such that the underlying graded modules satisfy F # = L
+s∈S sA# and such that for
+each i, d(Si) ⊆Fi−1 := L
+s∈S0⊔···⊔Si−1 sA#. Since M # is a summand of F # and A# is a
+finite-dimensional algebra, there exist a subset S′ ⊆S and non-zero idempotents es for
+each s ∈S′ such that
+M # =
+M
+s∈S′
+sesA#
+Let S′
+i := S′ ∩Si and consider the submodules Mi := Fi ∩M of M. We have that
+Mi/M #
+i−1 ≃L
+s∈S′
+i sesA# on which the differential is given by d(sesa) = sd(esa) =
+sesd(a). Therefore Mi/Mi−1 ≃L esA and each each esA is a summand of A as a
+DG-module.
+□
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+5
+Remark 3.3. Recall that a subcategory of a triangulated category is thick if it is
+closed under extensions, shifts and direct summands. If A is any DG-algebra, then A
+generates Dperf(A) as a thick subcategory. If A is a finite-dimensional algebra, then the
+indecomposable summands of A generate Dperf(A) as a triangulated category i.e. it is
+not necessary to take retracts. The following result generalises this fact.
+Theorem 3.4. Let A be a finite-dimensional DG-algebra such that d(e) = 0 for every
+idempotent e. The perfect derived category Dperf(A) is generated by the indecomposable
+summands of A as a triangulated category and there is a surjection
+ZNproj ↠K0(A).
+Proof. The existence of the filtration in Lemma 3.2 implies every object of Dperf(A)
+can be built from the indecomposable summands of A using extensions and shifts (and
+without taking retracts). It follows that the class of any object in K0(A) is a linear
+combination of the classes of the indecomposable summands of A.
+□
+Remark 3.5. If A is any regular finite-dimensional DG-algebra, then a radical filtration
+argument (e.g. [Goo24, Theorem 2.14]) implies that the indecomposable summands
+of A/J+ generate Dperf(A) as a triangulated category.
+Hence K0(A) ≃ZN where
+N ≤Nsim.
+4. A Lower Bound
+In this section we produce non-zero classes in the Grothendieck group of a finite-
+dimensional DG-algebra A by lifting them from K0(A/J+). There are finite-dimensional
+DG-algebras with vanishing Grothendieck group (see Section 6) and so additional as-
+sumptions on A are necessary.
+Remark 4.1. Let A be a finite-dimensional DG-algebra, then by [Orl20, Proposition
+2.16], there are division algebras Di such that D(A/J+) ≃D(D1) × · · · × D(Dn). The
+equivalence sends Di to an indecomposable summand Si of A/J+. Hence
+K0(A/J+) =
+M
+Z[Si] ≃ZNsim
+Definition 4.2. Let A be a finite-dimensional DG-algebra.
+(1) We say that an idempotent e ∈H0(A/J+) is liftable if there is an idempotent ˜e
+of H0(A) which is sent to e under the map H0(A) →H0(A/J+).
+(2) We let Nlift ≤Nsim denote the number of isomorphism classes of indecompos-
+able summands of A/J+ such that the corresponding idempotent of H0(A/J+)
+lifts to an idempotent of H0(A).
+Remark 4.3.
+(1) Any idempotent lifts along quotients of finite-dimensional algebras and so e be-
+ing liftable is equivalent to e being in the image of the map H0(A) →H0(A/J+).
+(2) If e ∈H0(A/J+), then it lifts to an idempotent e ∈A/J+ which lifts to an
+idempotent ˜e ∈A. If d(˜e) = 0 then [˜e] ∈H0(A) lifts e. So if d(e) = 0 for every
+(primitive) idempotent of A, then all idempotents lift.
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+6
+Theorem 4.4. Let A be a finite-dimensional DG-algebra and suppose S is an indecom-
+posable summand of A/J+ whose corresponding idempotent e ∈H0(A/J+) is liftable.
+Then [S] is in the image of the map K0(A) →K0(A/J+). Hence there is a surjective
+map.
+K0(A) ↠ZNlift ⊆K0(A/J+)
+Proof. The lift ˜e ∈H0(A) of e splits as a morphism ˜e : A →A in D(A) via some
+summand P of A. The functor −⊗L
+A A/J+ sends ˜e to e and so P ⊗L
+A A/J+ and S
+are both splittings of the idempotent morphism e. Therefore they are isomorphic in
+D(A/J+). Hence [P] ∈K0(A) is sent to [S] ∈K0(A/J+).
+□
+Combining Theorems 4.4 and 3.4 we deduce the following.
+Corollary 4.5. Let A be a finite-dimensional DG-algebra such that d(e) = 0 for every
+idempotent e. Then there are surjections
+ZNproj ↠K0(A) ↠ZNsim
+Combining Theorem 4.4 and Remark 3.5 we deduce the following.
+Corollary 4.6. Let A be a regular finite-dimensional DG-algebra then K0(A) ≃ZN
+where Nlift ≤N ≤Nsim. If either
+(1) d(e) = 0 for every idempotent e of A
+(2) or H0(A) ↠H0(A/J+)
+then the map K0(A)
+∼−→K0(A/J+) ≃ZNsim is an isomorphism.
+5. The Simple-Projective bijection
+For a finite-dimensional algebra, there is a bijection between the isomorphism classes
+of indecomposable projectives and those of the simples. Another way of stating this
+simple-projective bijection is that the map K0(A) →K0(A/J) is an isomorphism.
+Theorem 5.1 (Simple-Projective Bijection). Suppose A is a finite-dimensional DG-
+algebra such that H0(A) →H0(A/J+) is surjective, then Nproj = Nsim = Nlift.
+Proof. By Theorem 4.4 and Remark 4.3, the functor −⊗L
+A A/J+ induces an epimor-
+phism from the set of isomorphism classes of summands of A to isomorphism classes
+of summands of A/J+. Let S := P ⊗L
+A A/J+ and S′ := P ′ ⊗L
+A A/J+ be summands of
+A/J+ and g : S →S′ an isomorphism in D(A/J+). Then the map
+A/J+ ↠S
+g−→S′ ,→A/J+
+is an element h ∈H0(A/J+) and so lifts to a map f : A →A. Then −⊗L
+A A/J+ sends
+(P ,→A
+f−→A ↠P ′) 7→(S ,→A/J+ ↠S
+g−→S′ ,→A/J+ ↠S′) = (S
+g−→S′)
+By [Goo24, Theorem 3.3], the functor −⊗L
+A A/J+ is conservative and so P ≃P ′. Hence
+the above map on isomorphism classes is bijection. If P is a decomposable summand
+of A then the associated summand of A/J+ clearly is too. Suppose S is a summand of
+A/J+ with lift P and S ≃S1 ⊕S2. Then we can lift S1 and S2 to P1 and P2. Then we
+have that P and P1⊕P2 are both lifts of S and so P ≃P1⊕P2 by the above uniqueness.
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+7
+Hence P is indecomposable if and only if P ⊗L
+A A/J+ is. Therefore Nproj = Nsim. By
+Remark 4.3, Nsim = Nlift.
+□
+From Theorem 5.1 and Corollary 4.5 we deduce the following.
+Corollary 5.2. Suppose A is a finite-dimensional DG-algebra such that H0(A) →
+H0(A/J+) is epi and d(e) = 0 for every idempotent e ∈A. There are isomorphisms
+ZNproj ≃K0(A)
+∼−→K0(A/J+) ≃ZNsim
+Using the argument of [RS22, Theorem 4.6] we extend Corollary 5.2 to all additive
+invariants in the smooth case.
+Lemma 5.3. Let f : A →B be a map of smooth and proper DG-algebras such that the
+induced map
+K0(Aop ⊗k A)
+∼−→K0(Bop ⊗k B)
+is an isomorphism. Then f induces an isomorphism U(A) ≃U(B) for every additive
+invariant U.
+Proof. It is enough to produce an isomorphism on additive motives as in [Tab15]. As A
+and B are smooth and proper the morphisms from Uadd(A) to Uadd(B) in the category
+of additive motives is given by K0(Aop⊗B). Factoring the isomorphism in two different
+ways implies that postcomposing by Uadd(f) in the category of motives induces an epi
+and a mono
+K0(Bop ⊗A) ↠K0(Bop ⊗B)
+K0(Aop ⊗A) ,→K0(Aop ⊗B)
+As the first map is epi, Uadd(f) admits a right inverse g. As the second map is mono,
+g is also a left inverse.
+□
+Lemma 5.4. Let A be a finite-dimensional DG-algebra such that d(e) = 0 for each
+idempotent e of A. Then A is quasi-isomorphic to a DG-algebra A′ such that d(f) = 0
+for each idempotent f of A′ and J(A′) = J(A′)+ and A/J+ ∼= A′/J.
+Proof. As A/J is a product of matrix algebras, the map A/J ↠A/J+ is a split sur-
+jection and so if J̸ = J+ there must be an idempotent e ∈J+. Say e = x + d(y)
+for some x, y ∈J. As d(e) = 0 we see that d(x) = 0. So [e] = [x] ∈H0(A). But
+[e] is idempotent and [x] is nilpotent so [e] = 0. This implies that eA is acyclic. Let
+M := L
+[e]̸=0 eA. Then M is quasi-isomorphic to A and so there is a quasi-isomorphism
+A′ := EndA(M) ≃EndA(A) = A. It is clear that the differential kills every idem-
+potent of A′ and that A′ has no acyclic summands. Hence by the above argument
+J(A′) = J(A′)+ and by construction we see that A′/J ∼= A/J+.
+□
+Theorem 5.5. Let A be a smooth finite-dimensional DG-algebra such that A/J+ is
+k-separable and d(e) = 0 for every idempotent e of A. If U is any additive invariant,
+there is an equivalence
+U(A) ≃U(A/J+)
+Proof. By Lemma 5.4, we can assume that J = J+.
+By Lemma 5.3, it is enough
+to show that K0(Aop ⊗A) →K0(A/Jop ⊗A/J) is an isomorphism.
+As A/J is k-
+separable, Ae/J(Ae) = A/Jop ⊗A/J and every primitive idempotent of Ae is of the
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+8
+form e ⊗f for idempotents e, f of A. So the differential on Ae kills each idempotent.
+Since Ae is smooth, Corollary 4.6 implies the induced map K0(Ae) →K0(Ae/J(Ae)) is
+an isomorphism.
+□
+Our results apply to DG-quivers with relations.
+Corollary 5.6. Let A be a DG-quiver with relations. Then there is an isomorphism
+ZNproj ≃K0(A)
+∼−→K0(A/J+) ≃ZNsim.
+If A is additionally regular, then for every additive invariant U
+U(A) ≃U(A/J+) ≃U(k)Nsim
+Proof. Suppose A = kQ/I and let kQ0 denote the vertex subalgebra. Then there are
+maps of DG-algebras
+kQ0 →A →A/J+
+whose composite is a split epi. Therefore the map H0(A) →H0(A/J+) = A/J+ is epi
+and so Corollary 5.2 applies and the first isomorphism holds. For the second, note that
+A/J+ ∼= kNsim is k-separable. Hence A is also smooth and Theorem 5.5 applies.
+□
+Remark 5.7. In general kQ0̸ = A/J+ since its possible for idempotents to be contained
+in J+. e.g. Take k[x]/x2 with |x| = −1 and differential sending x 7→1. However by
+Lemma 5.4, A is quasi-isomorphic to a DG-quiver with relations A′ such that K0(A′) ≃
+K0(kQ′
+0).
+6. Phantoms
+A phantom is a smooth and proper DG-algebra such that all of its additive invariants
+vanish. This is equivalent to the vanishing of its endomorphism ring in the category
+of noncommutative motives in the sense of [Tab15]. Hence a smooth and proper DG-
+algebra A is a phantom if and only if K0(Ae) = 0.
+Remark 6.1. It follows from [Efi23, Theorem 6.2], that every phantom is quasi-
+isomorphic to a finite-dimensional DG-algebra. This is a surprising result which dis-
+proves [Orl20, Conjecture 3.7] in the strongest possible way. See [Kra24], [LS26] for the
+simplest examples of phantoms.
+Proposition 6.2. Let A be a finite-dimensional DG-algebra. Then A is a phantom if
+and only if K0(A) = 0.
+Proof. If A is a smooth finite-dimensional DG-algebra such that K0(A) = 0, then it
+satisfies condition iii) of [Efi23, Theorem 6.2] by [Orl20, Theorem 3.3]. So condition ii)
+holds and [A] ∈K0(Ae) is in the image of K0(A)⊗K0(Aop) = 0 and so [A] = 0. But [A]
+corresponds to the identity morphism in the category motives as in [Tab15]. Therefore
+Uadd(A) = 0 and A is a phantom.
+□
+Remark 6.3. Parts 1), and 2) of Theorem 1.4 follow immediately from Theorem 4.4
+and Remark 4.3.
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+9
+Proposition 6.4. Suppose A is a finite-dimensional phantom then
+A/J+ ∼= EndD1(N1) × · · · × EndDn(Nn)
+for finite dimensional division algebras Di where Ni ∈D(Di) have Euler characteristic
+zero. In particular, the underlying algebra of A is not basic.
+Proof. By [Orl20, Proposition 2.15], there are division algebras Di and Ni ∈D(Di)
+such that the above isomorphism holds. There is an equivalence D(End(Ni)) ≃D(Di)
+where End(Ni) 7→Ni. Note Ni ≃H∗(Ni) ∼= L
+j∈Z ΣjD
+(rj)
+i
+for some rj ≥0. The
+map K0(A) →K0(A/J+) ∼= K0(D1 × · · · × Dn) sends [A] 7→Pn
+i=1
+P
+j∈Z(−1)jrj[Di].
+If K0(A) = 0, then the image of [A] must also be zero. So the Euler characteristic of
+Ni, P
+j∈Z(−1)jrj = 0 for all i. If A were basic, A/J+ would be a product of division
+algebras which each have non-vanishing Euler characteristic.
+□
+Remark 6.5. Proposition 6.4 and the existence of finite-dimensional phantoms implies
+there is a finite-dimensional DG-algebra which is not derived equivalent to any finite-
+dimensional DG-algebra whose underlying algebra is basic.
+7. Hochschild Homology
+Being a phantom has consequences for the Hochschild homology of the cohomology
+of a phantom.
+Remark 7.1. Let A be a DG-algebra and view H∗(A) as a DG-algebra with zero
+differential. Then the Hochschild homology of H∗(A) admits a bigrading HHn(A) ≃
+L
+q∈Z HHn(H∗(A))q coming from the decomposition of the Hochschild chain complex.
+There is a spectral sequence converging to HH∗(A) with Ep,q
+2
+= HHp−q(H∗(A))q.
+Lemma 7.2. Let A be a proper DG-algebra. Then dimk HH0(H∗(A)) ≥Nproj̸ = 0.
+Proof. Let H = H∗(A) viewed as a DG-algebra with zero differential. Then using the
+Hochschild complex one can see that HH0(H)0 = H0/Σ[Hi, H−i] where the bracket
+denotes the graded commutator. Let J denote the radical of H. Then the map H →
+H/J induces a surjection HH0(H)0 ↠HH0(H/J)0. Since H/J is a product of Nproj
+graded simple algebras it is enough to show that HH0(S)0̸ = 0 for any finite-dimensional
+graded simple algebra S viewed as a DG-algebra with zero differential. This follows from
+a graded version of the usual trace argument for non-vanishing of zero-th Hochschild
+homology of finite-dimensional algebras.
+□
+Proposition 7.3. Let A be a proper DG-algebra such that HH1(H∗(A)) = 0, then
+HH∗(A)̸ = 0.
+Proof. Consider the spectral sequence from Remark 7.1. If HH1(H∗(A)) = 0, then
+Eq,q−1
+2
+= HH1(H∗(A))q = 0 for all q. Hence Eq,q−1
+r
+= 0 for all r ≥2. But this implies
+every differential dr : Er,r−1
+r
+→E0,0
+r
+vanishes. For degree reasons every differential out
+of E0,0
+r
+also vanishes. Hence E0,0
+∞= E0,0
+2
+= HH0(H∗(A))0̸ = 0 by Lemma 7.2.
+□
+Proposition 7.4. Let A be a proper DG-algebra over a perfect field such that H∗(A)
+has finite global dimension. Then A is smooth.
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+10
+Proof. If H∗(A) has finite global dimension, it also has finite global dimension as a
+graded algebra. Since k is perfect, it follows that H∗(A) admits a finite projective
+resolution as a graded bimodule over H∗(Ae) = H∗(A)e. This finite projective resolution
+lifts to a finite semi-free resolution of A as a DG-bimodule over Ae by e.g. [Kel94,
+Theorem on pp. 69 c)]. Hence A ∈Dperf(Ae).
+□
+Theorem 7.5. Let A be a proper DG-algebra over a perfect field such that H∗(A) has
+finite global dimension. Then
+HH∗(A) ≃HH∗(H∗(A)) ≃HH0(H∗(A))
+Proof. Suppose H∗(A) has finite global dimension. By Proposition 7.4, H∗(A) is smooth
+viewed as a finite-dimensional DG-algebra with zero differential. By Proposition 2.7,
+HHn(H∗(A)) = 0 for n̸ = 0. Therefore the E2 page of the spectral sequence in Remark
+7.1 is non-zero except for Eq,q
+2
+= HH0(H∗(A))q. Therefore all the differentials vanish
+and Ep,q
+∞= Ep,q
+2 . Hence convergence implies that HHn(A) = 0 for n̸ = 0 and HH0(A) ≃
+HH0(H∗(A)).
+□
+References
+[BDG17] I. Burban, Y. Drozd, and V. Gavran. Singular curves and quasi-hereditary algebras. Inter-
+national Mathematics Research Notices, 2017(3):895–920, 02 2017.
+[BvdB03] A. Bondal and M. van den Bergh. Generators and representability of functors in commutative
+and noncommutative geometry. Mosc. Math. J., 3(1):1–36, 258, 2003.
+[Efi23]
+A. Efimov. Smooth compactifications in derived non-commutative geometry. In European
+Congress of Mathematics (ECM), pages 535–551. EMS Press, 2023.
+[Goo24]
+I. Goodbody. Reflecting perfection for finite-dimensional differential graded algebras. Bull.
+Lond. Math. Soc., 56(12):3689–3707, 2024.
+[Goo26]
+I. Goodbody. Approximable triangulated categories and reflexive DG-categories. Applied
+Categorical Structures, 34(3):19, 2026. With an appendix by T. Raedschelders and G. Steven-
+son.
+[Kel94]
+B. Keller. Deriving dg categories. Annales scientifiques de l’´Ecole normale sup´erieure,
+27(1):63–102, 1994.
+[KL15]
+A. Kuznetsov and V.A. Lunts. Categorical resolutions of irrational singularities. Int. Math.
+Res. Not., 2015(13):4536–4625, 2015.
+[KN13]
+B. Keller and P. Nicol´as. Weight structures and simple dg modules for positive dg algebras.
+Int. Math. Res. Not., 2013(5):1028–1078, 2013.
+[Kra24]
+J. Krah. A phantom on a rational surface. Invent. Math., 235:1009–1018, 2024.
+[KS25]
+A. Kuznetsov and E. Shinder. Homologically finite-dimensional objects in triangulated cat-
+egories. Selecta Math., 31(27), 2025.
+[LS14]
+V. A. Lunts and O. M. Schn¨urer. Smoothness of equivariant derived categories. Proc. London
+Math. Soc. (3), 108(5):1226–1276, 2014.
+[LS26]
+Y. Liu and Y. Shen. Phantom categories on 3-vertex directed dg quivers. arXiv preprint:
+2609.27191, 2026.
+[LZ26]
+X. Lin and S. Zhang. Orlov’s rationality conjecture for surfaces. arXiv preprint: 2609.21807,
+2026.
+[Orl16]
+D. Orlov. Smooth and proper noncommutative schemes and gluing of DG categories. Ad-
+vances in Mathematics, 302:803–849, 2016.
+[Orl20]
+D. Orlov. Finite-dimensional differential graded algebras and their geometric realizations.
+Advances in Mathematics, 366:107096, jun 2020.
+[RS22]
+T. Raedschelders and G. Stevenson. Proper connective differential graded algebras and their
+geometric realizations. Eur. J. Math., 8:574–598, 2022.
+
+
+ADDITIVE INVARIANTS OF FINITE-DIMENSIONAL DG-ALGEBRAS
+11
+[Tab15]
+G. Tabuada. Noncommutative motives, volume 63 of Univ. Lecture Ser. Amer. Math. Soc.,
+2015.
+[Wei16]
+Z. Wei. The full exceptional collections of categorical resolutions of curves. Journal of Pure
+and Applied Algebra, 220(9):3332–3344, 2016.
+Isambard Goodbody, Zeeman Building, University of Warwick, Coventry, CV4 7AL,
+igoodbody.maths@gmail.com
