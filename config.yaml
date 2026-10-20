@@ -25,3 +25,67 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: algebra-rep
+      description: 请帮我查找代数表示论方向相关论文
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: algebraic representation theory
+          keyword_cn: 代数表示论
+          query: algebraic representation theory of finite-dimensional algebras and quivers
+        - keyword: quiver representations
+          keyword_cn: 箭图表示
+          query: representations of quivers and path algebras
+        - keyword: derived categories
+          keyword_cn: 导出范畴
+          query: derived categories and triangulated categories in representation theory
+        - keyword: cluster algebras
+          keyword_cn: 丛代数
+          query: cluster algebras and cluster categories
+        - keyword: Auslander-Reiten theory
+          keyword_cn: Auslander-Reiten 理论
+          query: Auslander-Reiten theory and almost split sequences
+        - keyword: homological algebra
+          keyword_cn: 同调代数
+          query: homological methods in representation theory
+      intent_queries:
+        - query: >-
+            Research papers on algebraic representation theory with emphasis on quivers, tilting theory, and derived
+            categories
+          query_cn: 关于代数表示论的研究论文，重点关注箭图、倾斜理论和导出范畴
+          enabled: true
+          source: manual
+          note: ''
+        - query: Articles about modular representations, Auslander Reiten theory, and finite dimensional algebras
+          query_cn: 关于模表示、Auslander Reiten 理论和有限维代数的文章
+          enabled: true
+          source: manual
+          note: ''
+        - query: Studies on cluster algebras and homological methods in representation theory
+          query_cn: 关于丛代数与表示论中同调方法的研究
+          enabled: true
+          source: manual
+          note: ''
+        - query: Surveys and developments in the representation theory of algebras
+          query_cn: 代数表示论的综述与进展
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-10-20T04:56:57.307Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
