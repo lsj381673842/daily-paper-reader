@@ -1,0 +1,637 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-20T05:02:24.444263+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 13,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 13,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2610.15386v1",
+      "source": "arxiv",
+      "title": "Cohen-Macaulay truncated path and Nakayama algebras",
+      "abstract": "This paper characterizes Cohen-Macaulay algebras in the sense of Auslander and Reiten [Progr. Math. 95(1991)] within the following two classes of finite dimensional algebras: (i) truncated path algebras and (ii) Nakayama algebras. For the former, our characterization in terms of ordinary quivers shows that if a Cohen-Macaulay truncated path algebra $Λ$ is connected, then $Λ$ or $D(Λ)$ gives a dualizing module, where $D$ denotes the standard duality. For the latter, we show that every Cohen-Macaulay Nakayama algebra $Λ$ is Iwanaga-Gorenstein. In particular, $Λ$ always gives a dualizing module. Consequently, there is no non-trivial Cohen-Macaulay algebra among truncated path and Nakayama algebras.",
+      "authors": [
+        "Takahiro Honma",
+        "Satoshi Usui"
+      ],
+      "primary_category": "math.RA",
+      "categories": [
+        "math.RA",
+        "math.RT"
+      ],
+      "published": "2026-10-11T06:26:02+00:00",
+      "link": "https://arxiv.org/pdf/2610.15386v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "characterizes Cohen-Macaulay finite dimensional algebras via ordinary quivers, path algebras and Nakayama algebras",
+      "llm_evidence_cn": "用普通箭图刻画截断路代数与Nakayama代数中的Cohen-Macaulay代数",
+      "llm_evidence": "用普通箭图刻画截断路代数与Nakayama代数中的Cohen-Macaulay代数",
+      "canonical_evidence": "用普通箭图刻画截断路代数与Nakayama代数中的Cohen-Macaulay代数",
+      "llm_tldr_en": "The paper classifies Cohen-Macaulay algebras among truncated path algebras and Nakayama algebras, using quivers to show connected cases yield dualizing modules and no nontrivial examples exist.",
+      "llm_tldr_cn": "论文研究截断路代数与Nakayama代数两类有限维代数中Auslander-Reiten意义下的Cohen-Macaulay代数。作者用普通箭图给出截断路代数的刻画，证明连通情形下代数或其对偶给出双对偶模；对Nakayama代数则证明其必为Iwanaga-Gorenstein。结果表明这两类代数中不存在非平凡的Cohen-Macaulay代数，厘清了该同调性质在有限维代数中的边界。",
+      "llm_tldr": "论文研究截断路代数与Nakayama代数两类有限维代数中Auslander-Reiten意义下的Cohen-Macaulay代数。作者用普通箭图给出截断路代数的刻画，证明连通情形下代数或其对偶给出双对偶模；对Nakayama代数则证明其必为Iwanaga-Gorenstein。结果表明这两类代数中不存在非平凡的Cohen-Macaulay代数，厘清了该同调性质在有限维代数中的边界。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "algebraic representation theory of finite-dimensional algebras and quivers",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2610.16214v1",
+      "source": "arxiv",
+      "title": "Representation Type and Schurian Finiteness of Tits Algebras",
+      "abstract": "We determine the representation type and Schurian finiteness of the Tits algebra of a finite central real hyperplane arrangement over an algebraically closed field. The algebra is representation-finite when the arrangement has at most two hyperplanes, tame when it has three, and wild when it has at least four. Moreover, it is Schurian-finite if and only if the arrangement has at most two hyperplanes. Both classifications hold over algebraically closed fields of arbitrary characteristic. The proof combines Saliola's bound-quiver presentation with explicit module constructions, convex subquivers, essentialization, and deletion. In the $\\mathbb{R}^2$ case, we describe all eleven indecomposable modules for two lines and construct a full exact embedding of modules over a free algebra for at least four lines.",
+      "authors": [
+        "Siyuan Chen"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT"
+      ],
+      "published": "2026-10-12T05:45:24+00:00",
+      "link": "https://arxiv.org/pdf/2610.16214v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "representation type of Tits algebras via bound quivers and indecomposable modules",
+      "llm_evidence_cn": "用界箭图与不可分解模刻画Tits代数的表示型",
+      "llm_evidence": "用界箭图与不可分解模刻画Tits代数的表示型",
+      "canonical_evidence": "用界箭图与不可分解模刻画Tits代数的表示型",
+      "llm_tldr_en": "The paper determines the representation type and Schurian finiteness of Tits algebras of hyperplane arrangements using bound-quiver presentations, module constructions, and convex subquivers.",
+      "llm_tldr_cn": "针对Tits代数表示型此前缺乏系统分类的问题，作者借助Saliola的界箭图表示，并结合显式模构造、凸子箭图、本质化与删除技巧展开分析。结果表明两超平面情形为表示有限、三超平面为驯服、四及以上为野，且Schur有限当且仅当至多两超平面。该分类在任意特征的代数闭域上均成立，深化了有限维代数表示型理论。",
+      "llm_tldr": "针对Tits代数表示型此前缺乏系统分类的问题，作者借助Saliola的界箭图表示，并结合显式模构造、凸子箭图、本质化与删除技巧展开分析。结果表明两超平面情形为表示有限、三超平面为驯服、四及以上为野，且Schur有限当且仅当至多两超平面。该分类在任意特征的代数闭域上均成立，深化了有限维代数表示型理论。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "algebraic representation theory of finite-dimensional algebras and quivers",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2610.16746v1",
+      "source": "arxiv",
+      "title": "Superdecomposable Complete Path Algebras",
+      "abstract": "Generalizing the setting of the second author's work on indecomposable modules without nonzero hollow factors, we characterize quivers $Q$ for which the dual algebra $R$ of the path coalgebra of $Q$, equivalently the complete path algebra, has no nonzero uniform right ideals: this happens exactly when every vertex of $Q$ can reach a vertex emitting at least two distinct arrows. Equivalently, the injective hull $E(R)$ of the right regular module is superdecomposable. These conditions are also equivalent to the path coalgebra having no nonzero hollow factor modules as a left module over its dual algebra.",
+      "authors": [
+        "Can Hatipoğlu",
+        "Christian Lomp"
+      ],
+      "primary_category": "math.RA",
+      "categories": [
+        "math.RA"
+      ],
+      "published": "2026-10-12T13:15:44+00:00",
+      "link": "https://arxiv.org/pdf/2610.16746v1",
+      "tags": [
+        "keyword:algebra-rep"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "complete path algebras of quivers, uniform ideals and indecomposable modules",
+      "llm_evidence_cn": "箭图的完备路径代数、均匀理想与不可分解模",
+      "llm_evidence": "箭图的完备路径代数、均匀理想与不可分解模",
+      "canonical_evidence": "箭图的完备路径代数、均匀理想与不可分解模",
+      "llm_tldr_en": "The paper characterizes quivers whose complete path algebra has no nonzero uniform right ideals, equivalently whose right regular module has a superdecomposable injective hull.",
+      "llm_tldr_cn": "针对完备路径代数何时缺乏非零均匀右理想这一结构问题，作者推广了无空心因子不可分解模的研究，用箭图的组合条件进行刻画。结果表明该现象当且仅当每个顶点都能到达一个发射至少两条不同箭头的顶点时成立，等价于右正则模的内射包超可分解。文章还给出路径余代数空心因子模的等价描述，深化了对路径代数模结构的理解。",
+      "llm_tldr": "针对完备路径代数何时缺乏非零均匀右理想这一结构问题，作者推广了无空心因子不可分解模的研究，用箭图的组合条件进行刻画。结果表明该现象当且仅当每个顶点都能到达一个发射至少两条不同箭头的顶点时成立，等价于右正则模的内射包超可分解。文章还给出路径余代数空心因子模的等价描述，深化了对路径代数模结构的理解。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2610.17646v1",
+      "source": "arxiv",
+      "title": "A subcategory with remarkable homological properties via actions of tensor categories",
+      "abstract": "By equipping the category $\\mathcal{M}$ of modules over a finite dimensional algebra with the action of a finite tensor category $\\mathcal{C}$, we introduce a subcategory $\\mathcal{PM}$ satisfying numerous remarkable properties: it is generating and cogenerating, functorially finite, closed under Auslander--Reiten translations (i.e. precluster tilting), and it computes the finitistic dimension. Through a functor category perspective, $\\mathcal{PM}$ is identified with the $\\mathcal{C}$-module functors that are projective, and we also prove a $\\mathcal{C}$-equivariant version of the Auslander(--Solberg) correspondence. As examples, we show that $\\mathcal{PM}$ contains only finitely many indecomposable modules for some tensor product algebras. For some family of 1-Iwanaga--Gorenstein algebras introduced by Geiss--Leclerc--Schröer, we show that $\\mathcal{PM}$ is exactly the subcategory of $τ$-locally free modules.",
+      "authors": [
+        "Kevin Coulembier",
+        "Edmund Heng"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.CT",
+        "math.QA"
+      ],
+      "published": "2026-10-13T03:19:51+00:00",
+      "link": "https://arxiv.org/pdf/2610.17646v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "subcategory closed under Auslander-Reiten translations and computes finitistic dimension",
+      "llm_evidence_cn": "构造对Auslander-Reiten平移封闭并计算有限生成维数的子范畴",
+      "llm_evidence": "构造对Auslander-Reiten平移封闭并计算有限生成维数的子范畴",
+      "canonical_evidence": "构造对Auslander-Reiten平移封闭并计算有限生成维数的子范畴",
+      "llm_tldr_en": "Equips module categories over finite-dimensional algebras with finite tensor category actions to construct a functorially finite subcategory closed under Auslander-Reiten translations, precluster tilting, and computing finitistic dimension.",
+      "llm_tldr_cn": "本文研究有限维代数模范畴在同调代数中的子范畴结构，试图利用张量范畴作用获得具有优良性质的对象。作者给模范畴配备有限张量范畴作用，构造出生成且余生成、函子有限、对Auslander-Reiten平移封闭（即预簇倾斜）并计算有限生成维数的子范畴，并从函子范畴角度将其等同于投射的C-模函子。还证明了C-等变的Auslander-Solberg对应，并在张量积代数例子中说明该子范畴仅有有限多个不可分解模，为有限维代数表示论提供新工具。",
+      "llm_tldr": "本文研究有限维代数模范畴在同调代数中的子范畴结构，试图利用张量范畴作用获得具有优良性质的对象。作者给模范畴配备有限张量范畴作用，构造出生成且余生成、函子有限、对Auslander-Reiten平移封闭（即预簇倾斜）并计算有限生成维数的子范畴，并从函子范畴角度将其等同于投射的C-模函子。还证明了C-等变的Auslander-Solberg对应，并在张量积代数例子中说明该子范畴仅有有限多个不可分解模，为有限维代数表示论提供新工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "Auslander-Reiten theory and almost split sequences",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2610.21507v1",
+      "source": "arxiv",
+      "title": "A Krause-type recollement for Q-shaped derived categories",
+      "abstract": "Let k be a commutative noetherian hereditary ring and let Q be a small, Hom-finite, locally bounded k-linear category admitting a Serre functor and satisfying the strong retraction property, with nilpotent pseudo-radical. For every k-algebra A, we construct a recollement of the Q-shaped homo?topy category KQ(A Inj) of objectwise injective Q-shaped modules by its full subcategory Kac Q (A Inj) of exact objects and the Q-shaped derived category DQ(A). The construction uses complete hereditary cotorsion pairs and does not require A to be noetherian. If A is left noetherian, both KQ(A Inj) and Kac Q (A Inj) are compactly generated by special preenvelopes of finitely generat?ed stalk modules. We identify (Kac Q (A Inj))c with the idempotent completion of (KQ(A Inj))c/LI ((DQ(A))c ), where LI is the fully faithful left adjoint of the localization. This paper builds on and generalizes works of Krause and Liu",
+      "authors": [
+        "Yajun Ma",
+        "Peiru Yang"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.CT",
+        "math.RA"
+      ],
+      "published": "2026-10-15T08:43:05+00:00",
+      "link": "https://arxiv.org/pdf/2610.21507v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "constructs recollement for Q-shaped derived categories over algebras",
+      "llm_evidence_cn": "构造Q形导出范畴的recollement结构",
+      "llm_evidence": "构造Q形导出范畴的recollement结构",
+      "canonical_evidence": "构造Q形导出范畴的recollement结构",
+      "llm_tldr_en": "Constructs a Krause-type recollement for Q-shaped derived categories of modules over algebras using complete hereditary cotorsion pairs, and identifies compact objects via finitely generated stalk modules.",
+      "llm_tldr_cn": "本文针对Q形导出范畴缺乏统一分解结构的问题，在k为交换诺特遗传环、Q为满足Serre函子与强收缩性质的小Hom有限局部有界范畴的设定下，利用完全遗传余挠对构造了Q形同伦范畴、精确对象子范畴与Q形导出范畴之间的Krause型recollement，且不要求代数A诺特。若A左诺特，还证明相关范畴由有限生成茎模的特殊预包络紧生成，并识别紧对象为幂等完备化，为箭图式导出表示论提供了统一框架。",
+      "llm_tldr": "本文针对Q形导出范畴缺乏统一分解结构的问题，在k为交换诺特遗传环、Q为满足Serre函子与强收缩性质的小Hom有限局部有界范畴的设定下，利用完全遗传余挠对构造了Q形同伦范畴、精确对象子范畴与Q形导出范畴之间的Krause型recollement，且不要求代数A诺特。若A左诺特，还证明相关范畴由有限生成茎模的特殊预包络紧生成，并识别紧对象为幂等完备化，为箭图式导出表示论提供了统一框架。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2610.16403v1",
+      "source": "arxiv",
+      "title": "Ideal quotients of $n$-exact categories",
+      "abstract": "In this paper, we extend the notion of a removable subcategory to $n$-exact categories, and prove that an ideal quotient by a subcategory of projective-injectives inherits an $n$-exact structure from the original category if and only if the subcategory is removable. In the Frobenius case, the quotient remains Frobenius, and the stable $(n+2)$-angulated categories are equivalent. We give a sufficient condition for a subcategory of projective-injectives to be removable. We also show that the ideal quotient construction is compatible with cluster tilting. Finally, we apply the construction to $2$-cluster tilting subcategories of the category of ACM bundles on a Geigle--Lenzing projective plane, obtaining quotients for both natural and relative $2$-exact structures.",
+      "authors": [
+        "Weikang Weng"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT"
+      ],
+      "published": "2026-10-12T08:42:53+00:00",
+      "link": "https://arxiv.org/pdf/2610.16403v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "ideal quotients of n-exact and n-angulated categories, compatible with cluster tilting",
+      "llm_evidence_cn": "n-正合与n-角化范畴的理想商，且与丛倾斜相容",
+      "llm_evidence": "n-正合与n-角化范畴的理想商，且与丛倾斜相容",
+      "canonical_evidence": "n-正合与n-角化范畴的理想商，且与丛倾斜相容",
+      "llm_tldr_en": "The paper extends removable subcategories to n-exact categories, showing ideal quotients by projective-injectives inherit n-exact structure iff removable, with Frobenius and cluster-tilting compatibility and applications to ACM bundles.",
+      "llm_tldr_cn": "论文研究n-正合范畴中理想商何时保持正合结构的问题。作者引入可移除子范畴概念，证明对投射-内射子范畴作理想商继承n-正合结构当且仅当该子范畴可移除，并在Frobenius情形给出稳定n-角化范畴的等价。作者还说明该构造与丛倾斜相容，并应用于Geigle-Lenzing射影平面上ACM丛的2-丛倾斜子范畴，拓展了高维同调代数的范畴框架。",
+      "llm_tldr": "论文研究n-正合范畴中理想商何时保持正合结构的问题。作者引入可移除子范畴概念，证明对投射-内射子范畴作理想商继承n-正合结构当且仅当该子范畴可移除，并在Frobenius情形给出稳定n-角化范畴的等价。作者还说明该构造与丛倾斜相容，并应用于Geigle-Lenzing射影平面上ACM丛的2-丛倾斜子范畴，拓展了高维同调代数的范畴框架。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2610.17357v1",
+      "source": "arxiv",
+      "title": "A Gordon--Green-type result for Gorenstein-projective modules",
+      "abstract": "Let \\(Λ\\) be a \\(\\Z\\)-graded Artin algebra which is Iwanaga--Gorenstein. We prove that \\(Λ\\) is CM-finite if and only if the category of gradable Gorenstein-projective modules has finite type, and if and only if the lengths of the indecomposable gradable Gorenstein-projective modules are bounded. Moreover, if \\(Λ\\) is CM-finite, then every Gorenstein-projective \\(Λ\\)-module is gradable. These results provide Gorenstein-projective analogues of the corresponding theorems of Gordon--Green for graded Artin algebras of finite representation type.",
+      "authors": [
+        "A. M. Bouhada",
+        "M. Laaraj"
+      ],
+      "primary_category": "math.RA",
+      "categories": [
+        "math.RA",
+        "math.RT"
+      ],
+      "published": "2026-10-12T20:14:12+00:00",
+      "link": "https://arxiv.org/pdf/2610.17357v1",
+      "tags": [
+        "keyword:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Gordon-Green analogue for Gorenstein-projective modules over graded Artin algebras",
+      "llm_evidence_cn": "分级Artin代数上Gorenstein-投射模的Gordon-Green型定理",
+      "llm_evidence": "分级Artin代数上Gorenstein-投射模的Gordon-Green型定理",
+      "canonical_evidence": "分级Artin代数上Gorenstein-投射模的Gordon-Green型定理",
+      "llm_tldr_en": "For Z-graded Iwanaga-Gorenstein Artin algebras, CM-finiteness is shown equivalent to the gradable Gorenstein-projective module category having finite type and bounded lengths, extending Gordon-Green theorems.",
+      "llm_tldr_cn": "论文针对分级Iwanaga-Gorenstein Artin代数，研究CM-有限性与Gorenstein-投射模范畴之间的关系。作者证明代数CM-有限当且仅当可分级Gorenstein-投射模范畴具有有限表示型，且当且仅当不可分解对象长度有界，并说明此时所有Gorenstein-投射模都可分级。该结果给出Gordon-Green有限表示型定理在Gorenstein-投射情形下的类比，推进了有限维代数的同调理论。",
+      "llm_tldr": "论文针对分级Iwanaga-Gorenstein Artin代数，研究CM-有限性与Gorenstein-投射模范畴之间的关系。作者证明代数CM-有限当且仅当可分级Gorenstein-投射模范畴具有有限表示型，且当且仅当不可分解对象长度有界，并说明此时所有Gorenstein-投射模都可分级。该结果给出Gordon-Green有限表示型定理在Gorenstein-投射情形下的类比，推进了有限维代数的同调理论。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "homological methods in representation theory",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2610.16300v1",
+      "source": "arxiv",
+      "title": "Derivation based noncommutative geometry of quiver path algebras",
+      "abstract": "In this paper, we study derivation based noncommutative geometry of path algebras arising from quivers by identifying a Lie algebra of derivations from which a differential calculus is constructed. We show that properties of the differential calculus are intimately connected with the structure of the quiver. In particular, by introducing the notion of a separating quiver, we find a condition on the quiver which is equivalent to the module of differential forms being a projective bimodule. For such quivers, one can construct bimodule connections, as well as bimodule forms which serve as noncommutative analogues of the Riemannian metric. As an illustration of the above concepts, we present a class of quivers for which one can construct Levi-Civita connections, i.e. torsion free connections compatible with a bimodule form.",
+      "authors": [
+        "Joakim Arnlind",
+        "Victor Hildebrandsson"
+      ],
+      "primary_category": "math.QA",
+      "categories": [
+        "math.QA"
+      ],
+      "published": "2026-10-12T07:27:11+00:00",
+      "link": "https://arxiv.org/pdf/2610.16300v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "derivation-based geometry of quiver path algebras",
+      "llm_evidence_cn": "箭图路代数的导子微分结构",
+      "llm_evidence": "箭图路代数的导子微分结构",
+      "canonical_evidence": "箭图路代数的导子微分结构",
+      "llm_tldr_en": "The paper studies derivation-based noncommutative geometry of quiver path algebras. It builds a differential calculus from a Lie algebra of derivations, links calculus properties to quiver structure via separating quivers, and constructs bimodule and Levi-Civita connections.",
+      "llm_tldr_cn": "箭图路代数的微分结构与其组合结构之间的关系尚不清楚。本文从导子李代数出发构造微分演算，引入可分箭图概念，证明微分形式模为投射双模当且仅当箭图满足相应条件。进而构造双模联络与非交换度量，并给出可构造Levi-Civita联络的箭图类。该工作把非交换几何工具引入箭图路代数研究。",
+      "llm_tldr": "箭图路代数的微分结构与其组合结构之间的关系尚不清楚。本文从导子李代数出发构造微分演算，引入可分箭图概念，证明微分形式模为投射双模当且仅当箭图满足相应条件。进而构造双模联络与非交换度量，并给出可构造Levi-Civita联络的箭图类。该工作把非交换几何工具引入箭图路代数研究。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.18801v1",
+      "source": "arxiv",
+      "title": "Cellular Algebra of $A_2$ webs",
+      "abstract": "We introduce a diagram algebra $\\mathcal{K}_L$ based on Kuperberg's $A_2$-webs and prove a Schur--Weyl duality $\\mathcal{K}_L \\cong \\operatorname{End}_{U_q(\\mathfrak{sl}_3)}((V^+ \\oplus V^-)^{\\otimes L})$, where $V^\\pm$ are the fundamental representations of $U_q(\\mathfrak{sl}_3)$. Thus, $\\mathcal{K}_L$ is a natural $A_2$ analogue of the Temperley--Lieb algebra. We construct an explicit cellular structure for $\\mathcal{K}_L$, with the web basis as its cellular basis and cell modules indexed by dominant $U_q(\\mathfrak{sl}_3)$-weights. The bases of these modules are parametrized by dominant lattice paths via a recursive growth algorithm. Using this structure, we determine local generators of $\\mathcal{K}_L$ and establish web formulations of the first and second fundamental theorems of invariant theory. In particular, we show that the braid-group image, augmented by local idempotents, does not generate $\\mathcal{K}_L$, and identify an additional local generator. Finally, we derive a bimodule decomposition of $(V^+ \\oplus V^-)^{\\otimes L}$, yielding a complete set of irreducible $\\mathcal{K}_L$-modules for formal or generic $q$.",
+      "authors": [
+        "Azat M. Gainutdinov",
+        "Jesper Lykke Jacobsen",
+        "Yueheng Li"
+      ],
+      "primary_category": "math.QA",
+      "categories": [
+        "math.QA",
+        "math-ph",
+        "math.RT"
+      ],
+      "published": "2026-10-13T17:43:18+00:00",
+      "link": "https://arxiv.org/pdf/2610.18801v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Cellular structure for a diagram algebra in representation theory",
+      "llm_evidence_cn": "图代数的胞腔结构与表示论",
+      "llm_evidence": "图代数的胞腔结构与表示论",
+      "canonical_evidence": "图代数的胞腔结构与表示论",
+      "llm_tldr_en": "Introduces a diagram algebra from A_2 webs, proves Schur-Weyl duality with U_q(sl_3), constructs a cellular structure, and derives generators and web forms of invariant theory fundamental theorems.",
+      "llm_tldr_cn": "论文研究基于Kuperberg A_2网的图代数，旨在构造sl_3的Temperley-Lieb型类比。作者引入图代数K_L并证明其与量子sl_3张量幂自同态代数的Schur-Weyl对偶，进而构造显式胞腔结构，以网基为胞腔基、以支配权标号胞腔模。利用该结构确定局部生成元并给出不变理论第一、第二基本定理的网表述，为A_2型图代数与胞腔代数理论建立了系统框架。",
+      "llm_tldr": "论文研究基于Kuperberg A_2网的图代数，旨在构造sl_3的Temperley-Lieb型类比。作者引入图代数K_L并证明其与量子sl_3张量幂自同态代数的Schur-Weyl对偶，进而构造显式胞腔结构，以网基为胞腔基、以支配权标号胞腔模。利用该结构确定局部生成元并给出不变理论第一、第二基本定理的网表述，为A_2型图代数与胞腔代数理论建立了系统框架。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "algebraic representation theory of finite-dimensional algebras and quivers",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.17441v1",
+      "source": "arxiv",
+      "title": "Linear Laurent phenomenon algebras are of finite type",
+      "abstract": "Laurent phenomenon algebras generalise cluster algebras by allowing irreducible exchange polynomials in place of binomials. Lam and Pylyavskyy proved finite type for those arising from graphs and conjectured that the same holds for every Laurent phenomenon algebra admitting a linear seed. We prove this conjecture over an arbitrary unique factorisation domain. Our proof constructs a nonzero element of the upper algebra divisible by every cluster variable. Comparing noninitial cluster variables with the prime factors of this element in the initial Laurent ring bounds the number of cluster variable classes and yields a finite normalised mutation pattern.",
+      "authors": [
+        "Oliver Daisey"
+      ],
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.AC",
+        "math.RA",
+        "math.RT"
+      ],
+      "published": "2026-10-12T22:00:26+00:00",
+      "link": "https://arxiv.org/pdf/2610.17441v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "generalizes cluster algebras and proves finite type conjecture",
+      "llm_evidence_cn": "推广簇代数并证明有限型猜想",
+      "llm_evidence": "推广簇代数并证明有限型猜想",
+      "canonical_evidence": "推广簇代数并证明有限型猜想",
+      "llm_tldr_en": "Laurent phenomenon algebras extend cluster algebras via irreducible exchange polynomials. The authors prove Lam-Pylyavskyy conjecture that linear-seed algebras are of finite type over any unique factorization domain, bounding cluster variable classes and yielding finite mutation patterns.",
+      "llm_tldr_cn": "Laurent现象代数以不可约交换多项式推广簇代数，但其有限型分类此前仅对图情形成立。本文在任意唯一分解整环上证明Lam与Pylyavskyy关于线性种子情形的有限型猜想。证明构造被每个簇变量整除的非零元素，并比较非初始簇变量与初始Laurent环中的素因子。由此界定簇变量类数并得到有限正规变异模式，完善了簇代数有限型理论。",
+      "llm_tldr": "Laurent现象代数以不可约交换多项式推广簇代数，但其有限型分类此前仅对图情形成立。本文在任意唯一分解整环上证明Lam与Pylyavskyy关于线性种子情形的有限型猜想。证明构造被每个簇变量整除的非零元素，并比较非初始簇变量与初始Laurent环中的素因子。由此界定簇变量类数并得到有限正规变异模式，完善了簇代数有限型理论。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "cluster algebras and cluster categories",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2610.21859v1",
+      "source": "arxiv",
+      "title": "Weight structures and t-structures on the triangulated category generated by a $\\mathbb{P}$-object",
+      "abstract": "$\\mathbb{P}$-objects were introduced by Huybrechts and Thomas as a generalization of spherical objects. We classify the weight structures and t-structures on the triangulated category generated by a $\\mathbb{P}^n[k]$-object in the sense of Krug. For $n=1$, this recovers the classification of weight structures and t-structures on the triangulated category generated by a spherical object due to Holm, Jorgensen and Yang. We also compute the Koszul-dual model of the triangulated category generated by a $\\mathbb{P}^n[k]$-object.",
+      "authors": [
+        "Lukas Bonfert"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.AG"
+      ],
+      "published": "2026-10-15T13:34:35+00:00",
+      "link": "https://arxiv.org/pdf/2610.21859v1",
+      "tags": [
+        "keyword:algebra-rep"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Classifies weight structures and t-structures on a triangulated category",
+      "llm_evidence_cn": "分类三角范畴上的权结构与t-结构",
+      "llm_evidence": "分类三角范畴上的权结构与t-结构",
+      "canonical_evidence": "分类三角范畴上的权结构与t-结构",
+      "llm_tldr_en": "The paper classifies weight structures and t-structures on the triangulated category generated by a P^n[k]-object, recovering the spherical-object case at n=1 and computing its Koszul-dual model.",
+      "llm_tldr_cn": "本文研究由P-对象生成的三角范畴上权结构与t-结构的分类问题，此前仅有球状对象情形的已知结果。作者在Krug意义下对P^n[k]-对象生成的三角范畴系统分析，给出权结构与t-结构的完整分类，并在n=1时退化为Holm-Jorgensen-Yang的结论。作者还计算了该范畴的Koszul对偶模型。这一结果把三角范畴的分解理论从球状对象推广到更一般的P-对象，为后续研究提供了统一框架。",
+      "llm_tldr": "本文研究由P-对象生成的三角范畴上权结构与t-结构的分类问题，此前仅有球状对象情形的已知结果。作者在Krug意义下对P^n[k]-对象生成的三角范畴系统分析，给出权结构与t-结构的完整分类，并在n=1时退化为Holm-Jorgensen-Yang的结论。作者还计算了该范畴的Koszul对偶模型。这一结果把三角范畴的分解理论从球状对象推广到更一般的P-对象，为后续研究提供了统一框架。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.22161v1",
+      "source": "arxiv",
+      "title": "Gluing weak approximability along recollements",
+      "abstract": "We study whether weak approximability glues along recollements of triangulated categories that are compactly generated by a single object. This is applied to derived categories of complexes with quasi-coherent cohomology and prescribed support for quasi-compact quasi-separated algebraic spaces.",
+      "authors": [
+        "Pat Lank"
+      ],
+      "primary_category": "math.AG",
+      "categories": [
+        "math.AG",
+        "math.AC",
+        "math.CT",
+        "math.RT"
+      ],
+      "published": "2026-10-15T16:24:30+00:00",
+      "link": "https://arxiv.org/pdf/2610.22161v1",
+      "tags": [
+        "keyword:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Recollements of triangulated categories and derived categories",
+      "llm_evidence_cn": "三角范畴的recollement与导出范畴",
+      "llm_evidence": "三角范畴的recollement与导出范畴",
+      "canonical_evidence": "三角范畴的recollement与导出范畴",
+      "llm_tldr_en": "The paper asks whether weak approximability glues along recollements of triangulated categories compactly generated by one object, and applies the answer to derived categories of complexes with prescribed support on algebraic spaces.",
+      "llm_tldr_cn": "弱可逼近性在三角范畴的recollement下能否粘合此前没有一般性回答。作者研究由单个对象紧生成的三角范畴的recollement，分析弱可逼近性的粘合条件。结果给出弱可逼近性沿recollement粘合的判据，并将其应用于拟紧拟分离代数空间上带指定支撑的拟凝聚上同调复形的导出范畴。该工作为导出范畴中的逼近性质提供了统一的粘合框架。",
+      "llm_tldr": "弱可逼近性在三角范畴的recollement下能否粘合此前没有一般性回答。作者研究由单个对象紧生成的三角范畴的recollement，分析弱可逼近性的粘合条件。结果给出弱可逼近性沿recollement粘合的判据，并将其应用于拟紧拟分离代数空间上带指定支撑的拟凝聚上同调复形的导出范畴。该工作为导出范畴中的逼近性质提供了统一的粘合框架。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "derived categories and triangulated categories in representation theory",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.18805v1",
+      "source": "arxiv",
+      "title": "Minimal presentations of finite-dimensional representations of pseudocompact algebras",
+      "abstract": "We give a general formula for minimal projective presentations and for minimal discrete-injective presentations of finite-dimensional modules over basic pseudocompact algebras. We also show that the representation-theoretic g-vector of a module coincides with its DWZ-g-vector. These results generalize the description that Derksen, Weyman and Zelevinsky gave of minimal projective presentations for modules over certain finite-dimensional Jacobian algebras. In particular, we can drop their finiteness assumption, and we may work over fields of arbitrary characteristic.",
+      "authors": [
+        "Christof Geiss",
+        "Carolin Hartung",
+        "Daniel Labardini-Fragoso",
+        "Jan Schröer"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT"
+      ],
+      "published": "2026-10-13T17:45:53+00:00",
+      "link": "https://arxiv.org/pdf/2610.18805v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "finite-dimensional modules over pseudocompact algebras and minimal presentations",
+      "llm_evidence_cn": "伪紧代数有限维模与最小呈现",
+      "llm_evidence": "伪紧代数有限维模与最小呈现",
+      "canonical_evidence": "伪紧代数有限维模与最小呈现",
+      "llm_tldr_en": "The paper gives formulas for minimal projective and minimal discrete-injective presentations of finite-dimensional modules over basic pseudocompact algebras, and shows representation-theoretic g-vectors coincide with DWZ-g-vectors, generalizing Derksen-Weyman-Zelevinsky to arbitrary characteristic.",
+      "llm_tldr_cn": "Derksen、Weyman与Zelevinsky对Jacobian代数最小投射呈现的描述依赖有限性假设。本文对基本伪紧代数上的有限维模给出最小投射与最小离散内射呈现的一般公式。作者进一步证明表示的g-向量与DWZ-g-向量一致，从而在任意特征域上推广了原有结果并去掉有限性限制。这为更广泛的代数表示论提供统一的同调工具。",
+      "llm_tldr": "Derksen、Weyman与Zelevinsky对Jacobian代数最小投射呈现的描述依赖有限性假设。本文对基本伪紧代数上的有限维模给出最小投射与最小离散内射呈现的一般公式。作者进一步证明表示的g-向量与DWZ-g-向量一致，从而在任意特征域上推广了原有结果并去掉有限性限制。这为更广泛的代数表示论提供统一的同调工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "algebraic representation theory of finite-dimensional algebras and quivers",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2610.22203v1",
+      "source": "arxiv",
+      "title": "Series of Fano quiver moduli from extended Dynkin quivers",
+      "abstract": "Associated to small extended Dynkin quivers, we construct series of Fano varieties of fixed Picard rank at most five and arbitrary even dimension, which admit a very explicit description of their geometry. For example, they all admit a flat morphism to a projective space, whose general fiber is a product of projective lines. We also give a closed formula for all Betti numbers, and interpret this formula in terms of an action of a cohomological Hall algebra on the cohomology of all the varieties in a series.",
+      "authors": [
+        "Pieter Belmans",
+        "Markus Reineke"
+      ],
+      "primary_category": "math.AG",
+      "categories": [
+        "math.AG",
+        "math.RT"
+      ],
+      "published": "2026-10-15T16:52:42+00:00",
+      "link": "https://arxiv.org/pdf/2610.22203v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "quiver moduli from extended Dynkin quivers",
+      "llm_evidence_cn": "由扩展Dynkin箭图构造箭图模空间",
+      "llm_evidence": "由扩展Dynkin箭图构造箭图模空间",
+      "canonical_evidence": "由扩展Dynkin箭图构造箭图模空间",
+      "llm_tldr_en": "Constructs series of Fano varieties from moduli spaces of representations of small extended Dynkin quivers, with explicit geometry, Betti number formulas, and cohomological Hall algebra actions.",
+      "llm_tldr_cn": "本文关注如何从箭图表示模空间系统构造高维Fano簇。作者以小型扩展Dynkin箭图的模空间为对象，构造出Picard秩不超过五、维数任意偶数的Fano簇系列，并给出到射影空间的平坦映射与一般纤维为射影直线乘积的显式几何。进一步得到所有Betti数的闭公式，并用上同调Hall代数作用解释该公式，从而把箭图模空间、Fano几何与Hall代数联系起来。",
+      "llm_tldr": "本文关注如何从箭图表示模空间系统构造高维Fano簇。作者以小型扩展Dynkin箭图的模空间为对象，构造出Picard秩不超过五、维数任意偶数的Fano簇系列，并给出到射影空间的平坦映射与一般纤维为射影直线乘积的显式几何。进一步得到所有Betti数的闭公式，并用上同调Hall代数作用解释该公式，从而把箭图模空间、Fano几何与Hall代数联系起来。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.18940v1",
+      "source": "arxiv",
+      "title": "Index for a mutation loop",
+      "abstract": "Motivated by the 3d-3d correspondence, we introduce an index $\\mathcal{I}_g^φ$ for a mutation loop $φ$ of a quiver and an integer $g \\geq 0$. We prove its integrality $\\mathcal{I}_g^φ\\in \\mathbb{Z}$ under certain conditions, which extends the integrality conjecture of Gang--Kim--Yoon for $3$-manifolds to the broader framework of mutation loops in cluster algebras. Our index also has an interpretation as the genus-$g$ partition function of a $(1+1)$-dimensional TQFT. We provide explicit computations for mutation loops of period one. In particular, in the case of the generalized Kronecker quivers, we give an explicit formula expressing the generating function of the indices for all genera $g$ as a ratio of polynomials. Altogether, we provide a new insight to the interplay between the geometry of $3$-manifolds and cluster algebra.",
+      "authors": [
+        "Tsukasa Ishibashi",
+        "Yuji Terashima"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "hep-th",
+        "math-ph",
+        "math.GT"
+      ],
+      "published": "2026-10-13T13:44:54+00:00",
+      "link": "https://arxiv.org/pdf/2610.18940v1",
+      "tags": [
+        "keyword:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "index for mutation loops of quivers in cluster algebras",
+      "llm_evidence_cn": "簇代数中箭图变异环的指标",
+      "llm_evidence": "簇代数中箭图变异环的指标",
+      "canonical_evidence": "簇代数中箭图变异环的指标",
+      "llm_tldr_en": "Motivated by the 3d-3d correspondence, the paper defines an index for quiver mutation loops, proves its integrality, and computes generating functions for generalized Kronecker quivers.",
+      "llm_tldr_cn": "受3d-3d对应启发，作者针对箭图的变异环φ与整数g引入指标，用以把3维流形上的整性猜想推广到簇代数的变异环框架。方法上借助TQFT解释并给出周期为一的变异环显式计算。结果证明一定条件下指标取整，并对广义Kronecker箭图给出全亏格生成函数的有理表达式，揭示了三维几何与簇代数的新联系。",
+      "llm_tldr": "受3d-3d对应启发，作者针对箭图的变异环φ与整数g引入指标，用以把3维流形上的整性猜想推广到簇代数的变异环框架。方法上借助TQFT解释并给出周期为一的变异环显式计算。结果证明一定条件下指标取整，并对广义Kronecker箭图给出全亏格生成函数的有理表达式，揭示了三维几何与簇代数的新联系。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "cluster algebras and cluster categories",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2610.21822v1",
+      "source": "arxiv",
+      "title": "Generalized Cluster Algebra Homomorphisms Induced by Cluster Tube Embeddings",
+      "abstract": "We relate multiplication formulas for regular modules in coefficient-free acyclic affine cluster algebras with skew-symmetric exchange matrices to the imaginary exchange relations of Reading-Stella. Introducing a parameter $z$ into the construction of Zhou-Zhu, we define a weighted cluster character on cluster tubes that satisfies generalized exchange relations of type $C_{n-1}$ and yields a bijection between indecomposable rigid objects and cluster variables. Using the multiplication formulas and difference property of Ding-Xiao-Xu, we show that non-homogeneous tube embeddings induce injective homomorphisms into ordinary affine cluster algebras under $z\\mapsto X_δ$. Comparison with Reading-Stella's relations identifies $X_δ$ with the corresponding theta function, giving a representation-theoretic interpretation of the generalized exchange parameter.",
+      "authors": [
+        "Mingze Li"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.CO",
+        "math.RA"
+      ],
+      "published": "2026-10-15T13:07:39+00:00",
+      "link": "https://arxiv.org/pdf/2610.21822v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Cluster algebra homomorphisms induced by cluster tube embeddings",
+      "llm_evidence_cn": "簇管嵌入诱导的簇代数同态",
+      "llm_evidence": "簇管嵌入诱导的簇代数同态",
+      "canonical_evidence": "簇管嵌入诱导的簇代数同态",
+      "llm_tldr_en": "Adding a parameter z to the Zhou-Zhu construction, the authors define a weighted cluster character on cluster tubes, bijecting rigid objects with cluster variables and showing tube embeddings yield injective homomorphisms into affine cluster algebras.",
+      "llm_tldr_cn": "仿射簇代数中正则模的乘法公式与簇管嵌入之间的联系此前缺乏系统刻画。作者在Zhou-Zhu构造中引入参数z，定义簇管上的加权簇特征，并借助Ding-Xiao-Xu的乘法公式与差性质分析其交换关系。结果得到满足C_{n-1}型广义交换关系的加权簇特征，建立不可分解刚性对象与簇变量之间的双射。作者进一步证明非齐次管嵌入在z映射到X_δ时诱导到普通仿射簇代数中的单射同态，并把X_δ与Reading-Stella关系对应起来。",
+      "llm_tldr": "仿射簇代数中正则模的乘法公式与簇管嵌入之间的联系此前缺乏系统刻画。作者在Zhou-Zhu构造中引入参数z，定义簇管上的加权簇特征，并借助Ding-Xiao-Xu的乘法公式与差性质分析其交换关系。结果得到满足C_{n-1}型广义交换关系的加权簇特征，建立不可分解刚性对象与簇变量之间的双射。作者进一步证明非齐次管嵌入在z映射到X_δ时诱导到普通仿射簇代数中的单射同态，并把X_δ与Reading-Stella关系对应起来。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "cluster algebras and cluster categories",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2610.23171v1",
+      "source": "arxiv",
+      "title": "Point Modules of Non-Connected Graded Algebras",
+      "abstract": "As part of a program to extend the homogeneous coordinate ring techniques of Artin-Tate-Van den Bergh to twisted graded Calabi-Yau (tCY) algebras, we initiate the study of point modules of non-connected graded algebras. We define weak and strong point modules of graded quotients of path algebras and compute their respective moduli stacks. We describe the relation between these point stacks and the classical point schemes in the connected graded setting, and we analyze the point stacks of several 2 and 3-dimensional tCY algebras.",
+      "authors": [
+        "Thomas Lamkin"
+      ],
+      "primary_category": "math.RA",
+      "categories": [
+        "math.RA",
+        "math.AG"
+      ],
+      "published": "2026-10-16T09:09:28+00:00",
+      "link": "https://arxiv.org/pdf/2610.23171v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Studies point modules of graded quotients of path algebras",
+      "llm_evidence_cn": "研究路径代数分次商的点模",
+      "llm_evidence": "研究路径代数分次商的点模",
+      "canonical_evidence": "研究路径代数分次商的点模",
+      "llm_tldr_en": "Extends Artin-Tate-Van den Bergh homogeneous coordinate methods to non-connected graded algebras by defining weak and strong point modules of path algebra quotients and computing their moduli stacks.",
+      "llm_tldr_cn": "论文针对非连通分次代数缺乏点模理论的问题，将Artin-Tate-Van den Bergh的齐次坐标环方法推广到扭分次Calabi-Yau代数。作者对路径代数的分次商定义了弱点模与强点模，并计算其对应的模叠。结果刻画了点叠与连通分次情形下经典点概形的关系，并具体分析了若干二、三维扭Calabi-Yau代数的点叠。这为在非连通框架下研究分次代数的非交换几何提供了新工具。",
+      "llm_tldr": "论文针对非连通分次代数缺乏点模理论的问题，将Artin-Tate-Van den Bergh的齐次坐标环方法推广到扭分次Calabi-Yau代数。作者对路径代数的分次商定义了弱点模与强点模，并计算其对应的模叠。结果刻画了点叠与连通分次情形下经典点概形的关系，并具体分析了若干二、三维扭Calabi-Yau代数的点叠。这为在非连通框架下研究分次代数的非交换几何提供了新工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    }
+  ]
+}

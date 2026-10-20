@@ -1,0 +1,1139 @@
+Title: Series of Fano quiver moduli from extended Dynkin quivers
+
+URL Source: https://arxiv.org/pdf/2610.22203v1
+
+Published Time: Fri, 16 Oct 2026 01:50:35 GMT
+
+Number of Pages: 20
+
+Markdown Content:
+# Series of Fano quiver moduli from extended Dynkin quivers 
+
+Pieter Belmans Markus Reineke October 16, 2026 
+
+Abstract 
+
+Associated to small extended Dynkin quivers, we construct series of Fano varieties of fixed Picard rank at most five and arbitrary even dimension, which admit a very explicit description of their geometry. For example, they all admit a flat morphism to a projective space, whose general fiber is a product of projective lines. We also give a closed formula for all Betti numbers, and interpret this formula in terms of an action of a cohomological Hall algebra on the cohomology of all the varieties in a series. 
+
+# Contents 
+
+1 Introduction 12 Recollections on quiver moduli spaces 3
+
+2.1 Quivers and quiver moduli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42.2 Framed quiver moduli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+3 The construction 7
+
+3.1 Extended Dynkin quivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73.2 Framing quiver moduli of extended Dynkin quivers . . . . . . . . . . . . . . . . . . . . 83.3 The fibers of the forgetful morphism . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93.4 Betti numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 
+
+4 Identifying the Fano series 12 
+
+4.1 Fanoness of framed extended Dynkin quiver moduli . . . . . . . . . . . . . . . . . . . . 12 4.2 Betti numbers of the Fano series . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 
+
+5 Cohomological Hall algebra action 14 6 Low-dimensional examples 16 
+
+6.1 del Pezzo surfaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 6.2 Fano fourfolds . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 
+
+# 1 Introduction 
+
+We consider extended Dynkin quivers together with multiples of their unique imaginary Schur root, and study the framed quiver moduli one can attach to this setting. Our first result is that, under a natural symmetry condition on the Euler form, the morphism induced by forgetting the framing defines a flat map to a lower-dimensional projective space, making their geometry amenable to an explicit description. 1arXiv:2610.22203v1 [math.AG] 15 Oct 2026 We also describe when the natural stability parameter for a framed quiver moduli space is in the same chamber as the canonical stability parameter, making the framed quiver moduli space a Fano variety. This setting leads to an interesting and tractable classification problem, which results in five infinite series (and some sporadic cases, which we ignore). By considering all the varieties in an infinite series at once, we can exhibit closed expressions for their Betti numbers, and we uncover an action of a cohomological Hall algebra on the cohomology of the varieties to give a structural interpretation to this pattern for the Betti numbers. The intrinsic reason for this favourable behaviour is that, since our starting point is an extended Dynkin quiver, all relevant semistable quiver Donaldson-Thomas invariants can be computed and the corresponding cohomological Hall algebra can be described by explicit generators. The starting point for this classification and these results was the realization that one of the Fano fourfolds studied in [5], a priori defined using a subspace quiver, also admits an interpretation in terms of a framing of the extended D 4-quiver. It turns out that this alternative perspective using Dynkin quivers is the one that explains the interesting fibration structure described in §5 of op. cit. In this paper we greatly extend this geometric description in dimension 4 for a single quiver to a general framework in all even dimensions for framings of extended Dynkin quivers. This gives us an interesting class of quiver moduli with a particularly elegant and explicit geometry. 
+
+Setup Let 𝑄 be an extended Dynkin quiver, let 𝛿 be its unique imaginary Schur root, and write ⟨− , −⟩ for the Euler form. We consider the stability parameter given by 𝜕 := ⟨𝛿, −⟩ . We ask that the antisymmetrized Euler form {− , −} vanishes identically on Ker (𝜕 ), which is the Grothendieck group of the subcategory of regular modules. This already forces 𝑄 to be of type eA1, eA2, eA3, or eD4.Let 𝒏 ∈ N𝑄 0 be a framing vector, and denote b𝑄 the framed quiver, with framing vertex 𝑖 0. The dimension vector 𝑘𝛿 for 𝑘 ≥ 1 induces the dimension vector c𝑘𝛿 := 𝑘𝛿 + 𝒊 0. Next, choose a positive linear func-tional 𝜆 ∈ Hom (Z𝑄 0, Z) and 𝐶 = 𝐶 𝑘 ∈ N such that 𝜆 (𝑘𝛿 ) < 𝐶 gcd (𝜕 ), and define b𝜕 := 𝐶𝜕 − 𝜆 + 𝜆 (𝑘𝛿 )𝒊 ∗
+
+> 0
+
+.The choice of 𝜆 and 𝐶 does not change the notion of stability, they are all in the same chamber. Then we define the framed quiver moduli space (1) M𝜕 -fr (𝑄, 𝑘𝛿, 𝒏 ) := Mb𝜕 -sst ( b𝑄, c𝑘𝛿 ) = Mb𝜕 -st ( b𝑄, c𝑘𝛿 ),
+
+and we have the forgetful morphism (2) 𝑝 : M 𝜕 -fr (𝑄, 𝑘𝛿, 𝒏 ) → M𝜕 -sst (𝑄, 𝑘𝛿 )  P𝑘 .
+
+See Section 3 for more details on the construction and the basic properties. 
+
+The forgetful morphism The Luna stratification of the unframed moduli space in (2) encodes how a polystable representation decomposes into stable summands. The symmetry assumption on the Euler form makes it possible to obtain the following uniform description of the fibers of the forgetful morphism. 
+
+Theorem A. For every nonzero framing vector 𝒏 and every 𝑘 ≥ 1, we have the following properties for the forgetful morphism 𝑝 in (2) :
+
+1. it is flat of relative dimension (𝒏 · 𝛿 − 1)𝑘 ,
+
+2. its general fiber is (P𝒏 ·𝛿 −1)𝑘 , and 
+
+3. over every Luna stratum of the base, its fibers are products of framed nilpotent moduli spaces for the Jordan quiver and the oriented two-cycle. 
+
+2The detailed description of the fibers is given in Proposition 11, and leads to the flatness and description of the general fiber in Corollary 12. In preparation for the special cases studied next, we explain in Section 3.4 how the quiver DT/PT correspondence can be used to study Betti numbers of these framed moduli spaces. 
+
+The classification If we ask that the framing stability parameter is in the same chamber as the canonical stability parameter (which is defined without using its framed structure), then the framed moduli space is a Fano variety. Write 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) = M𝜕 -fr (𝑄, 𝑘𝛿, 𝒏 ). This brings us in the setting of [5]. It turns out that there is an interesting and tractable classification problem for this setting, which leads to the following result, identifying five interesting series of Fano quiver moduli constructed from extended Dynkin quivers. 
+
+Theorem B. The five quiver and framing pairs in Table 1 satisfy 𝒏 · 𝛿 = 2 and 𝑛 𝑖 ≥ 1 whenever 𝜕 (𝒊 ) ≤ 0.For each such pair and every 𝑘 ≥ 1, the framed moduli space 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is a smooth Fano variety of dimension 2𝑘 
+
+and Picard rank |𝑄 0 |. It is rational, of pure Hodge–Tate type, and infinitesimally rigid. Its index is 2 in the case eA1 (𝑎 ) and 1 in the other four cases. For the even Betti numbers we have that b2𝑖 (𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 )) = 𝑎 min {𝑖, 2𝑘 −𝑖 } , for 𝑖 = 1, . . . , 2𝑘 , where the 𝑎 𝑖 are defined by 
+
+(3) ∑︁  
+
+> 𝑖 ≥0
+
+𝑎 𝑖 𝑥 𝑖 = (1 + 𝑥 )|𝑄 0 |
+
+(1 − 𝑥 2)3 .
+
+The description of the Betti numbers in Theorem B is much more explicit than the general results in Section 3.4. There is a conceptual explanation for this nice behavior: the symmetry of the Euler form gives a semistable cohomological Hall algebra action on the cohomology of all varieties in a series. The resulting cyclic module provides a structural explanation for considering their Betti numbers together; see Section 5 for more details. In Section 6 we discuss what happens for low-dimensional cases of the Fano varieties in Theorem B: we compute some numerical invariants, which ought to be useful in comparing our constructions to the literature. For 𝑘 = 1, the del Pezzo surfaces in the five series are P1 × P1 and the blowups of P2 at one to four points, see Section 6.1. For 𝑘 = 2, the Fano fourfolds in the five series come equipped with forgetful maps to P2, which are involution surface bundles with mild degeneration, see Section 6.2. 
+
+AI disclosure No generative AI was used for the results in this paper. 
+
+Acknowledgements M.R. would like to thank T. Peerenboom for advice on Cohomological Hall algebras. P.B. was partially supported by NWO ( doi:10.61686/RZKLF82806 ). This work was done during the residency of M.R. at Utrecht University as the 2025–2026 Springer Visiting Professor, and we gratefully acknowledge the support of the Utrecht Geometry Centre. 
+
+# 2 Recollections on quiver moduli spaces 
+
+We recall the quiver notation and stability conventions used in this paper. For fuller accounts, see, e.g., [6, 18]; see also [5, §2] for the same setup in a related paper. 3𝑄 𝛿 𝒏 b𝑄 
+
+eA1 (𝑎 ) 𝑖 𝑗 (1, 1) 2𝒋 
+
+eA1 (𝑏 ) 𝑖 𝑗 (1, 1) 𝒊 + 𝒋 
+
+eA2
+
+𝑖 𝑗 𝑘 
+
+(1, 1, 1) 𝒋 + 𝒌 
+
+eA3
+
+𝑗 𝑖 𝑙 𝑘 
+
+(1, 1, 1, 1) 𝒋 + 𝒌 
+
+eD4 𝑗 𝑖 1
+
+𝑖 2
+
+𝑖 3
+
+𝑖 4
+
+(1, 1, 1, 1; 2 ) 𝒋 
+
+Table 1: The five extended Dynkin quivers and framing data, together with their imaginary roots and framed quivers. 
+
+2.1 Quivers and quiver moduli 
+
+Let 𝑄 = (𝑄 0, 𝑄 1) be a quiver, with the set of vertices 𝑄 0 and the set of arrows 𝑄 1. We consider the Z-lattice Z𝑄 0 spanned by basis elements 𝒊 , indexed by 𝑖 ∈ 𝑄 0. On Z𝑄 0 we have the Euler form ⟨− , −⟩ ,defined as (4) ⟨𝒅 , 𝒆 ⟩ :=∑︁  
+
+> 𝑖 ∈𝑄 0
+
+𝑑 𝑖 𝑒 𝑖 −∑︁   
+
+> 𝛼 :𝑖 →𝑗
+
+𝑑 𝑖 𝑒 𝑗 .
+
+Its symmetrization (− , −) is defined as (𝒅 , 𝒆 ) := ⟨𝒅 , 𝒆 ⟩ + ⟨ 𝒆 , 𝒅 ⟩. Its antisymmetrization {− , −} is defined as {𝒅 , 𝒆 } := ⟨𝒅 , 𝒆 ⟩ − ⟨ 𝒆 , 𝒅 ⟩.We will work over the base field C of complex numbers. We will consider finite-dimensional rep-resentations 𝑉 of the quiver 𝑄 , which are given by C-vector spaces 𝑉 𝑖 for 𝑖 ∈ 𝑄 0, and C-linear maps 𝑉 (𝛼 ) : 𝑉 𝑖 → 𝑉 𝑗 for 𝛼 ∈ 𝑄 1. The dimension vector dim (𝑉 ) ∈ N𝑄 0 ⊂ Z𝑄 0 of 𝑉 is given as dim (𝑉 ) = Í𝑖 ∈𝑄 0 (dim C 𝑉 𝑖 )𝒊 .
+
+Root systems For a quiver 𝑄 without loops, the symmetrized Euler form determines a root system with set of positive roots Δ+ (𝑄 ). By Kac’s theorem, these are precisely the dimension vectors of indecomposable representations of 𝑄 . We say that a positive root 𝛼 is real if ⟨𝛼, 𝛼 ⟩ = 1, and imaginary otherwise. For an extended Dynkin quiver, the positive imaginary roots are the multiples of its indivisible null root 𝛿 ; see [6, §7.3]. 4Quiver moduli For a dimension vector 𝒅 , the affine space Rep (𝑄, 𝒅 ) parametrizes representations of 𝑄 on fixed vector spaces of dimensions 𝑑 𝑖 , and G 𝒅 = Î𝑖 ∈𝑄 0 GL 𝑑 𝑖 acts by change of basis. A stability parameter for 𝒅 is a Θ ∈ Z𝑄 ∨ 
+
+> 0
+
+for which Θ(𝒅 ) = 0. A representation 𝑉 of dimension 𝒅 is Θ-semistable (respectively, Θ-stable) if Θ(dim (𝑈 )) ≤ 0 (respectively, < 0) for every nonzero proper subrepresenta-tion 𝑈 ⊂ 𝑉 . The moduli space M Θ-sst (𝑄, 𝒅 ) parametrizes the corresponding polystable representations, while M Θ-st (𝑄, 𝒅 ) is its stable locus. The canonical stability parameter for 𝒅 is (5) Θcan = {𝒅 , −} = ⟨𝒅 , −⟩ − ⟨− , 𝒅 ⟩.
+
+The hyperplanes Θ(𝒆 ) = 0 for proper nonzero 𝒆 < 𝒅 divide the space of stability parameters into chambers; parameters in the same chamber define the same semistable locus. We call 𝒅 Θ-coprime 
+
+if Θ(𝒆 ) ≠ 0 for every such 𝒆 . We call it Θ-amply stable if the complement of the semistable locus in Rep (𝑄, 𝒅 ) has codimension at least two. When the stable locus is nonempty, the stronger numerical condition (6) ⟨𝒆 , 𝒅 − 𝒆 ⟩ ≤ − 2 whenever 0 < 𝒆 < 𝒅 and Θ(𝒆 ) > 0implies ample stability by the unstable-locus argument of [19, Proposition 5.1] and is the criterion we use below. The following theorem summarizes the properties of quiver moduli in the ideal circumstances. 
+
+Theorem 1. Assume the following conditions: 
+
+• 𝑄 is acyclic, 
+
+• Θ does not belong to a proper wall, 
+
+• 𝒅 is a Θ-coprime and sincere dimension vector, and 
+
+• 𝒅 is Θ-amply stable. Then MΘ-sst (𝑄, 𝒅 ) = MΘ-st (𝑄, 𝒅 ) is a smooth projective variety of dimension 1 − ⟨ 𝒅 , 𝒅 ⟩, and Picard rank | supp (𝒅 )| − 1. It is rational, of pure Hodge–Tate type, its space of global vector fields is isomorphic to HH 1 (C𝑄 ), and it is infinitesimally rigid. If Θ = Θcan (or simply in the same chamber), then it is a Fano variety, of index gcd (Θcan ) = gcd {Θcan ,𝑖 | 𝑖 ∈ 𝑄 0}.
+
+The smoothness follows from the fact that semistability agrees with stability under the coprimality assumption, and the projectivity follows from the assumption that 𝑄 is acyclic. The Picard rank is then given in [11, Proposition 3.1]. The rationality of coprime quiver moduli is established in [22, Theorem 6.4]. The pure Hodge–Tate type is [14, Theorem 3]. The global vector fields isomorphism is [2, Theorem B] (with Happel’s computation of HH 1 (C𝑄 ) in [13]). The infinitesimal rigidity corresponds to [1, Corollary D]. The Fano property and index are [11, Theorem 4.2]. An important caveat to make is that the standing assumption in [1, 2] is that of strong ample stability (or as explained in [1, Remark 1.3], it suffices that a certain inequality holds for every non-trivial Harder–Narasimhan type). This condition is replaced by the weaker condition of ample stability in [4]. 
+
+Remark 2. We are not always in the ideal situation of Theorem 1: we will also have to consider multiples 
+
+of a Schur root, so the coprimality will necessarily fail. However, in the very special case of extended Dynkin quivers, we will be able to identify these moduli spaces with projective spaces, and thus we stay in the world of smooth projective varieties. 
+
+2.2 Framed quiver moduli 
+
+The rest of the paper crucially uses framed quiver moduli (or smooth models), as introduced in [9, §3]. We recall this setup, and the most important properties. 5Definition 3. Given a quiver 𝑄 , dimension vector 𝒅 , a stability parameter Θ ∈ Z𝑄 ∨ 
+
+> 0
+
+such that Θ(𝒅 ) = 0, and a framing datum 𝒏 ∈ N𝑄 0, we define the framed quiver setting as • the quiver b𝑄 , by adding a vertex 𝑖 0 to 𝑄 0, together with 𝑛 𝑖 arrows 𝑖 0 → 𝑖 for all 𝑖 ∈ 𝑄 0;• the dimension vector b𝒅 := 𝒅 + 𝒊 0 ∈ N b𝑄 0;• for a choice of a positive 𝜆 ∈ Z𝑄 ∨ 
+
+> 0
+
+and a positive integer 𝐶 such that 𝜆 (𝒅 ) < 𝐶 gcd (Θ), the stability parameter (7) bΘ = bΘ𝜆,𝐶 := 𝐶 Θ − 𝜆 + 𝜆 (𝒅 )𝒊 ∗
+
+> 0
+
+.
+
+Using this, we define the framed quiver moduli space (or smooth model ) as (8) MΘ-fr (𝑄, 𝒅 , 𝒏 ) := MbΘ-sst ( b𝑄, b𝒅 )
+
+We have the following result, which also explains why we are not including 𝜆 and 𝐶 in our notation; see [9, Proposition 3.6]. 
+
+Theorem 4. The framed moduli space MΘ-fr (𝑄, 𝒅 , 𝒏 ) does not depend on the choices for 𝜆 and 𝐶 , since all resulting stability parameters belong to the same chamber in Stab (b𝒅 ). It is always smooth and irreducible, if non-empty, of dimension 𝒏 · 𝒅 − ⟨ 𝒅 , 𝒅 ⟩, and admits a projective map 
+
+(9) 𝑝 : M Θ-fr (𝑄, 𝒅 , 𝒏 ) → MΘ-sst (𝑄, 𝒅 ),
+
+defined by forgetting the framing data. 
+
+The fibres can be described as follows using so-called local quivers. Let 𝑉 = É𝑠 𝑘 =1 𝑈 𝑘 ⊕𝑚 𝑘 be a Θ-polystable representation, where we can assume that the 𝑈 𝑘 are chosen to be pairwise non-isomorphic. Then we call the tuple of dimension vectors (10) 𝜉 = (( dim (𝑈 𝑘 )) 𝑚 𝑘 )𝑠 𝑘 =1
+
+the Luna type of 𝑉 . The set 𝑆 𝜉 ⊂ MΘ-sst (𝑄, 𝒅 ) of representations of fixed Luna type 𝜉 is locally closed, and the quotient map by the group GL (𝒅 )
+
+(11) Rep Θ-sst (𝑄, 𝒅 ) → MΘ-sst (𝑄, 𝒅 )
+
+is étale-locally trivial over 𝑆 𝜉 . We call 𝑆 𝜉 the Luna stratum in M Θ-sst (𝑄, 𝒅 ) associated to the Luna type 𝜉 .We then define the local quiver 𝑄 𝜉 for 𝜉 as the quiver with vertices 𝑖 1, . . . , 𝑖 𝑠 , and with the number of arrows from 𝑖 𝑘 to 𝑖 𝑙 given by (12) 𝛿 𝑘,𝑙 − ⟨ dim (𝑈 𝑘 ), dim (𝑈 𝑙 )⟩ 𝑄 .
+
+We also define the local dimension vector 𝒅 𝜉 = Í𝑠 𝑘 =1 𝑚 𝑘 𝒊 𝑘 for 𝑄 𝜉 , and we consider the local framing datum 𝒏 𝜉 = Í𝑠 𝑘 =1 (𝒏 · dim (𝑈 𝑘 )) 𝒊 𝑘 . The following result is [9, Theorem 4.1]. 
+
+Proposition 5. Consider the setup of Theorem 4, and let 𝜉 be a Luna type of MΘ-sst (𝑄, 𝒅 ). For any 𝑉 ∈ 𝑆 𝜉 ,the fiber of the forgetful map 𝑝 from (9) is 
+
+(13) 𝑝 −1 (𝑉 )  M0-fr ,nilp (𝑄 𝜉 , 𝒅 𝜉 , 𝒏 𝜉 ).
+
+A representation of the latter moduli space consists of a nilpotent representation 𝑉 of 𝑄 𝜉 of dimension vector 𝒅 𝜉 , together with linear maps 𝑓 𝑘 : C𝒏 ·𝒅 𝑘 → 𝑉 𝑖 𝑘 for all 𝑘 . Such a tuple is stable if and only if the images of the 𝑓 𝑘 generate 𝑉 as a representation of 𝑄 𝜉 .63 The construction 
+
+We now specialize the preceding framework to multiples of the null root of an extended Dynkin quiver. First we identify the orientations for which the Euler form is symmetric on the defect-zero lattice and describe their stable dimension vectors. We then use framed moduli spaces and local quivers to analyze the forgetful morphism, before applying the quiver DT/PT correspondence to their cohomology. 
+
+3.1 Extended Dynkin quivers 
+
+We recall and prove some basic results about extended Dynkin quivers which are necessary for the construction in Section 3.2. Let 𝑄 be an acyclic quiver of extended Dynkin (or Euclidean) type, so the underlying unoriented graph is an extended Dynkin diagram of type • eA𝑛 for 𝑛 ≥ 1, • eD𝑛 for 𝑛 ≥ 4, or • eE𝑛 for 𝑛 = 6, 7, 8. Because 𝑄 is of extended Dynkin type, the quadratic form attached to the symmetrization (− , −) of the Euler form is semi-positive definite, with radical generated by an indivisible vector 𝛿 ∈ N𝑄 0. We thus have (𝛿, −) = 0, and ⟨𝛿, 𝛿 ⟩ = 0. Following Dlab and Ringel [7] (see also [21, §3.5]), we define the defect function as 𝜕 = ⟨𝛿, −⟩ , thus we have {𝛿, −} = 2𝜕 . Let Ker (𝜕 ) be the subgroup of Z𝑄 0 of dimension vectors 𝒅 such that 𝜕 (𝒅 ) = 0, and define (14) 𝑃 := {𝒅 ∈ Ker (𝜕 ) ∩ Δ+ | 𝒅 ≨ 𝛿 },
+
+the set of positive roots in Ker (𝜕 ) which are smaller than 𝛿 . For more on the representation theory of C𝑄 , a tame and hereditary algebra, we refer to [21, §3.6]. For instance, the following lemma is a consequence of the trichotomy for indecomposable representations of C𝑄 .
+
+Lemma 6. Let 𝑄 be an extended Dynkin quiver. If a dimension vector 𝒆 ∈ Ker (𝜕 ) admits a 𝜕 -stable representation, then 𝒆 = 𝛿 or 𝒆 ∈ 𝑃 . In the former case, we have a P1 worth of semistable representations, and a dense open subset of stable representations. In the latter case, there exists a unique (semi-)stable such representation up to isomorphism. Proof. A stable representation is in particular indecomposable. Thus by the trichotomy it is either preprojective or preinjective (which implies that the defect of its dimension vector is non-zero, which we exclude) or it is a regular indecomposable. In the latter case, its dimension vector is a positive root in the kernel of 𝜕 , and is at most 𝛿 . If it is equal to 𝛿 , then it is an imaginary root, we have a P1 worth of semistable representations, and a dense open subset of stable representations. If it is strictly below 𝛿 , it is a real root, and a stable representation is unique up to isomorphism. □
+
+We need the following fact first proven in [17, Proposition 2.14]. We provide a proof in our current setup, without reference to weighted projective lines. 
+
+Lemma 7. Let 𝑄 be an extended Dynkin quiver. If the restriction of {− , −} to Ker (𝜕 ) vanishes identically, then 𝑄 is already of type eA1, eA2, eA3 or eD4.Proof. The condition on the antisymmetrization translates to the symmetry of the Euler form on the category of regular modules (whose Grothendieck group is Ker (𝜕 ) by the trichotomy), which implies 7extended Dynkin type unique indivisible null root 𝛿 
+
+eA1 (1, 1)
+
+eA2 (1, 1, 1)
+
+eA3 (1, 1, 1, 1)
+
+eD4 (1, 1, 1, 1; 2 )
+
+Table 2: Overview of the extended Dynkin quivers from Lemma 7. that all tubes in the Auslander–Reiten quiver have width at most two. A direct inspection of the tubular types on [21, page 158] immediately yields the claim. □
+
+Lemma 8. Let 𝑄 be an extended Dynkin quiver. If the restriction of {− , −} to Ker (𝜕 ) vanishes identically, then 
+
+(15) 𝑃 = {𝛼 1, . . . , 𝛼 𝑡 , 𝛼 1, . . . , 𝛼 𝑡 }
+
+for pairwise distinct roots 𝛼 1, . . . , 𝛼 𝑡 , where 𝑡 = #𝑄 0 − 2, and 𝛼 𝑖 := 𝛿 − 𝛼 𝑖 . For all 𝑖, 𝑗 = 1, . . . , 𝑡 with 𝑖 ≠ 𝑗 ,we have 
+
+(16) ⟨𝛼 𝑖 , 𝛼 𝑗 ⟩ = ⟨𝛼 𝑖 , 𝛼 𝑗 ⟩ = ⟨𝛼 𝑖 , 𝛼 𝑗 ⟩ = 0
+
+and 
+
+(17) ⟨𝛼 𝑖 , 𝛼 𝑖 ⟩ = ⟨𝛼 𝑖 , 𝛼 𝑖 ⟩ = 1,
+
+⟨𝛼 𝑖 , 𝛼 𝑖 ⟩ = ⟨𝛼 𝑖 , 𝛼 𝑖 ⟩ = −1.
+
+Moreover, if Í𝛼 ∈𝑃 𝑘 𝛼 𝛼 with 𝑘 𝛼 ≥ 0 is a multiple of 𝛿 , then 𝑘 𝛼 𝑝 = 𝑘 𝛼 𝑝 for all 𝑝 .Proof. This follows from a direct inspection, using the description of regular indecomposable represen-tations used in the proof of Lemma 6. □
+
+From now on, we will assume that {− , −} vanishes identically on Ker (𝜕 ), so that 𝑄 is one of the quivers in Lemma 7. In Table 2 we describe the relevant properties of these 4 Dynkin types. 
+
+3.2 Framing quiver moduli of extended Dynkin quivers 
+
+Moduli spaces for extended Dynkin quivers are not very interesting, as extended Dynkin quivers are tame. Thus we will apply the framing construction of Section 2.2 to construct interesting moduli spaces out of extended Dynkin quivers and their imaginary roots 𝑘𝛿 .Our main objects of interest are the framed moduli spaces (18) 𝑋 𝒏 𝒅 (𝑄 ) := M𝜕 -fr (𝑄, 𝒅 , 𝒏 )
+
+for 𝒅 ∈ Ker (𝜕 ), and in particular we will consider (19) 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) := M𝜕 -fr (𝑄, 𝑘𝛿, 𝒏 )
+
+for 𝑘 ≥ 1 in what follows. By Theorem 4, we have that 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is an irreducible smooth projective variety of dimension 𝒏 · 𝑘𝛿 − ⟨ 𝑘𝛿, 𝑘𝛿 ⟩ = (𝒏 · 𝛿 )𝑘 .83.3 The fibers of the forgetful morphism 
+
+The natural map (9) from the framed to the unframed moduli space specializes to a map (20) 𝑝 𝑘 : 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) → M𝜕 -sst (𝑄, 𝑘𝛿 )  Sym 𝑘 P1  P𝑘 .
+
+The identification with Sym 𝑘 P1  P𝑘 uses that every 𝜕 -polystable is in fact the direct sum of 𝑘 stable representations, which are parameterized by P1, see also [8, Corollary 7.3]. By Proposition 5 we need to first determine the Luna stratification of the base. We use the notation of Lemma 8. 
+
+Lemma 9. The Luna types of M𝜕 -sst (𝑄, 𝑘𝛿 ) are of the form 
+
+(21) 𝜉 = (𝛿 𝑘 1 , . . . , 𝛿 𝑘 𝑠 , 𝛼 ℓ1 
+
+> 1
+
+, . . . , 𝛼 ℓ𝑡  
+
+> 𝑡
+
+, 𝛼 ℓ1 
+
+> 1
+
+, . . . , 𝛼 ℓ𝑡  
+
+> 𝑡
+
+),
+
+where 𝑘 1 + . . . +𝑘 𝑠 + ℓ1 + . . . + ℓ𝑡 = 𝑘 . If 𝜉 is one of these Luna types, then the dimension of the corresponding Luna stratum 𝑆 𝜉 is equal to 𝑠 .Proof. By Lemma 6, the dimension vectors 𝛼 ∈ 𝑃 and 𝛿 are the only ones admitting 𝜕 -stable representa-tions. For every 𝛼 ∈ 𝑃 , there is a unique stable representation of that dimension vector. Hence, for 𝛼 ∈ 𝑃 
+
+at most one 𝛼 ℓ𝛼 can appear in the Luna type. We formally set ℓ𝛼 = 0 in case 𝛼 does not appear. That 𝛼 𝑝 
+
+and 𝛼 𝑝 appear with the same multiplicity follows from the last statement in Lemma 8. For 𝛿 there is a one-dimensional family of stable representations, so every 𝑘 𝑝 contributes one to the dimension of the Luna stratum. □
+
+The next step in applying Proposition 5 is determining the local quiver settings. We will consider the Jordan quiver (22) J : ,
+
+and the oriented two-cycle quiver (23) C2 : .
+
+With this notation, we have the following. 
+
+Lemma 10. Let 𝜉 be a Luna type as determined in Lemma 9. Then the local quiver 𝑄 𝜉 is the disjoint union of 
+
+• 𝑠 copies of the Jordan quiver J,
+
+• 𝑡 copies of the oriented two-cycle quiver C2.The local dimension vector 𝒅 𝜉 is 
+
+(24) 𝒅 𝜉 =
+
+> 𝑠
+
+∑︁ 
+
+> 𝑝 =1
+
+𝑘 𝑝 𝒊 𝑝 +
+
+> 𝑡
+
+∑︁ 
+
+> 𝑝 =1
+
+ℓ𝑝 (𝒋 𝑝 + 𝒋 ′ 
+
+> 𝑝
+
+),
+
+with the convention that ℓ𝛼 = 0 if 𝛼 ∈ 𝑃 does not appear in the Luna type. The local framing datum 𝒏 𝜉 is 
+
+(25) 𝒏 𝜉 = (𝒏 · 𝛿 )
+
+> 𝑠
+
+∑︁ 
+
+> 𝑝 =1
+
+𝒊 𝑝 +
+
+> 𝑡
+
+∑︁ 
+
+> 𝑝 =1
+
+(𝒏 · 𝛼 𝑝 )𝒋 𝑝 +
+
+> 𝑡
+
+∑︁ 
+
+> 𝑝 =1
+
+(𝒏 · 𝛼 𝑝 )𝒋 ′ 
+
+> 𝑝
+
+.
+
+Proof. We use Lemma 8 to determine the local quiver 𝑄 𝜉 . It has vertices 𝑖 1, . . . , 𝑖 𝑠 and 𝑗 1, 𝑗 ′
+
+> 1
+
+, . . . , 𝑗 𝑡 , 𝑗 ′ 
+
+> 𝑡
+
+. To every vertex 𝑖 𝑝 , there is a single loop attached, as ⟨𝛿, 𝛿 ⟩ = 0, whereas there is a single arrow in either direction between each pair of vertices 𝑗 𝑝 , 𝑗 ′ 
+
+> 𝑝
+
+, as ⟨𝛼 𝑗 , 𝛼 𝑗 ⟩ = 1 and ⟨𝛼 𝑗 , 𝛼 𝑗 ⟩ = −1 (and other pairings are equal to 0). The local dimension vector and local framing datum follow. □
+
+9We have the following description of the fibers of the forgetful morphism. 
+
+Proposition 11. The fiber of the map 𝑝 𝑘 from (20) in a point 𝑉 of the Luna stratum 𝑆 𝜉 indexed by a Luna type 𝜉 from Lemma 9 is given by 
+
+(26) 𝑝 −1 
+
+> 𝑘
+
+(𝑉 ) 
+
+> 𝑠
+
+Ö
+
+> 𝑝 =1
+
+M0-fr ,nilp (J, 𝑘 𝑝 , 𝒏 · 𝛿 ) × 
+
+> 𝑡
+
+Ö
+
+> 𝑝 =1
+
+M0-fr ,nilp (C2, (ℓ𝑝 , ℓ 𝑝 ), (𝒏 · 𝛼 𝑝 , 𝒏 · 𝛼 𝑝 )) .
+
+Proof. We apply Proposition 5. Using the decomposition into connected components of the quiver 𝑄 𝜉 ,the fibre 𝑝 −1 
+
+> 𝑘
+
+(𝑉 ) decomposes into the product of the corresponding framed nilpotent moduli spaces of the loop (resp. two-cycle) quiver. □
+
+The factors in (26) are parametrizing the following linear algebra data: • A Jordan factor parametrizes a nilpotent endomorphism 𝐴 of a vector space 𝑉 of dimension 𝑘 𝑝 ,together with 𝒏 · 𝛿 framing vectors that generate 𝑉 as a C[𝐴 ]-module. • A two-cycle factor parametrizes vector spaces 𝑉 and 𝑊 of dimension ℓ𝑝 , morphisms 𝐴 : 𝑉 → 𝑊 
+
+and 𝐵 : 𝑊 → 𝑉 such that 𝐴 ◦ 𝐵 and 𝐵 ◦ 𝐴 are nilpotent, together with framing maps C𝒏 ·𝛼 𝑝 −→ 𝑉 
+
+and C𝒏 ·𝛼 𝑝 −→ 𝑊 whose images generate the representation. This is a generalization of the descriptions considered in [5, §5.2] for 𝑘 = 2. We will revisit these in Section 6.2. For now, the following result suffices. 
+
+Corollary 12. The map 𝑝 𝑘 from (20) is equidimensional of dimension (𝒏 · 𝛿 − 1)𝑘 , with general fi-bre (P𝒏 ·𝛿 −1)𝑘 . In particular, it is flat. Proof. By construction, the dimension of M 0-fr ,nilp (𝑄, 𝒅 , 𝒏 ), the framed moduli space of nilpotent rep-resentations, equals 𝒏 · 𝒅 + dim N (𝑄, 𝒅 ) − dim GL (𝒅 ), where N (𝑄, 𝑑 ) ⊂ Rep (𝑄, 𝒅 ) denotes the variety of nilpotent representations (the zero fibre of the quotient map). In the case of a symmetric quiver, [12, Remark 3.6] gives a dimension formula for N (𝑄, 𝒅 ). For the Jordan quiver with dimension 𝑚 , this formula gives (27) dim N (J, 𝑚 ) = 2
+
+𝑚 
+
+2
+
+
+
+= 𝑚 2 − 𝑚. 
+
+Since dim GL 𝑚 = 𝑚 2, its factor in (26) has dimension (𝒏 · 𝛿 − 1)𝑚 . For the oriented two-cycle with dimension vector (𝑚, 𝑚 ), the same formula gives (28) dim N (C2, (𝑚, 𝑚 )) = 2
+
+𝑚 
+
+2
+
+
+
++ 𝑚 2 = 2𝑚 2 − 𝑚. 
+
+Its framing dimension is (( 𝒏 ·𝛼 𝑝 ) + ( 𝒏 ·𝛼 𝑝 )) 𝑚 = (𝒏 ·𝛿 )𝑚 , while the base-change group has dimension 2 𝑚 2.Thus this factor also has dimension (𝒏 · 𝛿 − 1)𝑚 , proving that the fibre has dimension (𝒏 · 𝛿 − 1)𝑘 . The Zariski-open Luna stratum corresponds to the Luna type (𝛿 1, . . . , 𝛿 1), which describes the general fiber. The flatness follows from miracle flatness. □
+
+3.4 Betti numbers 
+
+For an irreducible variety 𝑋 , we consider the following shifted version of the Poincaré polynomial in compactly supported intersection cohomology (29) 𝑃 𝑋 (𝑞 ) = (− 𝑞 1/2)− dim 𝑋 ∑︁ 
+
+> 𝑖
+
+dim IH 𝑖  
+
+> c
+
+(𝑋, Q)(− 𝑞 1/2)𝑖 ∈ Z[𝑞 ±1/2];10 and we also define 𝑃 ∅ (𝑞 ) = 0. The so-called quiver DT/PT correspondence relates the shifted Poincaré polynomials of framed moduli spaces and unframed moduli spaces. See [16] for the original reference, and [20, §2.4] for the setup we will use. Denote by M Θ-st (𝑄, 𝒅 ) the closure of M Θ-st (𝑄, 𝒅 ) inside M Θ-sst (𝑄, 𝒅 ). In other words, (30) MΘ-st (𝑄, 𝒅 ) =
+
+(
+
+MΘ-sst (𝑄, 𝒅 ) MΘ-st (𝑄, 𝒅 ) ≠ ∅∅ MΘ-st (𝑄, 𝒅 ) = ∅.
+
+The following theorem gives the version of the quiver DT/PT correspondence proved in [20, §2.4]. 
+
+Theorem 13. Assume that the Euler form of 𝑄 is symmetric on Ker (Θ), and define Λ = Ker (Θ) ∩ N𝑄 0.
+
+(31) ∑︁  
+
+> 𝒅 ∈Λ
+
+(− 1)𝒏 ·𝒅 𝑃 MΘ-fr (𝑄, 𝒅 ,𝒏 ) (𝑞 )𝑥 𝒅 = Exp  ∑︁  
+
+> 0≠𝒅 ∈Λ
+
+(− 1)𝒏 ·𝒅 𝑃 P𝒏 ·𝒅 −1 (𝑞 )𝑃 MΘ-st (𝑄, 𝒅 ) (𝑞 )𝑥 𝒅 
+
+!
+
+.
+
+Here Exp denotes the plethystic exponential, which is defined by (32) Exp ©«∑︁ 0≠𝒅 ∈Λ∑︁ 𝑖 ∈ 12 Z
+
+𝑐 𝒅 ,𝑖 𝑞 𝑖 𝑥 𝒅 ª®¬
+
+=
+
+Ö 
+
+> 0≠𝒅 ∈Λ
+
+Ö   
+
+> 𝑖 ∈12Z
+
+(1 − 𝑞 𝑖 𝑥 𝒅 )−𝑐 𝒅 ,𝑖 .
+
+Applying the quiver DT/PT-correspondence to the framed moduli spaces 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) of the previous section and using the description of moduli spaces of stable representations in Lemma 6, we find 
+
+Corollary 14. We have the following identity in Z[𝑞 ±1/2] [[ Λ]] 
+
+(33) ∑︁  
+
+> 𝒅 ∈Λ
+
+(− 1)𝒏 ·𝒅 𝑃 𝑋 𝒏 𝒅 (𝑄 ) (𝑞 )𝑥 𝒅 = Exp  ∑︁  
+
+> 𝛼 ∈𝑃
+
+(− 1)𝒏 ·𝛼 𝑃 P𝒏 ·𝛼 −1 (𝑞 )𝑥 𝛼 + (− 1)𝒏 ·𝛿 𝑃 P𝒏 ·𝛿 −1 (𝑞 )𝑃 P1 (𝑞 )𝑥 𝛿 
+
+!
+
+.
+
+This allows us to state an explicit formula for the shifted Poincaré polynomial of 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) as a sum of products of 𝑣 -binomial coefficients, where the 𝑣 -binomial coefficient is defined as (34) 
+
+𝑛 𝑘 
+
+
+
+> 𝑣
+
+=
+
+> 𝑘
+
+Ö
+
+> 𝑖 =1
+
+𝑣 𝑛 +1−𝑖 − 𝑣 −𝑛 −1+𝑖 
+
+𝑣 𝑖 − 𝑣 −𝑖 .
+
+Corollary 15. For all 𝑘 ≥ 1, we have 
+
+(35) 𝑃 𝑋 𝒏    
+
+> 𝑘 (𝑄 )
+
+(𝑞 ) =∑︁  
+
+> 𝑘 ′,𝑘 ′′ ,(𝑘 𝑝 )𝑝
+
+𝑞 (𝑘 ′ −𝑘 ′′ )/ 2
+
+−𝒏 · 𝛿 𝑘 ′
+
+
+
+> −𝑞 1/2
+
+−𝒏 · 𝛿 𝑘 ′′ 
+
+
+
+> −𝑞 1/2
+> 𝑡
+
+Ö
+
+> 𝑝 =1
+
+𝒏 · 𝛼 𝑝 
+
+𝑘 𝑝 
+
+
+
+> −𝑞 1/2
+
+𝒏 · 𝛼 𝑝 
+
+𝑘 𝑝 
+
+
+
+> −𝑞 1/2
+
+,
+
+where the sum ranges over all nonnegative 𝑘 ′, 𝑘 ′′ , 𝑘 1, . . . , 𝑘 𝑡 summing up to 𝑘 .Proof. From the 𝑞 -binomial theorem, we derive the following identities for 𝑐 ∈ N:(36) Exp ((− 1)𝑐 𝑃 P𝑐 −1 (𝑞 )𝑧 ) =
+
+> 𝑐
+
+∑︁ 
+
+> 𝑘 =0
+
+(− 1)𝑐𝑘 
+
+𝑐 𝑘 
+
+
+
+> −𝑞 1/2
+
+𝑧 𝑘 ,
+
+Exp ((− 1)𝑐 𝑃 P𝑐 −1 (𝑞 )𝑃 P1 (𝑞 )𝑧 ) =∑︁  
+
+> 𝑘 ≥0
+
+(− 1)𝑐𝑘 ∑︁ 
+
+> 𝑘 ′+𝑘 ′′ =𝑘
+
+𝑞 (𝑘 ′ −𝑘 ′′ )/ 2
+
+−𝑐 𝑘 ′
+
+
+
+> −𝑞 1/2
+
+−𝑐 𝑘 ′′ 
+
+
+
+> −𝑞 1/2
+
+𝑧 𝑘 .
+
+11 Using these identities and the multiplicativity of Exp, we can express the right hand side of (33) as a sum over Λ and compare the coefficient of 𝑥 𝑘𝛿 on both sides, which yields (37) 𝑃 𝑋 𝒏    
+
+> 𝑘 (𝑄 )
+
+(𝑞 ) =∑︁    
+
+> (𝑘 𝛼 )𝛼 ∈𝑃 , 𝑘 ′,𝑘 ′′
+
+𝑞 (𝑘 ′ −𝑘 ′′ )/ 2
+
+−𝒏 · 𝛿 𝑘 ′
+
+
+
+> −𝑞 1/2
+
+−𝒏 · 𝛿 𝑘 ′′ 
+
+
+
+> −𝑞 1/2
+
+Ö 
+
+> 𝛼 ∈𝑃
+
+𝒏 · 𝛼 𝑘 𝛼 
+
+
+
+> −𝑞 1/2
+
+,
+
+where the sum ranges over all 0 ≤ 𝑘 𝛼 ≤ 𝒏 · 𝛼 for 𝛼 ∈ 𝑃 and 𝑘 ′, 𝑘 ′′ ≥ 0 such that (38) ∑︁  
+
+> 𝛼 ∈𝑃
+
+𝑘 𝛼 𝛼 + ( 𝑘 ′ + 𝑘 ′′ )𝛿 = 𝑘𝛿. 
+
+By Lemma 8 we know that this is only possible if 𝑘 𝛼 𝑝 = 𝑘 𝛼 𝑝 =: 𝑘 𝑝 for all 𝑝 = 1, . . . , 𝑡 , as well as 
+
+Í𝑝 𝑘 𝑝 + 𝑘 ′ + 𝑘 ′′ = 𝑘 . The claimed formula follows. □
+
+# 4 Identifying the Fano series 
+
+We now ask which of the framed moduli spaces constructed above are Fano for every 𝑘 . For a framed quiver moduli space, this can be checked by comparing its framing stability with the canonical stability of the framed quiver. The resulting numerical conditions leave the five quiver and framing pairs displayed in Table 1. We then specialize the Betti-number formula from Section 3.4 to these pairs. 
+
+4.1 Fanoness of framed extended Dynkin quiver moduli 
+
+Theorem 16. Assume that 𝒏 · 𝛿 = 2 and 𝑛 𝑖 ≥ 1 whenever 𝜕 (𝒊 ) ≤ 0. Then, for every 𝑘 ≥ 1, the framed moduli space 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is a Fano variety of Picard rank |𝑄 0 |, index gcd (2𝑘, 𝑛 𝑖 : 𝑖 ∈ 𝑄 0), and dimension 2𝑘 . It is rational, of pure Hodge–Tate type, and infinitesimally rigid. Proof. By Definition 3, the space 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is a moduli space for b𝑄 with dimension vector b𝒅 = 𝑘𝛿 + 𝒊 0 and stability parameter (39) bΘ = 𝐶𝜕 − 𝜆 + 𝑘𝜆 (𝛿 )𝒊 ∗
+
+> 0
+
+,
+
+where 𝜆 ∈ Z𝑄 ∨ 
+
+> 0
+
+is positive and 𝑘𝜆 (𝛿 ) < 𝐶 gcd (𝜕 ). Direct inspection of the four relevant quiver types gives gcd (𝜕 ) = 1. The canonical stability of b𝒅 is (40) Θcan = 2𝑘𝜕 − 𝒏 + 𝑘 (𝒏 · 𝛿 )𝒊 ∗
+
+> 0
+
+.
+
+Comparing coefficients at the vertices of 𝑄 and at the framing vertex, the equality bΘ = 𝛼 Θcan for 𝛼 > 0amounts to (41) 𝐶𝜕 − 𝜆 = 𝛼 (2𝑘𝜕 − 𝒏 ),𝑘𝜆 (𝛿 ) = 𝑘𝛼 (𝒏 · 𝛿 ).
+
+Evaluating the first equality at 𝛿 gives the second, since 𝜕 (𝛿 ) = 0. Choose a positive integer 𝛼 
+
+with 𝛼 > −𝜕 (𝒊 ) for every 𝑖 ∈ 𝑄 0, and set 𝐶 = 2𝑘𝛼 + 1 and 𝜆 = 𝜕 + 𝛼 𝒏 . Then the first equality holds. The assumptions on 𝒏 ensure that 𝜆 is positive, and 𝒏 · 𝛿 = 2 gives 𝑘𝜆 (𝛿 ) = 2𝑘𝛼 < 𝐶 . Thus bΘ = 𝛼 Θcan with an admissible choice of 𝐶 and 𝜆 .We verify strong ample stability. If 0 < 𝒆 ≤ 𝑘𝛿 and bΘ(𝒆 ) > 0, then 2 𝑘𝜕 (𝒆 ) > 𝒏 · 𝒆 , so 𝜕 (𝒆 ) > 0and ⟨𝒆 , 𝒆 ⟩𝑄 ≥ 1. Since ⟨𝒆 , 𝛿 ⟩ = −𝜕 (𝒆 ),(42) ⟨𝒆 , 𝑘𝛿 − 𝒆 + 𝒊 0⟩b𝑄 = −𝑘𝜕 (𝒆 ) − ⟨ 𝒆 , 𝒆 ⟩𝑄 ≤ − 𝑘 − 1 ≤ − 2.
+
+12 For a subdimension vector 𝒆 + 𝒊 0 < b𝒅 with bΘ(𝒆 + 𝒊 0) > 0, put 𝒇 = 𝑘𝛿 − 𝒆 . Then 𝒇 ≠ 0 and bΘ(𝒇 ) < 0, while (43) ⟨𝒆 + 𝒊 0, 𝒇 ⟩b𝑄 = 𝑘𝜕 (𝒇 ) − ⟨ 𝒇 , 𝒇 ⟩𝑄 − 𝒏 · 𝒇 .
+
+If 𝜕 (𝒇 ) ≠ 0, the right-hand side is at most −2: for positive defect use 𝒏 · 𝒇 > 2𝑘𝜕 (𝒇 ), and for negative defect use ⟨𝒇 , 𝒇 ⟩𝑄 ≥ 1. If 𝜕 (𝒇 ) = 0, then 𝒏 · 𝒇 > 0; either ⟨𝒇 , 𝒇 ⟩𝑄 ≥ 1, or 𝒇 is a positive multiple of 𝛿 
+
+and 𝒏 · 𝒇 ≥ 2. This proves the same bound. The Fano property and the stated invariants now follow from Theorem 1. □
+
+Remark 17. With some extra effort, one can in fact prove that the conditions in the theorem are necessary for the equations and inequalities in the proof to be fulfillable for all 𝑘 ≥ 1. 
+
+Proposition 18. The conditions 𝒏 · 𝛿 = 2 and 𝑛 𝑖 ≥ 1 whenever 𝜕 (𝒊 ) ≤ 0 hold precisely for the quivers and framing data in Table 1. Consequently, the index of 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is one, except in the first case, where it is two. We also see that dim Aut (𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 )) 0 = 10 − 2|𝑄 0 |.Proof. This again follows by direct inspection of all quivers of the relevant extended Dynkin types. The geometric properties follow from Theorem 1. □
+
+4.2 Betti numbers of the Fano series 
+
+A surprising feature for these quiver moduli is that we can write down a closed formula for the Betti numbers b 2𝑖 (𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 )) . This will use the quiver DT/PT correspondence, already used in Corollaries 14 and 15. The cohomological Hall algebra action in the next section gives a structural reason to consider the cohomology of all members of a series together. 
+
+Theorem 19. In any of the five cases of Proposition 18, we have b2𝑖 (𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 )) = 𝑎 𝑖 for 𝑖 ≤ 𝑘 , where 𝑎 𝑖 is given by 
+
+(44) ∑︁  
+
+> 𝑖 ≥0
+
+𝑎 𝑖 𝑥 𝑖 = (1 + 𝑥 )|𝑄 0 |
+
+(1 − 𝑥 2)3 .
+
+Explicitly, 
+
+1. for 𝑄 of type eA1, we have 𝑎 𝑖 = ⌊( 𝑖 + 2)2/4⌋,
+
+2. for 𝑄 of type eA2, we have 𝑎 𝑖 = (𝑖 + 1)( 𝑖 + 2)/ 2,
+
+3. for 𝑄 of type eA3, we have 𝑎 𝑖 = (𝑖 + 1)2,
+
+4. for 𝑄 of type eD4, we have 𝑎 𝑖 = 2𝑖 (𝑖 + 1) + 1.Proof. We specialize Corollary 14 to the present situation where 𝒏 · 𝛿 = 2 and, again by direct inspection of all five cases, 𝒏 · 𝛼 = 1 for all 𝛼 ∈ 𝑃 . This yields (45) ∑︁  
+
+> 𝒅 ∈Λ
+
+(− 1)𝒏 ·𝒅 𝑃 𝑋 𝒏 𝒅 (𝑄 ) (𝑞 )𝑥 𝒅 = Exp −∑︁  
+
+> 𝛼 ∈𝑃
+
+𝑥 𝛼 + 𝑃 P1 (𝑞 )2𝑥 𝛿 
+
+!
+
+=
+
+Î𝛼 ∈𝑃 (1 + 𝑥 𝛼 )(1 − 𝑞𝑥 𝛿 )( 1 − 𝑥 𝛿 )2 (1 − 𝑞 −1𝑥 𝛿 ) .
+
+Comparing coefficients of powers of 𝑥 𝛿 on both sides as in the proof of Corollary 15 and noting that 𝑡 = |𝑄 0 | − 2, we find (46) ∑︁  
+
+> 𝑘 ≥0
+
+𝑃 𝑋 𝒏    
+
+> 𝑘 (𝑄 )
+
+(𝑞 )𝑥 𝑘 = (1 + 𝑥 )|𝑄 0 | − 2
+
+(1 − 𝑞𝑥 )( 1 − 𝑥 )2 (1 − 𝑞 −1𝑥 ) .
+
+13 Denoting by 𝐹 (𝑥 ) the series in the claim of the theorem, we can thus calculate (47) ∑︁  
+
+> 𝑘 ≥0
+
+𝑃 𝑋 𝒏    
+
+> 𝑘 (𝑄 )
+
+(𝑞 )𝑥 𝑘 = 𝐹 (𝑥 ) 1 − 𝑥 2
+
+(1 − 𝑞𝑥 )( 1 − 𝑞 −1𝑥 )
+
+= 𝐹 (𝑥 )
+
+ 11 − 𝑞𝑥 + 11 − 𝑞 −1𝑥 − 1
+
+
+
+= 𝐹 (𝑥 ) 1 +∑︁  
+
+> 𝑗 ≥1
+
+(𝑞 𝑗 + 𝑞 − 𝑗 )𝑥 𝑗 
+
+!
+
+=∑︁  
+
+> 𝑘 ≥0
+
+𝑎 𝑘 +
+
+> 𝑘
+
+∑︁ 
+
+> 𝑗 =1
+
+𝑎 𝑘 − 𝑗 (𝑞 𝑗 + 𝑞 − 𝑗 )
+
+!
+
+𝑥 𝑘 ,
+
+proving the first claim. To prove the second claim, we start with the case |𝑄 0 | = 3. Then 𝐹 (𝑥 ) = 1/( 1−𝑥 )3, whose 𝑖 -th coefficient is well known to equal (𝑖 + 1)( 𝑖 + 2)/ 2. Passing to the case |𝑄 0 | = 4 amounts to taking consecutive sums of the 𝑎 𝑖 , and indeed 𝑖 (𝑖 + 1)/ 2 + ( 𝑖 + 1)( 𝑖 + 2)/ 2 = (𝑖 + 1)2. Similarly, 𝑖 2 + ( 𝑖 + 1)2 = 2𝑖 (𝑖 + 1) + 1, and the case |𝑄 0 | = 5 follows. For the case |𝑄 0 | = 2, we have to find a series of integers starting with 1 and with consecutive sums evaluating to (𝑖 + 1)( 𝑖 + 2)/ 2, and indeed ⌊( 𝑖 + 1)2/4⌋ + ⌊( 𝑖 + 2)2/4⌋ = (𝑖 + 1)( 𝑖 + 2)/ 2is easily verified. This proves the second claim of the theorem. □
+
+Corollary 20. The generating function of Euler characteristics of the moduli spaces 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is given by 
+
+(48) ∑︁  
+
+> 𝑘 ≥0
+
+𝜒 (𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 )) 𝑥 𝑘 = (1 + 𝑥 )|𝑄 0 | − 2
+
+(1 − 𝑥 )4 .
+
+Proof. This follows from specializing 𝑞 to 1 in (46). □
+
+In Table 3 we have given the even Betti numbers from Theorem 19 for 𝑘 = 1, . . . , 5. 
+
+# 5 Cohomological Hall algebra action 
+
+The Euler form of 𝑄 being symmetric when restricted to Λ is also the setting in which the so-called semistable cohomological Hall algebra, a convolution structure on (49) CoHa 𝜕 (𝑄 ) :=
+
+Ê 
+
+> 𝒅 ∈Λ
+
+H∗ 
+
+> G𝒅
+
+(Rep 𝜕 -sst (𝑄, 𝒅 ), Q),
+
+is well-studied [10]. In the particular cases of Proposition 18, by [17], it is known to be isomorphic to an algebra P|𝑄 0 | − 2 given by explicit generators and relations. It admits a subalgebra (50) CoHa 𝜕 𝛿 (𝑄 ) =
+
+Ê 
+
+> 𝑘 ≥0
+
+CoHa 𝜕 (𝑄 )𝑘𝛿 .
+
+This subalgebra naturally acts on the graded vector space (51) H𝒏 (𝑄 ) :=
+
+Ê 
+
+> 𝑘 ≥0
+
+H∗ (𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ), Q),
+
+where we set 𝑋 𝒏  
+
+> 0
+
+(𝑄 ) = pt to include the degree-zero term. With this setup we can prove the following. 
+
+Proposition 21. In the five cases of Proposition 18, the direct sum H𝒏 (𝑄 ) of the singular cohomologies of all 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) is a cyclic module over CoHa 𝜕 𝛿 (𝑄 ), which is given by explicit generators and quadratic relations. 
+
+14 𝑄 𝑘 even Betti numbers Euler characteristic 
+
+eA1 1 1, 2, 1 4
+
+eA1 2 1, 2, 4, 2, 1 10 
+
+eA1 3 1, 2, 4, 6, 4, 2, 1 20 
+
+eA1 4 1, 2, 4, 6, 9, 6, 4, 2, 1 35 
+
+eA1 5 1, 2, 4, 6, 9, 12 , 9, 6, 4, 2, 1 56 
+
+eA2 1 1, 3, 1 5
+
+eA2 2 1, 3, 6, 3, 1 14 
+
+eA2 3 1, 3, 6, 10 , 6, 3, 1 30 
+
+eA2 4 1, 3, 6, 10 , 15 , 10 , 6, 3, 1 55 
+
+eA2 5 1, 3, 6, 10 , 15 , 21 , 15 , 10 , 6, 3, 1 91 
+
+eA3 1 1, 4, 1 6
+
+eA3 2 1, 4, 9, 4, 1 19 
+
+eA3 3 1, 4, 9, 16 , 9, 4, 1 44 
+
+eA3 4 1, 4, 9, 16 , 25 , 16 , 9, 4, 1 85 
+
+eA3 5 1, 4, 9, 16 , 25 , 36 , 25 , 16 , 9, 4, 1 146 
+
+eD4 1 1, 5, 1 7
+
+eD4 2 1, 5, 13 , 5, 1 25 
+
+eD4 3 1, 5, 13 , 25 , 13 , 5, 1 63 
+
+eD4 4 1, 5, 13 , 25 , 41 , 25 , 13 , 5, 1 129 
+
+eD4 5 1, 5, 13 , 25 , 41 , 61 , 41 , 25 , 13 , 5, 1 231 Table 3: The even Betti numbers and Euler characteristics of 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) for 𝑘 = 1, . . . , 5. 
+
+Proof. By [10, Theorem 3.2], the direct sum of cohomology É  
+
+> 𝒅 ∈Λ
+
+H∗ (𝑋 𝒏 𝒅 (𝑄 ), Q) is a cyclic module over CoHa 𝜕 (𝑄 ) with generator 1 ∈ Q  H0 (𝑋 𝒏  
+
+> 0
+
+(𝑄 ), Q). In other words, the Λ-graded map (52) CoHa 𝜕 (𝑄 ) → 
+
+Ê 
+
+> 𝒅 ∈Λ
+
+H∗ (𝑋 𝒏 𝒅 (𝑄 ), Q),
+
+given by multiplication by this class 1, is surjective. Consequently, the restriction CoHa 𝜕 𝛿 (𝑄 ) → H𝒏 (𝑄 )
+
+is also surjective, thus H𝒏 (𝑄 ) is a cyclic module over CoHa 𝜕 𝛿 (𝑄 ). The algebra CoHa 𝜕 (𝑄 ) is given (see [17, §6]) by generators • 𝑒 𝑝, 2𝑘 +1 for 𝑝 = 1, . . . , |𝑄 0 | − 2, 𝑘 ≥ 0 in degree 𝛼 𝑝 ,• 𝑓 𝑝, 2𝑘 +1 for 𝑝 = 1, . . . , |𝑄 0 | − 2, 𝑘 ≥ 0 in degree 𝛼 𝑝 ,• 𝑔 2𝑘 for 𝑘 ≥ 0 in degree 𝛿 ,• ℎ2𝑘 +2 for 𝑘 ≥ 0 in degree 𝛿 .Since (53) [𝑒 𝑝, 2𝑘 +1, 𝑓 𝑝, 2𝑙 +1] = ℎ2(𝑘 +𝑙 )+ 2
+
+for all 𝑘, 𝑙 ≥ 0 by [17, §6], the subalgebra CoHa 𝜕 𝛿 (𝑄 ) is thus generated by the elements • 𝑒 𝑝, 2𝑘 +1 𝑓 𝑝, 2𝑙 +1 for 𝑝 = 1, . . . , |𝑄 0 | − 2 and 𝑘, 𝑙 ≥ 0, • 𝑔 2𝑘 for 𝑘 ≥ 0, 15 • ℎ2𝑘 +2 for 𝑘 ≥ 0, all in degree 𝛿 . These generators are subject to a list of quadratic relations also stated in [17, §6]. □
+
+Remark 22. In fact, [10, Theorem 3.2] also describes the annihilator ideal of 1 in CoHa 𝜕 (𝑄 ). Its intersection with CoHa 𝜕 𝛿 (𝑄 ) should be computable using the explicit description of CoHa 𝜕 (𝑄 ). Then, using the PBW basis for CoHa 𝜕 (𝑄 ) [17, Proposition 6.1], one should be able to compute the generating series of Betti numbers of the 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ), therefore “categorifying” the proof of Theorem 19. We do not do this here, since the present proof of the theorem, although being formal, is short and transparent. 
+
+# 6 Low-dimensional examples 
+
+We will now discuss the explicit geometry of these Fano varieties in more detail, especially in low dimension. Unlike for the Betti numbers, where we have found a uniform description in Theorem 19, we use the algorithms implemented in [3] to compute some invariants, namely in Table 4 we give h 0 (𝑋, 𝜔 ∨ 
+
+> 𝑋
+
+)
+
+for 𝑋 = 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) and 𝑘 = 2, 3, 4, and in Table 5 we give the Chern numbers for 𝑘 = 2, 3 (where computationally feasible). We do not list the values for 𝑘 = 1, because Section 6.1 provides explicit identifications. Observe that eA1 (𝑎 ) and eA1 (𝑏 ) share all the numerical invariants we list in Tables 4 and 5, but by Theorem 16 they are not isomorphic, as the index is 2, resp. 1. 
+
+𝑘 2 3 4
+
+eA1 (𝑎 ) 75 620 5140 
+
+eA1 (𝑏 ) 75 620 5140 
+
+eA2 63 504 4090 
+
+eA3 52 403 3206 
+
+eD4 42 316 2470 Table 4: Dimensions of H 0 (𝑋, 𝜔 ∨ 
+
+> 𝑋
+
+) for 𝑋 = 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ).In dimensions 2 and 4, so when 𝑘 = 1, 2, we will describe their geometry in a bit more detail. 
+
+6.1 del Pezzo surfaces 
+
+We can identify the del Pezzo surfaces of Picard rank between 2 and 5 with the 𝑘 = 1 cases of the above five series, giving: 
+
+𝑄 𝑋 𝒏  
+
+> 1
+
+(𝑄 )
+
+eA1 (𝑎 ) P1 × P1
+
+eA1 (𝑏 ) Bl 1 P2
+
+eA2 Bl 2 P2
+
+eA3 Bl 3 P2
+
+eD4 Bl 4 P2
+
+This identification is standard, and in our setting follows from inspecting the index and the Picard rank, as computed in Theorem 16. 16 𝑄 c41 c2c21 c22 c3c1 c4
+
+eA1 (𝑎 ) 352 184 98 52 10 
+
+eA1 (𝑏 ) 352 184 98 52 10 
+
+eA2 289 166 101 56 14 
+
+eA3 232 148 107 58 19 
+
+eD4 181 130 116 58 25    
+
+> (a) Fano fourfolds 𝑋 𝒏
+> 2(𝑄 ).
+
+𝑄 c61 c2c41 c22c21 c32 c3c31 c3c2c1 c23 c4c21 c4c2 c5c1 c6
+
+eA1 (𝑎 ) 38272 19968 10408 5436 6480 3372 1088 1368 724 192 20 
+
+eA1 (𝑏 ) 38272 19968 10408 5436 6480 3372 1088 1368 724 192 20 
+
+eA2 30287 16539 9062 5030 5805 3190 1122 1404 797 234 30        
+
+> (b) Fano sixfolds 𝑋 𝒏
+> 3(𝑄 ). Values for eA3and eD4are missing because of computational limits.
+
+Table 5: Chern numbers of 𝑋 𝒏  
+
+> 𝑘
+
+(𝑄 ) for 𝑘 = 2, 3. We can make Proposition 11 explicit in this easy case, and obtain the conic bundle descriptions of these del Pezzo surfaces. Namely, the Luna stratification of the base P1 consists of the generic statum attached to the Luna type (𝛿 1), where the fiber is a smooth conic (we have 𝑠 = 1 with 𝑘 1 = 1, and ℓ𝑖 = 0for 𝑖 = 1, . . . , #𝑄 0 − 2), and # 𝑄 0 − 2 strata (which are points in P1) where the fiber is the nodal conic (we have 𝑠 = 0, and ℓ𝑖 = 1 for exactly one 𝑖 ∈ { 1, . . . , #𝑄 0 − 2}). 
+
+6.2 Fano fourfolds 
+
+Next, we take 𝑘 = 2, and obtain five Fano fourfolds. From the discussion in Proposition 11 we see that the morphism 𝑝 2 : 𝑋 → P2 looks generically like a quadric surface bundle, but with singular fibres which are not merely singular quadric surfaces. Recently, Kresch–Tschinkel studied such fibrations, and we recall their [15, Definition 1]. 
+
+Definition 23. Let 𝑆 be a smooth variety. An involution surface bundle is a flat projective mor-phism 𝑝 : 𝑋 → 𝑆 for which • the locus 𝑈 ⊆ 𝑆 where 𝑝 is a smooth morphism is Zariski-dense, • the fibre 𝑝 −1 (𝑠 ) for 𝑠 ∈ 𝑈 is an involution surface, i.e., a minimal del Pezzo surface of degree 8. We say it has mild degeneration if every singular fibre is geometrically isomorphic to one of the following reduced schemes: 
+
+type I a nodal quadric surface 
+
+type II the product of two reduced singular conics 
+
+type III the union of two copies of the second Hirzebruch surface F2, with each (− 2)-curve glued to a fibre of the other surface 
+
+type IV the product of a smooth conic with a reduced singular conic. We will extend [5, Theorem 24], which is only concerned with eD4. We can reuse parts of the computation. First, recall that the possible Luna types are determined in Lemma 9, and that Lemma 10 gives the local quivers. For all these local quivers we list the fibers from Proposition 11 and a reference for their description, in Table 6, where 𝛼, 𝛽 ∈ 𝑃 are distinct and not complementary when both occur. 17 Luna type fibre reference 
+
+(𝛿, 𝛿 ) P1 × P1 [5, Lemma 18] 
+
+(𝛿 2) type I [5, Lemma 21] 
+
+(𝛿, 𝛼, 𝛼 ) type IV [5, Lemma 19] 
+
+(𝛼, 𝛼, 𝛽, 𝛽 ) type II [5, Lemma 20] 
+
+(𝛼 2, 𝛼 2) type III [5, Lemma 22] Table 6: Luna types and fibres of 𝑝 2 for 𝑘 = 2.   
+
+> IV IV IV III II II III III III
+
+Figure 1: Configuration of three lines and a smooth conic tangent to each of them, labeled by the possible fibers in the involution surface bundle structures described in Proposition 24. Taken from [5, Figure 1]. This allows us to prove the following generalization of [5, Theorem 24]. 
+
+Proposition 24. Let 𝑄 be one of the extended Dynkin quivers from Proposition 18. The morphism 
+
+(54) 𝑝 2 : 𝑋 𝒏  
+
+> 2
+
+(𝑄 ) → M𝜕 -sst (𝑄, 2𝛿 )  P2
+
+is an involution surface bundle which has mild degeneration. The discriminants are the following subsets of the configuration in Figure 1: 
+
+𝑄 discriminant 
+
+eA1 (𝑎 ) the conic 
+
+eA1 (𝑏 ) the conic 
+
+eA2 the conic and one line 
+
+eA3 the conic and two lines 
+
+eD4 the conic and the triangle of lines Proof. By Lemma 9, the Luna types of representations of dimension 2 𝛿 are precisely those in the first column of Table 6. The local-quiver description in Proposition 11 and the computations in [5, Lemmas 18–22] gives the corresponding fibre descriptions in the second column of Table 6. Under the identification M 𝜕 -sst (𝑄, 2𝛿 )  Sym 2 P1  P2, the indicated Luna strata give the conic and lines in the discriminant table. The source is smooth and projective by Theorem 16, and the preceding equidimensionality result gives flatness. The general fibre is P1 × P1, so the result follows. □
+
+18 References 
+
+[1] Pieter Belmans, Ana-Maria Brecan, Hans Franzen, Gianni Petrella, and Markus Reineke. “Rigidity and Schofield’s partial tilting conjecture for quiver moduli”. In: J. Éc. polytech. Math. 12 (2025), pp. 1345–1379. doi: 10.5802/jep.312 . MR: 4954467 .[2] Pieter Belmans, Ana-Maria Brecan, Hans Franzen, and Markus Reineke. “Vector fields and admissible embeddings for quiver moduli”. In: Moduli 2 (2025), Paper No. e3, 23. doi: 10.1112/ mod.2024.11 . MR: 4883104 .[3] Pieter Belmans, Hans Franzen, and Gianni Petrella. QuiverTools . doi: 10.5281/zenodo.1268022 .url: https://quiver.tools .[4] Pieter Belmans and Gianni Petrella. Ample stability implies rigidity for quiver moduli . 2026. arXiv: 
+
+> 2610.03302 [math.AG]
+
+.[5] Pieter Belmans and Markus Reineke. Fano 4-fold quiver moduli from subspace quivers . 2026. arXiv: 
+
+> 2607.12895v1 [math.AG]
+
+.[6] Harm Derksen and Jerzy Weyman. An introduction to quiver representations . Vol. 184. Graduate Studies in Mathematics. American Mathematical Society, Providence, RI, 2017, pp. x+334. isbn: 978-1-4704-2556-2. doi: 10.1090/gsm/184 . MR: 3727119 .[7] Vlastimil Dlab and Claus Michael Ringel. “Indecomposable representations of graphs and alge-bras”. In: Mem. Amer. Math. Soc. 6.173 (1976), pp. v+57. doi: 10.1090/memo/0173 . MR: 447344 .[8] M. Domokos and H. Lenzing. “Moduli spaces for representations of concealed-canonical algebras”. In: J. Algebra 251.1 (2002), pp. 371–394. doi: 10.1006/jabr.2001.9117 . MR: 1900290 .[9] Johannes Engel and Markus Reineke. “Smooth models of quiver moduli”. In: Math. Z. 262.4 (2009), pp. 817–848. doi: 10.1007/s00209-008-0401-y . MR: 2511752 .[10] Hans Franzen. “On the semi-stable CoHa and its modules arising from smooth models”. In: J. Algebra 503 (2018), pp. 121–145. doi: 10.1016/j.jalgebra.2018.02.004 . MR: 3779991 .[11] Hans Franzen, Markus Reineke, and Silvia Sabatini. “Fano quiver moduli”. In: Canad. Math. Bull. 
+
+64.4 (2021), pp. 984–1000. doi: 10.4153/S0008439520001009 . MR: 4352662 .[12] Lydia Gösmann and Markus Reineke. “Motives of nullcones of quiver representations”. In: SIGMA Symmetry Integrability Geom. Methods Appl. 22 (2026), Paper No. 020, 21. doi: 10.3842/SIGMA. 2026.020 . MR: 5038724 .[13] Dieter Happel. “Hochschild cohomology of finite-dimensional algebras”. In: Séminaire d’Algèbre Paul Dubreil et Marie-Paul Malliavin, 39ème Année (Paris, 1987/1988) . Vol. 1404. Lecture Notes in Math. Springer, Berlin, 1989, pp. 108–126. isbn: 3-540-51812-6. doi: 10.1007/BFb0084073 . MR: 
+
+> 1035222
+
+.[14] Alastair D. King and Charles H. Walter. “On Chow rings of fine moduli spaces of modules”. In: J. Reine Angew. Math. 461 (1995), pp. 179–187. doi: 10.1515/crll.1995.461.179 . MR: 1324213 .[15] Andrew Kresch and Yuri Tschinkel. “Involution surface bundles over surfaces”. In: Math. Z. 
+
+296.3-4 (2020), pp. 1081–1100. doi: 10.1007/s00209-020-02461-4 . MR: 4159824 .[16] Sven Meinhardt and Markus Reineke. “Donaldson-Thomas invariants versus intersection coho-mology of quiver moduli”. In: J. Reine Angew. Math. 754 (2019), pp. 143–178. doi: 10.1515/crelle-2017-0010 . MR: 4000572 .[17] Timm Peerenboom. “CoHAs of Torsion Sheaves on Weighted Projective Lines”. In: Q. J. Math. 
+
+77.2 (2026), pp. 473–510. doi: 10.1093/qmath/haag013 . MR: 5085658 .[18] Markus Reineke. “Moduli of representations of quivers”. In: Trends in representation theory of algebras and related topics . EMS Ser. Congr. Rep. Eur. Math. Soc., Zürich, 2008, pp. 589–637. isbn: 978-3-03719-062-3. doi: 10.4171/062-1/14 . MR: 2484736 .[19] Markus Reineke and Stefan Schröer. “Brauer groups for quiver moduli”. In: Algebr. Geom. 4.4 (2017), pp. 452–471. doi: 10.14231/2017-024 . MR: 3683503 .19 [20] Markus Reineke and Thorsten Weist. “Moduli spaces of point configurations and plane curve counts”. In: Int. Math. Res. Not. IMRN 13 (2021), pp. 10339–10372. doi: 10.1093/imrn/rnz118 .MR: 4283580 .[21] Claus Michael Ringel. Tame algebras and integral quadratic forms . Vol. 1099. Lecture Notes in Mathematics. Springer-Verlag, Berlin, 1984, pp. xiii+376. isbn: 3-540-13905-2. doi: 10.1007/ BFb0072870 . MR: 774589 .[22] Aidan Schofield. “Birational classification of moduli spaces of representations of quivers”. In: 
+
+Indag. Math. (N.S.) 12.3 (2001), pp. 407–432. doi: 10 . 1016 / S0019 - 3577(01 ) 80019 - 7 . MR: 
+
+> 1914089
+
+.
+
+Pieter Belmans , p.belmans@uu.nl 
+
+Mathematical Institute, Utrecht University, Budapestlaan 6, 3584CD Utrecht, Netherlands 
+
+Markus Reineke , markus.reineke@rub.de 
+
+Faculty of Mathematics, Ruhr-Universität Bochum, Universitätsstraße 150, 44780 Bochum, Germany 20

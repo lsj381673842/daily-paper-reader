@@ -1,0 +1,3956 @@
+Title: Ideal quotients of n-exact categories
+
+URL Source: https://arxiv.org/pdf/2610.16403v1
+
+Published Time: Wed, 14 Oct 2026 02:47:52 GMT
+
+Number of Pages: 39
+
+Markdown Content:
+IDEAL QUOTIENTS OF n-EXACT CATEGORIES 
+
+WEIKANG WENG 
+
+Dedicated to Professor Yanan Lin on the occasion of his 70th birthday 
+
+Abstract. In this paper, we extend the notion of a removable subcategory to n-exact categories, and prove that an ideal quotient by a subcategory of projective-injectives inherits an n-exact structure from the original category if and only if the subcategory is removable. In the Frobenius case, the quotient remains Frobenius, and the stable ( n + 2)-angulated categories are equivalent. We give a sufficient condition for a subcategory of projective-injectives to be removable. We also show that the ideal quotient construction is compatible with cluster tilting. Finally, we apply the construction to 2-cluster tilting subcategories of the category of ACM bundles on a Geigle–Lenzing projective plane, obtaining quotients for both natural and relative 2-exact structures. 
+
+1. Introduction 
+
+Exact categories in the sense of Quillen [20] provide a framework for homolog-ical algebra in additive categories equipped with a chosen class of kernel-cokernel pairs; see [1]. The stable category of a Frobenius exact category, obtained by fac-toring out its projective-injective objects, carries a natural triangulated structure [8]. A related question is when an ideal quotient by a subcategory of projective-injective objects inherits the original exact structure. Chen [4, Theorem 3.1] gave sufficient conditions for such a quotient of a Frobenius category to remain Frobe-nius. Demonet–Iyama [6, Theorem 3.6] showed that the quotient inherits the exact structure precisely when the quotient functor sends inflations and deflations to categorical monomorphisms and epimorphisms, respectively. Jasso [13] introduced n-exact categories by formulating higher analogues of the axioms of exact categories, using n-exact sequences in place of short exact se-quences. For n = 1, these recover the usual exact categories. The stable cate-gory of a Frobenius n-exact category carries a natural ( n + 2)-angulated structure in the sense of Geiss–Keller–Oppermann [7]. Herschend–Liu–Nakaoka [10] intro-duced n-exangulated categories as higher analogues of extriangulated categories of Nakaoka–Palu [19]. They encompass both n-exact and ( n+2)-angulated categories. Hu–Zhang–Zhou [11, Theorem 3.1] established a criterion for an ideal quotient to inherit an n-exangulated structure. However, the resulting n-exangulated structure need not be n-exact, even when the original category is n-exact [11, Example 3.4]. In this paper, we give a direct treatment of ideal quotients of n-exact categories, including the Frobenius case, and establish related results. In particular, we apply the ideal quotient construction to Geigle–Lenzing projective planes. 
+
+2020 Mathematics Subject Classification. 18E05, 18G05, 16G10. 
+
+Key words and phrases. n-exact category, ideal quotient, n-cluster tilting subcategory, arith-metically Cohen–Macaulay bundle, Geigle-Lenzing projective space.  
+
+> 1arXiv:2610.16403v1 [math.RT] 12 Oct 2026 2W. WENG
+
+Let ( C , X ) be an n-exact category, and let P and I denote its subcategories of 
+
+X -projectives and X -injectives, respectively. Let F be an additive subcategory of 
+
+C . Denote by πF : C → C /[F ] the canonical functor. The subcategory F is called 
+
+removable (for X ) if F ⊂ P ∩ I and πF sends X -conflations in C to n-exact sequences in C /[F ]. Let XF be the class of sequences of length n + 2 in C /[F ]obtained from the images of X -conflations under πF by homotopy equivalences fixing both end terms. The following theorem characterizes when XF defines an 
+
+n-exact structure on C /[F ] and describes the Frobenius case. 
+
+Theorem A (Theorems 3.4, 3.7 and Remark 3.8) . Let ( C , X ) be an n-exact category and let F ⊂ P ∩ I be an additive subcategory. The following hold. (a) The subcategory F is removable if and only if ( C /[F ], XF ) is an n-exact category. In this case, πF induces an isomorphism of abelian groups nExt 1 
+
+> X
+
+(C, A ) ∼
+
+−→ nExt 1 
+
+> XF
+
+(C, A )for any A, C ∈ C . Here, nExt 1 
+
+> X
+
+(C, A ) is the group of Yoneda equivalence classes of X -conflations with end terms A and C.(b) If ( C , X ) is Frobenius n-exact, then F is removable if and only ( C /[F ], XF )is Frobenius n-exact. In this case, its subcategory of projective-injectives is precisely P/[F ]. Moreover, πF induces an ( n + 2)-angulated equivalence 
+
+C = C /[P] ∼
+
+−−→ (C /[F ]) /(P/[F ]) = C /[F ].
+
+When n = 1, part (a) recovers Demonet–Iyama’s result [6, Theorem 3.6], and part (b) gives its Frobenius form, recorded in [5, Lemma 2.7]; see Remark 3.2. Part (a) also follows from the theory of n-exangulated categories; see Remark 3.6. We give a direct proof using Herschend–Liu–Nakaoka’s reformulation of Jasso’s ax-ioms for an n-exact category; see Definition 2.2. Proposition 2.3 shows that certain axioms in this formulation are redundant. After omitting them, the remaining ax-ioms agree with Jasso’s, except that closure under weak isomorphisms is replaced by (EC ′) and (EI); see Remark 2.4. These conditions are convenient for the ideal quotient construction since closure under weak isomorphisms can be difficult to verify directly. For an additive subcategory F ⊂ P ∩ I , we give a sufficient condition for F
+
+to be a removable subcategory of C ; see Proposition 3.9. Together with Theorem A(b), this recovers Chen’s result [4, Theorem 3.1] when n = 1. A main source of n-exact categories is provided by n-cluster tilting subcate-gories of exact categories. We recall Jasso’s construction [13, Theorem 4.14], with Kvamme’s correction [17, Theorems 2.6, 8.1], in Theorem 2.10. The following the-orem shows that our ideal quotient construction is compatible with cluster tilting. 
+
+Theorem B (Theorem 3.10) . Let C be an n-cluster tilting subcategory of an exact category ( A , E ), endowed with the induced n-exact structure X of Theorem 2.10. If F is a removable subcategory of ( A , E ), then the following hold. (a) F is a removable subcategory of ( C , X ). (b) C /[F ] is an n-cluster tilting subcategory of A /[F ]. Moreover, the induced n-exact structure on C /[F ] coincides with XF . In other words, the diagram of constructions (the vertical arrows represent the construction IDEAL QUOTIENTS OF n-EXACT CATEGORIES 3
+
+in Theorem 2.10) (A , E ) (A /[F ], EF )(C , X ) (C /[F ], XF ) 
+
+> πF
+> πF|C
+
+commutes. If moreover ( A , E ) is Frobenius and 0n 
+
+> E
+
+(C ) ⊂ C , then the top and bot-tom rows consist of Frobenius exact and Frobenius n-exact categories, respectively. We apply these results to a Geigle–Lenzing projective plane X of weight type (p1, . . . , p 4), where pi ≥ 2; see [9, 2]. Let L be the abelian group on generators ⃗x 1, . . . ,⃗ x 4,⃗ c modulo the relations p 1⃗x 1 = · · · = p4⃗x 4 =⃗c. Let coh X be the abelian category of coherent sheaves on X. Denote by vect X the category of vector bundles on X. Its subcategory ACM X of arithmetically Cohen–Macaulay bundles on X is Frobenius with the exact structure E inherited from coh X. Its indecomposable projective-injective objects are precisely the line bundles O(⃗x), ⃗x ∈ L. Each line bundle has a unique expression 
+
+L = O(
+
+> 3
+
+X
+
+> i=1
+
+λi⃗x i + a⃗ x 4)such that 0 ≤ λi < p i for 1 ≤ i ≤ 3, and a ∈ Z. We call L fading if λi = pi − 1 for some 1 ≤ i ≤ 3, and persistent otherwise. Let F denote the closure of the fading line bundles under finite direct sums and direct summands. The treatment here is inspired by [16]. For a 2-cluster tilting subcategory C of ACM X, let X and X vec denote the 2-exact structures on C induced by the exact structures on ACM X and vect X
+
+inherited from coh X, respectively. Let X rel consist of X vec -conflations, whose first differential is F -monic and the last one is F -epic. It follows that ( C , X rel )is a 2-exact category by Proposition 2.8. The following result illustrates the ideal quotient constructions in this setting. A key step of its proof is to show that each ACM bundle has Properties (L) and (R); see Definition 4.3 and Proposition 4.7. 
+
+Theorem C (Theorems 4.10, 4.11 and Proposition 4.12) . Let C be a 2-cluster tilting subcategory of ACM X. The following hold. (a) The subcategory F ⊂ C is removable for both X and X rel . Moreover, both ( C /[F ], XF ) and ( C /[F ], X rel  
+
+> F
+
+) are 2-exact categories. If 02 
+
+> E
+
+(C ) ⊂
+
+C , then ( C /[F ], XF ) is a Frobenius 2-exact category. (b) We have X ⊂ X rel and equality holds if and only if min {p1, p 2, p 3} = 2. The paper is organized as follows. In Section 2, we recall basic notions and facts from higher homological algebra. We also show that certain axioms in Herschend– Liu–Nakaoka’s reformulation of Jasso’s axioms for an n-exact category are redun-dant. In Section 3, we establish the ideal quotient theorem and show that the construction is compatible with cluster tilting, as stated in Theorems A and B. In Section 4, we apply these results to 2-cluster tilting subcategories of ACM X
+
+and prove Theorem C. We conclude with explicit examples of Frobenius 2-exact categories and their ideal quotient constructions. 4 W. WENG 
+
+2. Higher homological algebra 
+
+In this section, we recall some basic notions and facts on higher homological algebra needed in this paper. We show that certain axioms in Herschend–Liu– Nakaoka’s reformulation of the definition of an n-exact category are redundant. This formulation is convenient for our purposes. Throughout this paper, let n ≥ 1be a fixed integer. All subcategories are assumed to be full. For an additive category 
+
+C , we write C (−, −) for Hom C (−, −). 2.1. Exact categories. We use the terminology of [1, 14]. A kernel-cokernel pair 
+
+(i, p ) in an additive category A is a pair of composable morphisms X i
+
+−→ Y p
+
+−→ Z
+
+such that i is a kernel of p and p is a cokernel of i. An exact structure E on A is a chosen class of kernel-cokernel pairs, closed under isomorphisms, which satisfies the axioms of [1, Definition 2.1]. An exact category (A , E ) in the sense of Quillen is an additive category A endowed with a specified exact structure E . The pair (i, p ) in E is called an E -conflation , while i is called an E -inflation and p is called an E -deflation .An additive category A is weakly idempotent complete if every split epimorphism has a kernel, or equivalently, if every split monomorphism has a cokernel; see [1, Lemma 7.1]. If ( A , E ) is a weakly idempotent complete exact category, then it follows that all split epimorphisms are E -deflations and all split monomorphisms are E -inflations; see [1, Corollary 7.5]. 2.2. n-exact categories. The notion of n-exact categories was introduced by Jasso [13] as a natural generalization of exact categories. Let us recall the definitions and basic properties. We refer to [10, 13] for more information. Let C be an additive category. Denote by CC the category of complexes in C .As its full subcategory, define Cn+2  
+
+> C
+
+to be the category of complexes in CC whose components are zero in the degrees outside of {0, . . . , n + 1 }. Namely, an object in 
+
+Cn+2  
+
+> C
+
+is a complex of the form 
+
+X· : X0 d0
+
+> X
+
+−−→ X1 d1
+
+> X
+
+−−→ · · · dn−1
+
+> X
+
+−−−→ Xn dnX
+
+−−→ Xn+1 
+
+The homotopy relation on morphism sets is defined in the usual way. Specifically, two morphisms f ·, g · ∈ Cn+2  
+
+> C
+
+(X·, Y ·) are homotopic , written f · ∼ g·, if there are morphisms hi : Xi → Y i−1, 1 ≤ i ≤ n + 1, such that 
+
+g0 − f 0 = h1d0 
+
+> X
+
+,gi − f i = di−1 
+
+> Y
+
+hi + hi+1 diX (1 ≤ i ≤ n),gn+1 − f n+1 = dnY hn+1 .
+
+A morphism f · ∈ Cn+2  
+
+> C
+
+(X·, Y ·) is called a homotopy equivalence if there exists a morphism g· ∈ Cn+2  
+
+> C
+
+(Y ·, X ·) such that g· ◦ f · ∼ 1X· and f · ◦ g· ∼ 1Y ·. Such a morphism g· is called the homotopy inverse of f ·. A complex is contractible if its identity morphism is null-homotopic. 
+
+Definition 2.1. [10, Definition 2.27] For a morphism f ∈ Cn+2  
+
+> C
+
+(X·, Y ·) satisfying 
+
+f 0 = 1 A for some A = X0 = Y 0, its mapping cone is defined to be the complex (2.1) M · 
+
+> f
+
+: X1 d0
+
+> M
+
+→ X2 ⊕ Y 1 d1
+
+> M
+
+→ X3 ⊕ Y 2 d2
+
+> M
+
+→ · · · dn−1
+
+> M
+
+→ Xn+1 ⊕ Y n dnM
+
+→ Y n+1 ,IDEAL QUOTIENTS OF n-EXACT CATEGORIES 5
+
+where 
+
+d0 
+
+> M
+
+=
+
+ −d1
+
+> X
+
+f 1
+
+
+
+, d iM =
+
+ −di+1  
+
+> X
+
+0
+
+f i+1 diY
+
+
+
+(1 ≤ i ≤ n − 1) , d nM =  f n+1 dnY
+
+ .
+
+The mapping cocone is defined dually, for morphism g· in Cn+2  
+
+> C
+
+satisfying gn+1 = 1. Let C be an additive category and f : A → B a morphism in C . A weak cokernel 
+
+of f is a morphism g : B → C such that for any X ∈ C the induced sequence 
+
+C (C, X ) C (g,X )
+
+−−−−−−→ C (B, X ) C (f,X )
+
+−−−−−−→ C (A, X )of abelian groups is exact. Equivalently, g is a weak cokernel of f if gf = 0 and for each morphism h : B → X such that hf = 0, there exists a (not necessarily unique) morphism p : C → X such that h = pg . These properties are subsumed in the following commutative diagram. 
+
+A B CX 
+
+> f
+> 0
+> ghp
+
+Clearly, a weak cokernel g of f is a cokernel of f if and only if g is an epimorphism. The concept of a weak kernel is defined dually. Let d0 
+
+> X
+
+: X0 → X1 be a morphism in C . An n-cokernel of d0 
+
+> X
+
+is a sequence (d1 
+
+> X
+
+, . . . , d nX ) : X1 d1
+
+> X
+
+−−→ X2 d2
+
+> X
+
+−−→ · · · dn−1
+
+> X
+
+−−−→ Xn dnX
+
+−−→ Xn+1 
+
+of morphisms in C such that for every X ∈ C the induced sequence 0 → C (Xn+1 , X ) −→ C (Xn, X ) −→ · · · − → C (X1, X ) −→ C (X0, X )of abelian groups is exact. That is, the morphism diX is a weak cokernel of di−1 
+
+> X
+
+for all 1 ≤ i ≤ n − 1 and dnX is a cokernel of dn−1 
+
+> X
+
+. In this case, the sequence 
+
+X0 d0
+
+> X
+
+−−→ X1 d1
+
+> X
+
+−−→ X2 d2
+
+> X
+
+−−→ · · · dn−1
+
+> X
+
+−−−→ Xn dnX
+
+−−→ Xn+1 
+
+is called right n-exact . The notions of n-kernel and left n-exact are defined dually. A sequence X· ∈ Cn+2  
+
+> C
+
+is called an n-exact sequence if it is both right n-exact and left n-exact. A morphism f · : X· → Y · of n-exact sequences in C is called a 
+
+weak isomorphism if f k and f k+1 are isomorphisms for some k ∈ { 0, 1, . . . , n + 1 },where we set n + 2 := 0. Let X be a class of n-exact sequences in C . We call its members X -conflations .Given an X -conflation 
+
+X0 d0
+
+> X
+
+→ X1 d1
+
+> X
+
+−−→ X2 d2
+
+> X
+
+−−→ · · · dn−1
+
+> X
+
+−−−→ Xn dnX
+
+→ Xn+1 ,
+
+the morphism d0 
+
+> X
+
+(resp. dnX ) is called an X -inflation (resp. X -deflation ). We frequently use the following reformulation of Jasso’s definition for an n-exact category [13, Definition 4.2], due to Herschend–Liu–Nakaoka [10, Definition 4.21 and Proposition 4.23]. This formulation is convenient for our purposes, since closure under weak isomorphisms can be difficult to verify directly. 
+
+Definition 2.2. Let C be an additive category, and let X be a class of n-exact sequences in C . The pair ( C , X ) is called an n-exact category if the following conditions hold: 6 W. WENG 
+
+(EC ′) Let X·, Y · ∈ Cn+2  
+
+> C
+
+with A = X0 = Y 0 and C = Xn+1 = Y n+1 . If 
+
+f : X· → Y · is a homotopy equivalence such that f 0 = 1 A and f n+1 = 1 C ,then X· ∈ X if and only if Y · ∈ X .(E0) The sequence 0 → 0 → · · · → 0 → 0 is an X -conflation. (E1) The class of X -inflations is closed under composition. (E1 op ) The class of X -deflations is closed under composition. (E2 ′) The dual of the following (E2 ′op ). (E2 ′op ) (i) For any Y · ∈ X and f n+1 : Xn+1 → Y n+1 , there is a commutative diagram as follows, such that the top sequence X· ∈ X .(2.2) 
+
+X· X0 X1 · · · Xn Xn+1 
+
+Y · Y 0 Y 1 · · · Y n Y n+1         
+
+> f·
+> d0
+> Xd1
+> Xdn−1
+> XdnX
+> fn+1
+> d0
+> Yd1
+> Ydn−1
+> YdnY
+
+(ii) Let X·, Y · ∈ X with X0 = Y 0 = A. For any morphism f · : X· → Y ·
+
+satisfying f 0 = 1 A, the mapping cone M · 
+
+> f
+
+∈ X .(EI) For any Y · ∈ X and n-exact sequence X· in C , the following hold. (i) If there is a morphism f · : Y · → X· in which f 0 and f n+1 are isomor-phisms, then f · is a homotopy equivalence in Cn+2  
+
+> C
+
+.(ii) If there is a morphism g· : X· → Y · in which g0 and gn+1 are isomor-phisms, then g· is a homotopy equivalence in Cn+2  
+
+> C
+
+.The following observation shows that the axioms (E2 ′op )(ii) and its dual for 
+
+n-exact categories are redundant. 
+
+Proposition 2.3. Let X be a class of n-exact sequences in C satisfying (EC ′),
+
+(E2 ′ )(i) and (E2 ′op )(i) . Then (E2 ′)(ii) and (E2 ′op )(ii) hold. Proof. We only prove (E2 ′op )(ii) since the other assertion can be shown dually. Let 
+
+X·, Y · ∈ X with X0 = Y 0 = A, and f · : X· → Y · be a morphism with f 0 = 1 A.The proof is divided into the following two steps. 
+
+Step 1: We show that the mapping cone 
+
+M · 
+
+> f
+
+: X1
+
+> 
+
+−d1
+
+> X
+
+f 1
+
+> 
+
+−−−−−→ X2 ⊕ Y 1 d1
+
+> M
+
+→ · · · dn−1
+
+> M
+
+→ Xn+1 ⊕ Y n
+
+> h
+
+f n+1 dnY
+
+> i
+
+−−−−−−−−−→ Y n+1 
+
+is an n-exact sequence in C . Here, 
+
+diM =
+
+ −di+1  
+
+> X
+
+0
+
+f i+1 diY
+
+
+
+(1 ≤ i ≤ n − 1) .
+
+We first verify that dn−1 
+
+> M
+
+is a weak kernel of dnM . Let 
+
+u v⊤ : Zn+1 → Xn+1 ⊕ Y n
+
+be a morphism such that (2.3) f n+1 u + dnY v = 0 .
+
+Applying (E2 ′op )(i) to X· along u, we obtain a morphism g· : Z· → X· such that 
+
+Z· ∈ X , g0 = 1 A and gn+1 = u. Put h· = f ·g·. Starting with tn+1 = −v, we IDEAL QUOTIENTS OF n-EXACT CATEGORIES 7
+
+construct a null-homotopy of h· by descending induction. Indeed, equality (2.3) gives hn+1 = dnY tn+1 , and then by composing dnZ to both sides, we obtain (2.4) dnY (hn − tn+1 dnZ ) = 0 .
+
+Assume that we have constructed the equality of form (2.4) for n = k. Since dk−1
+
+> Y
+
+is a weak kernel of dkY , there exists a morphism tk : Zk → Y k−1 such that 
+
+hk = dk−1 
+
+> Y
+
+tk + tk+1 dkZ .
+
+Composing dk−1 
+
+> Z
+
+to both sides, we obtain dk−1 
+
+> Y
+
+(hk−1 −tkdk−1 
+
+> Z
+
+) = 0 and the induction step follows. Thus we have d0 
+
+> Y
+
+(h0 − t1d0 
+
+> Z
+
+) = 0. Since d0 
+
+> Y
+
+is a monomorphism, we have 1 A = h0 = t1d0 
+
+> Z
+
+. Thus d0 
+
+> Z
+
+is a split monomorphism. By [13, Proposition 2.6], the n-exact sequence Z· is contractible. Choose a morphism s : Zn+1 → Zn with 
+
+dnZ s = 1 Zn+1 , and put a = gns. Then 
+
+u = gn+1 dnZ s = dnX gns = dnX a. 
+
+It follows from (2.3) that dnY (f na + v) = 0. Hence there exists a morphism 
+
+b : Zn+1 → Y n−1 such that f na + v = dn−1 
+
+> Y
+
+b. If n ≥ 2, this yields (2.5) 
+
+uv
+
+
+
+= dn−1
+
+> M
+
+−ab
+
+
+
+.
+
+If n = 1, then we have (2.6) 
+
+uv
+
+
+
+= d0 
+
+> M
+
+(−a + d0 
+
+> X
+
+b)since f 1d0 
+
+> X
+
+= d0 
+
+> Y
+
+. Thus dn−1 
+
+> M
+
+is a weak kernel of dnM .Next we show that di−1 
+
+> M
+
+is a weak kernel of diM for any 1 ≤ i < n . Let 
+
+u v⊤ : V → Xi+1 ⊕ Y i be a morphism such that diM
+
+u v⊤ = 0, i.e. 
+
+di+1  
+
+> X
+
+u = 0 and f i+1 u + diY v = 0 .
+
+Since diX is a weak kernel of di+1  
+
+> X
+
+, we have u = diX a for some a : V → Xi. Thus 
+
+diY (f ia + v) = 0, and moreover f ia + v = di−1 
+
+> Y
+
+b holds again for some b : V → Y i−1.For 1 ≤ i < n , formula (2.5) holds with n replaced by i when i ≥ 2, while (2.6) applies when i = 1. In either case, we obtain a factorization through di−1 
+
+> M
+
+.Let u : T → X1 be a morphism such that d0 
+
+> M
+
+u = 0. This implies that u = d0 
+
+> X
+
+a for some morphism a : T → X0 and thus d0 
+
+> Y
+
+a = f 1u = 0. Since d0 
+
+> Y
+
+is a monomorphism, we have that a = 0 and so u = 0. Thus d0 
+
+> M
+
+is a monomorphism. Hence we have shown that M · 
+
+> f
+
+is left n-exact. Now we show right n-exactness of M · 
+
+> f
+
+. Take 1 ≤ i ≤ n and a morphism 
+
+u v : Xi+1 ⊕ Y i → V such that u v di−1 
+
+> M
+
+= 0. Equivalently, 
+
+ud iX = vf i and vd i−1 
+
+> Y
+
+= 0; For i = 1, the second equality follows by composing the first with d0 
+
+> X
+
+. Since diY is a weak cokernel of di−1 
+
+> Y
+
+, there exists a morphism w : Y i+1 → V such that v = wd iY .Thus we have ( u − wf i+1 )diX = 0. If i < n , then u − wf i+1 = rd i+1  
+
+> X
+
+for some morphism r : Xi+2 → V . Thus 
+
+u v = −r w diM .8 W. WENG 
+
+If i = n, then the epimorphism dnX can be cancelled on the right, and hence u =
+
+wf n+1 . Moreover, we have u v = wd nM . Finally, dnM is an epimorphism since 
+
+dnY is an epimorphism. This proves that M · 
+
+> f
+
+is n-exact. 
+
+Step 2: We show that M · 
+
+> f
+
+∈ X . The preceding argument uses only (E2 ′op )(i). Dually, one can show that (E2 ′)(i) implies that the mapping cocone of a morphism of X -conflations with the identity in the degree n + 1 is an n-exact sequence. Applying (E2 ′)(i) to Y · along d0 
+
+> X
+
+: A → X1, we obtain a morphism p· : Y · → W ·
+
+such that W · ∈ X , p0 = d0 
+
+> X
+
+and pn+1 = 1 Y n+1 . Its mapping cocone N · 
+
+> p
+
+is therefore 
+
+n-exact. Consider the morphism y· : Y · → M · 
+
+> f
+
+given by 
+
+y0 = d0 
+
+> X
+
+, yi =
+
+ 01Y i
+
+
+
+(1 ≤ i ≤ n), yn+1 = 1 Y n+1 .
+
+To show N · 
+
+> y
+
+is n-exact, it suffices to show that there is an isomorphism (2.7) N · 
+
+> y
+
+≃ X· ⊕ M
+
+> 1≤i≤n
+
+∆i(Y i),
+
+of complexes, where for an object E ∈ C , ∆ i(E) denotes E 1E
+
+−−→ E in degrees i, i + 1 and zero elsewhere. In fact, the complexes ∆ i(E) are contractible for 1 ≤ i ≤ n.For n = 1, the maps 
+
+u0 = 1 A, u1 =
+
+1 f 1
+
+0 1
+
+
+
+, u2 =
+
+−1 00 1
+
+
+
+give an isomorphism N · 
+
+> y
+
+≃ X· ⊕ ∆1(Y 1). Hence N · 
+
+> y
+
+is exact. For n ≥ 2, the mapping cocone N · 
+
+> y
+
+is given by 
+
+N · 
+
+> y
+
+: A
+
+> 
+
+−d0
+
+> Y
+
+d0
+
+> X
+> 
+
+−−−−−→ Y 1 ⊕ X1
+
+> 
+
+−d1 
+
+> Y
+
+00 −d1
+
+> X
+
+1Y 1 f 1
+
+> 
+
+−−−−−−−−−−−→ Y 2 ⊕ X2 ⊕ Y 1 d2
+
+> Ny
+
+−−→ · · · 
+
+> dn−1
+> Ny
+
+−−−→ Y n ⊕ Xn ⊕ Y n−1 
+
+> 
+
+0 −dnX 01Y n f n dn−1
+
+> Y
+> 
+
+−−−−−−−−−−−−−−−−→ Xn+1 ⊕ Y n,
+
+where 
+
+diNy =
+
+
+
+−diY 0 00 −diX 01Y i f i di−1
+
+> Y
+
+ (2 ≤ i ≤ n − 1) .
+
+Denote the complex on the right of (2.7) by U ·, which is given by 
+
+U · : A 
+
+> 
+
+0
+
+d0
+
+> X
+> 
+
+−−−−→ Y 1 ⊕ X1
+
+> 
+
+0 00 d1
+
+> X
+
+1Y 1 0
+
+> 
+
+−−−−−−−−−→ Y 2 ⊕ X2 ⊕ Y 1 d2
+
+> U
+
+−−→ · · · 
+
+> dn−1
+> U
+
+−−−→ Y n ⊕ Xn ⊕ Y n−1 
+
+> 
+
+0 dnX 01Y n 0 0
+
+> 
+
+−−−−−−−−−−−−→ Xn+1 ⊕ Y n,
+
+where 
+
+diU =
+
+
+
+0 0 00 diX 01Y i 0 0
+
+ (2 ≤ i ≤ n − 1) .IDEAL QUOTIENTS OF n-EXACT CATEGORIES 9
+
+Define a morphism u· : N · 
+
+> y
+
+→ U · given by 
+
+u0 = 1 A, u1 =
+
+1 f 1
+
+0 1
+
+
+
+,ui =
+
+1 f i di−1
+
+> Y
+
+0 (−1) i−1 00 0 1
+
+ (2 ≤ i ≤ n), un+1 =
+
+(−1) n 00 1
+
+
+
+.
+
+A direct calculation gives the following commutative diagram. 
+
+A (Ny )1 (Ny )2 · · · (Ny )n Xn+1 ⊕ Y n
+
+A U 1 U 2 · · · U n Xn+1 ⊕ Y nd0   
+
+> Ny
+> u1
+> d1
+> Ny
+> u2un
+> dnNy
+> un+1
+> d0
+> Ud1
+> UdnU
+
+Each ui is invertible and thus u· is the desired isomorphism. Since N · 
+
+> y
+
+and N · 
+
+> p
+
+are n-exact, the dual of [10, Lemma 4.17], applied to y· : Y · →
+
+M · 
+
+> f
+
+and p· : Y · → W · in both orders, gives morphisms 
+
+r· : M · 
+
+> f
+
+−→ W · and s· : W · −→ M ·
+
+> f
+
+with r0 = s0 = 1 X1 and rn+1 = sn+1 = 1 Y n+1 . Since M · 
+
+> f
+
+and W · are n-exact, by [10, Proposition 4.10(2)], we have 
+
+s·r· ∼ 1M ·f
+
+and r·s· ∼ 1W ·.
+
+Thus r· and s· are mutually homotopy inverses fixing the two endpoints. Finally, since W · ∈ X , axiom (EC ′) yields M · 
+
+> f
+
+∈ X . □
+
+Remark 2.4. For an n-exact category in the sense of Jasso [13, Definition 4.2], axiom [13, Definition 4.2(E2 op )] may be replaced by (E2 ′op )(i). Indeed, by the dual of [13, Proposition 4.8(i) ⇒(iv)], [13, Definition 4.2(E2 op )] implies (E2 ′op )(i). Conversely, let f · : X· → Y · be a morphism given by (E2 ′op )(i). Step 1 in the proof of Proposition 2.3 shows that its mapping cone M · 
+
+> f
+
+is n-exact, and thus the last n
+
+squares of f · form an n-pullback diagram. This proves [13, Definition 4.2(E2 op )]. Dually, [13, Definition 4.2(E2)] may be replaced by (E2 ′)(i). After omitting the redundant axioms (E2 ′)(ii) and (E2 ′op )(ii), Definition 2.2 agrees with Jasso’s definition [13, Definition 4.2], modified as above, except that closure under weak isomorphisms is replaced by (EC ′) and (EI). We shall therefore verify these two conditions in what follows. 
+
+Proposition 2.5 (Strong obscure axiom) . Let (C , X ) be an n-exact category, and suppose that C is weakly idempotent complete or n ≥ 2. Set f ∈ C (X, Y ) and 
+
+g ∈ C (Y, Z ). Then the following hold. 
+
+(a) If gf is an X -inflation, then so is f .
+
+(b) If gf is an X -deflation, then so is g.Proof. By [10, Proposition 4.34], every n-exact category is n-exangulated. Thus the assertion follows from [15, Theorem 3.5]. For the convenience of the reader, we include a direct proof. We only show (b) as (a) can be proved similarly. For n = 1, 10 W. WENG 
+
+by assumption, C is weakly idempotent complete and this is [1, Proposition 7.6]. So we assume n ≥ 2 and that gf is an X -deflation. By (E1 op ), the factorization 
+
+0 g = 1Z g gf 00 1Y
+
+  1X 0
+
+−f 1Y
+
+
+
+shows that 0 g : X ⊕ Y → Z is an X -deflation. Indeed, the first factor is a split epimorphism with kernel −g 1Y
+
+⊤, the second is a direct sum of X -deflations, and the third is an isomorphism. Choose an X -conflation 
+
+Andn
+
+−→ · · · d3
+
+−→ A2
+
+> d2
+
+−→ A1
+
+> 
+
+ab
+
+> 
+
+−−−→ X ⊕ Y
+
+> h
+
+0 gi
+
+−−−−−→ Z. 
+
+Since a b⊤ is a weak kernel of 0 g, the composition 
+
+X
+
+> 
+
+10
+
+> 
+
+−−−→ X ⊕ Y
+
+> h
+
+0 gi
+
+−−−−−→ Z
+
+vanishes and thus there exists a morphism s : X → A1 such that 
+
+as = 1 X and bs = 0 .
+
+We claim that g has the following n-kernel: 
+
+
+
+An −→ · · · −→ A3 
+
+> hd3
+> 0
+> i
+
+−−−→ A2 ⊕ X [ d2 s ]
+
+−−−−→ A1
+
+> b
+
+−→ Y, n ≥ 3,A2 ⊕ X [ d2 s ]
+
+−−−−→ A1
+
+> b
+
+−→ Y, n = 2 .
+
+Since a b⊤ is a weak kernel of 0 g, we have that b is a weak kernel of g. Next, let u : T → A1 be a morphism such that bu = 0. Then 
+
+ab
+
+
+
+(u − sau ) = 0 .
+
+Hence u − sau = d2v for some morphism v : T → A2, so u factors through d2 s.Finally, let v w⊤ : T ′ → A2 ⊕ X be a morphism such that d2v + sw = 0. Composing both sides with a, we have w = a(d2v + sw ) = 0 and thus d2v = 0. If 
+
+n ≥ 3, then v factors through d3; if n = 2, the monomorphism d2 gives v = 0 and thus d2 s is a monomorphism. The remaining exactness conditions follow from the chosen X -conflation. Thus g has an n-kernel. Since gf is an X -deflation, g is an X -deflation by the dual of [13, Proposition 4.11]. □
+
+Definition 2.6. [13] Let ( C , X ) be an n-exact category. (a) An object P ∈ C is called X -projective if for each X -deflation f : M → N ,the induced morphism 
+
+C (P, f ) : C (P, M ) → C (P, N )is an epimorphism. The notion of X -injective is defined dually. Denote by 
+
+P (resp. I ) the subcategory of X -projectives (resp. X -injectives). (b) We say that C has enough X -projectives if for any M ∈ C , there exists an 
+
+X -conflation N → P 1 −→ · · · − → P n → M , such that P 1, . . . , P n ∈ P. The notion of having enough X -injectives is defined dually. IDEAL QUOTIENTS OF n-EXACT CATEGORIES 11 
+
+(c) An n-exact category is Frobenius if it has enough X -projectives, enough 
+
+X -injectives, and the class of X -projectives coincides with that of X -injectives. Let C be an additive category, and F be a subcategory of C . Recall that a morphism f : A → B in C is called F -monic if the induced morphism C (B, F ) −→
+
+C (A, F ) is an epimorphism for all F ∈ F . The notion of F -epic is defined dually. 
+
+Lemma 2.7. Let (C , X ) be an n-exact category, and F ⊂ C a subcategory. Let 
+
+f · : X· → Y · be a morphism of X -conflations. The following hold. 
+
+(a) If f 0 = 1 and dnY is F -epic, then dnX is F -epic. 
+
+(b) If f n+1 = 1 and d0 
+
+> X
+
+is F -monic, then d0 
+
+> Y
+
+is F -monic. Proof. We prove (a). Let M · 
+
+> f
+
+be the mapping cone of f ·; see Definition 2.1. Let 
+
+u : F → Xn+1 be a morphism with F ∈ F . Since dnY is F -epic, there exists 
+
+v : F → Y n such that f n+1 u = dnY v, that is, u −v⊤ is killed by dnM . Hence 
+
+u −v⊤ factors through dn−1 
+
+> M
+
+. Comparing first components gives u = −dnX t for some t : F → Xn. Hence dnX is F -epic, proving (a). The proof of (b) is dual. □
+
+Let ( C , X ) be an n-exact category, and let F be a subcategory of C . With a view to constructing an n-exact substructure in which every object of F is projec-tive and injective, let X rel consist of all X -conflations 
+
+X· : X0 d0
+
+> X
+
+−−→ X1 → · · · → Xn dnX
+
+−−→ Xn+1 
+
+such that d0 
+
+> X
+
+is F -monic and dnX is F -epic; compare [18, Lemmas 4.2 and 4.3]. 
+
+Proposition 2.8. Let (C , X ) be an n-exact category, and F be a subcategory of 
+
+C . Then the pair (C , X rel ) is an n-exact category. Proof. We verify the axioms in Definition 2.2. To show (EC ′), let f : X· → Y · be a homotopy equivalence in Cn+2  
+
+> C
+
+such that f 0 = 1 and f n+1 = 1. We show that 
+
+X· ∈ X rel if and only if Y · ∈ X rel . We may assume Y · ∈ X rel , since the other case can be shown dually. Applying (EC ′) for ( C , X ), we have X· ∈ X . By Lemma 2.7(a) for f ·, dnX is F -epic since dnY is F -epic. We can choose a homotopy inverse 
+
+g· : Y · → X· of f · such that g0 = 1 and gn+1 = 1 by [10, Claim 2.8]. Applying Lemma 2.7(b) to g·, d0 
+
+> X
+
+is F -monic since d0 
+
+> Y
+
+is F -monic. Thus X· ∈ X rel . Hence (EC ′) holds. Axioms (E0) and (EI) are inherited from X .Let V · ∈ X rel and c : C → V n+1 . By (E2 ′op )(i) for X , there is a morphism 
+
+α· : U · → V · of X -conflations such that α0 = 1 and αn+1 = c. Since d0 
+
+> V
+
+= α1d0
+
+> U
+
+and d0 
+
+> V
+
+is F -monic, d0 
+
+> U
+
+is F -monic. By Lemma 2.7(a), dnU is F -epic since dnV is F -epic. Thus U · ∈ X rel , proving (E2 ′op )(i). Its dual follows similarly. Proposition 2.3 then gives axioms (E2 ′)(ii) and (E2 ′op )(ii). It remains to verify (E1) op . Let δ : A → B and γ : B → C be X rel -deflations. Take X·, Y · ∈ X rel with dnX = δ and dnY = γ. By (E1) op for X , choose Z· ∈ X
+
+with dnZ = γδ . Since F -epic morphisms are closed under composition, dnZ is F -epic. By the weak kernel properties of Y ·, the morphisms αn = δ and αn+1 = 1 C extend to a morphism α· : Z· −→ Y ·. By (E2 ′)(ii) for X , its mapping cocone N · 
+
+> α
+
+belongs to X , which is given by 
+
+N · 
+
+> α
+
+: Z0
+
+> 
+
+−d0
+
+> Z
+
+α0
+
+> 
+
+−−−−−→ Z1 ⊕ Y 0 d1
+
+> N
+
+−−→ · · · dn−1
+
+> N
+
+−−−→ A ⊕ Y n−1
+
+> h
+
+αn dn−1
+
+> Y
+> i
+
+−−−−−−−−−→ B. 12 W. WENG 
+
+The morphisms βn = 1A 0⊤ and βn+1 = 1 B extend to a morphism β· : X· →
+
+N ·
+
+> α
+
+. Since d0 
+
+> X
+
+is F -monic, d0 
+
+> N
+
+is F -monic by Lemma 2.7(b). Let h : Z0 → F with 
+
+F ∈ F . We have h = −ud 0 
+
+> Z
+
++ vα 0 for some morphisms u : Z1 → F and v : Y 0 → F .Since d0 
+
+> Y
+
+is F -monic, v = wd 0 
+
+> Y
+
+for some w : Y 1 → F . Thus d0 
+
+> Y
+
+α0 = α1d0 
+
+> Z
+
+yields 
+
+h = ( −u + wα 1)d0 
+
+> Z
+
+. Thus d0 
+
+> Z
+
+is F -monic, and hence Z· ∈ X rel . Therefore γδ is an 
+
+X rel -deflation, proving (E1) op . The proof of (E1) is dual. □
+
+2.3. n-cluster tilting subcategories. Let A be an additive category, and C be a subcategory of A . A morphism f : A → B in A is called a left C -approximation 
+
+of A if B ∈ C and f is C -monic. The subcategory C is called covariantly finite 
+
+if every object of A admits a left C -approximation. The notions of a right C -approximation and a contravariantly finite subcategory are defined dually. We say that C is functorially finite if it is both covariantly and contravariantly finite. 
+
+Definition 2.9. [13, Definition 4.13] A subcategory C of an exact category ( A , E )is called an n-cluster tilting subcategory if the following conditions are satisfied. (a) C is a functorially finite subcategory of A such that 
+
+C = {X ∈ A | Ext i 
+
+> A
+
+(C, X ) = 0 for any C ∈ C and 1 ≤ i < n }
+
+= {X ∈ A | Ext i 
+
+> A
+
+(X, C ) = 0 for any C ∈ C and 1 ≤ i < n }.
+
+(b) C is both a generating and a cogenerating subcategory of A , that is, for any object A ∈ A , there exists an E -deflation C → A with C ∈ C and an 
+
+E -inflation A → C′ with C′ ∈ C .If n = 1, then C = A is the unique 1-cluster tilting subcategory of A .Let ( A , E ) be an exact category. Recall that a morphism X → Y in A is proper 
+
+if it has a factorization X → Z → Y such that X → Z is an E -deflation and Z → Y
+
+an E -inflation. A sequence 
+
+· · · Xk−1 Xk Xk+1 · · · 
+
+Y k−1 Y k
+
+of proper morphisms is an E -acyclic complex if for each k ∈ Z the sequence Y k−1 →
+
+Xk → Y k is an E -conflation. An E -acyclic complex of the form 
+
+δ : X0 −→ X1 −→ · · · − → Xn −→ Xn+1 
+
+is called an E -acyclic complex of length n + 2. The following result provides a source of examples of n-exact categories and Frobenius n-exact categories. This is based on Jasso’s construction [13, Theo-rems 4.14, 5.16], with Kvamme’s correction [17, Theorems 2.6, 8.1]. By taking the closure under homotopy equivalences, the construction works without assuming weak idempotent completeness. Here, for a Frobenius exact category ( A , E ) and 
+
+E ∈ A , an n-th cosyzygy 0n 
+
+> E
+
+(E) of E is defined by an E -acyclic complex 
+
+E → I1 → · · · → In → 0n 
+
+> E
+
+(E)where for all k ∈ { 1, . . . , n } the object Ik is E -injective. 
+
+Theorem 2.10. Let (A , E ) be an exact category, and let C be an n-cluster tilting subcategory of A . Then C carries an n-exact structure X , where a complex 
+
+X0 → X1 → · · · → Xn → Xn+1 IDEAL QUOTIENTS OF n-EXACT CATEGORIES 13 
+
+in C is an X -conflation if and only if it is homotopy equivalent to an E -acyclic complex in A . If moreover (A , E ) is Frobenius and 0n 
+
+> E
+
+(C ) ⊂ C , then (C , X ) is a Frobenius n-exact category. Its projective-injectives are precisely the E -projective-injectives. Proof. The first assertion follows from [17, Theorem 8.1]. For the second assertion, we adapt the proof of [13, Theorem 5.16(i)]. We assume that the exact category (A , E ) is Frobenius and 0n 
+
+> E
+
+(C ) ⊂ C . Let I denote the subcategory of E -injectives. The definition of n-cluster tilting subcategory implies I ⊂ C .Let Z· ∈ X , and choose an E -acyclic complex X· homotopy equivalent to 
+
+Z·. For each I ∈ I , applying A (−, I ) yields a homotopy equivalence between 
+
+A (X·, I ) and A (Z·, I ). The complex A (X·, I ) is exact since I is E -injective. Since homotopy equivalent complexes of abelian groups have isomorphic cohomology, the complex A (Z·, I ) is also exact. Thus every object of I is X -injective. Finally, for C ∈ C , choose an E -acyclic complex (2.8) C → I1 → · · · → In → 0n 
+
+> E
+
+(C).
+
+Each term belongs to C since 0n 
+
+> E
+
+(C ) ⊂ C . This means that (2.8) is an X -conflation, proving that ( C , X ) has enough X -injectives. We claim that X -injectives are precisely E -injectives. If C is X -injective, then the first morphism in (2.8) splits, so C is a direct summand of I1 and thus is E -injective as claimed. Dually, ( C , X ) has enough X -projectives (and they are the E -projectives). Since ( A , E ) is Frobenius, X -projectives and X -injectives coincide. Hence ( C , X )is a Frobenius n-exact category, whose projective-injective objects are precisely the 
+
+E -projective-injective objects. □
+
+3. Ideal quotients of n-exact categories 
+
+Let ( C , X ) be an n-exact category. Let F be an additive subcategory of C .For objects X, Y ∈ C , we write [ F ]( X, Y ) for the subgroup of C (X, Y ) consisting of morphisms factoring through some object in F . The factor category C /[F ] of 
+
+C modulo F is defined as follows: it has the same objects as C ; the morphism set between X and Y is the quotient group C (X, Y )/[F ]( X, Y ); the composition is induced from that in C . Note that C /[F ] inherits the structure of an additive category. Denote by 
+
+πF : C → C /[F ]the canonical functor. For any morphism f : X → Y in C , we denote by f the image of f under πF . Denote by P (resp. I ) the subcategory consisting of X -projectives (resp. X -injectives) in C . An additive subcategory F ⊂ C is called removable (for X ) if F ⊂ P ∩ I and the canonical functor πF sends X -conflations in C to 
+
+n-exact sequences in C /[F ]; compare [5]. If moreover ( C , X ) is a Frobenius n-exact category, the case F = P = I is of particular interest, since the associated quotient category C /[P], namely the 
+
+stable category of C , denoted by C , is equipped with a natural ( n + 2)-angulated structure. In this case, the canonical functor πP : C → C sends X -conflations to standard ( n + 2)-angles. For details, we refer to [13, Section 5.2]. Assume F ⊂ P ∩ I . We are interested in the following question: when the quotient category C /[F ] is still an n-exact category, and when this structure is Frobenius. In this section, we establish the ideal quotient theorem for this question. 14 W. WENG 
+
+We also give a sufficient condition for F to be a removable subcategory of C , and show that the ideal quotient construction is compatible with cluster tilting. 3.1. Ideal quotients of n-exact categories. Let XF be the class of sequences 
+
+Y · = ( d0 
+
+> Y
+
+, . . . , d nY ) in C /[F ] admitting a homotopy equivalence (3.1) 
+
+Y · A Y 1 · · · Y n CZ· A Z1 · · · Zn C     
+
+> y·
+> d0
+> Yd1
+> Y
+> y1
+> dn−1
+> YdnY
+> yn
+> d0
+> Zd1
+> Zdn−1
+> ZdnZ
+
+where Z· = ( d0 
+
+> Z
+
+, . . . , d nZ ) is the image of some Z· = ( d0 
+
+> Z
+
+, . . . , d nZ ) ∈ X , and y0 = 1 A
+
+and yn+1 = 1 C . Note that by [10, Claim 2.8], there exists a homotopy inverse 
+
+z· : Z· → Y · of y· such that z0 = 1 A and zn+1 = 1 C .
+
+Proposition 3.1. Assume that F is a removable subcategory of C . Then any se-quence in XF is n-exact in C /[F ], and the pair (C /[F ], XF ) satisfies (EC ′), (E2 ′ )
+
+and (E2 ′op ). Moreover, XF is closed under homotopy equivalences in Cn+2   
+
+> C/[F]
+
+.Proof. Since F is a removable subcategory of C , the image of an X -conflation under πF is an n-exact sequence in C /[F ]. It further follows from [13, Proposition 2.5] that n-exactness is preserved under homotopy equivalences. Thus any sequence in XF is an n-exact sequence in C /[F ]. Moreover, the definition of XF and the transitivity of homotopy equivalences fixing both end terms imply (EC ′). To show (E2 ′ ) and (E2 ′op ), by Proposition 2.3, it suffices to check (E2 ′)(i) and (E2 ′op )(i). We prove the latter since the former follows dually. Let Y · ∈ XF be of the form (3.1). Let θ : B → C be a morphism in C /[F ]. Since πF is full, we may choose a lift f n+1 : B → C in C such that f n+1 = θ. Then we apply (E2 ′op )(i) for (C , X ) to get the following commutative diagram in C such that X· ∈ X .
+
+X· A X1 · · · Xn BZ· A Z1 · · · Zn C      
+
+> f·fn+1
+> d0
+> Zd1
+> Zdn−1
+> ZdnZ
+
+Moreover, we get X· ∈ XF . By [10, Claim 2.8], we can choose a homotopy inverse 
+
+h· of y· such that h0 = 1 A and hn+1 = 1 C . Then we obtain the desired morphism 
+
+h· ◦ f · : X· → Y ·. Thus (E2 ′op )(i) holds for ( C /[F ], XF ). The last assertion follows directly from [10, Lemma 4.22(4)]. □
+
+Remark 3.2. In the preceding proposition, for n = 1, let X ′ 
+
+> F
+
+denote the class of composable pairs in C /[F ] that are isomorphic to images of X -conflations. In this case, X ′ 
+
+> F
+
+= XF . Indeed, since every isomorphism of complexes is a homotopy equivalence, X ′ 
+
+> F
+
+⊂ XF follows from Proposition 3.1. For the reverse inclusion, we show that a homotopy equivalence fixing both end terms between kernel-cokernel pairs is an isomorphism. Let 
+
+X· : A a
+
+−→ B b
+
+−→ C and Y · : A a′
+
+−→ B′ b′
+
+−→ C
+
+be two kernel-cokernel pairs, and let f · = (1 A, f 1, 1C ) : X· → Y · be a homo-topy equivalence. By [10, Claim 2.8], we can choose a homotopy inverse g· =(1 A, g 1, 1C ) : Y · → X· of f ·. Put t = g1f 1 − 1B . Then we have bt = 0 and ta = 0. IDEAL QUOTIENTS OF n-EXACT CATEGORIES 15 
+
+Since a = Ker b, we have t = ah for some h : B → A. Since a is a monomor-phism, aha = ta = 0 implies ha = 0. Since b = coker a, we have h = ub for some 
+
+u : C → A. Hence t = aub and t2 = au (ba )ub = 0 . Thus g1f 1 = 1 B + t is invertible, whose inverse is 1 B − t. Similarly, f 1g1 is invertible. Hence f 1 is an isomorphism. It follows that f · is an isomorphism of complexes. This proves X ′ 
+
+> F
+
+= XF .
+
+Lemma 3.3. Assume that F is a removable subcategory of C . If C is weakly idempotent complete or n ≥ 2, then the following assertions hold for each morphism 
+
+δ : X → Y in C .
+
+(a) δ is an XF -inflation if and only if δ a⊤ : X → Y ⊕ F is an X -inflation for some morphism a : X → F with F ∈ F .
+
+(b) δ is an XF -deflation if and only if δ b : X ⊕ F → Y is an X -deflation for some morphism b : F → Y with F ∈ F .Proof. Next we only show (b), since (a) can be proved similarly. (b) Let δ : X → Y be a morphism in C such that δ is an XF -deflation. Then there exists a morphism α : X′ → X in C such that δ′ = δ ◦ α, where δ′ : X′ → Y
+
+is an X -deflation. Then δ′ − δα has a factorization X′ a
+
+−→ F b
+
+−→ Y with F ∈ F .This shows that δ′ has a factorization 
+
+X′
+
+> 
+
+αa
+
+> 
+
+−−−→ X ⊕ F
+
+> h
+
+δ bi
+
+−−−−−→ Y. 
+
+Using Proposition 2.5 for ( C , X ), we have that θ := δ b : X ⊕ F → Y is an 
+
+X -deflation. Conversely, completing δ b to an X -conflation and then applying 
+
+πF yields an XF -conflation whose last morphism is ¯δ. □
+
+For A, C ∈ C , let nExt 1 
+
+> X
+
+(C, A ) denote the collection of classes [ X·] of n-exact sequences 
+
+X· : A → X1 → · · · → Xn → C
+
+in X , modulo homotopy equivalences fixing both end terms. By (EI), every mor-phism fixing both end terms is a homotopy equivalence, so this agrees with Yoneda equivalence. We always assume that nExt 1 
+
+> X
+
+(C, A ) is a set for all A, C ∈ C . By [10, Definition 4.28 and Proposition 4.32], the Baer sum then endows nExt 1 
+
+> X
+
+(C, A )with an abelian group structure. The following result is a higher analogue of [6, Theorem 3.6]. 
+
+Theorem 3.4. Let (C , X ) be an n-exact category and let F ⊂ P ∩ I be an additive subcategory. Then the following conditions are equivalent. 
+
+(a) F is a removable subcategory of C .
+
+(b) ( C /[F ], XF ) is an n-exact category. In this case, the induced map 
+
+nExt 1 
+
+> X
+
+(C, A ) → nExt 1 
+
+> XF
+
+(C, A )
+
+is an isomorphism of abelian groups for any A, C ∈ C .Proof. The implication (b) ⇒(a) is trivial. Let us prove the direction (a) ⇒(b). For 
+
+n = 1, this follows from [6, Theorem 3.6] and Remark 3.2. So we assume n ≥ 2. Together with Proposition 3.1, it remains to check the following axioms: (E0): This is trivial. (E1): This is the dual of the following (E1 op ). 16 W. WENG 
+
+(E1 op ): Let δ : X → Y and γ : Y → Z be two XF -deflations. By Lemma 3.3(b), we can lift them to X -deflations 
+
+δ a : X ⊕ F → Y and γ b : Y ⊕ G → Z, 
+
+where F, G ∈ F . By [13, Proposition 4.6], the morphism δ a ⊕ 1G is again an 
+
+X -deflation. Since X -deflations are closed under composition, the composition 
+
+γδ γa b = γ b δ a 00 0 1G
+
+
+
+: X ⊕ F ⊕ G −→ Z
+
+is an X -deflation. Lemma 3.3(b) therefore implies that γ ◦ δ is an XF -deflation. (EI): We only show (EI)(i), as (EI)(ii) can be shown similarly. For Y · ∈ XF ,let f · : Y · → X· be a morphism to an n-exact sequence X· in C /[F ], in which 
+
+f 0 and f n+1 are isomorphisms. Transporting the end terms of X· along these isomorphisms, we may assume that both complexes Y · and X· have end terms A, C 
+
+and f 0 = 1 A and f n+1 = 1 C from the beginning. Choose a homotopy equivalence 
+
+w· : W · → Y · fixing the end terms, where W · ∈ X . Thus we have the following commutative diagram with n-exact rows. 
+
+W · A W 1 · · · W n CY · A Y 1 · · · Y n CX· A X1 · · · Xn C          
+
+> w·
+> d0
+> Wd1
+> W
+> w1
+> dn−1
+> WdnW
+> wn
+> f·
+> d0
+> Yd1
+> Y
+> f1
+> dn−1
+> YdnY
+> fn
+> d0
+> Xd1
+> Xdn−1
+> XdnX
+
+By [10, Lemma 4.22(1)], it suffices to show X· ∈ XF , and thus f · : Y · → X· is a homotopy equivalence in C /[F ]. The equality dnW = dnX ◦ f n ◦ wn implies that 
+
+dnW = dnX f nwn + ba for some morphisms a : W n → F and b : F → C with F ∈ F .Thus we have 
+
+dnW = dnX b f nwn
+
+a
+
+
+
+.
+
+By Proposition 2.5 for the n-exact category ( C , X ), θ = dnX b : Xn ⊕ F → C
+
+is an X -deflation. Complete θ to Z· ∈ X of the form 
+
+Z0 d0
+
+> Z
+
+−−→ Z1 d1
+
+> Z
+
+−−→ · · · dn−2
+
+> Z
+
+−−−→ Zn−1 dn−1
+
+> Z
+
+−−−→ Xn ⊕ F θ
+
+−→ C
+
+Moreover, Z· ∈ XF . The weak kernel properties of Z· extend the commutative square 
+
+X· A X1 · · · Xn−1 Xn CZ· Z0 Z1 · · · Zn−1 Xn C      
+
+> d0
+> Xd1
+> Xdn−1
+> XdnX
+> d0
+> Zd1
+> Zdn−1
+> ZdnX
+
+to a morphism from X· to Z·. This is a homotopy equivalence by [13, Proposition 2.7]. Thus Z· ∈ XF implies X· ∈ XF by Proposition 3.1. This proves (EI)(i). Finally, for any n ≥ 1, the induced map Φ : nExt 1 
+
+> X
+
+(C, A ) → nExt 1 
+
+> XF
+
+(C, A )IDEAL QUOTIENTS OF n-EXACT CATEGORIES 17 
+
+is surjective by the definition of XF . Since the quotient functor πF preserves direct sums and morphisms of conflations, Φ is a group homomorphism by [10, Lemma 4.30]. Let [ X·] ∈ Ker Φ. By [10, Remark 4.33] and the dual of [13, Proposition 2.6], dnX is a split epimorphism. Consequently, there are morphisms 
+
+s : C → Xn, a : C → F and b : F → C in C with F ∈ F such that 1C − dnX s = ba. 
+
+Since F is X -projective, there is a morphism t : F → Xn such that b = dnX t. Thus 
+
+dnX (s + ta ) = 1 C . The same splitting criterion gives [ X·] = 0. Hence Φ is injective, completing the proof. □
+
+Remark 3.5. Assume that F is a removable subcategory of C . The n-exact structure XF coincides with each of the following classes: (a) The class of n-exact sequences in C /[F ] that are homotopy equivalent to the images of X -conflations. (b) The class of n-exact sequences in C /[F ] that are weakly isomorphic to the images of X -conflations. Indeed, (a) follows from Proposition 3.1 and the definition of XF . For (b), The-orem 3.4 shows that XF is an n-exact structure and hence is closed under weak isomorphisms. The reverse inclusion follows since the homotopy equivalences defin-ing XF fix both end terms and hence are weak isomorphisms. When n = 1, XF is also the class of composable pairs in C /[F ] that are isomorphic to images of X -conflations; see Remark 3.2. 
+
+Remark 3.6. Assume that F is removable. The n-exactness of ( C /[F ], XF )can also be deduced from the theory of n-exangulated categories. Indeed, by [10, Proposition 4.34], ( C , X ) carries a canonical n-exangulated structure ( C , E, s), where E : C op × C → Ab is a biadditive functor, and s is an exact realization of 
+
+E, satisfying certain conditions. We refer to [10, Definition 2.32] for more details. Since F is removable, every s-conflation has an n-exact image in C /[F ] and hence induces a weak kernel-cokernel sequence. Thus [11, Theorem 3.1] yields an n-exangulated structure ( C /[F ], E, s). Consequently, its s-conflations are precisely the sequences in XF . These are n-exact, since n-exactness is preserved under homotopy equivalences. In particular, all s-inflations are monomorphisms and all 
+
+s-deflations are epimorphisms. By [15, Proposition 5.8], ( C /[F ], XF ) is therefore an n-exact category. Moreover, this construction also yields the extension-group isomorphism. Indeed, for any A, C ∈ C , we have E(C, A ) = E(C, A ) = nExt 1 
+
+> X
+
+(C, A ). By [15, Lemma 5.9], the quotient realization induces a natural isomorphism of abelian groups E(C, A ) ∼
+
+−→
+
+nExt 1 
+
+> XF
+
+(C, A ). Under the above identification, this sends [ X·] to [ πF (X·)], so it is precisely the map induced by πF .The following theorem gives the Frobenius version of Theorem 3.4. 
+
+Theorem 3.7. Assume that (C , X ) is a Frobenius n-exact category. Let F ⊂ P
+
+be an additive subcategory. Then the following conditions are equivalent. 
+
+(a) F is a removable subcategory of C .
+
+(b) ( C /[F ], XF ) is a Frobenius n-exact category, whose subcategory of XF -projectives is precisely P/[F ].18 W. WENG 
+
+Proof. (b) ⇒(a) is trivial. Let us prove the direction (a) ⇒(b). For n = 1, this follows from [5, Lemma 2.7]. So we assume n ≥ 2. By Theorem 3.4, the pair (C /[F ], XF ) is an n-exact category. By Lemma 3.3, we know that any XF -inflation (resp. XF -deflation) is isomorphic to the image of an X -inflation (resp. 
+
+X -deflation). Then it follows that objects in P/[F ] are both XF -projectives and 
+
+XF -injectives in the n-exact category ( C /[F ], XF ). Suppose that Q is XF -projective in C /[F ]. Since C has enough X -projectives, we take an X -conflation 
+
+A d0
+
+> P
+
+−−→ P 1 → · · · → P n dnP
+
+−−→ Q
+
+with P 1, . . . , P n ∈ P. Its image is an XF -conflation. Since Q is XF -projective in C /[F ], there is a morphism q : Q → P n such that dnP ◦ q = 1 Q. Then dnP q − 1Q
+
+has a factorization 
+
+Q a
+
+−→ F b
+
+−→ Q. 
+
+Since F is X -projective in C and dnP is an X -deflation, there exists c : F → P n
+
+such that b = dnP c. Consequently, we have 1 Q = dnP (q − ca ). This implies that dnP is a split epimorphism, and thus Q ∈ P. The injective case is dual. Hence the objects of P/[F ] are precisely the XF -projectives in the n-exact category ( C /[F ], XF ), which coincide with the XF -injectives. For any C ∈ C , take two X -conflations 
+
+A −→ P 1 → · · · → P n −→ C and C −→ I1 → · · · → In −→ B
+
+with all P i, I i ∈ P. Their images are XF -conflations. From these, we know that (C /[F ], XF ) has enough XF -projectives and enough XF -injectives. Therefore the n-exact category ( C /[F ], XF ) is Frobenius. □
+
+Remark 3.8. Assume that ( C , X ) is Frobenius and F is removable. The quotient functor πF induces a canonical equivalence of ( n + 2)-angulated categories 
+
+πF : C = C /[P] ∼
+
+−−→ (C /[F ]) /(P/[F ]) = C /[F ],
+
+which follows from the construction in [13, Section 5.2]. Indeed, since F ⊂ P,both stable categories have morphism groups C (A, B )/[P]( A, B ). Hence πF is an additive equivalence. For each A ∈ C , choose an X -conflation 
+
+I(A) : A → I1 → · · · → In → SA, 
+
+with Ii ∈ P. Use I(A) and πF (I(A)) to construct the suspension functors Σ : C →
+
+C and Σ F : C /[F ] → C /[F ], respectively, as in [13, Section 5.2]. These compatible choices give a natural isomorphism πF Σ ≃ ΣF πF . Since πF preserves conflations and projective-injective objects, it sends the diagrams defining standard ( n + 2)-angles to such diagrams in the quotient. Thus πF preserves standard ( n+2)-angles. The transported angulation is therefore contained in the quotient angulation, and the two coincide by [13, Proposition 5.2]. 3.2. A sufficient condition. In this subsection, we give a sufficient condition for 
+
+F to be a removable subcategory of C .
+
+Proposition 3.9. Assume that F ⊂ P ∩ I satisfies the following conditions. 
+
+(a) For any object Z ∈ C , there exists a sequence 
+
+Z f 0
+
+−→ F f 1
+
+−→ P 1 f 2
+
+−→ . . . −→ P n−1 f n
+
+−→ P n,IDEAL QUOTIENTS OF n-EXACT CATEGORIES 19 
+
+where f 0 is a left F -approximation of Z, and for each 1 ≤ i ≤ n, f i is a weak cokernel of f i−1 with P i ∈ P;
+
+(b) For any object Z ∈ C , there exists a sequence 
+
+Infn
+
+−→ In−1
+
+> fn−1
+
+−→ · · · −→ I1
+
+> f1
+
+−→ F f0
+
+−→ Z, 
+
+where f0 is a right F -approximation of Z, and for each 1 ≤ i ≤ n, fi is a weak kernel of fi−1 with Ii ∈ I .Then F is a removable subcategory of C .Proof. It suffices to show that for any X -conflation 
+
+X· : X0 d0
+
+> X
+
+→ X1 d1
+
+> X
+
+−→ · · · −→ Xn dnX
+
+→ Xn+1 
+
+in X , its image under πF is an n-exact sequence in C /[F ], that is, the sequence (d0 
+
+> X
+
+, . . . , d n−1 
+
+> X
+
+) is an n-kernel of dnX , and ( d1 
+
+> X
+
+, . . . , d nX ) is an n-cokernel of d0 
+
+> X
+
+. We only show the former one by using (a) since the latter assertion can be shown dually by using (b). The proof is divided into the following two steps 
+
+Step 1: To prove that d0 
+
+> X
+
+is a monomorphism, it amounts to showing that any morphism g0 : Z → X0 in C satisfying d0 
+
+> X
+
+g0 ∈ [F ]( Z, X 1) necessarily belongs to [F ]( Z, X 0). Consider the sequence in (a). Since d0 
+
+> X
+
+g0 : Z → X1 factors through an object in F and f 0 : Z → F is a left F -approximation, there exists a morphism 
+
+g1 : F → X1 such that d0 
+
+> X
+
+g0 = g1f 0. Since f i is a weak cokernel of f i−1 for 1 ≤ i ≤ n, ( g0, g 1) can be extended to a morphism of complexes: 
+
+Z F P 1 · · · P n−1 P n
+
+X0 X1 X2 · · · Xn Xn+1          
+
+> g0
+> f0f1
+> g1
+> f2
+> g2
+> fn
+> gngn+1
+> d0
+> Xd1
+> Xd2
+> XdnX
+
+Let f n+1 : P n → 0 and hn+1 : 0 → Xn+1 be the zero morphisms. Write P 0 = F .Next we construct morphisms hk : P k → Xk (0 ≤ k ≤ n) satisfying 
+
+gk+1 = hk+1 f k+1 + dkX hk
+
+(3.2) by descending induction on k. Since P n is projective and dnX : Xn → Xn+1 is an X -deflation, we may lift gn+1 to a morphism hn : P n → Xn such that gn+1 = dnX hn.Assume that for some 1 ≤ k ≤ n, we have constructed morphisms hk, h k+1 , . . . , h n
+
+satisfying (3.2). Composing f k to both sides of (3.2), we have dkX hkf k = gk+1 f k =
+
+dkX gk, that is, dkX (gk − hkf k) = 0. Since dk−1 
+
+> X
+
+is a weak kernel of dkX , there exists a morphism 
+
+hk−1 : P k−1 → Xk−1
+
+such that dk−1 
+
+> X
+
+hk−1 = gk − hkf k. This completes the descending induction. Hence we have d0 
+
+> X
+
+h0 = g1 − h1f 1. Composing f 0 to both sides, we have 
+
+d0 
+
+> X
+
+h0f 0 = g1f 0 = d0 
+
+> X
+
+g0.
+
+Note that d0 
+
+> X
+
+is a monomorphism and F ∈ F . Then we have g0 = h0f 0 and g0
+
+belongs to [ F ]( Z, X 0). Hence d0 
+
+> X
+
+is a monomorphism. 
+
+Step 2: We show that dℓ−1 
+
+> X
+
+is a weak kernel of dℓX for 1 ≤ ℓ ≤ n. Put P 0 = F . Let 
+
+v0 : Z → Xℓ be a morphism in C such that dℓX v0 ∈ [F ]( Z, X ℓ+1 ). We need to show that v0 factors through dℓ−1 
+
+> X
+
+. Since f 0 : Z → F is a left F -approximation, there 20 W. WENG 
+
+exists a morphism v1 : F → Xℓ+1 such that v1f 0 = dℓX v0. Using the factorization property of weak cokernels, we obtain the following commutative diagram. 
+
+Z F P 1 · · · P n−ℓ−1 P n−ℓ
+
+Xℓ Xℓ+1 Xℓ+2 · · · Xn Xn+1           
+
+> f0
+> v0
+> f1
+> v1v2
+> f2fn−ℓ
+> vn−ℓvn+1 −ℓ
+> dℓXdℓ+1
+> Xdℓ+2
+> XdnX
+
+Since P n−ℓ is projective and dnX : Xn → Xn+1 is an X -deflation, we may lift 
+
+vn+1 −ℓ to a morphism un−ℓ : P n−ℓ → Xn such that vn+1 −ℓ = dnX un−ℓ. Then we have 
+
+dnX (vn−ℓ − un−ℓf n−ℓ) = dnX vn−ℓ − vn+1 −ℓf n−ℓ = 0 .
+
+Thus there exists a morphism un−ℓ−1 : P n−ℓ−1 → Xn−1 such that 
+
+vn−ℓ = un−ℓf n−ℓ + dn−1 
+
+> X
+
+un−ℓ−1.
+
+By a descending induction as before, one can show that there are morphisms 
+
+u−1 : Z → Xℓ−1 and u0 : F → Xℓ such that v0 − u0f 0 = dℓ−1 
+
+> X
+
+u−1. By apply-ing πF , we get v0 = dℓ−1 
+
+> X
+
+◦ u−1 since F ∈ F . This completes the proof. □
+
+For n = 1, Proposition 3.9 together with Theorem 3.7 recovers Chen’s result [4, Theorem 3.1]. 3.3. Compatibility with cluster tilting. In this subsection, we show that the ideal quotient construction is compatible with cluster tilting. 
+
+Theorem 3.10. Let (A , E ) be an exact category, and let C be an n-cluster tilting subcategory of A . Let (C , X ) be the induced n-exact category of Theorem 2.10. If 
+
+F is a removable subcategory of A , then the following hold. 
+
+(a) F is a removable subcategory of (C , X ).
+
+(b) C /[F ] is an n-cluster tilting subcategory of A /[F ].Moreover, the n-exact structure induced on C /[F ] by Theorem 2.10 coincides with 
+
+XF of Theorem 3.4. In other words, the diagram of constructions 
+
+(A , E ) (A /[F ], EF )(C , X ) (C /[F ], XF ) 
+
+> πF
+> πF|C
+
+commutes, where the vertical arrows represent the construction in Theorem 2.10. If, in addition, (A , E ) is Frobenius and 0n 
+
+> E
+
+(C ) ⊂ C , then 0n 
+
+> EF
+
+(C /[F ]) ⊂
+
+C /[F ]. In this case, the two exact categories in the top row are Frobenius, and the two n-exact categories in the bottom row are Frobenius n-exact categories. Proof. Applying Theorem 3.4 with n = 1 to the exact category ( A , E ), we obtain an exact category ( A /[F ], EF ). Since every object of F is both E -projective and 
+
+E -injective, the defining orthogonality conditions for C give F ⊂ C . The proof is divided into the following three steps. 
+
+Step 1: First we show (b). The quotient functor πF induces natural morphisms (3.3) ϕi = ϕiU,V : Ext i 
+
+> E
+
+(U, V ) → Ext i 
+
+> EF
+
+(U, V )IDEAL QUOTIENTS OF n-EXACT CATEGORIES 21 
+
+for any U, V ∈ A and i ≥ 1. Here, Ext i 
+
+> E
+
+(U, V ) denotes the i-th Yoneda extension group of two objects U, V in A with respect to E ; see for example [17, Section 2.1]. We claim that these morphisms are isomorphisms for any U, V ∈ A by induction on i. For i = 1, this follows from the last assertion of Theorem 3.4, applied with 
+
+n = 1. Assume i ≥ 2. Any i-fold extension (= E -acyclic complex of length i + 2) is the Yoneda composition of an E -conflation and ( i − 1)-fold extension. Since F
+
+is removable subcategory of A , πF sends an E -conflation to an EF -conflation. By the induction hypothesis, surjectivity of ϕ1 and ϕi−1 gives surjectivity of ϕi.For injectivity, let i ≥ 2 and take ξ ∈ Ext i 
+
+> E
+
+(U, V ) with ϕi(ξ) = 0. Write ξ =
+
+∂e(η), where e : 0 → V → B q
+
+−→ K → 0 ∈ E , η ∈ Ext i−1 
+
+> E
+
+(U, K ) and ∂e is the connecting homomorphism given by Yoneda composition with e. Naturality and compatibility with Yoneda composition give the following commutative diagram with exact rows. Ext i−1 
+
+> E
+
+(U, B ) Ext i−1 
+
+> E
+
+(U, K ) Ext i 
+
+> E
+
+(U, V )Ext i−1 
+
+> EF
+
+(U, B ) Ext i−1 
+
+> EF
+
+(U, K ) Ext i 
+
+> EF
+
+(U, V )  
+
+> q∗
+> ϕi−1
+> U,B
+> ∂e
+> ϕi−1
+> U,K ϕi
+> q∗∂e
+
+Since ∂eϕi−1(η) = ϕi(ξ) = 0, we have ϕi−1(η) = q∗(ζ) for some ζ ∈ Ext i−1 
+
+> EF
+
+(U, B ). By induction, the first two vertical maps are isomorphisms. Thus ζ = ϕi−1(η0) for some η0 ∈ Ext i−1 
+
+> E
+
+(U, B ). Commutativity of the left square then gives 
+
+ϕi−1(q∗η0) = q∗(ζ) = ϕi−1(η),
+
+so η = q∗η0. Thus we have ξ = ∂e(q∗η0) = 0. This completes the induction. Since πF is full, left and right C -approximations descend to left and right (C /[F ])-approximations, respectively. Moreover, the exactness of πF ensures that the generating and cogenerating conditions also descend. Finally, (3.3) transfers the defining orthogonality conditions for C to C /[F ]. Hence C /[F ] is an n-cluster tilting subcategory of A /[F ]. Thus (b) holds. 
+
+Step 2: We prove (a) and identify the induced structure. Every object of F is both X -projective and X -injective. Indeed, for F ∈ F , applying A (F, −) and 
+
+A (−, F ) to an E -acyclic complex yields exact sequences, and exactness of these sequences is preserved under homotopy equivalences. Let Y be the class of complexes in Cn+2    
+
+> C/[F]
+
+that are homotopy equivalent to an EF -acyclic complex with all terms in C /[F ]. By Theorem 2.10 and its proof, we obtain an n-exact category ( C /[F ], Y ). Let X· ∈ X , and choose an E -acyclic complex Z· with terms in C and a homotopy equivalence between X· and Z·. Since 
+
+πF is exact, we know that Z· is EF -acyclic, and thus Z· ∈ Y . Since πF preserves homotopy equivalences, X· is homotopy equivalent to Z·, and thus X· ∈ Y is 
+
+n-exact in C /[F ]. This proves (a). Now we show that Y = XF . We have shown that X· ∈ Y for any X· ∈
+
+X . Since Y is closed under homotopy equivalences, the definition of XF gives 
+
+XF ⊂ Y . For the reverse inclusion, both structures are closed under homotopy equivalences, so it suffices to consider an EF -acyclic complex 
+
+Y · : A −→ Y 1 → · · · → Y n → C
+
+with all terms in C /[F ]. Let η ∈ Ext n 
+
+> EF
+
+(C, A ) be its Yoneda class. By Step 1, choose ξ ∈ Ext n 
+
+> E
+
+(C, A ) with ϕn(ξ) = η. By [17, Proposition 3.17], C is closed under 22 W. WENG 
+
+n-extensions in A . Thus ξ has an E -acyclic representative 
+
+U · : A → U 1 → · · · → U n → C
+
+with all terms in C . Then U · ∈ X , and U · and Y · represent the same Yoneda class. Applying [17, Lemma 3.15] to the n-cluster tilting subcategory C /[F ] gives a mor-phism Y · → U · which is the identity on both end terms. By (EI) for ( C /[F ], Y ), this is a homotopy equivalence. Then Y · ∈ XF , and so Y = XF .
+
+Step 3: Assume in addition that ( A , E ) is Frobenius and 0n 
+
+> E
+
+(C ) ⊂ C . Let 
+
+P be the subcategory of E -projective-injectives. By Theorem 3.7 with n = 1, (A /[F ], EF ) is a Frobenius exact category with projective-injectives P/[F ]. For 
+
+C ∈ C , choose an E -acyclic complex 
+
+C −→ I1 −→ · · · −→ In −→ 0n 
+
+> E
+
+(C).
+
+such that for each k ∈ { 1, . . . , n }, Ik ∈ P. Applying πF gives an EF -acyclic complex with middle terms belonging to P/[F ]. Hence we may choose 
+
+0n 
+
+> EF
+
+(C) = πF (0n 
+
+> E
+
+(C)) ∈ C /[F ].
+
+Theorem 2.10 gives the two Frobenius n-exact categories in the bottom row. □
+
+4. Geigle–Lenzing projective planes 
+
+In this section, we apply the ideal quotient construction to 2-cluster tilting sub-categories of ACM X, where X is a Geigle–Lenzing projective plane. After recalling the basic notions and facts, we introduce Properties (L) and (R) and prove that every ACM bundle on X satisfies them. These properties yield quotient 2-exact categories for both the natural and relative 2-exact structures. 4.1. Definitions and basic properties. In this subsection, we recall some no-tions and facts about Geigle–Lenzing projective planes and arithmetically Cohen– Macaulay bundles on them [9, 2]. Let k be an algebraically closed field. Denote by D the k-dual, that is D(−) := Hom k(−, k). Fix a quadruple ( p1, . . . , p 4) with integers pi ≥ 2, called weights . We consider the k-algebra 
+
+R = k[X1, . . . , X 4]/(
+
+> 4
+
+X
+
+> i=1
+
+Xpi 
+
+> i
+
+).
+
+Let L be the abelian group on generators ⃗x 1, . . . ,⃗ x 4,⃗ c subject to the relations 
+
+p1⃗x 1 = · · · = p4⃗x 4 =⃗c. 
+
+The element ⃗c is called the canonical element of L. Each element ⃗x in L can be uniquely written in a normal form as ⃗x =
+
+> 4
+
+X
+
+> i=1
+
+λi⃗x i + λ⃗ c(4.1) with 0 ≤ λi < p i and λ ∈ Z. We can regard R as an L-graded k-algebra by setting deg Xi := ⃗x i for any i, hence R = L⃗x∈L R⃗x , where R⃗x denotes the homogeneous component of degree ⃗x. Note that R has a unique L-graded maximal ideal R + =L⃗x∈L\{ 0} R⃗x . We call R an L-graded Brieskorn–Pham (BP) singularity of weight type (p1, . . . , p 4). In the terminology of [9], the pair ( R, L) is called a Geigle–Lenzing hypersurface of dimension three . Note that R has a unique L-graded maximal ideal 
+
+R+ = L⃗x∈L\{ 0} R⃗x .IDEAL QUOTIENTS OF n-EXACT CATEGORIES 23 
+
+Let L+ be the submonoid of L generated by ⃗x 1, . . . ,⃗ x 4,⃗ c. Then we equip L with the structure of a partially ordered set: ⃗ x ≤⃗y if and only if ⃗y −⃗x ∈ L +. Each element ⃗x of L satisfies exactly one of the two conditions ⃗x ≥ 0 or ⃗ x ≤ 2⃗c +⃗ω, (4.2) where ⃗ω := ⃗c − P4
+
+> i=1
+
+⃗x i is called the dualizing element of L. We have R⃗x̸ = 0 if and only if ⃗x ≥ 0 if and only if λ ≥ 0 in its normal form in (4.1). Let mod L R denote the category of finitely generated L-graded R-modules, and 
+
+CM L R denote its subcategory of L-graded maximal Cohen–Macaulay R-modules. The category of coherent sheaves on the Geigle–Lenzing (GL ) projective plane 
+
+X is defined as the quotient category 
+
+coh X := mod L R/ mod L 
+
+> 0
+
+R, 
+
+where mod L 
+
+> 0
+
+R denotes the Serre subcategory of mod L R consisting of finite dimen-sional R-modules. The category coh X is a Hom-finite abelian category of global dimension 2; see [9, Theorem 5.6] for d = 2. Denote by π : mod L R → coh X the natural functor, also called sheafification . The object O := π(R) is called the struc-ture sheaf of X. Each line bundle has the form O(⃗x) for a uniquely determined ⃗x
+
+in L, and for any ⃗x,⃗ y ∈ L and i ∈ Z,(4.3) Ext i
+
+> X
+
+(O(⃗x), O(⃗y)) = 
+
+
+
+R⃗y−⃗x if i = 0, 
+
+D(R⃗x−⃗y+⃗ω ) if i = 2, 0 otherwise. The category coh X satisfies Auslander–Reiten–Serre duality: for any X, Y ∈ coh X
+
+and 0 ≤ i ≤ 2, there are bifunctorial isomorphisms Ext 2−i 
+
+> X
+
+(X, Y ) ≃ D Ext i
+
+> X
+
+(Y, X (⃗ω)) .
+
+Let vect X denote the full subcategory of coh X consisting of vector bundles, and let L be the full subcategory of finite direct sums of line bundles O(⃗x), with ⃗x ∈ L.The subcategory vect X is extension-closed in coh X and hence inherits an exact structure from coh X.
+
+Lemma 4.1. vect X is closed under kernels of epimorphisms in coh X.Proof. Let f : V → W be an epimorphism in coh X, where V, W ∈ vect X. By [9, Lemmas 5.9 and 5.18], we choose representatives M, N ∈ mod L R with π(M ) ≃ V
+
+and π(N ) ≃ W , together with a morphism ef : M → N such that π( ef ) = f under these identifications. Put T = Ker ef . Since π is exact and f is an epimorphism, we have π(T ) ≃ Ker f and Cok ef ∈ mod L 
+
+> 0
+
+R. For any p ∈ Spec L R \ { R+}, we have (Cok ef )(p) = 0 by [9, Lemma 4.7]. Hence localization gives an exact sequence 0 → T(p) → M(p)
+
+> ef(p)
+
+−−→ N(p) → 0.
+
+By [9, Proposition 5.15(c)], M and N are locally free on the punctured spectrum, that is, M(p), N (p) ∈ proj L R(p) for any p̸ = R+. Thus this sequence splits, and hence T(p) ∈ proj L R(p) for any p̸ = R+, that is, T is locally free on the punctured spectrum. Applying [9, Proposition 5.15(c)] again gives Ker f ≃ π(T ) ∈ vect X. □
+
+The sheafification π : mod L R → coh X restricts to a fully faithful functor 
+
+CM L R → vect X and further induces an equivalence 
+
+CM L R ∼
+
+−→ π(CM L R) =: ACM X ⊂ vect X.24 W. WENG 
+
+The objects of ACM X are called arithmetically Cohen–Macaulay (ACM) bundles .The following gives a description of ACM X in terms of vector bundles by [9]. 
+
+ACM X = {X ∈ vect X | Ext 1
+
+> X
+
+(P, X ) = 0 for any P ∈ L }(4.4) = {X ∈ vect X | Ext 1
+
+> X
+
+(X, P ) = 0 for any P ∈ L }.
+
+Notice that all line bundles serve as the indecomposable projective-injective objects in ACM X by (4.4). Moreover, π restricts to an equivalence proj L R ∼
+
+−→ L with the L-graded indecomposable projective module R(⃗x) corresponding to the line bundle O(⃗x). Therefore, this turns ACM X into a Frobenius category with the exact structure E inherited from coh X, whose E -projectives are precisely L . Its stable category ACM X is thus triangle equivalent to CM LR.Recall that the dominant element of L is ⃗δ := 2 ⃗c + 2 ⃗ω =
+
+> 4
+
+X
+
+> i=1
+
+(pi − 2) ⃗x i.
+
+Note that an element ⃗x ∈ L (in the normal form) satisfies 0 ≤⃗x ≤⃗ δ if and only if ⃗x = P4 
+
+> i=1
+
+λi⃗x i with 0 ≤ λi ≤ pi − 2 for 1 ≤ i ≤ 4. Let L be a line bundle and ⃗x ∈ L with 0 ≤⃗x ≤⃗ δ. Set 
+
+L⟨⃗x⟩ := M
+
+> 1≤i≤4
+
+L(⃗x − (1 + λ i)⃗x i).
+
+Consider the short exact sequence 
+
+η1 : 0 → Ker γ −→ L⟨⃗x⟩ γ
+
+−→ L(⃗x) → 0in coh X, where γ := ( Xλi+1  
+
+> i
+
+)1≤i≤4. By applying Hom( −, L (⃗ω)) to η 1, we have Ext 1
+
+> X
+
+(Ker γ, L (⃗ω)) ≃ k, and thus there exists a nonsplit short exact sequence 
+
+η2 : 0 → L(⃗ω) α
+
+−→ E → Ker γ → 0.
+
+Splicing these two sequences η1 with η2 we finally obtain the exact sequence 
+
+η : 0 → L(⃗ω) α
+
+−→ E β
+
+−→ L⟨⃗x⟩ γ
+
+−→ L(⃗x) → 0,(4.5) in coh X. In this case, the term EL⟨⃗x⟩ := E, determined up to isomorphism, is called the 2 -extension bundle given by the data ( L,⃗ x). If L = O, then we just write 
+
+E⟨⃗x⟩. For ⃗x = 0, the term E L := EL⟨0⟩ is called the 2 -Auslander bundle associated with L. Note that Ker γ ∈ vect X by Lemma 4.1. Each 2-extension bundle is an indecomposable ACM bundle [2]. Recall from [2, Proposition 3.8(b)] that for any 0 ≤⃗x ≤⃗ δ and ⃗z ∈ L, we have E L⟨⃗x⟩(⃗z) ≃ E L(⃗z) ⟨⃗x⟩.
+
+Proposition 4.2. [2, Proposition 4.6] Let L be a line bundle and ⃗x = P4 
+
+> i=1
+
+λi⃗x i
+
+with 0 ≤⃗x ≤⃗ δ. Then for any 1 ≤ i ≤ 4, we have 
+
+EL⟨⃗x⟩[1] = E L⟨(pi − 2 − λi)⃗x i + X 
+
+> j̸=i
+
+λj⃗x j ⟩((1 + λi)⃗x i).(4.6) 
+
+In particular, we have EL⟨⃗x⟩[2] = E L⟨⃗x⟩(⃗c) and E L⟨⃗x⟩ = E L⟨⃗δ −⃗x⟩(⃗x −⃗ω −⃗c).IDEAL QUOTIENTS OF n-EXACT CATEGORIES 25 
+
+4.2. Properties (L) and (R). In this subsection, we show that each ACM bundle on X satisfies Properties (L) and (R). These properties will be used in the next subsection. Each line bundle L has a unique expression 
+
+L = O(
+
+> 3
+
+X
+
+> i=1
+
+λi⃗x i + a⃗ x 4)such that 0 ≤ λi < p i for 1 ≤ i ≤ 3, and a ∈ Z. We call L persistent if λi ≤ pi − 2for 1 ≤ i ≤ 3, and fading otherwise. Let F ⊂ L denote the closure of the fading line bundles under finite direct sums and direct summands. 
+
+Definition 4.3. Let X ∈ ACM X.(a) We say that X has Property (L) if there exists an exact sequence (L) 0 → X f 0
+
+−→ F 1 f 1
+
+−→ F 2 f 2
+
+−→ F 3 → 0in coh X, where each F i ∈ F and f 0 is a left F -approximation of X.(b) Dually, we say that X has Property (R) if there exists an exact sequence (R) 0 → F3
+
+> f2
+
+−→ F2
+
+> f1
+
+−→ F1
+
+> f0
+
+−→ X → 0in coh X, where each Fi ∈ F and f0 is a right F -approximation of X.
+
+Lemma 4.4. Let X ∈ ACM X satisfy Property (L) , and choose a sequence (L) . Put 
+
+K = Im f 1. Then the sequence (L) is right 2-exact in ACM X and Ext 1
+
+> X
+
+(K, F ) = 0 
+
+for any F ∈ F .Proof. To show the first assertion, it suffices to show that f 1 is a weak cokernel of 
+
+f 0. Let F 1 p
+
+−→ K i
+
+−→ F 2 be the canonical factorization of f 1. For each T ∈ ACM X,we have Ext 1
+
+> X
+
+(F 3, T ) = 0 by (4.4). Applying Hom X(−, T ) to the exact sequence 0 → K i
+
+−→ F 2 f 2
+
+−→ F 3 → 0shows that every morphism K → T extends to F 2. Thus, if h : F 1 → T satisfies 
+
+hf 0 = 0, then h factors through p, and hence through ip = f 1. Thus f 1 is a weak cokernel of f 0.For any F ∈ F , applying Hom( −, F ) to the exact sequence 0 → X f 0
+
+−→ F 1 p
+
+−→
+
+K → 0, we obtain an exact sequence Hom X(F 1, F ) (f 0)∗
+
+−−−→ Hom X(X, F ) → Ext 1
+
+> X
+
+(K, F ) → Ext 1
+
+> X
+
+(F 1, F ) = 0 .
+
+Since f 0 is a left F -approximation, ( f 0)∗ is surjective, yielding Ext 1
+
+> X
+
+(K, F )=0. □
+
+Lemma 4.5. Each line bundle has Property (L). Proof. Let L be a line bundle. If L ∈ F , then one can take the exact sequence 0 → L 1
+
+−→ L → 0 → 0 → 0.
+
+In this case, the assertion is trivial. Otherwise we let L = O(⃗x), where ⃗x =
+
+P3 
+
+> i=1
+
+λi⃗x i + a⃗ x 4 with 0 ≤ λi ≤ pi − 2 and a ∈ Z. Set qi = pi − 1 − λi for 1 ≤ i ≤ 3. Since ( Xi)1≤i≤3 is an R-regular sequence, so is ( Xqi 
+
+> i
+
+)1≤i≤3. Hence the corresponding Koszul complex 0 → R(− X
+
+> 1≤i≤3
+
+qi⃗x i) → M
+
+> 1≤i<j ≤3
+
+R(−qi⃗x i − qj⃗x j ) → M
+
+> 1≤i≤3
+
+R(−qi⃗x i) → R → 0(4.7) 26 W. WENG 
+
+of R is exact except in the rightmost position whose cohomology is R/ (Xqi 
+
+> i
+
+| 1 ≤
+
+i ≤ 3). Since this belongs to mod L 
+
+> 0
+
+R, the image of (4.7) in coh X is exact, and then applying degree shift by P3
+
+> i=1
+
+(pi − 1) ⃗x i + a⃗ x 4, we obtain an exact sequence 0 → L f 0
+
+−→ M
+
+> 1≤i≤3
+
+L(qi⃗x i) −→ M
+
+> 1≤i<j ≤3
+
+L(qi⃗x i + qj⃗x j ) −→ L( X
+
+> 1≤i≤3
+
+qi⃗x i) → 0.(4.8) The last three terms belong to F . Now let L′ = O(⃗y) ∈ F and h : L → L ′ be a morphism. Without loss of generality, we may assume h̸ = 0. This implies that ⃗y ≥⃗x and thus ⃗y ≥⃗x + q j⃗x j for some 1 ≤ j ≤ 3 since O(⃗y) ∈ F . Then we have 
+
+h ∈ Hom( L, L ′) = Xqj 
+
+> j
+
+Hom( L(qj⃗x j ), L ′).
+
+In particular h factors through f 0. This proves the assertion. □
+
+Let H be the subcategory of ACM X consisting of objects with Property (L). 
+
+Lemma 4.6. The subcategory H contains L and is closed under stable isomor-phisms, extensions, finite direct sums and direct summands. Its image H in ACM X
+
+is closed under isomorphisms, extensions, finite direct sums and direct summands. Proof. The proof is divided into the following four steps. 
+
+Step 1: We show that H contains L and is closed under extensions and finite direct sums. Let 0 → E′ i
+
+−→ E p
+
+−→ E′′ → 0 be an exact sequence in ACM X with 
+
+E′, E ′′ ∈ H . Choose sequences (L) for E′ and E′′ , and write their two short exact pieces as 0 → E∗ a∗
+
+−→ F ∗ 
+
+> 0
+
+→ K∗ → 0 and 0 → K∗ b∗
+
+−→ F ∗ 
+
+> 1
+
+→ F ∗ 
+
+> 2
+
+→ 0in coh X, where ∗ ∈ { ′, ′′ }. Since Ext 1
+
+> X
+
+(E′′ , F ′
+
+> 0
+
+) = 0 by (4.4), there is a morphism 
+
+u : E → F ′ 
+
+> 0
+
+such that ui = a′. The morphism 
+
+a =
+
+ ua′′ p
+
+
+
+: E −→ F ′ 
+
+> 0
+
+⊕ F ′′ 
+
+> 0
+
+is a monomorphism. Its cokernel K fits into the commutative diagram 0 E′ E E′′ 00 F ′ 
+
+> 0
+
+F ′ 
+
+> 0
+
+⊕ F ′′  
+
+> 0
+
+F ′′  
+
+> 0
+
+00 K′ K K′′ 0 
+
+> ia′
+> paa′′
+
+[ 10 ] [ 0 1 ] 
+
+with exact rows and columns. Moreover, a is a left F -approximation. Indeed, for any h : E → F with F ∈ F , there exists a morphism t′ : F ′ 
+
+> 0
+
+→ F such that hi = t′a′
+
+since a′ is a left F -approximation. Then ( h − t′u)i = 0 implies that h − t′u factors through p. Thus we have h − t′u = sp for some morphism s : E′′ → F . Since 
+
+a′′ : E′′ → F ′′  
+
+> 0
+
+is an F -approximation, there is a morphism t′′ : F ′′  
+
+> 0
+
+→ F such that 
+
+s = t′′ a′′ , which gives 
+
+h = t′u + t′′ a′′ p = t′ t′′  a. IDEAL QUOTIENTS OF n-EXACT CATEGORIES 27 
+
+Similarly, by Lemma 4.4, we have Ext 1
+
+> X
+
+(K′′ , F ′
+
+> 1
+
+) = 0. Hence b′ extends to a morphism v : K → F ′ 
+
+> 1
+
+with vi ′ = b′. The morphism 
+
+b =
+
+ vb′′ p′
+
+
+
+: K −→ F ′ 
+
+> 1
+
+⊕ F ′′ 
+
+> 1
+
+is a monomorphism. Its cokernel Cok b fits into the commutative diagram 0 K′ K K′′ 00 F ′ 
+
+> 1
+
+F ′ 
+
+> 1
+
+⊕ F ′′  
+
+> 1
+
+F ′′  
+
+> 1
+
+00 F ′ 
+
+> 2
+
+Cok b F ′′  
+
+> 2
+
+0 
+
+> i′
+> b′
+> p′
+> bb′′
+
+[ 10 ] [ 0 1 ] 
+
+with exact rows and columns. The bottom row splits since Ext 1
+
+> X
+
+(F ′′  
+
+> 2
+
+, F ′
+
+> 2
+
+) = 0 by (4.4). This yields an exact sequence 0 → K → F ′ 
+
+> 1
+
+⊕ F ′′  
+
+> 1
+
+→ F ′ 
+
+> 2
+
+⊕ F ′′  
+
+> 2
+
+→ 0. Therefore, we have an exact sequence 0 → E a
+
+−→ F ′ 
+
+> 0
+
+⊕ F ′′  
+
+> 0
+
+→ F ′ 
+
+> 1
+
+⊕ F ′′  
+
+> 1
+
+→ F ′ 
+
+> 2
+
+⊕ F ′′  
+
+> 2
+
+→ 0in coh X, where a is a left F -approximation of E and each F ′ 
+
+> i
+
+, F ′′  
+
+> i
+
+∈ F . Hence 
+
+E ∈ H . Finite direct sums are included in this case. Thus by Lemma 4.5, H ⊃ L .
+
+Step 2: We show that H is closed under direct summands. Suppose that E⊕E′ ∈
+
+H , and choose (4.9) 0 → E ⊕ E′ f
+
+−→ F0 → F1 → F2 → 0as in (L). Notice that if a : Z → A is a minimal left F -approximation, then any left F -approximation f : Z → F can, after a suitable identification F ≃ A ⊕ Q, be written as f = a 0⊤ : Z −→ A ⊕ Q. Moreover, finite direct sums of minimal left 
+
+F -approximations are again minimal left F -approximations. The restrictions of f to the diect summands E and E′ are left F -approximations, so we may choose minimal ones a : E → A and a′ : E′ → A′. Their direct sum is again a minimal left F -approximation. Thus we may identify 
+
+F0 = A ⊕ A′ ⊕ Q and f =
+
+a 00 a′
+
+0 0
+
+ ,
+
+where Q ∈ F . Since f is a monomorphism, so are a and a′. Put K = Cok a and 
+
+K′ = Cok a′. Thus Cok f = K ⊕ K′ ⊕ Q. Then (4.9) induces an exact sequence 0 → K ⊕ K′ ⊕ Q j
+
+−→ F1 → F2 → 0.
+
+Since Ext 1
+
+> X
+
+(F2, F ) = 0 for F ∈ F , the map j is a left F -approximation. Choose minimal left F -approximations b : K → B and b′ : K′ → B′ in coh X. Since b ⊕ b′ ⊕
+
+1Q is a minimal left F -approximation, the same argument gives 
+
+F1 = B ⊕ B′ ⊕ Q ⊕ Q′ and j =
+
+
+
+b 0 00 b′ 00 0 1Q
+
+0 0 0
+
+ ,28 W. WENG 
+
+where Q′ ∈ F . Thus b and b′ are monomorphisms and F2 ≃ C ⊕ C′ ⊕ Q′, where 
+
+C = Cok b and C′ = Cok b′. Since F is closed under direct summands, we have 
+
+C, C ′ ∈ F . Connecting the corresponding short exact sequences yields 0 → E a
+
+−→ A → B → C → 0 and 0 → E′ a′
+
+−→ A′ → B′ → C′ → 0,
+
+whose first morphisms are left F -approximations. Consequently E, E ′ ∈ H .
+
+Step 3: We show that H is closed under retracts. Suppose that E is a retract of G, where E ∈ ACM X and G ∈ H . Choose representatives i : E → G and 
+
+p : G → E such that p ◦ i = 1 E . This means that pi − 1E = ba for some factorization 
+
+E a
+
+−→ P b
+
+−→ E through an object P ∈ L . Then 
+
+p −b ia
+
+
+
+= 1 E ,
+
+and thus E is a direct summand of G⊕P . Since G, P ∈ H , by Step 1 and Step 2, we have E ∈ H and thus E ∈ H . This proves that H is closed under retracts. The same argument shows that H is closed under stable isomorphisms. In particular, 
+
+H is closed under isomorphisms and direct summands. 
+
+Step 4: We show that H is closed under extensions and finite direct sums. Let E′ −→ E −→ E′′ −→ E′[1] be a triangle in ACM X with E′, E ′′ ∈ H . It is isomorphic to a triangle induced by an E -conflation 0 → H′ → H → H′′ → 0in ACM X. Since H is closed under isomorphisms, we have H′, H ′′ ∈ H . By the stable isomorphism closure of H proved in Step 3, it follows that H′, H ′′ ∈ H . By Step 1, we have H ∈ H . Since E ≃ H and H is closed under isomorphisms, we obtain E ∈ H . Thus H is extension-closed. Since the stable quotient functor is additive, closure under finite direct sums follows from Step 1. □
+
+We now show that Properties (L) and (R) hold for each ACM bundle 
+
+Proposition 4.7. Each ACM bundle has Properties (L) and (R). Proof. Set ⃗ t = P3
+
+> i=1
+
+(pi − 2) ⃗x i. For any a ∈ Z and ⃗x = P4 
+
+> i=1
+
+λi⃗x i with 0 ≤ λi ≤
+
+pi − 2, we let 
+
+L = L(⃗x,a ) = O(⃗t −
+
+> 3
+
+X
+
+> i=1
+
+λi⃗x i −⃗ω + a⃗ x 4) and V = EL⟨⃗x⟩.
+
+The proof is divided into the following three steps. 
+
+Step 1: We show that V ∈ H . We recall that 0 → P α
+
+−→ V β
+
+−→ F δ
+
+−→ F ′ → 0 is the defining sequence for the 2-extension bundle V , where 
+
+P = L(⃗ω), F = M
+
+> 1≤i≤4
+
+L(⃗x − (1 + λ i)⃗x i) and F ′ = L(⃗x).
+
+Note that P is persistent and F, F ′ ∈ F . Choose the Koszul sequence (4.8) for P
+
+constructed in the proof of Lemma 4.5, 0 → P f 0
+
+−→ U 0 f 1
+
+−→ U 1 f 2
+
+−→ U 2 → 0,IDEAL QUOTIENTS OF n-EXACT CATEGORIES 29 
+
+where each U i ∈ F and f 0 is a left F -approximation. Using Auslander–Reiten– Serre duality, we have (4.10) Ext 2
+
+> X
+
+(F ′, U 0) ≃ D Hom X(U 0, P (⃗x)) = M
+
+> 1≤i≤3
+
+D Hom X(P (( λi + 1) ⃗x i), P (⃗x)) ,
+
+which equals zero since the coefficient of ⃗c in the normal form of ⃗x − (λ i + 1) ⃗x i is 
+
+−1 for each 1 ≤ i ≤ 3. Let K = Ker δ. Applying Hom X(−, U 0) to 0 → K → F → F ′ → 0, and using (4.4) and (4.10), gives Ext 1
+
+> X
+
+(K, U 0) = 0. Hence f 0 extends to u : V → U 0. Since 
+
+f 1uα = 0, f 1u factors through K, and then the resulting morphism K → U 1
+
+extends to v : F → U 1 since Ext 1
+
+> X
+
+(F ′, U 1) = 0 by (4.3). The cokernel property of δ
+
+then gives w : F ′ → U 2. Thus we obtain a commutative diagram 0 P V F F ′ 00 P U 0 U 1 U 2 0       
+
+> αβuδvwf0f1f2
+
+with exact rows. Its mapping cone is acyclic. Cancelling the contractible summand associated with 1 P yields the exact sequence 0 −→ V
+
+> 
+
+−βu
+
+> 
+
+−−−−→ F ⊕ U 0
+
+> 
+
+−δ 0
+
+v f 1
+
+> 
+
+−−−−−−−−→ F ′ ⊕ U 1
+
+> h
+
+w f 2i
+
+−−−−−−→ U 2 −→ 0,
+
+in which the last three terms belong to F .We show that −β u⊤ is a left F -approximation. Let h : V → G with G ∈ F .Since f 0 is a left F -approximation, there exists a morphism s : U 0 → G such that 
+
+hα = sf 0 = suα . Then ( h − su )α = 0, and thus h − su factors through K, and the resulting morphism K → G extends to t : F → G such that h − su = tβ since Ext 1
+
+> X
+
+(F ′, G ) = 0 by (4.3). Thus 
+
+h = −t s −βu
+
+
+
+.
+
+This proves that −β u⊤ is a left F -approximation and thus EL⟨⃗x⟩ ∈ H .
+
+Step 2: We show that H = ACM X. By [2, Theorem 6.1], the object 
+
+T = M 
+
+> 0≤⃗y≤⃗δ
+
+E⟨⃗y⟩
+
+is tilting in ACM X. In particular, thick (T ) = ACM X. By Proposition 4.2, we have 
+
+EL⟨⃗x⟩ ≃ E⟨⃗ δ −⃗x⟩(( a + λ 4 + 2) ⃗x 4).
+
+Thus Step 1 shows that H contains all E⟨⃗y⟩(b⃗ x 4) with 0 ≤⃗y ≤⃗ δ and b ∈ Z.Applying (4.6) for i = 4 gives T [m] ∈ H for any m ∈ Z. Every object of thick (T )is a direct summand of a finite iterated extension of finite direct sums of suspensions of T . Since H is closed under finite direct sums, extensions and direct summands by Lemma 4.6, it follows that H = thick (T ) = ACM X. Finally, since H is closed under stable isomorphisms by Lemma 4.6, we have H = ACM X.
+
+Step 3: We deduce Property (R) by duality. Recall that vector bundle duality 
+
+(−)∨ = Hom X(−, O) : vect X → vect X, defined by the sheaf Hom functor, sends 30 W. WENG 
+
+the line bundle O(⃗x) to O(−⃗x) for any ⃗x ∈ L. Denote 
+
+θ(X) := X∨(⃗t).
+
+It preserves ACM bundles. Indeed, since θ is an exact duality of vect X and θ2 ≃ Id, for any X ∈ ACM X and P ∈ L , there is an isomorphism Ext 1
+
+> X
+
+(θ(X), P ) ≃ Ext 1
+
+> X
+
+(θ(P ), X ),
+
+which equals zero since θ(P ) ∈ L and (4.4). Thus θ(X) ∈ ACM X by (4.4). Clearly, the duality θ preserves persistent line bundles. It also preserves fading line bundles. Indeed, let ⃗z = P3 
+
+> i=1
+
+zi⃗x i+z⃗ x 4 in the normal form such that O(⃗z) ∈ F . The duality 
+
+θ acts on the coefficient of ⃗x i by sending zi to pi − 2 − zi (mod pi). Since pi − 1 is fixed by this operation, the fading condition is preserved. Hence θ(F ) = F .By Step 2, we apply Property (L) to θ(X) and obtain an exact sequence 0 → θ(X) f 0
+
+−→ F 1 f 1
+
+−→ F 2 f 2
+
+−→ F 3 → 0.
+
+The kernel of f 2 is a vector bundle, so duality preserves exactness and yields (4.11) 0 → θ(F 3) → θ(F 2) → θ(F 1) θ(f 0)
+
+−−−→ X → 0.
+
+All three terms on the left belong to F . If h : F → X with F ∈ F , then θ(h)factors through f 0; dualizing again shows that h factors through θ(f 0). Thus the latter is a right F -approximation. Finally, a contravariant equivalence sends weak cokernels to weak kernels. Hence the sequence (4.11) gives Property (R) for X. □
+
+Corollary 4.8. F is a removable subcategory of (ACM X, E ).Proof. Clearly, F ⊂ L . For each X ∈ ACM X, X has Properties (L) and (R). Truncating the sequences in Properties (L) and (R), we have sequences 
+
+X f 0
+
+−→ F 1 f 1
+
+−→ F 2 and F2
+
+> f1
+
+−→ F1
+
+> f0
+
+−→ X. 
+
+By Lemma 4.4 and its dual, these sequences yield conditions (a) and (b) of Proposi-tion 3.9 for n = 1, respectively. Thus F is a removable subcategory of ACM X. □
+
+4.3. 2 -exact categories from GL projective planes. Proposition 4.9. The following classes of subcategories of coh X coincide: 
+
+(a) 2 -cluster tilting subcategories of ACM X;
+
+(b) 2 -cluster tilting subcategories of vect X containing L .Proof. This follows from [9, Theorem 5.23]. □
+
+As extension-closed subcategories of coh X, the categories ACM X and vect X
+
+inherit exact structures, denoted by E and E vec , respectively. Let C be a 2-cluster tilting subcategory of ACM X. By Proposition 4.9, C is also a 2-cluster tilting subcategory of vect X. By Theorem 2.10, C carries two induced 2-exact structures 
+
+X and X vec . They consist, respectively, of the complexes in C4 
+
+> C
+
+that are homotopy equivalent to E -acyclic and E vec -acyclic complexes of length four with all terms in 
+
+C . Since every E -acyclic complex is E vec -acyclic, we have X ⊂ X vec . But the converse is not true in general, see Example 4.13. IDEAL QUOTIENTS OF n-EXACT CATEGORIES 31 
+
+Theorem 4.10. Let C be a 2-cluster tilting subcategory of ACM X. Then F is a removable subcategory of (C , X ). Moreover, (C /[F ], XF ) is a 2-exact category, where XF is defined in (3.1) . If moreover, 02 
+
+> E
+
+(C ) ⊂ C , then (C /[F ], XF ) is a Frobenius 2-exact category. Proof. By Corollary 4.8, F is a removable subcategory of ( ACM X, E ). Together with Theorem 3.10(a), F is a removable subcategory of ( C , X ). By Theorem 3.4, the pair ( C /[F ], XF ) is a 2-exact category. Assume 02 
+
+> E
+
+(C ) ⊂ C . Then ( C , X ) is a Frobenius 2-exact category by Theorem 2.10, and so also is ( C /[F ], XF ) by Theorem 3.7. □
+
+Objects of F need not be X vec -projective-injective objects, and so F need not be a removable subcategory of C with respect to X vec . We consider the following relative construction. Let 
+
+X rel = {X· ∈ X vec | d0 
+
+> X
+
+is F -monic and d2 
+
+> X
+
+is F -epic }.
+
+Theorem 4.11. Let C be a 2-cluster tilting subcategory of ACM X. Then (C , X rel )
+
+is a 2-exact category, and F is a removable subcategory of (C , X rel ). Moreover, 
+
+(C /[F ], X rel  
+
+> F
+
+) is a 2-exact category, where X rel  
+
+> F
+
+is defined in (3.1) .Proof. By Proposition 2.8 for the 2-exact category ( C , X vec ), the pair ( C , X rel ) is a 2-exact category, and every object of F is X rel -projective-injective. For X ∈ C ,by Proposition 4.7, there are exact sequences in coh X
+
+0 → X f 0
+
+−→ F 1 f 1
+
+−→ F 2 f 2
+
+−→ F 3 → 0,
+
+0 −→ F3
+
+> f2
+
+−→ F2
+
+> f1
+
+−→ F1
+
+> f0
+
+−→ X → 0,
+
+where all F i, F i lie in F , f 0 is a left F -approximation and f0 is a right F -approximation. By Lemma 4.4 and its dual, these sequences satisfy the conditions in Proposition 3.9, with n = 2. This shows that F is a removable subcategory of (C , X rel ). The quotient assertion now follows from Theorem 3.4. □
+
+Proposition 4.12. Let C be a 2-cluster tilting subcategory of ACM X. Then X ⊂
+
+X rel ⊂ X vec . Moreover, X rel = X if and only if min {p1, p 2, p 3} = 2 .Proof. Every line bundle is projective and injective for the exact structure E on 
+
+ACM X. Hence the first and last differentials of any E -acyclic complex with terms in C are L -monic and L -epic, respectively. These properties are preserved under homotopy equivalence. Indeed, applying Hom( −, L ) and Hom( L, −) to homotopy equivalent complexes yields complexes with isomorphic cohomology for each L ∈ L .Since F ⊂ L , the asserted inclusions follow. Suppose first that pj = 2 for some 1 ≤ j ≤ 3. We claim that every line bundle 
+
+L satisfies 
+
+L ∈ F or L(⃗ω) ∈ F .(4.12) Write L = O(⃗x), where ⃗x = P3 
+
+> i=1
+
+λi⃗x i + a⃗ x 4 with 0 ≤ λi < p i and a ∈ Z. Assume 
+
+L / ∈ F . Then L is persistent, so λj = 0. Since ⃗ω = ( p 4 − 1) ⃗x 4 − P3
+
+> i=1
+
+⃗x i, the coefficient of ⃗x j in the normal form of ⃗x +⃗ω is p j − 1 = 1. Hence L(⃗ω) ∈ F .32 W. WENG 
+
+By the homotopy invariance established above and the closure of X under ho-motopy equivalences, the proof of X rel ⊂ X reduces to showing that every E vec -acyclic complex 
+
+X· : 0 −→ X0 d0
+
+> X
+
+−−→ X1 d1
+
+> X
+
+−−→ X2 d2
+
+> X
+
+−−→ X3 −→ 0,
+
+with all terms in C , d0 
+
+> X
+
+F -monic, and d2 
+
+> X
+
+F -epic, belongs to X . Put K = Im d1 
+
+> X
+
+.For any fading line bundle F , applying Hom X(−, F ) and Hom X(F, −) to the two short exact sequences 0 → X0 d0
+
+> X
+
+−−→ X1 → K → 0 and 0 → K −→ X2 d2
+
+> X
+
+−−→ X3 → 0,(4.13) this gives, respectively, two exact sequences Hom X(X1, F ) (d0 
+
+> X)∗
+
+−−−−→ Hom X(X0, F ) → Ext 1
+
+> X
+
+(K, F ) → 0,
+
+Hom X(F, X 2) (d2 
+
+> X)∗
+
+−−−−→ Hom X(F, X 3) → Ext 1
+
+> X
+
+(F, K ) → 0.
+
+Since d0 
+
+> X
+
+is F -monic and d2 
+
+> X
+
+is F -epic, both the induced morphisms ( d0 
+
+> X
+
+)∗ and (d2 
+
+> X
+
+)∗ are epimorphisms. Thus for any line bundle L ∈ F , we have Ext 1
+
+> X
+
+(K, L ) = 0 = Ext 1
+
+> X
+
+(L, K ).(4.14) Let L be a line bundle. If L is fading, then Ext 1
+
+> X
+
+(L, K ) = 0 by (4.14). Otherwise 
+
+L(⃗ω) is fading by (4.12), and then by Auslander–Reiten–Serre duality, we have Ext 1
+
+> X
+
+(L, K ) ≃ D Ext 1
+
+> X
+
+(K, L (⃗ω)) = 0 .(4.15) Thus K is an ACM bundle by (4.4). Both the short exact sequences (4.13) belong to E , so X· ∈ X .Conversely, assume that p1, p 2, p 3 ≥ 3. We construct a sequence in X rel which does not belong to X . Put Q := R/ (X1, X 2, X 3) and ⃗ t := ⃗x 1 +⃗x 2 +⃗x 3. Consider the Koszul complex 
+
+P · : 0 → O d0
+
+−→ M
+
+> 1≤i≤3
+
+O(⃗x i) d1
+
+−→ M
+
+> 1≤i<j ≤3
+
+O(⃗x i +⃗x j ) d2
+
+−→ O (⃗x 1 +⃗x 2 +⃗x 3) → 0,
+
+in coh X, where 
+
+d0 =
+
+
+
+X1
+
+X2
+
+X3
+
+ , d1 =
+
+
+
+X2 −X1 0
+
+−X3 0 X1
+
+0 X3 −X2
+
+ , d2 = X3 X2 X1
+
+ .
+
+By Lemma 4.1, we have Ker d2 ∈ vect X. Consequently, P · is E vec -acyclic. For any ⃗a ∈ L, the identification Hom X(O(⃗a), O(⃗ b)) = R⃗ b−⃗a by (4.3), gives Coker Hom X(d0, O(⃗a)) ≃ R⃗ a
+
+. 3X
+
+> i=1
+
+XiR⃗a−⃗x i = Q⃗a ,
+
+Coker Hom X(O(⃗a), d 2) ≃ R⃗t−⃗a
+
+. 3X
+
+> i=1
+
+XiR⃗t−⃗a−⃗x i = Q⃗t−⃗a .
+
+The nonzero homogeneous components of Q occur precisely in degrees r⃗ x 4 with 0 ≤ r < p 4. Thus the first cokernel can be nonzero only when ⃗a = r⃗ x 4, and the second only when ⃗a =⃗ t − r⃗ x 4. The coefficients of ⃗x 1,⃗ x 2,⃗ x 3 in the normal form of 
+
+r⃗ x 4 and ⃗ t − r⃗ x 4 are (0 , 0, 0) and (1 , 1, 1), respectively. Since p1, p 2, p 3 ≥ 3, both IDEAL QUOTIENTS OF n-EXACT CATEGORIES 33 
+
+O(r⃗ x 4) and O(⃗t − r⃗ x 4) are persistent. Both cokernels therefore vanish for every fading line bundle. It follows that d0 is F -monic and d2 is F -epic, so P · ∈ X rel .On the other hand, taking ⃗a =⃗ t, we have Coker Hom X(O(⃗t), d 2) ≃ Q0 ≃ k̸ = 0 .
+
+Thus d2 is not L -epic. As observed at the beginning of the proof, every sequence in X has an L -epic last differential. Hence P · /∈ X , and therefore X ⊊ X rel . □
+
+In the rest, we show how some of the main constructions work out in some particular and simple examples. 
+
+Example 4.13. Let R be an L-graded BP singularity of type (2 , 2, 2, 2), and X
+
+the corresponding GL projective plane. The Auslander–Reiten quiver of ACM X is depicted below; see [9, Example 4.47]. Here, we write ⃗x ∈ L for the corresponding line bundle O(⃗x), and set E k := E⟨0⟩(k⃗ x 4) for k ∈ Z.                                                       
+
+> · · · E0E1E2E3· · · ⃗ω+⃗x3⃗ω+⃗x2⃗ω+⃗x1
+> −⃗x4
+> −⃗x3
+> −⃗x2
+> −⃗x1⃗ω+⃗x4⃗ω+⃗x3+⃗x4⃗ω+⃗x2+⃗x4⃗ω+⃗x1+⃗x4
+> 0⃗x4−⃗x3⃗x4−⃗x2⃗x4−⃗x1⃗ω+⃗c⃗ ω+⃗x3+⃗c⃗ ω+⃗x2+⃗c⃗ ω+⃗x1+⃗c⃗ x4⃗x3⃗x2⃗x1⃗ω+⃗x4+⃗c
+> C
+> C
+> ?
+> ?
+> 8
+> 8
+> 2
+> 2
+> ,
+> ,
+> &
+> &
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> &
+> &
+> ,
+> ,
+> 2
+> 2
+> 8
+> 8
+> ?
+> ?
+> C
+> C
+> C
+> C
+> ?
+> ?
+> 8
+> 8
+> 2
+> 2
+> ,
+> ,
+> &
+> &
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> &
+> &
+> ,
+> ,
+> 2
+> 2
+> 8
+> 8
+> ?
+> ?
+> C
+> C
+> C
+> C
+> ?
+> ?
+> 8
+> 8
+> 2
+> 2
+> ,
+> ,
+> &
+> &
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> &
+> &
+> ,
+> ,
+> 2
+> 2
+> 8
+> 8
+> ?
+> ?
+> C
+> C
+
+Figure 1. The Auslander–Reiten quiver of ACM X for type (2 , 2, 2, 2) In this case, the persistent line bundles are precisely O(a⃗ x 4), a ∈ Z, whereas 
+
+F = add {O (
+
+> 3
+
+X
+
+> i=1
+
+λi⃗x i + a⃗ x 4) | λi ∈ { 0, 1}, (λ1, λ 2, λ 3)̸ = (0 , 0, 0) , a ∈ Z}.
+
+By [9, Example 4.54], the subcategory 
+
+C = add {E2k, O(⃗x) | k ∈ Z,⃗x ∈ L}
+
+is a 2-cluster tilting subcategory of ACM X. One can compute the Auslander–Reiten quiver of C from that of ACM X; see Figure 2. Let E be the natural exact structure on ACM X inherited from coh X, and X be the induced 2-exact structure on C as defined in Theorem 2.10. By [2, Theorem 4.4 and Proposition 4.6], there are E -conflations 0 −→ Ek −→ Ik −→ Ek+1 −→ 0,(4.16) where 
+
+Ik = M
+
+> 1≤i≤4
+
+O(k⃗ x 4 −⃗x i) ⊕ M
+
+> 1≤i≤4
+
+O(k⃗ x 4 +⃗ω +⃗x i).34 W. WENG ⃗ω +⃗x 3 −⃗x 4⃗ω +⃗x 2 −⃗x 4⃗ω +⃗x 1 −⃗x 4                                              
+
+> −⃗c
+> −⃗x3−⃗x4
+> −⃗x2−⃗x4
+> −⃗x1−⃗x4⃗ω
+> · · · E0E2· · · ⃗ω+⃗x3⃗ω+⃗x2⃗ω+⃗x1
+> −⃗x4
+> −⃗x3
+> −⃗x2
+> −⃗x1⃗ω+⃗x4⃗ω+⃗x3+⃗x4⃗ω+⃗x2+⃗x4⃗ω+⃗x1+⃗x4
+> 0⃗x4−⃗x3⃗x4−⃗x2⃗x4−⃗x1⃗ω+⃗c
+> 
+> 
+> $
+> $
+> (
+> (
+> -
+> -
+> 1
+> 1
+> 6
+> 6
+> :
+> :
+> ?
+> ?
+> ?
+> ?
+> :
+> :
+> 6
+> 6
+> 1
+> 1
+> -
+> -
+> (
+> (
+> $
+> $
+> 
+> 
+> /
+> /
+> $
+> $
+> "
+> "
+> 
+> 
+> /
+> /
+> (
+> (
+> $
+> $
+> "
+> "
+> /
+> /
+> +
+> +
+> (
+> (
+> $
+> $
+> /
+> /
+> -
+> -
+> +
+> +
+> (
+> (
+> 6
+> 6
+> 3
+> 3
+> 1
+> 1
+> /
+> /
+> :
+> :
+> 6
+> 6
+> 3
+> 3
+> /
+> /
+> <
+> <
+> :
+> :
+> 6
+> 6
+> /
+> /
+> ?
+> ?
+> <
+> <
+> :
+> ://
+> 
+> 
+> $
+> $
+> (
+> (
+> -
+> -
+> 1
+> 1
+> 6
+> 6
+> :
+> :
+> ?
+> ?
+
+Figure 2. The Auslander–Reiten quiver of C
+
+Consequently, we have 02 
+
+> E
+
+(E2k) = E2k+2 . Since the remaining generators of C
+
+are projective and injective, it follows that 02 
+
+> E
+
+(C ) ⊂ C . By Corollary 4.8, F is removable of ( ACM X, E ). By Theorem 3.10, 
+
+C /[F ] = add {E2k, O(a⃗ x 4) | k, a ∈ Z}
+
+is a 2-cluster tilting subcategory of the Frobenius exact category ACM X/[F ]. Its induced 2-exact structure is XF . Moreover, both ( C , X ) and ( C /[F ], XF ) are Frobenius 2-exact categories, whose subcategories of projective-injective objects are 
+
+L and L /[F ] = add {O (a⃗ x 4) | a ∈ Z}, respectively.         
+
+> · · · E−2
+> −3⃗x4−⃗cE0
+> −⃗x40
+> E2⃗x4⃗cE4· · · //
+> @
+> @
+> /
+> /
+> 
+> 
+> @
+> @
+> /
+> /
+> 
+> 
+> @
+> @
+> /
+> /
+> 
+> //
+
+Figure 3. The Auslander–Reiten quiver of C /[F ]. For a concrete X -conflation, splice the two E -conflations of the form (4.16) with indices 2 k and 2 k + 1. This gives the X -conflation 
+
+E2k −→ I2k −→ I2k+1 −→ E2k+2 .
+
+The only persistent summand of Ik is O(( k − 1) ⃗x 4). Hence its image in the quotient 
+
+C /[F ] is isomorphic to the XF -conflation 
+
+E2k −→ O (k⃗ c −⃗x 4) −→ O (k⃗ c) −→ E 2k+2 .
+
+We note that X vec is strictly larger than X . Indeed, the defining sequence 0 −→ O (⃗ω) α
+
+−→ E0 −→ M
+
+> 1≤i≤4
+
+O(−⃗x i) −→ O −→ 0belongs to X vec but not to X . If this sequence belonged to X , injectivity of O(⃗ω)would force α to split, contradicting the indecomposability of E0.
+
+Example 4.14. Let X be a GL projective plane of type (2 , 2, 2, 4). The Auslander– Reiten quiver of ACM X is depicted in Figure 4; see [3, 9] for more details. In this case, the persistent line bundles are precisely O(a⃗ x 4), a ∈ Z, whereas 
+
+F = add {O (
+
+> 3
+
+X
+
+> i=1
+
+λi⃗x i + a⃗ x 4) | λi ∈ { 0, 1}, (λ1, λ 2, λ 3)̸ = (0 , 0, 0) , a ∈ Z}.IDEAL QUOTIENTS OF n-EXACT CATEGORIES 35                                                                                                                                                       
+
+> . . .
+> •·⟨2,−3⟩
+> (−⃗c)
+> •⟨0,−2⟩⟨1,−2⟩⟨2,−2⟩
+> (−3⃗x4)(⃗ω−⃗x4)
+> ⟨0,−1⟩⟨1,−1⟩⟨2,−1⟩
+> (−2⃗x4)(⃗ω)
+> ⟨0,0⟩⟨1,0⟩⟨2,0⟩
+> (−⃗x4)(⃗ω+⃗x4)
+> ⟨0,1⟩⟨1,1⟩⟨2,1⟩
+> (0) (⃗ω+ 2 ⃗x4)
+> ⟨0,2⟩⟨1,2⟩⟨2,2⟩•
+> (⃗ω+ 3 ⃗x4)
+> ⟨0,3⟩·•
+> . . .
+> 
+> 
+> A
+> A
+> 
+> 
+> A
+> A
+> 
+> 
+> 
+> 
+> A
+> A
+> A
+> A
+> A
+> A
+> 
+> 
+> 
+> 
+> A
+> A
+> 
+> 
+> 
+> 
+> A
+> A
+> A
+> A
+> A
+> A
+> 
+> 
+> 
+> 
+> 
+> 
+> A
+> A
+> 
+> 
+> A
+> A
+> A
+> A
+> A
+> A
+> 
+> 
+> 
+> 
+> 
+> 
+> A
+> A
+> 
+> 
+> A
+> A
+> A
+> A
+> A
+> A
+> 
+> 
+> A
+> A
+> 
+> 
+> 
+> 
+> 
+> 
+> A
+> A
+> A
+> A
+> A
+> A
+> A
+> A
+> 
+> 
+> 
+> 
+> 
+> 
+> A
+> AAA
+> 
+> 
+> −⃗c
+> −⃗x2−⃗x3
+> −⃗x1−⃗x3
+> −⃗x1−⃗x2
+> −3⃗x4⃗x2−⃗x3−3⃗x4⃗x1−⃗x3−3⃗x4⃗x1−⃗x2−3⃗x4
+> −2⃗x4⃗x2−⃗x3−2⃗x4⃗x1−⃗x3−2⃗x4⃗x1−⃗x2−2⃗x4
+> −⃗x4⃗x2−⃗x3−⃗x4⃗x1−⃗x3−⃗x4⃗x1−⃗x2−⃗x4
+> 0⃗x2−⃗x3⃗x1−⃗x3⃗x1−⃗x2
+> −⃗x3−2⃗x4
+> −⃗x2−2⃗x4
+> −⃗x1−2⃗x4⃗ω−⃗x4
+> −⃗x3−⃗x4
+> −⃗x2−⃗x4
+> −⃗x1−⃗x4⃗ω
+> −⃗x3
+> −⃗x2
+> −⃗x1⃗ω+⃗x4
+> −⃗x3+⃗x4
+> −⃗x2+⃗x4
+> −⃗x1+⃗x4⃗ω+ 2 ⃗x4
+> −⃗x3+ 2 ⃗x4
+> −⃗x2+ 2 ⃗x4
+> −⃗x1+ 2 ⃗x4⃗ω+ 3 ⃗x4
+
+Figure 4. The Auslander–Reiten quiver of ACM X for type (2 , 2, 2, 4). A vertex labeled ⟨i, j ⟩ denotes the 2-extension bun-dle E⟨i⃗ x 4⟩(j⃗ x 4) for 0 ≤ i ≤ 2 and j ∈ Z. The four line bundles 
+
+O(⃗x) and O(⃗x + ¯ x ab ), where ¯ xab := ⃗c −⃗x a −⃗x b for 1 ≤ a < b ≤ 3, occupy the same position, labelled ( ⃗x) or • when ⃗x is unspecified. Every arrow starting or ending at vertex ( ⃗x) or • represents four arrows in the actual Auslander–Reiten quiver (each one connected to one of the O(⃗x) and O(⃗x + ¯ x ab )) By [9, Theorem 4.53], the subcategory 
+
+C ′ = add {⟨ 0, 2k⟩, ⟨2, 2k⟩, O(⃗x) | k ∈ Z,⃗x ∈ L}
+
+is a 2-cluster tilting subcategory of ACM X. Indeed, by [2, Theorem 6.2], 
+
+T = ⟨0, 0⟩ ⊕ ⟨ 2, 0⟩ ⊕ ⟨ 0, 2⟩
+
+is a tilting object in ACM X with gl . dim End( T ) = 2. By Proposition 4.2, we have 
+
+⟨i, j ⟩(⃗ω) = ⟨2 − i, i + j − 4⟩ and ⟨i, j ⟩(−⃗ω) = ⟨2 − i, i + j + 2 ⟩.
+
+This gives C ′ = add {T (m⃗ ω), O(⃗x) | m ∈ Z,⃗x ∈ L}, so [9, Theorem 4.53] applies. Its Auslander–Reiten quiver is shown in Figure 5 with the following conventions: for a 2-extension bundle U , the situations 
+
+O(⃗x)
+
+O(⃗x + ¯ x 12 )
+
+O(⃗x + ¯ x 13 )
+
+O(⃗x + ¯ x 23 )
+
+U
+
+O(⃗x)
+
+O(⃗x + ¯ x 12 )
+
+O(⃗x + ¯ x 13 )
+
+O(⃗x + ¯ x 23 )
+
+U
+
+&
+
+&,,1166
+
+8
+
+8 2 2 - -
+
+(
+
+(36 W. WENG                           
+
+> · · · · · ·
+> (⃗ω−2⃗x4)
+> ⟨0,−2⟩⟨2,−2⟩
+> (−3⃗x4)(⃗ω−⃗x4)(−2⃗x4)(⃗ω)
+> ⟨0,0⟩⟨2,0⟩
+> (−⃗x4)(⃗ω+⃗x4)(0) (⃗ω+ 2 ⃗x4)
+> ⟨0,2⟩⟨2,2⟩
+> (⃗x4)(⃗ω+ 3 ⃗x4)(2 ⃗x4)(⃗ω+ 4 ⃗x4)
+> ⟨0,4⟩⟨2,4⟩
+> O
+> O
+> O
+> O
+> O
+> O
+> ,
+> ,
+> O
+> O
+> O
+> O
+> ,
+> ,//
+> O
+> O
+> O
+> O
+> O
+> O
+> O
+> O
+> O
+> O
+> O
+> O
+> /
+> /
+> /
+> /
+> /
+> /
+> ,
+> ,
+> /
+> /
+> /
+> /
+> /
+> ///
+> O
+> O
+> O
+> O
+> /
+> /
+> /
+> /
+> O
+> O
+> O
+> O
+> /
+> /
+> /
+> /
+> O
+> O
+> O
+> O
+> +
+> +
+> +
+> +
+> +
+> +
+> +
+> +
+
+Figure 5. The Auslander–Reiten quiver of C ′
+
+are written simply, respectively, as (⃗x) U U (⃗x); ////
+
+for arrows between line bundles, the situations 
+
+O(⃗x)
+
+O(⃗x + ¯ x 12 )
+
+O(⃗x + ¯ x 13 )
+
+O(⃗x + ¯ x 23 )
+
+O(⃗x +⃗x 4)
+
+O(⃗x + ¯ x 12 +⃗x 4)
+
+O(⃗x + ¯ x 13 +⃗x 4)
+
+O(⃗x + ¯ x 23 +⃗x 4)
+
+O(⃗x)
+
+O(⃗x + ¯ x 12 )
+
+O(⃗x + ¯ x 13 )
+
+O(⃗x + ¯ x 23 )
+
+O(⃗x +⃗x 3)
+
+O(⃗x + ¯ x 12 +⃗x 3)
+
+O(⃗x + ¯ x 13 +⃗x 3)
+
+O(⃗x + ¯ x 23 +⃗x 3)
+
+/
+
+/
+
+/
+
+/
+
+/
+
+///
+
+/
+
+/
+
+)
+
+)
+
+&
+
+&
+
+/
+
+/
+
+,
+
+,
+
+)
+
+)
+
+5
+
+5
+
+2
+
+2
+
+/
+
+/
+
+8
+
+8
+
+5
+
+5//
+
+are written simply, respectively, as (⃗x) (⃗x +⃗x 4) (⃗x) (⃗x +⃗x 3).//////
+
+Let X be the 2-exact structure on C ′ induced by ( ACM X, E ) as in Theorem 2.10. For any 0 ≤ ℓ ≤ 2 and j ∈ Z, there are E -conflations 0 → ⟨ ℓ, j ⟩ → Iℓ,j → ⟨ 2 − ℓ, j + ℓ + 1 ⟩ → 0by [2, Theorem 4.4 and Proposition 4.6], where Iℓ,j is the direct sum of line bundles represented by the two positions (( j − 1) ⃗x 4) and ( ⃗ω + ( j + ℓ + 1) ⃗x 4), that is, 
+
+Iℓ,j = O(( j − 1) ⃗x 4) ⊕ M
+
+> 1≤i≤3
+
+O(( j + ℓ)⃗x 4 −⃗x i)
+
+⊕ M
+
+> 1≤i≤3
+
+O(⃗ω + j⃗ x 4 +⃗x i) ⊕ O (⃗ω + ( j + ℓ + 1) ⃗x 4).
+
+Consequently, 02 
+
+> E
+
+(⟨ℓ, 2k⟩) ≃ ⟨ ℓ, 2k+4 ⟩ for ℓ = 0 , 2 and hence 02 
+
+> E
+
+(C ′) ⊂ C ′. By The-orem 2.10, ( C ′, X ) is Frobenius 2-exact, whose subcategory of projective-injective IDEAL QUOTIENTS OF n-EXACT CATEGORIES 37 
+
+objects is L . By Corollary 4.8 and Theorem 3.10(a), F is removable in ( C ′, X ). Thus 
+
+C ′/[F ] = add {⟨ 0, 2k⟩, ⟨2, 2k⟩, O(a⃗ x 4) | k, a ∈ Z}
+
+is Frobenius 2-exact with 2-exact structure XF by Theorem 3.7. Its subcategory of projective-injective objects is L /[F ] = add {O (a⃗ x 4) | a ∈ Z}. Its quiver is obtained by removing the vertices corresponding to fading line bundles and all arrows starting or ending at these vertices; see Figure 6.                 
+
+> · · · · · · ⟨0,−2⟩⟨2,−2⟩−3⃗x4−2⃗x4
+> ⟨0,0⟩⟨2,0⟩−⃗x40
+> ⟨0,2⟩⟨2,2⟩⃗x42⃗x4
+> ⟨0,4⟩⟨2,4⟩
+> O
+> O
+> O
+> O
+> ,
+> ,
+> O
+> O
+> ,
+> ,//
+> O
+> O
+> O
+> O
+> O
+> OOO
+> /
+> /
+> ,
+> ,
+> /
+> ///
+> /
+> /
+> /
+> /
+
+Figure 6. The quiver of C ′/[F ]One can calculate from Figure 4 that there are two E -conflations 0 → ⟨ 0, 0⟩ → ⟨ 2, 0⟩ ⊕ F0 → ⟨ 1, 1⟩ → 0,
+
+0 → ⟨ 1, 1⟩ → ⟨ 0, 2⟩ ⊕ O ⊕ F1 → ⟨ 2, 2⟩ → 0,
+
+where F0 is the direct sum of line bundles in the position ( ⃗ω +⃗x 4), while O ⊕ F1 is the direct sum of line bundles in the position (0), that is, 
+
+F0 = O(⃗ω +⃗x 4) ⊕ M
+
+> 1≤i≤3
+
+O(−⃗x i) and F1 = M
+
+> 1≤i≤3
+
+O(⃗ω +⃗x 4 +⃗x i).
+
+Splicing these two E -conflations yields an E -acyclic complex 0 → ⟨ 0, 0⟩ → ⟨ 2, 0⟩ ⊕ F0 → ⟨ 0, 2⟩ ⊕ O ⊕ F1 → ⟨ 2, 2⟩ → 0.
+
+Since all its terms belong to C ′, it is an X -conflation. Since F0, F 1 ∈ F , its image in the quotient C ′/[F ] is isomorphic to the XF -conflation 
+
+⟨0, 0⟩ → ⟨ 2, 0⟩ → ⟨ 0, 2⟩ ⊕ O → ⟨ 2, 2⟩.
+
+By Remark 3.8, the quotient functor πF induces a canonical equivalence of 4-angulated categories 
+
+C ′ = C ′/[L ] ≃ C ′/[F ],
+
+see Figure 7. The suspension functor Σ satisfies Σ( ⟨ℓ, 2k⟩) ≃ ⟨ ℓ, 2k + 4 ⟩ for ℓ = 0 , 2. Moreover, we have the 4-angle (4.17) ⟨0, 0⟩ → ⟨ 2, 0⟩ → ⟨ 0, 2⟩ → ⟨ 2, 2⟩ → ⟨ 0, 4⟩ ≃ Σ⟨0, 0⟩.
+
+For each 2-extension bundle ⟨ℓ, 2k⟩, with ℓ = 0 , 2 and k ∈ Z, a 4-angle with this first term is obtained by iterated left and right rotations of (4.17). 38 W. WENG            
+
+> · · · · · · ⟨0,−2⟩⟨2,−2⟩⟨0,0⟩⟨2,0⟩⟨0,2⟩⟨2,2⟩⟨0,4⟩⟨2,4⟩
+> O
+> O
+> ,
+> ,
+> O
+> O
+> ,
+> ,
+> O
+> O
+> ,
+> ,
+> O
+> O
+
+Figure 7. The quiver of the 4-angulated category C ′
+
+References 
+
+[1] T. B¨ uhler, Exact categories , Expo. Math. 28 (2010), 1–69. [2] J. Chen, S. Ruan and W. Weng, Brieskorn-Pham singularities via ACM bundles on Geigle-Lenzing projective spaces , preprint, arXiv:2501.15375 (2025). [3] J. Chen, S. Ruan and W. Weng, ACM tilting bundles on a Geigle-Lenzing projective plane of type (2 , 2, 2, p ), preprint, arXiv:2506.13376 (2025). [4] X.-W. Chen, Three results on Frobenius categories , Math. Z. 270 (2012), 43–58. [5] X.-W. Chen, Q. Dong and S. Ruan, Frobenius quotients, inflation categories and weighted projective lines , preprint, arXiv:2604.02626 (2026). [6] L. Demonet and O. Iyama, Lifting preprojective algebras to orders and categorifying partial flag varieties , Algebra Number Theory 10 (2016), 1527–1579. [7] C. Geiss, B. Keller and S. Oppermann, n-angulated categories , J. Reine Angew. Math. 675 
+
+(2013), 101–120. [8] D. Happel, Triangulated categories in the representation theory of finite-dimensional alge-bras , London Math. Soc. Lecture Note Ser. 119 , Cambridge University Press, Cambridge, 1988. [9] M. Herschend, O. Iyama, H. Minamoto and S. Oppermann, Representation theory of Geigle-Lenzing complete intersections . Mem. Amer. Math. Soc. 285 (1412) (2023). [10] M. Herschend, Y. Liu and H. Nakaoka, n-exangulated categories (I): Definitions and funda-mental properties , J. Algebra 570 (2021), 531–586. [11] J. Hu, D. Zhang and P. Zhou, Two new classes of n-exangulated categories , J. Algebra 568 
+
+(2021), 1–21. [12] O. Iyama, Higher-dimensional Auslander–Reiten theory on maximal orthogonal subcate-gories , Adv. Math. 210 (2007), 22–50. [13] G. Jasso, n-abelian and n-exact categories , Math. Z. 283 (2016), 703–759. [14] B. Keller, Chain complexes and stable categories , Manuscripta Math. 67 (1990), 379–417. [15] C. Klapproth, n-extension-closed subcategories of n-exangulated categories , Bull. Sci. Math. 
+
+211 (2026), 103846. [16] D. Kussin, H. Lenzing, and H. Meltzer, Nilpotent operators and weighted projective lines , J. Reine Angew. Math. 685 (2013), 33–71. [17] S. Kvamme, Higher extension closure and d-exact categories , Adv. Math. 499 (2026), 111054. [18] Y. Liu and P. Zhou, Frobenius n-exangulated categories , J. Algebra 559 (2020), 161–183. [19] H. Nakaoka and Y. Palu, Extriangulated categories, Hovey twin cotorsion pairs and model structures , Cah. Topol. G´ eom. Diff´ er. Cat´ eg. 60 (2019), no. 2, 117–193. [20] D. Quillen, Higher algebraic K-theory: I , in Algebraic K-theory, I: Higher K-theories , Lec-ture Notes in Math. 341 , Springer, Berlin, 1973, 85–147. IDEAL QUOTIENTS OF n-EXACT CATEGORIES 39 Weikang Weng School of Mathematical Sciences, Xiamen University, Xiamen, 361005, Fujian, PR China. E-mail: wkweng@stu.xmu.edu.cn

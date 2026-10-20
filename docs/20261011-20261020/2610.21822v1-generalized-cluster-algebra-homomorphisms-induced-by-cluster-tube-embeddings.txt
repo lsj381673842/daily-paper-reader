@@ -1,0 +1,996 @@
+Title: Generalized Cluster Algebra Homomorphisms Induced by Cluster Tube Embeddings
+
+URL Source: https://arxiv.org/pdf/2610.21822v1
+
+Published Time: Fri, 16 Oct 2026 01:24:59 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+# Generalized Cluster Algebra Homomorphisms Induced by Cluster Tube Embeddings 
+
+Mingze Li 
+
+Beijing Normal University October 16, 2026 
+
+mathlmz@mail.bnu.edu.cn 
+
+Abstract 
+
+We relate multiplication formulas for regular modules in coefficient-free acyclic affine cluster algebras with skew-symmetric exchange matrices to the imaginary exchange relations of Reading –Stella[15]. Introducing a parameter z into the construction of Zhou –Zhu[17], we define a weighted cluster character on cluster tubes that satisfies generalized exchange relations of type Cn−1 and yields a bijection between indecom-posable rigid objects and cluster variables. Using the multiplication formulas and difference property of Ding –Xiao –Xu[5], we show that non-homogeneous tube em-beddings induce injective homomorphisms into ordinary affine cluster algebras under 
+
+z 7 → Xδ. Comparison with Reading –Stella ’s relations identifies Xδ with the corre-sponding theta function, giving a representation-theoretic interpretation of the gen-eralized exchange parameter. 
+
+Keywords: generalized cluster algebra; cluster tube; cluster category 
+
+# Contents 
+
+1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 Generalized cluster algebras . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43 Cluster categories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54 Cluster tubes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65 Categorification of a generalized cluster algebra of type Cn−1 . . . . . . . . . . . 86 Cluster tube embeddings and the induced homomorphisms . . . . . . . . . . . . . 13 
+
+# 1 Introduction 
+
+The starting point of this paper is the observation that existing representation-theoretic formulas for affine cluster algebras are directly related to the imaginary exchange relations recently obtained by Reading–Stella. The multiplication formulas for regular modules and the difference property of Ding–Xiao–Xu yield three-term relations with Xδ as the middle coeffi-cient. Using a weighted cluster character on a cluster tube and the tube embedding, we realize this connection in the skew-symmetric coefficient-free setting as an injective homomorphism from a generalized cluster algebra to an ordinary affine cluster algebra. Cluster algebras were introduced by Fomin–Zelevinsky in their study of total positivity and canonical bases [6]. They generate cluster variables recursively by seed mutation. One 1arXiv:2610.21822v1 [math.RT] 15 Oct 2026 1 INTRODUCTION 2of the central problems in the theory is to realize these variables and their exchange relations geometrically or through representation theory. In the acyclic setting, cluster variables can be described by categorical objects, while mutation corresponds to the replacement of objects and to exchange triangles. The construction of cluster categories by Buan et al., together with Keller’s work on trian-gulated structures on orbit categories, laid the foundations for this approach [1, 9]. Caldero– Keller established correspondences between rigid objects and cluster variables, and between cluster-tilting objects and clusters [3]; Palu subsequently developed a more general cluster character [14]. Such formulas combine the index of an object with the Euler characteristics of submodule Grassmannians to turn categorical information into Laurent polynomials, with one-dimensional extension spaces giving rise to ordinary binomial exchange relations. Cluster tubes exhibit a different situation in the absence of cluster-tilting objects. A cluster tube of rank n > 1, denoted by Cn, is a 2-Calabi–Yau triangulated category that has maximal rigid objects but no cluster-tilting objects. Buan–Marsh–Vatne revealed the connection between its maximal rigid objects and cluster combinatorics of finite type [2]. Zhou–Zhu and Fu– Geng–Liu further constructed a map analogous to the Caldero–Chapoton formula, realizing a correspondence between indecomposable rigid objects and cluster variables of type Cn−1 [7, 17]. On the other hand, Chekhov–Shapiro introduced generalized cluster algebras in their study of surfaces with orbifold points, allowing exchange polynomials of higher degree to generalize ordinary binomial relations [4]. In a cluster tube, some exchange pairs have two-dimensional extension spaces, and the middle terms of their two exchange triangles are U ⊕2 and V ⊕2.These multiplicities naturally correspond to the square terms in a quadratic exchange relation; to obtain the exchange polynomial 1 + zu + u2, however, we are also expected to explain the origin of the middle term and the parameter z.A representation-theoretic approach to these generalized cluster algebras was developed by Labardini –Fragoso and Mou [11], who associate finite-dimensional gentle Jacobian algebras to triangulations of unpunctured surfaces with orbifold points of order three. Using stability scattering diagrams, they prove that the Caldero –Chapoton map gives a bijection between reachable τ -rigid pairs and cluster monomials of the associated generalized cluster algebra, with support τ -tilting mutation corresponding to seed mutation. The quadratic exchange polynomial arising at an orbifold point in their setting is 1 + u + u2, which is the specialization at z = 1 of the polynomial 1 + zu + u2 considered here. Affine representation theory provides a natural setting for this problem. Quasi-simple modules in homogeneous tubes whose dimension vector is the minimal positive imaginary root 
+
+δ have a common cluster character, denoted by Xδ. In their study of integral bases, Ding–Xiao– Xu established multiplication formulas for regular modules and proved the difference property [5]. The latter relates objects in a non-homogeneous tube whose quasi-length equals its rank to Xδ. We observe that combining these earlier formulas and eliminating suitable non-rigid regular objects yields three-term relations with Xδ as the middle coefficient. Meanwhile, Gross–Hacking–Keel–Kontsevich developed a new framework for canonical bases by constructing theta functions via scattering diagrams [8]. Reading–Stella recently stud-ied theta functions on the imaginary wall in acyclic affine type, obtained imaginary exchange relations, and proved that tube subalgebras in the coefficient-free setting carry generalized clus-1 INTRODUCTION 3ter algebra structures of type C [15]. Our concern here is the precise correspondence between this new result and the earlier formulas for regular modules: once the notation for objects and indices is aligned, the two approaches give three-term relations of the same form, and their coefficients can be identified with one another. More precisely, let Q be a connected acyclic quiver of affine type other than the Kronecker quiver. Fix a non-homogeneous tube of rank n > 1, which induces a fully faithful triangulated embedding I : Cn → C Q. For an exchange pair M, M ∗ with a two-dimensional extension space, write the middle terms of the exchange triangles as U ⊕2, V ⊕2. From the regular-module formulas above, we derive 
+
+XI(M )XI(M ∗) = X2  
+
+> I(U)
+
++ XδXI(U )XI(V ) + X2 
+
+> I(V)
+
+.
+
+The difference property thus identifies the middle coefficient needed in addition to the two square terms. To make the formulas internal to the cluster tube compatible with this relation, we first generalize the construction of Zhou–Zhu by retaining an independent parameter z in the ground ring. Fix the standard maximal rigid object T . We divide the submodule Grassmannians of 
+
+FT M = Hom (T [−1] , M ) into three classes according to the dimension of a submodule at the vertex carrying a loop, and assign the respective weights 1, z, 1 to define a weighted character 
+
+X(z) 
+
+> M
+
+. The parameter term comes from the submodule strata with dimension one at this vertex. By analyzing the nilpotent action of the loop, we compute the contribution of these strata and obtain an explicit formula; setting z = 0 recovers the formula of Zhou–Zhu. Next, we prove that the weighted character satisfies generalized exchange relations: one-dimensional extension spaces still yield binomial relations, whereas two-dimensional extension spaces give two square terms together with a middle product term involving z. Consequently, indecomposable rigid objects are in bijection with the cluster variables of the resulting gener-alized cluster algebra, and maximal rigid mutation is compatible with seed mutation. Under the type convention determined by the right companion, the resulting algebra A(z)(Cn) is of type Cn−1. This extends the earlier object–cluster variable correspondence to the setting with a parameter and provides an interpretation of the three-term relations in terms of submodule geometry. Finally, we prove that the assignments 
+
+z 7 −→ Xδ, X(z) 
+
+> M
+
+7 −→ XI(M )
+
+induce an injective Z-algebra homomorphism A(z)(Cn) ↪→ A (CQ). The exchange relations ensure that these assignments are compatible with mutation. And the integral basis of Ding– Xiao–Xu provides the algebraic independence. Then we can prove the injectivity. Comparing further with Theorem 3.8 of Reading–Stella and using the agreement between the cluster char-acters of rigid objects and the corresponding theta functions, we obtain Xδ = ϑind Γ H , where 
+
+Γ is the canonical cluster-tilting object and H is a homogeneous quasi-simple module with dimension vector δ. This gives a unified interpretation of the generalized exchange parameter, the character of a homogeneous regular object, and the theta function associated with the imaginary root. 2 GENERALIZED CLUSTER ALGEBRAS 4In Sections 2–4, we present the preliminaries. Throughout this paper, all generalized cluster algebras are understood to be normalized in the usual sense. In section 5, we construct the weighted character and proves the generalized exchange relations and the object–cluster variable correspondence. In section 6, we study the injective homomorphism induced by the embedding and explains the connection with the results of Reading–Stella. All categories in this paper are C-linear, and all cluster algebras are taken without coeffi-cient tuples in the usual sense. 
+
+# 2 Generalized cluster algebras 
+
+Generalized cluster algebras were introduced by Chekhov and Shapiro [4]. We use the version of Nakanishi [12] without an ordinary coefficient tuple; the parameters of the exchange polynomials still belong to the ground ring. Let L = Z[z1, . . . , z ℓ] and F = Frac (L)( x1, . . . , x r).Fix positive integers ri and reciprocal polynomials 
+
+Pi(u) = 
+
+> ri
+
+∑
+
+> s=0
+
+zi,s us ∈ L[u], zi, 0 = zi,r i = 1 , zi,s = zi,r i−s (1 ≤ i ≤ r).
+
+A generalized seed Σ = ( x, B ) consists of a transcendence basis x = ( x1, . . . , x r) and a skew-symmetrizable integer matrix B = ( bij ). Write [a]+ = max (a, 0) and ̂ yk = ∏ 
+
+> j
+
+xbjk  
+
+> j
+
+. Mutation in direction k is given by 
+
+x′ 
+
+> i
+
+= xi (i 6 = k), x′ 
+
+> k
+
+= x−1
+
+> k
+
+∏
+
+> j
+
+x[−bjk ]+
+
+> j
+
+
+
+> rk
+
+Pk(̂ yk),b′ 
+
+> ij
+
+=
+
+
+
+−bij , i = k or j = k, bij + rk
+
+(bik [−bkj ]+ + [ bik ]+bkj 
+
+), i, j 6 = k. 
+
+Expanding Pk, we can also express the mutation of cluster variables above as a polynomial exchange relation that is more convenient for comparison with exchange triangles: 
+
+xkx′ 
+
+> k
+
+=
+
+> rk
+
+∑
+
+> s=0
+
+zk,s 
+
+∏
+
+> j
+
+x[−bjk ]+
+
+> j
+
+  
+
+> rk−s
+
+∏
+
+> j
+
+x[bjk ]+
+
+> j
+
+
+
+> s
+
+In particular, when rk = 1 , we have Pk(u) = 1+ u and recover the binomial exchange relation of an ordinary coefficient-free cluster algebra; the key case in this paper is the three-term relation that arises when r1 = 2 . The coefficients satisfy zk,s = zk,r k −s, ensuring that two successive mutations in the same direction return to the original seed. Here, “coefficient-free” means only that there is no additional ordinary coefficient tuple; the parameters zk,s in the ground ring must still be retained. The L-subalgebra generated by all cluster variables obtained by iterated mutation along the r-regular tree with labels 1, . . . , r is denoted by A(Σ). These mutations are involutions and satisfy the generalized Laurent phenomenon [12]. Let R = diag (r1, . . . , r r); we define the type of a generalized cluster algebra to be the Cartan type of its right companion BR [13]. More 3 CLUSTER CATEGORIES 5explicitly, if Tr is the r-regular tree whose edges are labeled by 1, . . . , r , a generalized cluster pattern is a family Σ = {Σt = ( xt, B t)}t∈Tr , in which seeds at adjacent vertices are related by mutation in the corresponding direction. Thus 
+
+A(Σ) = L[xi;t | 1 ≤ i ≤ r, t ∈ Tr] ⊆ F .
+
+The family of matrices BtR mutates according to the ordinary exchange matrix rule; its Cartan companion therefore provides a consistent type convention. Below, we construct a generalized cluster pattern for R = diag (2 , 1, . . . , 1) of type Cn−1.
+
+# 3 Cluster categories 
+
+Let Q be a finite acyclic quiver, and set Db(Q) = Db(mod CQ). Its cluster category 
+
+CQ = Db(Q)/( τ −1[1]) is a Hom-finite 2-Calabi–Yau triangulated category [1, 9]. We write τ
+
+for the Auslander–Reiten translate and (−)[1] for the shift; see Keller [9] for the triangulated structure on the orbit category. The 2-Calabi–Yau property means that there are natural isomorphisms Hom CQ (X, Y ) ∼= D Hom CQ (Y, X [2]) , D = Hom C(−, C).
+
+Consequently, Ext 1(X, Y ) and Ext 1(Y, X ) are dual. An object M is called rigid if Ext 1(M, M ) = 0, and maximal rigid if it cannot be enlarged to a larger rigid direct sum. An object Γ is called cluster-tilting if add Γ = {M ∈ C Q | Ext 1 
+
+> CQ
+
+(Γ , M ) = 0 }.
+
+Every basic cluster-tilting object in CQ has exactly |Q0| indecomposable direct summands [1, 10]. Choose a basic cluster-tilting object Γ = ⊕mi=1 Γi and set 
+
+AΓ = End CQ (Γ[ −1]) , FΓ = Hom CQ (Γ[ −1] , −).
+
+Here mod AΓ denotes the category of finite-dimensional right modules, and FΓ : CQ → mod AΓ
+
+vanishes on add Γ. It further induces an equivalence 
+
+CQ/(Γ) ∼
+
+−→ mod AΓ,
+
+where (Γ) is the ideal of morphisms that factor through objects in add Γ [14]. Using a right add Γ-approximation triangle 
+
+Γ′′  
+
+> M
+
+−→ Γ′
+
+> Mf
+
+−→ M −→ Γ′′  
+
+> M
+
+[1] , Γ′ 
+
+> M
+
+, Γ′′  
+
+> M
+
+∈ add Γ,
+
+we define ind Γ M = [Γ ′ 
+
+> M
+
+] − [Γ ′′  
+
+> M
+
+] ∈ Ksplit  
+
+> 0
+
+(add Γ) ∼= Zm.
+
+The approximation property of f means that every morphism from an object in add Γ to M
+
+factors through f ; the index is independent of the chosen triangle [14]. Let Si be the simple 4 CLUSTER TUBES 6top of FΓ(Γ i[−1]) , and set 
+
+(BΓ)ij = dim Ext 1 
+
+> AΓ
+
+(Sj , S i) − dim Ext 1 
+
+> AΓ
+
+(Si, S j ).
+
+Throughout, we use right modules and the matrix sign convention above. If Pi = FΓ(Γ i[−1]) ,then Pi is an indecomposable projective right AΓ-module; the entry (BΓ)ij is the number of arrows from j to i minus the number of arrows from i to j in its Gabriel quiver. In particular, the Gabriel quiver records irreducible morphisms, not the dimensions of entire Hom spaces. For 
+
+e ∈ Zm
+
+> ≥0
+
+, let Gr e(FΓM ) denote the corresponding submodule Grassmannian, and let χ denote the topological Euler characteristic. Palu’s cluster character is 
+
+XM = xind Γ M ∑
+
+> e
+
+χ(Gr e(FΓM ))xBΓe, xa =
+
+> m
+
+∏
+
+> i=1
+
+xai 
+
+> i
+
+, X0 = 1 .
+
+It satisfies XM ⊕N = XM XN . In particular, if dim C Ext 1 
+
+> CQ
+
+(M, N ) = 1 , there are non-split triangles in the two directions 
+
+M −→ E −→ N −→ M [1] , N −→ E′ −→ M −→ N [1] .
+
+Writing their middle terms as E, E ′, we have 
+
+XM XN = XE + XE′ . (2) For these properties and the correspondence between indecomposable rigid objects and cluster variables, see [3, 14]. Denote the resulting ordinary coefficient-free cluster algebra by A(CQ).By the Caldero–Keller correspondence, this algebra is generated by the cluster characters of indecomposable rigid objects, while cluster-tilting objects correspond to clusters. The exchange matrix mutates under cluster-tilting mutation, so this definition is compatible with the choice of Γ. To compare with the usual quiver notation, for Q without loops or 2-cycles, define 
+
+(BQ)ij = #{arrows from i to j} − #{arrows from j to i}.
+
+The ordinary cluster algebra with this initial matrix is denoted by A(Q). Since we use right modules, BΓ as defined above has the opposite sign to the convention given directly by the arrow directions in the Gabriel quiver. For the canonical cluster-tilting object (CQ)[1] , the corresponding matrix can be written as BQop ; other cluster-tilting objects are obtained by mutation. Hence A(CQ) ∼= A(Qop ). Below, we need only the correspondence between the cate-gory and cluster characters, but keeping this sign convention in mind helps avoid inadvertently reversing the sign of the right-module matrix when embedding a non-homogeneous tube. 
+
+# 4 Cluster tubes 
+
+Let Tn be the category of finite-dimensional nilpotent representations of the cyclic quiver 
+
+1 → · · · → n → 1, with n > 1. Write (a, b ) for the indecomposable object whose quasi-socle is simple representation number a and whose quasi-length is b; the first coordinate is understood 4 CLUSTER TUBES 7modulo n, with (a, 0) = 0 and τ (a, b ) = ( a − 1, b ). The cluster tube 
+
+Cn = Db(Tn)/( τ −1[1]) 
+
+is also a Hom-finite 2-Calabi–Yau triangulated category [9, 17]. Its indecomposable rigid objects are precisely the objects (a, b ) with b ≤ n − 1. Every indecomposable object of Cn comes from 
+
+Tn, so we continue to write (a, b ) for its image. For X, Y ∈ T n, morphisms in the orbit category decompose as Hom Cn (X, Y ) ∼= Hom Tn (X, Y ) ⊕ D Hom Tn (Y, τ 2X). (3) The first summand consists of T -maps, and the second of D-maps. The composite of two T -maps is again a T -map, the composite of a T -map and a D-map is a D-map, and the composite of two D-maps is zero [2, 17]. These properties determine the submodule stratification used below. Throughout the following discussion, fix the basic maximal rigid object 
+
+T =
+
+> n−1
+
+⊕
+
+> i=1
+
+Ti, Ti = (1 , n − i).
+
+Every basic maximal rigid object has n − 1 direct summands [2, 17]. In Cn, we have [1] ∼= τ ,and hence Ti[−1] ∼= (2 , n − i). Unlike the cluster category CQ, Cn has no cluster-tilting objects; maximal rigid objects therefore take their place here. Let D = add T [−1] ∗ add T , where X ∗ Y consists of all objects M that fit into a triangle 
+
+X → M → Y → X[1] with X ∈ X , Y ∈ Y ; then D[1] = add T ∗ add T [1] . For the rigid objects under consideration, we need only the following three regions: 
+
+O = {(1 , b ) | 1 ≤ b ≤ n − 1},I = {(a, b ) | 2 ≤ a ≤ n − 1, a + b ≤ n},II = {(a, b ) | 2 ≤ a ≤ n, a + b ≥ n + 1 , b ≤ n − 1}.
+
+Together they comprise all indecomposable rigid objects. By Zhou and Zhu [17], D also contains objects of quasi-length at least n; these appear only when computing the middle terms of exchange triangles. Non-rigid objects do not enter the generalized character formula defined below. To describe the components of FT , we first record the Hom-space calculations. For 2 ≤
+
+i ≤ n − 1, fix a nonzero T -map ti−1 
+
+> i
+
+: Ti[−1] → Ti−1[−1] . For (a, b ) ∈ II , fix a nonzero T -map 
+
+f (a,b )1 : T1[−1] → (a, b ) and a nonzero D-map g11 : T1[−1] → T1[−1] ; write g(a,b )1 = f (a,b )1 g11 , and then define f (a,b ) 
+
+> i
+
+, g (a,b ) 
+
+> i
+
+along the chain Ti[−1] → T1[−1] . In region I, we need only the T -maps 
+
+f (a,b ) 
+
+> i
+
+starting at summand n − a − b + 2 . Composition of morphisms is written from right to left. 
+
+Lemma 4.1 ([17, Lemmas 2.2–2.3]) . For a rigid object (a, b ) and 1 ≤ i ≤ n − 1,
+
+dim C Hom Cn (Ti[−1] , (a, b )) = 
+
+
+
+2, (a, b ) ∈ II, 1 ≤ i ≤ n − a + 1 ,
+
+1, (a, b ) ∈ II, n − a + 2 ≤ i ≤ 2n − a − b, 
+
+1, (a, b ) ∈ I, n − a − b + 2 ≤ i ≤ n − a + 1 ,
+
+0, otherwise .5 CATEGORIFICATION OF A GENERALIZED CLUSTER ALGEBRA OF TYPE Cn−18
+
+Bases in the first three cases are, respectively, {f (a,b ) 
+
+> i
+
+, g (a,b ) 
+
+> i
+
+}, {g(a,b ) 
+
+> i
+
+}, and {f (a,b ) 
+
+> i
+
+}; an interval whose lower bound exceeds its upper bound is understood to be empty. 
+
+For example, when (a, b ) ∈ II , the two basis vectors at vertex 1 are f (a,b )1 , g (a,b )1 , and the right action of the loop satisfies 
+
+f (a,b )1 g11 = g(a,b )1 , g(a,b )1 g11 = 0 .
+
+It is this nilpotent loop of length 2 that singles out the stratum of submodules whose dimension vector has first entry 1; assigning the coefficient z to this stratum produces the middle term of the generalized exchange polynomial. We next record the geometric form of exchange pairs. If R is a rigid object with n − 2
+
+pairwise non-isomorphic indecomposable direct summands, and both R ⊕ M, R ⊕ M ∗ are basic maximal rigid objects, then M, M ∗ is called an exchange pair. The middle terms of its two exchange triangles both lie in add R.
+
+Proposition 4.2 ([17, Lemma 4.2]) . After interchanging M, M ∗ if necessary and interpreting the first coordinate modulo n, the exchange triangles fall into the following two cases. 1. If dim Ext 1 
+
+> Cn
+
+(M, M ∗) = 2 , then M = ( a, n − 1) , M ∗ = ( a + h, n − 1) , where 1 ≤ h ≤ n − 1.The two middle terms are 
+
+(a + h, n − h − 1) ⊕2, (a, h − 1) ⊕2.
+
+2. If dim Ext 1 
+
+> Cn
+
+(M, M ∗) = 1 , we may take M = ( a, b ) and M ∗ = ( a + h, b − h + i), where 
+
+1 ≤ b ≤ n − 2, 1 ≤ h ≤ b, 1 ≤ i ≤ n − b − 1. The two middle terms are 
+
+E = ( a, b + i) ⊕ (a + h, b − h), E′ = ( a + b + 1 , i − 1) ⊕ (a, h − 1) .
+
+We retain the convention (c, 0) = 0 .
+
+For example, one of the exchange triangles in the second case comes directly from the short exact sequence in Tn
+
+0 −→ (a, b ) −→ (a, b + i) ⊕ (a + h, b − h) −→ (a + h, b − h + i) −→ 0.
+
+In the first case, each middle term has multiplicity 2, so its cluster character should correspond to a monomial of degree 2; to obtain a three-term generalized exchange relation, however, we must also introduce a parameter z into the summands of the ordinary cluster character. 
+
+# 5 Categorification of a generalized cluster algebra of type Cn−1
+
+Set AT = End Cn (T [−1]) and FT = Hom Cn (T [−1] , −). Let Ksplit  
+
+> 0
+
+(add T ) denote the split Grothendieck group, freely generated by [T1], . . . , [Tn−1]. Identify it with Zn−1 via [Ti] 7 → αi.For M ∈ add T ∗ add T [1] , choose a right add T -approximation triangle 
+
+T ′′  
+
+> M
+
+−→ T ′ 
+
+> M
+
+−→ M −→ T ′′  
+
+> M
+
+[1] , T ′ 
+
+> M
+
+, T ′′  
+
+> M
+
+∈ add T, 5 CATEGORIFICATION OF A GENERALIZED CLUSTER ALGEBRA OF TYPE Cn−19and define ind T M = [ T ′ 
+
+> M
+
+] − [T ′′  
+
+> M
+
+]. This definition is independent of the choice of triangle [14, 17]. For example, the index of Ti is αi. More generally, Zhou and Zhu [17, Lemma 3.2] gives the following explicit formula for rigid objects: ind T (a, b ) = 
+
+
+
+α1 − αn−a+1 − α2n−a−b, a + b ≥ n + 1 ,αn−a−b+1 − αn−a+1 , a + b ≤ n. (4) Here we use the convention αn = 0 ; when a = 1 , the formula gives ind T (1 , b ) = αn−b.
+
+FT vanishes on add T and induces an equivalence on DD/( T ) ∼
+
+−→ mod AT ,
+
+where (T ) is the ideal of morphisms factoring through add T [17]. Let P Ti = FT (Ti[−1]) , and let Si be the simple top of P Ti . For a right AT -module N , set dim N =
+
+> n−1
+
+∑
+
+> i=1
+
+dim C Hom AT (P Ti , N ) αi.
+
+Thus Lemma 4.1 also gives the dimension vector of FT (a, b ). Under the conventions of the preceding section, the matrix BT is 
+
+BT =
+
+
+
+0 −11 0 −11 0 . . .. . . . . . −11 0
+
+
+
+.
+
+Let r = (2 , 1, . . . , 1) and R = diag (2 , 1, . . . , 1) , and take 
+
+P1(u) = 1 + zu + u2, Pi(u) = 1 + u (i > 1) .
+
+The Cartan companion of BT R is of type Cn−1. Write z0 = z2 = 1 , z 1 = z. For an indecom-posable rigid object M , define 
+
+X(z) 
+
+> M
+
+= xind T M ∑
+
+> e∈Zn−1
+> ≥0
+
+ze1 χ(Gr e(FT M ))xBT e, X(z)0 = 1 . (5) where xa = ∏n−1 
+
+> i=1
+
+xai 
+
+> i
+
+. The dimension of FT M at vertex 1 is at most 2, so all coefficients in (5) are defined. For direct sums of rigid objects, we set X(z)  
+
+> M⊕N
+
+= X(z) 
+
+> M
+
+X(z) 
+
+> N
+
+. This differs from the formula of Zhou and Zhu [17] by the weight z assigned to submodules whose dimension vector has first entry 1; setting z = 0 recovers their formula. We now give the submodule calculation for this new stratum separately. To simplify notation, let 
+
+X(a, b ) = {(a, k ) | 0 ≤ k ≤ min (n − a, b )},
+
+Y(a, b ) = {(a + b − n + 1 , l ) | 0 ≤ l ≤ 2n − a − b − 1}.5 CATEGORIFICATION OF A GENERALIZED CLUSTER ALGEBRA OF TYPE Cn−110 For (a, b ) ∈ II , denote the submodule of FT (a, b ) consisting of all D-maps by Z(a, b ). By Lemma 4.1, dim Z(a, b ) = 
+
+> 2n−a−b
+
+∑
+
+> i=1
+
+αi. (6) This submodule starts with the vector g(a,b )1 at vertex 1 and extends along the chain in the Gabriel quiver, so (6) also directly reflects its shape. 
+
+Lemma 5.1. For M = ( a, b ) ∈ I, every submodule has a dimension vector with first entry 0,and 
+
+χ(Gr e(FT M )) = #{X ∈ X(a, b ) | dim FT X = e}.
+
+For M = ( a, b ) ∈ II , the cases e1 = 0 , 1, 2 give 
+
+χ(Gr e(FT M )) = 
+
+
+
+#{(X, Y ) ∈ X(a, b ) × Y(a, b ) | dim (FT X ⊕ FT Y ) = e}, e1 = 0 ,
+
+#{X ∈ X(a, b ) | dim (FT X ⊕ Z(a, b )) = e}, e1 = 1 ,
+
+1, e = dim FT M, 
+
+0, e1 = 2 , e 6 = dim FT M. 
+
+where e1 denotes the component of the vector e in the α1 direction. Proof. Region I and the part of region II with e1 = 0 are covered by the submodule stratifica-tion of Zhou and Zhu [17, Lemma 3.4]. In the latter case, each stratum associated with a pair 
+
+(X, Y ) is either a point or isomorphic to P1 with one point removed, and hence has Euler char-acteristic 1. This also explains why the formula counts strata, rather than arbitrarily chosen representative submodules. Suppose that (a, b ) ∈ II . At vertex 1, the space of FT M is spanned by f (a,b )1 , g (a,b )1 , and the right action of the loop is given by f (a,b )1 7 → g(a,b )1 7 → 0. If a submodule has first component 
+
+2, it contains the entire space at vertex 1; since f (a,b )1 generates FT M , this submodule must be 
+
+FT M itself. If the first component is 1, the one-dimensional space at vertex 1 must be stable under the loop action, and is therefore precisely Cg(a,b )1 . Acting along the chain shows that the submodule must contain Z(a, b ). The remaining optional T -map part extends from some vertex to the end of the chain, and is thus isomorphic to some FT (a, k ) with 0 ≤ k ≤ n − a. Each such 
+
+k determines a unique submodule whose dimension vector is exactly dim (FT (a, k ) ⊕ Z(a, b )) .This gives the row for e1 = 1 and completes the proof. Lemma 5.1 divides the sum in (5) into three parts: e1 = 0 corresponds to the ordinary character formula in the literature, e1 = 1 gives the new terms involving z, and for e1 = 2 ,the only possibility is the whole module. This decomposition facilitates both the derivation of explicit formulas and the verification of the generalized exchange relations. 
+
+Proposition 5.2. Let (a, b ) be an indecomposable rigid object. If (a, b ) ∈ O, then X(z)(a,b ) =
+
+xind T (a,b ); if (a, b ) ∈ I, then 
+
+X(z)(a,b ) = xind T (a,b ) ∑
+
+> X∈X(a,b )
+
+xBT dim FT X .5 CATEGORIFICATION OF A GENERALIZED CLUSTER ALGEBRA OF TYPE Cn−111 
+
+If (a, b ) ∈ II , then 
+
+X(z)(a,b ) = xind T (a,b )
+
+( ∑ 
+
+> X∈X(a,b )
+> Y∈Y(a,b )
+
+xBT dim (FT X⊕FT Y )
+
++ z ∑
+
+> X∈X(a,b )
+
+xBT dim (FT X⊕Z(a,b )) 
+
++ xBT dim FT (a,b )
+
+)
+
+.
+
+Proof. For O, Lemma 4.1 gives FT (a, b ) = 0 . The identities in regions I and II follow by substituting the Euler characteristics from Lemma 5.1 into (5). The three rows correspond to 
+
+e1 = 0 , 1, 2, respectively; the coefficients z0, z 1, z 2 are 1, z, 1, respectively. This intermediate sum separates the geometric information from the final Laurent polyno-mial: the submodule stratification determines the number of terms and which stratum carries 
+
+z, while the index and BT convert each dimension vector into a Laurent monomial. Thus the explicit formula below requires only collecting these monomials within each stratum, without classifying the submodules again. For the explicit calculations that follow, set xn = 1 (a convention used only in the formulas below), and put 
+
+St =
+
+> t
+
+∑
+
+> j=0
+
+1
+
+xj+1 xj+2 
+
+.
+
+Proposition 5.3. For an indecomposable rigid object (a, b ), we have 
+
+X(z)(a,b ) =
+
+
+
+xn−b, (a, b ) ∈ O, 
+
+> b
+
+∑
+
+> k=0
+
+xn−a−b+1 xn−a+2 
+
+xn−a−k+1 xn−a−k+2 
+
+, (a, b ) ∈ I, x1xK+2 xL+2 
+
+( 1
+
+x21
+
++ zx1
+
+SK + SK SL
+
+)
+
+, (a, b ) ∈ II, 
+
+where K = n − a, L = 2 n − a − b − 1.Proof. The calculations in regions O, I , as well as the two parts in region II that do not involve 
+
+z, are those of Zhou and Zhu [17, Section 3]. For (a, b ) ∈ II , it remains only to compute the new part in which the dimension vector has first entry 1. By Lemma 5.1 and (6), this part equals 
+
+z x ind T (a,b )
+
+> K
+
+∑
+
+> k=0
+
+xBT dim (FT (a,k )⊕Z(a,b )) 
+
+= z x1
+
+xK+1 xL+1 
+
+xL+1 xL+2 
+
+x1
+
+> K
+
+∑
+
+> k=0
+
+xK+1 xK+2 
+
+xk+1 xk+2 
+
+= z x K+2 xL+2 
+
+> K
+
+∑
+
+> k=0
+
+1
+
+xk+1 xk+2 
+
+= z x K+2 xL+2 SK .5 CATEGORIFICATION OF A GENERALIZED CLUSTER ALGEBRA OF TYPE Cn−112 The last expression is exactly the term involving z in the stated explicit formula. We retain the notation for exchange pairs from Proposition 4.2: when the extension space has dimension 1, the two middle terms are E, E ′; when its dimension is 2, write 
+
+M = ( a, n −1) , M ∗ = ( a+h, n −1) , U = ( a+h, n −h−1) , V = ( a, h −1) , 1 ≤ h ≤ n−1.
+
+The middle terms of the exchange triangles are then U ⊕2, V ⊕2, so their cluster characters are 
+
+(X(z) 
+
+> U
+
+)2 and (X(z) 
+
+> V
+
+)2, respectively. 
+
+Theorem 5.4. The exchange pairs above satisfy 
+
+X(z) 
+
+> M
+
+X(z)  
+
+> M∗
+
+=
+
+
+
+X(z) 
+
+> E
+
++ X(z) 
+
+> E′
+
+, dim Ext 1(M, M ∗) = 1 ,
+
+(X(z) 
+
+> U
+
+)2 + zX (z) 
+
+> U
+
+X(z) 
+
+> V
+
++ ( X(z) 
+
+> V
+
+)2, dim Ext 1(M, M ∗) = 2 .
+
+Proof. This follows by a case-by-case verification using Proposition 5.3. As a direct example of the three-term relation, take n = 4 , M = (1 , 3) , and M ∗ = (2 , 3) .Then U = (2 , 2) and V = (1 , 0) = 0 . The explicit formula gives 
+
+X(z) 
+
+> M
+
+= x1,X(z)  
+
+> M∗
+
+= 1
+
+x1
+
++ zS 2 + x1S22 ,X(z) 
+
+> U
+
+= x1S2, X(z) 
+
+> V
+
+= 1 ,S2 = 1
+
+x1x2
+
++ 1
+
+x2x3
+
++ 1
+
+x3
+
+.
+
+Hence 
+
+X(z) 
+
+> M
+
+X(z)  
+
+> M∗
+
+= 1 + zX (z) 
+
+> U
+
++ ( X(z) 
+
+> U
+
+)2.
+
+This example also shows that the exchange triangles account only for the square term and the constant term; the middle term zX (z) 
+
+> U
+
+comes from the submodule strata in (5) whose dimension vectors have first entry 1.
+
+Theorem 5.5. Let ΣT be the cluster pattern with initial seed (( x1, . . . , x n−1), B T ) and mutation data r, (Pi) as above. Then M 7 → X(z) 
+
+> M
+
+gives a bijection between indecomposable rigid objects and the cluster variables of ΣT , maximal rigid mutation is compatible with seed mutation, and 
+
+A(z)(Cn) := Z[z][X(z) 
+
+> M
+
+| M indecomposable rigid ] = A(ΣT ).
+
+Thus this is a generalized cluster algebra of type Cn−1.Proof. Proposition 5.3 gives X(z) 
+
+> Ti
+
+= xi. By Zhou and Zhu [17], every indecomposable rigid object can be completed to a basic maximal rigid object, and all such objects can be obtained from T by a finite sequence of mutations. Transport the labels of the direct summands along mutations. Every basic maximal rigid object has exactly one summand of quasi-length n − 1,which we label as direction 1. Proposition 4.2 shows that the extension space has dimension 2
+
+only when exchanging in this direction, and dimension 1 in all other directions. The degrees in these directions are therefore precisely 2, 1, . . . , 1.6 CLUSTER TUBE EMBEDDINGS AND THE INDUCED HOMOMORPHISMS 13 Suppose that the direct summands of a maximal rigid object have already been matched with the variables of a generalized seed. Mutating at the k-th summand replaces it with the other complement of the same almost complete object. If k = 1 , the three-term exchange relation in Theorem 5.4 agrees with P1(u) = 1 + zu + u2; if k > 1, the binomial relation agrees with Pk(u) = 1 + u. Under maximal rigid mutation, the exchange matrix changes according to the generalized exchange matrix rule, as follows from the companion-matrix descriptions in Nakanishi and Rupel [13], Zhou and Zhu [17]. Thus the seeds and objects continue to correspond at each mutation step. Since every basic maximal rigid object can be reached in this way, each X(z) 
+
+> M
+
+is a cluster variable of ΣT ; conversely, every cluster variable is obtained from the initial seed by finitely many mutations and must therefore be some X(z) 
+
+> M
+
+. This proves surjectivity onto the set of cluster variables and the correspondence of seeds. If X(z) 
+
+> M
+
+= X(z) 
+
+> N
+
+, setting z = 0 and applying the object–cluster variable correspondence of Zhou and Zhu [17] gives M ∼= N , so the map is also injective. Both algebras are generated over Z[z] by the corresponding cluster variables, and are therefore equal. Finally, the Cartan companion of BT R determines the type to be 
+
+Cn−1.
+
+# 6 Cluster tube embeddings and the induced homomorphisms 
+
+Let Q be a connected acyclic quiver of affine type other than the Kronecker quiver. Fix a non-homogeneous tube T of rank n > 1 in mod CQ, and label its quasi-simple modules consecutively by Ea so that τ E a ∼= Ea−1. Write E(b) 
+
+> a
+
+for the indecomposable module with quasi-socle Ea and quasi-length b, and set E(0)  
+
+> a
+
+= 0 . The first coordinate is always understood modulo n; when inequalities are involved, choose representatives 1 ≤ a ≤ n. With this notation, the Auslander–Reiten translate in the tube still satisfies τ E (b) 
+
+> a
+
+= E(b)
+
+> a−1
+
+.The standardness of the non-homogeneous tube gives a fully faithful exact functor 
+
+˜I : Tn −→ mod CQ, (a, b ) 7 −→ E(b) 
+
+> a
+
+.
+
+whose essential image is the chosen tube. In particular, it preserves Hom spaces, extension spaces within the tube, and short exact sequences [16]. Since it is compatible with τ , the derived functor obtained by applying it termwise commutes with τ −1[1] and hence descends to the orbit categories, yielding a fully faithful triangle functor 
+
+I : Cn −→ C Q, (a, b ) 7 −→ E(b) 
+
+> a
+
+. (7) Its compatibility with the triangulated structures can also be checked directly from the con-struction of the orbit categories [9]. More explicitly, for any X, Y ∈ C n, s ∈ Z, this functor induces Hom Cn (X, Y [s]) ∼
+
+−→ Hom CQ (I(X), I(Y )[ s]) .
+
+Thus I preserves rigid objects and extension dimensions, and sends the two exchange triangles of Proposition 4.2 to triangles in CQ with the same decompositions of their middle terms. This preservation property is the first step in comparing the exchange relations in the two cluster algebras; for two-dimensional extension spaces, we must also identify the image of z in the 6 CLUSTER TUBE EMBEDDINGS AND THE INDUCED HOMOMORPHISMS 14 target algebra. Let δ be the minimal positive imaginary root of Q. For a quasi-simple module S in a homogeneous tube with dimension vector δ, the cluster character XS is independent of the choice of S; we denote it by Xδ. By the difference property of Ding et al. [5, Theorem 8.2], 
+
+XI(a,n ) = Xδ + XI(a+1 ,n −2) . (8) The basis theorem in the same paper also ensures that Xδ ∈ A (CQ).
+
+Lemma 6.1. Suppose that 1 ≤ a, 1 ≤ h, a +h ≤ n, and use the conventions I(c, 0) = 0 , X 0 = 1 
+
+below. Then 
+
+XI(a,n −1) XI(a+h,n −1) = X2 
+
+> I(a,h −1)
+
++ XI(a,n +h−1) XI(a+h,n −h−1) . (9) 
+
+For h ≥ 2, we also have 
+
+XI(a,h −1) XI(a,n ) = XI(a,n +h−1) + XI(a,n −1) XI(a+1 ,h −2) ,XI(a,h −1) XI(a+1 ,n −2) = XI(a+h,n −h−1) + XI(a,n −1) XI(a+1 ,h −2) . (10) 
+
+Proof. These are three special cases of Ding et al. [5, Theorem 7.1]. For the first identity, take 
+
+i = a, j = a + h, k = n − 1, m = 0 , ` = n − 1, r = n in that theorem; for the first line of the second identity, take i = a, j = a, k = h − 1, m = 1 , ` = 0 , r = n, and for its second line, take 
+
+i = a, j = a + 1 , k = h − 1, m = 0 , ` = n − 2, r = n. Multiplicativity on direct sums removes the terms of quasi-length zero and yields the stated formulas. 
+
+Lemma 6.2. Under the assumptions of Lemma 6.1, 
+
+XI(a,n +h−1) = XδXI(a,h −1) + XI(a+h,n −h−1) . (11) 
+
+Proof. If h = 1 , then I(a, h − 1) = 0 , and (11) is precisely (8). If h ≥ 2, subtracting the two lines of (10) cancels the common product on the right-hand sides and gives 
+
+XI(a,h −1) 
+
+(XI(a,n ) − XI(a+1 ,n −2) 
+
+) = XI(a,n +h−1) − XI(a+h,n −h−1) .
+
+By (8), the difference in parentheses is exactly Xδ, which yields the desired identity. The first identity in Lemma 6.1 has only two terms on the right-hand side, but the object of quasi-length n + h − 1 appearing there is generally not rigid. Lemma 6.2 uses Xδ from the non-homogeneous tubes to rewrite its character in the form needed for the three-term generalized exchange relation. 
+
+Theorem 6.3. Suppose that 1 ≤ a, 1 ≤ h, a + h ≤ n. In the ordinary affine cluster algebra 
+
+A(CQ), we have 
+
+XI(a,n −1) XI(a+h,n −1) = X2 
+
+> I(a,h −1)
+
++ XδXI(a,h −1) XI(a+h,n −h−1) + X2
+
+> I(a+h,n −h−1)
+
+. (12) 
+
+Proof. Substitute the expansion of XI(a,n +h−1) from (11) into the right-hand side of (9) and multiply term by term. 6 CLUSTER TUBE EMBEDDINGS AND THE INDUCED HOMOMORPHISMS 15 After rotating the first coordinate in the tube, this identity covers all exchange pairs with two-dimensional extension spaces; the relation for one-dimensional extension spaces is given by (2). 
+
+Theorem 6.4. The assignments 
+
+z 7 −→ Xδ, X(z) 
+
+> M
+
+7 −→ XI(M ) (M indecomposable rigid )
+
+induce an injective Z-algebra homomorphism 
+
+ϕ : A(z)(Cn) ↪→ A (CQ).
+
+Proof. We need to show that the initial assignments extend to an injective homomorphism of fraction fields. By the integral basis of Ding et al. [5, Corollary 8.3], the elements 
+
+Xt0 
+
+> δ
+
+Xt1 
+
+> I(T1)
+
+· · · Xtn−1 
+
+> I(Tn−1)
+
+= XS⊕t0 ⊕I(T1)⊕t1 ⊕···⊕ I(Tn−1)⊕tn−1 (ti ∈ Z≥0)
+
+form part of this basis and are therefore linearly independent. Multiplicativity of the cluster character on direct sums shows that Xδ, X I(T1), . . . , X I(Tn−1) are algebraically independent over 
+
+Z. Therefore, it follows by Theorem 6.3 that this statement holds. Choose the canonical cluster-tilting object Γ in CQ, and let M, M ∗, U, V have the same meanings as in Theorem 5.4. Choose a quasi-simple module S in a homogeneous tube in CQ
+
+with dimension vector δ. By Reading and Stella [15, Theorem 3.8], in the affine coefficient-free setting we have 
+
+ϑind Γ I(M )ϑind Γ I(M ∗) = ϑ2   
+
+> ind ΓI(U)
+
++ ϑind Γ S ϑind Γ I(U )ϑind Γ I(V ) + ϑ2  
+
+> ind ΓI(V)
+
+,
+
+where ϑg denotes the theta function in the direction of the vector g, as in [15]. We immediately obtain the following corollary. 
+
+Corollary 6.5. Xδ = ϑind Γ S .
+
+The use of AI 
+
+ChatGPT was used to assist in locating the relevant references [14] and [3]. ChatGPT was also used to assist with computations in Lemma 5.1, Lemma 6.1, and Lemma 6.2. After the manuscript was completed, ChatGPT was used to help verify the results and identify grammatical errors. The main ideas and mathematical arguments of the paper were developed by human. 
+
+Acknowledgments 
+
+I thank my advisor Jie Xiao for fruitful guidance, and I am grateful to Heehyun Lee and Zunci Xu for helpful discussions. REFERENCES 16 
+
+# References 
+
+[1] Aslak Bakke Buan, Robert J. Marsh, Markus Reineke, Idun Reiten, and Gordana Todorov. Tilting theory and cluster combinatorics. Advances in Mathematics , 204(2):572–618, 2006. [2] Aslak Bakke Buan, Bethany R Marsh, and Dagfinn F Vatne. Cluster structures from 2-calabi–yau categories with loops. Mathematische Zeitschrift , 265(4):951–970, 2010. [3] Philippe Caldero and Bernhard Keller. From triangulated categories to cluster algebras II. Annales Scientifiques de l’École Normale Supérieure , 39(6):983–1009, 2006. [4] Leonid Chekhov and Michael Shapiro. Teichmuller spaces of riemann surfaces with orbifold points of arbitrary order and cluster variables. International Mathematics Research Notices ,2014(10):2746–2772, 2014. [5] Ming Ding, Jie Xiao, and Fan Xu. Integral bases of cluster algebras and representations of tame quivers. Algebras and Representation Theory , 16(2):491–525, 2013. [6] Sergey Fomin and Andrei Zelevinsky. Cluster algebras I: Foundations. Journal of the American Mathematical Society , 15(2):497–529, 2002. [7] Changjian Fu, Shengfei Geng, and Pin Liu. Cluster algebras arising from cluster tubes ii: The caldero-chapoton map. Journal of Algebra , 544:228–261, 2020. [8] Mark Gross, Paul Hacking, Sean Keel, and Maxim Kontsevich. Canonical bases for cluster algebras. Journal of the American Mathematical Society , 31(2):497–608, 2018. [9] Bernhard Keller. On triangulated orbit categories. Documenta Mathematica , 10:551–581, 2005. [10] Bernhard Keller. Cluster algebras, quiver representations and triangulated categories. 
+
+arXiv preprint arXiv:0807.1960 , 2008. [11] Daniel Labardini-Fragoso and Lang Mou. Gentle algebras arising from surfaces with orb-ifold points of order 3, part i: Scattering diagrams. Algebras and Representation Theory ,27(1):679–722, 2024. [12] Tomoki Nakanishi. Cluster algebras and scattering diagrams, part i. basics in cluster algebras. arXiv preprint arXiv:2201.11371 , 2022. [13] Tomoki Nakanishi and Dylan Rupel. Companion cluster algebras to a generalized cluster algebra. Travaux Mathématiques , 24:129–149, 2016. [14] Yann Palu. Cluster characters for 2-calabi–yau triangulated categories. Annales de l’Institut Fourier , 58(6):2221–2248, 2008. [15] Nathan Reading and Salvatore Stella. Theta functions in acyclic affine type. arXiv preprint arXiv:2603.23429 , 2026. [16] Claus Michael Ringel. Tame Algebras and Integral Quadratic Forms , volume 1099 of 
+
+Lecture Notes in Mathematics . Springer, 1984. REFERENCES 17 [17] Yu Zhou and Bin Zhu. Cluster algebras arising from cluster tubes. Journal of the London Mathematical Society , 89(3):703–723, 2014.

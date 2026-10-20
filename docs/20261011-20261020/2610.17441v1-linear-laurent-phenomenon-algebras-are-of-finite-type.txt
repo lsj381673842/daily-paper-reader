@@ -1,0 +1,704 @@
+Title: Linear Laurent phenomenon algebras are of finite type
+
+URL Source: https://arxiv.org/pdf/2610.17441v1
+
+Published Time: Wed, 14 Oct 2026 03:58:18 GMT
+
+Number of Pages: 16
+
+Markdown Content:
+# Linear Laurent phenomenon algebras are of finite type 
+
+Oliver Daisey 
+
+oliverjdaisey@gmail.com 
+
+Abstract 
+
+Laurent phenomenon algebras generalise cluster algebras by allowing irreducible exchange polynomials in place of binomials. Lam and Pylyavskyy proved finite type for those arising from graphs and conjectured that the same holds for every Laurent phenomenon algebra admitting a linear seed. We prove this conjecture over an arbitrary unique factorisation domain. Our proof constructs a nonzero element of the upper algebra divisible by every cluster variable. Comparing noninitial cluster variables with the prime factors of this element in the initial Laurent ring bounds the number of cluster variable classes and yields a finite normalised mutation pattern. 
+
+# Contents 
+
+1 Introduction 12 Preliminaries 33 The upper algebra and polynomial residues 64 Linear seeds and their principal minors 85 Divisibility and finite type 12 
+
+# 1 Introduction 
+
+Laurent phenomenon algebras (LP algebras) were introduced by Lam and Pylyavskyy in 2012 [LP16a] to generalise Fomin and Zelevinsky’s cluster algebras. Introduced in [FZ02], cluster algebras provide a combinatorial framework for studying total positivity and canonical bases. Their generators are grouped into clusters, and mutation exchanges one variable at a time using an exchange binomial. Among the central results of the theory are the Laurent phenomenon and the finite-type classification by Dynkin diagrams [FZ03]. LP algebras allow arbitrary irreducible exchange polynomials in place of binomials. This greater freedom retains the Laurent phenomenon, but makes the mutation rule and the 1arXiv:2610.17441v1 [math.CO] 12 Oct 2026 question of finite type more delicate. In rank two, Lam and Pylyavskyy give a complete finite-type classification [LP16a, Theorem 6.4]. In higher rank, they prove finite type for the graph LP algebras, whose initial exchange polynomials have independent constant terms and variable coefficients in {0, 1} [LP16b]. They conjecture more generally that every LP algebra admitting a linear seed is of finite type [LP16b, Section 1.7 and Conjecture 7.5]. In this paper, we prove this conjecture. We set the notation S = ( x, f ) for a seed and write a linear initial exchange polynomial as 
+
+f ℓ = aℓ 
+
+> 0
+
++ ∑
+
+> t̸=ℓ
+
+aℓt xt, aℓt ∈ A, (1.1) where A is a unique factorisation domain. Here, and throughout, “linear” means total degree at most one in the cluster variables. This includes irreducible constant exchange polynomials. The coefficients may vanish or satisfy relations, provided that the resulting polynomials satisfy the seed axioms. 
+
+Remark 1.1. One might try to prove the result first for generic coefficients and then introduce relations. However, specialisation can introduce common factors in the cancellation step of mutation and change the denominators of the exchange Laurent polynomials. A proof for the generic case therefore does not automatically give a proof for all linear seeds. To state our result more precisely, put 
+
+zℓ = f ℓ
+
+xℓ
+
+, Cℓt =
+
+> 
+
+aℓt ℓ̸ = t, 
+
+0 ℓ = t, M = diag( z1, . . . , z n) − C, YI = det MI,I . (1.2) We set Y∅ = 1. The symbols zℓ denote ordinary ratios of exchange polynomials to their corresponding cluster variables; they need not be the variables obtained by mutating xℓ,which use the exchange Laurent polynomials. The minors YI are weighted generalisations of Lam and Pylyavskyy’s graph LP polynomials [LP16b, Section 4.2, Proposition 4.5]. Write 
+
+U = ⋂ 
+
+> T
+
+L(T ) for the upper LP algebra, where the intersection is over the seeds in the mutation pattern of S.
+
+Theorem 1.2. Every linear LP algebra over a unique factorisation domain is of finite type. More precisely, for a linear seed (1.1) , the following hold. 1. Every cluster variable not associated over A to an initial variable divides a nonzero YI
+
+in U.2. Let Q denote the product of all nonzero principal minors of M , that is, 
+
+Q = ∏ 
+
+> ∅̸=I⊆[n]
+> YI̸=0
+
+YI . (1.3) 
+
+Set H = ( x1 · · · xn)Q. Then H/v ∈ U for every cluster variable v.
+
+23. If s is the number of distinct irreducible factors of Q in A[x±11 , . . . , x ±1 
+
+> n
+
+], up to units of this Laurent ring, then there are at most n + s cluster-variable classes up to A× and at most (n+sn
+
+> )
+
+seed-equivalence classes. These admit a finite normalisation. 
+
+We first recall the basic definitions given in [LP16a], taking care to distinguish ordinary exchange polynomials, exchange Laurent polynomials, and choices of coefficient units. Sec-tion 3 shows that cluster variables are prime as elements of the upper algebra, and constructs polynomial residues along them. Section 4 uses the directed coefficient graph to detect vanishing minors of the matrix M . In Section 5, an argument based on the maximum degree of the polynomial residues is used to prove Theorem 1.2. 
+
+# 2 Preliminaries 
+
+We first recall the basic definitions. A more detailed treatment is available in [LP16a]. Let A
+
+be a commutative unique factorisation domain, let K = Frac( A), and let F = K(x1, . . . , x n), where n ≥ 1. Examples of coefficient rings include Z, polynomial rings over Z or a field, and their localisations. We impose no restriction on the characteristic. We write g ∼A h and say that g and h are associated if g = uh for some u ∈ A×.
+
+## 2.1 Seeds and exchange Laurent polynomials 
+
+Definition 2.1 (Seed) . A seed is a tuple S = ( x, f ), where x = {x1, . . . , x n} is a set of algebraically independent generators of F over K, and f = {f 1, . . . , f n} ⊂ A[x1, . . . , x n]satisfies: (LP1) Each f ℓ is irreducible and is not divisible by a cluster variable. (LP2) The polynomial f ℓ does not involve xℓ.Here irreducible means nonzero, a nonunit, and not a product of two nonunits. We call x the 
+
+cluster , its elements cluster variables , and the f ℓ exchange polynomials . The rank of the seed is n.The pairs ( xℓ, f ℓ) are considered unordered, but their correspondence is part of the data. We use labels when recording mutation sequences. 
+
+Definition 2.2 (Exchange Laurent polynomials) . The exchange Laurent polynomial associ-ated to f ℓ has the form ̂
+
+f ℓ = f ℓ ∏
+
+> t̸=ℓ
+
+x−eℓt  
+
+> t
+
+, eℓt ∈ Z≥0. (2.1) The exponents are uniquely determined by requiring, for every t̸ = ℓ, that ̂
+
+f ℓ  
+
+> ∣∣∣xt←ft/ξ
+
+∈ A[x±11 , . . . , x ±1
+
+> t−1
+
+, ξ ±1, x ±1
+
+> t+1
+
+, . . . , x ±1 
+
+> n
+
+]3and that this element is not divisible by f t in that ring. Equivalently, eℓt is the largest power of f t dividing f ℓ|xt←f t/ξ in that Laurent ring. The existence and uniqueness of these Laurent polynomials are established in [LP16a, Lemmas 2.3– 2.4]. 
+
+Lemma 2.3. If eℓt > 0, then f t does not involve xℓ.Proof. Write f ℓ = ∑ 
+
+> r≥0
+
+brxrt , with br independent of xt. By (LP1), b0̸ = 0. Divisibility of  
+
+> ∑
+> r
+
+br(f t)rξ−r by f t implies divisibility of its constant coefficient b0. This divisibility can be checked in the polynomial ring, since localising at coordinate variables does not invert any factor of f t. But b0 is independent of xℓ by (LP2). Additivity of polynomial degree over a domain shows that its factor f t is also independent of xℓ.For a nonzero Laurent polynomial G in a cluster q, we shall use the notation pol q(G) = G ∏
+
+> j
+
+q−mj 
+
+> j
+
+, mj = min {exponent of qj in a monomial of G}. (2.2) This is the unique coordinate-monomial multiple of G which is polynomial and has no coordinate factor; in other words, it is the device that normalises exchange Laurent polynomials to exchange polynomials. In particular, it does not rescale coefficients. 
+
+## 2.2 Mutation 
+
+The important difference from the cluster setting is that an LP exchange relation uses ̂ f i,and the subsequent exchange polynomials are defined only up to coefficient units. 
+
+Definition 2.4 (Mutation) . Mutation at index i replaces S by Si = ( yi, fi). The procedure operates as follows. The cluster is 
+
+yi = {x1, . . . , x i−1, y i, x i+1 , . . . , x n}, xiyi =̂ f i.
+
+We refer to the variables xi, yi as mutation partners . We set f ii = f i. For ℓ̸ = i, if f ℓ is independent of xi, we take f ℓi ∼A f ℓ. Otherwise, we perform the following three steps: 1. Substitution. Put 
+
+Z =̂ f i
+
+> ∣∣∣xℓ←0
+
+, G = f ℓ∣∣∣xi←Z/y i
+
+.
+
+2. Cancellation. In the Laurent ring in the new coordinates, take G and remove all occurrences of each prime factor of Z.3. Normalisation. Take the polynomial representative (2.2) of the result. This gives f ℓi up to a unit of A.4Lemma 2.3 ensures that ̂ f i has no negative power of xℓ in the substitution step. Moreover, 
+
+Z̸ = 0 because f i has no factor xℓ. The cancellation removes entire prime powers occurring in G, not merely the powers occurring in a single greatest common divisor with Z.We write 
+
+Ss1··· sk = μsk ◦ · · · ◦ μs1 (S)and denote the exchange polynomial at position ℓ by f ℓs1··· sk . When needed, ys1··· sk denotes the variable inserted by the final mutation. Equality after a mutation sequence will be stated either for specified representatives or up to seed equivalence. 
+
+Proposition 2.5 (Basic mutation properties) . Mutation produces a valid seed and is reversible with suitable choices of units. Moreover, f ℓ depends on xi if and only if f ℓi depends on yi,and ̂ f ii =̂ f i.Proof. These are the mutation properties established in [LP16a, Section 2.2, in particular Lemma 2.11 and Propositions 2.15–2.16]. 
+
+## 2.3 LP algebras, equivalence, and finite type 
+
+Definition 2.6 (Seed equivalence) . Two seeds are equivalent if, after appropriately matching cluster variables to exchange polynomials in each seed, corresponding variables and exchange polynomials are associated over A as elements of F. We write [ S] for the equivalence class of 
+
+S.When coordinates have been rescaled, their polynomial expressions are interpreted in the common ambient field. Mutation respects this equivalence [LP16a, Lemma 3.1]. 
+
+Definition 2.7 (Laurent phenomenon algebra) . A Laurent phenomenon algebra A = ( A, S)consists of a connected mutation pattern of seeds S in F, closed under mutation with specified unit choices, together with the A-subalgebra A ⊆ F generated by its cluster variables. The notation A(S) indicates a chosen initial seed S in this pattern. Equivalently one may first work with the mutation class up to seed equivalence. Multiplying generators by coefficient units does not change the generated A-algebra. Connectedness excludes a disjoint union of unrelated mutation classes. 
+
+Proposition 2.8 (Laurent phenomenon) . For any seed T of an LP algebra A, every cluster variable is an element of L(T ). In particular, A ⊆ L (T ).Proof. This is [LP16a, Theorem 5.1]. 
+
+Definition 2.9 (Normalisation and finite type) . A pattern is normalised if it contains exactly one representative of each of its seed-equivalence classes. A normalisation of a pattern is a mutation-compatible choice of equivalent representative seeds. An LP algebra is of finite type 
+
+if it admits a normalisation with finitely many seeds. 5Note that choosing arbitrary representatives does not by itself check closure under the exact mutation rule f ii = f i. We shall make a compatible choice in Proposition 5.6. In rank two, if the exchange degrees are b, c ≥ 0, finite type is equivalent to bc < 4 [LP16a, Theorem 6.4]. 
+
+# 3 The upper algebra and polynomial residues 
+
+In this section we establish some notions for arbitrary LP algebras. The purpose is to let us replace questions about an entire mutation pattern by calculations in a seed and its immediate neighbours. 
+
+## 3.1 A finite intersection of Laurent rings 
+
+Definition 3.1. The upper LP algebra and the upper bound at a seed T are 
+
+U = ⋂ 
+
+> T′∈S
+
+L(T ′), UB( T ) = L(T ) ∩
+
+> n⋂
+> i=1
+
+L(μiT ).
+
+All intersections take place in F. The Laurent phenomenon gives A ⊆ U ⊆ UB( T ). The Laurent ring is unchanged by coefficient-unit rescalings, hence these definitions are independent of the representatives used for neighbouring seeds. We recall precisely the local input from the LP caterpillar lemmas. Consider an alternating path in two distinct directions, suppressing the unchanged coordinates: (x, y ) −→ (z, y ) −→ (z, u ) −→ (v, u ). (3.1) If the four Laurent rings are L0, L1, L2, L3, then 
+
+u, v ∈ L 0, gcd 
+
+> L0
+
+(z, u ) = gcd 
+
+> L0
+
+(z, v ) = 1 . (3.2) These are [LP16a, Lemmas 5.2 and 5.4]. These lemmas also apply when exchange polynomials coincide or differ only by a coefficient unit. We note that z is prime in L0, since it differs from the exchange polynomial at x by a Laurent unit. 
+
+Lemma 3.2 (Caterpillar intersection) . For the path (3.1) ,
+
+L1 ∩ L 3 ⊆ L 0, L0 ∩ L 2 ⊆ L 3.
+
+Proof. If h ∈ L 1 ∩ L 3, then, since x, y and the suppressed coordinates are units in L0, we may write 
+
+h = azr = busvt , a, b ∈ L 0, r, s, t ≥ 0.
+
+6The equality au svt = bz r, primality of z, and (3.2) imply zr | a in L0. Thus h ∈ L 0. Reversing the path proves the other inclusion. 
+
+Proposition 3.3 (Upper-bound invariance) . For every seed T , one has UB( T ) = U.Proof. Let T ′ = μkT . For j̸ = k, apply Lemma 3.2 to 
+
+μj T j
+
+−→ T k
+
+−→ T ′ j
+
+−→ μj T ′.
+
+It gives 
+
+L(μj T ) ∩ L (T ′) ⊆ L (μj T ′), L(T ) ∩ L (μj T ′) ⊆ L (μj T ).
+
+Together with the two common rings L(T ) and L(T ′), these inclusions show that UB( T ) = UB( T ′). In rank one the equality is immediate from involutivity. Connectedness now shows that this common upper bound lies in every Laurent ring of the pattern, and hence in U.The reverse inclusion is part of the definition. This is Fei’s LP starfish theorem [Fei26, Theorem 1.3]. We have included the short argument to make clear that no assumption ̂ f ℓ = f ℓ, and no pairwise coprimality assumption on the exchange polynomials is needed. The weaker invariance statement under ̂ f ℓ = f ℓ also appears in [DL22]. 
+
+## 3.2 Cluster variables are prime in the upper algebra 
+
+Fix a seed with coordinates q = {q1, . . . , q n} and exchange polynomials g1, . . . , g n. Let q′ 
+
+> i
+
+be the mutation partner of qi, and write 
+
+Li = A[q±11 , . . . , q ±1
+
+> i−1
+
+, (q′
+
+> i
+
+)±1, q ±1
+
+> i+1
+
+, . . . , q ±1 
+
+> n
+
+].
+
+The exchange polynomial gi is a prime nonunit in Li. Denote its prime valuation on F by 
+
+νi. This records the exponent of gi in a factorisation of a nonzero rational function in the Laurent UFD Li. Since qiq′ 
+
+> i
+
+=̂ gi, we have 
+
+νi(qj ) = δij . (3.3) 
+
+Lemma 3.4. Every cluster variable is prime in U, and U× = A×. More precisely, 
+
+qiU = U ∩ giLi, νi(h) > 0 ⇐⇒ h ∈ qiU (0 ̸ = h ∈ U ). (3.4) 
+
+Proof. The coordinate qi is a unit in the Laurent ring of its seed and in every first neighbouring ring except Li. In Li, it is a unit times gi. Consequently, if h ∈ U ∩ giLi, then h/q i belongs to every Laurent ring defining the upper bound at this seed. By Proposition 3.3, h/q i ∈ U .The other containment in (3.4) is immediate. The contracted ideal on the right is proper and prime, so qi is a prime nonunit of U. The valuation criterion follows as well. If h ∈ U ×, its expression as a unit of L(T ) is h = ϵ ∏ 
+
+> j
+
+qβj 
+
+> j
+
+, with ϵ ∈ A× and βj ∈ Z. Both 
+
+h and h−1 belong to Li. Equation (3.3) gives βi ≥ 0 and −βi ≥ 0 for every i. Thus h = ϵ.Conversely every coefficient unit is plainly a unit of U.73.3 Polynomial residues 
+
+Let v be any cluster variable, let w1, . . . , w n−1 be the other coordinates of a seed containing it, and let v′ be its mutation partner. Put 
+
+B = A[w±11 , . . . , w ±1
+
+> n−1
+
+], vv ′ = E = mP, (3.5) where P ∈ B is the exchange polynomial and m ∈ B× is the normalising monomial. The polynomial P is a prime nonunit of B, so B/ (P ) is an integral domain. 
+
+Lemma 3.5 (Polynomial residues) . Reduction modulo P in the neighbouring chart B[( v′)±1]
+
+induces a homomorphism 
+
+ρ : U −→ (B/ (P ))[ T ], ker ρ = vU, ρ(v′) = T, (3.6) 
+
+where T is an indeterminate. Proof. For h ∈ U , write h = ∑ 
+
+> r∈Z
+
+brvr in B[v±1], with only finitely many nonzero br ∈ B. In the neighbouring chart, 
+
+h = ∑
+
+> r
+
+brEr(v′)−r.
+
+Since h ∈ B[( v′)±1], uniqueness of Laurent coefficients implies brEr ∈ B for every r. Reduce coefficients modulo P , and denote the image of v′ by T . Each term brEr(v′)−r then maps to 
+
+brErT −r. For r > 0, the coefficient is divisible by P and hence vanishes, so only terms with 
+
+r ≤ 0 survive. The image is therefore polynomial, not merely Laurent, in T .The kernel is U ∩ P B [( v′)±1] = vU by Lemma 3.4. We note in particular that U/v U embeds in a polynomial ring in one variable. 
+
+Example 3.6. In the rank-two seed over Z with exchange polynomials 1 + x2 and 1 + x1,set v = x1, v′ = (1 + x2)/x 1, and B = Z[x±12 ]. Reduction modulo P = 1 + x2 gives 
+
+ρ(x1) = 0 , ρ(x2) = −1, ρ(v′) = T. 
+
+The cluster variable (1 + x1 + x2)/(x1x2) = (1 + v′)/x 2 has residue −(1 + T ). 
+
+# 4 Linear seeds and their principal minors 
+
+We now return to the fixed linear seed (1.1). Recall zℓ = f ℓ/x ℓ and M = diag( z1, . . . , z n) − C
+
+from (1.2). Thus the defining equations for the matrix are 
+
+xℓzℓ = aℓ 
+
+> 0
+
++ ∑
+
+> t̸=ℓ
+
+aℓt xt, M
+
+> 
+
+x1
+
+...
+
+xn 
+
+> 
+
+=
+
+> 
+
+a10
+
+...
+
+an 
+
+> 0
+> 
+
+. (4.1) 8The initial cluster variables on the right of the definition of zℓ are fixed rational coordinates, so YI is a well-defined element of F.
+
+Remark 4.1. This construction specialises to the determinants of Lam and Pylyavskyy [LP16b, Section 4.2, Proposition 4.5]. In their graph setting, aℓ 
+
+> 0
+
+= Aℓ are independent coefficient indeterminates and aℓt is 1 or 0 according as ℓ → t is an edge or not. Their matrix has diagonal entries ( Aℓ + ∑ 
+
+> ℓ→t
+
+xt)/x ℓ and off-diagonal entries −1 on edges. Its principal minors are their acyclic-function generating functions YI , with the same notation used here. For strongly connected I, these are precisely the noninitial cluster variables [LP16b, Theorem 1.1]. The graph-case YI also occur in the cluster-monomial basis theorem of Dantas e Moura, Telekicherla Kandalam, and Woodruff [DeMTKW25]. For arbitrary coefficients, the determinants can split or vanish. Our additional assertion is that every noninitial cluster variable divides a nonzero YI in U (Theorem 5.1); we do not assert that these weighted minors are themselves always cluster variables. 
+
+Lemma 4.2. Every zℓ, and hence every YI , lies in A ⊆ U .Proof. If yℓ is obtained by mutating xℓ, then 
+
+zℓ = f ℓ
+
+xℓ
+
+= yℓ
+
+> ∏
+> t̸=ℓ
+
+xeℓt  
+
+> t
+
+∈ A .
+
+The determinant YI is a polynomial over A in the zℓ, so it also belongs to A. Apply the Laurent phenomenon. 
+
+Example 4.3. For f 1 = 1 + x2 and f 2 = 1 + x1 over Z,
+
+M =
+
+> (
+
+(1 + x2)/x 1 −1
+
+−1 (1 + x1)/x 2
+
+> )
+
+.
+
+Its three nonempty principal minors are 
+
+Y{1} = 1 + x2
+
+x1
+
+, Y{2} = 1 + x1
+
+x2
+
+, Y{1,2} = 1 + x1 + x2
+
+x1x2
+
+.
+
+In this example the minors themselves are precisely the noninitial cluster variables. In general it is their prime factors that matter. 
+
+## 4.1 The directed coefficient graph 
+
+Define a directed graph Γ on [ n] ∪ { 0} by 
+
+ℓ −→ t ⇐⇒ aℓt̸ = 0 (t̸ = ℓ), ℓ −→ 0 ⇐⇒ aℓ
+
+> 0
+
+̸ = 0 .
+
+The vertex 0 has no outgoing edges. For graph calculations only, put x0 = 1. A subset is strongly connected if any two of its vertices are joined in each direction by directed paths contained in the subset. 9Remark 4.4 (Rooted-forest interpretation) . Put N = M diag( x1, . . . , x n). Give ℓ → t weight 
+
+wℓt = aℓt xt for t̸ = 0, and ℓ → 0 weight wℓ0 = aℓ
+
+> 0
+
+. The augmented matrix 
+
+> ˜
+
+N =
+
+> (
+
+N −(aℓ
+
+> 0
+
+)ℓ∈[n]
+
+0 0
+
+> )
+
+is the row Laplacian of this weighted graph. Applying the principal-minor case of the all-minors matrix-tree theorem [Cha82], with the transpose convention for a row Laplacian, gives ∏
+
+> ℓ∈I
+
+xℓ 
+
+> 
+
+YI = det NI,I = ∑ 
+
+> F∈T I
+> ∏
+> (ℓ→t)∈F
+
+wℓt . (4.2) Here TI consists of spanning directed forests rooted at ([ n] ∪ { 0}) \ I. Thus the determinantal numerators are weighted rooted-forest polynomials. The identity holds over A by specialisation of the polynomial identity in formal edge weights. The next proposition additionally rules out total cancellation when the coefficients satisfy relations; we give a direct leading-term argument. 
+
+Definition 4.5. A closed homogeneous component is a nonempty strongly connected subset 
+
+J ⊆ [n] such that 
+
+aℓ 
+
+> 0
+
+= 0 (ℓ ∈ J), aℓt = 0 (ℓ ∈ J, t / ∈ J). (4.3) Equivalently, it is a sink strongly connected component of Γ other than {0}.Here “homogeneous” means that the exchange polynomials in these rows have no constant terms, and “closed” means that they involve no coordinates outside J.
+
+Proposition 4.6 (Nonvanishing criterion) . For a nonempty I ⊆ [n], the following conditions are equivalent: 1. YI̸ = 0 as a rational function in the initial coordinates; 2. every vertex of I has a directed path to ([ n] ∪ { 0}) \ I;3. I contains no closed homogeneous component. Proof. If a vertex cannot reach the complement of I, all vertices reachable from it lie in I.A sink strongly connected component of this reachable subgraph has no outgoing edge in the full graph and is a closed homogeneous component. Conversely, a vertex of a closed component cannot leave it. This proves the equivalence of (2) and (3). Suppose J ⊆ I is a closed homogeneous component. Order the vertices of J before those of I \ J. The block in the rows of J and columns of I \ J is zero, so MI,I is block triangular. Furthermore, (4.1) gives 
+
+MJ,J (xℓ)ℓ∈J = 0 .
+
+This is a nonzero kernel vector over F. Thus YJ = 0 and YI = 0. 10 It remains to show that (2) implies (1), including when the coefficients have signs or satisfy relations. Consider the polynomial matrix 
+
+NI = MI,I diag( xt : t ∈ I), (NI )ℓℓ = f ℓ, (NI )ℓt = −aℓt xt (ℓ̸ = t). (4.4) For ℓ ∈ I, let dℓ be the shortest directed distance to the complement of I, and put dt = 0 outside I, including at 0. Choose pairwise distinct real numbers ϵ1, . . . , ϵ n in (0 , 1/3) and assign weights 
+
+ωt = −dt + ϵt (t̸ = 0) , ω0 = 0 to xt. These are auxiliary weights on formal monomials, not values of the coefficients. Every neighbour of ℓ has distance at least dℓ − 1, and one has distance exactly dℓ − 1. Hence there is a unique neighbour t(ℓ) of greatest weight and its distance is dℓ − 1. Let eℓ denote the standard row vectors with positions indexed by I. Row ℓ of NI is the sum, over its outgoing edges, of 
+
+aℓt xt(eℓ − et) (t ∈ I), aℓt xteℓ (t / ∈ I).
+
+The same formula includes the edge to 0 since x0 = 1. Choose in each row the summand indexed by t(ℓ). Its edge strictly decreases distance. In an ordering by distance, the matrix of the selected row vectors is triangular with diagonal entries one. Thus its determinant is one. By multilinearity in the rows, the unique choice of largest total weight contributes 
+
+> ∏
+> ℓ∈I
+
+aℓt(ℓ)xt(ℓ) (4.5) to det NI . Every other choice has smaller total weight. The coefficient in (4.5) is nonzero because A is an integral domain. This term cannot cancel, so det NI̸ = 0 and YI̸ = 0. We note this proof requires neither positive coefficients nor characteristic zero. 
+
+## 4.2 Cofactor ratios in the upper algebra 
+
+A vanishing determinant cannot detect a prime divisor. We next show that its proper cofactors provide the additional regular functions needed in the proof of finite type. 
+
+Lemma 4.7. Let J be a closed homogeneous component and let i ∈ J. Then 
+
+YJ\{ i}̸ = 0 , ZJ,i := YJ\{ i}
+
+xi
+
+∈ U . (4.6) 
+
+Proof. A singleton closed component would have f i = 0, contrary to (LP1). Hence |J| ≥ 2, and I = J \ { i} is nonempty. Every vertex of I can reach i inside J, so Proposition 4.6 gives 
+
+YI̸ = 0. Since the exchanges in the rows of J involve only coordinates in J,
+
+DI := 
+
+> (∏
+> t∈I
+
+xt
+
+> )
+
+YI = det NI ∈ A[xt : t ∈ J].
+
+11 The sum of row ℓ ∈ I of NI is aℓi xi. After setting xi = 0, every row sum is zero. The nonempty matrix then has the all-ones vector in its kernel, so its determinant is zero. It follows that xi | DI in the polynomial ring. Thus 
+
+ZJ,i = DI /x i 
+
+> ∏
+> t∈I
+
+xt
+
+(4.7) is polynomial in xi and Laurent in the other initial coordinates. In the first neighbouring chart at i, substitute xi =̂ f i/y i into (4.7). Since there is no negative power of xi, the result is Laurent. In every other first neighbouring chart, 
+
+YI is Laurent by Lemma 4.2 and xi is an unchanged unit. Hence ZJ,i ∈ UB( S) = U by Proposition 3.3. Notice that the conclusion is membership in the upper algebra. We need neither ZJ,i to be a cluster variable nor an equality A = U.
+
+# 5 Divisibility and finite type 
+
+We now combine the polynomial residues with the linear relations of the initial seed. The essential observation is that coordinates of maximum residue degree force a principal submatrix to be singular. 
+
+## 5.1 Every noninitial variable divides a nonzero minor 
+
+Theorem 5.1. Let S be the linear seed (1.1) . If a cluster variable v is not associated over A
+
+to any initial coordinate, then 
+
+YI̸ = 0 , YI
+
+v ∈ U 
+
+for some nonempty I ⊆ [n].Proof. Suppose, for a contradiction, that v divides no nonzero principal minor in U. Choose a seed containing v, let v′ be its mutation partner, and use the notation B, P of (3.5). Compose the map of Lemma 3.5 with the inclusion into k[T ], where k = Frac( B/ (P )). Denote the composite again by ρ, so that 
+
+ρ : U −→ k[T ], ker ρ = vU, ρ(v′) = T. 
+
+Write 
+
+Xℓ = ρ(xℓ), Wℓ = ρ(zℓ).
+
+All these polynomials are nonzero. Indeed, Xℓ = 0 would imply v | xℓ in U. By Lemma 3.4, both are prime, so they would be associated by a unit of U, hence by a unit of A, contrary 12 to the choice of v. Also zℓ = Y{ℓ}̸ = 0, so Wℓ = 0 would contradict the assumption that v
+
+divides no nonzero minor. At least one Xℓ has positive degree in T . To see this, observe that 
+
+U[x−11 , . . . , x −1 
+
+> n
+
+] = A[x±11 , . . . , x ±1 
+
+> n
+
+] = L(S). (5.1) The two inclusions follow from A[x] ⊆ U ⊆ L (S). Since every Xℓ̸ = 0, ρ extends to this localisation with values in k(T ). If all the Xℓ were constant, the image of L(S) would lie in 
+
+k. But the Laurent phenomenon puts v′ in L(S), whereas ρ(v′) = T / ∈ k. This is impossible. Set 
+
+d = max  
+
+> ℓ
+
+deg T Xℓ > 0, I = {ℓ : deg T Xℓ = d}. (5.2) Let bars denote the images of coefficients in k. Applying ρ to (4.1) gives 
+
+XℓWℓ = aℓ 
+
+> 0
+
++ ∑
+
+> t̸=ℓ
+
+aℓt Xt. (5.3) For ℓ ∈ I, the right side has degree at most d. The left side is a nonzero product, and deg T Xℓ = d. Thus 
+
+Wℓ ∈ k× (ℓ ∈ I). (5.4) If bℓ ∈ k× is the leading coefficient of Xℓ for ℓ ∈ I, comparing coefficients of T d in (5.3) yields 
+
+Wℓbℓ = ∑
+
+> t∈I\{ ℓ}
+
+aℓt bt.
+
+Therefore ρ(MI,I )( bℓ)ℓ∈I = 0, and 
+
+ρ(YI ) = 0 . (5.5) If YI̸ = 0 in the original ambient field, then (5.5) says v | YI in U, the desired contradiction. It remains to deal with YI = 0 identically. This is different from merely having zero residue. By Proposition 4.6, there is a closed homogeneous component J ⊆ I. For any i ∈ J,Lemma 4.7 supplies 
+
+xiZJ,i = YJ\{ i}, ZJ,i ∈ U , YJ\{ i}̸ = 0 . (5.6) By our assumption, the right side has nonzero residue. Its residue is also constant: its diagonal entries are among Wℓ for ℓ ∈ I, and (5.4) applies. Reducing (5.6) gives 
+
+Xiρ(ZJ,i ) ∈ k×.
+
+But deg T Xi = d > 0 and ρ(ZJ,i ) ∈ k[T ]. A polynomial of positive degree cannot multiply another polynomial to give a nonzero constant. This final contradiction proves the theorem. 
+
+Corollary 5.2. The element H in (1.3) is nonzero and belongs to A. For every cluster variable v, H/v ∈ U .Proof. All retained factors belong to A and are nonzero. If v ∼A xi, use the factor xi of H.Otherwise Theorem 5.1 supplies a factor YI of Q with YI /v ∈ U and we multiply by the remaining factors of H.13 5.2 Counting cluster variables 
+
+We stress that no unique factorisation property for U is being assumed. Factorisation will take place in the initial Laurent unique factorisation domain L0 = A[x±11 , . . . , x ±1 
+
+> n
+
+]. As before, we let νi be the first-neighbour valuations for the initial seed (see (3.3)). 
+
+Lemma 5.3. A noninitial cluster variable v is a prime nonunit in L0 and satisfies νi(v) = 0 
+
+for every i. If two noninitial cluster variables are associated in L0, then they are associated over A.Proof. By Lemma 3.4, v and the xi are prime in U, and v is not associated to any xi. Hence 
+
+v divides no product of initial coordinates. The prime ideal vU survives the localisation (5.1), so v remains a prime nonunit in L0.Likewise xi does not divide v in U. Since v ∈ U , its valuation νi(v) is nonnegative, and (3.4) shows that it is zero. If v = ϵx β1 
+
+> 1
+
+· · · xβn 
+
+> n
+
+w for another noninitial variable w, with ϵ ∈ A×,applying νi gives 0 = βi. Thus v = ϵw .
+
+Proposition 5.4. If Q has s distinct irreducible factors up to Laurent units, there are at most n + s cluster-variable classes up to A×.Proof. Every noninitial cluster variable divides Q in U, and hence in L0, by Theorem 5.1. It is prime there by Lemma 5.3, so it is associated to one of the s irreducible factors of Q. The last assertion of the lemma says that two different coefficient-unit classes cannot correspond to the same Laurent prime. The initial variables contribute the remaining n classes. 
+
+## 5.3 Seeds are determined by their clusters 
+
+For completeness, we include the form of Du and Li’s seed-rigidity theorem [DL22, Theo-rem 3.1] that we need. 
+
+Lemma 5.5 (Seed rigidity) . Two seeds in one LP algebra whose clusters agree up to coefficient units are equivalent. Proof. First suppose the clusters agree exactly, with coordinates q = {q1, . . . , q n}. Write the exchanges of the two seeds as gi, h i, and their mutation partners at i as 
+
+u =̂ gi
+
+qi
+
+, w =̂ hi
+
+qi
+
+.
+
+Set Bi = A[q±1 
+
+> j
+
+: j̸ = i]. Laurentness of u in the neighbouring chart Bi[w±1] and the equality 
+
+u = ŵ gî
+
+hi
+
+14 show that ̂ gi/̂hi ∈ Bi: this is the single coefficient of w in the Laurent expansion. Interchanging the two seeds shows that the reciprocal is also in Bi. The ratio is therefore a unit of Bi, namely a coefficient unit times a Laurent monomial in the qj . Taking polynomial representatives gives gi ∼A hi for every i.If the clusters agree only up to coefficient units, express both sets of exchange polynomials in the same rescaled coordinates. The Laurent rings are unchanged, and the two displayed exchange relations acquire only coefficient-unit factors. The same argument applies and gives equivalence in the common ambient field. 
+
+## 5.4 A compatible choice of representatives 
+
+Proposition 5.6. If an LP algebra of rank n has N < ∞ cluster-variable classes, then it admits a normalisation with at most (Nn
+
+> )
+
+seeds. Proof. Choose one representative of each variable class. Every genuine cluster determines a set C of n chosen representatives. Coordinates in one cluster cannot be associated, by algebraic independence. Lemma 5.5 says that C determines a single seed-equivalence class. Mutation compatibility therefore determines, for each u ∈ C , the class of its mutation partner. Let v be the chosen representative of that class. The product uv is a coefficient-unit multiple of the exchange Laurent polynomial in that direction, expressed in the coordinates C \ { u}. Define 
+
+gC,u = pol C (uv ). (5.7) These exchanges give a valid seed SC equivalent to the original class. Indeed, in each direction we have just rescaled coordinates and multiplied an ordinary exchange polynomial by a coefficient unit. The normalisation exponents are unaffected by these unit changes. Consequently, the exchange Laurent polynomial of gC,u is exactly uv , and mutating u inserts exactly v.Put C′ = ( C \ { u}) ∪ { v}. By mutation compatibility, a mutation of SC at u is equivalent to SC′ . In all other directions the unit choices in mutation allow us to select precisely the exchanges of SC′ . At the replaced coordinate the polynomial is required to remain unchanged. This too holds exactly, since uv is independent of both u and v, and the other coordinates are unchanged. Hence 
+
+gC,u = pol C (uv ) = pol C′ (vu ) = gC′,v .
+
+Thus these representative seeds form a mutation-closed pattern. It is connected as the image of the original pattern and has at most (Nn
+
+> )
+
+seeds. 
+
+Proof of Theorem 1.2. Theorem 5.1 proves (1), and Corollary 5.2 proves (2). Proposition 5.4 gives at most n + s variable classes. Proposition 5.6 supplies a finite normalisation and the seed bound in (3). This proves finite type. 15 Acknowledgements 
+
+The author would like to thank Anna Felikson for useful discussions surrounding this problem, and Tom Ducat for insights that helped shape the approach taken in this paper. 
+
+# References 
+
+[Cha82] Seth Chaiken. A combinatorial proof of the all minors matrix tree theorem. 
+
+SIAM Journal on Algebraic and Discrete Methods , 3(3):319–329, 1982. doi: 10. 1137/0603033 .[DeMTKW25] Guilherme Zeus Dantas e Moura, Ramanuja Charyulu Telekicherla Kandalam, and Dora Woodruff. Cluster monomials in graph Laurent phenomenon alge-bras. Algebraic Combinatorics , 8(4):997–1019, 2025. doi: 10.5802/alco.433 .[DL22] Qiuning Du and Fang Li. Some elementary properties of Laurent phenomenon algebras. Electronic Research Archive , 30(8):3019–3041, 2022. doi: 10.3934/ era.2022153 . Preprint: arXiv:2201.02917. [Fei26] Jiarui Fei. Symmetric branching via Laurent phenomenon algebras, 2026. Preprint, arXiv:2609.32425v1. [FZ02] Sergey Fomin and Andrei Zelevinsky. Cluster algebras I: Foundations. Journal of the American Mathematical Society , 15(2):497–529, 2002. doi: 10.1090/ S0894-0347-01-00385-X .[FZ03] Sergey Fomin and Andrei Zelevinsky. Cluster algebras II: Finite type clas-sification. Inventiones Mathematicae , 154(1):63–121, 2003. doi: 10.1007/ s00222-003-0302-y .[LP16a] Thomas Lam and Pavlo Pylyavskyy. Laurent phenomenon algebras. Cam-bridge Journal of Mathematics , 4(1):121–162, 2016. doi: 10.4310/CJM.2016. v4.n1.a2 . Preprint: arXiv:1206.2611. [LP16b] Thomas Lam and Pavlo Pylyavskyy. Linear Laurent phenomenon algebras. 
+
+International Mathematics Research Notices , 2016(10):3163–3203, 2016. doi: 10. 1093/imrn/rnv237 . Preprint: arXiv:1206.2612. 16

@@ -1,0 +1,978 @@
+Title: Representation Type and Schurian Finiteness of Tits Algebras
+
+URL Source: https://arxiv.org/pdf/2610.16214v1
+
+Published Time: Wed, 14 Oct 2026 02:29:41 GMT
+
+Number of Pages: 17
+
+Markdown Content:
+Representation Type and Schurian Finiteness of Tits Algebras     
+
+> SIYUAN CHEN
+> Abstract. We determine the representation type and Schurian finiteness of the Tits algebra of a finite central real hyperplane arrangement over an algebraically closed field. The algebra is representation-finite when the arrangement has at most two hyperplanes, tame when it has three, and wild when it has at least four. Moreover, it is Schurian-finite if and only if the arrangement has at most two hyperplanes. Both classifications hold over algebraically closed fields of arbitrary characteristic. The proof combines Saliola’s bound-quiver presentation with explicit module con-structions, convex subquivers, essentialization, and deletion. In the R2case, we describe all eleven indecomposable modules for two lines and construct a full exact embedding of modules over a free algebra for at least four lines.
+
+1. Introduction 
+
+The face semigroup of a real hyperplane arrangement encodes the geometry of its faces by a noncommutative multiplication, and its semigroup algebra is called the Tits algebra. One motivation for studying this algebra comes from random walks on chambers: Brown and Dia-conis [4] used the face action to determine stationary distributions and study the spectra and convergence of these walks. From a representation-theoretic perspective, Saliola [11] determined the quiver and relations of the face semigroup algebra, constructed its primitive idempotents, and proved that it is Koszul and depends only on the intersection lattice. These results turn questions about an algebra defined geometrically into explicit problems about a finite bound quiver. They also make it natural to ask how the combinatorics of an arrangement controls the complexity of its module category. Further motivation comes from the representation theory of Solomon descent algebras. For the braid arrangement, the symmetric-group invariant subalgebra of the Tits algebra is anti-isomorphic to the Solomon descent algebra [11]. Schocker [13] studied the full Solomon–Tits algebra of the symmetric group, describing its simple and projective indecomposable modules, Cartan invariants, and Ext-quiver. More recently, Erdmann and Lim [7] classified the rep-resentation type of the type-A descent algebras in positive characteristic. In a subsequent preprint [8], they determine the representation type of the Solomon descent algebras for the other irreducible finite Coxeter types, with type E8 remaining open. These developments mo-tivate the corresponding classification problem for the full Tits algebra of an arbitrary central arrangement and the comparison with Schurian finiteness. In particular, one can ask how both properties depend on the number and relative positions of the hyperplanes. In this paper, we study two such measures of complexity: representation type and Schurian finiteness. The finite–tame–wild classification concerns all finite-dimensional indecomposable modules, whereas Schurian finiteness concerns those nonzero modules whose endomorphism algebra consists only of scalars. We use Saliola’s presentation to classify the rank-two algebras, including an explicit list of eleven indecomposables for two lines and a full exact embedding    
+
+> 2010 Mathematics Subject Classification. 05E10, 16G60.
+> 1arXiv:2610.16214v1 [math.RT] 12 Oct 2026 REPRESENTATION TYPE AND SCHURIAN FINITENESS 2
+
+of free-algebra modules for at least four lines. For three independent hyperplanes, the algebra is the incidence algebra of the Boolean lattice B3, whose tameness is recalled by Chapoton and Rognerud [5, Lemma 3.5]. Together with the four-hyperplane cases, essentialization and deletion yield the general classification. In particular, every central arrangement with at least four distinct hyperplanes has a wild Tits algebra, while Schurian finiteness holds precisely when there are at most two hyperplanes. The tame cases already have infinitely many Schurian modules, so the two classifications capture different features of the module category. The proof proceeds from small configurations to general arrangements. Section 2 develops the bound-quiver and quotient tools, and Section 3 treats the planar algebras by explicit module constructions. Sections 4 and 5 then use the geometry of three and four hyperplanes to identify suitable convex subquivers. Finally, Section 6 separates two complementary reductions: essen-tialization removes redundant ambient directions without changing the Tits algebra, whereas deletion produces quotient algebras attached to smaller arrangements. These reductions allow the wildness and Schurian infiniteness detected in the small configurations to pass to arbitrary central arrangements, explaining why a finite list of geometric cases suffices for the classification. We can now state the main results for essential arrangements of dimension at least two; the low-rank and nonessential cases are included in Section 6. 
+
+Theorem 1.1. Let K be an algebraically closed field, and let A = {H1, . . . , H m} be a central essential arrangement of m distinct hyperplanes in Rn, where n ≥ 2. Write TA := K[F(A)] for its Tits algebra. 
+
+(1) Suppose that n = 2 . Then m ≥ 2, and: 
+
+(a) If m = 2 , then TA is representation-finite. 
+
+(b) If m = 3 , then TA is of tame representation type. 
+
+(c) If m ≥ 4, then TA is of wild representation type. 
+
+(2) Suppose that n = 3 .
+
+(a) If m = 3 , then TA is of tame representation type. 
+
+(b) If m ≥ 4, then TA is of wild representation type. 
+
+(3) Suppose that n ≥ 4. Then TA is of wild representation type. Furthermore, TA is Schurian-finite if and only if n = 2 and m = 2 .
+
+2. Basic Results 
+
+Throughout, the base field K is algebraically closed. For a K-algebra A, we write A-mod for the category of finite-dimensional left A-modules. We first recall bound quiver representations and Schurian finiteness, then introduce face semigroups and the bound-quiver presentation of Tits algebras. 2.1. Bound quiver algebras, representations, and Schurian finiteness. For background on finite-dimensional algebras, bound quivers and their representations, see Assem, Simson and Skowroński [2, Chapters II–III], Benson [3, Chapter 4], and Schiffler [12, Chapters 1 and 5]. Let Q = ( Q0, Q 1) be a finite quiver. Its path algebra KQ has as a K-basis all oriented paths in 
+
+Q, including the stationary path ei at each vertex i, with multiplication given by concatenation of composable paths and zero otherwise. Let J be the ideal of KQ generated by the arrows. An ideal I ⊆ KQ is called admissible if Jℓ ⊆ I ⊆ J2 for some integer ` ≥ 2. The quotient KQ/I is then called a bound quiver algebra , and the pair (Q, I ) is called a bound quiver .REPRESENTATION TYPE AND SCHURIAN FINITENESS 3
+
+A finite-dimensional representation M of (Q, I ) assigns a vector space Mi to each vertex 
+
+i ∈ Q0 and a linear map Ma : Mi → Mj to each arrow a : i → j. These maps must satisfy the relations in I: if ∑ 
+
+> p
+
+cpp ∈ I is a relation whose paths have a common source and target, then 
+
+∑ 
+
+> p
+
+cpMp = 0 , where Mp denotes the composition of the maps along the path p. Morphisms are collections of vertexwise linear maps commuting with all arrow maps. In this way, one obtains the standard equivalence 
+
+rep K(Q, I ) ' (KQ/I )-mod .
+
+Let A be a finite-dimensional K-algebra. A nonzero finite-dimensional A-module M is called a 
+
+brick if its endomorphism algebra End A(M ) is a division algebra. Since K is algebraically closed, this is equivalent in the present setting to End A(M ) ∼= K. A module satisfying this condition is also called Schurian . The algebra A is called Schurian-finite if there are only finitely many isomorphism classes of finite-dimensional Schurian A-modules; it is called Schurian-infinite 
+
+otherwise. Thus, over K, Schurian-finiteness is the same as brick-finiteness. Schurian finiteness is closely related to τ -tilting theory [1]. Demonet, Iyama and Jasso [6, Theorem 4.2] prove that a finite-dimensional algebra is τ -tilting finite if and only if it has finitely many isomorphism classes of bricks. Consequently, over the algebraically closed field K,Schurian finiteness and τ -tilting finiteness are equivalent. We will use the following quotient-inheritance result. 
+
+Lemma 2.1. Let A be a finite-dimensional K-algebra, let a be a two-sided ideal of A, and set 
+
+B := A/ a. Then: 
+
+(1) If B is of wild representation type, then so is A.
+
+(2) If B is Schurian-infinite, then so is A.Proof. The inflation functor Inf : B-mod → A-mod is exact and fully faithful: the A-action on a B-module is obtained by composing its action with the quotient map A → B. If B is wild, its defining representation embedding has source the category of finite-dimensional modules over the free associative algebra K〈x, y 〉. Composing it with inflation gives 
+
+K〈x, y 〉-mod −→ B-mod Inf 
+
+−−→ A-mod .
+
+The composite is again a representation embedding, since it is exact, preserves indecomposabil-ity, and reflects isomorphism classes. Thus A is wild. For Schurian infiniteness, inflation preserves endomorphism algebras and reflects isomorphism classes. Consequently, an infinite family of pairwise non-isomorphic Schurian B-modules gives such a family of A-modules. □
+
+2.2. Hyperplane arrangements and Tits algebras. For standard terminology and back-ground on hyperplane arrangements and their intersection lattices, we refer to Stanley [14]. A central real hyperplane arrangement in Rn is a finite set A = {H1, . . . , H m} of distinct linear hyperplanes. It is essential if ∩mi=1 Hi = {0}. Its intersection lattice L(A) consists of all intersections of subfamilies, including Rn as the intersection of the empty subfamily, ordered by reverse inclusion. We write m = |A| for the number of hyperplanes and 
+
+r = rk( A) := codim Rn
+
+( ∩
+
+> H∈A
+
+H
+
+)REPRESENTATION TYPE AND SCHURIAN FINITENESS 4
+
+for its rank. Thus n is the ambient dimension, and r = n precisely when the arrangement is essential. Essentialization preserves m and replaces the ambient space by one of dimension r;see Lemma 6.1. Choose a defining linear form for each Hi, and let H+ 
+
+> i
+
+and H− 
+
+> i
+
+be its open positive and negative half-spaces, with H0 
+
+> i
+
+= Hi. A face is a nonempty set of the form 
+
+F =
+
+> m
+
+∩
+
+> i=1
+
+Hϵi 
+
+> i
+
+, i ∈ { +, −, 0}.
+
+In particular, the full-dimensional faces are the chambers , namely the connected components of 
+
+Rn \ ∪mi=1 Hi. The faces form a poset under the closure order F ≤ G if F ⊆ G.For faces F and G with sign vectors (i) and (δi), their Tits product is the face with sign vector (γi), where 
+
+γi =
+
+
+
+i, i 6 = 0 ,δi, i = 0 .
+
+Geometrically, it is the face containing (1 − t)f + tg for f ∈ F , g ∈ G, and sufficiently small 
+
+t > 0. This multiplication makes the set F(A) of faces a semigroup. The Tits algebra is the semigroup algebra TA := K[F(A)] ; see Saliola [11]. 2.3. Saliola’s bound-quiver presentation and convex subquivers. The bound-quiver pre-sentation of Saliola [11] is the main link between the geometry of an arrangement and the representation theory of its Tits algebra. Let (P, ≤) be a finite poset. An element x ∈ P is said to cover y ∈ P , written x ⋗ y, if y < x 
+
+and there is no z ∈ P such that y < z < x . The Hasse diagram of P has one vertex for each element of P and one edge between x and y for each cover relation x ⋗ y; when the diagram is oriented downward, this edge is written x → y.In this paper L(A) is ordered by reverse inclusion, whereas Saliola’s bound-quiver presentation uses the ordinary inclusion order, namely L(A)op . Thus, in the bound-quiver discussion below, the notation X ⋗ Y means concretely that Y ⊊ X and that there is no Z ∈ L(A) with 
+
+Y ⊊ Z ⊊ X. For an intersection lattice this is equivalent to dim X − dim Y = 1 , and the corresponding arrow in the quiver is X → Y .The Boolean lattice Bd is the set of all subsets of {1, . . . , d }, ordered by inclusion. A cover relation adds one element, so its Hasse diagram is the d-dimensional cube; in particular, B1
+
+is a two-element chain and B3 is the ordinary cube. For an arrangement of d hyperplanes with linearly independent defining forms, the map S 7 → ∩ 
+
+> i∈S
+
+Hi identifies Bd with L(A) in the reverse-inclusion order. For a finite poset P , its incidence algebra I(P ) has basis exy for x ≤ y
+
+in P , with multiplication exy eyz = exz and zero when the middle indices differ. We will use the incidence algebras I(Bd) in the low-dimensional cases. 
+
+Theorem 2.2 (Saliola’s bound-quiver presentation) . Let A be a finite central real hyperplane arrangement, let F(A) be its face semigroup, and let TA := K[F(A)] . Define a quiver QA
+
+whose vertex set is the intersection lattice L(A). For X, Y ∈ L(A), there is one arrow X −→ Y
+
+precisely when Y ⊊ X and dim X − dim Y = 1 . For every pair Z ⊊ X with dim X − dim Z = 2 ,set 
+
+ρX,Z := ∑  
+
+> Y∈L(A)
+> Z⊊Y⊊X
+
+(X −→ Y −→ Z).REPRESENTATION TYPE AND SCHURIAN FINITENESS 5
+
+Then 
+
+TA ∼= KQA
+
+/
+
+〈ρX,Z : Z ⊊ X, dim X − dim Z = 2 〉 .
+
+The displayed relations form a minimal generating set for the defining ideal. In particular, the isomorphism type of TA depends only on the intersection lattice L(A).Proof. Saliola orders the intersection lattice by inclusion and orients each cover as X → Y when 
+
+X ⋗ Y . By [11, Corollary 8.4], this oriented Hasse diagram is the Gabriel quiver of the face semigroup algebra. The relations ρX,Z and their minimality are given in [11, Proposition 8.5], and the final invariance statement is [11, Corollary 8.6]. Writing the arrows directly in terms of subspace containment gives the stated convention, independently of whether L(A) is displayed using inclusion or reverse inclusion. □
+
+The following consequence will be used to detect wildness and Schurian infiniteness on smaller quivers. A set of vertices of a poset is called convex if it contains every element lying between any two of its elements. 
+
+Lemma 2.3. Let S ⊆ L(A) be a convex set of vertices, and let QS be the full subquiver of QA
+
+induced by S. Suppose that S contains no interval of length two. Then the full subcategory of 
+
+TA-mod consisting of modules supported on S is equivalent to KQS -mod, and the inclusion is exact and fully faithful. In particular, if KQS is wild, then TA is wild. Likewise, if KQS is Schurian-infinite, then 
+
+TA is Schurian-infinite. Proof. Let eSc := ∑ 
+
+> X / ∈S
+
+eX and consider the quotient TA/T AeSc TA. Its module category iden-tifies with the full subcategory of TA-mod consisting of modules supported on S.Since S is convex, every path in QA whose endpoints belong to S is entirely contained in 
+
+S. Hence the above quotient is the bound quiver algebra obtained by restricting (QA, I A) to S.The defining relations of TA are supported on intervals of length two. Since S contains no such interval, no defining relation remains after restriction. Therefore 
+
+TA/T AeSc TA ∼= KQS .
+
+The assertion now follows from Lemma 2.1. □
+
+3. The R2 Case 
+
+In this section the ambient dimension is fixed at n = 2 . Let K be an algebraically closed field, and for m ≥ 2 let Am be a central essential arrangement of m distinct lines in R2. Its intersection lattice has a unique maximal interval of length two. By Theorem 2.2, its Tits algebra is 
+
+Am := TAm ∼= KQm
+
+/ ⟨ m∑
+
+> i=1
+
+βiαi
+
+⟩
+
+,REPRESENTATION TYPE AND SCHURIAN FINITENESS 6
+
+where Qm is the m-arm quiver 
+
+s
+
+> α1
+
+v
+
+v
+
+mmmmmmmmmmmmmmmmmmmmm 
+
+> α2
+
+}
+
+}
+
+zzzzzzzzzzz
+
+> αm−1
+
+# # GGGGGGGGGGGG
+
+> αm
+
+)
+
+)
+
+SSSSSSSSSSSSSSSSSSSSSSS
+
+x1
+
+> β1
+
+(
+
+(
+
+QQQQQQQQQQQQQQQQQQQQQ x2
+
+> β2
+
+!
+
+!
+
+CCCCCCCCCCC · · · xm−1
+
+> βm−1
+
+{
+
+{
+
+xxxxxxxxxxxx xmβm
+
+u
+
+u
+
+kkkkkkkkkkkkkkkkkkkkkkk 
+
+t
+
+There is one arm s αi
+
+−→ xiβi
+
+−→ t for each 1 ≤ i ≤ m. The diagram is schematic; the cases m = 2 
+
+and m = 3 are displayed separately below. For representation type, we classify these algebras in the three cases m = 2 , m = 3 , and m ≥ 4, and then determine their Schurian finiteness. 3.1. The case m = 2 . For m = 2 , the presentation above specializes to the quiver Q2:
+
+s
+
+> α1
+
+}
+
+}
+
+{{{{{{ α2
+
+!
+
+!
+
+CCCCCC
+
+x1 
+
+> β1
+
+! ! BBBBBB x2
+
+> β2
+
+}}||||||
+
+t
+
+Thus A2 = KQ2/〈β1α1 + β2α2〉. We now prove that this algebra is representation-finite. 
+
+Theorem 3.1. The algebra A2 has exactly eleven isomorphism classes of indecomposable finite-dimensional modules. To describe them, write U = Ms, V = Mx1 , W = Mx2 , and Z = Mt, and let a, b, c, d be the maps along α1, α 2, β 1, β 2, respectively. The diagram and table below use the original arrow maps, which satisfy ca + db = 0 , to describe the eleven representations. 
+
+U
+
+> a
+
+~
+
+~
+
+~~~~~ b
+
+BBBBB
+
+V 
+
+> c
+
+@@@@@ W
+
+> d
+
+~~|||||
+
+Z
+
+Vertex spaces Arrow maps Module U V W Z a b c dSs K 0 0 0 0 0 0 0
+
+Sx1 0 K 0 0 0 0 0 0
+
+Sx2 0 0 K 0 0 0 0 0
+
+St 0 0 0 K 0 0 0 0
+
+Ms1 K K 0 0 1 0 0 0
+
+Ms2 K 0 K 0 0 1 0 0
+
+M1t 0 K 0 K 0 0 1 0
+
+M2t 0 0 K K 0 0 0 1
+
+Ms12 K K K 0 1 1 0 0
+
+M12 t 0 K K K 0 0 1 1
+
+F K K K K 1 −1 1 1
+
+Here 1 denotes id K, and 0 denotes a zero space or map. Thus A2 is representation-finite. Proof. In this proof, we decompose the module step by step to identify all indecomposable summands. Write an A2-module as M = ( U, V, W, Z ; a, b, c, d ) with ca + db = 0 , as above. Replacing b
+
+by −b gives an equivalent category of commutative-square representations. In the rest of the REPRESENTATION TYPE AND SCHURIAN FINITENESS 7
+
+proof, we use a, b, c, d for the resulting maps, so that ca = db . Let h := ca = db : U → Z and 
+
+r = rank( h). We may decompose U = U1 ⊕ U0 and Z = Z1 ⊕ Z0 such that h|U1 : U1 ∼
+
+−→ Z1 is an isomorphism and h(U0) = 0 .Moreover, set V1 := a(U1) and W1 := b(U1). Since h|U1 is injective, both a|U1 and b|U1 are injective. Since c a |U1 = h|U1 and d b |U1 = h|U1 are isomorphisms onto Z1, both c|V1 : V1 → Z1
+
+and d|W1 : W1 → Z1 are also isomorphisms. Let π1 : Z → Z1 be the projection, and define V0 := ker( π1c) and W0 := ker( π1d). Then 
+
+V = V1 ⊕ V0 and W = W1 ⊕ W0 because π1c|V1 and π1d|W1 are isomorphisms onto Z1. Moreover, 
+
+a(U0) ⊆ V0, b(U0) ⊆ W0, c(V0) ⊆ Z0, d(W0) ⊆ Z0,
+
+since h(U0) = 0 . Thus M = M1 ⊕ M0, where Mi = ( Ui, V i, W i, Z i) for i = 0 , 1. Now U1 ∼=
+
+V1 ∼= W1 ∼= Z1 ∼= Kr, and after choosing bases, all four maps in M1 become identities. Hence 
+
+M1 ∼= F ⊕r, where F denotes the full commutative square 
+
+F : K 1 / /
+
+> 1
+
+
+
+
+
+K
+
+> 1
+
+
+
+
+
+K 1
+
+/ / K
+
+Thus every module decomposes as 
+
+M ∼= F ⊕r ⊕ M0,
+
+where the residual summand M0 satisfies ca = db = 0 .We now write the residual module as M = ( U, V, W, Z ; a, b, c, d ), so ca = db = 0 , and decompose it further. Set V ↑ := a(U ) and W ↑ := b(U ). Since ca = 0 and db = 0 , we have 
+
+c(V ↑) = 0 and d(W ↑) = 0 . Choose a linear subspace V ↓ ⊆ V complementary to V ↑ = a(U ),and similarly choose W ↓ ⊆ W complementary to W ↑ = b(U ). In other words, V = V ↑ ⊕ V ↓
+
+and W = W ↑ ⊕ W ↓; these are choices of complements, not canonical subspaces. Then M = M ↑ ⊕ M ↓, where 
+
+M ↑ := ( U, V ↑, W ↑, 0; a, b, 0, 0) ,M ↓ := (0 , V ↓, W ↓, Z ; 0 , 0, c |V ↓ , d |W ↓ ).
+
+Thus M ↓ has vertex spaces 0, V ↓, W ↓, and Z at s, x1, x2, and t, respectively. Its maps out of s
+
+are zero, and its maps into t are the restrictions of c and d to the chosen complements. In M ↑,the maps a and b are viewed as maps into their images V ↑ and W ↑. So it remains to classify the upper fork M ↑ and lower fork M ↓ separately. We consider the upper fork first. Let M ↑ = ( U, V, W, 0; a, b, 0, 0) be an upper fork. Consider the linear map f = ( a, b ) : U → V ⊕ W . Let K = ker f . Choose U = K ⊕ U ′. Then the representation splits off a summand S⊕ dim Ks , so it suffices to consider the case where f is injective. Identify U ′ with its image L := f (U ′) ⊆ V ⊕ W . Let L1 := L ∩ V and L2 := L ∩ W ,and choose a complement L3 such that L = L1 ⊕ L2 ⊕ L3. Since L3 ∩ V = 0 and L3 ∩ W = 0 ,the projections of L3 to V and W are injective. Denote their images by V3 ⊆ V and W3 ⊆ W ;then L3 ∼= V3 ∼= W3. Choose complements V = L1 ⊕ V3 ⊕ V0 and W = L2 ⊕ W3 ⊕ W0. With respect to these decompositions, the representation splits as 
+
+S⊕ dim Ks ⊕ M ⊕ dim L1 
+
+> s1
+
+⊕ M ⊕ dim L2 
+
+> s2
+
+⊕ M ⊕ dim L3 
+
+> s12
+
+⊕ S⊕ dim V0 
+
+> x1
+
+⊕ S⊕ dim W0 
+
+> x2
+
+.REPRESENTATION TYPE AND SCHURIAN FINITENESS 8
+
+Therefore every representation of the upper fork is a direct sum of copies of Ss, Sx1 , Sx2 , Ms1,
+
+Ms2, and Ms12 .For the lower fork, let N = (0 , V, W, Z ; 0 , 0, c, d ), with diagram 
+
+V c 
+
+> "
+> "
+> EEEEEE
+
+W
+
+> d
+> |
+> |
+> xxxxxx
+
+Z
+
+Applying the vector-space duality D = Hom K(−, K) gives the representation 
+
+Z∗ 
+
+> c∗
+> {
+> {
+> vvvvvv d∗
+> $
+> $
+> IIIIII
+
+V ∗ W ∗
+
+of the opposite quiver. Explicitly, c∗ : Z∗ → V ∗ sends λ to λ ◦ c, and similarly d∗(λ) = λ ◦ d.If f = ( fV , f W , f Z ) : N → N ′ is a morphism, then fZ c = c′fV and fZ d = d′fW . Taking duals gives c∗f ∗ 
+
+> Z
+
+= f ∗ 
+
+> V
+
+(c′)∗ and d∗f ∗ 
+
+> Z
+
+= f ∗ 
+
+> W
+
+(d′)∗, so the vertexwise dual maps define a morphism 
+
+D(f ) : D(N ′) → D(N ). Thus D reverses both arrows and morphisms. Identifying this opposite lower fork with the upper fork via Z∗ ←→ U , V ∗ ←→ V , and 
+
+W ∗ ←→ W , the preceding upper-fork classification applies. To justify transferring the decompo-sition back, finite-dimensionality ensures that the evaluation maps X → X∗∗ are isomorphisms. They commute with the arrow maps and therefore give a natural isomorphism N ∼= D2(N ).Hence D is a contravariant equivalence. Moreover, D(P ⊕ Q) ∼= D(P ) ⊕ D(Q), and the dual of a nonzero representation is nonzero. Thus a nontrivial decomposition of N gives one of D(N ),and conversely a decomposition D(N ) ∼= P ⊕ Q gives N ∼= D(P ) ⊕ D(Q). This proves that D
+
+preserves and reflects indecomposability. Applying D to the upper-fork decomposition of D(N )
+
+now shows that N is a direct sum of copies of Sx1 , Sx2 , St, M1t, M2t, and M12 t. More explicitly, under the above identification the upper- and lower-fork indecomposables correspond as 
+
+D(Ss) ←→ St, D(Sxi ) ←→ Sxi , D(Msi ) ←→ Mit (i = 1 , 2) , D(Ms12 ) ←→ M12 t.
+
+Consequently every A2-module is a direct sum of copies of 
+
+Ss, S x1 , S x2 , S t, M s1, M s2, M 1t, M 2t, M s12 , M 12 t, F. 
+
+Each displayed representation has one-dimensional nonzero vertex spaces and connected support joined by nonzero arrow maps. Hence its endomorphisms are precisely scalar multiplications, so it is indecomposable. Their supports are distinct, so they are pairwise non-isomorphic. Therefore these are exactly the eleven indecomposables, and A2 is representation-finite. □
+
+3.2. The case m = 3 . Let A = {H1, H 2, H 3} be a central essential arrangement of three distinct lines in R2, and let TA denote its Tits algebra. The point of this case is that the bound-quiver presentation in Theorem 2.2 is exactly the classical three-arm canonical algebra of type (2 , 2, 2) .Historically, Ringel introduced these three-arm algebras in his study of tame algebras and in-tegral quadratic forms [10]; later, Geigle–Lenzing placed these algebras in the general framework of weighted projective lines and canonical algebras [9]. 
+
+Definition 3.2 (Ringel’s three-arm canonical algebra) . Let p, q, r ≥ 2. Following Ringel’s presentation [10], let ∆( p, q, r ) be the quiver consisting of three paths with a common source sREPRESENTATION TYPE AND SCHURIAN FINITENESS 9
+
+and a common sink t:
+
+x1,1 / / · · · / / x1,p −1
+
+$
+
+$
+
+JJJJJJJ
+
+s
+
+;
+
+;
+
+wwwwwww / /
+
+#
+
+#
+
+GGGGGGGG x2,1 / / · · · / / x2,q −1 / / tx3,1 / / · · · / / x3,r −1
+
+:
+
+:
+
+tttttttt
+
+Thus the three paths have lengths p, q, r , respectively, and are otherwise disjoint. When an arm has length two, its first and last interior vertices coincide, so that arm has a single interior vertex. Denote the corresponding paths from s to t by ω(1) , ω (2) , ω (3) . The three-arm canonical algebra is 
+
+Λ( p, q, r ) := K∆( p, q, r )/⟨ ω(1) + ω(2) + ω(3) ⟩.
+
+We use ∆( p, q, r ) for the quiver and Λ( p, q, r ) for the resulting algebra throughout. The displayed relation is a normalized form of the generic relation among the three paths. 
+
+Theorem 3.3. Let A be a central essential arrangement of three distinct lines in R2. Then 
+
+TA ∼= Λ(2 , 2, 2) .
+
+Proof. We first identify the bound quiver algebra underlying TA. Since A consists of three distinct lines through the origin and is essential, its intersection lattice consists of R2, H1, H2,
+
+H3, and {0}. Recall the discussion in Subsection 2.3. There is no element of L(A) strictly between R2 and Hi, or between Hi and {0}. Hence the cover relations in the inclusion order are R2 ⋗ Hi ⋗ {0} for i = 1 , 2, 3. Thus the Hasse diagram of L(A)op is a three-arm diagram. With the orientation convention used for Tits algebras, this gives the quiver 
+
+s
+
+> α1
+
+{
+
+{
+
+wwwwwwww α2
+
+
+
+ α3
+
+#
+
+#
+
+GGGGGGGG
+
+x1 
+
+> β1
+
+# # FFFFFFFF x2
+
+> β2
+
+ 
+
+x3
+
+> β3
+
+{{xxxxxxxx
+
+t
+
+where the vertices s, x i, t correspond respectively to R2, H i, {0}.By Theorem 2.2, the relations are obtained from the intervals of length two in the intersection lattice: for each such interval, one imposes the sum of all length-two paths in that interval. In the displayed opposite order there is only one interval of length two, namely [{0}, R2]. Its three saturated chains R2 ⋗ Hi ⋗ {0}, for i = 1 , 2, 3, correspond exactly to the three paths ω(i) = βiαi
+
+from the common source to the common sink. Therefore 
+
+TA ∼= KQ/ 〈β1α1 + β2α2 + β3α3〉 = KQ/ 〈ω(1) + ω(2) + ω(3) 〉.
+
+This is precisely the canonical algebra of type (2 , 2, 2) : it has three arms, each of length 2,and one linear relation among the three maximal paths from the source to the sink. Hence 
+
+TA ∼= Λ(2 , 2, 2) . □
+
+To determine the representation type, we use Ringel’s trichotomy for the classical algebras 
+
+Λ( p, q, r ) [10]. 
+
+Theorem 3.4 (Ringel’s trichotomy) . For the classical algebra Λ( p, q, r ), the following hold: REPRESENTATION TYPE AND SCHURIAN FINITENESS 10 
+
+(1) If 1 
+
+> p
+
++ 1 
+
+> q
+
++ 1 
+
+> r
+
+> 1, then Λ( p, q, r ) is a tame concealed algebra and, in particular, domestic tame ;
+
+(2) If 1 
+
+> p
+
++ 1 
+
+> q
+
++ 1 
+
+> r
+
+= 1 , then Λ( p, q, r ) is tubular ;
+
+(3) If 1 
+
+> p
+
++ 1 
+
+> q
+
++ 1 
+
+> r
+
+< 1, then it is wild .
+
+We can now determine the representation type. 
+
+Theorem 3.5. For a central essential arrangement A of three distinct lines in R2, the Tits algebra TA is of tame representation type. Proof. Since we already know that TA ∼= Λ(2 , 2, 2) , we can apply Ringel’s trichotomy. In this case, 12 + 12 + 12 = 32 > 1, so TA is a tame concealed algebra and in particular has tame representation type. □
+
+3.3. The case m ≥ 4. For this case, we embed the module category of the free algebra K〈x, y 〉
+
+into Am-mod to show that Am is of wild representation type for m ≥ 4.
+
+Theorem 3.6. For every m ≥ 4 there is a full exact embedding 
+
+G : K〈x, y 〉-mod ↪→ Am-mod .
+
+Consequently, Am is strictly wild for every m ≥ 4.Proof. Let (M, X, Y ) be a finite-dimensional K〈x, y 〉-module. Define an Am-module G(M, X, Y )
+
+by taking Vs = Vx1 = · · · = Vxm = Vt = M , with arrow maps αi = id M for 1 ≤ i ≤ m and 
+
+β1 = X, β2 = Y, β3 = id M ,β4 = −(X + Y + id M ), βi = 0 (i ≥ 5) .
+
+Then m∑
+
+> i=1
+
+βiαi = X + Y + id M −(X + Y + id M ) + 0 + · · · + 0 = 0 ,
+
+so the defining relation of Am is satisfied. Therefore G(M, X, Y ) is indeed an Am-module. Now let T : ( M, X, Y ) → (M ′, X ′, Y ′) be a morphism of K〈x, y 〉-modules, so T X = X′T and 
+
+T Y = Y ′T . Assign the same linear map T to every vertex of Qm; then all squares commute, so we get a morphism G(M, X, Y ) → G(M ′, X ′, Y ′).Conversely, let 
+
+ϕ = ( fs, f 1, . . . , f m, f t) : G(M, X, Y ) → G(M ′, X ′, Y ′)
+
+be an Am-morphism. Since all αi are identities, commutativity at these arrows implies f1 =
+
+· · · = fm = fs. Since β3 = id , commutativity at β3 implies ft = fs. Finally, commutativity at β1 and β2 becomes fsX = X′fs and fsY = Y ′fs. Thus every Am-morphism comes from a unique K〈x, y 〉-morphism. Hence G is full and faithful, while exactness is checked vertexwise. In particular, G preserves indecomposability and isomorphism classes, so Am is strictly wild. □
+
+3.4. Schurian finiteness. We can now determine the Schurian finiteness of the rank-two Tits algebras. 
+
+Theorem 3.7. The rank-two Tits algebra Am is Schurian-finite if and only if m = 2 .Proof. By Theorem 3.1, the algebra A2 is representation-finite, so it is Schurian-finite. REPRESENTATION TYPE AND SCHURIAN FINITENESS 11 
+
+Suppose first that m = 3 . Let 
+
+K2 : 1 x / /   
+
+> y//
+
+2
+
+be the 2-Kronecker quiver. Write one of its finite-dimensional representations as 
+
+M =
+
+(
+
+U X / /  
+
+> Y
+> //
+
+V
+
+)
+
+.
+
+Define an A3-module F3(M ) by 
+
+F3(M )s = F3(M )x3 = U, F3(M )x1 = F3(M )x2 = F3(M )t = V, α1 = X, α2 = Y, α3 = id U , β1 = β2 = id V , β3 = −(X + Y ).
+
+Then 
+
+β1α1 + β2α2 + β3α3 = X + Y − (X + Y ) = 0 ,
+
+so F3(M ) satisfies the defining relation of A3.A morphism (p, q ) : M → M ′ of Kronecker representations satisfies qX = X′p and qY = Y ′p.Assigning p at the vertices s, x 3 and q at the vertices x1, x 2, t defines an A3-morphism. Con-versely, the identity arrows in F3(M ) force every A3-morphism to have precisely this form, and the two remaining commutativity conditions are the Kronecker conditions above. Consequently, 
+
+F3 : rep K(K2) ↪→ A3-mod is full, faithful, and exact. For each λ ∈ K, set 
+
+Mλ =
+
+(
+
+K 1 / /  
+
+> λ
+> //
+
+K
+
+)
+
+.
+
+The modules Mλ are pairwise non-isomorphic bricks. Since K is infinite and F3 is fully faithful, the modules F3(Mλ) form an infinite family of pairwise non-isomorphic Schurian A3-modules. Thus A3 is Schurian-infinite. Finally, let m ≥ 4. Regard Nλ = ( K, id K, λ id K), for λ ∈ K, as a one-dimensional K〈x, y 〉-module. These modules are pairwise non-isomorphic bricks. The fully faithful functor G from Theorem 3.6 preserves their endomorphism algebras and isomorphism classes. Hence the Am-modules G(Nλ) give infinitely many pairwise non-isomorphic bricks, and Am is Schurian-infinite. 
+
+□
+
+4. The R3 Case 
+
+We retain the notation and conventions of Section 2. In dimension three, we first treat three planes and then prove wildness for four planes. Larger arrangements will be covered by deletion in Section 6. 4.1. Three planes in R3. For three distinct hyperplanes in Rn, the intersection is at least 
+
+(n − 3) -dimensional. Hence, for n ≥ 4, the intersection is at least one-dimensional, and the arrangement is not essential. Therefore, we only need to consider the case of three planes in R3.
+
+Theorem 4.1. Let A be a central essential arrangement of three distinct planes in R3. Then 
+
+TA ∼= I(B3), where I(B3) is the incidence algebra of the Boolean lattice B3, viewed as the three-dimensional cube. Consequently, TA is of tame representation type. Proof. For each i = 1 , 2, 3, choose a nonzero linear form αi ∈ (R3)∗ such that Hi = ker( αi).Essentiality implies that the three covectors α1, α 2, α 3 form a basis of (R3)∗. Therefore the REPRESENTATION TYPE AND SCHURIAN FINITENESS 12 
+
+linear isomorphism 
+
+Φ : R3 −→ R3, v 7 −→ (α1(v), α 2(v), α 3(v))
+
+sends Hi to the coordinate hyperplane 
+
+Ci := {(x1, x 2, x 3) ∈ R3 : xi = 0 }, i = 1 , 2, 3.
+
+Thus it sends A to the coordinate arrangement C3 := {C1, C 2, C 3} and induces an isomorphism of face semigroups, so TA ∼= TC3 , as K-algebras. The face sign vectors of C3 are all elements of {+, 0, −} 3. Since the coordinate arrangement is the product of three one-dimensional arrangements, and the one-dimensional face algebra is the incidence algebra of the two-element Boolean lattice B1, we obtain 
+
+TC3 ∼= K[{+, 0, −} 3] ∼= K[{+, 0, −} ]⊗3 ∼= I(B1)⊗3 ∼= I(B3).
+
+The incidence algebra of the cube B3 is of tame representation type [5, Lemma 3.5]. This proves the theorem. □
+
+We now address Schurian finiteness in the case of three planes. 
+
+Theorem 4.2. Let A be a central essential arrangement of three distinct planes in R3. Then 
+
+TA is Schurian-infinite. Proof. Let Lij = Hi ∩Hj for 1 ≤ i < j ≤ 3. Essentiality implies that the three lines L12 , L 13 , L 23 
+
+are distinct. The set S = {H1, H 2, H 3, L 12 , L 13 , L 23 } consists of two consecutive ranks of the intersection lattice. Thus it is convex and contains no interval of length two. By Lemma 2.3, it suffices to construct infinitely many pairwise non-isomorphic bricks for the path algebra 
+
+B = KQS of the following quiver: 
+
+H1 / / 
+
+> 
+> 
+
+L12 H2
+
+> oo
+> 
+> 
+
+L13 H3   
+
+> oo//
+
+L23 
+
+For each λ ∈ K, define Mλ by assigning K to each vertex, the scalar λ to H1 → L13 , and the identity map to the other five arrows. Those five identity arrows form a connected spanning path, so the commutativity conditions force every endomorphism to act by the same scalar at all six vertices. Conversely, every such scalar defines an endomorphism. Hence End B (Mλ) ∼= K.If Mλ ∼= Mμ, the same five arrows force the components of an isomorphism to be a common nonzero scalar c. The remaining arrow gives cλ = μc , so λ = μ. Since K is infinite, these modules form an infinite family of pairwise non-isomorphic bricks. □
+
+4.2. Four planes in R3. We now investigate the case of four distinct planes. 
+
+Theorem 4.3. Let A be a central essential arrangement of four distinct planes in R3. Then 
+
+TA is of wild representation type. Proof. Let A = {H1, H 2, H 3, H 4} be central and essential in R3. Any two distinct planes meet in a line, so the intersection of any three is either a line or the origin. At most one triple can meet in a line: two distinct triples share two planes, and both triple-intersection lines would have to equal the intersection of those two planes. That line would then lie in all four planes, contradicting essentiality. We therefore have exactly the two cases below. REPRESENTATION TYPE AND SCHURIAN FINITENESS 13 
+
+In either case, let S consist of the four planes and all their distinct pairwise intersection lines, and let QS be the induced quiver. Its arrows run from each plane to the lines it contains. These vertices occupy two consecutive ranks, so S is convex and contains no interval of length two. By Lemma 2.3, it remains to show that KQS is wild. 
+
+Case 1: every three planes meet only at the origin. The six lines Hi ∩ Hj , with i < j ,are pairwise distinct. Indeed, an equality between two of them would give a line contained in at least three planes. Each line is contained in exactly its two defining planes, since a third containing plane would give the same contradiction. Thus the intersection lattice consists of R3,four planes, six lines, and {0}. The underlying unoriented graph of QS is the subdivision graph of K4: the vertex corresponding to Hi ∩ Hj subdivides the edge joining Hi and Hj . Therefore 
+
+|V (QS )| = 10 , |E(QS )| = 12 , and β(QS ) = 3 . This connected graph is neither Dynkin nor extended Dynkin. By the hereditary trichotomy [10], KQS is wild, and hence TA is wild. 
+
+Case 2: three planes share a common line. After relabelling, let L = H1 ∩ H2 ∩ H3 be a line. The pairwise intersections among H1, H 2, H 3 all equal L, since each is a line containing 
+
+L. Essentiality gives L ∩ H4 = {0}. For i = 1 , 2, 3, set Mi = Hi ∩ H4; these are lines distinct from L. They are also pairwise distinct: if Mi = Mj for i 6 = j, that line would lie in Hi ∩ Hj ∩ H4 = L ∩ H4 = {0}, a contradiction. The same argument shows that Mi is not contained in Hj for j ∈ { 1, 2, 3} \ { i}. Thus L lies in exactly H1, H 2, H 3, and each Mi lies in exactly Hi and H4. The vertices of QS are consequently H1, H 2, H 3, H 4 and L, M 1, M 2, M 3.The induced quiver has the arrows 
+
+M1 H1
+
+> oo
+> $
+> $
+> HHHHHHHHH
+
+H4   
+
+> :
+> :
+> tttttttt//
+> $
+> $
+> JJJJJJJJ
+
+M2 H2   
+
+> oo//
+
+LM3 H3
+
+> oo
+> :
+> :
+> vvvvvvvvv
+
+Consequently, |V (QS )| = 8 , |E(QS )| = 9 , and β(QS ) = 9 − 8 + 1 = 2 . This connected graph is again neither Dynkin nor extended Dynkin. Thus KQS , and consequently TA, is wild. This completes the proof. □
+
+5. The R4 Case 
+
+We continue with four distinct hyperplanes. Their common intersection in Rn has dimension at least n − 4, so essentiality forces n ≤ 4. The cases of dimensions two and three have been treated in Sections 3 and 4; it remains to consider dimension four. 
+
+Theorem 5.1. Let A be a central essential arrangement of four distinct hyperplanes in R4.Then TA is of wild representation type. Proof. By Theorem 2.2, the vertices of the Gabriel quiver of TA are the elements of the inter-section lattice L(A), ordered by reverse inclusion, and there is an arrow X −→ Y whenever Y
+
+covers X. The defining relations come from intervals of length two. Write A = {H1, H 2, H 3, H 4}, where Hi = ker( αi) and αi ∈ (R4)∗ is a nonzero linear form. By essentiality, the four covectors span (R4)∗ and therefore form a basis. Intersections indexed REPRESENTATION TYPE AND SCHURIAN FINITENESS 14 
+
+by distinct subsets of these four hyperplanes are distinct, and hence L(A) ∼= B4, the Boolean lattice of rank four. Take the vertices in ranks one and two: S = {H1, H 2, H 3, H 4} ∪ { Hi ∩ Hj : 1 ≤ i < j ≤ 4}.Since these are two consecutive ranks, S is convex and contains no interval of length two. By Lemma 2.3, it suffices to prove that the path algebra of the induced quiver QS is wild. For every i < j , the induced quiver has the two arrows 
+
+Hi 
+
+> %
+> %
+> KKKKKKK
+
+Hj
+
+> y
+> y
+> sssssss
+
+Hi ∩ Hj
+
+Its underlying unoriented graph is the subdivision graph of K4. Thus |V (QS )| = 4 + 6 = 10 ,
+
+|E(QS )| = 12 , and its cyclomatic number is β(QS ) = |E(QS )| − | V (QS )| + 1 = 3 . The graph is therefore neither Dynkin nor extended Dynkin. By the hereditary trichotomy [10], the path algebra KQS is wild, and hence TA is wild. □
+
+6. General Case 
+
+In this section, we shall prove that any central arrangement can be reduced to central es-sential arrangements, and moreover, for any central essential arrangement with at least four hyperplanes, the corresponding Tits algebra is wild. For a central arrangement A in Rn, the common intersection X = ∩ 
+
+> H∈A
+
+H consists of directions along which none of the defining linear forms changes. Translating a point along X
+
+therefore leaves its face sign vector unchanged. This suggests removing those common directions by passing to Rn/X and replacing each hyperplane H by H/X ; the resulting hyperplanes have zero total intersection. This reduction is called essentialization . The following lemma shows that it preserves the Tits algebra, so the representation-theoretic classification can be carried out for essential arrangements. 
+
+Lemma 6.1 (Essentialization) . Let A = {H1, . . . , H m} be a central arrangement in Rn, and set 
+
+X =
+
+> m
+
+∩
+
+> i=1
+
+Hi, r = n − dim X, Hi = Hi/X. 
+
+Then Aess := {H1, . . . , H m} is an essential arrangement in Rn/X , which we identify with Rr,and 
+
+TA ∼= TAess .
+
+Consequently, A and Aess have the same representation type and the same Schurian finiteness. Proof. Write Hi = ker( αi) with αi ∈ (Rn)∗ a nonzero linear form. Since X ⊆ Hi, each αi
+
+vanishes on X and descends to a functional αi ∈ (Rn/X )∗ with Hi = ker( αi). Moreover, 
+
+> m
+
+∩
+
+> i=1
+
+Hi =
+
+( m∩
+
+> i=1
+
+Hi
+
+)
+
+/X = 0 ,
+
+so the quotient arrangement is essential. For v ∈ Rn, its sign vector with respect to A is 
+
+sgn A(v) = (sgn α1(v), . . . , sgn αm(v)).REPRESENTATION TYPE AND SCHURIAN FINITENESS 15 
+
+If x ∈ X, then αi(v + x) = αi(v) for every i. Hence the sign vector depends only on the coset 
+
+v + X, and the two arrangements have the same set of face sign vectors. Their products also agree, since the Tits product is given by 
+
+(σ ◦ τ )i =
+
+
+
+σi, σi 6 = 0 ,τi, σi = 0 .
+
+Thus F(A) ∼= F(Aess ), and taking semigroup algebras gives the claimed isomorphism. □
+
+To pass from small arrangements to larger ones, we use deletion. The following quotient construction preserves both wildness and Schurian infiniteness in the required direction. 
+
+Lemma 6.2 (Deletion) . Let A = {H1, . . . , H m} be a central arrangement in Rn, and let B =
+
+{Hi1 , . . . , H ik } ⊆ A be a subarrangement. Then there is a surjective algebra homomorphism 
+
+TA ↠ TB.
+
+In particular, if TB is wild, then TA is wild; if TB is Schurian-infinite, then TA is Schurian-infinite. Proof. Restricting a sign vector to the coordinates indexed by B defines the map π : F(A) −→ F(B). It is surjective: for a face G of B, choose any point v ∈ G and take the face of A containing 
+
+v; its sign vector restricts to that of G. Since the Tits product is defined coordinatewise, π is a semigroup homomorphism. Its linear extension gives the required surjective algebra map. The final assertion follows from the quotient-algebra inheritance in Lemma 2.1. □
+
+To conclude, we have the following theorem. 
+
+Theorem 6.3. Let A be a central arrangement containing at least four distinct hyperplanes. Then TA is wild. Proof. By Lemma 6.1, we may assume that A is essential. Essentialization does not identify distinct hyperplanes, since each Hi is the inverse image of Hi/X under the quotient map. Let 
+
+r be the rank of A, equivalently the dimension of the span of its defining covectors. Since A
+
+contains at least four distinct central hyperplanes, one has r ≥ 2.If r = 2 , the result follows from the explicit embedding of Theorem 3.6. If r = 3 , choose three hyperplanes whose defining covectors are linearly independent and adjoin any fourth distinct hyperplane. The resulting subarrangement B is essential in dimension three, so TB is wild by Theorem 4.3. The quotient map of Lemma 6.2 then implies that TA is wild. No general-position assumption on the four hyperplanes is needed. If r ≥ 4, choose four hyperplanes with linearly independent defining covectors and let B be the resulting rank-four subarrangement. Its essentialization is an essential arrangement of four hyperplanes in R4, so its Tits algebra is wild by Theorem 5.1. Essentialization identifies this algebra with TB, and deletion gives a quotient TA ↠ TB. Hence TA is wild in this case as well. □
+
+We now give the Schurian-finiteness criterion for all central arrangements, including nonessen-tial arrangements and those of rank zero or one. 
+
+Theorem 6.4. Let A be a central arrangement of distinct hyperplanes in Rn. Then TA is Schurian-finite if and only if |A| ≤ 2.REPRESENTATION TYPE AND SCHURIAN FINITENESS 16 
+
+Proof. If |A| = 0 , its face semigroup has one element and TA ∼= K. If |A| = 1 , essentialization reduces to one hyperplane in R; by Saliola’s presentation its algebra is the path algebra of a single arrow, which is representation-finite. If |A| = 2 , the two defining covectors are independent, so essentialization gives two distinct lines in R2 and Theorem 3.1 applies. Thus in each case TA is representation-finite and hence Schurian-finite. Now suppose that |A| ≥ 3, and choose any three-element subarrangement B = {H1, H 2, H 3} ⊆ A. By Lemma 6.2, there is a surjective algebra homomorphism TA ↠ TB. Since the three hyper-planes are distinct, the rank of B is either 2 or 3. If rk( B) = 2 , essentialization and Theorem 3.7 show that TB is Schurian-infinite. If rk( B) = 3 , essentialization and Theorem 4.2 show that TB
+
+is Schurian-infinite. Thus TB is Schurian-infinite in either case. Since it is a quotient of TA,quotient inheritance implies that TA is Schurian-infinite. □
+
+> References
+
+1. Adachi, T., Iyama, O. and Reiten, I., τ -tilting theory, Compos. Math. 150 (3), 415–452 (2014). https://doi.org/10.1112/S0010437X13007422. 2. Assem, I., Simson, D. and Skowroński, A., Elements of the Representation Theory of Asso-ciative Algebras, Vol. 1: Techniques of Representation Theory, London Math. Soc. Student Texts, vol. 65. Cambridge University Press, Cambridge (2006). https://doi.org/10.1017/ CBO9780511614309. 3. Benson, D. J., Representations and Cohomology I: Basic Representation Theory of Finite Groups and Associative Algebras, Cambridge Studies in Advanced Mathemat-ics, vol. 30. Cambridge University Press, Cambridge (1991). https://doi.org/10.1017/ CBO9780511623615. 4. Brown, K. S. and Diaconis, P., Random walks and hyperplane arrangements, Ann. Probab. 
+
+26 (4), 1813–1854 (1998). 5. Chapoton, F. and Rognerud, B., On the wildness of Cambrian lattices, Algebr. Represent. Theory 22 (3), 603–614 (2019). https://doi.org/10.1007/s10468-018-9789-1. 6. Demonet, L., Iyama, O. and Jasso, G., τ -tilting finite algebras, bricks, and g-vectors, Int. Math. Res. Not. IMRN 2019 (3), 852–892 (2019). https://doi.org/10.1093/imrn/rnx135. 7. Erdmann, K. and Lim, K. J., The representation type of the descent algebras of type A,Sci. China Math. 68 (12), 2827–2846 (2025). https://doi.org/10.1007/s11425-024-2378-y. 8. Erdmann, K. and Lim, K. J., The representation type of the descent algebras (2026). https: //doi.org/10.48550/arXiv.2604.21619, preprint, arXiv:2604.21619 [math.RT]. 9. Geigle, W. and Lenzing, H., A class of weighted projective curves arising in representation theory of finite dimensional algebras. In: Singularities, Representation of Algebras, and Vector Bundles, Lecture Notes in Math., vol. 1273, pp. 265–297. Springer, Berlin (1987). https://doi.org/10.1007/BFb0078849. 10. Ringel, C. M., Tame Algebras and Integral Quadratic Forms, Lecture Notes in Math., vol. 1099. Springer, Berlin (1984). https://doi.org/10.1007/BFb0072870. 11. Saliola, F. V., The face semigroup algebra of a hyperplane arrangement, Canad. J. Math. 
+
+61 (4), 904–929 (2009). https://doi.org/10.4153/CJM-2009-046-2. 12. Schiffler, R., Quiver Representations. CMS Books in Mathematics, Springer, Cham (2014). https://doi.org/10.1007/978-3-319-09204-1. REPRESENTATION TYPE AND SCHURIAN FINITENESS 17 
+
+13. Schocker, M., The module structure of the Solomon–Tits algebra of the symmetric group, J. Algebra 301 (2), 554–586 (2006). https://doi.org/10.1016/j.jalgebra.2005.07.032. 14. Stanley, R. P., An introduction to hyperplane arrangements. In: Miller, E., Reiner, V. and Sturmfels, B. (eds.) Geometric Combinatorics, IAS/Park City Math. Ser., vol. 13, pp. 389–496. American Mathematical Society, Providence, RI (2007). https://doi.org/10.1090/ pcms/013/08. 
+
+(Siyuan Chen) School of Physical and Mathematical Sciences, Nanyang Technological University, 21 Nanyang Link, Singapore 637371. 
+
+Email address : siyuan012@e.ntu.edu.sg

@@ -1,0 +1,2028 @@
+Title: Index for a mutation loop
+
+URL Source: https://arxiv.org/pdf/2610.18940v1
+
+Published Time: Thu, 15 Oct 2026 00:03:03 GMT
+
+Number of Pages: 31
+
+Markdown Content:
+INDEX FOR A MUTATION LOOP 
+
+TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+Abstract. Motivated by the 3d-3d correspondence, we introduce an index Iϕg for a mutation loop ϕ of a quiver and an integer g ≥ 0. We prove its integrality Iϕg ∈ Z
+
+under certain conditions, which extends the integrality conjecture of Gang–Kim–Yoon [GKY21] for 3-manifolds to the broader framework of mutation loops in cluster algebras. Our index also has an interpretation as the genus-g partition function of a (1 + 1)-dimensional TQFT. We provide explicit computations for mutation loops of period one. In particular, in the case of the generalized Kronecker quivers, we give an explicit formula expressing the generating function of the indices for all genera g as a ratio of polynomials. Altogether, we provide a new insight to the interplay between the geometry of 3-manifolds and cluster algebra. 
+
+Contents 
+
+1. Introduction 12. Mutation loops 43. Index for a mutation loop and its relatives 11 4. Integrality of the index 14 5. (1 + 1)-dimensional interpretation 19 6. Examples 23 References 30 1. Introduction 
+
+In the rich and fruitful interplay between the physics and mathematics of quantum fields, quantum field theory continues to provide new perspectives and conjectures that often appear unexpected from a mathematical point of view. In particular, recent de-velopments have revealed a number of intriguing relationships between quantum quanti-ties arising in quantum field theory and topological invariants in mathematics. Recently, Gang, Kim, and Yoon [GKY21], based on the 3d–3d correspondence [TY11, TY13, DG13, DGG14, CCV11], proposed that, for a three-dimensional gauge theory on Σ g × S1 labeled by a 3-manifold M , the index Ig can be identified with a sum of ( g − 1)-st powers of Rei-demeister torsions associated with M . See also [GKP20, BGP20]. This correspondence provides a bridge between the geometric information of a 3-manifold and the quantum in-formation of the corresponding gauge theory, and offers an important clue for uncovering new mathematical relationships between the two. 
+
+Date : October 15, 2026.  
+
+> 1arXiv:2610.18940v1 [math.RT] 13 Oct 2026 2TSUKASA ISHIBASHI AND YUJI TERASHIMA
+
+Based on this proposal, they formulated a mathematical conjecture asserting that this sum of ( g − 1)-st powers of Reidemeister torsions should be an integer as a consequence of the integrality of the index [GKY21, Conjecture 3.1]. Moreover, for g = 0, they conjecture that this sum, namely the inverse sum of Reidemeister torsions, should be zero [GKY21, Conjecture 1.1]. For mathematical proofs of the integrality conjecture for twist knots, see [TTY26], and for torus knots, see [TYa26, MT26]. On the other hand, the 3d–3d correspondence was extended in [TY14] to the setting of three-dimensional gauge theories labeled by mutation loops of quivers rather than by 3-manifolds. This extension makes it possible to transfer structures arising from 3-manifolds into the framework of cluster theory [FZ02, FG09]. Table 1 gives a first dictionary between the cluster theory and 2 & 3-manifolds. Cluster theory 2 & 3-manifolds Cluster Poisson variety X framed character variety XG, Σ of a surface Σ [FG06] Mutation loop ϕ Mapping class ϕ on Σ Fixed point locus Fix ϕ framed character variety XG,M ϕ of the mapping torus Mϕ
+
+Table 1. Dictionary between the cluster theory and 2 & 3-manifolds 1.1. Indices of a mutation loop. In this paper, combining these two perspectives, we introduce a definition of the genus-g index Iϕg associated with a non-degenerate mutation loop ϕ for g ≥ 0 (Definition 3.2): 
+
+Iϕg := X
+
+> x∈Fix ϕ(Q)
+
+det(1 − (dϕ )x)g−1 ∈ Q.
+
+Here, x runs over the Q-fixed points of ϕ in the cluster Poisson torus. The non-degeneracy means det(1 −(dϕ )x)̸ = 0 for any x. In particular, the fixed point locus is 0-dimensional. In view of [KT15], each term det(1 − (dϕ )x) is a cluster-theoretic analogue of the non-acyclic adjoint Reidemeister torsion at x (Remark 3.3). We also introduce a one-parameter refinement Iϕg,t ∈ Q(t) (Definition 3.6), which recovers the index by Iϕg, 1 = Iϕg . See Examples 3.5 and 3.7 for examples of type A2.1.2. Integrality for g ≥ 1. We then investigate the integrality of these (refined) indices. Our main result is the following: 
+
+Theorem 1 (Theorems 4.11 and 4.12) . Let ϕ be a non-degenerate mutation loop. 
+
+(1) If ϕ has finite order, then Ig,t ∈ Z[t] for all g ≥ 1.
+
+(2) Under a certain assumption on integrality of shape parameters, we have Ig,t ∈ Z[t]
+
+for all g ≥ 1.
+
+See Theorem 4.12 for a precise condition on the second statement. Proofs of both statements are based on the interpretation of Iϕg as a trace in the Artinian ring Rϕ =
+
+O(Fix ϕ). The second statement further relies on the Mizuno’s Jacobian formula [Miz20]. INDEX FOR A MUTATION LOOP 3
+
+Conjecture 2. Let ϕ be a non-degenerate mutation loop of an indecomposable seed. As-sume ϕ is either finite-order or primitive (Definition 2.8). Then Iϕg ∈ Z for any g ≥ 1.
+
+This gives a cluster-algebraic analogue of the integrality conjecture of Gang–Kim–Yoon for 3-manifolds to the broader framework of mutation loops in cluster algebras. As we will see in Example 6.5, the integrality of the refined index turns out not to be true in general. 1.3. Frobenius structure and the vanishing for g = 0 . In Section 5.1, we also provide a (1 + 1)-dimensional interpretation of our index. The fixed point algebra Rϕ
+
+admits a natural Frobenius structure such that Iϕg can be interpreted as the genus-g
+
+partition function Z(Σ g) of the associated (1 + 1)-dimensional TQFT (Theorem 5.4). This description suggests an intimate connection to the Vafa–Intriligator formula [ST97] on quantum cohomology. A presentation of Rϕ as an Artinian complete intersection leads to another Frobenius structure on Rϕ (Section 5.2). Following the work of Siebert–Tian [ST97], we then obtain a sufficient condition for the vanishing of the genus-0 index Iϕ 
+
+> 0
+
+by a degree argument. This is based on the global residue theorem: a connection between the vanishing conjecture and the global residue theorem was also observed by Gang–Kim– Yoon [GKY21]. 1.4. Examples. We exhibit our results for the mutation loops of period one, which have been classified by Fordy–Marsh [FM11], including the case of generalized Kronecker quiv-ers. The result is as follows: 
+
+Theorem 3 (Theorems 6.3 and 6.6) . Let ϕ be a mutation loop of period one associated with a palindromic sequence a = ( a2, . . . , a N ), and let A± := 2 − PNj=2 [±aj ]+. Assume 
+
+(A+, A −)̸ = (0 , 0) .
+
+(1) We have Iϕg ∈ Z for all g ≥ 1. If moreover A+̸ = A−, then Iϕg,t ∈ Z[t] for g ≥ 1.
+
+(2) Iϕ 
+
+> 0
+
+= 0 if and only if A+A− < 0 or (A+, A −) ∈ { (±1, 0) , (0 , ±1) }.
+
+Several remarks are in order. (1) When A+ = A−, we have examples for which Iϕg ∈ Z
+
+for all g ≥ 1 but Iϕg,t /∈ Z[t] (Example 6.5). For the case of generalized Kronecker quivers, explicit values of Iϕg and Iϕg,t are shown in Table 4 and Table 5, respectively. (2) See Theorem 6.6 for precise values of Iϕ 
+
+> 0
+
+including the non-zero cases. Table 3 shows the explicit values for small ( A+, A −). The non-vanishing is possibly related to “missing” fixed points outside the initial cluster torus (cf. Remark 2.7). We do not pursue this direction in this paper. In the special case of generalized Kronecker quivers, we also give an explicit formula ex-pressing the generating function of the indices Iϕg for all genera g as a ratio of polynomials (Theorem 6.7). This generating-function description allows us not only to compute the index for each genus, but also to describe all genera simultaneously in a unified manner. 4 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+1.5. Further perspectives. The definition of the index introduced in this paper is based on a cluster-theoretic analogue of Reidemeister torsion for 3-manifolds. We ex-pect that this analogue will play an important role as a new framework for unifying 3-manifolds and mutation loops in cluster algebras. In particular, it may provide a cluster-theoretic counterpart of projects associating modular tensor categories to 3-manifolds [CGK20, CQW23], the knot–quiver correspondence [KRSS17, KRSS19, EKL20], and the knot–gauge correspondence [MTT21]. More broadly, these connections may reveal new relationships between cluster algebra and gauge theory that are not visible from the ex-isting frameworks. 
+
+Organization of the paper. In Section 2, we recall the basics on mutation loops, their description by mutation networks [TY14, Miz20], and their refinement by Mizuno [Miz21a]. These provide a useful tool to investigate the fixed point locus. In Section 3, we introduce the index of a mutation loop, its refined version, and the generating function with the simplest example of type A2. The integrality of the (refined) index for g ≥
+
+1 is discussed in Section 4. Section 5 provides a (1 + 1)-dimensional interpretation, and a vanishing condition for the genus-0 index. Finally, in Section 6, we give explicit computations for the mutation loops of period one. 
+
+Acknowledgements. The authors would like to express our gratitude to Y. Mizuno, R. Tange, and Y. Yamaguchi for helpful discussions. T. I. is supported by JSPS KAK-ENHI Grant Number JP24K16914. Y.T. is supported by JSPS KAKENHI Grant Num-bers 23K22388, 25K06969, 26K22256. 
+
+AI disclosure. The authors made limited use of ChatGPT 6-Astra (OpenAI) for prelim-inary mathematical discussions, consistency checks, assistance with Mathematica coding, grammar correction and search for (counter-)examples. No counterexample to Conjec-ture 2 has been found in this use. All mathematical arguments have been independently reconstructed and finalized by the authors. The manuscript was written entirely by the authors, and all the references were independently verified. The authors take full respon-sibility for the content of this paper. 2. Mutation loops 
+
+2.1. Seeds and mutations. We fix the following data: 
+
+• A finite set I of indices. 
+
+• A field F isomorphic to the field Q(zi | i ∈ I) of rational functions in |I| variables with coefficients in Q, called the ambient field .
+
+Definition 2.1. A (labeled, skew-symmetric) seed in F is a pair i = ( B, y), where 
+
+• B = ( bij )i,j ∈I is an I × I skew-symmetric integral matrix. 
+
+• y = ( yi)i∈I is a tuple of elements of F such that F ∼= Q(yi | i ∈ I). We call the matrix B the exchange matrix of i. Each element yi is called a cluster Poisson variable .INDEX FOR A MUTATION LOOP 5
+
+The exchange matrix B can be encoded in a quiver Q with vertex set I such that 
+
+bij = # {arrows i → j} − #{arrows j → i}.
+
+We then define mutations of seeds. We will use the notation [ x]+ := max {x, 0}, and let sgn( x) ∈ {− 1, 0, 1} denote the sign for any x ∈ R.
+
+Definition 2.2. Let i be a seed in F. For each k ∈ I, the seed mutation directed to k
+
+creates a new seed i′ = μk(i) = ( B′, y′) in F by the following rule. 
+
+b′ 
+
+> ij
+
+:= 
+
+(
+
+−bij if k ∈ { i, j },bij + [ bik ]+[bkj ]+ − [−bik ]+[−bkj ]+ otherwise . (2.1) 
+
+y′ 
+
+> i
+
+:= 
+
+(
+
+y−1 
+
+> k
+
+if i = k, yi(1 + y−sgn( bki ) 
+
+> k
+
+)−bki if i̸ = k. (2.2) We call the transformation (2.1) the matrix mutation , the transformation (2.2) the cluster Poisson transformation .A seed i = ( B, y) is said to be indecomposable if B cannot be decomposed into a non-trivial direct sum. It is equivalent to the condition that the associated quiver Q is connected. This condition is mutation-invariant. 2.2. Mutation loops. One can consider any successive application of mutations μkn . . . μ k2 μk1 (i)for k1, . . . , k n ∈ I. For σ ∈ SI , we define a new seed i′ = σ(i) = ( B′, y′) by the rule 
+
+b′ 
+
+> ij
+
+:= bσ−1(i),σ −1(j), y′ 
+
+> j
+
+:= yσ−1(j). (2.3) Note the relation σμ kσ−1 = μσ(k) for k ∈ I, σ ∈ SI .
+
+Definition 2.3. Let i be a seed in F. A sequence of seeds 
+
+ϕ : i = i(0) → i(1) → · · · → i(L), (2.4) where each step i(ν) → i(ν+1) is either a mutation or a permutation of labels, is called a mutation sequence with initial seed i. Write i(ν) = ( B(ν), y(ν)) for ν = 0 , . . . , L . The mutation sequence ϕ is called a mutation loop if B(L) = B(0) . We identify two mutation loops if the terminal seed i(L) is the same. We may also write ϕ as a word of symbols μk
+
+(k ∈ I) and σ ∈ SI .Let Gm be the multiplicative group scheme such that Gm(K) = K∗ for any field K.The cluster Poisson transformation (2.2) can be viewed as a birational map 
+
+μk : ( Gm)I 99K (Gm)I ,
+
+where the variables ( yi)i∈I and ( y′
+
+> i
+
+)i∈I are regarded as coordinate functions on ( Gm)I on the source and the target, respectively. A mutation loop ϕ induces a birational map 
+
+ϕ : ( Gm)I 99K (Gm)I , still denoted by the same symbol, as a composite of these birational maps corresponding to mutations and coordinate permutations. In other words, its pull-back action 
+
+ϕ∗ : Q(yi | i ∈ I) → Q(yi | i ∈ I)6 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+on coordinates is given by the composite of the cluster Poisson transformations (2.2) and the permutations (2.3) in the reversed order. 
+
+Definition 2.4 (Fixed point locus) . Let Uϕ ⊂ (Gm)I be the maximal open subscheme where the ϕ-action is defined. Then we define the fixed point locus 
+
+Fix ϕ ⊂ Uϕ
+
+as the equalizer of ϕ|Uϕ : Uϕ → (Gm)I and the inclusion Uϕ → (Gm)I . We denote by 
+
+Rϕ := O(Fix ϕ) the Q-algebra of regular functions on Fix ϕ.
+
+Example 2.5 (Type A2). Consider the seed i = (( 0 −11 0 ), (y1, y 2)) of type A2, and the mutation loop ϕ : i = i(0) μ1
+
+−→ i(1) (1 2) 
+
+−−−→ i(2) . We have ϕ = (1 2) μ1 in the word notation. The induced birational map ϕ : ( Gm)2 99K (Gm)2 is computed on coordinates as 
+
+ϕ∗ :
+
+y1
+
+y2
+
+
+
+7→
+
+y2
+
+y1
+
+
+
+7→
+
+y2(1 + y1)
+
+y−11
+
+
+
+. (2.5) The fixed point locus is defined by the equations y1 = y2(1 + y1), y2 = y−11 . Observe that it does not intersect with the line y1 = −1 on which μ1 is not defined. Therefore 
+
+Rϕ ∼= Q[y]/(y2 − y − 1) (2.6) with y := y1.The following formula is useful: 
+
+Proposition 2.6 (Jacobian formula [Miz20, Proposition 4.1]) . Let i′ = μk(i) be a muta-tion directed to k ∈ I, and p ∈ Gm(Q)I a point such that yk(p)̸ = −1. Then, the Jacobian matrix J(μk)p := 
+
+ ∂y ′
+
+> i
+
+∂y j
+
+(p)
+
+
+
+> i,j ∈I
+
+is given by 
+
+J(μk)p = y′(μk(p)) ·  z−(p)Fk, +(B)⊤ + z+(p)Fk, −(B)⊤ · y−1(p),
+
+where 
+
+z+ := yk
+
+1 + yk
+
+, z− := 11 + yk
+
+,
+
+y(p) := diag( yi(p) | i ∈ I), y′(p) := diag( y′
+
+> i
+
+(p) | i ∈ I)
+
+and Fk, ±(B) ∈ Mat I×I (Z) is an integral matrix obtained from B: see [Miz20, (3.19)] .
+
+Remark 2.7. The mutation loops form a group Γ [i] called the cluster modular group, which acts on the cluster Poisson variety X[i] associated with the mutation class of i
+
+[FG09]. Each seed i′ gives rise to a toric birational chart ( Gm)I ∼= Ti′ ⊂ X [i], and the action of ϕ ∈ Γ[i] permutes them. The birational action ϕ : ( Gm)I 99K (Gm)I considered above is the restriction of this action to Ti.In general, it is possible that the set Fix ϕ miss other fixed points in X[i] \ Ti, but we do not pursue them in this paper for simplicity of the algebraic discussion. As noted in [GHK15, Remark 2.6], it is not clear if X[i] is Noetherian or not. In practice, one can consider a subscheme X ft [i] loc. cit. for a better approximation of X[i].INDEX FOR A MUTATION LOOP 7
+
+Definition 2.8 (Primitivity) . Given a mutation loop ϕ and a positive integer m ∈ Z>0,define the iterated mutation loop ϕm by periodically repeating the sequence of mutations and permutations defining ϕ. We say that a mutation loop ϕ is primitive if it does not admit an expression ϕ = ψm with a mutation loop ψ and m ≥ 2. For example, we have ϕ2 = μ2μ1 in Example 2.5. 2.3. Mutation networks. The mutation network introduced by Terashima–Yamazaki [TY14] is a bipartite graph that captures the structure of the fixed point equation from a 3D perspective. The associated Neumann–Zagier matrices are introduced by Mizuno [Miz20]. 
+
+w(ν) 
+
+> k
+
+w(ν+1) 
+
+> k
+
+mν
+
+w(ν) 
+
+> i
+
+w(ν+1) 
+
+> i
+
+μk : i(ν) → i(ν+1) 
+
+w(ν)
+
+> σ−1(i)
+
+w(ν+1) 
+
+> i
+
+σ : i(ν) → i(ν+1) 
+
+Figure 1. A step-by-step construction of the mutation prenetwork eNϕ.Let ϕ be a mutation loop as in (2.4). We first extend it to be an infinite periodic sequence by setting B(ν+mL ) := B(ν) for ν = 0 , . . . , L and m ∈ Z, and by periodically repeating the sequence of mutations and permutations. We only need the dynamics of exchange matrices in the following construction, and do not refer to the y-variables. The mutation pre-network eNϕ associated with ϕ is the infinite bipartite graph with white/black vertices 1, constructed as follows. See Figure 1. 
+
+• We begin with a disjoint collection fW = {w(ν) 
+
+> i
+
+}ν∈Z, i ∈I of white vertices. 
+
+• If the step i(ν) → i(ν+1) is a mutation at k ∈ I, then we create a black vertex mν
+
+connected with the white vertices w(ν) 
+
+> k
+
+and w(ν+1)  
+
+> k
+
+by a dashed line, respectively. For each i̸ = k, we connect w(ν) 
+
+> i
+
+with w(ν+1)  
+
+> i
+
+by a gray line. We draw |b(ν) 
+
+> ki
+
+| arrows 
+
+mν → w(ν) 
+
+> i
+
+if b(ν) 
+
+> ki
+
+≥ 0, and |b(ν) 
+
+> ki
+
+| arrows mν ← w(ν) 
+
+> i
+
+if b(ν) 
+
+> ki
+
+< 0. 
+
+• If the step i(ν) → i(ν+1) is a permutation by σ ∈ SI , then we connect w(ν) 
+
+> σ−1(i)
+
+with 
+
+w(ν+1)  
+
+> i
+
+by a gray line for each i ∈ I.Then we obtain an infinite (partially directed) graph eNϕ with vertex set fW ∪ eB, where 
+
+eB denotes the set of the black vertices, together with three types of edges: dashed lines,  
+
+> 1We follow the original coloring convention in [TY14]. 8TSUKASA ISHIBASHI AND YUJI TERASHIMA
+
+quiver arrows, and gray lines. Note that it is L-periodic by construction. We call a maximal concatenation of gray lines a vertex orbit . Let ( bm,w )(m,w )∈ eB×fW denote the signed adjacency matrix counting the quiver arrows. The mutation network Nϕ associated with ϕ is obtained from eNϕ by identifying w(mL ) 
+
+> i
+
+=
+
+w(0)  
+
+> i
+
+for all i ∈ I and m ∈ Z, and contracting each vertex orbit into a point, identifying the white vertices along it. Let W (resp. B) denote the set of white (resp. black) vertices in Nϕ, and π : fW ∪ eB → W ∪ B the projection of vertices. 
+
+Definition 2.9. Let Nϕ be the mutation network associated with a mutation loop ϕ.(1) Define W × B integral matrices N ε, ε = 0 , +, −, called the adjacency matrices by 
+
+N 0 
+
+> w,m
+
+:= # {dashed edges between w and m}, N ± 
+
+> w,m
+
+:= X
+
+> ew∈π−1(w)
+
+[±b em, ew]+,
+
+where em ∈ π−1(m). The integral matrices A+ := N 0 − N +, A− := N 0 − N −,
+
+A0 := N 0 are called the Neumann–Zagier matrices of Nϕ.(2) The gluing variety is the affine scheme Glue ϕ := {{ (zm, +, z m, −)}m∈B ∈ (Gm × Gm)B | z+ + z− = 1 , z −A+ 
+
+> +
+
+zA− 
+
+> −
+
+= 1 }.
+
+Here, the defining equations (called the gluing equations ) are abbreviations of 
+
+zm, + + zm, − = 1 for all m ∈ B and Q 
+
+> m∈B
+
+z−A+ 
+
+> w,m
+> m, +
+
+zA− 
+
+> w,m
+> m, −
+
+= 1 for all w ∈ W ,respectively. The coordinate ring of the gluing variety is given by 
+
+O(Glue ϕ) = Q[z±1
+
+> m, +
+
+, z ±1 
+
+> m, −
+
+| m ∈ B]/(z+ + z− = 1 , z −A+ 
+
+> +
+
+zA− 
+
+> −
+
+= 1) . (2.7) Let Fix ∗ 
+
+> ϕ
+
+⊂ Fix ϕ be the open subscheme defined by y(ν)
+
+> kν
+
+̸ = −1 for each mutation step 
+
+μkν : i(ν) → i(ν+1) in ϕ.
+
+Theorem 2.10 ([Miz20, Proposition 3.8]) . We have a morphism of schemes 
+
+φ : Fix ∗ 
+
+> ϕ
+
+→ Glue ϕ, φ∗(zm, +, z m, −) := 
+
+ ym
+
+1 + ym
+
+, 11 + ym
+
+
+
+.
+
+If moreover ϕ is fully-mutating, then φ is an isomorphism. 
+
+We call φ∗zm, ±, viewed as a function on Fix ∗
+
+> ϕ
+
+, the shape parameters . The isomorphism 
+
+φ provides a useful change of variables in the study of Fix ∗
+
+> ϕ
+
+.
+
+Remark 2.11. In the original proof of [Miz20, Proposition 3.8], the fully-mutating con-dition is assumed in the construction of the map φ. The construction is valid without the fully-mutating assumption, as follows. It suffices to consider a vertex w ∈ W which is never mutated. It belongs to a closed gray orbit. By the mutation at m ∈ B, the variables on the neighboring white vertices are transformed as y′ 
+
+> i
+
+= yiz[bki ]+ 
+
+> m, +
+
+z−[−bki ]+ 
+
+> m, −
+
+. The fixed point condition y(L) = y(0) then implies that 
+
+Y
+
+> m∈B
+
+zN + 
+
+> w,m
+> m, +
+
+z−N − 
+
+> w,m
+> m, −
+
+= 1 .INDEX FOR A MUTATION LOOP 9
+
+Since N 0 
+
+> w,m
+
+= 0 for all m ∈ B, this is equivalent to the gluing equation 
+
+Y
+
+> m∈B
+
+z−A+ 
+
+> w,m
+> m, +
+
+zA− 
+
+> w,m
+> m, −
+
+= 1 .
+
+Example 2.12 (Type A2). Consider the mutation loop ϕ in Example 2.5. The quiver 
+
+Q = 1 2 corresponds to the initial seed i. The mutation network Nϕ is obtained as follows: 12
+
+μ1
+
+eNϕ 
+
+> 1 = 2
+
+μ1
+
+Nϕ
+
+Here, the vertices connected by gray lines are identified in Nϕ. The adjacency and Neumann–Zagier matrices are computed as 
+
+N 0 = (2) , N + = (0) , N − = (1) ,A+ = (2) , A− = (1) .
+
+The gluing equations are z+ + z− = 1 and z−2+ z− = 1, which can be written as 
+
+z−1 = (1 − z)2
+
+with z := z−. By the change of variable z = 1 /(1 + y), this equation is equivalent to 1 + y = y2, which is the defining equation of Rϕ. In this case, Rϕ = R∗ 
+
+> ϕ
+
+since y cannot take the value −1. 
+
+Example 2.13 (Pseudo-Anosov on Σ 11). Consider the initial seed with the exchange matrix ε =
+
+ 0 −2 22 0 −2  
+
+> −220
+
+
+
+, which corresponds to the Markov quiver  
+
+> 31210 TSUKASA ISHIBASHI AND YUJI TERASHIMA
+
+This is also the quiver associated with an ideal triangulation of the once-punctured torus Σ11 [FST08]. Consider the mutation loop ϕ = (1 2 3) μ1μ3, which represents a pseudo-Anosov mapping class on Σ 11. The mutation network is obtained as follows: 
+
+> 312
+
+μ3
+
+μ1
+
+eNϕ
+
+μ1
+
+μ3
+
+Nϕ
+
+The adjacency and Neumann–Zagier matrices are computed as 
+
+N 0 =
+
+1 11 1
+
+
+
+, N + =
+
+0 02 2
+
+
+
+, N − =
+
+2 20 0
+
+
+
+,A+ =
+
+ 1 1
+
+−1 −1
+
+
+
+, A− =
+
+−1 −11 1
+
+
+
+.
+
+In this case, dim Glue ϕ = 1. Therefore dim Fix ϕ = 1 by Theorem 2.10, and hence ϕ
+
+is degenerate in this case. In the original conjecture of Gang–Kim–Yoon [GKY21], this degeneracy is compensated by imposing the additional transverse condition fixing the trace of the monodromy along the meridian. 2.4. Refined Neumann–Zagier matrices. Mizuno defined a refined version of Neumann– Zagier matrices [Miz21a], including an extra parameter z encoding the “time difference” as a grading. We will use the symbol t instead of z.We say that ϕ is fully-mutating if each vertex orbit is a finite path. In this case, the vertex orbit of each ew ∈ fW has a unique future endpoint ∂+ ew ∈ fW , namely the endpoint in the positive direction in Z.In the step-by-step construction of the mutation pre-network eNϕ, we set the length of each gray segment in each mutation step (the left of Figure 1) to be 1, and in each permutation step (the right of Figure 1) to be 0. For each ew ∈ fW , let ℓ+( ew) ∈ Z≥0 denote the length in this sense of the interval between ew and ∂+ ew in its vertex orbit. In [Miz21a], 
+
+ℓ+( ew) is called the latency .For each em ∈ eB, let em−, em+ ∈ fW denote the past and the future vertex connected to 
+
+em by a dashed line, respectively. If em = mν , then em− = w(ν) 
+
+> k
+
+and em+ = w(ν+1)  
+
+> k
+
+.For ( w, m ) ∈ W × B, define [Miz21a, (2.16), (2.17)] 
+
+N 0(t)w,m := δπ( em−),w + δπ( em+),w t1+ ℓ+( em+),N ±(t)w,m := X
+
+> ew∈π−1(w)
+
+[±b em, ew]+tℓ+( ew),
+
+where em ∈ π−1(m). They do not depend on the choice of em. The matrices A±(t) := 
+
+N 0(t) − N ±(t), A0(t) := N 0(t) ∈ Mat W ×B (Z[t]) are called the graded Neumann–Zagier INDEX FOR A MUTATION LOOP 11 
+
+matrices of Nϕ. We have a remarkable symmetry 
+
+A+(t)A−(t)† = A−(t)A+(t)†
+
+called the symplectic relation [Miz21a, (3.2)], where M (t)† := M (t−1)⊤ for M (t) ∈
+
+Mat m,n (Z[t]). 
+
+Example 2.14 (Type A2). We continue Example 2.12. From the picture for eNϕ, we read off 
+
+N 0(t) = (1 + t2), N +(t) = (0) , N −(t) = ( t),
+
+and hence A+(t) = 1+ t2, A−(t) = 1 −t+t2. The product A+(t)A−(t)† = t2−t+2 −t−1+t−2
+
+is †-symmetric. 3. Index for a mutation loop and its relatives 
+
+3.1. Definition of the index. Let ϕ be a mutation loop. For each closed point [ x] ∈
+
+Fix ϕ, consider the tangent map (dϕ )[x] : T[x](Gm)I → T[x](Gm)I , (3.1) which is a linear map over the residue field Q([ x]). 
+
+Definition 3.1. We say that ϕ is non-degenerate if det(1 − (dϕ )[x])̸ = 0 for all closed points [ x] ∈ Fix ϕ.Consider the Q-points of the fixed point locus: Fix ϕ(Q) = {x ∈ Uϕ(Q) | ϕ(x) = x}, (3.2) For each x ∈ Fix ϕ(Q), the tangent map (dϕ )x : Tx(Q \ { 0})I → Tx(Q \ { 0})I
+
+is a Q-linear map obtained from the tangent map ( dϕ )[x] at the corresponding closed point [ x] ∈ Fix ϕ by the base change along Q([ x]) → Q. Therefore the non-degeneracy is equivalent to the condition that det(1 − (dϕ )x)̸ = 0 for all x ∈ Fix ϕ(Q). In other words, (dϕ )x does not have eigenvalue 1 over Q.
+
+Definition 3.2 (Index) . For a non-degenerate mutation loop ϕ and any integer g ≥ 0, define 
+
+Iϕg := X
+
+> x∈Fix ϕ(Q)
+
+det(1 − (dϕ )x)g−1 ∈ Q.
+
+We call Iϕg the index for the mutation loop ϕ.
+
+Remark 3.3. Let ϕ be any mutation loop. For x ∈ Fix ϕ(Q), let ν(x) ≥ 0 denote the multiplicity of the eigenvalue 1 of ( dϕ )x. In view of Kitayama–Terashima [KT15, Corollary 3.11 and Theorem 4.3], the value det( t − (dϕ )x)(t − 1) ν(x) t=1 
+
+∈ Q12 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+is a cluster-theoretic analogue of the non-acyclic adjoint Reidemeister torsion at x. If ϕ
+
+is non-degenerate, then ν(x) = 0 at every x ∈ Fix ϕ(Q), and hence Iϕg can be viewed as the power sum of the torsions. 
+
+Example 3.4. The index for g = 1 just counts the fixed points: 
+
+Iϕ 
+
+> 1
+
+= X
+
+> x∈Fix ϕ(Q)
+
+1 = |Fix ϕ(Q)|,
+
+hence an integer. 
+
+Example 3.5 (Type A2). Consider the mutation loop ϕ as in Example 2.5. Then Fix ϕ(Q) = 
+
+ y1
+
+y2
+
+
+
+=
+
+ yy−1
+
+
+
+y2 − y − 1 = 0 
+
+
+
+consists of two points, corresponding to y = (1 ± √5) /2. In particular, all the fixed points are defined over the number field Q(√5). The tangent map is directly computed from (2.5) as (dϕ )x =
+
+ y2 1 + y1
+
+−y−21 0
+
+
+
+=
+
+ y−1 y2
+
+−y−2 0
+
+
+
+.
+
+Then det(1 − (dϕ )x) = det 
+
+1 − y−1 −y2
+
+y−2 1
+
+
+
+= 2 − y−1 = 5 ∓ √52 .
+
+Hence we get 
+
+Iϕg =
+
+5 + √52
+
+g−1
+
++
+
+5 − √52
+
+g−1
+
+.
+
+In this case, a := (5 + √5) /2 and b := (5 − √5) /2 are two solutions of λ2 − 5λ + 5 = 0. We claim that the recurrence 
+
+Iϕg − 5Iϕg−1 + 5 Iϕg−2 = 0 holds. Indeed, a2 − 5a + 5 = 0 implies an − 5an−1 + 5 an−2 = 0. Similarly we get 
+
+bn − 5bn−1 + 5 bn−2 = 0, and the term-wise sum gives the claimed recurrence. This mechanism is well-known as Newton’s identities. From this recurrence relation, we obtain the integer sequence (Iϕg )g≥0 = 1 , 2, 5, 15 , 50 , 175 , 625 , . . . . 
+
+3.1.1. Refined index. 
+
+Definition 3.6 (Refined index) . For a non-degenerate mutation loop ϕ and an integer 
+
+g ≥ 0, define 
+
+Iϕg,t := X
+
+> x∈Fix ϕ(Q)
+
+det( t − (dϕ )x)g−1 ∈ Q(t).
+
+We call Iϕg,t the refined index for the mutation loop ϕ.INDEX FOR A MUTATION LOOP 13 
+
+We have Iϕg, 1 = Iϕg .
+
+Example 3.7 (Type A2). By a simple modification of the computations in Example 3.5, we get 
+
+Iϕg,t = a(t)g−1 + b(t)g−1
+
+with a(t) := t2 − −1−√52 t + 1 and b(t) := t2 − −1+ √52 t + 1. Since a(t) + b(t) = 2 t2 + t + 2 and a(t)b(t) = t4 + t3 + t2 + t + 1, we get a recursion relation 
+
+Iϕg,t − (2 t2 + t + 2) Iϕg−1,t + ( t4 + t3 + t2 + t + 1) Iϕg−2,t = 0 .
+
+We then obtain the sequence of polynomials (a rational function only for g = 0) with integer coefficients as in Table 2. 
+
+g Iϕg,t 
+
+0 (2 t2 + t + 2) /(t4 + t3 + t2 + t + 1) 1 22 2 + t + 2 t2
+
+3 2 + 2 t + 7 t2 + 2 t3 + 2 t4
+
+4 2 + 3 t + 15 t2 + 10 t3 + 15 t4 + 3 t5 + 2 t6
+
+5 2 + 4 t + 26 t2 + 28 t3 + 55 t4 + 28 t5 + 26 t6 + 4 t7 + 2 t8
+
+6 2 + 5 t + 40 t2 + 60 t3 + 145 t4 + 121 t5 + 145 t6 + 60 t7 + 40 t8 + 5 t9 + 2 t10 
+
+Table 2. Refined indices for the mutation loop of type A2.3.1.2. Generating function of the indices. 
+
+Definition 3.8 (Generating function) . For a non-degenerate mutation loop ϕ, define 
+
+Zϕ(s) := X
+
+> g≥2
+
+(−1) gIϕg · sg−2 ∈ Q[[ s]] .
+
+We call Zϕ(s) the generating function of the indices. 
+
+Lemma 3.9. For each x ∈ Fix ϕ(Q), let bx := det(1 − (dϕ )x) and consider Eϕ(s) := 
+
+Q
+
+> x∈Fix ϕ(Q)
+
+(1 + bxs). Then we have 
+
+Zϕ(s) = E′
+
+> ϕ
+
+(s)
+
+Eϕ(s).
+
+Proof. By applying the Leibniz rule and expanding the geometric series, we get 
+
+E′
+
+> ϕ
+
+(s)
+
+Eϕ(s) = X
+
+> x∈Fix ϕ(Q)
+
+bx
+
+1 + bxs
+
+= X
+
+> x∈Fix ϕ(Q)
+
+bx(1 − bxs + b2
+
+> x
+
+s2 − b3
+
+> x
+
+s3 + · · · )= Iϕ 
+
+> 2
+
+− I ϕ 
+
+> 3
+
+s + Iϕ 
+
+> 4
+
+s2 − I ϕ 
+
+> 5
+
+s3 + · · · = Zϕ(s).
+
+■14 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+Example 3.10 (Type A2). From the computation in Example 3.5, we get 
+
+Eϕ(s) = (1 + as )(1 + bs ) = 5 s2 + 5 s + 1 , Zϕ(s) = 10 s + 5 5s2 + 5 s + 1 .
+
+4. Integrality of the index 
+
+4.1. The index as a trace. Recall the Q-algebra Rϕ = O(Fix ϕ) of regular functions on Fix ϕ. We will henceforth fix a non-degenerate mutation loop ϕ, and simply write R := Rϕ
+
+during this subsection. 
+
+Notation 4.1. A point x ∈ Fix ϕ(Q) determines a homomorphism x# ∈ Hom Q(R, Q), which determines a maximal ideal mx := ker x# ⊂ R and a homomorphism σx ∈
+
+Hom Q(R/ mx, Q). The maximal ideal mx corresponds to a closed point [ x] ∈ Fix ϕ. We may regard x = ( mx, σ x) or x = ([ x], σ x). 
+
+Lemma 4.2. For a closed point [x] ∈ Fix ϕ, assume det(1 − dϕ [x])̸ = 0 . Then the local ring R[x] = Rmx is a field. If this is the case for any closed point [x] ∈ Fix ϕ, namely ϕ is non-degenerate, then R is a reduced Artinian ring. In particular, dim Fix ϕ = 0 and Fix ϕ
+
+has only finitely many closed points. Proof. Consider [ x] ∈ Fix ϕ ⊂ (Gm)I such that det(1 −dϕ [x])̸ = 0 holds. By taking an open neighborhood U of [ x] if necessary, the fixed point condition ϕ([ x]) = [ x] is presented by algebraic equations 
+
+y1 = f1(y1, . . . , y n), . . . , yn = fn(y1, . . . , y n)for some regular functions f1, . . . , f n : U → A1
+
+> Q
+
+. Then the Zariski tangent space is identified with 
+
+T[x]Fix ϕ ∼= ker J[x], (4.1) where J[x] := ( δij − ∂f i 
+
+> ∂y j
+
+([ x])) i,j represents the tangent map 1 −dϕ [x]. Since det(1 −dϕ [x])̸ = 0 by assumption, we have T[x]Fix ϕ = 0. On the other hand, we have T[x]Fix ϕ = ( mR[x] /m2 
+
+> R[x]
+
+)∗, where mR[x] is the maximal ideal of R[x]. The above argument shows mR[x] = m2 
+
+> R[x]
+
+, and hence mR[x] = 0 by Nakayama’s lemma for the R[x]-module mR[x] . Thus R[x] is a field. If det(1 − dϕ [x])̸ = 0 holds for any [ x] ∈ Fix ϕ, then the above argument shows that R[x]
+
+is a field for any closed point [ x]. This implies that any prime ideal of R is maximal, and hence dim R = 0. Since R is Noetherian, this implies that R is Artinian [AM69, Theorem 8.5]. Then R has only finitely many maximal ideals [AM69, Proposition 8.3], and we have 
+
+R ∼= Y
+
+> [x]∈Fix ϕ
+
+R[x] (4.2) by the canonical decomposition of an Artinian ring [AM69, Theorem 8.7]. Since each R[x]
+
+is a field, we see that R is reduced. ■
+
+In particular, R is isomorphic to the finite product of fields R[x] for closed points [x] ∈ Fix ϕ. Since R is a finitely generated Q-algebra, each R[x]/Q is a finite extension by [AM69, Proposition 7.9]. INDEX FOR A MUTATION LOOP 15 
+
+Remark 4.3. The non-degeneracy of ϕ is equivalent to the condition (5) in [Sta, Tag 02GU] with the structure morphism f : Fix ϕ → Spec Q. Since Rϕ is a finitely generated 
+
+Q-algebra, it is reduced Artinian if and only if Fix ϕ is finite ´ etale over Q. See [Sta, Tag 02GU] for related characterizations. 
+
+Remark 4.4. A complex fixed point of ϕ corresponds to a Q-algebra homomorphism 
+
+z : R → C. Since R is finite-dimensional over Q, each element is algebraic. In particular, z
+
+has coordinates algebraic over Q. Therefore, every complex fixed point of a non-degenerate mutation loop ϕ is a Q-point. Recall that for a finite extension L/K of fields, we have the trace defined by Tr L/K (x) := Tr( mx)for x ∈ L, where mx : L → L, y 7 → xy is the multiplication operator, which is viewed as a K-linear map. For a product L = L1 × · · · × Lr of finite extensions Lj /K , define Tr L/K (x) := Prj=1 Tr Lj /K (x). The function x 7 → det(1 − dϕ x) defines a regular function on Fix ϕ, which we denote by 
+
+T := det(1 − dϕ •) ∈ R = O(Fix ϕ).
+
+Proposition 4.5. For any g ≥ 0, we have 
+
+Iϕg = Tr R/ Q(T g−1). (4.3) 
+
+Proof. The right-hand side of (4.3) is computed as Tr R/ Q(T g−1) = X
+
+> [x]∈Fix ϕ
+
+Tr R[x]/Q(T g−1) (4.4) by the canonical decomposition of Artinian rings. Since Q has characteristic 0, each extension Rp/Q is separable. It is well-known that for such a finite separable extension, the injective homomorphism R[x] → QHom Q(R[x],Q), a 7 → (σ(a)) σ extends to an isomorphism 
+
+R[x] ⊗Q Q ∼
+
+−→ QHom Q(R[x],Q). (4.5) Moreover, the action of mg−1 
+
+> T
+
+⊗ 1 is diagonalized in the right-hand side as ( σ(T )g−1)σ.Recall that the closed point [ x] ∈ Fix Q and a homomorphism σ ∈ Hom Q(R[x], Q)together determine a Q-point x = ([ x], σ ) ∈ Fix ϕ(Q). Since the trace is invariant under the scalar extension, the sum (4.4) can be rewritten as Tr R/ Q(T g−1) = X
+
+> [x]∈Fix ϕ
+
+Tr R[x]/Q(T g−1)= X
+
+> [x]∈Fix ϕ
+
+X
+
+> σ∈Hom Q(R[x],Q)
+
+σ(T )g−1
+
+= X
+
+> x=([ x],σ )∈Fix ϕ(Q)
+
+σ(T )g−1
+
+= X
+
+> x∈Fix ϕ(Q)
+
+det(1 − dϕ x)g−1 = Iϕg .
+
+(4.6) 16 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+Thus the assertion is proved. ■
+
+From the proof, we obtain the decomposition 
+
+R ⊗Q Q ∼= Y
+
+> x∈Fix ϕ(Q)
+
+Qex, (4.7) where ex is the idempotent element such that ex · ey = δxy ex and 1 R = P 
+
+> x∈Fix ϕ(Q)
+
+ex.
+
+Corollary 4.6. Assume that ϕ is non-degenerate (Definition 3.1). Then Iϕg ∈ Q for all 
+
+g ≥ 0.Proof. This follows from Iϕg = Tr R/ Q(T g−1) ∈ Q. ■
+
+Proposition 4.7. If the characteristic polynomial of mT ∈ End Q(R) has integral coeffi-cients, then Iϕg ∈ Z for all g ≥ 1.Proof. The assumption implies that all the elementary symmetric polynomials of the eigenvalues of mT are integers. By Newton’s identities, every power sum is an integer polynomial in the elementary symmetric functions, hence an integer as well. ■
+
+Remark 4.8. From Example 3.4, we further obtain Iϕ 
+
+> 1
+
+= |Fix ϕ(Q)| = dim Q Rϕ.4.2. Refinement. For the refined index, consider T (t) := det( t − dϕ •) ∈ R[t]. The multiplication operator mT (t) : R[t] → R[t] is defined as a Q[t]-linear map. Proposition 4.5 is refined to be 
+
+Iϕg,t = Tr R[t]/Q[t](T (t)g−1)for g ≥ 1. For g = 0, we have Iϕ 
+
+> 0,t
+
+= Tr R(t)/Q(t)(T (t)−1). Indeed, the isomorphism (4.5) is extended to be 
+
+R[x][t] ⊗Q[t] Q[t] ∼= Q[t]Hom Q(R[x],Q),
+
+and the action of mg−1  
+
+> T(t)
+
+⊗ 1 is diagonalized in the right-hand side as ( σ(T (t)) g−1)σ. The remaining argument is the same. In particular, we have 
+
+Iϕg,t ∈ Q[t] for g ≥ 1,
+
+Iϕ 
+
+> 0,t
+
+∈ Q(t),
+
+as a refinement of Corollary 4.6. The final statement (Proposition 4.7) is refined as follows: 
+
+Proposition 4.9. If the characteristic polynomial of mT (t) ∈ End Q[t](R[t]) has integral coefficients, then Iϕg,t ∈ Z[t] for all g ≥ 1 .
+
+For an inclusion R ⊂ S of unital commutative rings, let RS ⊂ S denote its integral closure of R in S, which consists of those elements a ∈ S satisfying f (a) = 0 for some monic polynomial f ∈ R[X]. We say that R is integrally closed in S if R = RS . An element a ∈ S belongs to RS if and only if S[a] is a finitely generated A-module [AM69, Proposition 5.1]. INDEX FOR A MUTATION LOOP 17 
+
+For a finite-dimensional Q-algebra R, let OR := ZR ⊂ R denote the subring of elements integral over Z. It is well-known that Z[t] is integrally closed in Q(t). Let Ω ⊂ Q denote the ring of algebraic integers. 
+
+Lemma 4.10. If T (t) ∈ O Rϕ [t], then the characteristic polynomial of mT (t) ∈ End Q[t](Rϕ[t]) 
+
+has coefficients in Z[t].Proof. Write T (t) = Pdi=0 aiti with a0, . . . , a d ∈ O Rϕ . The integrality implies that S := 
+
+Z[a0, . . . , a d] ⊂ Rϕ is a finitely generated Z-module, and hence S[t] ⊂ Rϕ[t] is a finitely generated Z[t]-module. Hence T (t) is integral over Z[t] as an element of S[t]. In particular, there exists a monic polynomial f (X) ∈ (Z[t])[ X] such that f (T (t)) = 0, and hence 
+
+f (mT (t)) = 0. After extending scalars to Q(t), let λ1, . . . , λ r ∈ Q(t) be the eigenvalues of mT (t) ∈
+
+End Q[t](Rϕ[t]), where r := dim Q Rϕ. The characteristic polynomial of mT (t) is written as 
+
+χt(X) := 
+
+> r
+
+Y
+
+> i=1
+
+(X − λi) = 
+
+> r
+
+X
+
+> k=0
+
+ckXk ∈ (Q[t])[ X].
+
+Since each λi is a root of the monic polynomial f , it is integral over Z[t]. Therefore, the coefficients c0, . . . , c r are also integral over Z[t]. Since Z[t] is integrally closed, it implies that they belong to Z[t]. Thus χt(X) has coefficients in Z[t]. ■
+
+4.3. Integrality in the finite order case. Theorem 4.11. For any non-degenerate mutation loop ϕ such that ϕm = 1 for some 
+
+m ∈ Z>0, we have 
+
+Iϕg,t ∈ Z[t]
+
+for all g ≥ 1.Proof. For each x ∈ Fix ϕ(Q), ϕm = 1 implies ( dϕ )mx = id. In particular, all the eigenvalues of ( dϕ )x are m-th roots of unity, which are algebraic integers. Therefore, the coefficients of the characteristic polynomial of ( dϕ )x belong to Ω. Write R := Rϕ, and T (t) = Pdi=0 aiti ∈ R[t]. We can write ai = ( ai, [x])[x]∈Fix ϕ in the canonical decomposition R ∼= Q 
+
+> [x]∈Fix ϕ
+
+R[x]. Every embedding σ : R[x] → Q gives rise to a geometric point x = ([ x], σ ) ∈ Fix ϕ(Q). The base-change σ : R[x][t] → Q[t] satisfies 
+
+σ(T (t)[x]) = det( t − (dϕ )x) ∈ Q[t].
+
+In particular, σ(ai, [x]) ∈ Ω since it is a coefficient of the characteristic polynomial of ( dϕ )x.Since σ is an embedding, this implies ai, [x] ∈ O R[x] . Therefore ai ∈ Q 
+
+> [x]
+
+OR[x] = OR for all i = 0 , . . . , d , and hence T (t) ∈ O R[t]. Then by Lemma 4.10 and Proposition 4.9, we obtain Iϕg,t ∈ Z for all g ≥ 1. ■18 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+4.4. Integrality condition from Mizuno’s Jacobian formula. We obtain the follow-ing integrality criterion: 
+
+Theorem 4.12. Assume that ϕ is non-degenerate and Fix ϕ = Fix ∗
+
+> ϕ
+
+. If moreover the shape parameters φ∗zm, ± belong to ORϕ for all m ∈ B, then 
+
+Iϕg,t ∈ Z[t]
+
+for all g ≥ 1. In particular, we have Iϕg ∈ Z for all g ≥ 1.Proof. Let x ∈ Fix ϕ(Q) be a non-degenerate fixed point of ϕ. We use the Jacobian formula (Proposition 2.6) for each mutation step. After the composition, the y-terms cancel together except for the initial and the terminal ones, which coincides with each other by the fixed point condition y(L) = y(0) . Hence, the Jacobian of ϕ at x is conjugate to the product of matrices of the form 
+
+φ∗zm, −(x)Fk, +(B)⊤ + φ∗zm, +(x)Fk, −(B)⊤
+
+and permutation matrices. Here, each φ∗zm, ±(x) is well-defined by x ∈ Fix ∗
+
+> ϕ
+
+(Q). Since 
+
+φ∗zm, ± ∈ O Rϕ by assumption, it follows that ( dϕ )• is presented by a matrix with entries in ORϕ . Therefore T (t) ∈ O Rϕ [t], and hence we get Iϕg,t ∈ Z[t] for all g ≥ 1 by combining Lemma 4.10 and Proposition 4.9. ■
+
+Remark 4.13. Since zm, + + zm, − = 1, the integrality of one of them implies the other. 4.5. Mizuno’s determinant formula. Based on the Jacobian formula ([Miz20]), Mizuno obtained the following closed form expression of the characteristic polynomial of the Ja-cobian of a mutation loop, which can be used to explicitly compute T (t) in special cases. We assume that ϕ is fully-mutating, and that |B| = |W | in the mutation network 
+
+Nϕ. Fix an enumeration B ∼= {1, . . . , r }, and define W ∼= {1, . . . , r } by labeling each white vertex by the black vertex at its future end. The rows and columns of (graded) Neumann-Zagier matrices are enumerated in this way. 
+
+Theorem 4.14 (Mizuno [Miz20, Theorem 1.1] for t = 1; [Miz21b, Proposition 3.4.3]) .
+
+For a fully-mutating mutation loop ϕ such that r := |B| = |W |, we have 
+
+det(1 − tℓ(dϕ )x) = det( A+(t)z−(x) + A−(t)z+(x)) (4.8) 
+
+for any x ∈ Fix ∗
+
+> ϕ
+
+(Q). Here, 
+
+• A±(t) ∈ Mat r(Z[t]) are graded Neumann–Zagier matrices of ϕ Section 2.4; 
+
+• z±(x) := diag( zm, ±(φ(x)) | m ∈ B) (recall Theorem 2.10); 
+
+• ℓ ∈ Z≥0 is the total number of mutations in ϕ.2
+
+Corollary 4.15. For a fully-mutating mutation loop ϕ such that r = |B| = |W |, we have 
+
+T (tℓ)|Fix ∗ 
+
+> ϕ
+
+= tℓ|I| det( A+(t−1)z− + A−(t−1)z+) ∈ O (Fix ∗
+
+> ϕ
+
+).           
+
+> 2In the general formulation of [Miz21a, Miz21b], this number depends on a choice of the consistent subset R⊂I×Z, and ℓcan be made smaller when ϕcontains a block of mutually-commuting mutations. INDEX FOR A MUTATION LOOP 19
+
+Remark 4.16. The formula (4.8) holds without the Cartan-like assumption in [Miz21b]. Note that the original formula in [Miz21b, Proposition 3.4.3] is recovered by using sym-metry for t ↔ t−1 for the Cartan-like case. The proof is valid in the general case without essential modification: the square matrices eL, eH of size ℓ|I| are defined in the same way, and we have det(1 − teL) = det(1 − tℓ(dϕ )x). The matrix eH is nilpotent by the fully-mutating condition, and det(1 − t eH) = 1. The matrix (1 − t eH)−1(1 − teL) is the identity matrix except for the columns corresponding to the mutation indices, and its submatrix corresponding to the mutation indices coincides with A+(t)z−(x) + A−(t)z+(x). 5. (1 + 1) -dimensional interpretation 
+
+Recall the equivalence between the (1 + 1)-dimensional TQFT and commutative Frobe-nius algebras [Abr97, Koc04]. A Frobenius algebra over a field k is a finite-dimensional 
+
+k-algebra R equipped with a linear form ε : R → k (called the Frobenius form ) whose ker-nel contains no non-trivial ideals [Koc04, Definition 2.2.1]. Equivalently, it is characterized by a non-degenerate pairing [Koc04, 2.2.3]. In this section, we introduce two Frobenius structures on the fixed point algebra Rϕ = O(Fix ϕ) and provide a (1 + 1)-dimensional insight to our indices Iϕg .5.1. Frobenius structure induced by ϕ. Let ϕ be a non-degenerate mutation loop, and consider the commutative algebra RQ 
+
+> ϕ
+
+:= Rϕ ⊗Q Q. Recall from (4.7) the canonical decomposition 
+
+RQ 
+
+> ϕ
+
+∼= Y
+
+> x∈Fix ϕ(Q)
+
+Qex.
+
+Given an element F ∈ RQ 
+
+> ϕ
+
+, denote by F = ( F (x)) x∈Fix ϕ(Q) its decomposition with respect to the canonical decomposition. Recall the element T = det(1 − dϕ •) ∈ Rϕ.
+
+Definition 5.1. Define a linear form εϕ : RQ 
+
+> ϕ
+
+→ Q by 
+
+εϕ(F ) := Tr RQ 
+
+> ϕ/Q
+
+(mF/T ) = X
+
+> x∈Fix ϕ(Q)
+
+F (x)
+
+T (x)for F ∈ RQ 
+
+> ϕ
+
+.
+
+Lemma 5.2. εϕ is a Frobenius form. In particular, (RQ 
+
+> ϕ
+
+, ε ϕ) is a commutative Frobenius algebra over Q.Proof. Consider the bilinear form (F |G)ϕ := X
+
+> x∈Fix ϕ(Q)
+
+F (x)G(x)
+
+T (x)for F, G ∈ RQ 
+
+> ϕ
+
+. Then εϕ(F ) = ( F |1) ϕ. Moreover, the pairing is non-degenerate. Indeed, in the basis of idempotents, we have ( ex|ey)ϕ = δxy T (x)−1, which shows that the dual basis of ex is e∗ 
+
+> x
+
+:= T (x)ex. Therefore, the assertion follows from [Koc04, Lemma 2.2.4]. ■20 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+The non-degenerate bilinear form ( −|− )ϕ induces an isomorphism RQ 
+
+> ϕ
+
+∼= ( RQ 
+
+> ϕ
+
+)∗.
+
+Lemma 5.3. The element T ∈ RQ 
+
+> ϕ
+
+gives the handle element [Abr97, Section 3.3] in the Frobenius algebra (RQ 
+
+> ϕ
+
+, ε ϕ).Proof. The handle element h in a Frobenius algebra ( R, ε ) is defined to be 
+
+h := m ◦ ∆(1) ∈ R, 
+
+where m : R ⊗ R → R is the multiplication, and ∆ : R → R ⊗ R is the comultiplication induced by the duality R ∼= R∗ under the bilinear pairing. In our Frobenius algebra (RQ 
+
+> ϕ
+
+, ε ϕ), it is computed as follows: 
+
+h = m ◦ ∆(1) = m
+
+ X
+
+> x∈Fix ϕ
+
+ex ⊗ e∗
+
+> x
+
+
+
+= X
+
+> x∈Fix ϕ
+
+exe∗ 
+
+> x
+
+= X
+
+> x∈Fix ϕ
+
+exT (x) = T. 
+
+■
+
+In the (1 + 1)-dimensional picture, the multiplication of the handle element h ∈ R
+
+corresponds to attaching a torus with two boundary components [Abr97, Figure 8], hence the name. We have the genus-g correlator 
+
+⟨F ⟩g := ε(hgF )for F ∈ R, and the genus-g partition function 
+
+Z(Σ g) := ⟨1⟩g.
+
+The following gives a (1 + 1)-dimensional interpretation of our indices Iϕg :
+
+Theorem 5.4. We have 
+
+Z(Σ g) = Iϕg
+
+in the Frobenius algebra (RQ 
+
+> ϕ
+
+, ε ϕ).Proof. The correlators are given by 
+
+⟨F ⟩g = εϕ(T gF ) = X
+
+> x∈Fix ϕ
+
+T (x)g−1F (x)for F ∈ RQ 
+
+> ϕ
+
+, and hence the partition functions are 
+
+Z(Σ g) = ⟨1⟩g = X
+
+> x∈Fix ϕ
+
+T (x)g−1 = Iϕg .
+
+■INDEX FOR A MUTATION LOOP 21 
+
+5.2. Residual Frobenius structure. Following Siebert–Tian [ST97, Section 4], we dis-cuss another Frobenius structure on RC 
+
+> ϕ
+
+:= Rϕ ⊗Q C that depends on its presentation as an Artinian complete intersection. Proposition 5.6 below will be useful for the computation of Iϕ 
+
+> 0
+
+.Let ψ1, . . . , ψ k ∈ C[u1, . . . , u k] such that the holomorphic map ψ := ( ψ1, . . . , ψ k) : 
+
+Ck → Ck has only finitely many simple zeros. This is equivalent to saying that R := 
+
+C[u1, . . . , u k]/(ψ1, . . . , ψ k) is reduced Artinian. For F ∈ C[u1, . . . , u k] and x ∈ ψ−1(0), consider the analytic residue res ψ(x; F ) := 1(2 πi )k
+
+Z
+
+> Γε(x)
+
+Fψ1 . . . ψ k
+
+du 1 . . . du k,
+
+where Γ ε(x) := {z ∈ U (x) | | ψi(z)| = ε} with sufficiently small neighborhood U (x) ⊂ Ck
+
+such that U (x) ∩ ψ−1(0) = {x}, and ε > 0 is sufficiently small so that Γ ε(x) ⋐ U (x). It is oriented by d(arg ψ1) ∧ · · · ∧ d(arg ψk)|Γε(x). Then, the total residue Res ψ(F ) := X
+
+> x∈ψ−1(0)
+
+res ψ(F )provides a Grothendieck residue Res ψ : R → C in the context of Gorenstein rings. Using the Jacobian J := det( ∂ψ i/∂u j ) ∈ R, we obtain Res ψ(F ) = X
+
+> x∈ψ−1(0)
+
+F (x)
+
+J(x)by residue computation after the change of variables vi := ψi(u1, . . . , u k). 
+
+Lemma 5.5 (cf. [Koc04, 2.3.7]) . Res ψ : R → C is a Frobenius form. In particular, 
+
+(R, Res ψ) is a commutative Frobenius algebra over C.Proof. Follows similarly to the proof of Lemma 5.2 by the non-degeneracy of the bilinear pairing (F |G)ψ := X
+
+> x∈ψ−1(0)
+
+res ψ(F G ).
+
+■
+
+By a similar argument to Lemma 5.3, we see that J gives the handle element in the Frobenius algebra ( R, Res ψ). 
+
+Weighted Gr¨ obner basis . Fix a vector d = ( d1, . . . , d k) ∈ Zk>0, define deg d(ua1 
+
+> 1
+
+. . . u ak 
+
+> k
+
+) := 
+
+> k
+
+X
+
+> i=1
+
+diai.
+
+for f ∈ C[u1, . . . , u k]. Let in d(f ) denote the highest degree homogeneous part in f (where in d stands for “initial”). For an ideal I ⊂ C[u1, . . . , u k], we call in d(I) := (in d(f ) | f ∈ I)the initial ideal . We call a finite subset {ψ1, . . . , ψ r} ⊂ I a Gr¨ obner basis if in d(I) = (in d(ψ1), . . . , in d(ψr)). The initial forms are related to zeros at infinity as follows. 22 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+Let Pk 
+
+> (1 ,d )
+
+denote the weighted projective space with degree d. For f ∈ C[u1, . . . , u k], consider the homogenization 
+
+ef (u0, u 1, . . . , u k) := udeg d f 
+
+> 0
+
+f (u−d1 
+
+> 0
+
+u1, . . . , u −dk 
+
+> 0
+
+uk).
+
+Then we have 
+
+ef (1 , u ) = f (u), ef (0 , u ) = (in d(f ))( u),
+
+where the latter means that (in d(f ))( u) equals the restriction of ef to the hyperplane 
+
+{u0 = 0 } at infinity of Pk
+
+> (1 ,d )
+
+. Therefore, the polynomials ψ1, . . . , ψ k have no common zeros on the hyperplane {u0 = 0 } at infinity if and only if 
+
+V (in d(ψ1), . . . , in d(ψk)) = {0} ⊂ Ak.
+
+Having this geometric intuition, we will use the following: 
+
+Proposition 5.6 ([ST97, Proposition 4.1]) . Let R = C[u1, . . . , u k]/(ψ1, . . . , ψ k) be a re-duced Artinian complete intersection with {ψ1, . . . , ψ k} a Gr¨ obner basis of the defining ideal with respect to a vector d = ( d1, . . . , d k). Let N := Pki=1 deg d(ψi) − Pki=1 di,
+
+R<N := π({F ∈ C[u1, . . . , u k] | deg d(F ) < N })
+
+the image under the canonical projection π : C[u1, . . . , u k] → R, and J := det( ∂ψ i/∂u j ) ∈
+
+R. Then we have 
+
+R = R<N ⊕ CJ, 
+
+and the commutative diagram 
+
+C[u1, . . . , u k] C
+
+R CJ, 
+
+> Res ψ
+> π
+> pr 2
+
+where CJ → C, J 7 → dim C R.
+
+In particular, the diagram shows Res ψ(F ) = 0 for any F ∈ R<N . This vanishing is a consequence of the residue theorem for the rational differential form Fψ1 . . . ψ k
+
+du 1 . . . du k on Pk+1 (1 ,d ), where the Gr¨ obner basis assumption ensures that there are no additional zeros at infinity. If F = cJ , then Res ψ(F ) = c dim C R.
+
+Corollary 5.7. Let ϕ be a non-degenerate mutation loop. If the Artinian ring RC 
+
+> ϕ
+
+has a presentation as in Proposition 5.6, then we have 
+
+Iϕg = Res ψ(JT g−1).
+
+In particular, if J/T ∈ (RC 
+
+> ϕ
+
+)<N , then Iϕ 
+
+> 0
+
+= 0 .INDEX FOR A MUTATION LOOP 23 
+
+Proof. The right-hand side is computed as Res ψ(JT g−1) = X
+
+> x∈ψ−1(0)
+
+J(x)T (x)g−1
+
+J(x) = X
+
+> x∈Fix ϕ(C)
+
+T g−1(x) = Iϕg .
+
+Here, we used the fact that all the complex ϕ-fixed points are Q-points (Remark 4.4). ■
+
+Remark 5.8. (1) Res ψ(J) = dim C RC 
+
+> ϕ
+
+agrees with Iϕ 
+
+> 1
+
+= dim Q Rϕ (Remark 4.8). (2) When applying Corollary 5.7, it is necessary to have a polynomial presentation rather than a Laurent polynomial presentation. We will give such a presentation in Section 6 for explicit examples. 6. Examples 
+
+6.1. Mutation loops of period 1. Fix an integer N ≥ 2 and a palindromic sequence 
+
+a = ( a2, . . . , a N ) of integers: aj = aN −j+2 . Define a skew-symmetric matrix B = ( bij )Ni,j =1 
+
+inductively by 
+
+b1j = aj , bij = bi−1,j −1 + ai[−aj ]+ − aj [−ai]+
+
+for i, j = 2 , . . . , N . Fordy and Marsh [FM11] proved that ϕ : i = i(0) μ1
+
+−→ i(1) (N ··· 2 1) 
+
+−−−−−→ i(2) 
+
+is a mutation loop with initial seed i = ( B, (y1, . . . , y N )), and this construction produces all the skew-symmetric matrices B with this property. See [Miz21a, Theorem 4.1] for another proof of this classification in terms of the Neumann–Zagier matrices. Such ϕ are called the mutation loops of period 1. The induced birational map ϕ : ( Gm)N 99K (Gm)N
+
+is computed as 
+
+ϕ∗ :
+
+
+
+y1
+
+y2
+
+...
+
+yN
+
+ 7 →
+
+
+
+y2(1 + y−sgn a2 
+
+> 1
+
+)−a2
+
+...
+
+yN (1 + y−sgn aN 
+
+> 1
+
+)−aN
+
+y−11
+
+ . (6.1) Hence the fixed point equation reduces to 
+
+y2 =
+
+> N
+
+Y
+
+> j=2
+
+(1 + y−sgn aj )−aj (6.2) with y := y1. If a̸ = 0, then y cannot take the value −1. Therefore Fix ϕ = Fix ∗ 
+
+> ϕ
+
+∼= Glue ϕ.24 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+The associated mutation (pre)networks eNϕ, Nϕ are obtained as follows: 1234
+
+μ1
+
+a2
+
+a3
+
+a4
+
+eNϕ
+
+μ1
+
+PNj=2 [−aj ]+
+
+PNj=2 [aj ]+
+
+Nϕ
+
+The graded adjacency and Neumann–Zagier matrices are size one, and computed as (cf. [Miz21a, Theorem 4.1]) 
+
+N 0(t) = 1 + tN , N +(t) = 
+
+> N
+
+X
+
+> j=2
+
+[aj ]+tj−1, N −(t) = 
+
+> N
+
+X
+
+> j=2
+
+[−aj ]+tj−1,A+(t) = 1 −
+
+> N
+
+X
+
+> j=2
+
+[aj ]+tj−1 + tN , A− = 1 −
+
+> N
+
+X
+
+> j=2
+
+[−aj ]+tj−1 + tN .
+
+From their specialization to t = 1, we get 
+
+Rϕ ∼= O(Glue ϕ) = Q[z±1+ , z ±1 
+
+> −
+
+]/(z+ + z− − 1, z −A+ 
+
+> +
+
+zA− 
+
+> −
+
+− 1) 
+
+∼= Q[z±1][( z − 1) −1]/(z−A+
+
+(1 − z)A−
+
+− 1) .
+
+From Corollary 4.15, we get 
+
+T (t) = A+(t)z− + A−(t)z+ = A+(t) + ( A−(t) − A+(t)) z. (6.3) Here, we used the symmetry tN A±(t−1) = A±(t) that follows from the palindromicity of 
+
+a.
+
+Lemma 6.1. Assume a̸ = 0 and (A+, A −)̸ = (0 , 0) . We have a polynomial presentation 
+
+Rϕ ∼= Q[z]/(fϕ),
+
+where 
+
+fϕ := 
+
+
+
+zA+
+
+− (1 − z)A−
+
+if A+, A − > 0,z−A+
+
+− (1 − z)−A−
+
+if A+, A − < 0,zA+
+
+(1 − z)−A−
+
+− 1 if A+ > 0 and A− < 0,z−A+
+
+(1 − z)A−
+
+− 1 if A+ < 0 and A− > 0,
+
+P|c|− 1 
+
+> j=0
+
+zj if (A+, A −) = ( c, 0) with c̸ = 0 ,
+
+P|c|− 1 
+
+> j=0
+
+(1 − z)j if (A+, A −) = (0 , c ) with c̸ = 0 .
+
+(6.4) INDEX FOR A MUTATION LOOP 25 
+
+The case a = 0: From (6.2), the fixed point equation becomes y2 = 1, which have solu-tions y = ±1. We have Fix ∗
+
+> ϕ
+
+(Q) = {1} ⊊ Fix ϕ(Q), where the solution y = 1 corresponds to z = 1 /2. From (6.1), we can directly compute the characteristic polynomial of the Jacobian, and hence obtain T (t) = 1 + tN at y = ±1. In particular, ϕ is non-degenerate and 
+
+Iϕg,t = 2(1 + tN )g−1
+
+for all g ≥ 0. This shows Iϕg,t ∈ Z[t] for g ≥ 1. We also have Iϕ 
+
+> 0
+
+= 1, and hence Iϕg ∈ Z
+
+for all genera. 
+
+The case (A+, A −) = (0 , 0) : The gluing variety is 1-dimensional, and hence the indices are undefined. 
+
+Remark 6.2. By the palindromicity of a, it cannot happen that both A+ and A− are odd. Indeed, if the length N − 1 is even, then each number appears twice, and hence 
+
+A+, A − are even. Otherwise, the central number can only contribute to one of them, and hence at most one of them can be odd. 6.1.1. Integrality of the refined index for g ≥ 1.
+
+Theorem 6.3. For any mutation loop ϕ with period 1 associated with (A+, A −)̸ = (0 , 0) ,we have Iϕg ∈ Z for all g ≥ 1. If moreover A+̸ = A−, then Iϕg,t ∈ Z[t] for g ≥ 1.Proof. The case a = 0 has been proved. Below we assume a̸ = 0 so that Fix ϕ = Fix ∗
+
+> ϕ
+
+holds. 
+
+The case A+ = A−̸ = 0 : We directly obtain T = A+ ∈ Z from (6.3), which shows Iϕg ∈ Z
+
+for all g ≥ 1 by Proposition 4.7. See Example 6.5 for a non-integral example of refined indices. 
+
+The case A+̸ = A−: We verify the conditions in Theorem 4.12. To see the integrality of shape parameters, note that ±fϕ in (6.4) provides a monic polynomial for z with integral coefficients, where the highest terms do not cancel since A+̸ = A−. Therefore z ∈ O Rϕ .To see the non-degeneracy, suppose first that A+A− = 0. Then ( A+, A −) = (0 , c ) or (c, 0) with c̸ = 0. The solutions to the gluing equation are explicitly given by ( z+, z −) = (1 − z, z ) and ( z, 1 − z), respectively, where z|c| = 1 and z̸ = 1. We have Tz = c(1 − z)̸ = 0 at these points, and hence ϕ is non-degenerate. In the case A+A−̸ = 0, we prove that the equations 
+
+z−A+
+
+(1 − z)A−
+
+= 1 , A+ + ( A− − A+)z = 0 do not have a common solution. Solving the second equation, we get z = A+/(A+ − A−)and 1 − z = −A−/(A+ − A−). Then the first equation becomes 
+
+ A+
+
+A+ − A−
+
+A+
+
+=
+
+ −A−
+
+A+ − A−
+
+A−
+
+.
+
+This equation has no solution by applying the elementary Lemma 6.4 below to a := A+,
+
+b := A−. Hence ϕ is non-degenerate. Therefore Theorem 4.12 proves Iϕg,t ∈ Z[t] for g ≥ 1 when A+̸ = A−.26 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+■
+
+Lemma 6.4. There are no integers a, b satisfying ab (a − b)̸ = 0 and aa(a − b)b = ±bb(a −
+
+b)a.Proof. Let d := gcd( a, b ) ∈ Z>0 and x := a/d , y := b/d . Then the equation is equivalent to xa(x − y)b = ±yb(x − y)a. Since gcd( x, y ) = gcd( x, x − y) = gcd( y, x − y) = 1, the three integers x, y , and x − y are pairwise coprime. After moving all negative exponents to the opposite side, we obtain an equality of two monomials in the pairwise coprime integers x, y , and x − y with non-negative exponents. Then by the uniqueness of the prime factorization, we get x, y, x − y ∈ {± 1}, which is not possible. ■
+
+Example 6.5. When A+ = A−̸ = 0, we have the following example with Iϕg,t /∈ Z[t]. Let N = 6 and a = (1 , 1, −4, 1, 1). Then A+ = A− = −2. The gluing equation becomes 
+
+z2(1 − z)−2 = 1, which reduces to 2 z − 1 = 0. We have 
+
+A+(t) = 1 − t − t2 − t4 − t5 + t6,A−(t) = 1 − 4t3 + t6,
+
+and hence T (t) = A+(t) + 12 (t + t2 − 4t3 + t4 + t5) /∈ Z[t], where we substituted z = 1 /2. 6.1.2. Index for g = 0 .
+
+Theorem 6.6. Let ϕ be the period 1 mutation loop associated with a̸ = 0 and (A+, A −)̸ =(0 , 0) .
+
+(1) If A+A− < 0, then Iϕ 
+
+> 0
+
+= 0 .
+
+(2) If A+A− > 0 and A+̸ = A−, then Iϕ 
+
+> 0
+
+= sgn A+ ∈ {± 1}.
+
+(3) If A+ = A− = c̸ = 0 , then Iϕ 
+
+> 0
+
+= |c| − 1
+
+c .
+
+(4) If (A+, A −) = ( c, 0) or (0 , c ) with c̸ = 0 , then Iϕ 
+
+> 0
+
+= |c| − 12c .Proof. In the presentation RC 
+
+> ϕ
+
+= C[z]/(fϕ) given in Lemma 6.1, {fϕ} gives a Gr¨ obner basis of the defining ideal with respect to d = (1), namely the ordinary degree. We have deg fϕ =
+
+
+
+max {| A+|, |A−|} if A+A− > 0 and A+̸ = A−,
+
+|A+| + |A−| if A+A− < 0,
+
+|c| − 1 if ( A+, A −) = ( c, c ), ( c, 0) or (0 , c ) with c̸ = 0 ,
+
+and N := deg fϕ − 1. Let J := ddz fϕ denote the Jacobian. We are going to find U ∈ C[z]satisfying 
+
+J ≡ U T mod ( fϕ), deg U ≤ N
+
+in each case. Then by Corollary 5.7, the genus-0 index is computed as Iϕ 
+
+> 0
+
+= Res fϕ (U ). 
+
+The case A+A− < 0: First consider the case A+ > 0 and A− < 0. Then we have 
+
+U = zA+−1(1 − z)−A−−1. Indeed, by definition 
+
+J = A+zA+−1(1 − z)−A−
+
++ A−zA+
+
+(1 − z)−A−−1INDEX FOR A MUTATION LOOP 27 
+
+= zA+−1(1 − z)−A−−1(A+(1 − z) + A−z) = zA+−1(1 − z)−A−−1T, 
+
+and deg U = |A+| + |A−| − 2 = N − 1. Therefore, by Corollary 5.7, we obtain 
+
+Iϕ 
+
+> 0
+
+= 0. The other case A+ < 0 and A− > 0 is treated similarly by replacing the formulas by ( A+, A −) 7 → (−A+, −A−). 
+
+The case A+A− > 0 and A+̸ = A−: First consider the case A+, A − > 0. Then we have U = zA+−1 + (1 − z)A−−1. Indeed, 
+
+J = A+zA+−1 + A−(1 − z)A−−1
+
+by definition, and we find that U T − J = ( A− − A+)fϕ by a direct calculation. Therefore, J ≡ U T mod ( fϕ), and deg U = max {A+, A −} − 1 = N. 
+
+Observe that J = max {A+, A −}U = ( N + 1) U modulo lower degree terms. For example, if A+ > A −, then 
+
+J = A+U + ( A− − A+)(1 − z)A−−1.
+
+The other cases are treated similarly. Therefore, by the normalization Res fϕ (J) = dim C R = N + 1 in Proposition 5.6, we obtain 
+
+Iϕ 
+
+> 0
+
+= Res fϕ (U ) = 1
+
+N + 1 Res fϕ (J) = 1 .
+
+The case A+, A − < 0 is treated similarly by replacing the formulas by ( A+, A −) 7 →
+
+(−A+, −A−). 
+
+The case A+ = A− = c: In this case, T = c is a constant. By Remark 6.2, |c| is even. Hence, 
+
+Iϕ 
+
+> 0
+
+= Res fϕ
+
+Jc
+
+
+
+= dim C RC
+
+> ϕ
+
+c .
+
+The gluing equation becomes ( z−1 − 1) |c| = 1. This is equivalent to w|c| = 1 and 
+
+z = (1 + w)−1. Since |c| is even, all the |c|-th roots of unity but −1 corresponds to the fixed points. Therefore, dim C RC = |c| − 1. 
+
+The case A− = 0 : Let c := A+̸ = 0. The gluing equation becomes z|c| = 1, z̸ = 1, and we have T = c(1 − z). Therefore from the definition, we obtain 
+
+Iϕ 
+
+> 0
+
+= 1
+
+c
+
+X 
+
+> zc=1 , z ̸=1
+
+11 − z .
+
+Observe that 11 − z + 11 − z−1 = 1 for any z̸ = 1. If |c| is odd, then the solutions of zc = 1, z̸ = 1 are grouped into (|c| − 1) /2 conjugate pairs, each of which contributes by 1. Therefore 
+
+Iϕ 
+
+> 0
+
+= |c| − 12c .28 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+If |c| is even, then z = −1 is a self-conjugate solution, which contributes by 1/(1 − z) = 1 /2. The other solutions are grouped into ( |c| − 2) /2 conjugate pairs. Therefore, 
+
+Iϕ 
+
+> 0
+
+= 1
+
+c
+
+|c| − 22 + 12
+
+
+
+= |c| − 12c .
+
+■
+
+Table 3 is obtained by numerical computation using Mathematica. Observe that non-integer values appear on the loci A+ = 0, A− = 0 or A+ = A−.
+
+A+
+
+A−
+
+−5 −4 −3 −2 −1 0 1 2
+
+−5 • −1 • −1 • −25 • 0
+
+−4 −1 −34 −1 −1 −1 −38 0 0
+
+−3 • −1 • −1 • −13 • 0
+
+−2 −1 −1 −1 −12 −1 −14 0 0
+
+−1 • −1 • −1 • 0 • 00 −25 −38 −13 −14 0 N/A 0 14
+
+1 • 0 • 0 • 0 • 12 0 0 0 0 0 14 1 1
+
+Table 3. Possible values of Iϕ 
+
+> 0
+
+for A+, A − ∈ {− 5, . . . , 2}. Bullet entries are excluded by Remark 6.2. N/A means that the index is undefined. The entry in red corresponds to the exceptional case a = 0.6.2. Special case: the Kronecker quivers. Let us investigate the case N = 2, a2 =
+
+−K for K ≥ 1 in more detail. The exchange matrix is B =   0 −KK 0
+
+, which corresponds to the Kronecker quiver with K arrows. We have A+(t) = 1 + t2, A−(t) = 1 − Kt + t2. In particular, A+ = 2 and A− = 2 − K.The values of Iϕg (Table 4) and Iϕg,t (Table 5) for small values K ≥ 1 are obtained by numerical computation using Mathematica. 
+
+Theorem 6.7. For K ≥ 3, the generating function of indices is computed as 
+
+Eϕ(s) = −(−sK )K + (1 + 2 s)2(1 + (2 − K)s)K−2,Zϕ(s) = KK+1 (−s)K−1 + K(1 + 2 s)(1 + (2 − K)s)K−3 (4 − K) − 2( K − 2) s
+
+−(−sK )K + (1 + 2 s)2(1 + (2 − K)s)K−2 .
+
+Proof. Let f (y) := (1 + y)K − y2 = 0 be the fixed point equation from (6.2). For each root y of f , we obtain 
+
+by := T (y) = 2 − K y
+
+1 + y = 2 + (2 − K)y
+
+1 + yINDEX FOR A MUTATION LOOP 29 
+
+gK 1 2 3 4 5 60 1 14 0 0 0 01 2 1 3 4 5 62 5 4 3 0 -5 -12 3 15 16 9 16 35 72 4 50 64 96 0 -65 -240 5 175 256 357 1088 275 1056 6 625 1024 1278 0 14960 -4032 7 2250 4096 6042 12544 -91435 296448 8 8125 16384 26337 0 649945 -3984384 
+
+Table 4. Values of Iϕg for the Kronecker quiver with K ≥ 1. 
+
+gK 1 2 30 2 + t + 2 t2
+
+1 + t + t2 + t3 + t4
+
+1(1 + t)2
+
+3( −1 + t)2(1 + t2)1 − 3t + 3 t2 + 21 t3 + 3 t4 − 3t5 + t6
+
+1 2 1 3
+
+2 2 + t + 2 t2 (1 + t)2 3(1 − t + t2)
+
+3 2 + 2 t + 7 t2 + 2 t3 + 2 t4 (1 + t)4 3(1 − 2t + 5 t2 − 2t3 + t4)
+
+4 (2 + t + 2 t2)(1 + t + 6 t2 + t3 + t4) (1 + t)6 3(1 − 3t + 12 t2 + 12 t3 + 12 t4 − 3t5 + t6)
+
+Table 5. Values of Iϕg,t for the Kronecker quiver with K ≥ 1. from (6.3). By solving this relation for y, we obtain 
+
+y = −by + 2 
+
+by + K − 2.
+
+From this, we obtain f ( −s+2  
+
+> s+K−2
+
+)|s=by = f (y) = 0. The combination 
+
+−(s + K − 2) K f
+
+ −s + 2 
+
+s + K − 2
+
+
+
+= −KK + ( −s + 2) 2(s + K − 2) K−2
+
+is a monic polynomial of s of degree K, having K roots s = by. Therefore it coincides with eEϕ(s) := Q
+
+> y
+
+(s − by). Then 
+
+Eϕ(s) = Y
+
+> y
+
+(1 + bys)= ( −s)K Y
+
+> y
+
+(−s−1 − by)= ( −s)K eEϕ(−s−1)= ( −s)K [−KK + ( s−1 + 2) 2(−s−1 + K − 2) K−2]= −(−sK )K + (1 + 2 s)2(1 + (2 − K)s)K−2,30 TSUKASA ISHIBASHI AND YUJI TERASHIMA 
+
+as asserted. The second equation is directly obtained by differentiation. ■
+
+References 
+
+[Abr97] L. E. Abrams, Frobenius algebra structures in topological quantum field theory and quantum cohomology , Thesis (Ph.D.)–The Johns Hopkins University. ProQuest LLC, Ann Arbor, MI, 1997. 92 pp. 19, 20 [AM69] M. F. Atiyah and I. G. Macdonald, Introduction to commutative algebra , Addison-Wesley Publishing Co., Reading, Mass.-London-Don Mills, Ont., 1969. 14, 16 [BGP20] F. Benini, D. Gang and L. A. Pando Zayas, Rotating black hole entropy from M5-branes , J. High Energy Phys. 2020, no. 3, 057, 39 pp. 1 [CCV11] S. Cecotti, C. Cordova and C. Vafa, Braids, Walls, and Mirrors , arXiv:1110.2115. 1 [CGK20] G. Y. Cho, D. Gang and H. C. Kim, M-theoretic genesis of topological phases , J. High Energ. Phys. 2020, 115 (2020). 4 [CQW23] S. X. Cui, Y. Qiu and Z. Wang, From Three Dimensional Manifolds to Modular Tensor Cate-gories , Commun. Math. Phys. 397 , 1191–1235 (2023). 4 [DG13] T. Dimofte and S. Gukov, Chern-Simons theory and S-duality , J. High Energy Phys. 2013, no. 5, 109. 1 [DGG14] T. Dimofte, D. Gaiotto and S. Gukov, Gauge Theories Labelled by Three-Manifolds , Commun. Math. Phys. 325 , 367-419 (2014). 1 [EKL20] T. Ekholm, P. Kucharski and P. Longhi, Physics and geometry of knots-quivers correspondence ,Commun. Math. Phys. 379 , no. 2, 361-415 (2020). 4 [FG06] V. V. Fock and A. B. Goncharov, Moduli spaces of local systems and higher Teichm¨ uller theory ,Publ. Math. Inst. Hautes ´Etudes Sci., 103 (2006), 1–211. 2 [FG09] V. V. Fock and A. B. Goncharov, Cluster ensembles, quantization and the dilogarithm , Ann. Sci. ´Ec. Norm. Sup´ er., 42 (2009), 865–930. 2, 6 [FST08] S. Fomin, M. Shapiro and D. Thurston, Cluster algebras and triangulated surfaces. I. Cluster complexes , Acta Math. 201 (2008), 83–146. 10 [FM11] A. P. Fordy and R. J. Marsh, Cluster mutation-periodic quivers and associated Laurent se-quences , J. Algebraic Combin. 34 (2011), 19–66. 3, 23 [FZ02] S. Fomin and A. Zelevinsky, Cluster algebras. I. Foundations , J. Amer. Math. Soc. 15 (2002), 497–529. 2 [GKP20] D. Gang, N. Kim and L. A. Pando Zayas, Precision microstate counting for the entropy of wrapped M 5-branes , J. High Energy Phys. 2020, no. 3, 164, 42 pp. 1 [GKY21] D. Gang, S. Kim and S. Yoon, Adjoint Reidemeister torsions from wrapped M5-branes , Adv. Theor. Math. Phys. 25 (2021), no. 7, 1819–1845. 1, 2, 3, 10 [GHK15] M. Gross, P. Hacking and S. Keel, Birational geometry of cluster algebras , Algebr. Geom. 2
+
+(2015), no. 2, 137–175. 6 [KT15] T. Kitayama and Y. Terashima, Torsion functions on moduli spaces in view of the cluster algebra , Geom. Dedicata 175 (2015), 125–143. 2, 11 [Koc04] J. Kock, Frobenius algebras and 2D topological quantum field theories , London Math. Soc. Stud. Texts, 59 Cambridge University Press, Cambridge, 2004. xiv+240 pp. 19, 21 [KRSS17] P. Kucharski, M. Reineke, M. Stosic and P. Sulkowski, BPS states, knots and quivers , Phys. Rev. D 96, no.12, 121902 (2017). 4 [KRSS19] P. Kucharski, M. Reineke, M. Stosic and P. Sulkowski, Knots-quivers correspondence , Adv. Theor. Math. Phys. 23, 1849–1902 (2019). 4 [MTT21] M. Manabe, S. Terashima and Y. Terashima, The colored Jones polynomials as vortex partition functions , J. High Energ. Phys. 2021 , 197 (2021). 4 [Miz20] Y. Mizuno, Jacobian matrices of Y-seed mutations , Adv. in Appl. Math. 115 (2020), 101987, 36 pp. 2, 4, 6, 7, 8, 18 INDEX FOR A MUTATION LOOP 31 
+
+[Miz21a] Y. Mizuno, Difference equations arising from cluster algebras , J. Algebraic Combin. 54 (2021), no. 1, 295–351. 4, 10, 11, 18, 23, 24 [Miz21b] Y. Mizuno, Difference equations arising from cluster algebras , Ph.D. thesis, Tokyo Institute of Technology, March 2021. 18, 19 [MT26] T. Morifuji and A. T. Tran, Algebraic properties of twisted Alexander polynomial and Reide-meister torsion of torus knots , arXiv:2605.22308 2 [Sta] The Stacks project authors, The Stacks project , https://stacks.math.columbia.edu . 15 [ST97] B. Siebert and G. Tian, On quantum cohomology rings of Fano manifolds and a formula of Vafa and Intriligator , Asian J. Math. 1 (1997), no. 4, 679–695. 3, 21, 22 [TTY26] R. Tange, Y. Terashima, and Y. Yamaguchi, Integrality of genus-g indices with adjoint Reide-meister torsions of twist knots , arXiv:2606.27006 2 [TYa26] Y. Terashima and Y. Yamaguchi, Gang-Kim-Yoon integrality conjectures on adjoint Reide-meister torsions for torus knots , arXiv:2605.19460 2 [TY11] Y. Terashima and M. Yamazaki, SL (2 , R ) Chern-Simons, Liouville, and Gauge Theory on Duality Walls , J. High Energ. Phys., 08, 135 (2011). 1 [TY13] Y. Terashima and M. Yamazaki, Semiclassical Analysis of the 3d/ 3d Relation , Phys. Rev. D 88, no. 2, 026011 (2013). 1 [TY14] Y. Terashima and M. Yamazaki, 3 d N = 2 Theories from Cluster Algebras , Prog. Theor. Exp. Phys. 2014 , 023B01 (2014). 2, 4, 7 
+
+Tsukasa Ishibashi, Mathematical Institute, Tohoku University, 6-3 Aoba, Aramaki, Aoba-ku, Sendai, Miyagi 980-8578, Japan. 
+
+Email address : tsukasa.ishibashi.a6@tohoku.ac.jp 
+
+Yuji Terashima, Mathematical Institute, Tohoku University, 6-3 Aoba, Aramaki, Aoba-ku, Sendai, Miyagi 980-8578, Japan.

@@ -1,0 +1,281 @@
+{
+  "date": "20261011-20261020",
+  "date_label": "2026-10-11 ~ 2026-10-20",
+  "generated_at": "2026-10-20 05:06:49 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2610.15386v1",
+      "route": "20261011-20261020/2610.15386v1-cohen-macaulay-truncated-path-and-nakayama-algebras",
+      "title": "Cohen-Macaulay truncated path and Nakayama algebras",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "用普通箭图刻画截断路代数与Nakayama代数中的Cohen-Macaulay代数",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.16214v1",
+      "route": "20261011-20261020/2610.16214v1-representation-type-and-schurian-finiteness-of-tits-algebras",
+      "title": "Representation Type and Schurian Finiteness of Tits Algebras",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "用界箭图与不可分解模刻画Tits代数的表示型",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.16746v1",
+      "route": "20261011-20261020/2610.16746v1-superdecomposable-complete-path-algebras",
+      "title": "Superdecomposable Complete Path Algebras",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "箭图的完备路径代数、均匀理想与不可分解模",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.17646v1",
+      "route": "20261011-20261020/2610.17646v1-a-subcategory-with-remarkable-homological-properties-via-actions-of-tensor-categories",
+      "title": "A subcategory with remarkable homological properties via actions of tensor categories",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "构造对Auslander-Reiten平移封闭并计算有限生成维数的子范畴",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.21507v1",
+      "route": "20261011-20261020/2610.21507v1-a-krause-type-recollement-for-q-shaped-derived-categories",
+      "title": "A Krause-type recollement for Q-shaped derived categories",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "构造Q形导出范畴的recollement结构",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.16403v1",
+      "route": "20261011-20261020/2610.16403v1-ideal-quotients-of-n-exact-categories",
+      "title": "Ideal quotients of $n$-exact categories",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "n-正合与n-角化范畴的理想商，且与丛倾斜相容",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.17357v1",
+      "route": "20261011-20261020/2610.17357v1-a-gordon--green-type-result-for-gorenstein-projective-modules",
+      "title": "A Gordon--Green-type result for Gorenstein-projective modules",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "分级Artin代数上Gorenstein-投射模的Gordon-Green型定理",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.17441v1",
+      "route": "20261011-20261020/2610.17441v1-linear-laurent-phenomenon-algebras-are-of-finite-type",
+      "title": "Linear Laurent phenomenon algebras are of finite type",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "推广簇代数并证明有限型猜想",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.18805v1",
+      "route": "20261011-20261020/2610.18805v1-minimal-presentations-of-finite-dimensional-representations-of-pseudocompact-algebras",
+      "title": "Minimal presentations of finite-dimensional representations of pseudocompact algebras",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "伪紧代数有限维模与最小呈现",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.18940v1",
+      "route": "20261011-20261020/2610.18940v1-index-for-a-mutation-loop",
+      "title": "Index for a mutation loop",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "簇代数中箭图变异环的指标",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.21822v1",
+      "route": "20261011-20261020/2610.21822v1-generalized-cluster-algebra-homomorphisms-induced-by-cluster-tube-embeddings",
+      "title": "Generalized Cluster Algebra Homomorphisms Induced by Cluster Tube Embeddings",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "簇管嵌入诱导的簇代数同态",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.23171v1",
+      "route": "20261011-20261020/2610.23171v1-point-modules-of-non-connected-graded-algebras",
+      "title": "Point Modules of Non-Connected Graded Algebras",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "研究路径代数分次商的点模",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.16300v1",
+      "route": "20261011-20261020/2610.16300v1-derivation-based-noncommutative-geometry-of-quiver-path-algebras",
+      "title": "Derivation based noncommutative geometry of quiver path algebras",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "箭图路代数的导子微分结构",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.21859v1",
+      "route": "20261011-20261020/2610.21859v1-weight-structures-and-t-structures-on-the-triangulated-category-generated-by-a-mathbbp-object",
+      "title": "Weight structures and t-structures on the triangulated category generated by a $\\mathbb{P}$-object",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "分类三角范畴上的权结构与t-结构",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.18801v1",
+      "route": "20261011-20261020/2610.18801v1-cellular-algebra-of-a2-webs",
+      "title": "Cellular Algebra of $A_2$ webs",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "图代数的胞腔结构与表示论",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.22161v1",
+      "route": "20261011-20261020/2610.22161v1-gluing-weak-approximability-along-recollements",
+      "title": "Gluing weak approximability along recollements",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "三角范畴的recollement与导出范畴",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    },
+    {
+      "paper_id": "2610.22203v1",
+      "route": "20261011-20261020/2610.22203v1-series-of-fano-quiver-moduli-from-extended-dynkin-quivers",
+      "title": "Series of Fano quiver moduli from extended Dynkin quivers",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "由扩展Dynkin箭图构造箭图模空间",
+      "first_seen_at": "2026-10-20 05:06:49 UTC",
+      "updated_at": "2026-10-20 05:06:49 UTC"
+    }
+  ]
+}

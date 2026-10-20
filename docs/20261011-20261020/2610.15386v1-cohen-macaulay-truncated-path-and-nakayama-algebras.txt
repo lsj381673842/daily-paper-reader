@@ -1,0 +1,310 @@
+Title: Cohen-Macaulay truncated path and Nakayama algebras
+
+URL Source: https://arxiv.org/pdf/2610.15386v1
+
+Published Time: Wed, 14 Oct 2026 01:32:58 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+COHEN-MACAULAY TRUNCATED PATH AND NAKAYAMA ALGEBRAS 
+
+TAKAHIRO HONMA AND SATOSHI USUI ∗
+
+Abstract. This paper characterizes Cohen-Macaulay algebras in the sense of Aus-lander and Reiten [ Progr. Math. 95(1991)] within the following two classes of finite dimensional algebras: (i) truncated path algebras and (ii) Nakayama algebras. For the former, our characterization in terms of ordinary quivers shows that if a Cohen-Macaulay truncated path algebra Λ is connected, then Λ or D(Λ) gives a dualizing module, where D denotes the standard duality. For the latter, we show that every Cohen-Macaulay Nakayama algebra Λ is Iwanaga-Gorenstein. In particular, Λ al-ways gives a dualizing module. Consequently, there is no non-trivial Cohen-Macaulay algebra among truncated path and Nakayama algebras. 
+
+1. Introduction 
+
+Let R be a commutative Cohen-Macaulay local ring of finite Krull dimension with a dualizing module (also called a canonical module) ω. Then Sharp [20, Theorem 3.11] proved that there are quasi-inverse equivalences 
+
+− ⊗ R ω : P<∞(R) → I <∞(R) and Hom R(ω, −) : I<∞(R) → P <∞(R),(1.0.1) where P<∞(R) (resp. I<∞(R)) denotes the category of finitely generated R-modules of finite projective (resp. injective) dimension. Later, as a non-commutative analogue of commutative Cohen-Macaulay rings, Auslander and Reiten [4] introduced Cohen-Macaulay algebras , namely, artin algebras Λ admitting a Λ-bimodule W , called a du-alizing module , which induces the same quasi-inverse equivalences as in (1.0.1). It is known that a dualizing module is unique up to isomorphism as a one-sided module but not as a bimodule; see Remark 2.5. Also, there are other non-commutative analogues of commutative Cohen-Macaulay rings; see [7, 6, 12]. As in the case of commutative rings, Iwanaga-Gorenstein algebras [10], which form a non-commutative analogue of commutative Gorenstein rings, are precisely the Cohen-Macaulay algebras Λ for which the Λ-bimodule Λ gives a dualizing module. Besides, we have the following examples of Cohen-Macaulay algebras, where the first is due to Auslander and Reiten [4], the second to Nishida [18], and the last two to Chan, Iyama and Marczinzik [8]: (1) artin algebras Λ such that the finitistic dimensions of Λ and Λ op are zero; 
+
+2020 Mathematics Subject Classification. Primary 16E65; Secondary 16E05, 16E10, 16G20. 
+
+Key words and phrases. Cohen-Macaulay algebra, Iwanaga-Gorenstein algebra, truncated path al-gebra, Nakayama algebra. 
+
+> ∗
+
+Corresponding author.  
+
+> 1arXiv:2610.15386v1 [math.RA] 11 Oct 2026 2T. HONMA AND S. USUI
+
+(2) the artin algebra Λ given in [18, Example 1]; (3) contracted preprojective algebras of Dynkin type; (4) tensor products of finite dimensional Cohen-Macaulay algebras over a field K.These seem to be all known examples so far. The algebras in (1) contain local algebras and are precisely the Cohen-Macaulay algebras Λ for which the Λ-bimodule D(Λ) gives a dualizing module, where D denotes the Matlis duality. Therefore, it is natural to try to find Cohen-Macaulay algebras Λ for which neither Λ nor D(Λ) gives a dualizing module, more essentially, those for which a dualizing module, regarded as a one-sided module, admits a direct summand that is neither projective nor injective. In fact, the algebra in (2) and some of the algebras in (3) are such non-trivial Cohen-Macaulay algebras. In this paper, we characterize the Cohen-Macaulayness of two classes of finite dimen-sional algebras. First, motivated by the example of Chan, Iyama and Marczinzik [8, Example 1.3(1)] showing that radical square zero truncated path algebras KQ/ ⟨all paths of length 2 ⟩ of quivers Q without sink or source are Cohen-Macaulay algebras in (1), we focus on the truncated path algebras Λ = KQ/ ⟨all paths of length L + 1 ⟩ of connected quivers Q,where L ≥ 1. After introducing the notion of balanced quivers (Definition 3.1), we show in Theorem 3.3 that Λ is Cohen-Macaulay if and only if Q is balanced. In this case, Λ or D(Λ) gives a dualizing module. Thus, there is no non-trivial Cohen-Macaulay truncated path algebra. This is our first main result. Note that the connectedness of 
+
+Q is used only to simplify the statement; see Corollary 3.5 for the case where Q is not necessarily connected. Also, Chan, Iyama and Marczinzik [8] introduced a class of Cohen-Macaulay algebras, called minimal Auslander-Cohen-Macaulay algebras , as a generalization of minimal Auslander-Gorenstein algebras [14]. In Corollary 3.8, we show that among truncated path algebras, minimal Auslander-Cohen-Macaulay algebras are precisely the minimal Auslander-Gorenstein Nakayama algebras. Second, we consider Nakayama algebras. As our second main result, we show in Theorem 3.9 that a Nakayama algebra is Cohen-Macaulay if and only if it is Iwanaga-Gorenstein. Thus, there is no non-Iwanaga-Gorenstein Cohen-Macaulay Nakayama algebra; in other words, we can always choose Λ as a dualizing module over a Cohen-Macaulay Nakayama algebra Λ. Consequently, there is no non-trivial Cohen-Macaulay algebra among truncated path and Nakayama algebras. This paper is organized as follows. We first recall some basic notions and results related to Cohen-Macaulay algebras in Section 2. We then prove our main results in Section 3. 
+
+Use of AI. GPT-5.6(Sol) was used to improve the presentation of the paper. 2. Preliminaries 
+
+This section is devoted to recalling some definitions and basic results concerning Cohen-Macaulay algebras that will be needed later. COHEN-MACAULAY TRUNCATED PATH AND NAKAYAMA ALGEBRAS 3
+
+We first fix some notations and conventions. Throughout this paper, all modules are assumed to be finitely generated right modules. For a ring Λ, denote by mod Λ the category of Λ-modules and by gl . dim Λ its global dimension. For M ∈ mod Λ, its projective and injective dimensions are denoted by proj . dim Λ M and inj . dim Λ M ,respectively. Assume that all subcategories are full and closed under isomorphisms. For a Krull-Schmidt category C, denote by ind C the set of isomorphism classes of indecomposable objects in C. Denote by |X| the cardinality of a set X.2.1. Cotilting modules. Since there is a tight connection between dualizing modules and cotilting modules, we begin by recalling the definition of cotilting modules. In this and the next subsections, all algebras are assumed to be artin algebras over a commutative artin ring R.Let Λ be an algebra. For a subcategory C of mod Λ and a module M ∈ mod Λ, a left C-approximation of M is a morphism f : M → C in mod Λ with C ∈ C such that every morphism f ′ : M → C′ with C′ ∈ C factors through f . We say that C
+
+is covariantly finite if every Λ-module admits a left C-approximation. We say that a morphism f : M → N is left minimal if every endomorphism g : N → N satisfying 
+
+gf = f is an isomorphism. A left minimal left C-approximation of M is simply called a minimal left C-approximation of M . If M admits a left C-approximation, then there uniquely exists a minimal left C-approximation f : M → C; see [3, Proposition 1.1]. We say that C is coresolving if it contains all injective Λ-modules and is closed under extensions and cokernels of monomorphisms. Denote by bC the subcategory of Λ-modules 
+
+N such that there is an exact sequence 0 → Xn → · · · → X0 → N → 0 with Xi ∈ C .Denote by I<∞(Λ) the subcategory of Λ-modules having finite injective dimension. Define P<∞(Λ) dually. We say that a module T ∈ mod Λ is cotilting [16] if T ∈ I <∞(Λ), Ext i
+
+> Λ
+
+(T, T ) = 0 for all i > 0, and D(Λ) ∈ \add T , where D = Hom R(−, E ) denotes the Matlis duality, where E is the injective envelope of R/ rad R. By [16, Corollary 1 on p.124], we have 
+
+| ind add T | = | ind add Λ | for all cotilting Λ-modules T , where add M denotes the cat-egory of direct summands of direct sum of finite copies of a Λ-module M . Moreover, by [16, Theorem 1.5], End Λ(T )T is a cotilting module, and the natural algebra morphism Λ → End( End Λ(T )T )op , given by x 7 → [t 7 → tx ], is an isomorphism. Let cotilt Λ be the set of equivalence classes of cotilting Λ-modules with respect to the equivalence relation given by T ∼ T ′ ⇔ add T = add T ′. By [3, Theorem 5.5], there is a bijection between cotilt Λ and the set of covariantly finite coresolving subcategories of mod Λ contained in 
+
+I<∞(Λ), where we associate to T ∈ cotilt Λ the subcategory \add T . There is a partial order on cotilt Λ given by T ≥ U ⇔ Ext i
+
+> Λ
+
+(T, U ) = 0 for all i > 0. Clearly, the injec-tive cogenerator D(Λ) is the minimum element of cotilt Λ. The following proposition characterizes the existence of the maximum element of cotilt Λ. 
+
+Proposition 2.1. The following conditions are equivalent for T ∈ cotilt Λ .
+
+(1) T is a maximal element of cotilt Λ .
+
+(2) T is the maximum element of cotilt Λ .
+
+(3) \add T = I<∞(Λ) .4 T. HONMA AND S. USUI 
+
+(4) I<∞(Λ) is covariantly finite. 
+
+(5) Every simple End Λ(T )op -module is a direct summand of the semisimple quotient 
+
+T / rad T of the cotilting End Λ(T )op -module T by its Jacobson radical rad T .In this case, we have add T = add X, where X denotes the minimal left I<∞(Λ) -approximation of ΛΛ.
+
+Proof . The equivalence (3) ⇔ (4) is clear. The equivalences (1) ⇔ (2) ⇔ (3) and (3) ⇔ (5) follow from [15, dual of Proposition 3.2] and [9, dual of Proposition 7.1], respectively. The last statement follows from [13, dual of Supplement II]. □
+
+Following Chan, Iyama and Marczinzik [8], we call a cotilting module satisfying the equivalent conditions in Proposition 2.1 Ext-maximal . Note that Auslander and Reiten [3, 4] call Ext-maximal cotilting modules strong cotilting modules .Recall that the finitistic dimension of an algebra Λ is defined as fin . dim Λ := sup {proj . dim Λ X | X ∈ P <∞(Λ) }.
+
+From the definition, we have fin . dim Λ op = sup {inj . dim Λ X | X ∈ I <∞(Λ) }. We end this subsection with the following consequence of Proposition 2.1. 
+
+Proposition 2.2 ([8, Example 1.3(1)]) . The following conditions are equivalent for an algebra Λ.
+
+(1) D(Λ) is an Ext-maximal cotilting Λ-module. 
+
+(2) soc Λ Λ contains all simple Λ-modules. 
+
+(3) fin . dim Λ op = 0 .
+
+2.2. Cohen-Macaulay algebras. We begin with the definition of Cohen-Macaulay algebras. 
+
+Definition 2.3 ([4, p.223]) . An algebra Λ is called Cohen-Macaulay if there exists a Λ-bimodule W which gives quasi-inverse equivalences 
+
+− ⊗ Λ W : P<∞(Λ) → I <∞(Λ) and Hom Λ(W, −) : I<∞(Λ) → P <∞(Λ) .
+
+We call the Λ-bimodule W a dualizing module .From the definition, a direct product Λ 1 × · · · × Λn of algebras Λ i is Cohen-Macaulay if and only if each Λ i is Cohen-Macaulay. Auslander and Reiten characterised dualizing modules in terms of cotilting modules. 
+
+Proposition 2.4 ([4, Proposition 1.3]) . A Λ-bimodule W is a dualizing module if and only if W is an Ext-maximal cotilting module as a left and as a right Λ-module, and the natural algebra morphism Λ → End( WΛ), given by x 7 → [w 7 → xw ], is an isomorphism. 
+
+Remark 2.5. By Propositions 2.1 and 2.4, a dualizing module is uniquely determined up to isomorphism as a left and as a right module. However, it is not as a bimodule; see [4, p.226]. One of the nice properties of a Cohen-Macaulay algebra is as follows. COHEN-MACAULAY TRUNCATED PATH AND NAKAYAMA ALGEBRAS 5
+
+Proposition 2.6 ([4, Proposition 1.6]) . Let Λ be a Cohen-Macaulay algebra with du-alizing module W . Then fin . dim Λ = inj . dim Λ W = inj . dim Λop W = fin . dim Λ op .
+
+An algebra Λ is called Iwanaga-Gorenstein [10] if Λ has finite injective dimension as a left and as a right Λ-module. Iwanaga-Gorenstein algebras are precisely the Cohen-Macaulay algebras Λ whose dualizing modules are given by Λ. As the following propo-sition shows, the finiteness of the projective dimension of a dualizing module on one side is enough to characterize the Iwanaga-Gorensteinness of Cohen-Macaulay algebras. 
+
+Proposition 2.7. The following conditions are equivalent for a Cohen-Macaulay alge-bra Λ with dualizing module W .
+
+(1) Λ is an Iwanaga-Gorenstein algebra. 
+
+(2) Λ has finite injective dimension as a left or as a right Λ-module. 
+
+(3) W has finite projective dimension as a left or as a right Λ-module. 
+
+Proof . The implications (1) ⇒ (2) and (1) ⇒ (3) are clear. The implication (2) ⇒
+
+(1) follows from [3, Proposition 6.10] and Proposition 2.6. To prove (3) ⇒ (2), assume (3) holds. Then, since D(Λ) ∈ \add W from the definition of cotilting modules, we can conclude that D(Λ) has finite projective dimension on one side. □
+
+We end this section with the following consequence of Proposition 2.2. 
+
+Proposition 2.8 (Auslander-Reiten) . The following conditions are equivalent for an algebra Λ.
+
+(1) Λ is a Cohen-Macaulay algebra with dualizing module D(Λ) .
+
+(2) soc Λ Λ contains all simple Λ-modules, and soc ΛΛ contains all simple Λop -modules. 
+
+(3) fin . dim Λ = 0 = fin . dim Λ op .
+
+3. Main results 
+
+In the rest of this paper, we assume that all algebras are finite dimensional algebras over a field K. The aim of this section is to characterize the Cohen-Macaulayness of truncated path and Nakayama algebras. 3.1. Cohen-Macaulay truncated path algebras. We begin by considering trun-cated path algebras. For the basics on quivers and bound quiver algebras, we refer to [5, 2]. We always assume that all quivers Q are finite in the sense that the vertex set 
+
+Q0 and the arrow set Q1 are both finite. For n ≥ 1, a path of length n in a quiver Q is a sequence p = a1 · · · an of arrows 
+
+ai ∈ Q1 such that the target t(ai) of ai equals the source s(ai+1 ) of ai+1 for 1 ≤ i < n .Define s(p) := s(a1) and t(p) := t(an). For each i ∈ Q0, the corresponding trivial path is denoted by ei. Note that s(ei) = i = t(ei). Denote by B the set of all paths in Q.A non-trivial path c is called a cycle if s(c) = t(c). A vertex i ∈ Q0 is called a sink if there is no arrow starting at i. We call i ∈ Q0 postcyclic if there is a path from a vertex lying on a cycle to i. Define a source and a precyclic vertex dually. We call Q acyclic if it has no sink or source. 6 T. HONMA AND S. USUI 
+
+Definition 3.1. A quiver is called balanced if the set of its postcyclic vertices coincides with the set of its precyclic vertices. Note that a quiver is balanced if and only if it has no postcyclic sink or precyclic source. We also note that every connected component of a balanced quiver is either an acyclic quiver or a quiver without sink or source. Let KQ/I be a monomial algebra, that is, a bound quiver algebra such that the admissible ideal I is generated by paths. A path p in I is called minimal if any path q
+
+in I such that p = q′qq ′′ for some q′, q ′′ ∈ B equals p. Let F be the set of minimal paths in I. Then F is finite, since I is finitely generated. For p ∈ B , when there is no danger of confusion, we simply write the canonical image p + I in KQ/I as p. The following lemma characterizes Cohen-Macaulay monomial algebras Λ with fin . dim Λ = 0 in terms of quivers and minimal relations. 
+
+Lemma 3.2. Let Λ = KQ/I be a non-simple connected monomial algebra and F the set of minimal paths in I. Then the following conditions are equivalent. 
+
+(1) fin . dim Λ = 0 = fin . dim Λ op .
+
+(2) For each i ∈ Q0, there exist minimal paths f1 = a1 · · · an and f2 = b1 · · · bm in 
+
+F with aj , b j ∈ Q1 such that s(an) = i = t(b1).
+
+Proof . By Proposition 2.8, it suffices to show that (2) is equivalent to the condition, denoted by ( ∗), that soc Λ Λ and soc ΛΛ contain all simple modules. First, if ( ∗) holds, then Q has no sink or source, and hence (2) holds. Conversely, assume (2) holds. For each i ∈ Q0, take minimal paths f1 = a1 · · · an, f 2 = b1 · · · bm ∈ F with aj , b j ∈ Q1
+
+such that s(an) = i = t(b1). Then the simple modules eiΛ/ rad eiΛ and Λ ei/ rad Λ ei are contained in the socles of the indecomposable projective modules es(f1)Λ and Λ et(f2),respectively. This completes the proof. □
+
+Recall that a truncated path algebra of a quiver Q is a monomial algebra of the form 
+
+KQ/R L+1 for some L ≥ 1, where R = RQ denotes the ideal of KQ generated by all arrows in Q. Note that RL+1 is the ideal of KQ generated by all paths of length L + 1. We are now ready to state the first main result of this paper. 
+
+Theorem 3.3. A truncated path algebra Λ = KQ/R L+1 of a connected quiver Q is Cohen-Macaulay if and only if Q is balanced. In this case, a dualizing module W is given as follows: 
+
+W =
+
+(
+
+Λ if Q is acyclic, 
+
+D(Λ) otherwise. In particular, 
+
+fin . dim Λ = 
+
+(
+
+gl . dim Λ if Q is acyclic, 
+
+0 otherwise. 
+
+Proof . If Λ is a Cohen-Macaulay algebra with dualizing module W , then, since D(W )is a strong tilting module on each side, [9, Corollary 7.2] concludes that Q has no COHEN-MACAULAY TRUNCATED PATH AND NAKAYAMA ALGEBRAS 7
+
+precyclic source or postcyclic sink, that is, Q is balanced. Conversely, assume that Q
+
+is balanced. Then Q has a sink or a source if and only if Q is acyclic if and only if gl . dim Λ < ∞. In this case, Λ is clearly Cohen-Macaulay. Also, if gl . dim Λ = ∞,then, since Q has no sink or source, Lemma 3.2 concludes that Λ is a Cohen-Macaulay algebra with fin . dim Λ = 0. The last statement is now clear. □
+
+Remark 3.4. The theorem shows that there is no non-trivial Cohen-Macaulay trun-cated path algebra. As a consequence of Theorem 3.3, we obtain the following characterization of (not necessarily connected) Cohen-Macaulay truncated path algebras. 
+
+Corollary 3.5. A truncated path algebra Λ = KQ/R L+1 of a quiver Q is Cohen-Macaulay if and only if Q is balanced. In this case, the Λ-bimodule 
+
+W = Y
+
+> Q′
+
+KQ ′/R L+1 ⊕ M
+
+> Q′′
+
+D KQ ′′ /R L+1 
+
+gives a dualizing module, where Q′ (resp. Q′′ ) runs over the acyclic connected compo-nents of Q (resp. the connected components of Q without sink or source). In particular, 
+
+fin . dim Λ = 
+
+(
+
+gl . dim Q 
+
+> Q′
+
+KQ ′/R L+1 if such a Q′ exists, 
+
+0 otherwise. 
+
+Example 3.6. Consider a truncated path algebra Λ = KQ/R L+1 , where Q is the following (disconnected) quiver: 
+
+Q : 1 / / 2 / / 3 4 / /88 5 / / 6 f f
+
+Let Q1 and Q2 be the connected components of Q such that Q10 = {1, 2, 3} and Q20 =
+
+{4, 5, 6}. For i = 1 , 2, let Λ i := KQ i/R L+1 . Note that Λ = Λ 1 × Λ2 is non-Iwanaga-Gorenstein, since proj . dim Λ D(Λ 2) = ∞. Since Q is balanced, Corollary 3.5 implies that Λ is a Cohen-Macaulay algebra such that W = Λ 1 ⊕ D(Λ 2) is a dualizing module, and fin . dim Λ = gl . dim Λ 1 =
+
+(
+
+2 if L = 1 ,
+
+1 if L ≥ 2.
+
+Let Λ be an algebra. For a Λ-module X with minimal injective resolution 0 → X →
+
+I0(X) → I1(X) → · · · , its dominant dimension dom . dim Λ X is defined as the minimal 
+
+n ≥ 0 such that In(X)̸ ∈ proj Λ or as infinite if no such n exists. The dominant dimension of Λ is defined as dom . dim Λ := dom . dim Λ Λ. By [17, Theorem 4], we have dom . dim Λ = dom . dim Λ op . For n ≥ 1, we call X n -Gorenstein if proj . dim Λ Ii(X) ≤ i
+
+for 1 ≤ i < n . From the definition, every n-Gorenstein module is m-Gorenstein for all 
+
+m ≤ n; and X is 1-Gorenstein if and only if dom . dim Λ X ≥ 1. By [11, Theorem 3.7], Λ is n-Gorenstein if and only if Λ op is n-Gorenstein. Moreover, by [8, Proposition 2.6], if Λ is a Cohen-Macaulay algebra with dualizing module W , then Λ is n-Gorenstein if and only if W is n-Gorenstein. In this case, proj . dim Λ Ii(Λ) = proj . dim Λ Ii(W ), so that dom . dim Λ W = dom . dim Λ = dom . dim Λ op = dom . dim Λop W , which we write 8 T. HONMA AND S. USUI 
+
+as dom . dim W . The following proposition characterizes 1-Gorenstein Cohen-Macaulay truncated path algebras in terms of ordinary quivers. 
+
+Proposition 3.7. A truncated path algebra Λ = KQ/R L+1 is 1-Gorenstein Cohen-Macaulay if and only if Λ is Nakayama. In this case, Λ is Iwanaga-Gorenstein. 
+
+Proof . The “if” part follows from Corollary 3.5 and the fact that the ordinary quiver of a Nakayama algebra is a disjoint union of linear and cyclic quivers (cf. [1]). Conversely, assume that Λ is a Cohen-Macaulay algebra such that the injective envelope I of a dualizing module W , viewed as a right Λ-module, is projective. By Corollary 3.5, we may assume that W = Q 
+
+> Q′
+
+KQ ′/R L+1 ⊕ L 
+
+> Q′′
+
+D KQ ′′ /R L+1 , where Q′ (resp. Q′′ )runs over the acyclic connected components of Q (resp. the connected components of Q
+
+without sink or source). Since I ∈ proj Λ, it follows that D KQ ′′ /R L+1  ∈ proj Λ for all 
+
+Q′′ . Then, together with the fact that every indecomposable projective-injective module over a monomial algebra is uniserial, this implies that each of the algebras KQ ′′ /R L+1 
+
+of infinite global dimension is a self-injective Nakayama algebra. Moreover, for the same reason, each of the algebras KQ ′/R L+1 of finite global dimension is both left and right serial, that is, Nakayama. Therefore, Λ = Q 
+
+> Q′
+
+KQ ′/R L+1 × Q 
+
+> Q′′
+
+KQ ′′ /R L+1 is a Nakayama algebra. The last statement is clear. □
+
+Following [14], we call an algebra Λ minimal Auslander-Gorenstein if inj . dim Λ ≤ d ≤
+
+dom . dim Λ for some d ≥ 2. In this case, Λ is Iwanaga-Gorenstein ([14, Proposition 4.1]). Following [8], we call a Cohen-Macaulay algebra Λ with dualizing module W minimal Auslander-Cohen-Macaulay if inj . dim W ≤ d ≤ dom . dim W for some d ≥ 2. Clearly, minimal Auslander-Gorenstein algebras are minimal Auslander-Cohen-Macaulay. 
+
+Corollary 3.8. The following conditions are equivalent for a truncated path algebra Λ.
+
+(1) Λ is a minimal Auslander-Cohen-Macaulay algebra. 
+
+(2) Λ is a minimal Auslander-Gorenstein Nakayama algebra. 
+
+Proof . Proposition 3.7 shows the implication (1) ⇒ (2). The converse is clear. □
+
+3.2. Cohen-Macaulay Nakayama algebras. We need no lemma to obtain the fol-lowing second main result of this paper, which shows that every Cohen-Macaulay Nakayama algebra is Iwanaga-Gorenstein. 
+
+Theorem 3.9. A Nakayama algebra Λ is Cohen-Macaulay if and only if it is Iwanaga-Gorenstein. 
+
+Proof . It suffices to show the “only if” part. Suppose that Λ is a Cohen-Macaulay algebra with dualizing module W . Fix a complete set {P1, . . . , P n} of pairwise non-isomorphic indecomposable projective Λ-modules. Since WΛ/ rad WΛ contains all simple Λ-modules by Proposition 2.1, it follows that 
+
+WΛ = ( P1/ rad r1 P1)s1 ⊕ · · · ⊕ (Pn/ rad rn Pn)sn ,
+
+where ri and si are positive integers, and Xt denotes the direct sum of t copies of a Λ-module X. Assume ri < m i = l(Pi) (i.e. rad ri Pi̸ = 0) for some 1 ≤ i ≤ n. Since Λ is Nakayama, we have soc Pi = rad mi−1 Pi = xΛ for some x ∈ Λ. Then the natural algebra COHEN-MACAULAY TRUNCATED PATH AND NAKAYAMA ALGEBRAS 9
+
+isomorphism φ : Λ ∼
+
+−→ End( WΛ) sends the generator x of the simple socle of Pi to a generator φ(x) of the simple socle of the indecomposable projective End( WΛ)-module Hom Λ(W, P i/ rad ri Pi). However, since x = 0 in Pi/ rad ri Pi by assumption, we have 
+
+φ(x)( w) = xw = 0 for all w ∈ W , and hence φ(x) = 0, a contradiction. Therefore, 
+
+ri ≥ mi = l(Pi) (i.e. rad ri Pi = 0) for all 1 ≤ i ≤ n. Now, since WΛ = Λ Λ ∈ proj Λ, Proposition 2.7 concludes that Λ is Iwanaga-Gorenstein. □
+
+Remark 3.10. (1) The theorem shows that there is no non-Iwanaga-Gorenstein Cohen-Macaulay Nakayama algebra. (2) The theorem remains true for the case where Nakayama algebras are artin. (3) In [19, Proposition 5], Ringel characterized Iwanaga-Gorenstein Nakayama al-gebras in terms of resolution quivers. 
+
+Acknowledgments 
+
+The second author would like to thank Osamu Iyama, Aaron Chan and Yuya Otake for kindly answering his questions. The suggestions by the first two helped improve the paper. The first author was partially supported by JSPS KAKENHI Grant Number 26K16972. The second author was partially supported by JSPS KAKENHI Grant Number 25K17243. 
+
+References 
+
+[1] M. Abrar. Dominant dimensions of finite dimensional algebras. PhD thesis, Uni-versity of Stuttgart , 2012. http://elib.uni-stuttgart.de/handle/11682/5085. [2] I. Assem, D. Simson, and A. Skowro´ nski. Elements of the representation theory of associative algebras. Vol. 1 , volume 65 of London Mathematical Society Student Texts . Cambridge University Press, Cambridge, 2006. Techniques of representation theory. [3] M. Auslander and I. Reiten. Applications of contravariantly finite subcategories. 
+
+Adv. Math. , 86(1):111–152, 1991. [4] M. Auslander and I. Reiten. Cohen-Macaulay and Gorenstein Artin algebras. In 
+
+Representation theory of finite groups and finite-dimensional algebras (Bielefeld, 1991) , volume 95 of Progr. Math. , pages 221–245. Birkh¨ auser, Basel, 1991. [5] M. Auslander, I. Reiten, and S. O. Smalø. Representation Theory of Artin Algebras ,volume 36 of Cambridge Studies in Advanced Mathematics . Cambridge University Press, Cambridge, 1995. [6] A. Bahlekeh, S. Salarian, and Z. Toosi. Cohen–Macaulay Noetherian algebras. 
+
+Kyoto J. Math. , 63(1):1–22, 2023. [7] A. Beligiannis and I. Reiten. Homological and homotopical aspects of torsion theories. Mem. Amer. Math. Soc. , 188(883):viii+207, 2007. [8] A. Chan, O. Iyama, and R. Marczinzik. Auslander-Reiten’s Cohen-Macaulay alge-bras and contracted preprojective algebras. arXiv:2409.05603, 2024. [9] A. Dugas and B. Huisgen-Zimmermann. Strongly tilting truncated path algebras. 
+
+Manuscripta Math. , 134(1):225–257, 2011. 10 T. HONMA AND S. USUI 
+
+[10] E. E. Enochs and O. M. G. Jenda. Relative homological algebra , volume 30 of De Gruyter Expositions in Mathematics . Walter de Gruyter, 2000. [11] R. M. Fossum, P. A. Griffith, and I. Reiten. Trivial Extensions of Abelian Cat-egories: Homological Algebra of Trivial Extensions of Abelian Catergories with Applications to Ring Theory , volume 456. Springer, 2006. [12] S. Goto and K. Nishida. Finite modules of finite injective dimension over a noe-therian algebra. J. Lond. Math. Soc. , 63(2):319–335, 2001. [13] B. Huisgen-Zimmermann. Dualities from iterated tilting. Israel J. Math. ,243(1):315–353, 2021. [14] O. Iyama and Ø. Solberg. Auslander–Gorenstein algebras and precluster tilting. 
+
+Adv. Math. , 326:200–240, 2018. [15] O. Iyama and X. Zhang. Tilting modules over Auslander–Gorenstein algebras. 
+
+Pacific J. Math. , 298(2):399–416, 2019. [16] Y. Miyashita. Tilting modules of finite projective dimension. Math. Z. , 193(1):113– 146, 1986. [17] B. J. Mueller. The classification of algebras by dominant dimension. Canad. J. Math. , 20:398–409, 1968. [18] K. Nishida. Dualizing modules for orders and artin algebras. Algebr. Represent. Theory , 5(2):137–147, 2002. [19] C. M. Ringel. The Gorenstein projective modules for the Nakayama algebras. I. J. Algebra , 385:241–261, 2013. [20] R. Y. Sharp. Finitely generated modules of finite injective fimension over certain Cohen-Macaulay rings. Proc. London Math. Soc. , 3(2):303–328, 1972.

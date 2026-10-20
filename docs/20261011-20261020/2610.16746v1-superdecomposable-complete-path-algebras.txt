@@ -1,0 +1,345 @@
+Title: Superdecomposable Complete Path Algebras
+
+URL Source: https://arxiv.org/pdf/2610.16746v1
+
+Published Time: Wed, 14 Oct 2026 03:10:14 GMT
+
+Number of Pages: 6
+
+Markdown Content:
+SUPERDECOMPOSABLE COMPLETE PATH ALGEBRAS          
+
+> CAN HAT ˙IPO ˘GLU AND CHRISTIAN LOMP
+> Abstract. Generalizing the setting of the second author’s work in [3], we characterize quivers
+> Qfor which the dual algebra Rof the path coalgebra of Q, equivalently the complete path algebra, has no nonzero uniform right ideals: this happens exactly when every vertex of Qcan reach a vertex emitting at least two distinct arrows. Equivalently, the injective hull E(R) of the right regular module is superdecomposable. These conditions are also equivalent to the path coalgebra having no nonzero hollow factor modules as a left module over its dual algebra.
+
+Introduction 
+
+In [3], the second author constructed an indecomposable module without nonzero hollow factor modules, thereby showing that hollow-lifting modules need not be lifting. The existence of such modules had been left open in [4]. The construction starts with a field K and a finite alphabet Σ containing at least two letters. Then we let Σ ∗ denote the free monoid of words in Σ, including the empty word. The space R of all functions Σ ∗ → K becomes a K-algebra under pointwise addition and the convolution product for f, g ∈ R:(f g )( w) = X
+
+> uv =w
+
+f (u)g(v), ∀w ∈ Σ∗
+
+Let M be the K-vector space with basis Σ ∗. For f ∈ R and w ∈ Σ∗, the action f ·w = P 
+
+> uv =w
+
+f (v)u,extended K-linearly, makes M a left R-module. As shown in [3, § 2], this module is indecomposable and has no nonzero hollow factor modules. A module-theoretic explanation of this example is provided by [3, Proposition 3.1]: if a semi-injective coretractable module has a nonzero hollow factor module, then its endomorphism ring contains a nonzero uniform right ideal. Here and throughout, endomorphisms are written as acting on the right, with multiplication defined by m(f g ) = ( mf )g.The module M above is the path coalgebra of the quiver with a single vertex and one loop for each letter of Σ, and R is its dual algebra. More generally, every coalgebra C over K is a self-injective self-cogenerator (hence semi-injective and coretractable) as a left module over its dual algebra C∗. With our convention for endomorphism rings, there is a K-algebra isomorphism 
+
+C∗ ∼= End C∗ (C∗ C).
+
+Consequently, if C∗ contains no nonzero uniform right ideals, then C, regarded as a left C∗-module, has no nonzero hollow factor modules. Motivated by this observation, we study the existence of uniform right ideals in the dual algebras of path coalgebras. Our main result characterizes the absence of nonzero hollow factor modules for path coalgebras in terms of the branching structure of the underlying quiver. We call a vertex 
+
+branching if it emits at least two distinct arrows. A vertex has access to another vertex if there is a directed path from the former to the latter, allowing paths of length zero. 
+
+Main Theorem. Let K be a field, let Q be a nonempty quiver, and let C = KQ be its path coalgebra with dual algebra R = C∗. The following conditions are equivalent: 
+
+(1) Every vertex of Q has access to a branching vertex. 
+
+(2) R has no nonzero uniform right ideals.   
+
+> Key words and phrases. Superdecomposable modules, hollow modules, path algebras, coalgebras. The second author was partially supported by Centro de Matem´ atica da Universidade do Porto, member of LASI, which is financed by national funds through FCT – Funda¸ c˜ ao para a Ciˆ encia e a Technology, I.P., under the project with reference UID/00144/2025, doi: https://doi.org/10.54499/UID/00144/2025.
+> 1arXiv:2610.16746v1 [math.RA] 12 Oct 2026 2CAN HAT ˙IPO ˘GLU AND CHRISTIAN LOMP
+
+(3) The injective hull E(RR) is superdecomposable. 
+
+(4) C has no nonzero hollow factor modules as a left R-module under the canonical action. 
+
+The theorem is proved in Section 2. 1. Hollow Factors, Uniform Submodules, and Superdecomposable Modules 
+
+A nonzero module M is called superdecomposable if it does not have nonzero indecomposable direct summands. A nonzero module is uniform if any two nonzero submodules have a nonzero intersection and it is called hollow if it cannot be written as the sum of two proper submodules. For a nonzero module M , its injective hull E(M ) is superdecomposable if and only if M contains no nonzero uniform submodules. Indeed, if D is an indecomposable direct summand of E(M ), then it is injective and hence uniform. Since M is essential in E(M ) and since nonzero submodules of uniform modules are uniform, D∩M is a nonzero uniform submodule of M . Conversely, if U is a nonzero uniform submodule of E(M ), then E(U ) is uniform. Since an injective module is uniform if and only if it is indecomposable, it follows that E(U ) is (isomorphic to) an indecomposable direct summand of E(M ) and E(M ) is not superdecomposable. 
+
+Example 1.1. Let R = KN/I be the quotient of the ring of all sequences in K by the ideal I = K(N)
+
+of all sequences with finitely many nonzero entries. Given any nonzero element a = ( an) + I with 
+
+supp(( an)) = {n ∈ N : an̸ = 0 }, we can write supp(( an)) = X ∪ Y into a disjoint union of infinite sets. Let eX be the idempotent of R given by (eX )n = 1 if and only if n ∈ X and zero otherwise. Then ae X R and ae Y R are both nonzero such that ae X R ∩ ae Y R = 0 . Thus, E(RR) is superdecomposable. 
+
+Example 1.2. Let R = K⟨x, y ⟩ be the free algebra in two variables over a field K. If I is a nonzero right ideal of R and f is a nonzero element of I, then f xR and f yR are two nonzero right ideals contained in I with zero intersection. Hence, no nonzero right ideal of R is uniform and its injective hull E(RR) is superdecomposable. More generally, the same argument holds for 
+
+D = K⟨⟨ x, y ⟩⟩ , the free power series ring in x and y.
+
+We record here for convenience the aforementioned result in [3]. Recall that a left R-module M
+
+is semi-injective if for any factor module N of M , monomorphism k : N → M and homomorphism 
+
+g : N → M , there exists h : M → M , such that kh = g. Equivalently, a left R-module M with endomorphism ring S = End R(M ) is semi-injective if Ann S (ker f ) = f S for every f ∈ S, where Ann S (N ) = {f ∈ S : N f = 0 }. Also, M is called coretractable if Hom R(M/N, M )̸ = 0 for every proper submodule N of M .
+
+Lemma 1.3 ([3, Proposition 3.1]) . Let M be a nonzero semi-injective coretractable module with endomorphism ring S = End R(M ). If N < M and M/N is hollow, then Ann S (N ) is a nonzero uniform right ideal of S.
+
+Corollary 1.4. Let M be a nonzero semi-injective coretractable module with endomorphism ring 
+
+S = End R(M ). Then E(SS ) is superdecomposable if and only if M has no nonzero hollow factor modules. Proof. (⇒) If M/N is a nonzero hollow factor, then Ann S (N ) is a nonzero uniform right ideal. So E(SS ) is not superdecomposable by the equivalence given at the beginning of Section 1. (⇐) Suppose that M has no nonzero hollow factor modules and that I is a nonzero uniform right ideal of S. Let 0 ̸ = f ∈ I. Then the right ideal f S ⊆ I is also uniform. Since M is semi-injective, we have Ann S (ker f ) = f S .We claim that M/ ker f is hollow. Otherwise, there exist proper submodules A, B of M both containing ker f such that A + B = M . Since M is coretractable, the sets Hom R(M/A, M )and Hom R(M/B, M ) are nonzero and hence Ann S (A) and Ann S (B) are nonzero right ideals contained in Ann S (ker f ) = f S . Since Ann S (A) ∩ Ann S (B) = Ann S (A + B) = Ann S (M ) = 0, this contradicts the uniformity of f S . Thus, M/ ker f is a nonzero hollow factor module, contradicting the hypothesis. Hence S has no nonzero uniform right ideals, so E(SS ) is superdecomposable. □SUPERDECOMPOSABLE COMPLETE PATH ALGEBRAS 3
+
+The above result can also be stated for coalgebras. Let C be a coalgebra over a field K and 
+
+C∗ = Hom K(C, K) be its dual algebra. C is canonically a left C∗-module with the action 
+
+f · c = X
+
+> (c)
+
+f (c2)c1
+
+for all f ∈ C∗ and c ∈ C. From [1, 9.1], we know that C is an injective cogenerator in the category of right C-comodules. In particular, C is a self-injective, self-cogenerator C∗-module. Also from [1, 3.12], we know that End C∗ (C) → C∗ given by f 7 → ϵ ◦ f is an isomorphism of K-algebras. So, the results above apply and we have the following version of Corollary 1.4 for coalgebras: 
+
+Corollary 1.5. Let C be a nonzero coalgebra over K. Then E(C∗ 
+
+> C∗
+
+) is superdecomposable if and only if C has no nonzero hollow factor modules as a left C∗-module, equivalently, no nonzero hollow factors as a right C-comodule. 
+
+2. Path Coalgebras and Uniform Right Ideals 
+
+Let K be a field and Q = ( Q0, Q 1, s, t ) be a quiver with Q0̸ = ∅ and source and target maps 
+
+s, t : Q1 → Q0. A path of length n ≥ 1 is a list p = a1a2 · · · an of arrows ai such that t(ai) = s(ai+1 )for all 1 ≤ i < n . We write |p| for the length of a path p. Elements e ∈ Q0 are considered as paths of length zero. Denote the set of all paths by P and extend the maps s and t from Q1 to P by defining s(p) = s(a1) and t(p) = t(an). For a vertex e ∈ Q0, we set s(e) = e = t(e). Let C = KQ be the linear span of all paths in P. The product pq of two paths p and q is defined when t(p) = s(q). The prefix order defined by 
+
+p ≤ q ⇐⇒ q = pu for some path u ∈ P 
+
+is a partial order on P. Moreover, C is a coalgebra with comultiplication ∆( p) = X
+
+> uv =p
+
+u ⊗ v
+
+for all p ∈ P and counit ϵ(e) = 1 for every vertex e ∈ Q0 and ϵ(p) = 0 for every p ∈ P \ Q0. The dual space R = C∗ = Hom K(C, K) becomes a K-algebra by (f g )( p) = X
+
+> uv =p
+
+f (u)g(v)for all f, g ∈ R and a path p. The identity element is the counit ϵ defined above. For each path 
+
+p ∈ P there exists a functional πp defined by πp(p) = 1 and πp(q) = 0 for q̸ = p. Note that for p ∈ P with e = s(p) and e′ = t(p), one has πeπp = πp = πpπe′ . In particular, for every vertex e, the right ideal πeR consists of functions that are supported in paths starting at e. The algebra R is called the complete path algebra of Q. There is an embedding given by p 7 → πp of the ordinary path algebra in R as the subalgebra of finite linear combinations of paths. Moreover, R
+
+is its completion with respect to the topology whose basic neighbourhoods of zero are the cofinite monomial ideals, see [2]. For the alphabet Σ = {x, y }, one could interpret the monoid of words Σ ∗ in [3] as the set of paths that one could obtain in the following quiver: 
+
+•. y
+
+ffx % %
+
+The complete path algebra of Q is isomorphic to the free power series ring R = K⟨⟨ x, y ⟩⟩ in x and 
+
+y, which turns the free algebra C = K⟨x, y ⟩ into a left R-module by 
+
+X
+
+> z∈Σ∗
+
+λz z · w = X
+
+> w=uv
+
+λv u, 
+
+for any w ∈ Σ∗. Since R has no nonzero uniform right ideals, C has no nonzero hollow factor module by Corollary 1.5. Hence, given a quiver Q = ( Q0, Q 1, s, t ) and its path coalgebra C, it is natural to ask when the dual algebra C∗ has no nonzero uniform right ideals. We now state and prove some preliminary results which will lead to the proof of the main theorem. Denote by Se = {p ∈ P : s(p) = e}, resp. Te = {p ∈ P : t(p) = e}, the paths starting 4 CAN HAT ˙IPO ˘GLU AND CHRISTIAN LOMP 
+
+resp. terminating at e ∈ Q0. Note that Se ∩Te consists of all closed paths starting and terminating at e.
+
+Lemma 2.1. Let Q = ( Q0, Q 1, s, t ) be a nonempty quiver, K be a field, and R be the dual of the path coalgebra of Q. Let e ∈ Q0.
+
+(1) If Se is finite, then πeR contains a nonzero minimal right ideal. 
+
+(2) If Se is totally ordered with respect to the prefix order, then πeR contains a nonzero uniserial Noetherian right ideal. Analogous statements hold for Te and the left ideal Rπ e with the suffix order. Proof. (1) Consider first the case Se = {e}. Then for any path q,(πef )( q) = X
+
+> uv =q
+
+πe(u)f (v) = 
+
+(
+
+f (e) if q = e
+
+0 else because if q = ev , then s(q) = e and hence q ∈ Se = {e}. Hence, πef = λπ e for λ = f (e), and 
+
+πeR = πeK is one-dimensional and therefore minimal. In case Se is finite, choose a path p ∈ Se of maximal length. Then St(p) = {t(p)} and πeR ⊇ πeπpR = πpK is minimal. (2) If Se is finite, then the result follows from (1). Suppose that Se is an infinite set which is totally ordered with respect to the prefix order. Hence, for any i ≥ 0, there exists precisely one path pi ∈ Se of length i. Clearly, p0 = e and there exists a sequence {ai}i≥1 ∈ QN 
+
+> 1
+
+such that 
+
+pi = a1 · · · ai, i.e. Se = {e} ∪ { pi : i ≥ 1}. Set 
+
+ui,i := t(pi), uk,m = ak+1 · · · am, ∀m > k. 
+
+Then for any m ≥ k one has pm = pkuk,m .Let 0 ̸ = f ∈ πeR and let n be minimal with f (pn)̸ = 0. Set λ = f (pn)−1. Define g ∈ R to vanish outside the set {un,m : m ≥ n}, and on these paths by recursion on the length: 
+
+g(un,n ) = λ, g(un,m ) = −λ
+
+> m
+
+X
+
+> k=n+1
+
+f (pk)g(uk,m ) (m > n ).
+
+We claim that f g = πpn , because (f g )( pn) = X
+
+> uv =pn
+
+f (u)g(v) = f (pn)g(un,n ) = 1 ,
+
+since f (pk) = 0 for k < n because of the minimality of n. Moreover, for any m > n ,(f g )( pm) = 
+
+> m
+
+X
+
+> k=n
+
+f (pk)g(uk,m ) = λ−1g(un,m ) + 
+
+> m
+
+X
+
+> k=n+1
+
+f (pk)g(uk,m ) = 0 .
+
+It is also clear that ( f g )( pk) = 0 for k < n by the minimality of n. Thus, f g = πpn and πpn R ⊆ f R .On the other hand, f ∈ πpn R because πpn R consists of functions that are supported on paths which have pn as a prefix and f is such a function by the assumption. Hence, f R = πpn R.Let J be a nonzero right subideal of πeR. From the preceding paragraph, for each nonzero f ∈ J,there exists i ≥ 0 such that f R = πpi R. Let k = min {i : there exists f ∈ J with f (pi)̸ = 0 }. Then 
+
+J = πpk R and each nonzero subideal of πeR is of the form πpi R and hence πeR is uniserial and Noetherian since a strictly ascending chain of these ideals would give a strictly decreasing sequence of their indices. □
+
+Corollary 2.2. Let Q = ( Q0, Q 1, s, t ) be a quiver with convolution algebra R as above. If E(RR) is superdecomposable, then for any e ∈ Q0, Se is an infinite set containing at least two incomparable paths. 
+
+Recall that we call a vertex e in Q branching if there are two distinct arrows whose source is e.
+
+Lemma 2.3. Let K be a field, Q be a quiver, and C and R be its path coalgebra and convolution algebra, respectively. Suppose that f is a nonzero element in R and p is a path of minimal length in the support of f so that f (α) = 0 for every path α such that |α| < |p|. If t(p) is a branching vertex, then the right ideal I = f R is not uniform. SUPERDECOMPOSABLE COMPLETE PATH ALGEBRAS 5
+
+Proof. Let v = t(p). By hypothesis, there are distinct arrows a, b whose source is v. Consider the right ideals 
+
+U = f π aR, V = f π bR
+
+contained in I, which are both nonzero since ( f π a)( pa ) = f (p)̸ = 0 and ( f π b)( pb ) = f (p)̸ = 0. We claim that U ∩ V = 0. Suppose that this is not true and that 0̸ = f π ag = f π bh
+
+for some g, h ∈ R. Since f π ag is nonzero, there exists a path u for which (f π ag)( u) = X
+
+> u1au 2=u
+
+f (u1)g(u2)̸ = 0 .
+
+So there exists a decomposition u = u1ar with f (u1)g(r)̸ = 0 (otherwise the above sum would be zero); in particular, the set of paths ρ with s(ρ) = t(a) and g(ρ)̸ = 0 is nonempty. Among all such paths ρ, choose r of minimal length. Similarly, from f π bh̸ = 0 we deduce that the set of paths σ
+
+with s(σ) = t(b) and h(σ)̸ = 0 is nonempty, and we choose s of minimal length among such paths. Without loss of generality (interchanging the pairs ( a, g ) and ( b, h ) if necessary), we may assume 
+
+|r| ≤ | s|.
+
+We evaluate f π ag and f π bh at par . Let (f π ag)( par ) = X
+
+> αaγ =par
+
+f (α)g(γ).
+
+For every decomposition in the above sum, exactly one of the following holds: 
+
+|α| < |p|, |α| = |p|, |α| > |p|.
+
+In the first case f (α) = 0, in the third g(γ) = 0, and in the second case we necessarily have (α, γ ) = ( p, r ). Hence (f π ag)( par ) = f (p)g(r)̸ = 0 .
+
+On the other hand, when calculating ( f π bh)( par ), then (f π bh)( par ) = X
+
+> αbγ =par
+
+f (α)h(γ).
+
+If |α| < |p|, then α is a prefix of p and f (α) = 0 by the minimality of p. If |α| > |p|, then pa is a prefix of α. Thus, αbγ = par yields |γ| < |r| ≤ | s| and hence h(γ) = 0 by minimality of s. The only remaining case where |α| = |p| is impossible because the arrow immediately following p in 
+
+par is a̸ = b. Therefore, (f π bh)( par ) = 0 ,
+
+contradicting f π ag = f π bh. Therefore, U ∩ V = 0. Hence, I contains two nonzero right ideals with zero intersection and it is not uniform. □
+
+Recall that a vertex v of a quiver has access to another vertex v′ if there is a path p with 
+
+s(p) = v and t(p) = v′. Now we are ready to prove the main theorem: 
+
+Theorem 2.4. Let K be a field, Q a nonempty quiver, and C and R be its path coalgebra and convolution algebra, respectively. The following statements are equivalent: 
+
+(1) Every vertex of Q has access to a branching vertex. 
+
+(2) R has no nonzero uniform right ideals. 
+
+(3) E(RR) is superdecomposable. 
+
+(4) C has no nonzero hollow factor modules as a left R-module. Proof. (1) ⇒ (2) Let I be a nonzero right ideal of R. Take 0 ̸ = f ∈ I and let p be a path of minimal length such that f (p)̸ = 0. By assumption, there exists a path q such that s(q) = t(p) for which t(q) emits at least two distinct arrows. The functional 
+
+f = f π q ∈ I, 6 CAN HAT ˙IPO ˘GLU AND CHRISTIAN LOMP 
+
+satisfies f (pq ) = f (p)̸ = 0 and has the path pq as a minimal length element in its support, since 
+
+p is minimal and any element in its support must have q as a suffix. Since t(pq ) is a branching vertex, then f R is not uniform by Lemma 2.3 which, in turn, implies I is not uniform. (2) ⇒ (1) Suppose that Q has a vertex e which does not have access to a branching vertex. Then the set Se is totally ordered by the prefix order, because every vertex reachable from e emits at most one arrow. Since minimal and uniserial ideals are uniform, in each case, it follows from Lemma 2.1 that R contains a nonzero uniform right ideal. The equivalence of (2) and (3) is established at the beginning of Section 1, while the equivalence of (3) and (4) follows from Corollary 1.5. □
+
+Example 2.5. Consider the quiver 
+
+Q : 1 z / / 2
+
+> x
+
+
+
+
+
+> y
+
+Z
+
+Z
+
+Qop : 1 2
+
+> z
+
+oo
+
+> x
+
+
+
+
+
+> y
+
+Z
+
+Z
+
+and let C be its path coalgebra over a field K and let R = C∗ be the complete path algebra of 
+
+Q. By Theorem 2.4, E(RR) is superdecomposable. We can identify R with the generalized upper triangular matrix ring 
+
+R ≃
+
+ K D
+
+0 D
+
+
+
+, with D = K⟨⟨ x, y ⟩⟩ .
+
+Note that R has a minimal left ideal. Hence E(RR) is not superdecomposable. Alternatively, one could consider Rop as the complete path algebra of the quiver Qop , obtained from Q by reversing arrows, which does not satisfy Theorem 2.4. 
+
+Example 2.6. Consider the quiver 
+
+Q : 1 / / 2 / / 3 / / 4.
+
+Then Q does not satisfy Theorem 2.4. Adding to each arrow in Q an arrow in the opposite direction, yields 
+
+Q : 1 ( ( 2hh ( ( 3hh ( ( 4hh
+
+which satisfies the condition of Theorem 2.4. More generally, let Q = (Q0, Q 1, s, t ) be any nonempty quiver. Create a new quiver Q = ( Q0, Q 1, s, t ), by adding to Q1 a copy of each arrow in reverse direction, i.e. set Q0 = Q0, Q1 = Q1 ∪ Qop  
+
+> 1
+
+, with Qop  
+
+> 1
+
+= {aop : a ∈ Q1}, s(aop ) = t(a)
+
+and t(aop ) = s(a), for any a ∈ Q1, while s|Q1 = s and t|Q1 = t. If Q is a non-empty, connected quiver Q, then Q satisfies Theorem 2.4, provided Q has at least one arrow and is not the quiver 
+
+1 / / 2 .
+
+References

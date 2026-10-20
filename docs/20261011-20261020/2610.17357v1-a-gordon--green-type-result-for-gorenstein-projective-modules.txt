@@ -1,0 +1,376 @@
+Title: A Gordon–Green-type result for Gorenstein-projective modules
+
+URL Source: https://arxiv.org/pdf/2610.17357v1
+
+Published Time: Wed, 14 Oct 2026 03:52:05 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# A Gordon–Green-type result for Gorenstein-projective modules 
+
+A. M. Bouhada and M. Laaraj 
+
+Abstract 
+
+Let Λ be a Z-graded Artin algebra which is Iwanaga–Gorenstein. We prove that Λ is CM-finite if and only if the category of gradable Gorenstein-projective modules has finite type, and if and only if the lengths of the indecomposable gradable Gorenstein-projective mod-ules are bounded. Moreover, if Λ is CM-finite, then every Gorenstein-projective Λ-module is gradable. These results provide Gorenstein-projective analogues of the corresponding theorems of Gordon–Green for graded Artin algebras of finite representation type. 
+
+Keywords: Gorenstein-projective modules; graded Artin algebras; gradable modules; Cohen– Macaulay finite type; Iwanaga–Gorenstein algebras. 
+
+2020 Mathematics Subject Classification. Primary 16G50; Secondary 16G60, 16G70, 16E65. 
+
+# 1 Introduction 
+
+Let Λ be a graded Artin algebra. Gordon and Green [11] studied Λ through the full subcate-gory mod ∞(Λ) of mod Λ consisting of gradable modules. Among their main results, they proved that Λ has finite representation type if and only if mod ∞(Λ) has finite representation type [11, Theorem 4.5], and that finite representation type implies that every Λ-module is gradable [11, Theorem 4.3]. Finite Cohen–Macaulay type and Gorenstein-projective modules have been studied from several complementary points of view. Chen [7] obtained a Gorenstein-projective analogue of Auslander’s theorem on algebras of finite representation type. Beligiannis [4, 5] developed a systematic study of virtually Gorenstein algebras and algebras of finite Cohen–Macaulay type. Further results on CM-finite Gorenstein algebras and constructions of Gorenstein-projective modules were obtained by Li and Zhang [15, 16], while Kong and Zhang [14] investigated relative Auslander algebras associated with CM-finite algebras. In the graded setting, Minamoto and Yamaura [17] studied finitely graded Iwanaga–Gorenstein algebras and the stable categories of their graded Cohen–Macaulay modules. Explicit descriptions are available for important classes of algebras. In particular, Chen, Shen and Zhou [8] classified the indecomposable non-projective Gorenstein-projective modules over a monomial algebra in terms of perfect paths. More recently, Honma and Usui [13] described both the stable category of Gorenstein-projective modules and the stable category of graded Gorenstein-projective modules over a monomial algebra, together with the relation between them via the orbit category with respect to the degree-shift functor. These results illustrate the close interaction between grading and Gorenstein-projective representation theory. The question considered here is different. We study how CM-finiteness interacts with grad-ability and ask whether the finiteness phenomena established by Gordon and Green for ordinary modules continue to hold inside the Gorenstein-projective category. Recall that Λ is CM-finite 
+
+if Gproj Λ has only finitely many indecomposable objects up to isomorphism. The following main theorem shows that the Gordon–Green finiteness phenomenon extends to the Gorenstein-projective setting. 
+
+Theorem 1.1 (Main Theorem) . Let Λ be a graded Artin algebra which is Iwanaga–Gorenstein. The following conditions are equivalent: 
+
+1arXiv:2610.17357v1 [math.RA] 12 Oct 2026 A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+(1) Λ is CM-finite. 
+
+(2) The category Gproj ∞(Λ) of gradable Gorenstein-projective modules has finite type. 
+
+(3) The lengths of the indecomposable gradable Gorenstein-projective modules are uniformly bounded. 
+
+(4) GG < ∞ and Gproj d(Λ) has finite type for every d ≥ 0.Moreover, if Λ is CM-finite, then every Gorenstein-projective Λ-module is gradable. Con-sequently, the ungraded stable category of Gorenstein-projective modules can be realized as the orbit category of the graded stable category of graded Gorenstein-projective modules with respect to the degree-shift functor ⟨1⟩. In particular, one has GprojΛ ≃ Gproj ZΛ/⟨1⟩ .
+
+The notation appearing in (4) is introduced in Section 2. When Λ is self-injective, every finitely generated Λ-module is Gorenstein-projective, and the theorem recovers the correspond-ing finiteness phenomena of Gordon and Green. 
+
+Strategy of the proof. We combine right almost split morphisms in mod Λ with Gorenstein-projective approximations. In the graded setting, these approximations are chosen so that gradability is preserved, yielding right almost split morphisms in Gproj Λ whose domains are gradable whenever their targets are. Iterating the indecomposable components of these mor-phisms produces chains in Gproj Λ, along which gradability propagates from the last term to all preceding terms. Under the bounded-length hypothesis in (3), an expansion argument, together with the Harada–Sai lemma, shows that every indecomposable Gorenstein-projective module is, up to isomorphism, the initial term of a chain of uniformly bounded length ending at an indecomposable projective module. This yields both CM-finiteness and the gradability of all Gorenstein-projective modules. Our approach is inspired by Auslander’s use of the Harada–Sai lemma to show that a component of the Auslander–Reiten quiver consisting of modules of bounded length contains all indecomposable modules [2, Chapter VI]; a relative version appears in [5, Remark 3.2(ii)]. Unlike the approach of Gordon and Green [11], our proof uses neither Auslander’s theorem on components nor the connectedness of Λ. The essential additional ingredient in our setting is the propagation of gradability along the chosen chains, which allows the length bound to be imposed only on gradable modules. The same argument also provides a short proof of the results of Gordon and Green [11, Theorems 4.3 and 4.5]. Indeed, working in mod Λ instead of Gproj Λ, neither Gorenstein-projective approximations nor the Gorenstein hypothesis are needed. Moreover, the chains may be taken to end at simple modules rather than projective ones, since every nonzero module admits a nonzero morphism onto a simple module, and there are only finitely many simple modules, all of which are gradable. 
+
+# 2 Proof of the Main Theorem 
+
+Before giving the proof, we recall the notation and auxiliary results that will be used through-out this section. 
+
+2.1 Graded Artin algebras 
+
+Throughout, Λ is a graded Artin algebra and all modules are finitely generated left modules. We write ℓ(M ) for the length of a module M and Ω M for the kernel of a projective cover. Let Λ = L 
+
+> i∈Z
+
+Λi be a graded Artin algebra. We denote by gr Λ the category of finitely generated graded Λ-modules with degree-preserving morphisms, and by F : gr Λ → mod Λ the 2A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+forgetful functor. For X ∈ gr Λ and i ∈ Z, denote by X⟨i⟩ the grading shift of X, defined by (X⟨i⟩)n = Xn−i.A module M ∈ mod Λ is gradable if M ∼= F X for some X ∈ gr Λ. We denote by mod ∞(Λ) the full subcategory of gradable modules. For 0 ̸ = X ∈ gr Λ, let δX and δX denote, respectively, the least and largest integers n for which Xn̸ = 0, and put gr . l. X = δX − δX + 1. For d ≥ 0, let gr d(Λ) be the full subcategory of gr Λ consisting of 0 and those X̸ = 0 satisfying δX ≥ 0 and δX ≤ d. Put mod d(Λ) = F (gr d(Λ)), with closure under isomorphism understood. We shall use the following standard results of Gordon–Green [10, 11]. 
+
+Proposition 2.1. Let X, Y ∈ gr Λ .
+
+(GG1) The functor F is exact and faithful and reflects exactness. 
+
+(GG2) The module X is indecomposable if and only if F X is indecomposable. Moreover, direct summands and finite direct sums of gradable modules are gradable. 
+
+(GG3) If X and Y are indecomposable, then F X ∼= F Y if and only if X ∼= Y ⟨i⟩ for some i ∈ Z.
+
+(GG4) Every morphism F X → F Y is a finite sum of homogeneous morphisms. A degree-e
+
+morphism F X → F Y is the image under F of a degree-preserving morphism X → Y ⟨− e⟩.
+
+(GG5) We have F (rad X) = rad F X .
+
+(GG6) The functor F sends graded projective covers to projective covers and graded injective envelopes to injective envelopes. In particular, F (Ω nX) ∼= Ω n(F X ) for all n ≥ 0.
+
+(GG7) There is a graded Auslander–Reiten translate such that F (D Tr X) ∼= D Tr( F X ).
+
+(GG8) For every indecomposable non-injective X ∈ gr Λ , there is an almost split sequence starting at X, and F sends almost split sequences in gr Λ to almost split sequences in mod Λ .
+
+(GG9) If X is indecomposable and ℓ(F X ) ≤ K, then gr . l. X ≤ K gr . l. Λ.
+
+Since Λ is an Artin algebra, only finitely many homogeneous components Λ i are nonzero. Hence gr . l. Λ < ∞.
+
+2.2 Right almost split maps and Gorenstein-projective modules 
+
+Let C be a full subcategory of mod Λ. A morphism ϑ : Y → B with Y, B ∈ C is right almost split in C if it is not a split epimorphism and every morphism W → B in C which is not a split epimorphism factors through ϑ.Every indecomposable B ∈ mod Λ admits a right almost split map. If B is non-projective, this is the right-hand morphism of the almost split sequence ending at B; if B is projective, the inclusion rad B , → B is right almost split [2, Chapter V]. We shall use the following form of the Harada–Sai lemma. 
+
+Lemma 2.2 (Harada–Sai [12]) . Let b ≥ 1. A composite of 2b − 1 non-isomorphisms between indecomposable modules of length at most b is zero. 
+
+We write Gproj Λ for the category of finitely generated Gorenstein-projective Λ-modules. Assume that Λ is Iwanaga–Gorenstein and let d = id ΛΛ. We shall use the following standard facts [6, 9]: (G1) A module M is Gorenstein-projective if and only if Ext i
+
+> Λ
+
+(M, Λ) = 0 for all i ≥ 1. (G2) For every M ∈ mod Λ, one has Ω dM ∈ Gproj Λ. 3A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+(G3) The category Gproj Λ contains the projective modules and is closed under extensions, finite direct sums and direct summands. (G4) Every G ∈ Gproj Λ embeds into a projective module. (G5) If G ∈ Gproj Λ and pd L < ∞, then Ext i
+
+> Λ
+
+(G, L ) = 0 for all i ≥ 1. 
+
+Definition 2.3. Let C be a full subcategory of mod Λ. A morphism π : C → M with C ∈ C is a right C-approximation of M if every morphism C′ → M with C′ ∈ C factors through π.We shall use the Auslander–Buchweitz approximation: every M ∈ mod Λ admits an exact sequence 0 → K → G → M → 0 with G ∈ Gproj Λ and pd K < ∞. By (G5), the epimorphism 
+
+G → M is a right Gproj Λ-approximation [3]. We now introduce the graded Gorenstein-projective category. 
+
+Definition 2.4. We denote by Gproj Z Λ the full subcategory of gr Λ consisting of all X such that Ext i
+
+> gr Λ
+
+(X, Λ⟨j⟩) = 0 for every i ≥ 1 and every j ∈ Z.
+
+Proposition 2.5. For X ∈ gr Λ , one has X ∈ Gproj Z Λ if and only if F X ∈ Gproj Λ . Conse-quently, F (Gproj Z Λ) = Gproj ∞(Λ) .Proof. Let P • → X be a graded projective resolution. By (GG4), for every n, the module Hom Λ(F P n, Λ) is naturally isomorphic to L 
+
+> j∈Z
+
+Hom gr Λ (P n, Λ⟨j⟩). The differentials preserve this homogeneous decomposition. Consequently, for every i ≥ 0, Ext i
+
+> Λ
+
+(F X, Λ) is naturally isomorphic to L 
+
+> j∈Z
+
+Ext i
+
+> gr Λ
+
+(X, Λ⟨j⟩). The first assertion follows from (G1), and the second from the definition of gradability. By (GG2) and (GG3), F induces a bijection between the isomorphism classes of indecompos-able objects of Gproj Z Λ modulo shifts and the isomorphism classes of indecomposable objects of Gproj ∞(Λ). 
+
+2.3 Graded right almost split maps 
+
+Lemma 2.6. Let C ∈ gr Λ be indecomposable. Then there exists a morphism ϑ′ : Y ′ → C in 
+
+gr Λ such that F ϑ ′ is right almost split in mod Λ .Proof. Suppose first that F C is projective. By (GG5), the image under F of rad C , → C is rad F C , → F C , which is right almost split. Suppose now that F C is non-projective and put X = D Tr C. By (GG7), F X ∼= D Tr( F C ) = 
+
+τ (F C ). Hence X is indecomposable by (GG2). Moreover, X is not injective: otherwise F X 
+
+would be injective by (GG6), whereas τ (F C ) is the first term of the almost split sequence ending at F C .By (GG8), there is an almost split sequence 0 → X → Y α
+
+−→ Z → 0 in gr Λ. Its image under F is almost split in mod Λ. Since F X ∼= τ (F C ), we have F Z ∼= F C . Both Z and C are indecomposable, so (GG3) gives Z ∼= C⟨i⟩ for some i ∈ Z. Shifting the sequence and composing its right-hand morphism with an isomorphism Z⟨− i⟩ → C gives the required morphism. 
+
+2.4 Graded Gorenstein-projective approximations 
+
+Lemma 2.7. Let X ∈ Gproj Z Λ. Then there is an exact sequence 0 → X ι
+
+−→ Q → X′′ → 0 in 
+
+gr Λ such that Q is projective in gr Λ and X′′ ∈ Gproj Z Λ.Proof. Set H = Hom Λ(F X, Λ). Since Λ is Artinian, H is finitely generated as a right Λ-module. By (GG4), after replacing a finite generating set by its homogeneous components, we may choose homogeneous generators φ1, . . . , φ m. Write φk = F φ ′
+
+> k
+
+, where φ′ 
+
+> k
+
+: X → Λ⟨− ek⟩.4A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+Put Q = Lmk=1 Λ⟨− ek⟩ and ι = ( φ′
+
+> k
+
+)k. By construction, every morphism F X → Λ, and hence every morphism from F X to a projective module, factors through F ι .By (G4), there is a monomorphism u : F X → P with P projective. Since u factors through 
+
+F ι , the morphism F ι is a monomorphism. Hence ι is a monomorphism by (GG1). Let X′′ = Coker ι. Applying Hom Λ(−, Λ) to 0 → F X → F Q → F X ′′ → 0, the surjectivity of Hom Λ(F Q, Λ) → Hom Λ(F X, Λ) gives Ext 1Λ(F X ′′ , Λ) = 0. For i ≥ 2, one has Ext i
+
+> Λ
+
+(F X ′′ , Λ) ∼=Ext i−1Λ (F X, Λ) = 0. Thus F X ′′ ∈ Gproj Λ by (G1). Proposition 2.5 gives X′′ ∈ Gproj Z Λ. 
+
+Proposition 2.8 (Graded Auslander–Buchweitz approximation) . For every M ∈ gr Λ , there is an exact sequence 0 → K → G π
+
+−→ M → 0 in gr Λ such that G ∈ Gproj Z Λ and pd F K < ∞.Moreover, F π is a right Gproj Λ -approximation of F M .Proof. We prove by induction on n ≥ 0 that the assertion holds whenever Ω nM ∈ Gproj Z Λ. This is sufficient by (GG6), (G2), and Proposition 2.5. For n = 0, take G = M and K = 0. Let n ≥ 1, and take a graded projective cover 0 →
+
+ΩM → P → M → 0. By induction there is an exact sequence 0 → K′ → G′ → ΩM → 0 with 
+
+G′ ∈ Gproj Z Λ and pd F K ′ < ∞. Lemma 2.7 gives an exact sequence 0 → G′ → Q → G′′ → 0, where Q is graded projective and G′′ ∈ Gproj Z Λ. Forming the pushout of G′ → ΩM and G′ → Q gives exact sequences 0 → K′ → Q → N → 0and 0 → ΩM → N → G′′ → 0. Thus pd F N < ∞. Pushing out Ω M → N along Ω M → P
+
+gives 0 → N → L → M → 0 and 0 → P → L → G′′ → 0. Hence F L ∈ Gproj Λ by (G3), so 
+
+L ∈ Gproj Z Λ by Proposition 2.5. Finally, if W ∈ Gproj Λ, then Ext 1Λ(W, F N ) = 0 by (G5). Hence every morphism W → F M 
+
+lifts through F L → F M . Thus F L → F M is a right Gproj Λ-approximation. 
+
+2.5 Right almost split morphisms in Gproj Λ 
+
+Proposition 2.9. Every indecomposable B ∈ Gproj Λ admits a right almost split morphism in 
+
+Gproj Λ . If B is gradable, then such a morphism may be chosen with gradable domain. Proof. Choose a right almost split morphism ϑ : Y → B in mod Λ and a right Gproj Λ-approximation π : E → Y . Put θ = ϑπ . If θ were a split epimorphism, then ϑ would be a split epimorphism. Let v : W → B, with W ∈ Gproj Λ, be a morphism which is not a split epimorphism. Since 
+
+ϑ is right almost split, v = ϑu for some u : W → Y . Since π is a right Gproj Λ-approximation, 
+
+u = πu ′ for some u′ : W → E. Hence v = θu ′.Suppose now that B is gradable. Choose an indecomposable C ∈ gr Λ and an isomor-phism w : F C → B. Lemma 2.6 gives ϑ′ : Y ′ → C such that F ϑ ′ is right almost split in mod Λ. By Proposition 2.8, there is π′ : E′ → Y ′ with E′ ∈ Gproj Z Λ and F π ′ a right Gproj Λ-approximation. The preceding argument shows that wF (ϑ′π′) : F E ′ → B is right almost split in Gproj Λ. Its domain is gradable. 
+
+Convention 2.10. Fix a set I of representatives of the isomorphism classes of indecomposable objects of Gproj Λ. For every B ∈ I , choose a right almost split morphism θB : EB → B in Gproj Λ, with EB gradable whenever B is gradable, and fix a decomposition EB = LsB 
+
+> ℓ=1
+
+EB,ℓ 
+
+into indecomposable modules. Write θB,ℓ : EB,ℓ → B for the corresponding components. For each 1 ≤ ℓ ≤ sB , let bEB,ℓ ∈ I be the representative of the isomorphism class of EB,ℓ ,and fix an isomorphism vB,ℓ : bEB,ℓ → EB,ℓ . Put bθB,ℓ = θB,ℓ vB,ℓ : bEB,ℓ → B.Thus all modules which occur in the chains considered below belong to the fixed set I.
+
+Lemma 2.11. For every B ∈ I and every 1 ≤ ℓ ≤ sB , the morphism bθB,ℓ : bEB,ℓ → B is not an isomorphism. 
+
+5A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+Proof. If bθB,ℓ were an isomorphism, then θB,ℓ would also be an isomorphism because vB,ℓ is an isomorphism. This would make θB a split epimorphism, a contradiction. 
+
+Definition 2.12. A chain of components of the chosen right almost split morphisms of length 
+
+m ≥ 0 is a sequence 
+
+Z0
+
+> f1
+
+−→ Z1
+
+> f2
+
+−→ · · · fm
+
+−−→ Zm
+
+with Zi ∈ I for all i, such that for every 1 ≤ i ≤ m there is some ℓ with Zi−1 = bEZi,ℓ and 
+
+fi = bθZi,ℓ .
+
+Lemma 2.13. If such a chain Z0 → · · · → Zm ends at a gradable module Zm, then every Zi is gradable. Proof. Suppose Zi is gradable. By Convention 2.10, EZi is gradable. Hence each direct sum-mand EZi,ℓ is gradable. Since bEZi,ℓ ∼= EZi,ℓ , the representative bEZi,ℓ is also gradable. Therefore 
+
+Zi−1 is gradable, and the result follows by descending induction. 
+
+2.6 The expansion lemma 
+
+The following lemma provides a finite expansion of a non-isomorphism between indecompos-able Gorenstein-projective modules in terms of compositions of components of the chosen right almost split morphisms. The expansion will allow us to apply the Harada–Sai lemma to suffi-ciently long compositions while retaining control over the shorter ones. 
+
+Lemma 2.14. Let M, P ∈ I and let f : M → P be a non-isomorphism. For every n ≥ 1, there is a finite family (ck, h k)k∈K such that f = P 
+
+> k∈K
+
+ckhk and, for every k ∈ K:
+
+(i) ck is the composite of such a chain Z(k)0 → · · · → Z(k) 
+
+> mk
+
+= P , with 1 ≤ mk ≤ n;
+
+(ii) hk : M → Z(k)0 , and hk is an isomorphism whenever mk < n .Proof. Since M and P are indecomposable, f is not a split epimorphism. We proceed by induction on n.For n = 1, the right almost split property of θP : EP → P yields a factorization f = θP h.Writing h = ( hℓ)ℓ and setting bhℓ = v−1
+
+> P,ℓ
+
+hℓ, we obtain 
+
+f = X
+
+> ℓ
+
+bθP,ℓ bhℓ,
+
+which gives the required expansion. Suppose the assertion holds for n, and write f = P 
+
+> k∈K
+
+ckhk accordingly. Terms with 
+
+mk < n , or with mk = n and hk an isomorphism, are retained. For each remaining term, 
+
+mk = n and hk : M → Z(k)0 is a non-isomorphism. By the right almost split property of θZ(k)0
+
+,we may write 
+
+hk = X
+
+> ℓ
+
+bθZ(k)0 ,ℓ hk,ℓ , hk,ℓ : M → bEZ(k)0 ,ℓ .
+
+Consequently, 
+
+ckhk = X
+
+> ℓ
+
+ck bθZ(k)0 ,ℓ hk,ℓ ,
+
+where each new composite is a chain of length n + 1. The resulting finite expansion satisfies both conditions for n + 1, completing the induction. 6A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+2.7 Proof of the Main Theorem 
+
+Let Gproj ∞(Λ) = Gproj Λ ∩ mod ∞(Λ) and Gproj d(Λ) = Gproj Λ ∩ mod d(Λ) for d ≥ 0. Put 
+
+GG = sup {gr . l. X : X ∈ Gproj Z Λ indecomposable }.We first prove the key bounded-length statement. 
+
+Proposition 2.15. Suppose there is b ≥ 1 such that ℓ(M ) ≤ b for every indecomposable gradable 
+
+M ∈ Gproj Λ . Then every indecomposable non-projective M ∈ Gproj Λ is isomorphic to the initial term of a chain of components of the chosen right almost split morphisms of length at most 2b − 2 ending at an indecomposable projective module. In particular, every Gorenstein-projective Λ-module is gradable, and every indecomposable Gorenstein-projective module has length at most b.Proof. Let M be an indecomposable non-projective object of Gproj Λ, and let M0 ∈ I be its representative. It is enough to prove the assertion for M0.By (G4), M0 embeds into a projective module. Decomposing the latter into indecomposable projectives, some component gives a nonzero morphism M0 → P ′, where P ′ is indecompos-able projective. Let P ∈ I be the representative of P ′. Since projectivity is invariant under isomorphism, P is projective. Composing with an isomorphism P ′ → P , we obtain a nonzero morphism f : M0 → P . Since M0 is non-projective, f is not an isomorphism. Set n = 2 b − 1 and apply Lemma 2.14. Thus f = P 
+
+> k∈K
+
+ckhk, where ck is the composite of such a chain Z(k)0 → · · · → Z(k) 
+
+> mk
+
+= P , with 1 ≤ mk ≤ n.The module P is gradable. Hence all modules in these chains are gradable by Lemma 2.13. By hypothesis they have length at most b. Moreover, every arrow in such a chain is a non-isomorphism by Lemma 2.11. Therefore ck = 0 whenever mk = n = 2 b − 1, by the Harada–Sai lemma. If b = 1, then n = 1, and hence mk = 1 for every k. Therefore ck = 0 for all k, so f =P 
+
+> k∈K
+
+ckhk = 0, contradicting f̸ = 0. Thus, if an indecomposable non-projective Gorenstein-projective module exists, then b ≥ 2. Assume therefore that b ≥ 2. Since f̸ = 0 and ck = 0 whenever mk = n, there is some 
+
+k ∈ K such that mk < n and ckhk̸ = 0. By Lemma 2.14, hk : M0 → Z(k)0 is an isomorphism. Hence M0, and therefore M , is isomorphic to the initial term of such a chain of length at most 2b − 2 ending at the indecomposable projective module P . Lemma 2.13 then shows that M is gradable, and consequently ℓ(M ) ≤ b.Indecomposable projective modules are gradable as well. Thus every indecomposable Gorenstein-projective module is gradable and has length at most b. Since mod Λ is Krull–Schmidt, every Gorenstein-projective module is a finite direct sum of indecomposable Gorenstein-projective modules, and is therefore gradable. We can now prove the main result. 
+
+Theorem 2.16. Let Λ be a graded Artin algebra which is Iwanaga–Gorenstein. The following conditions are equivalent: 
+
+(1) Λ is CM-finite. 
+
+(2) Gproj ∞(Λ) has finite type. 
+
+(3) There is b ≥ 1 such that ℓ(M ) ≤ b for every indecomposable gradable M ∈ Gproj Λ .
+
+(4) GG < ∞ and Gproj d(Λ) has finite type for every d ≥ 0.Proof. (1) ⇒(2) is immediate. (2) ⇒(4). Let b be the maximum of the lengths of the finitely many indecomposable objects of Gproj ∞(Λ). If X ∈ Gproj Z Λ is indecomposable, then F X is an indecomposable gradable 7A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+Gorenstein-projective module, so ℓ(F X ) ≤ b. By (GG9), gr . l. X ≤ b gr . l. Λ. Since gr . l. Λ < ∞,we obtain GG < ∞. Moreover, Gproj d(Λ) ⊆ Gproj ∞(Λ) for every d ≥ 0. Hence each Gproj d(Λ) has finite type. (4) ⇒(3). Put G = GG , and let M be an indecomposable gradable Gorenstein-projective module. By Proposition 2.5, there is an indecomposable X ∈ Gproj Z Λ with M ∼= F X . After replacing X by a shift, we may assume δX = 0. Since gr . l. X ≤ G, one has δX ≤ G − 1. Thus M ∈ Gproj G−1(Λ). By assumption this category has finite type, so the lengths of its indecomposable objects are bounded. This proves (3). (3) ⇒(1). Let b be as in (3). For r ≥ 0, let Nr be the subset of I consisting of the modules which occur as the initial term of such a chain of length at most r ending at an indecomposable projective module. We prove by induction on r that Nr is finite. The set N0 consists of the representatives in I
+
+which are projective. Since an Artin algebra has only finitely many indecomposable projective modules, N0 is finite. Suppose Nr is finite and let B ∈ N r+1 . If B ∈ N r, there is nothing to consider. Otherwise there is a chain 
+
+B = Z0 −→ Z1 −→ · · · −→ Zr+1 
+
+ending at an indecomposable projective module. The tail Z1 → · · · → Zr+1 is a chain of the form in Definition 2.12 of length r, so Z1 ∈ N r. By Definition 2.12, B = bEZ1,ℓ for some 1 ≤ ℓ ≤ sZ1 . Consequently, 
+
+Nr+1 ⊆ N r ∪ { bEC,ℓ : C ∈ N r, 1 ≤ ℓ ≤ sC }.
+
+The set on the right is finite because Nr is finite and each EC has only finitely many indecom-posable summands. Thus Nr+1 is finite. By Proposition 2.15, every indecomposable non-projective Gorenstein-projective module is isomorphic to the initial term of a chain of components of the chosen right almost split morphisms of length at most 2 b − 2 ending at an indecomposable projective module. Since the initial terms of these chains belong to I, the representative of every indecomposable non-projective Gorenstein-projective module belongs to N2b−2. The indecomposable projectives already belong to N0 ⊆ N 2b−2. Hence I = N2b−2.The set N2b−2 is finite. Therefore I is finite, and Λ is CM-finite. 
+
+Corollary 2.17. If Λ is CM-finite, then every Gorenstein-projective Λ-module is gradable and 
+
+GprojΛ ≃ Gproj ZΛ/⟨1⟩ .Proof. The lengths of the indecomposable Gorenstein-projective modules are bounded, so Propo-sition 2.15 applies. We now give a different argument for the gradability of Gorenstein-projective modules in the CM-finite case. Over an algebraically closed field, this argument does not require the Iwanaga–Gorenstein hypothesis and follows directly from a result of Amiot and Oppermann [1, Theorem 4.2]. 
+
+Setting 2.18. Let k be an algebraically closed field and let Λ = L 
+
+> i∈Z
+
+Λi be a finite-dimensional graded k-algebra. No Gorenstein hypothesis is imposed in this section. For s ∈ k∗, let αs : Λ → Λ be the algebra automorphism defined by αs(λ) = siλ for λ ∈ Λi.For M ∈ mod Λ, denote by sM the corresponding twist of M .
+
+Lemma 2.19. For every s ∈ k∗, the assignment Ts(M ) = sM defines an exact autoequivalence of mod Λ which preserves indecomposable and Gorenstein-projective modules. 
+
+8A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+Proof. Since αs is an algebra automorphism, Ts is an exact autoequivalence with inverse Ts−1 .In particular, it preserves indecomposable modules and projective modules. If P • is a totally acyclic complex of projective modules, then TsP • is an exact complex of projective modules. Moreover, for every projective module Q, there is a natural isomorphism Hom Λ(TsP •, Q ) ∼= Hom Λ(P •, T s−1 Q).
+
+Since Ts−1 Q is projective, the complex on the right is exact. Thus TsP • is totally acyclic, and 
+
+Ts preserves Gorenstein-projective modules. 
+
+Corollary 2.20. In Setting 2.18, if Λ is CM-finite, then every Gorenstein-projective Λ-module is gradable. Proof. Let G be an indecomposable Gorenstein-projective Λ-module. By Lemma 2.19, sG is indecomposable and Gorenstein-projective for every s ∈ k∗. Since Λ is CM-finite, the family 
+
+{sG : s ∈ k∗} contains only finitely many isomorphism classes. Since k is algebraically closed, k∗ is infinite. Hence there is some α ∈ k∗ such that αG ∼= β G
+
+for infinitely many β ∈ k∗. By [1, Theorem 4.2], this is impossible unless G is gradable. Thus every indecomposable Gorenstein-projective module is gradable. Since mod Λ is Krull–Schmidt and finite direct sums of gradable modules are gradable, every Gorenstein-projective Λ-module is gradable. 
+
+# References 
+
+[1] C. Amiot, S. Oppermann, The image of the derived category in the cluster category, Int. Math. Res. Not. IMRN 2013 (2013), no. 4, 733–760. [2] M. Auslander, I. Reiten, S. O. Smalø, Representation Theory of Artin Algebras , Cambridge Studies in Advanced Mathematics 36, Cambridge University Press, Cambridge, 1995. [3] M. Auslander, R.-O. Buchweitz, The homological theory of maximal Cohen–Macaulay approximations, M´ em. Soc. Math. France (N.S.) 38 (1989), 5–37. [4] A. Beligiannis, Cohen–Macaulay modules, (co)torsion pairs and virtually Gorenstein alge-bras, J. Algebra 288 (2005), 137–211. [5] A. Beligiannis, On algebras of finite Cohen–Macaulay type, Adv. Math. 226 (2011), 1973– 2019. [6] R.-O. Buchweitz, Maximal Cohen–Macaulay Modules and Tate Cohomology , Mathematical Surveys and Monographs 262, American Mathematical Society, Providence, RI, 2021. [7] X.-W. Chen, An Auslander-type result for Gorenstein-projective modules, Adv. Math. 218 (2008), 2043–2050. [8] X.-W. Chen, D. Shen, G. Zhou, The Gorenstein-projective modules over a monomial alge-bra, Proc. Roy. Soc. Edinburgh Sect. A 148 (2018), 1115–1134. [9] E. E. Enochs, O. M. G. Jenda, Relative Homological Algebra , de Gruyter Expositions in Mathematics 30, Walter de Gruyter, Berlin, 2000. [10] R. Gordon, E. L. Green, Graded Artin algebras, J. Algebra 76 (1982), 111–137. [11] R. Gordon, E. L. Green, Representation theory of graded Artin algebras, J. Algebra 76 (1982), 138–152. 9A Gordon–Green-type result A. M. Bouhada and M. Laaraj 
+
+[12] M. Harada, Y. Sai, On categories of indecomposable modules I, Osaka J. Math. 7 (1970), 323–344. [13] T. Honma, S. Usui, The stable category of Gorenstein-projective modules over a monomial algebra, J. London Math. Soc. 111 (2025), e70204. [14] F. Kong, P. Zhang, From CM-finite to CM-free, J. Pure Appl. Algebra 220 (2016), 782–801. [15] Z.-W. Li, P. Zhang, Gorenstein algebras of finite Cohen–Macaulay type, Adv. Math. 223 (2010), 728–734. [16] Z.-W. Li, P. Zhang, A construction of Gorenstein-projective modules, J. Algebra 323 (2010), 1802–1812. [17] H. Minamoto, K. Yamaura, On finitely graded Iwanaga–Gorenstein algebras and the stable categories of their (graded) Cohen–Macaulay modules, Adv. Math. 373 (2020), 107228. 
+
+A. M. Bouhada 
+
+Department of Mathematics, Champlain College Lennoxville, Williams School of Business, Bishop’s University, Sherbrooke, Quebec, Canada 
+
+Email address: abouhada@ubishops.ca 
+
+M. Laaraj 
+
+Department of Mathematics and Computer Science, Hassan II University of Casablanca, Casablanca, Morocco 
+
+Email address: laaraj1-etu@etu-univh2c.ma 
+
+10
