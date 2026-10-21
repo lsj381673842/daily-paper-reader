@@ -1,0 +1,1752 @@
+Title: Harder-Narasimhan Filtrations of Hyperquiver Representations
+
+URL Source: https://arxiv.org/pdf/2610.28028v1
+
+Published Time: Wed, 21 Oct 2026 01:30:47 GMT
+
+Number of Pages: 24
+
+Markdown Content:
+# Harder-Narasimhan Filtrations of Hyperquiver Representations 
+
+Tommi Muller        
+
+> Abstract. Hyperquiver representations are generalisations of quiver representations. They are directed hypergraphs with vector spaces assigned to vertices, and for every directed hyperedge, an assignment of a linear map from the tensor product of the source vector spaces to the tensor product of the target vector spaces. We study the moduli of hyperquiver representations, where we use affine GIT to describe the (in)stability of such objects under the action of a product of general linear groups. Our main result introduces the Harder-Narasimhan filtration of a hyperquiver representation. We also derive a formula for the weights of this unique filtration, which specialise to the Harder-Narasimhan slopes of a quiver representation.
+
+1. Introduction 1.1. Quivers. Quiver representations are objects of great importance lying at the intersection of many areas including representation theory, combinatorics, algebra, and algebraic and symplectic geometry. They consist of a quiver Q, i.e., a graph with a set of vertices V and a set of directed edges E described by source and target vertex maps 
+
+s, t : E → V , together with a representation ϕ of Q, i.e., an assignment of a vector space 
+
+Wv to each vertex v ∈ V and a linear map ϕe : Ws(e) → Wt(e) on each edge e ∈ E . The dimensions dv of the vector spaces Wv are encoded in a dimension vector d.Since Gabriel’s Theorem classifying indecomposable representations of quivers [Gab72], quivers and their representations have found significant applications. When the group 
+
+G = Q 
+
+> v∈V
+
+GL( Wv) acts on the space of representations of a quiver Q by change of basis over an algebraically closed field k, one may use geometric invariant theory (GIT) [MFK94] to construct moduli spaces of such representations. These include, for example, partial flag varieties, finite-dimensional algebras [Kin94], moduli of spectral sequences [KR17], and, via the McKay correspondence, resolutions of quotient singularities [McK80]. The specific moduli space obtained depends on an additional datum called a stability parameter θ, which is given by a number θv ∈ Q attached to each vertex v ∈ V . Whether a representation with dimension vector d lies on the moduli space or its boundary depends on whether it is slope-(semi)stable ; every representation can be assigned a value 
+
+μθ(d) = −
+
+P 
+
+> v∈V
+
+θv · dv
+
+P 
+
+> v∈V
+
+dv
+
+(1.1) called its slope , and a representation is slope-semistable if all of its subrepresentations have smaller slope, and is slope-stable if all of its proper subrepresentations have strictly smaller slope. The category Rep( Q) of finite-dimensional representations of a quiver Q
+
+also admits the following property once θ is chosen. arXiv:2610.28028v1 [math.AG] 20 Oct 2026 2 TOMMI MULLER 
+
+Theorem ([Rei03, Proposition 2.5]) . Every representation φ with dimension vector 
+
+d̸ = 0 has a unique finite-length filtration by subrepresentations with dimension vectors 
+
+0 = d0 ≤ d1 ≤ · · · ≤ dM −1 ≤ dM = d
+
+where M ≥ 1 such that (1) every successive quotient representation with dimension vector di − di−1 is slope-semistable (2) μθ(d1 − d0) > · · · > μ θ(dM − dM −1)
+
+This unique object associated to a quiver representation is known as the Harder-Narasimhan filtration . It serves as an important source of invariants [Fer+24] for quiver representations. The slope-semistable representations are precisely those whose Harder-Narasimhan filtration has length M = 1 .
+
+1.2. Hyperquivers. In this paper, we study a generalisation of quivers and their representations, known as hyperquiver representations, which were first introduced in [MNS26]. A hyperquiver H consists of a set of vertices V as before, but this time the set E consists of directed hyperedges, which can have multiple, possibly repeated, source and target vertices. These are described by source and target maps s, t : E → F 
+
+> n≥1
+
+Vn
+
+giving the tuple of source and target vertices s(e) and t(e) for a (hyper)edge e ∈ E .Note that in this paper, we allow (hyper)edges to have multiple target vertices, which was not considered in [MNS26] where only one target vertex is allowed. An example of a hyperquiver can be seen in Figure 1, consisting of two vertices and two (hyper)edges, where the red and blue edge each has two source vertices and one target vertex. 
+
+Figure 1. A hyperquiver with two vertices and two hyperedges. A representation ϕ of a hyperquiver H is then defined to be an assignment of vector spaces Wv to each vertex v ∈ V and a linear map ϕe from the tensor product of the source vector spaces Ws(e) = Ws(e)1 ⊗ · · · ⊗ Ws(e)m to the tensor product of the target vector spaces Wt(e) = Wt(e)1 ⊗ · · · ⊗ Wt(e)n . A quiver with a representation is therefore the special case where every edge has exactly one source and target vertex. An algebra is an example of a hyperquiver representation with one vertex v and a single hyperedge 
+
+(v, v ) → v, and more generally, hyperquiver representations can encode many possible algebraic structures. One can follow the same approach as before of using GIT to construct moduli spaces of hyperquiver representations by considering the space of representations R(H, d) = L 
+
+> e∈E
+
+Hom( Ws(e), W t(e)) under the action of G = Q 
+
+> v∈V
+
+GL( Wv) as above. This leads one to ask whether representations parametrised by the moduli spaces can also be studied by some notion of slope and Harder-Narasimhan filtration. There are several challenges to this, which we will see and address in this paper: HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 3
+
+(1) The category Rep( H) of representations of a hyperquiver H is not an abelian category unlike Rep( Q) for a quiver Q, see Example 2. Hence, quotients by subobjects are not defined. (2) Subobjects in Rep( H) are more difficult to describe than they are for Rep( Q).(3) A notion of Harder-Narasimhan filtration can be defined for hyperquiver repre-sentations, but unlike quiver representations, slope-semistability of hyperquiver representations cannot be checked on length-1 filtrations, i.e., “subrepresenta-tions”, alone, see Example 7. (4) The Harder-Narasimhan filtration of a hyperquiver representation additionally depends on a collection of weights that are analogous to the slopes μθ(di − di−1)
+
+appearing in part (2) of the above theorem. (5) A formula can be given for these weights that is almost the same as the slope formula (1.1), but which contains an additional “error term” depending on the combinatorics of the underlying hyperquiver. In this paper, the key approach taken to overcome these challenges is not to directly define slope and subrepresentations of hyperquiver representations, but instead to find descriptions of objects naturally attached to hyperquiver representations from the view-point of affine GIT. This approach was studied by Zamora [Zam12] and Hoskins [Hos12] for quiver representations and Jones [Jon24] for finite-dimensional associative algebras and Lie algebras. 
+
+1.3. Harder-Narasimhan filtrations. To develop a notion of slope and Harder-Narasimhan filtration for hyperquiver representations, we will describe them in terms of weights and maximally destabilising objects in affine GIT, i.e., the setting in GIT where a reductive group G acts linearly on a vector space X. Fix a G-conjugation invariant norm 
+
+∥ · ∥ on the set of one-parameter subgroups (1-PSs) of G induced by a Weyl-invariant inner product on the space of rational 1-PSs of a maximal torus of G. We can define the 
+
+Kempf functional K which takes a representation ϕ ∈ R(H, d) and produces the value 
+
+K(ϕ) = inf (χθ, λ )
+
+∥λ∥ (1.2) where χθ : G → k∗ is the character corresponding to the stability parameters θ, (·, ·) is the canonical pairing of characters and co-characters, and the infimum is over all 1-PSs 
+
+admissible for ϕ, i.e., the 1-PSs λ such that lim t→0 λ(t)·ϕ exists. A representation ϕ is said to be θ-semistable if K(ϕ) ≥ 0, otherwise it is said to be θ-unstable . If a representation 
+
+ϕ is θ-unstable, then Kempf’s Theorem guarantees the existence of a 1-PS λ : k∗ → G
+
+which minimises the Kempf functional, called a maximally destabilising 1-PS , which is unique up to conjugation in the parabolic subgroup P (λ) of G determined by λ [Kem78]. The limit point lim t→0 λ(t) · ϕ of a representation ϕ under a maximally destabilising 1-PS 
+
+λ is called the associated graded point gr( ϕ). While gr( ϕ) is not semistable respect to the stability parameters θ, it is semistable with respect to a different set of shifted stability parameters ˜θ, which will be described later in the paper. For a representation ϕ ∈ R(Q, d) of a quiver Q, θ-semistability of ϕ is equivalent to slope-semistability of ϕ with respect to θ, under the assumption that ⟨θ, d⟩ = 0 .This is a result known as King’s Criterion [Kin94]. The condition ⟨θ, d⟩ = 0 eliminates central 1-PSs that destabilise every representation, which we explore for hyperquivers in Section 3.2. Furthermore, any 1-PS, in particular a maximally destabilising 1-PS λ for a 
+
+θ-unstable ϕ, splits the vector spaces Wv into weight spaces Wv = Lmk=1 Wv,k and splits the edge maps ϕe into components ϕij e : Wv,i → Wv,j . Admissible 1-PSs necessarily have 
+
+ϕij e = 0 for i > j , and the limit under a maximally destabilising 1-PS lim t→0 λ(t) · ϕ4 TOMMI MULLER 
+
+sends ϕij e to the zero map for i < j . Thus, the associated graded point gr( ϕ) can be seen as a representation of Q assigning Lmk=1 Wv,k to each vertex v ∈ V and the linear maps 
+
+gr( ϕ)e = (gr( ϕ)ij e )mi,j =1 to each edge e ∈ E with gr( ϕ)ij e = ϕij e for i = j and 0 otherwise. Alternatively, one may view 1-PSs as inducing filtrations F kWv = Uv,k on each vector space Wk, where 0 = Uv, 0 ⊆ Uv, 1 ⊆ · · · ⊆ Uv,m = Wv; the associated graded gr( ϕ) then assigns Lmk=1 Uv,k /U v,k −1 to each vertex and the analogous linear maps to each edge as described above. The Kempf functional is invariant under rational rescalings of 1-PSs, allowing us to view (1.2) as an optimisation problem whose minimiser can be found using the necessary and sufficient Karush-Kuhn-Tucker (KKT) Conditions from optimisation theory. This allows us to translate rational 1-PSs into the following central object of this paper, called a Q-filtration , see Definition 3.3. A Q-filtration for a hyperquiver H with dimension vector 
+
+d is a pair (F •W, ℓ) given by a filtration F •W = ( F •Wv)v∈V of each vector space Wv as described above, together with a decreasing sequence of rational weights ℓ = ( ℓk)mk=1 with 
+
+ℓ1 > · · · > ℓ m. Likewise, we can translate admissible 1-PSs into objects called admissible 
+
+Q-filtrations , in Definition 3.4. We briefly explain what the analogue of the associated graded point for a hyperquiver representation should be. Let ϕ ∈ R(H, d) be a θ-unstable representation and (F •W, ℓ)
+
+be an admissible Q-filtration corresponding to a maximally destabilising 1-PS for ϕ.Denote [m] := {1, . . . , m }. We define the refined hyperquiver HF to be the hyperquiver with vertex set V × [m] and an edge c = ( e, I, J ) for every e ∈ E , I : s(e) → [m], and 
+
+J : t(e) → [m], having source vertices (( s, I (s))) s∈s(e) and target vertices (( t, J (t))) t∈t(e).The associated graded point gr( ϕ) is then seen as a hyperquiver representation of Hϕ
+
+with dimension vector (dv,k )v∈V ,k ∈[m] where dv,k = dim( F kWv/F k−1Wv). We denote this dimension vector by dϕ. A full description, including what its edge maps should be, is found in Definition 4.10. The KKT Conditions allow us to both translate the existence and uniquness of a maximally destabilising rational 1-PS into a notion of a Harder-Narasimhan filtration of a hyperquiver representation, as well as to prove that the weights of this 1-PS admit a formula that is the hyperquiver analogue of the slope of a quiver representation. This is the main result of the paper. We present a simplified version below. 
+
+Theorem (Theorem 4.14) . Let H = ( V, E) be a hyperquiver, θ ∈ Q|V| be stability parameters, and ϕ ∈ R(H, d) be a θ-unstable representation. Then there exists a unique admissible Q-filtration (F •W, ℓ), the Harder-Narasimhan filtration , such that (a) for some suitably shifted stability parameters eθ for HF , the associated graded hyperquiver representation gr( ϕ) ∈ R(HF , dϕ) is eθ-semistable; (b) the weights ℓk are determined by the formula 
+
+ℓ = p/∥p∥2 
+
+> D
+
+for p = −D−1  I − A⊤L†AD −1 Θ (1.3) 
+
+where Θ, D, A, L† depend only on the hyperquiver representation gr( ϕ).
+
+When H is a quiver, our theorem recovers the Harder-Narasimhan filtration for quiver representations; moreover, the A⊤L†AD −1 term in (1.3) vanishes for quivers and this formula reduces to ℓ
+
+> ∥ℓ∥2
+> D
+
+= −D−1Θ, which is precisely the slope formula (1.1) and the slopes μθ(di − di−1) seen in Reineke’s theorem as above [Rei03], see Remark 4.15. 
+
+1.4. Outline. In Section 2, we review the necessary background on affine GIT. In Section 3, we introduce hyperquivers, their representations, and study their semistability. Lastly, in Section 4, we study instability of hyperquiver representations and state and prove the main theorem concerning the Harder-Narasimhan filtration. HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 5
+
+1.5. Conventions and notation. Throughout, we work over an algebraically closed field k. We denote scalars by unbolded lowercase x, vectors by bold lowercase x, and matrices by unbolded uppercase X. We write [m] := {1, . . . , m }. All vector spaces are finite-dimensional. For a group G, X∗(G) denotes the set of one-parameter subgroups 
+
+λ : k∗ → G of G and X∗(G) denotes the group of characters χ : G → k∗ of G.
+
+1.6. Acknowledgments. I would like to express my deepest gratitude to both my supervisors Frances Kirwan and Vidit Nanda. I thank them for their unending patience, support, and guidance throughout this project. I would also like to thank Chenjing Bu and Kevin McGerty for helpful discussions. 
+
+2. Affine GIT 
+
+We begin by reviewing background from affine GIT. We work over an algebraically closed field k. Let G be a reductive group acting on a vector space V , which we may view as the affine variety Spec k[V ], where k[V ] = Sym( V ∗) is its coordinate ring. Let L
+
+be a G-linearised line bundle over V . This is a line bundle with an action G × L → L
+
+such that the projection π : L → V is G-equivariant and the action of G on the fibres of 
+
+L is a linear isomorphism, i.e., for every g ∈ G and v ∈ V , the map on fibres Lv → Lg·v
+
+given by ℓ 7 → g · ℓ is a linear isomorphism. We denote a G-linearisation of L by L .The G-linearised line bundles over V up to isomorphism form an abelian group under the tensor product ⊗ called the equivariant Picard group Pic G(V ). When G is the trivial group, Pic G(V ) = Pic( V ) is the Picard group of V . Furthermore, Pic( V ) is the trivial group as the only line bundles affine space admits is the trivial line bundle L = V × k.One can classify all G-linearised line bundles for any action of G on V as follows. 
+
+Proposition 2.1 ([KKV89, Lemma 2.2, Proposition 2.3]) . Let G be a linear algebraic group acting on a vector space V . Then 
+
+Pic G(V ) ∼= Hom( G, k ∗),
+
+the group of characters of G. ♢
+
+In other words, the only line bundle lying over V is the trivial line bundle L = V × k,and all G-linearisations of L are through characters χ : G → k∗, where G acts on L via 
+
+g · (v, ℓ ) = ( g · v, χ (g) · ℓ), v ∈ V, ℓ ∈ Lv.
+
+Example 1. If G = GL( V ), then every character χ : GL( V ) → k∗ is of the form 
+
+χ(g) = det( g)θ, θ ∈ Z.
+
+Similarly, if Vi are vector spaces for i = 1 , . . . , n and G = Qni=1 GL( Vi), then every character χ : G → k∗ is of the following form sending g = ( g1, . . . , g n) ∈ G to 
+
+χ(g) = 
+
+> n
+
+Y
+
+> i=1
+
+det( gi)θi
+
+for some θ = ( θi)ni=1 ∈ Zn. We call θ a stability parameter for G = Qni=1 GL( Vi). ♢
+
+The induced G-linearisation of L⊗m for all m ≥ 0 is given by 
+
+g · (v, ℓ ) = ( g · v, χ (g)m · ℓ), ∀v ∈ V, ∀ℓ ∈ Lv.
+
+Define the ring of sections of L to be 
+
+R(V, L ) := M
+
+> m≥0
+
+H0(V, L ⊗m)6 TOMMI MULLER 
+
+where for σ ∈ H0(V, L ⊗i) and σ′ ∈ H0(V, L ⊗j ), the multiplication is given by 
+
+(σ · σ′)( v) := σ(v) ⊗ σ′(v) ∈ (L⊗(i+j))v ∀v ∈ V. 
+
+Since L is the trivial line bundle, we have H0(V, L ⊗m) = k[V ] = Sym( V ∗) for all m ≥ 0.Hence, R(V, L ) ∼= k[V ][ t] is a graded Sym( V ∗)-algebra in the variable t lying in degree 1. There is an action of G on the sections σ ∈ H0(V, L ) of L, given by 
+
+(g · σ)( v) := g · σ(g−1 · v), ∀g ∈ G, ∀v ∈ V
+
+which extends component-wise to R(V, L ). We say that σ is G-invariant if g · σ = σ,and denote the submodule of G-invariant sections of L by H0(V, L )G. As G is reductive, 
+
+R(V, L )G = L 
+
+> m≥0
+
+H0(V, L ⊗m)G is finitely generated. We can describe these G-invariant sections concretely as follows. A section f ∈
+
+H0(V, L ⊗m) is G-invariant if (g · f )( v) = g · f (g−1 · v) = χ(g)mf (g−1 · v) = f (v), or in other words, f (g · v) = χ(g)mf (v) for all v ∈ V and g ∈ G. The sections H0(V, L ⊗m)G
+
+satisfying this relation are called χm-semi-invariants .
+
+Definition 2.2 . Let G be a reductive group acting on a vector space V , and let L
+
+be a G-linearised line bundle over V . A point v ∈ V is semistable for this linearisation if there exists σ ∈ H0(V, L ⊗N )G for some N > 0 such that σ(v)̸ = 0 , otherwise it is 
+
+unstable . ♢
+
+The set of semistable points for a given linearisation forms an open subset of V , which we denote by V ss ,L , or V ss if the linearisation L is clear from context. Note that it is possible for V ss ,L to be empty, depending on L . We denote the set of unstable points by V L ,u := V \ V L ,ss or V u. If G = Qni=1 GL( Vi), then the linearisation L depends on a stability parameter θ ∈ Zn, and we will call a semistable point in this setting a 
+
+θ-semistable point and denote the set of such points by V θ-ss .The GIT quotient of a vector space V by the action of a reductive group G with respect to a G-linearisation L is the scheme 
+
+V / /L G := Proj R(V, L )G.
+
+Note that V / /L G is not necessarily projective over k, i.e., a closed subscheme of Pn. By the Proj construction on a finitely generated ring, it is projective over the affine scheme 
+
+Spec ( R(V, L )G)0 = Spec k[V ]G, so it is projective over k if k[V ]G = k. In general, V / /L G
+
+is a quasi-projective scheme. If L is the trivial linearisation given by the trivial character 
+
+χ = 1 , then the GIT quotient V / /L G = Proj k[V ]G[t] ∼= Spec k[V ]G recovers classical invariant theory. Furthermore, there is a good quotient map 
+
+V ss ,L → V / /L G
+
+so that points in V / /L G parametrise G-orbits in V ss ,L , up to the equivalence that two G-orbits are identified if their closures intersect [Dol03, Chapter 8.1]. Evidently, the group 
+
+Pic G(V ) controls all the possible GIT quotients V / /L G one can construct. One can ask when exactly a point v ∈ V is semistable for a given linearisation. This is answered by the Hilbert-Mumford Criterion by checking a condition among one-parameter subgroups (1-PSs ) or cocharacters λ : k∗ → G of G.Let X∗(G) be the group of characters of G and let and X∗(G) be the set of cocharacters of G. Recall that there is a canonical map (·, ·) : X∗(G) × X∗(G) → Z defined by 
+
+(χ, λ ) = m where m is the exponent of the composition χ(λ(t)) = tm for all t ∈ k∗. Note that the map (·, ·) is additive in the first argument and is a pairing if G is abelian. For 
+
+v ∈ V and λ ∈ X∗(G), we say that lim t→0 λ(t) · v exists if the map α : A1 \ { 0} → V
+
+sending t 7 → λ(t) · v extends to a map eα : A1 → V . If it does exist, then such an extension 
+
+eα is unique as V is separated, and the limit is defined to be lim t→0 λ(t) · v := eα(0) , in HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 7
+
+which case we say that λ is an admissible 1-PS for v. We denote the set of non-trivial admissible 1-PSs of λ for v to be Cv.
+
+Theorem 2.3 (Affine Hilbert-Mumford Criterion [Hos12, Proposition 2.5]) . Let G be a reductive group acting on a vector space V , and let χ : G → k∗ be a character inducing the G-linearisation L . Then v ∈ V ss ,L if and only if 
+
+(χ, λ ) ≥ 0, ∀ λ ∈ Cv. ♢
+
+Remark 2.4 . Since (·, ·) satisfies (χN , λ ) = N (χ, λ ) for N ≥ 1, the sign of (χ, λ )
+
+is unchanged when scaling χ by a positive integer. Therefore, if L is the linearisation defined by χ and L N is the linearisation defined by χN , then by the Hilbert-Mumford Criterion, V L ,ss = V L N ,ss . In particular, if G = Qni=1 GL( Vi) and θ ∈ Zn is a stability parameter, then V θ,ss = V N θ,ss for any N ≥ 1. ♢
+
+Remark 2.5 . Let Y ⊆ V be a closed G-invariant subvariety. Then for any 1-PS 
+
+λ : k∗ → G, we have λ(t) · y ∈ Y for all y ∈ Y and t̸ = 0 as Y is G-invariant, and if the limit at t = 0 exists in V , then it exists in Y as Y is closed. Since the pairing (χ, λ ) is independent of Y , we can therefore consider more generally the GIT problem of G acting on Y with the linearisation L , and we have Y ss ,L = Y ∩ V ss ,L . ♢
+
+3. Hyperquivers, representations, and semistability 
+
+In this section, we introduce hyperquivers and their representations, and study their semistability. 
+
+Definition 3.1 . A hyperquiver is a directed hypergraph H = ( V, E, s, t ) consisting of a finite set of vertices V, a finite set of directed hyperedges E, together with source and target functions s, t : E → F 
+
+> n≥1
+
+Vn, where each hyperedge e ∈ E has a finite tuple of source vertices s(e) and a finite tuple of target vertices t(e). ♢
+
+For brevity, we may write H = ( V, E) and refer to hyperedges as edges . When indexing a sum, product, or other operation over s(e) and t(e), we will write s ∈ s(e) and t ∈ t(e)
+
+to mean indexing s over s(e) and t over t(e) in the order they appear in the tuples. 
+
+Definition 3.2 . Let H = ( V, E, s, t ) be a hyperquiver. A representation of H is an assignment of non-zero finite-dimensional vector spaces Wv to each vertex v ∈ V , and a linear map ϕe : N 
+
+> s∈s(e)
+
+Ws → N 
+
+> t∈t(e)
+
+Wt to each edge e ∈ E . The dimension vector 
+
+of the representation is d = ( dv)v∈V where dv := dim( Wv). The space of hyperquiver representations is the vector space 
+
+R(H, d) = M
+
+> e∈E
+
+Hom 
+
+ O
+
+> s∈s(e)
+
+Ws, O
+
+> t∈t(e)
+
+Wt
+
+ . ♢
+
+We call a point ϕ = ( ϕe)e∈E in R(H, d) a representation of H, for brevity. The representations of H form a category Rep( H), whose objects are ϕ ∈ R(H, d) for some 
+
+d, and whose morphisms are collections of linear maps fv : Wv → W ′ 
+
+> v
+
+for every v ∈ V 
+
+such that the diagram 8 TOMMI MULLER 
+
+> m
+
+O
+
+> i=1
+
+Wsi(e)
+
+> n
+
+O
+
+> j=1
+
+Wtj (e)
+
+> m
+
+O
+
+> i=1
+
+W ′
+
+> si(e)
+> n
+
+O
+
+> j=1
+
+W ′    
+
+> tj(e)
+> Nmi=1 fsi(e)
+> ϕe
+> Nnj=1 ftj(e)
+> ϕ′
+> e
+
+commutes for every e ∈ E . As we will see in the next example, Rep( H) is in general not a pre-additive category, hence it is not an abelian category. 
+
+Example 2 (Finite-dimensional algebras) . A finite-dimensional algebra A can be drawn as a hyperquiver representation, shown in Figure 2, where the hyperquiver has one vertex v, one edge e : ( v, v ) → v, and the representation assigns A to v and the multiplication map A ⊗ A → A to e. By Remark 2.5, when additional closed conditions are imposed such as associativity or the Jacobi identity, for example, then we obtain associative algebras and Lie algebras. To see that Rep( H) is not pre-additive for the hyperquiver H in Figure 2, let A = k =
+
+C with ⊗ being ordinary multiplication and f : A → A be the identity morphism. Then for x, y ∈ A, (id + id)( xy ) = 2 xy while (id + id)( x) · (id + id)( y) = (2 x)(2 y) = 4 xy are not equal. Thus, Rep( H) for an arbitrary hyperquiver H is in general not pre-additive and hence not abelian. 
+
+♢
+
+A
+
+Figure 2. A hyperquiver representation encoding an algebra A ⊗ A → A.
+
+Example 3. Let U be a Lie group and ρ : U → GL( V ) be a representation. Then the differential dρ : Lie( U ) → gl (V ) gives rise to an action of Lie( U ) on V given by 
+
+X · v := dρ (X)( v), where X ∈ Lie( U ) and v ∈ V . This scenario can be drawn as the hyperquiver representation in Figure 3, where the blue edge is the Lie algebra action 
+
+Lie( U ) ⊗ V → V and the red edge is the Lie bracket [·, ·] : Lie( U ) ⊗ Lie( U ) → Lie( U ). ♢
+
+Example 4. The following is an extension of the previous example and is a setting useful in non-reductive GIT [Bér+18]. Let H = U ⋊ Q be the Levi decomposition of a linear algebraic group H, where U is the unipotent radical of H and Q is a reductive subgroup, acting by conjugation on U . Suppose λ : k∗ → Z(Q) is a 1-PS such that the adjoint action of λ(k∗) on Lie (U ) grades Lie (U ) into Q-module weight spaces Lie (U )i all with positive weights. Then λ(k∗) decomposes V into a direct sum of Q-module weight spaces Vj . From this, we obtain a hyperquiver representation shown in Figure 4. ♢HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 9
+
+Lie( U ) V
+
+Figure 3. A hyperquiver representation corresponding to the action of a Lie algebra Lie( U ) on a representation V of its Lie group U .
+
+. . . Vj
+
+. . . . . . Lie (U )i . . . Vi+j
+
+Lie (U )i′ . . . Lie (U )i+i′ . . . . . . 
+
+Figure 4. A doubly-graded version of Figure 3 where Lie( U ) is internally graded by a 1-PS λ and grades V .
+
+3.1. Semistability of hyperquiver representations. Our affine GIT setting in this paper involves linear actions of a reductive group G on a vector space V , i.e., an action such that there exists a representation ρ : G → GL( V ) such that g · v = ρ(g)v for all v ∈ V . We will consider the group 
+
+G = Y
+
+> v∈V
+
+GL( Wv)
+
+acting on V = R(H, d) via change of basis. Explicitly, if ϕ = ( ϕe)e∈E ∈ R(H, d) and 
+
+g = ( gv)v∈V ∈ G, then 
+
+(g · ϕ)e =
+
+ O
+
+> t∈t(e)
+
+gt
+
+ ◦ ϕe ◦
+
+ O
+
+> s∈s(e)
+
+(gs)−1
+
+ , ∀e ∈ E (3.1) This action is linear as (3.1) is linear in ϕe and respects the product in G by the mixed-product property of tensors. Let λ : k∗ → G be a 1-PS. Then each component λv : k∗ → GL( Wv) of λ is a (rational) representation of k∗, i.e., a representation that is also a homomorphism of linear algebraic groups. Every rational representation of k∗ splits into the direct sum of 1-dimensional representations where λ(t) acts by ti for some i ∈ Z. We therefore have a weight space decomposition 
+
+Wv = M
+
+> i∈I(λ)
+
+W (i) 
+
+> v
+
+, W (i) 
+
+> v
+
+= {w ∈ Wv | λ(t)w = tiw, ∀t ∈ k∗}, ∀v ∈ V 
+
+where I(λ) ⊂ Z is the set of weights by which λ acts. This can also be seen as a filtration F •W = ( F •Wv)v∈V of each vector space Wv where F j Wv = L 
+
+> i∈I(λ),i ≥j
+
+W (i) 
+
+> v
+
+.10 TOMMI MULLER 
+
+The subgroup P (F •W ) of G preserving such a filtration is 
+
+P (F •W ) = {g = ( gv)v∈V | gv(F j Wv) ⊆ F j Wv, ∀j ∈ Z, ∀v ∈ V} (3.2) A 1-PS λ ∈ X∗(G) therefore uniquely determines a filtration F •W together with its set of weights I(λ), and conversely, the filtration F •W and the weights I(λ) uniquely determine 
+
+λ up to conjugation by P (F •W ). Additionally, for e ∈ E , we have 
+
+Hom 
+
+ O
+
+> s∈s(e)
+
+Ws, O
+
+> t∈t(e)
+
+Wt
+
+ = Hom 
+
+ O
+
+> s∈s(e)
+
+M
+
+> i∈Z
+
+W (i) 
+
+> s
+
+, O
+
+> t∈t(e)
+
+M
+
+> j∈Z
+
+W (j)
+
+> t
+
+
+
+= M
+
+> m∈Z|s(e)|
+> n∈Z|t(e)|
+
+Hom 
+
+ O
+
+> s∈s(e)
+
+W (ms) 
+
+> s
+
+, O
+
+> t∈t(e)
+
+W (nt)
+
+> t
+
+
+
+so by (3.1), λ(t) acts on the (m, n)-th component of ϕe by multiplying it by tN (m,n), where 
+
+N (m, n) = P 
+
+> t∈t(e)
+
+nt − P 
+
+> s∈s(e)
+
+ms. In particular, lim t→0 λ(t) · ϕ exists if for all (m, n)-th components of ϕe which are non-zero, we have N (m, n) ≥ 0. We generalise these ideas into the following main objects of this paper. 
+
+Definition 3.3 . Let H = ( V, E) be a hyperquiver and d = ( dv)v∈V be a dimension vector. A Q-filtration (F •W, ℓ) is (1) a decreasing sequence of rational weights ℓ = ( ℓk)mk=1 with ℓ1 > · · · > ℓ m, for some m ≥ 1
+
+(2) a filtration F •W = ( F •Wv)v∈V of each vector space Wv,
+
+{0} = Uv, 0 ⊆ Uv, 1 ⊆ · · · ⊆ Uv,m = Wv
+
+where F kWv = Uv,k , such that for all k = 1 , . . . , m , there is some v ∈ V with 
+
+Uv,k −1 ⊊ Uv,k 
+
+♢
+
+A Q-filtration (F •W, ℓ) is said to be trivial if m = 1 , ℓ1 = 0 , and {0} = F 0Wv ⊆
+
+F 1Wv = Wv for all v ∈ V .
+
+Definition 3.4 . A non-trivial Q-filtration (F •W, ℓ) is said to be admissible for a representation ϕ ∈ R(H, d) if for any edge e ∈ E and any choice of weights in the source 
+
+I : s(e) → { 1, . . . , m }, we have 
+
+ϕe
+
+ O
+
+> s∈s(e)
+
+Us,I (s)
+
+ ⊆ X  
+
+> J:t(e)→{ 1,...,m }P
+> t∈t(e)ℓJ(t)≥P
+> s∈s(e)ℓI(s)
+
+O
+
+> t∈t(e)
+
+Ut,J (t) (3.3) where the sum is over all choices of weights in the target J : t(e) → { 1, . . . , m }. ♢
+
+Definition 3.5 . Let ∼ be the equivalence relation on the set X∗(G) × Q>0 where 
+
+(λ, q ) ∼ (μ, r ) if and only if there are m, n ≥ 1 such that λm = μn and qm = rn . We define 
+
+X∗(G)Q := ( X∗(G) × Q>0)/ ∼ and call an element [λ, q ] ∈ X∗(G)Q a rational 1-PS of 
+
+G. ♢
+
+If T is a maximal torus of G, then X∗(T ) is a free Z-module of rank dim( T ). Further-more, the rational 1-PSs of T , as in the above definition, are in bijection with X∗(T )⊗Z Q.
+
+Remark 3.6 . A Q-filtration of ϕ corresponds to a rational 1-PS [λ, q ] ∈ X∗(G)Q of 
+
+G, up to conjugation of λ by P (F •W ), defined in (3.2). A Q-filtration admissible for ϕHARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 11 
+
+corresponds to a rational 1-PS [λ, q ] ∈ X∗(G)Q of G, up to conjugation of λ by P (F •W ),which is admissible for ϕ, i.e., lim t→0 λ(t) · ϕ exists. ♢
+
+We will also consider a rational character χθ ∈ X∗(G)Q parametrised by a rational stability parameter θ ∈ Q|V| , where X∗(G)Q := X∗(G) ⊗ Q. The canonical map (·, ·) : 
+
+X∗(G) × X∗(G) → Z can be extended rationally to (·, ·) : X∗(G)Q × X∗(G)Q → Q,where (χ ⊗ q, [λ, r ]) := qr (χ, λ ) and extending by linearity in the first argument. As r is positive, this does not change the sign of (χθ, λ ). Furthermore, by Remark 2.4, we can extend the set of semistable points to rational characters χθ by defining V θ-ss := V N θ-ss 
+
+for any N ≥ 1 making N θ an integer vector. The Hilbert-Mumford Criterion can therefore be extended to rational (co)characters. Hence, ϕ is θ-semistable if and only if for all admissible Q-filtrations (F •ϕ, ℓ), we have 
+
+(χθ, λ ) = X
+
+> v∈V
+
+θvmX
+
+> k=1
+
+ℓk dim( F kWv/F k−1Wv) = X
+
+> v∈V
+
+θvwv ≥ 0 (3.4) where wv := Pmk=1 ℓk dim( F kWv/F k−1Wv).
+
+3.2. Destabilising stability parameters. In [BN15], Behrend and Noohi studied moduli of graded algebras, which are essentially the same as the representation in Figure 4 but with only the top row of vertices and blue edges. They imposed some additional conditions on their stability parameters θ ∈ Z|V| to ensure that the semistable locus was not empty for trivial reasons. This is due to the presence of central 1-PSs which destabilise every representation. In this paper, we do not impose any constraints on the stability parameters θ, nor are we concerned with whether the semistable locus is empty or not. However, in this section, we will investigate general conditions, applicable to all hyperquivers, for choosing stability parameters θ which do not automatically make every point unstable. In doing so, we also generalise the semitability criterion [BN15, Proposition 3.4] to more general hyperquiver representations. Let H be a hyperquiver with no isolated vertices, i.e., every vertex is incident to some edge. Define an |E| × |V| matrix M whose entries are 
+
+Me,v = mult t(e)(v) − mult s(e)(v), ∀v ∈ V , ∀e ∈ E (3.5) where mult t(e)(v) and mult s(e)(v) are the number of times v appears in the tuples t(e) and 
+
+s(e), respectively. Let λ : k∗ → G be a 1-PS. If λ acts trivially on all of R(H, d), then it must be central, i.e. commute with all elements of G for all t ∈ k∗. A central 1-PS λ can be expressed as a tuple of integers γ = ( γv)v∈V ∈ Z|V| , via 
+
+λ(t)v = tγv · Id Wv , ∀v ∈ V 
+
+It acts trivially on R(H, d) if and only if 
+
+X
+
+> t∈t(e)
+
+γt − X
+
+> s∈s(e)
+
+γs = 0 , ∀e ∈ E 
+
+Therefore, the central 1-PSs of G which act trivially on R(H, d) form a central torus Ttriv 
+
+whose cocharacter lattice is ker( M ). We thus consider 1-PSs of 
+
+eG = G/T triv 
+
+Let χθ : G −→ k∗
+
+(gv)v∈V 7 → Y
+
+> v∈V
+
+det (gv)θv12 TOMMI MULLER 
+
+be a character determined by (θv)v∈V ∈ Z|V| . Then for χθ to descend to a character 
+
+fχθ : eG → k∗, we require that X
+
+> v∈V
+
+θvdvγv = 0 , ∀γ ∈ ker( M ) (3.6) In fact, (3.4) is invariant under addition of central 1-PSs γ ∈ ker( M ). This is because if 
+
+λ′ is λ shifted by γ, then the corresponding w′ 
+
+> v
+
+is 
+
+w′ 
+
+> v
+
+= X
+
+> n∈Z
+
+(n + γv) dim( W (n) 
+
+> v
+
+) = wv + dvγv
+
+and so 
+
+(χθ, λ ′) = X
+
+> v∈V
+
+θv(wv + dvγv) = X
+
+> v∈V
+
+θvwv + X
+
+> v∈V
+
+θvdvγv
+
+| {z }
+
+> =0
+
+= X
+
+> v∈V
+
+θvwv
+
+by (3.6). Thus, ϕ is semistable under the action of eG if and only if the same above conditions hold. The condition (3.6) is a general form of condition (2) of [BN15, Definition 3.2] Let 
+
+a = ( av)v∈V where av := θvdv for all v ∈ V . Then (3.6) says that a ∈ ker( M )⊥ = Im( M T ).Thus, there exists an η = ( ηe)e∈E such that a = M T η, i.e. 
+
+av = X
+
+> e∈E
+
+ηeMe,v , ∀v ∈ V (3.7) More generally, a central 1-PS parameterised by γ ∈ Z|V| will have the property that 
+
+lim t→0 λ(t) · ϕ exists for all ϕ ∈ R(H, d) if and only if it acts on R(H, d) with non-negative weights on every hyperedge, i.e. M γ ≥ 0 component-wise. If we choose stability parameters (θv)v∈V such that ⟨θ, γ⟩ < 0 for such an admissible central 1-PS, then every point of R(H, d) would be unstable. Thus, to prevent the semistable locus from being empty for trivial reasons, we require the parameter feasibility condition: 
+
+aT γ ≥ 0, for all γ s.t. M γ ≥ 0 (3.8) Notice that (3.6) is a special case of (3.8). By Farkas’ Lemma, a satisfies (3.8) if and only if there exists an η ≥ 0 such that a = M T η. Thus, we can always choose ηe ≥ 0 for all e ∈ E in (3.7), and as a and M are integer-valued, we can take a rational such η.Now writing θv = av 
+
+> dv
+
+for v ∈ V and substituting (3.7) and the definition of M (3.5), we see that 
+
+X
+
+> v∈V
+
+θvwv = X
+
+> v∈V
+
+av
+
+wv
+
+dv
+
+= X
+
+> v∈V
+
+X
+
+> e∈E
+
+ηeMe,v 
+
+!
+
+wv
+
+dv
+
+= X
+
+> e∈E
+
+ηe
+
+X
+
+> v∈V
+
+Me,v 
+
+wv
+
+dv
+
+!
+
+= X
+
+> e∈E
+
+ηe
+
+ X
+
+> t∈t(e)
+
+wt
+
+dt
+
+− X
+
+> s∈s(e)
+
+ws
+
+ds
+
+ .
+
+Therefore, the semistabilty condition (3.4) becomes 
+
+X
+
+> e∈E
+
+ηe
+
+ X
+
+> t∈t(e)
+
+wt
+
+dt
+
+− X
+
+> s∈s(e)
+
+ws
+
+ds
+
+ ≥ 0 (3.9) Thus, we have a duality: one can assign stability parameters (θv)v∈V to every vertex and check semistability using the Hilbert-Mumford criterion (3.4), or one can assign non-negative stability parameters (ηe)e∈E to every hyperedge and check semistability using the HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 13 
+
+condition (3.9). The conditions (3.8) and (3.4) together generalise [BN15, Proposition 3.4] to arbitrary hyperquiver representations. 
+
+Proposition 3.7 . Let θ ∈ Z|V| be a stability paramater such that 
+
+X
+
+> v∈V
+
+θvdvγv = 0 , for all γ s.t. M γ ≥ 0.
+
+Then ϕ ∈ R(H, d) is θ-semistable if and only if for all Q-filtrations (F •W, ℓ) admissible for ϕ, we have X
+
+> v∈V
+
+θvwv ≥ 0
+
+where wv := Pmk=1 ℓk dim( F kWv/F k−1Wv). Equivalently, if η ∈ Q|E| ≥0 is a non-negative stability parameter on edges, then ϕ is η-semistable if and only if for all Q-filtrations 
+
+(F •W, ℓ) admissible for ϕ, we have 
+
+X
+
+> e∈E
+
+ηe
+
+ X
+
+> t∈t(e)
+
+wt
+
+dt
+
+− X
+
+> s∈s(e)
+
+ws
+
+ds
+
+ ≥ 0. ♢
+
+Example 5. Let H = ( V, E) be the hyperquiver with hyperedge (1 , 2) → 3 and consider a non-zero representation ϕe : U1 ⊗ V1 → V2. Here, M = ( −1, −1, 1) and its kernel is spanned by (1 , 1, 2) T and (0 , 1, 1) T , corresponding to the actions of the central 1-PSs Γ1 and Γ2. If χθ is a character for stability parameters (θv)v∈V , then the descent conditions (3.6) give us 
+
+⟨χθ, Γ1⟩ = θU 
+
+> 1
+
+dU 
+
+> 1
+
++ θV 
+
+> 1
+
+dV 
+
+> 1
+
++ 2 θV 
+
+> 2
+
+dV 
+
+> 2
+
+= 0 
+
+⟨χθ, Γ2⟩ = θV 
+
+> 1
+
+dV 
+
+> 1
+
++ θV 
+
+> 2
+
+dV 
+
+> 2
+
+= 0 
+
+Consider the central 1-PS ∆ = ( −1, −1, −1) T . Since M ∆ = 1 ≥ 0, the condition (3.8) yields 
+
+⟨χθ, ∆⟩ = −θU 
+
+> 1
+
+dU 
+
+> 1
+
+− θV 
+
+> 1
+
+dV 
+
+> 1
+
+− θV 
+
+> 2
+
+dV 
+
+> 2
+
+= −θU 
+
+> 1
+
+dU 
+
+> 1
+
+≥ 0
+
+Since we may rescale the stability parameters (θv)v∈V by a positive rational number without changing the inequality (3.4), we may assume θU 
+
+> 1
+
+dU 
+
+> 1
+
+= −1. Then solving this system of equations yields 
+
+θU 
+
+> 1
+
+= − 1
+
+dU
+
+> 1
+
+, θV 
+
+> 1
+
+= − 1
+
+dV
+
+> 1
+
+, θV 
+
+> 2
+
+= 1
+
+dV
+
+> 2
+
+and substituting these into (3.4), we have 
+
+wV
+
+> 2
+
+dV
+
+> 2
+
+− wU
+
+> 1
+
+dU
+
+> 1
+
+− wV
+
+> 1
+
+dV
+
+> 1
+
+≥ 0
+
+which is precisely the slope stability condition (3.9) with ηe = 1 > 0. ♢
+
+Example 6. Let H = ( V, E) be the hyperquiver with hyperedge (1 , 1) → 1 and consider a non-zero representation ϕe : V ⊗ V → V representing an associative k-algebra. Here, M = −1 and its kernel is {0}. Thus, (3.6) is trivially satisfied. The central 1-PS 
+
+γ = −1 satisfies M γ = 1 ≥ 0, so (3.8) implies −a1 ≥ 0, and thus θ ≤ 0. To avoid a trivially empty semistable locus, we must have a stability parameter θ < 0. This forces 
+
+η > 0. The condition (3.9) reduces to 
+
+−wd ≥ 0
+
+for all admissible filtrations. The representation (V, ϕ e) is semistable if and only if it is a semisimple algebra, i.e., contains no non-zero nilpotent ideals [Jon24, Theorem 1.1]. ♢14 TOMMI MULLER 
+
+Figure 5. An unstable hyperquiver representation with a destabilising 3-step filtration and no 2-step filtrations detecting instability 
+
+Example 7. Let k = C and consider the hyperquiver representation in Figure 5, where W is a 3-dimensional vector space with basis {x, y, z }, given by 
+
+A : W −→ WA(x) = x, A(y) = 2 y, A(z) = 3 z, B : W ⊗3 −→ W ⊗2
+
+B(x ⊗ z ⊗ z) = y ⊗ y, 0 on all other basis vectors ,C : W ⊗2 −→ W ⊗3
+
+C(y ⊗ y) = x ⊗ z ⊗ z, 0 on all other basis vectors ,D : W −→ W ⊗2
+
+D(x) = x ⊗ x + z ⊗ z, D(y) = D(z) = 0 .
+
+We show that for θ = 1 , i.e., χθ(g) = det( g) for g ∈ GL( W ), this representation has a destabilising admissible 3-step filtration, while all of its admissible 2-step filtrations satisfy the Hilbert-Mumford inequality and therefore cannot detect instability. This demonstrates that instability of hyperquiver representations cannot be tested on 2-step filtrations alone, unlike for quiver representations. We first characterise every admissible filtration. Any admissible filtration F •W =(F pW )mp=0 must satisfy m ≤ 3, since dim( W ) = 3 , and A(F pW ) ⊆ F pW , along with similar conditions for B, C, and D. This shows that every F pW is an A-invariant subspace of W , and as A has three distinct eigenvalues corresponding to the basis {x, y, z },every F pW must be the span of a subset of this basis. Since a 1-PS λ : C∗ → GL( W )
+
+corresponding to it acts with some weight on each F pW , we may assume without loss of generality that λ(t) = diag( ta, t b, t c) acts diagonally in this basis. Conjugating the edge maps by λ add weights in the targets and subtracts weights in the sources, and admissibility of the filtration is equivalent to non-negativity of the sum of these weights. Thus we obtain the following inequalities: none for A as it is diagonal, and for the remaining maps we have HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 15 
+
+B : x ⊗ z ⊗ z 7 → y ⊗ yC : y ⊗ y 7 → x ⊗ z ⊗ zD : x 7 → x ⊗ xx 7 → z ⊗ z
+
+⇐⇒ ⇐⇒ ⇐⇒ ⇐⇒ 
+
+2b − (a + 2 c) ≥ 0(a + 2 c) − 2b ≥ 02a − a ≥ 02c − a ≥ 0
+
+Combining these inequalities we have a − 2b + 2 c = 0 , a ≥ 0, and 2c − a ≥ 0. Rewriting 
+
+α := 2c−a 
+
+> 2
+
+≥ 0 and β := c ≥ 0, we have a = −2α + 2 β and b = −α + 2 β, so that 
+
+(a, b, c ) = α(−2, −1, 0) + β(2 , 2, 1) . Thus, the cone of admissible rational 1-PSs is Q≥0 ·
+
+(−2, −1, 0) + Q≥0 · (2 , 2, 1) 
+
+Since m ≤ 3, an admissible 2-step filtration corresponds to a 1-PS λ where exactly two of a, b, and c coincide. If a = b, then α = 0 , giving the ray spanned by (2 , 2, 1) . If 
+
+b = c, then α = β, giving us the ray spanned by (0 , 1, 1) . If a = c, we have β = 2 α, giving us the ray spanned by (2 , 3, 2) . On all three points, we have (χθ, λ ) = a + b + c > 0, which does not violate the Hilbert-Mumford inequality and thus does not detect instability. However, with β = 0 on the ray spanned by (−2, −1, 0) , we have filtrations with m = 3 
+
+steps as there are three distinct weights −2, −1, and 0, and the filtration corresponding to this point is destabilising since (χθ, λ ) = ( −2) + ( −1) + 0 = −3 < 0, violating the Hilbert-Mumford Criterion. ♢
+
+4. The Harder-Narasimhan filtration 4.1. Instability. We return to reviewing background from affine GIT. In Section 2, we studied semistable points. In this section, we study unstable points. As before, our setting is a reductive group G acting on a vector space V together with a G-linearisation of the trivial line bundle L over V determined by a character χ : G → k∗.
+
+Definition 4.1 . Let λ ∈ X∗(G) be a 1-PS of G. We define the parabolic subgroup 
+
+P (λ) associated to λ to be 
+
+P (λ) := 
+
+n
+
+g ∈ G lim  
+
+> t→0
+
+λ(t)gλ (t)−1 exists in G
+
+o
+
+, (4.1) and the Levi subgroup L(λ) associated to λ to be 
+
+L(λ) := ZG(λ) = g ∈ G λ(t)gλ (t)−1 = g, ∀t ∈ k∗ . (4.2) We define πλ : P (λ) → L(λ) to be the homomorphism g 7 → lim t→0 λ(t)gλ (t)−1, and the 
+
+unipotent subgroup U (λ) := ker( πλ). ♢
+
+Remark 4.2 . The unipotent subgroup U (λ) is equal to the unipotent radical of P (λ),and we have a Levi decomposition P (λ) = U (λ) ⋊ L(λ) where L(λ) acts by conjugation on U (λ). If λ ∈ X∗(G) is a 1-PS of G, then since λ commutes with itself, we also have 
+
+λ ∈ X∗(L(λ)) a 1-PS of L(λ). Additionally, if T is a maximal torus of G containing λ,then since T is abelian, λ ∈ X∗(T ) is also a 1-PS of T ⊆ L(λ). ♢
+
+As we saw in Section 3.1, if G = Q 
+
+> v∈V
+
+GL( Wv), then a 1-PS λ ∈ X∗(G) determines a weight space decomposition described by a filtration F •W = ( F •Wv)v∈V , and the sub-group preserving the filtration F •W is P (F •W ) in (3.2). In this setting, P (F •W ) is the same as the parabolic subgroup P (λ) in (4.1). When written in coordinates by choosing bases for each Wv, the components gv of g ∈ G become block upper triangular matrices whose diagonal blocks have sizes dim W (i) 
+
+> v
+
+. The unipotent subgroup U (λ) consists of block upper unitriangular matrices, i.e., block upper triangular matrices whose diagonal blocks are the identity. Furthermore, the map πλ sends every entry strictly above the block diagonal of an element of P (λ) to 0. Thus, the Levi subgroup L(λ) consists of block diagonal matrices. 16 TOMMI MULLER 
+
+We would like to measure the degree to which a point is unstable, and can do that as follows. Let T be a maximal torus in G. The Weyl group of G with respect to 
+
+T is WG(T ) := NG(T )/T , and w ∈ WG(T ) acts on T by conjugation, hence on 1-PSs λ ∈ X∗(T ) by conjugation λ(t) 7 → w · λ(t), and on characters χ ∈ X∗(T ) by pre-conjugation χ(τ ) 7 → χ(w−1 · τ ). One can equip the 1-PSs X∗(T ) of T with a WG(T )-invariant symmetric positive-definite bilinear form ⟨· , ·⟩ : X∗(T ) × X∗(T ) → Z, meaning for any w ∈ WG(T ) and λ, λ ′ ∈ X∗(T ), we have ⟨w · λ, w · λ′⟩ = ⟨λ, λ ′⟩. It follows that the Weyl-invariant function ∥ · ∥ : X∗(T ) → R≥0 defined by ∥λ∥ := ⟨λ, λ ⟩12 extends uniquely to a G-conjugation invariant function ∥ · ∥ : X∗(G) → R≥0 called a length function for 1-PSs of G. Similar to the length function, the canonical map (·, ·) : X∗(G) × X∗(G) → Z
+
+is G-conjugation invariant in its second argument, i.e., (χ, gλg −1) = ( χ, λ ) for all g ∈ G.Both also satisfy (χ, λ n) = n(χ, λ ) and ∥λn∥ = n∥λ∥ for all n ≥ 1, so their ratio is unchanged when scaling λ by a positive integer. Having such a form and length function allows us to assign canonical 1-PSs to unstable points and, when the action of G on V is linear, decompose the set of unstable points in a canonical manner. 
+
+Theorem 4.3 (Affine Kempf Instability Theorem [Kem78, Theorem 6]) . Let G be a reductive group acting on a vector space V , and let L be the G-linearisation corresponding to a character χ ∈ X∗(G). Let ∥ · ∥ : X∗(G) → R≥0 be a length function induced by a 
+
+WG(T )-invariant symmetric positive-definite bilinear form ⟨· , ·⟩ : X∗(T )×X∗(T ) → Z, for some maximal torus T of G. If v ∈ V is an unstable point, then there exists a λ ∈ X∗(G),unique up to scaling by a positive integer and conjugation by the parabolic subgroup P (λ)
+
+of G associated to λ, minimising 
+
+Kχ(λ) := (χ, λ )
+
+∥λ∥ (4.3) 
+
+over λ ∈ Cv. In particular, there exists an indivisible such λ unique up to conjugation by 
+
+P (λ). ♢
+
+Recall that a 1-PS λ ∈ X∗(G) is called indivisible if there does not exist a 1-PS 
+
+μ ∈ X∗(G) and an n > 1 such that λ(t) = μ(tn) for all t ∈ k∗. The function (4.3) is called the Kempf functional .
+
+Definition 4.4 . For an unstable point v ∈ V , let Mχ(v) := inf λ∈Cv Kχ(λ) be the minimum. We call a 1-PS λ ∈ Cv minimising the Kempf functional Kχ(λ) = Mχ(v) a
+
+maximally destabilising 1-PS for v. The set of indivisible maximally destabilizing 1-PSs for v is denoted by Λχ(v) ⊆ Cv. ♢
+
+Definition 4.5 . Let v ∈ V and λ ∈ Cv. We call the point gr λ(v) := lim t→0 λ(t) · v
+
+the associated graded point of v with respect to λ. ♢
+
+Definition 4.6 . Let λ ∈ X∗(G) be an indivisible 1-PS. We define the admissible locus of λ to be 
+
+V λ 
+
+> +
+
+:= 
+
+n
+
+v ∈ V lim  
+
+> t→0
+
+λ(t) · v exists 
+
+o
+
+and the fixed point locus of λ to be 
+
+V λ := {v ∈ V | λ(t) · v = v, ∀t ∈ k∗}
+
+Let pλ : V λ 
+
+> +
+
+→ V λ be the retraction map sending v 7 → lim t→0 λ(t) · v. We define the 
+
+blade of λ as 
+
+Sλ := v ∈ V L ,u λ ∈ Λχ(v) , (4.4) HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 17 
+
+and the limit set of λ to be the image 
+
+Zλ := pλ(Sλ). (4.5) The Hesselink stratum associated to λ is defined to be 
+
+S[λ] := G · Sλ (4.6) and the Hesselink index set is 
+
+B := [λ] : ∃ v ∈ V L ,u s.t. λ ∈ Λχ(v) (4.7) where [λ] denotes the G-conjugacy class of λ. ♢
+
+The loci V λ 
+
+> +
+
+and V λ are closed subsets of V and the blades Sλ are locally closed subvarieties of V and equal Sλ = p−1 
+
+> λ
+
+(Zλ) [Hos12, Lemma 2.19]. There is also a strict partial ordering < on B where [λ] < [λ′] if Kχ(λ′) < K χ(λ). When the action of G
+
+on V is linear, a 1-PS λ ∈ X∗(G) splits V into weight spaces V = L 
+
+> i∈Z
+
+V i where 
+
+V i = {v ∈ V | λ(t)v = tiv, ∀t ∈ k∗}. Then the admissible locus is V λ 
+
+> +
+
+= L 
+
+> i≥0
+
+V i and the fixed point locus is V λ = V 0.
+
+Theorem 4.7 (Hesselink-Kirwan-Kempf-Ness Stratification [Hos12, Theorem 2.16]) .
+
+Let G be a reductive group acting linearly on a vector space V , and let L be the G-linearisation corresponding to a character χ ∈ X∗(G). Fix maximal torus T of G and a 
+
+WG(T )-invariant symmetric positive-definite bilinear form ⟨· , ·⟩ : X∗(T ) × X∗(T ) → Z.Then the Hesselink index set B is finite, the Hesselink strata S[λ] are all disjoint, and there exists a stratification 
+
+V = V L ,ss ⊔ G
+
+> [λ]∈B
+
+S[λ].
+
+with ∂S [λ] ∩ S[λ′]̸ = ∅ only if [λ] < [λ′]. Each S[λ] is a smooth locally closed G-invariant subvariety of V . ♢
+
+As before in Section 3.1, we want to consider, more generally, rational (co)characters of 
+
+G. We can extend the form ⟨· , ·⟩ : X∗(T ) × X∗(T ) → Z to a Weyl-invariant inner product 
+
+⟨· , ·⟩ : X∗(T )Q × X∗(T )Q → Q where X∗(T )Q = X∗(T ) ⊗ Q, giving us a length function 
+
+∥ · ∥ : X∗(G)Q → R≥0. Together with the extended canonical map (·, ·) : X∗(G)Q ×
+
+X∗(G)Q → Q, we can therefore minimise the Kempf functional (4.3) over rational 1-PSs. Let [λ] ∈ B . We can choose a representative λ ∈ X∗(T )Q in T , and by Remark 4.2, 
+
+λ ∈ X∗(L(λ)) Q and it is also a 1-PS of L(λ). Let λ∗ ∈ X∗(T )Q be the character dual to λ under the inner product ⟨· , ·⟩ . Since λ is central in L(λ), it is invariant under the action of WL(λ)(T ), and from this fact, it follows that λ∗ is WL(λ)(T )-invariant. By [HN26, Proposition 2.3.2], there is a unique extension to a character λ∗ ∈ X∗(L(λ)) Q. We can therefore consider a new affine GIT problem where L(λ) acts on V λ with a linearisation given by a new character. This gives a recursive refinement on the Hesselink strata, which has been studied in [Kir05] and [Núñ23]. 
+
+Proposition 4.8 ([Hos12, Proposition 2.18]) . Let [λ] ∈ B and choose a represenative 
+
+λ ∈ X∗(T ). Let L(λ) act linearly on the vector space V λ with a linearisation Lλ given by the rational character χλ := ∥λ∥2χ − (χ, λ )λ∗ of L(λ). Then (V λ)Lλ,ss = Zλ. In particular, if v ∈ V L ,u and λ ∈ Λχ(v), then the associated graded point gr λ(v) ∈ V λ is semistable with respect to linearisation given by χλ. ♢18 TOMMI MULLER 
+
+4.2. The Harder-Narasimhan filtration. We translate instability in affine GIT for our hyperquiver setting of G = Q 
+
+> v∈V
+
+GL( Wv) acting on R(H, d) with respect to a stability parameter θ ∈ Q|V| .
+
+Definition 4.9 . A Q-filtration (F •W, ℓ) is said to be induced by a rational 1-PS 
+
+λ ∈ X∗(G)Q if λ induces a weight space decomposition Wv = Lmk=1 W (ℓk ) 
+
+> v
+
+with weights 
+
+ℓ1 > · · · > ℓ m and F kWv = W (ℓk ) 
+
+> v
+
+⊕ F k−1Wv. ♢
+
+Definition 4.10 . Let ϕ ∈ R(H, d) be a representation and let (F •W, ℓ) be a Q-filtration admissible for ϕ, induced by a rational 1-PS λ ∈ X∗(G)Q. The refined hyper-quiver HF is the hyperquiver with (1) vertex set V × [m]
+
+(2) an edge c = ( e, I, J ) for every e ∈ E , I : s(e) → [m], and J : t(e) → [m], having source vertices (( s, I (s))) s∈s(e) and target vertices (( t, J (t))) t∈t(e)
+
+The associated graded representation gr F (ϕ) is the representation of the hyperquiver 
+
+HF defined as follows. (1) it has vector spaces gr kWv := F kWv/F k−1Wv on each vertex (v, k ) ∈ V × [m]
+
+(2) it has component maps 
+
+gr F (ϕ)(e,I,J ) : O
+
+> s∈s(e)
+
+gr I(s)Ws → O
+
+> t∈t(e)
+
+gr J(t)Wt
+
+on each edge c = ( e, I, J ) for all e ∈ E , I : s(e) → { 1, . . . , m }, J : t(e) →{1, . . . , m }, which are identical to those of ϕ, except when 
+
+X
+
+> t∈t(e)
+
+ℓJ(t) > X
+
+> s∈s(e)
+
+ℓI(s)
+
+where the component map is the zero map. We denote the set of non-zero components c = ( e, I, J ) of gr F (ϕ) by C(gr F (ϕ)) . ♢
+
+The associated graded representation gr F (ϕ) corresponds to the associated graded point gr λ(ϕ). Its component maps gr F (ϕ)(e,I,J ) come from the weight space decomposition induced by λ. The shifted stability parameter eθ is precisely the stability parameter corresponding to the linearisation L λ given by the character χλ in Proposition 4.8. We now show that, in fact, the associated graded representation is canonical. 
+
+Lemma 4.11 . Let (F •W, ℓ) be a Q-filtration. (1) Two rational 1-PSs λ, λ ′ ∈ X∗(G)Q induce the same Q-filtration (F •W, ℓ) if and only if λ′ = pλp−1 for some p ∈ P (λ).(2) The associated graded representation gr F (ϕ) is independent of the choice of λ ∈
+
+X∗(G)Q inducing (F •W, ℓ).
+
+♢
+
+Proof. First we prove (1). If λ′ = pλp−1 and λ induces (F •W, ℓ), then λ′ induces 
+
+(pF •W, ℓ). But p ∈ P (λ) preserves F •W , so λ′ induces the same filtration. Conversely, if λ and λ′ induce (F •W, ℓ), then we have two complements F kWv = W (ℓk ) 
+
+> v
+
+⊕ F k−1Wv =
+
+W ′(ℓk ) 
+
+> v
+
+⊕ F k−1Wv for all v ∈ V and k ∈ [m]. Let uv,k : F kWv → W ′(ℓk ) 
+
+> v
+
+be the projection maps and extend them linearly to a linear map u = ( uv)v∈V . The map u is invertible as it is block upper unitriangular with blocks (uv)ij : W (ℓj ) 
+
+> v
+
+→ W (ℓi) 
+
+> v
+
+, for 1 ≤ i ≤ j ≤ m.Conjugating u by λ(t) scales every block by tℓi−ℓj , so if i < j , then ℓj < ℓ i so this HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 19 
+
+block is sent to 0 as t → 0. Thus, λ(t)uλ(t)−1 t→0
+
+−−→ id and hence u ∈ ker( πλ) = U (λ).Furthermore, for any w′ ∈ W ′(ℓk ) 
+
+> v
+
+and w′ = u · w,
+
+uλ(t)u−1 · w′ = uλ(t) · w = u · tℓk w = tℓk u · w = tℓk w′ = λ′(t) · w′.
+
+Thus, we can take p = u.Now we prove (2), which has the same hypotheses as (1). Suppose λ and λ′ induce 
+
+(F •W, ℓ). Using the same u as before, we have 
+
+lim  
+
+> t→0
+
+λ′(t) · ϕ = lim 
+
+> t→0
+
+(uλ(t)u−1) · ϕ = u · lim 
+
+> t→0
+
+(λ(t)u−1λ(t)−1)λ(t) · ϕ = u · lim  
+
+> t→0
+
+λ(t) · ϕ.
+
+Since u induces an identity on F kWv/F k−1Wv, both λ and λ′ give the same map between these quotients. □
+
+Definition 4.12 . Let (F •W, ℓ) be a Q-filtration admissible for a representation ϕ ∈
+
+R(H, d).(1) For all v ∈ V and k ∈ [m], we define dv,k = dim(gr kWv)
+
+(2) Θ is the vector Θ ∈ Qm with entries Θk = P 
+
+> v∈V
+
+θvdv,k 
+
+(3) D is the diagonal matrix diag( Dk)mk=1 , where Dk = P 
+
+> v∈V
+
+dv,k 
+
+(4) A is the |C (gr F (ϕ)) | × m integer matrix whose entries are 
+
+Ac,k := |{ t ∈ t(e) : J(t) = k}| − |{ s ∈ s(e) : I(s) = k}| 
+
+for c = ( e, I, J ) ∈ C (gr( ϕ)) and k ∈ [m]
+
+(5) We define ∥ · ∥2 
+
+> D
+
+: Rm → R≥0 by ∥p∥2 
+
+> D
+
+= P
+
+> v∈V
+
+Pmk=1 p2
+
+> k
+
+dv,k 
+
+(6) We define the shifted stability parameter eθ ∈ Q|V|× m for gr F (ϕ) to be 
+
+eθv,k := θv − ⟨Θ, ℓ⟩∥ℓ∥2
+
+> D
+
+ℓk, v ∈ V , k ∈ [m] (4.8) 
+
+♢
+
+The shifted stability parameter eθ corresponds to the rational character χλ mentioned in Proposition 4.8, but scaled by 1/∥λ∥2.In order to explicitly find a minimiser of the Kempf functional (4.3), we will need to choose a Weyl-invariant inner product and find necessary and sufficient conditions to characterise such a minimizer. We fix a maximal torus T of G = Q 
+
+> v∈V
+
+GL( Wv) and choose the standard (Euclidean) inner product ⟨· , ·⟩ on X∗(T )Q with respect to a diagonalising basis for T . In this case, the Weyl group is the symmetric group WG(T ) = Q 
+
+> v∈V
+
+Sdv
+
+permuting the coordinates of λv ∈ X∗(Tv) within each v ∈ V , and the inner product 
+
+⟨· , ·⟩ is clearly invariant under this action. We will use the following characteristion of minimisers from optimisation theory. 
+
+Theorem 4.13 (KKT Conditions for a Quadratic Program, [LY08, Section 16.4]) .
+
+Consider an optimization problem of the form 
+
+minimize 12x⊤Gx + c⊤x
+
+subject to a⊤ 
+
+> i
+
+x = αi, ∀i ∈ [m]
+
+b⊤ 
+
+> j
+
+x ≥ βj , ∀j ∈ [n]
+
+(4.9) 
+
+where x, c, ai, bj ∈ RN , αi, β j ∈ R, and G ∈ RN ×N is positive definite. A point x∗ ∈ RN
+
+is the unique global minimiser for (4.9) if and only if there exist μi, ν j ∈ R such that: (1) Gx∗ + c + Pmi=1 μiai − Pnj=1 νj bj = 0
+
+(2) a⊤ 
+
+> i
+
+x∗ = αi for i ∈ [m] and b⊤ 
+
+> j
+
+x∗ ≥ βj for j ∈ [n]
+
+(3) νj ≥ 0 for j ∈ [n]20 TOMMI MULLER 
+
+(4) νj · (b⊤ 
+
+> j
+
+x∗ − βj ) = 0 for j ∈ [n]
+
+♢
+
+Thus, in our setting, G = I and c = 0 corresponds to the Euclidean inner product. We are now ready to state and prove our main theorem. 
+
+Theorem 4.14 . Let H = ( V, E) be a hyperquiver, θ ∈ Q|V| be a stability parameter, and ϕ ∈ R(H, d) be a θ-unstable representation. Fix a maximal torus T of G and equip X∗(T )Q with the standard inner product. Then there exists a unique Q-filtration 
+
+HN( ϕ) = ( F •W, ℓ) admissible for ϕ, the Harder-Narasimhan filtration , such that (a) ⟨Θ, ℓ⟩ = −1
+
+(b) the associated graded representation gr HN (ϕ) of the refined hyperquiver HF is 
+
+eθ-semistable for the shifted stability parameters ˜θ given in Definition 4.12 Furthermore, the weights ℓk are determined by the formula 
+
+ℓ = p/∥p∥2 
+
+> D
+
+for p = −D−1  I − A⊤L†AD −1 Θ (4.10) 
+
+where Θ, D, A, ∥ · ∥ 2 
+
+> D
+
+are given in Definition 4.12, L := AD −1A⊤, and L† is the Moore-Penrose inverse of L. They all only depend on the hyperquiver representation gr HN (ϕ).♢
+
+Proof. First we prove the existence of HN( ϕ). By the Affine Kempf Instability Theorem, there exists a rational 1-PS λ ∈ X∗(G)Q minimising the Kempf functional (4.3), unique up to positive rational scaling and conjugation by P (λ). We rescale it to satisfy 
+
+(χθ, λ ) = X
+
+> v∈V
+
+θvmX
+
+> k=1
+
+ℓkdv,k = ⟨Θ, ℓ⟩ = −1
+
+We define HN( ϕ) to be the admissible Q-filtration induced by the rational 1-PS λ. By Lemma 4.11(2), HN( ϕ) is well-defined and independent of the choice of λ.First we prove the formula (4.10). As all maximal tori are conjugate in G, we may assume without loss generality that T constains λ. As a rational 1-PS of T , we may express λ to be diagonal with respect to an eigenbasis {εv,i }dv 
+
+> i=1
+
+for each Wv for T . This identifies X∗(T )Q with QN where N = P 
+
+> v∈V
+
+dv. Let ⟨· , ·⟩ be the Euclidean inner product on QN . Let x = ( xv,i ) denote the weights of a rational 1-PS of T , bθ = ( bθv,i ) denote the stability parameter bθv,i := θv, and bℓ = ( bℓv,i ) denote the weights of the rational 1-PS λ.We have (χθ, λ ) = ⟨bθ, bℓ⟩ = −1. Let b = ( e, bI, bJ) where e ∈ E , bI is a function sending 
+
+s ∈ s(e) to bI(s) ∈ [ds], bJ is a function sending t ∈ t(e) to bJ(t) ∈ [dt]. Let Cb be the coefficient of the component ϕb : N 
+
+> s∈s(e)
+
+εs, bI(s) → N 
+
+> t∈t(e)
+
+εt, bJ(t). Denote by Bϕ the set of all b such that Cb̸ = 0 . Let 
+
+ab := X
+
+> t∈t(e)
+
+et, bJ(t) − X
+
+> s∈s(e)
+
+es, bI(s) ∈ ZN
+
+where ev,i is a standard basis vector in ZN . Consider the quadratic program 
+
+minimize 12∥x∥2
+
+subject to ⟨bθ, x⟩ = −1,
+
+⟨ab, x⟩ ≥ 0, ∀b ∈ Bϕ
+
+over x ∈ RN . With (χθ, λ ) = −1 fixed, minimising the Kempf functional is equivalent to minimising ∥λ∥, which is equivalent to finding a minimiser x ∈ QN for this quadratic HARDER-NARASIMHAN FILTRATIONS OF HYPERQUIVER REPRESENTATIONS 21 
+
+program. Consider the rational polyhedron 
+
+S := {x ∈ RN | ⟨ bθ, x⟩ = −1, ⟨ab, x⟩ ≥ 0, ∀b ∈ Bϕ}
+
+in RN . By definition, bℓ ∈ S and for every rational point x ∈ S ∩ QN , we have 12 ∥bℓ∥2 ≤ 
+
+> 12
+
+∥x∥2. By density of rational points, 12 ∥bℓ∥2 ≤ 12 ∥x∥2 for all x ∈ S. As S is convex and  
+
+> 12
+
+∥ · ∥ 2 is strictly convex, bℓ is the unique minimiser of the quadratic program. Thus, by the Karush-Kuhn-Tucker Conditions, there exists a μ ∈ R and νb ≥ 0 such that 
+
+bℓ + μbθ − X
+
+> b∈Bϕ
+
+νbab = 0 (4.11) and 
+
+νb⟨ab, bℓ⟩ = 0 , ∀b ∈ Bϕ. (4.12) Taking the inner product of both sides of (4.11) with bℓ and using ⟨bθ, bℓ⟩ = −1 and (4.12) allows us to determine 
+
+μ = ∥bℓ∥2 = ∥ℓ∥2 
+
+> D
+
+> 0.
+
+Let c = ( e, I, J ) for e ∈ E , I : s(e) → [m], and J : t(e) → [m]. Define 
+
+Bc := 
+
+n
+
+b = ( e, bI, bJ) ∈ Bϕ bℓs, bI(s) = ℓI(s), ∀s ∈ s(e), bℓt, bJ(t) = ℓJ(t), ∀t ∈ t(e)
+
+o
+
+.
+
+Then every b ∈ Bϕ belongs to exactly one Bc. Furthermore, if b ∈ Bc for some c =(e, I, J ), then 
+
+⟨ab, bℓ⟩ = X
+
+> t∈t(e)
+
+bℓt, bJ(t) − X
+
+> s∈s(e)
+
+bℓs, bI(s) = X
+
+> t∈t(e)
+
+ℓJ(t) − X
+
+> s∈s(e)
+
+ℓI(s). (4.13) If νb > 0, then ⟨ab, bℓ⟩ = 0 by (4.12). Hence, c ∈ C (gr HN (ϕ)) . Otherwise, νb = 0 does not contribute to the sum (4.11). Thus, (4.11) becomes 
+
+bℓ + ∥ℓ∥2 
+
+> D
+
+bθ − X
+
+> c∈C (gr HN (ϕ))
+
+X
+
+> b∈Bc
+
+νbab = 0. (4.14) Let Π : RN → Rm be defined on the basis vectors Π( ev,i ) := ek if bℓv,i = ℓk. Then applying 
+
+Π to (4.14), we have Π( bℓ) = Dℓ, Π( bθ) = Θ, and Π( ab) = ac where 
+
+ac := X
+
+> t∈t(e)
+
+eJ(t) − X
+
+> s∈s(e)
+
+eI(s) ∈ Zm. (4.15) The vectors ac form the rows of the matrix A given in Definition 4.12. Thus, (4.14) becomes 
+
+Dℓ + ∥ℓ∥2
+
+> D
+
+Θ − A⊤ eν = 0 (4.16) where eνc = P 
+
+> b∈Bc
+
+νb ≥ 0. Multiply (4.16) by AD −1 and we obtain 
+
+Leν = y (4.17) where the first term has vanished since Aℓ = 0 by (4.13), and we have defined L := 
+
+AD −1A⊤ and y := ∥ℓ∥2
+
+> D
+
+AD −1Θ. We see that ker( L) = ker( A⊤) since if A⊤x = 0, then clearly Lx = 0, and if Lx = 0, then 0 = x⊤Lx = ( A⊤x)⊤D−1(A⊤x), and since D−1 is positive-definite, A⊤x = 0. Let eν′ := L†y where L† is the Moore-Penrose inverse of L
+
+[GV13, Section 5.5.2]. Then we see that 
+
+Leν′ = LL †y = LL †Leν = Leν = y22 TOMMI MULLER 
+
+by (4.17) and the property LL †L = L of the Moore-Penrose inverse. Thus, eν′ − eν ∈
+
+ker( L) = ker( A⊤) so 
+
+A⊤ eν = A⊤ eν′ = ∥ℓ∥2
+
+> D
+
+A⊤L†AD −1Θ.
+
+Substituting this A⊤ eν into (4.16) and rearranging, we obtain the formula 
+
+ℓ
+
+∥ℓ∥2
+
+> D
+
+= −D−1  I − A⊤L†AD −1 Θ.
+
+Now we prove (b). Note that λ is fixed from before. Let λ′ ∈ X∗(L(λ)) Q be a rational 1-PS of the Levi subgroup L(λ), admissible for gr HN (ϕ). Let T ′ be a maximal torus in 
+
+L(λ) containing both λ and λ′. Then we can simultaneously diagonalise them in T ′ with respect to a single eigenbasis for each Wv. Redoing the same argument as before, by the KKT Conditions, there exist μ ∈ R and νb ≥ 0 such that 
+
+bℓ + μbθ = X
+
+> b∈Bϕ
+
+νbab (4.18) and 
+
+νb⟨ab, bℓ⟩ = 0 , ∀b ∈ Bϕ. (4.19) Recall that we imposed the normalisation ⟨Θ, bℓ⟩ = −1. Again we find μ = ∥ℓ∥2 
+
+> D
+
+> 0.Let br ∈ QN be the weights of the rational 1-PS λ′. Taking the inner product of (4.18) with br gives 
+
+⟨∥ ℓ∥2 
+
+> D
+
+bθ + bℓ, br⟩ = X
+
+> b∈Bϕ
+
+νb⟨ab, br⟩. (4.20) As bℓ zeros out every component b ∈ Bϕ of ϕ with ⟨ab, bℓ⟩ > 0, λ′ is admissible for gr HN (ϕ)
+
+if and only if ⟨ab, br⟩ ≥ 0 for all b ∈ Bϕ such that ⟨ab, bℓ⟩ = 0 . By (4.19), this implies that the right-hand side of (4.20) is non-negative. The left-hand side of (4.20) is equal to the pairing (χλ, λ ′) of the character χλ in Proposition 4.8, under the normalisation 
+
+⟨Θ, bℓ⟩ = −1. Since λ′ was arbitrary, the Hilbert-Mumford Criterion is satisfied for eθ.This proves (b) and together with the normalisation ⟨Θ, ℓ⟩ = −1 in (a), this finishes the proof of the existence of HN( ϕ).Now we prove uniqueness. Suppose (G•W, κ) is a Q-filtration admissible for ϕ which satisfies (a) and (b), and let HN( ϕ) = ( F •W, ℓ). Using the fact that the intersection of any two parabolic subgroups of G contains a maximal torus T [Mil17, Theorem 17.16][Bor91, Corollary 14.13], we can find a basis for each Wv which is adapted to both filtrations 
+
+F •W and G•W , i.e., every F kWv and GkWv is a span of a subset of the basis. Define 
+
+λ, μ ∈ X∗(T ) to be the rational 1-PSs that induce (F •W, ℓ) and (G•W, κ) respectively. We know that λ and μ are both normalised and admissible for ϕ, and since they are both diagonalised by the adapted basis, they commute, and hence are both admissible for gr G(ϕ). By (b), gr G(ϕ) is eθ-semistable, so applying the Hilbert-Mumford Criterion to λ ∈ X∗(L(μ)) , we therefore have the inequality 
+
+∥κ∥2
+
+> D
+
+⟨bθ, bℓ⟩ + ⟨bκ, bℓ⟩ ≥ 0 (4.21) seen in (4.20). But since ⟨bθ, bℓ⟩ = −1 by (a), (4.21) becomes 
+
+⟨bκ, bℓ − bκ⟩ ≥ 0 (4.22) By the definition of HN( ϕ), λ is a minimiser of the Kempf functional, so 
+
+∥bκ∥ ≥ ∥ bℓ∥. (4.23) REFERENCES 23 
+
+Combining the identity 
+
+∥bℓ∥2 = ⟨bκ + ( bℓ − bκ), bκ + ( bℓ − bκ)⟩ = ∥bκ∥2 + 2 ⟨bκ, bℓ − bκ⟩ + ∥bℓ − bκ∥2
+
+with (4.22) and (4.23), we obtain 
+
+∥bκ∥2 ≥ ∥ bκ∥2 + 2 ⟨bκ, bℓ − bκ⟩ + ∥bℓ − bκ∥2 ≥ ∥ bκ∥2 + ∥bℓ − bκ∥2.
+
+Thus, 0 ≥ ∥ bℓ − bκ∥2 so bℓ = bκ, λ = μ, and (G•W, κ) = HN( ϕ). □
+
+Remark 4.15 . If H is a quiver, then every row ac of A in (4.15) is of the form 
+
+ac = ej − ei, where i and j correspond to the weight indices of the source and target vertices for c = ( e, I, J ). Since c ∈ C (gr HN (ϕ)) indexes the components of ϕ where ℓi = ℓj ,and since every weight is distinct, we have i = j so A = 0 . Thus, the formula for p in (4.10) becomes 
+
+p = −D−1Θ
+
+which, componentwise, is precisely the Harder-Narasimhan slopes 
+
+μθ(di − di−1) = −
+
+P 
+
+> v∈V
+
+θv · d(i)
+
+> v
+
+P 
+
+> v∈V
+
+d(i)
+
+> v
+
+in (1.1) of the quiver representation ϕ. ♢
+
+References 
+
+[Bér+18] Gergely Bérczi et al. “Geometric invariant theory for graded unipotent groups and applications”. In: Journal of Topology 11.3 (2018), pp. 826–855. eprint: 
+
+https : / / londmathsoc . onlinelibrary . wiley . com / doi / pdf / 10 . 1112 / topo.12075 . url : https://londmathsoc.onlinelibrary.wiley.com/doi/ abs/10.1112/topo.12075 .[BN15] Kai A. Behrend and B. Noohi. “Moduli of non-commutative polarized schemes”. In: Mathematische Annalen 371 (2015), pp. 1375–1408. url : https://api. semanticscholar.org/CorpusID:62896861 .[Bor91] Armand Borel. Linear Algebraic Groups . eng. 2nd ed. 1991. Graduate Texts in Mathematics, 126. New York, NY: Springer New York, 1991. [Dol03] Igor Dolgachev. Lectures on Invariant Theory . London Mathematical Society Lecture Note Series. Cambridge University Press, 2003. [Fer+24] Marc Fersztand et al. “Harder–Narasimhan filtrations of persistence modules”. In: Transactions of the London Mathematical Society 11.1 (2024), e70003. url :
+
+https : / / londmathsoc . onlinelibrary . wiley . com / doi / abs / 10 . 1112 / tlm3.70003 .[Gab72] Peter Gabriel. “Unzerlegbare Darstellungen I”. In: Manuscripta Mathematica 
+
+6 (1972), pp. 71–103. [GV13] Gene H. Golub and Charles F. Van Loan. Matrix Computations . 4th ed. Bal-timore: Johns Hopkins University Press, 2013. [HN26] Andres Fernandez Herrero and Andrés Ibáñez Núñez. Stability and discon-nected groups . 2026. arXiv: 2509.19637 [math.AG] . url : https://arxiv. org/abs/2509.19637 .[Hos12] Victoria Hoskins. “Stratifications Associated to Reductive Group Actions on Affine Spaces”. In: Quarterly Journal of Mathematics 65 (2012), pp. 1011– 1047. [Jon24] Trevor Jones. Canonical Filtrations of Finite-Dimensional Algebras . 2024. arXiv: 
+
+2406.11765 [math.AG] . url : https://arxiv.org/abs/2406.11765 .24 REFERENCES 
+
+[Kem78] George R. Kempf. “Instability in Invariant Theory”. In: Annals of Mathematics 
+
+108.2 (1978), pp. 299–316. url : http://www.jstor.org/stable/1971168 
+
+(visited on 08/11/2026). [Kin94] Alastair D. King. “Moduli of representations of finite-dimensional algebras”. In: 
+
+The Quarterly Journal of Mathematics. Oxford. Second Series 45.180 (1994), pp. 515–530. [Kir05] Frances Kirwan. “Refinements of the Morse stratification of the normsquare of the moment map”. In: The Breadth of Symplectic and Poisson Geometry: Festschrift in Honor of Alan Weinstein . Ed. by Jerrold E. Marsden and Tudor S. Ratiu. Boston, MA: Birkhäuser Boston, 2005, pp. 327–362. url : https: //doi.org/10.1007/0-8176-4419-9_11 .[KKV89] Friedrich Knop, Hanspeter Kraft, and Thierry Vust. “The Picard Group of a 
+
+G-Variety”. In: Algebraic Transformation Groups and Invariant Theory . Ed. by Hanspeter Kraft, Peter Slodowy, and Tonny A. Springer. Vol. 13. DMV Seminar. Birkhäuser, Basel, 1989, pp. 77–87. url : https://link.springer. com/chapter/10.1007/978-3-0348-7662-9_5 .[KR17] Mikhail Kapranov and Evangelos Routis. “Complete complexes and spectral sequences”. In: Pure and Applied Mathematics Quarterly 13.2 (2017), pp. 215– 246. [LY08] David G. Luenberger and Yinyu Ye. Linear and Nonlinear Programming .3rd. International Series in Operations Research & Management Science. New York, NY: Springer Science & Business Media, 2008. [McK80] John McKay. “Graphs, singularities, and finite groups”. In: The Santa Cruz Conference on Finite Groups (Santa Cruz, 1979) . Vol. 37. Proceedings of Sym-posia in Pure Mathematics. Providence, RI: American Mathematical Society, 1980, pp. 183–186. [MFK94] David Mumford, John Fogarty, and Frances Kirwan. Geometric Invariant The-ory . 3rd ed. Vol. 34. Ergebnisse der Mathematik und ihrer Grenzgebiete (2). Berlin: Springer-Verlag, 1994. url : https://link.springer.com/book/10. 1007/978-3-642-57913-3 .[Mil17] J. S. Milne. Algebraic groups : the theory of group schemes of finite type over a field / J.S. Milne, University of Michigan, Ann Arbor . eng. Cambridge, United Kingdom ; 2017 - 2017. [MNS26] Tommi Muller, Vidit Nanda, and Anna Seigal. “Multilinear Hyperquiver Rep-resentations”. In: Foundations of Computational Mathematics 26 (2026), pp. 1093– 1135. arXiv: 2305.05622 .[Núñ23] Andrés Ibáñez Núñez. Refined Harder-Narasimhan filtrations in moduli theory .2023. arXiv: 2311.18050 [math.AG] . url : https://arxiv.org/abs/2311. 18050 .[Rei03] Markus Reineke. “The Harder–Narasimhan system in quantum groups and cohomology of quiver moduli”. In: Inventiones Mathematicae 152.2 (2003), pp. 349–368. [Zam12] Alfonso Zamora Saiz. “On the Harder-Narasimhan filtration for finite dimen-sional representations of quivers”. In: Geometriae Dedicata 170 (Oct. 2012).

@@ -1,0 +1,2324 @@
+Title: The classification of taut surface singularities via representations from logarithmic vector fields
+
+URL Source: https://arxiv.org/pdf/2610.25654v1
+
+Published Time: Tue, 20 Oct 2026 02:02:03 GMT
+
+Number of Pages: 44
+
+Markdown Content:
+THE CLASSIFICATION OF TAUT SURFACE SINGULARITIES VIA REPRESENTATIONS FROM LOGARITHMIC VECTOR FIELDS 
+
+HEESANG PARK AND DONGSOO SHIN Abstract. We study logarithmic vector fields on exceptional cycles through finite-dimensional representations and recover Laufer’s classification of taut normal complex surface singularities. For graphs with two nodes, restriction maps define representations of a fixed quiver, with dimensions bounded independently of the number of components and their self-intersections. We identify restriction cohomology with an extension group and use interval decomposition to reduce its vanishing to interpolation on a rational chain. These calculations determine the classification conditions, and vanishing on every analytic realization proves sufficiency, including the nonrational cases. The obstruction cycles also give a uniform criterion: a graph is taut if and only if 𝐻 1 (5𝐸, 𝑆 𝑋 |5𝐸 ) = 0 for every analytic realization, where 𝑆 𝑋 is the ambient logarithmic tangent bundle. We prove that five is the smallest positive integer for which this criterion holds for all graphs. 
+
+1. Introduction We study the cohomology of logarithmic vector fields on exceptional cycles by means of finite-dimensional representations. Let (𝑋, 𝐸 ) → ( 𝑉, 0) be the minimal good resolution of a normal complex surface singularity, with 𝐸 reduced, and put 𝑆 𝑋 = Θ 𝑋 (− log 𝐸 ).For resolution graphs with two nodes, we construct a positive exceptional cycle 𝑍 and decompose it into pieces on which the first cohomology of the restricted logarithmic tangent bundle vanishes. The restriction maps on their intersections define a representation of a fixed quiver, whose dimension is bounded independently of the number of exceptional components and their self-intersections. We identify 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) with an extension group over the path algebra of this quiver. Interval decomposition expresses its dimension as a sum of three multiplicities. When a nonempty connecting chain remains, only one multiplicity contributes, and the calculation of the restriction images reduces its vanishing to interpolation on a chain of rational curves. These calculations give another proof of the classification of taut normal complex surface singularities due to Laufer [7]. Restriction to the reduced exceptional divisor first bounds the topology of a taut graph. The restrictions along the arms determine the one-node cases, and the representations and interpolation calculations determine the remaining conditions for graphs with two nodes. We prove sufficiency by extending cohomology vanishing from the chosen cycles to every analytic realization, including the nonrational cases. The necessity arguments also produce, for every excluded graph, an analytic realization with a cycle 𝑌 ≤ 5𝐸 such that 𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) ≠ 0. Consequently, a graph is taut if and only if 
+
+𝐻 1 (5𝐸, 𝑆 𝑋 |5𝐸 ) = 0 for every analytic realization. An explicit example shows that five is the smallest positive integer for which this criterion holds for all graphs. 1.1. Main results. Let (𝑉, 0) be a normal complex surface singularity, and let 𝜋 : (𝑋, 𝐸 ) → (𝑉, 0) be its minimal good resolution, with 𝐸 reduced. A dual graph is taut if any two singularities with that minimal good resolution graph are analytically isomorphic. We work over C throughout the paper. 
+
+2020 Mathematics Subject Classification. 14J17, 14B07, 16G20, 32S25. 
+
+Key words and phrases. taut surface singularity, resolution graph, logarithmic tangent bundle, finite-dimensional representation, exceptional cycle.  
+
+> 1arXiv:2610.25654v1 [math.AG] 19 Oct 2026 2H. PARK AND D. SHIN
+
+Put 
+
+𝑆 𝑋 = Θ 𝑋 (− log 𝐸 ), 𝐿 𝑋 =
+
+Û2
+
+𝑆 𝑋 = O𝑋 (− 𝐾 𝑋 − 𝐸 ).
+
+A vertex of valency at least three is called a node . We write the self-intersection attached to a vertex 𝑣 as −𝑏 𝑣 . For a nonempty chain with self-intersections −𝑏 1, . . . , −𝑏 𝑙 , where 
+
+𝑏 𝑖 ≥ 2, put 
+
+[𝑏 1, . . . , 𝑏 𝑙 ] := 𝑏 1 − 1
+
+𝑏 2 − 1
+
+. . . − 1
+
+𝑏 𝑙 
+
+= 𝑛 𝑎 .
+
+We use the same bracket notation for the chain and its continued fraction. Arms are read from the node outwards. A chain may have length one, and the chain joining two nodes may be empty. 
+
+Theorem I (Classification) . A connected negative-definite minimal good resolution graph is taut if and only if every vertex has genus zero and the graph belongs to one of the four classes described below. In the following list, every vertex has weight at most −2, except as stated in (b). 
+
+(a) Chains. Every vertex has weight ≤ − 2. (b) Cycles. All weights are ≤ − 2, with at least one ≤ − 3. Two vertices joined by two edges may also have weights −1, −𝑐 , where 𝑐 ≥ 5. 
+
+−1 −𝑐 
+
+(c) Trees with one node. The valency of the node is 3 and all weights are ≤ − 2. (c-1) If the node has weight ≤ − 3, the arms are arbitrary. (c-2) If the node has weight −2, then exactly one of the following rows applies. First arm Second arm Third arm 
+
+[ 𝑝 ] ( 𝑝 ≥ 2) 𝑛 2/𝑎 2 ≥ 2 any 
+
+[ 𝑝 ] ( 𝑝 ≥ 3) [2, 𝑚 ] ( 𝑚 ≥ 2) 𝑛 3/𝑎 3 < 2
+
+[2] [2, 𝑚 ] ( 𝑚 ≥ 2) 4/3 ≤ 𝑛 3/𝑎 3 < 2, or [2, 2, 2, 𝑞 ] ( 𝑞 ≥ 2)
+
+(d) Trees with two nodes. The valencies of both nodes 𝑃 and 𝑄 are 3. 
+
+𝑃 𝑄 
+
+Let −𝑏 𝑃 and −𝑏 𝑄 be the weights of 𝑃 and 𝑄 , respectively; then 𝑏 𝑃 , 𝑏 𝑄 ≥ 2. The chain connecting 𝑃 and 𝑄 has weights −𝑐 1, . . . , −𝑐 𝑒 , read from 𝑃 , and we put 
+
+𝑑 = Í𝑒 𝑖 =1 (𝑐 𝑖 − 2). The integers 𝑠 𝑃 and 𝑠 𝑄 count the outward arms of length ≥ 2 at 𝑃 
+
+and 𝑄 , respectively. (d-1) If 𝑏 𝑃 ≥ 3 and 𝑏 𝑄 ≥ 3, then the four outward arms and the connecting chain are arbitrary. (d-2) Assume that 𝑏 𝑃 = 2. The outward arms at 𝑃 and the connecting chain must satisfy Table 1. In addition, if 𝑠 𝑃 = 1 and 𝑑 = 0, then 𝑏 𝑄 ≥ 3 and 𝑠 𝑄 ≤ 𝑏 𝑄 − 2. If 𝑏 𝑄 = 2, the same conditions apply after interchanging 𝑃 and 𝑄 and reading the connecting chain from 𝑄 .TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 3
+
+𝑠 𝑃 First arm Second arm Chain [𝑐 1, . . . , 𝑐 𝑒 ] Condition 0 [ 𝑝 ] [𝑞 ] any —1 [ 𝑝 ] [𝑎 1, . . . , 𝑎 𝑛 ] ( 𝑎 1 ≥ 3) any —
+
+[ 𝑝 ] ( 𝑝 ≥ 3) [2, 𝑚 ] any —
+
+[2] [2, 𝑚 ] [ ], or does not begin with [2, 2, . . . ] —
+
+[2] [2, 𝑚 ] [2, 2], or [2, 2, 𝑐 3, . . . , 𝑐 𝑒 ] ( 𝑐 3 ≥ 3) 𝑏 𝑄 + 𝑑 ≥ 4
+
+[ 𝑝 ] [2, 𝑎 2, . . . , 𝑎 𝑛 ] ( 𝑛 ≥ 3) [ ] , or [𝑐 1, . . . , 𝑐 𝑒 ] ( 𝑐 1 ≥ 3) 𝑏 𝑄 + 𝑑 ≥ 4    
+
+> [ ] denotes the empty chain; a dash means no condition. The last column applies only when 𝑠 𝑄 ≥1.
+
+Table 1. Conditions at a node 𝑃 with 𝑏 𝑃 = 2. 
+
+Remark. We require every irreducible component of the exceptional divisor of a good resolution to be smooth. For the two-vertex cycle with weights −1, −𝑐 , where 𝑐 ≥ 5, contracting the component of self-intersection −1 produces a nodal rational curve. Thus this contraction does not give a good resolution. 
+
+Remark. The list above coincides with Laufer’s list of taut resolution graphs [7, pp. 136– 139]. The continued-fraction conditions describe the same one-node families, and the two-node conditions are equivalent to Laufer’s Table (IV) with its permitted contraction operations. See Section 6.4 for the correspondence between the families. The obstruction calculations also give a uniform criterion on a fixed thickening of the reduced exceptional divisor. 
+
+Theorem II (Theorem 6.7 and Example 6.8) . A connected negative-definite minimal good resolution graph Γ is taut if and only if 
+
+𝐻 1 (5𝐸, 𝑆 𝑋 |5𝐸 ) = 0
+
+for every analytic realization (𝑋, 𝐸 ) → ( 𝑉, 0) of Γ. The integer 5 cannot be replaced by any smaller positive integer. 
+
+The sheaf is the restriction of the ambient logarithmic tangent bundle. Vanishing is required for every analytic realization; the theorem does not give a criterion for a fixed realization. For a two-node graph satisfying the restrictions stated in Proposition 4.4, we choose a positive exceptional cycle 𝑍 . It is the union of two cycles near the nodes and, when a nonempty connecting chain remains, twice that reduced chain. Their intersections have coordinate rings C[𝑡, 𝑛 ]/( 𝑡 𝑗 , 𝑛 2), with 𝑗 ≤ 4. The images of the section spaces under restriction, together with the restriction maps from the middle cycle, define the representation in the following theorem. For 1 ≤ 𝑖 ≤ 𝑗 ≤ 5, let 𝐼 [𝑖, 𝑗 ] denote the interval representation of the quiver in the following theorem, with a one-dimensional space at vertices 𝑖, . . . , 𝑗 , zero elsewhere, and identity maps between its nonzero spaces. 
+
+Theorem III (Propositions 5.1, 5.2, and 5.3) . Let Λ be the path algebra of 1 → 2 ← 3 →
+
+4 ← 5, and put 𝐽 0 = 𝐼 [1, 5]. For every analytic realization, the chosen cycle defines a 
+
+Λ-module 𝑀 0, of dimension at most 96 , such that 
+
+𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) ≃ Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0).
+
+If 𝑚 𝑖 𝑗 is the multiplicity of 𝐼 [𝑖, 𝑗 ] in 𝑀 0, then 
+
+ℎ1 (𝑍, 𝑆 𝑋 |𝑍 ) = 𝑚 22 + 𝑚 24 + 𝑚 44 .
+
+If the part of the connecting chain outside the two cycles near the nodes is nonempty, then 
+
+𝑚 22 = 𝑚 44 = 0. If the two cycles intersect and no connecting component remains, only 𝑚 22 
+
+can contribute. 4 H. PARK AND D. SHIN 
+
+The quiver and the bound 96 are independent of the lengths of the arms and connecting chain and of all vertex weights. The dimension bound follows from the bounded lengths of the intersection schemes used to define 𝑀 0.1.2. The representation-theoretic calculation. Laufer [7, Section 2] computes tangent sheaf cohomology on infinitesimal neighborhoods constructed by plumbing. His calculations use explicit Čech cocycles and the continued fractions of the rational chains. We also calculate restrictions of logarithmic vector fields along rational chains. In the two-node case, we express the obstruction to extending compatible sections across an exceptional cycle as an extension group of a finite-dimensional representation. This separates the calculation of the local restriction images from the calculation of their common cokernel. The cohomological criterion states that a graph is taut if and only if 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0 for every analytic realization; see Wahl [13, Theorem 9.1]. We first study this cohomology on a positive exceptional cycle 𝑍 . Restriction gives a surjection from 𝐻 1 (𝑋, 𝑆 𝑋 ) to 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ),so nonvanishing on 𝑍 excludes tautness. For the admitted graphs, we prove vanishing on 𝑍 
+
+for every analytic realization and then extend it to the resolution by exact sequences and the theorem on formal functions. For a graph with two nodes, we choose cycles 𝑊 𝐿 , 𝑊 𝑅 near the nodes. If a nonempty connecting chain remains outside their supports, let 𝐾 be its reduced cycle and put 
+
+𝑍 = 𝑊 𝐿 + 2𝐾 + 𝑊 𝑅 , 𝐷 𝑖 = 𝑊 𝑖 ∩ 2𝐾 (𝑖 = 𝐿, 𝑅 ).
+
+The cycles are chosen so that the restrictions of 𝑆 𝑋 to 𝑊 𝐿 , 2 𝐾 , and 𝑊 𝑅 have vanishing first cohomology. The exact sequence for their union therefore identifies 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) with the cokernel of the difference of the restriction maps 
+
+𝐻 0 (𝑊 𝐿 , 𝑆 𝑋 |𝑊 𝐿 )⊕ 𝐻 0 (2𝐾, 𝑆 𝑋 |2𝐾 )⊕ 𝐻 0 (𝑊 𝑅 , 𝑆 𝑋 |𝑊 𝑅 ) → 𝐻 0 (𝐷 𝐿 , 𝑆 𝑋 |𝐷 𝐿 )⊕ 𝐻 0 (𝐷 𝑅 , 𝑆 𝑋 |𝐷 𝑅 ).
+
+Thus the required cohomology measures whether sections on the three pieces can be chosen to agree on both intersection schemes. The five vertices of the quiver correspond to the two endpoint pieces, the middle piece, and their two intersections. More precisely, put 
+
+𝑃 𝑖 = 𝐻 0 (𝐷 𝑖 , 𝑆 𝑋 |𝐷 𝑖 ),𝑉 𝑖 = im  𝐻 0 (𝑊 𝑖 , 𝑆 𝑋 |𝑊 𝑖 ) → 𝑃 𝑖 
+
+,𝑉 𝐾 = im  𝐻 0 (2𝐾, 𝑆 𝑋 |2𝐾 ) → 𝑃 𝐿 ⊕ 𝑃 𝑅 
+
+.
+
+The inclusions and projections define the representation 
+
+𝑉 𝐿 → 𝑃 𝐿 ← 𝑉 𝐾 → 𝑃 𝑅 ← 𝑉 𝑅 .
+
+The two restrictions from the middle piece are retained in the single space 𝑉 𝐾 ; they must arise from the same section on 2 𝐾 . Replacing the section spaces by these images preserves the cokernel. The projective resolution of 𝐽 0 = 𝐼 [1, 5] gives the same cokernel, and hence 
+
+𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) ≃ Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0).
+
+The intersection schemes have uniformly bounded lengths. Consequently, the dimension of 
+
+𝑀 0 is bounded independently of the lengths of the arms and connecting chain and of their self-intersections. Every representation of this quiver is a direct sum of interval representations. Computing the extension group against each interval shows that only three interval types contribute. If 
+
+𝑚 𝑖 𝑗 denotes the multiplicity of 𝐼 [𝑖, 𝑗 ], then 
+
+ℎ1 (𝑍, 𝑆 𝑋 |𝑍 ) = 𝑚 22 + 𝑚 24 + 𝑚 44 .
+
+When 𝐾 ≠ 0, a section on 2 𝐾 , together with a section on either endpoint piece, can satisfy the restriction condition at that endpoint. These two surjectivity statements give 
+
+𝑚 22 = 𝑚 44 = 0. The remaining multiplicity 𝑚 24 measures the obstruction to satisfying both TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 5
+
+endpoint conditions simultaneously. When 𝐾 = 0, the two endpoint cycles meet directly, and their union sequence gives the corresponding representation supported on three vertices. We calculate the restriction images in Section 4. Along an arm, the self-intersections determine the propagation of monomial exponents and logarithmic coefficients. These calculations give the allowable constant coefficients and higher-order coefficients at each intersection. On the middle piece, put 𝐼 = O𝐾 (− 𝐾 ). The exact sequence 0 → 𝐼 ⊗ 𝑆 𝑋 |𝐾 → 𝑆 𝑋 |2𝐾 → 𝑆 𝑋 |𝐾 → 0separates the restriction to the reduced chain from the terms in the square-zero ideal. Since 
+
+𝑆 𝑋 |𝐾 ≃ O ⊕2 
+
+> 𝐾
+
+, the latter terms are sections of 𝐼 ⊕2. The remaining cokernel is therefore determined by whether these sections attain the prescribed endpoint jets, modulo the images supplied by 𝑊 𝐿 and 𝑊 𝑅 . This is the interpolation problem treated in Section 5. Tridiagonal determinants calculate the transport along the chain and determine the relative positions of the endpoint lines. The resulting vanishing conditions give the two-node restrictions in Theorem I. The necessity arguments also control the multiplicities needed to detect a failure of tautness. For every excluded graph, they produce a suitable analytic realization and a cycle 
+
+𝑌 ≤ 5𝐸 with 𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) ≠ 0. In particular, Proposition 5.13 proves the last two-node restriction by constructing a cycle with 
+
+𝜒 (𝑌 , 𝑆 𝑋 |𝑌 ) = −1.
+
+It follows that ℎ1 (𝑌 , 𝑆 𝑋 |𝑌 ) = ℎ0 (𝑌 , 𝑆 𝑋 |𝑌 ) + 1 > 0. Restriction from 5 𝐸 to 𝑌 then gives nonvanishing on 5 𝐸 . Together with vanishing for every realization of an admitted graph, this proves Theorem 6.7. Finally, Example 6.8 gives a non-taut graph for which the restriction cohomology vanishes on 𝑟 𝐸 , for every analytic realization and every 1 ≤ 𝑟 ≤ 4. Hence five is the smallest positive integer that gives this criterion for all graphs. 1.3. Outline of the proof. Section 2 reduces the possible graphs to chains, cycles, and trees with at most two trivalent nodes, and proves tautness for chains and cycles. Section 3 classifies the one-node graphs by restriction to the central curve and the arms, together with the weighted homogeneous calculation and Wahl’s vanishing theorem. Sections 4 and 5 construct the two-node cycles, compute their restriction images, and derive the remaining conditions by interval decomposition and interpolation. Section 6 extends vanishing from these cycles to every analytic realization. When 𝐻 1 (𝑍, O𝑍 ) = 0, nef twists and formal functions extend the vanishing to 𝑋 . The exceptional nonrational two-node family is treated by exact sequences on two reduced rational trees. Finally, the nonvanishing cycles used in the necessity proofs can be chosen inside 5 𝐸 , giving Theorem II; Example 6.8 proves optimality. 
+
+Statements and Declarations. 
+
+• Funding. Heesang Park was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) (RS-2026-25590534). Dongsoo Shin was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) (NRF-2023R1A2C1007293). 
+
+• Use of artificial intelligence. The authors used ChatGPT-6 Astra for assistance with logarithmic restriction and representation calculations, checking proofs, and language editing. The authors take full responsibility for the contents of this paper. 2. Logarithmic restrictions and possible graphs Let 𝜋 : (𝑋, 𝐸 ) → ( 𝑉, 0) be the minimal good resolution of a normal complex surface singularity. We choose a sufficiently small Stein representative of 𝑉 . Thus 𝑋 is smooth, 𝜋 is 6 H. PARK AND D. SHIN 
+
+proper, and its fibers have dimension at most one. Write 
+
+𝐸 =∑︁ 
+
+> 𝑣
+
+𝐸 𝑣 , 𝐸 2 
+
+> 𝑣
+
+= −𝑏 𝑣 , 𝑔 𝑣 = 𝑔 (𝐸 𝑣 ).
+
+Every 𝐸 𝑣 is smooth, and 𝐸 has simple normal crossings. Distinct components may meet more than once. The valency 𝑡 𝑣 is the number of intersection points of 𝐸 𝑣 with the other components, counted separately. A node is a vertex of valency at least three. We use the locally free sheaves 
+
+𝑆 𝑋 = Θ 𝑋 (− log 𝐸 ), 𝐿 𝑋 = det 𝑆 𝑋 = O𝑋 (− 𝐾 𝑋 − 𝐸 ).
+
+If 𝐸 = (𝑦 = 0), the sheaf 𝑆 𝑋 has local basis 𝜕 𝑥 , 𝑦𝜕 𝑦 . At a crossing 𝐸 = (𝑥𝑦 = 0), it has basis 𝑥𝜕 𝑥 , 𝑦𝜕 𝑦 . An exceptional cycle is an effective integral divisor supported on 𝐸 . If 𝑍 is such a cycle and F is locally free on 𝑋 , we write F | 𝑍 = F ⊗ O𝑋 O𝑍 . All restrictions in this paper refer to ambient sheaves in this sense. 2.1. Restriction to finite cycles. Restriction to exceptional cycles and the theorem on formal functions relate cohomology on 𝑋 to cohomology on finite cycles. 
+
+Lemma 2.1. For every coherent sheaf G on 𝑋 , one has 𝐻 𝑞 (𝑋, G) = 0 for 𝑞 ≥ 2.Consequently, if F is locally free and 𝑍 is an exceptional cycle, restriction induces a surjection 
+
+𝐻 1 (𝑋, F ) ↠ 𝐻 1 (𝑍, F | 𝑍 ).
+
+If 𝑌 ≤ 𝑍 , restriction also induces a surjection 
+
+𝐻 1 (𝑍, F | 𝑍 ) ↠ 𝐻 1 (𝑌 , F | 𝑌 ).
+
+Proof. The coherence of the higher direct images follows from Grauert [3, §6, Hauptsatz I, p. 59]. The theorem on formal functions of Grauert [3, §6, Hauptsatz II a, p. 59] and the dimension of the fibers give 𝑅 𝑞 𝜋 ∗ G = 0 for 𝑞 ≥ 2. Leray over the Stein base gives 
+
+𝐻 𝑞 (𝑋, G) = 0 in these degrees. Apply this vanishing to the kernel of F → F | 𝑍 . The second surjection follows because the kernel of F | 𝑍 → F | 𝑌 is supported in dimension at most one. □
+
+For effective exceptional cycles 𝐴, 𝐵 , the exact sequence of ideal sheaves gives 0 → F (− 𝐴 )| 𝐵 → F | 𝐴 +𝐵 → F | 𝐴 → 0. (2.1) Its first term is obtained from O𝑋 (− 𝐴 )/O 𝑋 (− 𝐴 − 𝐵 ), so the sequence also holds when the cycles have common components. 
+
+Lemma 2.2. Let 𝑍 be an exceptional cycle whose support is 𝐸 , and let F be locally free on 
+
+𝑋 . If 
+
+𝐻 1 (𝑍, F (− 𝑘 𝑍 )| 𝑍 ) = 0 for all 𝑘 ≥ 0,
+
+then 𝐻 1 (𝑋, F ) = 0.Proof. Apply the cycle sequence with 𝐴 = 𝑘 𝑍 and 𝐵 = 𝑍 . Its kernel is F (− 𝑘 𝑍 )| 𝑍 , so induction gives 𝐻 1 (𝑘 𝑍, F | 𝑘𝑍 ) = 0 for every 𝑘 ≥ 1. The ideals of 𝑍 and of the exceptional fiber have the same radical, so their powers define cofinal systems of neighborhoods of 𝐸 .The theorem on formal functions of Grauert [3, §6, Hauptsatz II a, p. 59] therefore identifies the completion of (𝑅 1𝜋 ∗ F ) 0 with zero. Coherence implies that this stalk vanishes. Since 𝜋 
+
+is an isomorphism away from 0, it follows that 𝑅 1𝜋 ∗ F = 0, and Leray over the Stein base gives the assertion. □TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 7
+
+2.2. Component restrictions and logarithmic fibers. We use the component restrictions and the ordered logarithmic fibers described by Wahl [13, §2 and Lemma 2.1]. Let 𝐷 𝑣 be the reduced intersection divisor on 𝐸 𝑣 .
+
+Lemma 2.3 (Wahl [13, §2 and Lemma 2.1]) . There is an exact sequence 
+
+0 → O 𝐸 𝑣 → 𝑆 𝑋 |𝐸 𝑣 → Θ𝐸 𝑣 (− 𝐷 𝑣 ) → 0. (2.2) 
+
+It splits if 𝑡 𝑣 > 0. If also 𝐸 𝑣 ≃ P1, then 
+
+𝑆 𝑋 |𝐸 𝑣 ≃ O P1 ⊕ O P1 (2 − 𝑡 𝑣 ).
+
+The first map sends 1 to the normal Euler vector field. At a crossing 𝐸 = (𝑥𝑦 = 0),the classes of 𝑥𝜕 𝑥 , 𝑦𝜕 𝑦 form an ordered basis of the logarithmic fiber independent of the equations for the two ordered branches. 
+
+Lemma 2.4. Let 𝐶 ≃ P1 have self-intersection −𝑏 and meet the remaining divisor at exactly two points 𝑝, 𝑞 . In logarithmic coefficients ordered tangent first and normal second, transport from 𝑝 to 𝑞 , and then exchange of the entries at the next crossing, are respectively 
+
+𝐴 𝑏 =
+
+−1 0
+
+𝑏 1
+
+
+
+, 𝑇 𝑏 =
+
+ 𝑏 1
+
+−1 0
+
+
+
+.
+
+Proof. As in Wahl [13, proof of Lemma 2.5], coordinates on the first infinitesimal neigh-borhood preserving the two marked branches have transition 𝑧 ′ = 𝑧 −1, 𝑦 ′ = 𝑧 𝑏 𝑦 . The obstruction to this normalization lies in 𝐻 1 (𝐶, Θ𝐶 (− 𝑝 − 𝑞 ) ⊗ 𝑁 ∨
+
+> 𝐶 /𝑋
+
+) = 𝐻 1 (P1, O( 𝑏 )) = 0. Thus 
+
+𝑧𝜕 𝑧 = −𝑧 ′ 𝜕 𝑧 ′ + 𝑏𝑦 ′ 𝜕 𝑦 ′ , 𝑦𝜕 𝑦 = 𝑦 ′ 𝜕 𝑦 ′ .
+
+These identities give 𝐴 𝑏 ; exchanging the two entries gives 𝑇 𝑏 . The logarithmic fibers are independent of the chosen branch equations by Lemma 2.3. □
+
+2.3. Tautness and restriction after forgetting components. The following criterion characterizes tautness by logarithmic cohomology. For the formulation using a sufficiently thick plumbing scheme, see Laufer [6, Theorems 3.9–3.10]. 
+
+Theorem 2.5 (Wahl [13, Theorem 9.1]) . A graph Γ is taut if and only if 
+
+𝐻 1 (𝑋, 𝑆 𝑋 ) = 0
+
+for every analytic realization (𝑋, 𝐸 ) → ( 𝑉, 0) of Γ.
+
+Thus one realization with nonzero first cohomology disproves tautness, whereas the sufficient direction requires vanishing on every realization. 
+
+Lemma 2.6. Let 𝐷 be a reduced union of components of 𝐸 , and put 
+
+𝑆 𝐷 = Θ 𝑋 (− log 𝐷 ).
+
+If 𝑌 is an effective cycle supported on 𝐷 , there is an exact sequence 
+
+0 → 𝑆 𝑋 |𝑌 → 𝑆 𝐷 |𝑌 → 𝑄 𝑌 → 0,
+
+where 𝑄 𝑌 has zero-dimensional support. Consequently, 
+
+𝐻 1 (𝑋, 𝑆 𝑋 ) ↠ 𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) ↠ 𝐻 1 (𝑌 , 𝑆 𝐷 |𝑌 ).
+
+Proof. The sheaves differ only where 𝐷 meets an omitted component. In coordinates 
+
+𝐷 = (𝑦 = 0), 𝐸 − 𝐷 = (𝑥 = 0), their quotient is 𝑆 𝐷 /𝑆 𝑋 = O( 𝑥 =0) 𝜕 𝑥 . If 𝑌 = (𝑦 𝑛 = 0),multiplication by 𝑦 𝑛 is injective on this quotient. Restriction therefore preserves exactness, and its quotient has finite length. The cohomology surjections follow from 𝐻 1 (𝑄 𝑌 ) = 0 and Lemma 2.1. □8 H. PARK AND D. SHIN 
+
+2.4. Analytic realization of subgraphs. We shall use analytic plumbing only to construct a realization with a prescribed obstruction. We do not assume that every realization of a graph contains a fixed analytic realization of a smaller graph. 
+
+Lemma 2.7. Let 𝐷 be a compact connected normal-crossings divisor on a smooth complex surface. Suppose that the weighted graph of 𝐷 is a full subgraph of a negative-definite weighted graph Γ. Assume that the components to be added are smooth rational curves, and that each new edge incident with 𝐷 is assigned a distinct smooth point of 𝐷 . After shrinking the neighborhood of 𝐷 , there is a smooth complex surface containing that neighborhood and a normal-crossings divisor with graph Γ. The resulting divisor can be contracted to a normal surface singularity. Proof. At a prescribed attachment choose coordinates 𝐷 = (𝑦 = 0). Complete the transverse disk 𝑥 = 0 to a rational curve with normal degree −𝑏 by the transition 𝑠 ′ = 𝑠 −1, 𝑢 ′ = 𝑠 𝑏 𝑢 ,taking 𝑠 = 𝑦, 𝑢 = 𝑥 on the initial disk. This preserves the original charts near 𝐷 . For further attachments use distinct marked disks and interchange tangent and normal coordinates. The prescribed normal bundles fix all self-intersections. The plumbing construction of Laufer [7, Section 2], with nested coordinate neighborhoods and sufficiently small transverse disks, gives a Hausdorff surface containing a neighborhood of the original divisor. Its full intersection matrix is negative definite, so Grauert [4] gives a contraction of the divisor. □
+
+In our applications every vertex of the subgraph has weight at most −2, so the subgraph is the graph of a minimal good resolution. 2.5. Nef twists on finite cycles. The following elementary argument uses the divisor method in the proof of Lipman [8, Proposition 11.1(i)–(ii)]. 
+
+Lemma 2.8. Let 𝐶 be a positive exceptional cycle whose reduced divisor is a tree of rational curves. Suppose 𝐻 1 (𝐶, O𝐶 ) = 0. If F is locally free on 𝐶 , and a line bundle A
+
+has nonnegative degree on every irreducible component, then 𝐻 1 (𝐶, F ) = 0 implies that 
+
+𝐻 1 (𝐶, F ⊗ A) = 0.Proof. Let I be the nilradical. Constants on 𝐶 red lift to 𝐶 , so the nilradical sequence gives 
+
+𝐻 1 (𝐶, I) = 0; also 𝐻 2 (𝐶, I) = 0. The finite logarithm identifies 1 + I with I, and the unit sequence gives Pic (𝐶 ) ≃ Pic (𝐶 red ). Since the reduced divisor is a rational tree, these groups are determined by the component degrees. Choose an effective Cartier divisor 𝐵 , supported at smooth points of the reduced components, with these degrees. A tangent parameter is a nonzerodivisor on 𝐶 , so these divisors exist also when 𝐶 is nonreduced. The degree description gives A ≃ O 𝐶 (𝐵 ), and multiplication by its section gives 0 → F → F ⊗ A → 𝑄 → 0with 𝑄 of finite length. Hence 𝐻 1 (𝐶, F ) → 𝐻 1 (𝐶, F ⊗ A) is surjective. □
+
+2.6. The underlying graph. The restriction calculation of Wahl [13, Lemmas 2.3–2.5 and Proposition 2.6] bounds the number of branching vertices without using a classification of taut graphs. 
+
+Proposition 2.9. If the graph of 𝐸 is taut, every component is rational and has valency at most three. Proof. Restriction and Lemma 2.3 make 𝐻 1 (𝐸 𝑣 , Θ𝐸 𝑣 (− 𝐷 𝑣 )) a quotient of 𝐻 1 (𝑋, 𝑆 𝑋 ). The former group is nonzero for positive genus, and for a rational component it has dimension max (𝑡 𝑣 − 3, 0). Theorem 2.5 proves the assertion. □TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 9
+
+Proposition 2.10 (Wahl [13, Proposition 2.6]) . Suppose every component is rational, all valencies are at most three, and there are 𝑛 ≥ 1 trivalent vertices. Let 𝑐 be the first Betti number of the graph, and put 𝜖 = 1 for a one-node tree and 𝜖 = 0 otherwise. Then 
+
+ℎ1 (𝑋, 𝑆 𝑋 ) ≥ ℎ1 (𝐸, 𝑆 𝑋 |𝐸 ) = 𝑛 + 2𝑐 − 2 + 𝜖 . 
+
+Proof. Write 𝑟 for the number of leaves. Wahl’s formula is ℎ1 (𝐸, 𝑆 𝑋 |𝐸 ) = 𝑟 + 4𝑐 − 4 + 𝜖 ;substituting 𝑟 = 𝑛 + 2 − 2𝑐 gives the assertion. The restriction surjection gives the inequality. The proof of Wahl [13, Lemma 2.5] uses the nonsingularity of the intersection matrix of a connecting chain, so it also applies to a component of self-intersection −1 in a two-edge cycle. □
+
+Theorem 2.11. Every nonempty taut minimal good resolution graph is a chain or a cycle of rational curves, or a rational tree with one or two trivalent vertices. A cycle may consist of two components meeting twice. Proof. Proposition 2.9 leaves rational components of valency at most three. Without a trivalent vertex, connectedness gives a chain or cycle. Otherwise Proposition 2.10 excludes 
+
+𝑐 ≥ 1 and, for a tree, 𝑛 ≥ 3. Minimality then makes every nonbranching component of either remaining tree have self-intersection at most −2. □
+
+2.7. Chains and cycles. Component restrictions prove tautness for chains and cycles in every analytic realization. For cycles, negative definiteness makes the reduced logarithmic cohomology vanish. 
+
+Proposition 2.12. Every negative-definite minimal good resolution graph that is a chain of rational curves is rational and taut. Every self-intersection is at most −2.Proof. Minimality excludes a component of self-intersection −1. If the chain has at least two components, 𝑆 𝑋 (− 𝑚𝐸 )| 𝐸 , for 𝑚 ≥ 0, has nonnegative summand degrees: they are 
+
+𝑚 (𝑏 − 1), 𝑚 (𝑏 − 1) + 1 on an end component of self-intersection −𝑏 , and 𝑚 (𝑏 − 2), 𝑚 (𝑏 − 2)
+
+on an internal component. Its Serre dual has strictly negative summand degrees on the ends and nonpositive degrees internally. A section vanishes on the ends and then successively on all internal components. Thus 𝐻 1 (𝐸, 𝑆 𝑋 (− 𝑚𝐸 )| 𝐸 ) = 0. For a single component 𝐶 , the extension in (2.2) has class 𝑐 1 (𝑁 𝐶 /𝑋 ) ≠ 0, so 𝑆 𝑋 |𝐶 ≃OP1 (1)⊕2. Again all the groups 𝐻 1 (𝐶, 𝑆 𝑋 (− 𝑚𝐶 )| 𝐶 ) vanish. Lemma 2.2 gives 𝐻 1 (𝑋, 𝑆 𝑋 ) =
+
+0 in every realization, proving tautness. Finally O𝐸 (− 𝑚𝐸 ) has nonnegative component degrees; normalization on the rational chain gives its 𝐻 1-vanishing. Formal functions, or Lemma 2.2, proves rationality. □
+
+Lemma 2.13. For a negative-definite cycle 𝐸 of smooth rational curves, one has 
+
+𝐻 0 (𝐸, 𝑆 𝑋 |𝐸 ) = 𝐻 1 (𝐸, 𝑆 𝑋 |𝐸 ) = 0.Proof. Write 𝐸 = 𝐶 1 + · · · + 𝐶 𝑟 , with the components ordered cyclically, and put 𝐶 2 
+
+> 𝑖
+
+= −𝑏 𝑖 .On 𝐶 𝑖 , order the logarithmic coefficients at the incoming crossing as tangent first and normal second, and denote them by (𝑎 𝑖 , 𝑛 𝑖 ). Lemma 2.4 shows that compatibility at the outgoing crossing is equivalent to 
+
+𝑎 𝑖 +1 = 𝑏 𝑖 𝑎 𝑖 + 𝑛 𝑖 , 𝑛 𝑖 +1 = −𝑎 𝑖 .
+
+Eliminating the normal coefficients gives 
+
+−𝑏 𝑖 𝑎 𝑖 + 𝑎 𝑖 −1 + 𝑎 𝑖 +1 = 0.
+
+For two components meeting twice, the two neighboring terms are both 𝑎 𝑗 , so their sum is 2𝑎 𝑗 . These equations are precisely the kernel equations for the intersection matrix of 𝐸 .Negative definiteness gives 𝑎 𝑖 = 0 for every 𝑖 , and the matching equations then give 𝑛 𝑖 = 0. Hence 𝐻 0 (𝐸, 𝑆 𝑋 |𝐸 ) = 0. Each component restriction is trivial of rank two. The normalization sequence therefore gives 𝜒 (𝐸, 𝑆 𝑋 |𝐸 ) = 2𝑟 − 2𝑟 = 0, and consequently 𝐻 1 (𝐸, 𝑆 𝑋 |𝐸 ) = 0. □10 H. PARK AND D. SHIN 
+
+Proposition 2.14. Every negative-definite minimal good resolution graph that is a cycle of rational curves is taut. With at least three components its weights are −𝑏 𝑖 , where all 𝑏 𝑖 ≥ 2
+
+and some 𝑏 𝑖 ≥ 3. For two components meeting twice, either 𝑏 1, 𝑏 2 ≥ 2 and 𝑏 1𝑏 2 > 4, or, after interchange, 𝑏 1 = 1 and 𝑏 2 ≥ 5.Proof. With at least three components, a component of self-intersection −1 can be contracted while keeping smooth components with normal crossings. Minimality therefore gives 𝑏 𝑖 ≥ 2, and negative definiteness excludes all 𝑏 𝑖 = 2. With two components, negative definiteness is equivalent to 𝑏 1, 𝑏 2 > 0 and 𝑏 1𝑏 2 > 4. Contracting a component of self-intersection −1makes the other component nodal, so this contraction is not a good resolution. Suppose all 𝑏 𝑖 ≥ 2. The dualizing sheaf of the reduced cycle is trivial: differentials with opposite residues at the two marked points on each normalization component glue to a nowhere-zero section. For 𝑚 ≥ 1, the dual of 𝑆 𝑋 (− 𝑚𝐸 )| 𝐸 has degrees −𝑚 (𝑏 𝑖 − 2) in both summands on each component. Its global sections vanish first where 𝑏 𝑖 > 2, then on the degree-zero components by connectedness. Serre duality gives 𝐻 1 (𝐸, 𝑆 𝑋 (− 𝑚𝐸 )| 𝐸 ) = 0. Together with Lemma 2.13 and formal vanishing, this proves 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0. In the remaining case write 𝐸 = 𝐶 + 𝐷 , where 𝐶 2 = −1, 𝐷 2 = −𝑏 , 𝐶𝐷 = 2, and 
+
+𝑏 ≥ 5. Put 𝑍 = 2𝐶 + 𝐷 . Then 𝑍𝐶 = 0, 𝑍 𝐷 = 4 − 𝑏 < 0, and 𝐸𝐶 = 1. For 𝑚 ≥ 0, set 
+
+F𝑚 = 𝑆 𝑋 (− 𝑚𝑍 ). The cycle sequence for 𝑍 = 𝐸 + 𝐶 is 0 → F 𝑚 (− 𝐸 )| 𝐶 → F 𝑚 |𝑍 → F 𝑚 |𝐸 → 0.
+
+Its first term is O𝐶 (− 1)⊕2, independently of 𝑚 . For 𝑚 = 0, the last term has vanishing first cohomology by Lemma 2.13. For 𝑚 ≥ 1, its Serre dual restricts to O⊕2 
+
+> 𝐶
+
+on 𝐶 and to 
+
+O𝐷 (− 𝑚 (𝑏 − 4)) ⊕2 on 𝐷 . A global section therefore vanishes on 𝐷 , and hence also on 𝐶 .Thus 𝐻 1 (𝐸, F𝑚 |𝐸 ) = 0 for every 𝑚 ≥ 0. The exact sequence gives 
+
+𝐻 1 (𝑍, 𝑆 𝑋 (− 𝑚𝑍 )| 𝑍 ) = 0 (𝑚 ≥ 0).
+
+Lemma 2.2 gives 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0. All these arguments apply to every analytic realization, and Theorem 2.5 proves tautness. □
+
+3. Graphs with one node Let Γ be a negative-definite tree with one trivalent node, all of whose vertices have genus zero. Its central curve has self-intersection −𝑏 , and its three arms have Hirzebruch–Jung expansions 
+
+𝑛 𝑖 
+
+𝑎 𝑖 
+
+= [𝑏 𝑖 1, . . . , 𝑏 𝑖𝑠 𝑖 ], 0 < 𝑎 𝑖 < 𝑛 𝑖 , gcd (𝑎 𝑖 , 𝑛 𝑖 ) = 1, 𝑏 𝑖 𝑗 ≥ 2.
+
+The arms are read from the central curve towards their ends. Set 
+
+𝑞 𝑘 = 𝑏𝑘 −
+
+> 3
+
+∑︁ 
+
+> 𝑖 =1
+
+ 𝑘𝑎 𝑖 
+
+𝑛 𝑖 
+
+
+
+, 𝑐 𝑘 = #{𝑖 : 𝑘𝑎 𝑖 ≡ 1 (mod 𝑛 𝑖 )} .
+
+Negative definiteness is equivalent to 𝑏 − Í𝑖 𝑎 𝑖 /𝑛 𝑖 > 0. 
+
+Definition 3.1. Assign the arms to 0 , 1, ∞ on the central curve, whose normal bundle has transition (𝑧 ′, 𝑥 ′) = (𝑧 −1, 𝑧 𝑏 𝑥 ). At the attachments use (𝑡 𝑝 , 𝑛 𝑝 ) = (𝑧, 𝑥 ), (𝑧 − 1, 𝑥 ), (𝑧 ′, 𝑥 ′),respectively. On an arm component of weight −𝑏 𝑗 , use the transition and plumbing identifications 
+
+(𝑇 ′ 
+
+> 𝑗
+
+, 𝑋 ′ 
+
+> 𝑗
+
+) = (𝑇 −1 
+
+> 𝑗
+
+, 𝑇 𝑏 𝑗  
+
+> 𝑗
+
+𝑋 𝑗 ), (𝑇 1, 𝑋 1) = (𝑛 𝑝 , 𝑡 𝑝 ), (𝑇 𝑗 +1, 𝑋 𝑗 +1) = (𝑋 ′ 
+
+> 𝑗
+
+, 𝑇 ′ 
+
+> 𝑗
+
+).
+
+The sufficiently small surface neighborhood obtained by Lemma 2.7 is called the standard plumbing realization of Γ. Grauert’s theorem contracts its reduced divisor 𝐷 ; if Γ is minimal good, this is the minimal good resolution of the contraction. TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 11 
+
+Lemma 3.2. Let (𝑋, 𝐷 ) and ( b𝑋, b𝐷 ) be standard plumbing realizations of the same weighted graph, possibly with different assignments of the arms to 0, 1, ∞. Every automorphism 𝜎 of the weighted graph is induced by a biholomorphism between neighborhoods of 𝐷 and b𝐷 .Proof. The automorphism fixes the node and permutes arms with identical weight sequences. The induced permutation of their attachment points is realized by a Möbius transformation 
+
+𝜇 . Its linear lift to OP1 (− 1), tensored 𝑏 times, gives a biholomorphism of the central normal bundle. Near an attachment point it has the form 
+
+(𝑡, 𝑛 ) ↦ → ( 𝑡𝛼 (𝑡 ), 𝑛𝛽 (𝑡 )) , 𝛼 (0) 𝛽 (0) ≠ 0.
+
+Identify the source and target arms by their plumbing coordinates. The charts of an arm form a smooth toric surface. The monomial 𝑡 = 𝑋 1 has orders 𝑟 0 = 0, 𝑟 1 = 1 along the initial boundary and first arm component, with 
+
+𝑟 𝑗 +1 = 𝑏 𝑗 𝑟 𝑗 − 𝑟 𝑗 −1.
+
+Since 𝑏 𝑗 ≥ 2, induction gives 𝑟 𝑗 +1 ≥ 𝑟 𝑗 + 1. Thus 𝑡 is holomorphic near the entire arm and vanishes on it. The torus action extends (𝜆, 𝜈 ) · ( 𝑇 1, 𝑋 1) = (𝜆𝑇 1, 𝜈𝑋 1). On a sufficiently small neighbor-hood of the arm define 
+
+Φ(𝑃 ) = (𝛽 (𝑡 (𝑃 )) , 𝛼 (𝑡 (𝑃 ))) · 𝑃. 
+
+This is holomorphic and agrees with the central lift on the overlap. Put 𝜑 (𝑠 ) = 𝑠𝛼 (𝑠 ). Since 
+
+𝑡 (Φ(𝑃 )) = 𝜑 (𝑡 (𝑃 )) and 𝜑 ′ (0) ≠ 0, its inverse is 
+
+𝑄 ↦ → ( 𝛽 (𝑠 ), 𝛼 (𝑠 )) −1 · 𝑄, 𝑠 = 𝜑 −1 (𝑡 (𝑄 )) .
+
+Each arm component is torus invariant, so these maps induce the required component permutation. They glue with the central lift, and their inverses glue as well. □
+
+3.1. Restriction along an arm. We work in a standard plumbing neighborhood (Defini-tion 3.1). Let 𝑃 be a central component, and let 𝐶 1, . . . , 𝐶 𝑠 be an arm, read away from 
+
+𝑃 , with self-intersections −𝑏 𝑖 , where 𝑏 𝑖 ≥ 2. The last component is an end component of the full exceptional divisor, and the other arm components have valency two. Write 
+
+𝑛 /𝑎 = [𝑏 1, . . . , 𝑏 𝑠 ]. Near 𝑃 ∩ 𝐶 1, let 𝑥 = 0 define 𝑃 , and let 𝑡 = 0 define 𝐶 1. A local frame for 𝑆 𝑋 at this crossing is (𝑥𝜕 𝑥 , 𝑡𝜕 𝑡 ).
+
+Lemma 3.3. Fix nonnegative integers 𝑘, 𝑗 . The coefficient vectors ( 𝐴, 𝐵 ) for which 
+
+𝑥 𝑘 𝑡 𝑗 ( 𝐴𝑥𝜕 𝑥 + 𝐵𝑡𝜕 𝑡 )
+
+extends to a logarithmic vector field on a neighborhood of the whole arm form the subspace 
+
+𝑈 𝑘, 𝑗 =
+
+
+
+0, 𝑛 𝑗 − 𝑎𝑘 ≤ − 2,
+
+{( 𝐴, 𝐵 ) : 𝑛𝐴 + 𝑎𝐵 = 0}, 𝑛 𝑗 − 𝑎𝑘 = −1,
+
+C2, 𝑛 𝑗 − 𝑎𝑘 ≥ 0.
+
+Put 𝐴 arm = 𝐶 1 + · · · + 𝐶 𝑠 . In the chosen frame, the completed restriction of a section of 
+
+𝑆 𝑋 |(𝑘 +1) 𝐴 arm at 𝑃 ∩ 𝐶 1 belongs to  C[[ 𝑥, 𝑡 ]]/( 𝑡 𝑘 +1) ⊕2. For 0 ≤ 𝑗 ≤ 𝑘 , the image of the map from 𝐻 0 (( 𝑘 + 1) 𝐴 arm , 𝑆 𝑋 |(𝑘 +1) 𝐴 arm ) extracting the coefficient of 𝑥 𝑘 𝑡 𝑗 is precisely 𝑈 𝑘, 𝑗 .Proof. The exponents satisfy 
+
+𝑟 0 = 𝑘, 𝑟 1 = 𝑗, 𝑟 𝑖 +1 = 𝑏 𝑖 𝑟 𝑖 − 𝑟 𝑖 −1, 𝑟 𝑠 +1 = 𝑛 𝑗 − 𝑎𝑘. 
+
+The coefficient vector is multiplied by 𝑇 𝑏 𝑖 at each transition. The first row of 𝑇 𝑏 𝑠 · · · 𝑇 𝑏 1 is 
+
+(𝑛, 𝑎 ), so its terminal normal coefficient is 𝑛𝐴 + 𝑎𝐵 . Interior regularity requires nonnegative exponents. At the terminal chart, with exceptional component 𝑦 = 0 and outer divisor 
+
+𝑞 = 0, the ambient logarithmic frame is (𝑦𝜕 𝑦 , 𝜕 𝑞 ). An outer exponent −1 therefore permits precisely the line 𝑛𝐴 + 𝑎𝐵 = 0, whereas an exponent at most −2 permits no nonzero vector. If a compact exponent first becomes negative, the recurrence makes all subsequent 12 H. PARK AND D. SHIN 
+
+exponents strictly decrease. Hence an outer exponent at least −1 ensures nonnegative compact exponents, proving the first assertion. For the cycle assertion, suppose 𝑟 𝑠 +1 ≤ − 1. Every nonnegative exponent before the first negative exponent is at most 𝑘 : any strict increase between nonnegative exponents persists by the recurrence and would force a positive outer exponent. Restriction to (𝑘 + 1) 𝐴 arm 
+
+therefore does not remove any compatibility condition before the first failure of regularity. The invertible transition matrices transport the coefficient vector to the first nonregular chart, where a negative compact exponent or an outer exponent at most −2 forces vanishing; an outer exponent −1 imposes exactly the same terminal line. Distinct characters cannot cancel, since transitions and cycle ideals are monomial. Conversely, a section extending along the whole arm restricts to the cycle. If 𝑟 𝑠 +1 ≥ 0, every coefficient vector extends and therefore restricts. □
+
+Put 
+
+𝑑 𝑖 =
+
+ 𝑎 𝑖 𝑘 − 1
+
+𝑛 𝑖 
+
+
+
+, 𝜖 𝑖 =
+
+(
+
+1, 𝑎 𝑖 𝑘 ≡ 1 (mod 𝑛 𝑖 ),
+
+0, otherwise. One has 0 ≤ 𝑑 𝑖 ≤ 𝑘 . The lemma says that both logarithmic coefficient functions must vanish to order 𝑑 𝑖 at the attachment. If 𝜖 𝑖 = 1, their coefficient of order 𝑑 𝑖 must also belong to the indicated one-dimensional subspace. No further condition occurs. In particular the continued fraction and the subspace condition have been obtained from the component restriction maps. 3.2. The central restriction bundle. Suppose now that 𝑃 2 = −𝑏 , that 𝑃 has three arms, and that the attachment points are 0 , 1, ∞. In this subsection we index the arms by their attachment points. Set 
+
+𝑐 = 𝜖 0 + 𝜖 1 + 𝜖 ∞, 𝑚 = 𝑏𝑘 − 𝑑 0 − 𝑑 1 − 𝑑 ∞, 𝑒 = 𝑏 − 𝑎 0
+
+𝑛 0
+
+− 𝑎 1
+
+𝑛 1
+
+− 𝑎 ∞
+
+𝑛 ∞
+
+.
+
+Let F𝑘 be the rank-two bundle of coefficients of degree 𝑘 with respect to the normal coordinate of 𝑃 in logarithmic vector fields satisfying the arm restrictions of Lemma 3.3. 
+
+Proposition 3.4. If 𝑐 ≤ 2, then 
+
+F𝑘 ≃ O P1 (𝑚 − 𝑐 ) ⊕ O P1 (𝑚 − 1).
+
+Proof. Before imposing the arm conditions, the line subbundle generated by the normal Euler vector field is O( 𝑏𝑘 ), and the quotient is O( 𝑏𝑘 − 1). Imposing vanishing of both coefficients to order 𝑑 𝑖 at each attachment 𝑝 𝑖 tensors these line bundles by O(− Í𝑖 𝑑 𝑖 𝑝 𝑖 ).Each remaining condition 𝑛 𝑖 𝐴 + 𝑎 𝑖 𝐵 = 0 defines a line that projects isomorphically to the tangent direction. It therefore replaces the Euler subbundle by its twist by O(− 𝑝 𝑖 ) and leaves the quotient unchanged. We obtain 0 → O( 𝑚 − 𝑐 ) → F 𝑘 → O( 𝑚 − 1) → 0.
+
+The extension group is 𝐻 1 (P1, O( 1 − 𝑐 )) = 0 when 𝑐 ≤ 2. □
+
+Corollary 3.5. Let 𝐷 be the reduced star in its standard plumbing realization. If 𝑐 ≤ 2,there is a natural injection 
+
+𝐻 1 (P1, F𝑘 ) ↩→ 𝐻 1 (( 𝑘 + 1)𝐷, 𝑆 𝑋 |(𝑘 +1) 𝐷 ),
+
+and 
+
+ℎ1 (F 𝑘 ) = max (𝑐 − 𝑚 − 1, 0) + max (− 𝑚, 0).
+
+Proof. Let 𝑁 = 𝑁 𝑃 /𝑋 , and put G𝑘 = 𝑆 𝑋 |𝑃 ⊗ 𝑁 −𝑘 and Q𝑘 = G𝑘 /F 𝑘 . The quotient Q𝑘 
+
+is supported at the three attachment points. Since G𝑘 ≃ O( 𝑏𝑘 ) ⊕ O( 𝑏𝑘 − 1), one has 
+
+𝐻 1 (𝑃, G𝑘 ) = 0. The sequence 0 → F 𝑘 → G 𝑘 → Q 𝑘 → 0 gives 
+
+𝐻 1 (𝑃, F𝑘 ) ≃ coker 
+
+
+
+𝐻 0 (𝑃, G𝑘 ) → 𝐻 0 (𝑃, Q𝑘 )
+
+
+
+.TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 13 
+
+Decompose (𝑘 + 1)𝐷 into (𝑘 + 1)𝑃 and the three disjoint arm cycles. Scaling the normal coordinate of 𝑃 extends over the arms through the monomial plumbing transitions, and induces an action on these cycles preserving the restriction maps. In degree 𝑘 , Lemma 3.3 identifies 𝐻 0 (𝑃, Q𝑘 ) with the section spaces on the intersections modulo the images from the arm cycles. Indeed, 0 ≤ 𝑑 𝑖 ≤ 𝑘 , so all jet conditions defining Q𝑘 occur on these intersections. The remaining section map is the displayed map from 𝐻 0 (𝑃, G𝑘 ). Its cokernel injects into 𝐻 1 (( 𝑘 + 1)𝐷, 𝑆 𝑋 |(𝑘 +1) 𝐷 ) by Mayer–Vietoris. Proposition 3.4 gives the dimension formula. □
+
+Since 𝑑 𝑖 = ⌈𝑘𝑎 𝑖 /𝑛 𝑖 ⌉ − 𝜖 𝑖 , one has 𝑚 = 𝑞 𝑘 + 𝑐 𝑘 . If 𝑐 𝑘 = 3, then 𝑚 = 𝑘𝑒 + Í𝑖 1/𝑛 𝑖 > 0. Thus 𝑞 𝑘 + 𝑐 𝑘 < 0 forces 𝑐 𝑘 ≤ 2, and Corollary 3.5 gives a nonzero obstruction on (𝑘 + 1)𝐷 .Only this standard plumbing realization is needed to exclude tautness. The calculation of the determinant line below proves rationality and sufficiency. 3.3. Functions and the determinant line. The construction of Pinkham [9], as described by Wahl [12, proofs of Proposition 3.1 and Theorem 3.3], gives the weighted homogeneous model from distinct points 𝑝 1, 𝑝 2, 𝑝 3 and an integral divisor 𝐵 of degree 𝑏 . Put 
+
+D = 𝐵 −
+
+> 3
+
+∑︁ 
+
+> 𝑖 =1
+
+𝑎 𝑖 
+
+𝑛 𝑖 
+
+𝑝 𝑖 , A =
+
+Ê 
+
+> 𝑘 ≥0
+
+OP1 (⌊ 𝑘 D⌋) .
+
+The partial resolution 𝑌 w = Spec P1 A maps to 𝑉 w = Spec 𝐻 0 (P1, A) . Resolving its three cyclic quotient points gives the resolution with graph Γ. One has deg D > 0 and deg ⌊𝑘 D⌋ = 𝑞 𝑘 .
+
+Lemma 3.6. Take 𝑝 1 = 0, 𝑝 2 = 1, 𝑝 3 = ∞, and 𝐵 = 𝑏 [∞] in Pinkham’s construction. A neighborhood of the exceptional divisor in its minimal good resolution is isomorphic to the standard plumbing realization. Under this isomorphism, the grading agrees with scaling the normal coordinate of the central component. Proof. Consider an arm with 𝑛 /𝑎 = [𝑏 1, . . . , 𝑏 𝑠 ]. In the lattice dual to the characters (𝑡, 𝑥 )
+
+at its attachment, the plumbing charts have rays 
+
+𝑣 0 = (0, 1), 𝑣 1 = (1, 0), 𝑣 𝑗 +1 = 𝑏 𝑗 𝑣 𝑗 − 𝑣 𝑗 −1 (1 ≤ 𝑗 ≤ 𝑠 ).
+
+The continued-fraction recurrence gives 𝑣 𝑠 +1 = (𝑛, −𝑎 ), and each adjacent pair has determi-nant −1. Contracting the arm gives the cyclic quotient chart with invariant characters 
+
+𝑡 = 𝑢 𝑛 , 𝑥 = 𝑢 −𝑎 𝑣, 
+
+for the action (𝑢, 𝑣 ) ↦ → ( 𝜁𝑢, 𝜁 𝑎 𝑣 ), where 𝜁 𝑛 = 1. These characters form a basis of the invariant character lattice. For 𝑘 ≥ 0, a function 𝑔 (𝑡 )𝑥 𝑘 is regular on the quotient chart precisely when ord 0 (𝑔 ) ≥ 
+
+ 𝑘𝑎 𝑛 
+
+
+
+.
+
+Together with the central transition 𝑥 ′ = 𝑧 𝑏 𝑥 , these conditions identify the contracted plumbing with a neighborhood of the zero section in Spec P1 A. Resolving its quotient charts recovers the original plumbing charts. The character 𝑥 has degree one in both constructions, so this identification preserves the grading. □
+
+Lemma 3.7. Let 𝑓 : e𝑈 → 𝑈 be the minimal resolution of one of the cyclic quotient charts in Pinkham’s partial resolution. Let 𝐵 be the reduced union of the strict transform of the central curve and the exceptional chain, and put 𝑀 = Oe𝑈 (−( 𝐾 e𝑈 + 𝐵 )) . Then 
+
+𝑅 1 𝑓 ∗ O e𝑈 = 𝑅 1 𝑓 ∗ 𝑀 = 0.14 H. PARK AND D. SHIN 
+
+Proof. Write the toric boundary of e𝑈 as 𝐷 0, . . . , 𝐷 𝑠 +1, where 𝐷 0 is the strict transform of the central curve, 𝐷 1, . . . , 𝐷 𝑠 form the exceptional chain, and 𝐷 𝑠 +1 is the noncompact outer divisor. Since 𝐵 = 𝐷 0 + · · · + 𝐷 𝑠 , the toric canonical divisor gives 𝑀 ≃ O e𝑈 (𝐷 𝑠 +1). For a fixed character, write 𝑟 𝑖 for its order along 𝐷 𝑖 . These orders satisfy 
+
+𝑟 𝑖 +1 = 𝑏 𝑖 𝑟 𝑖 − 𝑟 𝑖 −1, 𝑏 𝑖 ≥ 2.
+
+The regularity conditions for functions are 𝑟 𝑖 ≥ 0 on every ray. For 𝑀 , only the last condition changes, to 𝑟 𝑠 +1 ≥ − 1. Cover e𝑈 by its successive affine toric charts. A character contributes a section on a chart if the conditions along both boundary divisors hold; on the intersection with the preceding charts, only the condition along the common divisor is required. The resulting Mayer–Vietoris sequences identify the dimension of its first cohomology with one less than the number of connected components of the set of ray indices where regularity fails, or with zero if this set is empty. For functions, that set is an interval. Indeed, once a negative order is followed by a nonnegative order, the subsequent orders are positive and increasing; once a nonnegative order is followed by a negative order, the subsequent orders are negative and decreasing. Relaxing the condition at the last ray to 𝑟 𝑠 +1 ≥ − 1 cannot disconnect the set of failures. Thus first cohomology vanishes for every character of either sheaf. Since 𝑈 is affine, this proves both higher-direct-image vanishings. □
+
+Proposition 3.8. Let (𝑋 w, 𝐸 w) be the minimal good resolution of the weighted homogeneous realization of Γ. With the grading indexed by the normal coordinate of the central curve, one has 
+
+𝐻 1 (𝑋 w, O𝑋 w )𝑘 ≃ 𝐻 1 (P1, OP1 (𝑞 𝑘 )) , 𝐻 1 (𝑋 w, 𝐿 𝑋 w )𝑘 ≃ 𝐻 1 (P1, OP1 (𝑞 𝑘 − 1 + 𝑐 𝑘 )) 
+
+for 𝑘 ≥ 0, and the negative-degree groups vanish. The Euler derivation gives an exact sequence 
+
+0 → O 𝑋 w → 𝑆 𝑋 w → 𝐿 𝑋 w → 0. (3.1) 
+
+In particular, if 𝑞 𝑘 + 𝑐 𝑘 < 0, then 𝐻 1 (𝑋 w, 𝑆 𝑋 w )𝑘 ≠ 0.Proof. Contract the arms to the cyclic quotient points of the partial resolution over the central P1. At the 𝑖 -th point use the quotient chart 
+
+(𝑢, 𝑣 ) ↦ → ( 𝜁𝑢, 𝜁 𝑎 𝑖 𝑣 ), 𝜁 𝑛 𝑖 = 1, 𝑧 = 𝑢 𝑛 𝑖 , 𝑇 = 𝑢 −𝑎 𝑖 𝑣. 
+
+The central curve is 𝑣 = 0. A degree-𝑘 function 𝑔 (𝑧 )𝑇 𝑘 is regular if and only if 𝑛 𝑖 ord (𝑔 ) ≥ 
+
+𝑘𝑎 𝑖 . The degree-𝑘 function sheaf on the central curve therefore has degree 𝑞 𝑘 .For the determinant line use 
+
+𝜕 𝑧 ∧ 𝑇 𝜕 𝑇 = 1
+
+𝑛 𝑖 
+
+𝑢 1−𝑛 𝑖 𝜕 𝑢 ∧ 𝑣𝜕 𝑣 .
+
+Regularity requires 𝑛 𝑖 ord (𝑔 ) ≥ 𝑘𝑎 𝑖 + 𝑛 𝑖 − 1. Since ⌈( 𝑘𝑎 𝑖 + 𝑛 𝑖 − 1)/ 𝑛 𝑖 ⌉ = ⌈𝑘𝑎 𝑖 /𝑛 𝑖 ⌉ + 1 −
+
+1{ 𝑘𝑎 𝑖 ≡1 (mod 𝑛 𝑖 ) } , the resulting line bundle has degree 2 + 𝑏𝑘 −∑︁ 
+
+> 𝑖
+
+ 𝑘𝑎 𝑖 + 𝑛 𝑖 − 1
+
+𝑛 𝑖 
+
+
+
+= 𝑞 𝑘 − 1 + 𝑐 𝑘 .
+
+These conditions also give extension across the resolved arms. In a toric logarithmic bivector frame, a monomial has nonnegative exponents along the compact toric divisors and may have exponent −1 along the noncompact outer divisor. The exponents satisfy 𝑟 𝑗 +1 = 𝑏 𝑖 𝑗 𝑟 𝑗 − 𝑟 𝑗 −1.If an interior exponent becomes negative after a nonnegative predecessor, the following exponent is at most −2 and the negative exponents subsequently decrease. Thus the regularity inequality along the outer divisor implies the regularity inequalities along all compact toric divisors. The partial resolution is affine over P1: locally its projection is Spec C[𝑢, 𝑣 ] 𝜇 𝑛 𝑖 →
+
+Spec C[𝑧 ], and globally it is the relative spectrum of the graded algebra with degree-𝑘 part TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 15 
+
+OP1 (𝑞 𝑘 ). The pushforward of the determinant line has degree-𝑘 part OP1 (𝑞 𝑘 − 1 + 𝑐 𝑘 ).Lemma 3.7 and Leray prove the formulas. A negative degree violates the regularity inequality along the central component, so no negative-degree part occurs. Finally, 𝑏 − Í𝑖 𝑎 𝑖 /𝑛 𝑖 > 0makes the degrees of both line bundles tend to infinity. Only finitely many weight spaces of the cohomology groups are nonzero; the theorem on formal functions identifies their sum with the cohomology on a sufficiently small analytic resolution neighborhood. The existence of the nowhere-zero Euler logarithmic section, including at the cyclic quotient resolutions, is proved by Wahl [12, Proposition 3.1]. Its quotient is the determinant line, proving (3.1). Since 𝐻 2 (𝑋 w, O𝑋 w ) = 0, the resulting map 𝐻 1 (𝑆 𝑋 w ) → 𝐻 1 (𝐿 𝑋 w ) is onto in every degree. This proves the assertion. □
+
+The sufficiency argument uses two results about rational singularities. In every application of these results below, all exceptional self-intersections are at most −2, so the minimal good resolution is also the minimal resolution. For a rational singularity which is not a rational double point, Wahl [12, Corollary 4.5(iii)] proves that ℎ1 (𝐿 𝑋 ) is determined by the resolution graph. If its graph is noncyclic and star-shaped, then 
+
+ℎ1 (𝑆 𝑋 ) ≤ ℎ1 (𝐿 𝑋 ). (3.2) This inequality, with equality if and only if the singularity is quasi-homogeneous, is proved by Wahl [12, Proposition 4.8]. These two results of Wahl suffice for the star-shaped graphs considered here. We treat rational double points separately, using the following lemma. 
+
+Lemma 3.9. Let (𝑋, 𝐸 ) resolve a rational singularity, and suppose that 𝐸 is a rational tree with every self-intersection equal to −2. Then 𝐾 𝑋 is trivial on a sufficiently small resolution neighborhood and 𝐻 1 (𝑋, 𝐿 𝑋 ) = 0.Proof. The sufficiently small resolution neighborhood retracts onto 𝐸 , as is seen from its tubular plumbing neighborhoods. Since 𝐻 1 (𝑋, O𝑋 ) = 𝐻 2 (𝑋, O𝑋 ) = 0, the exponential sequence identifies Pic (𝑋 ) with 𝐻 2 (𝑋, Z). Because 𝐸 is a rational tree, the latter group is identified with the component multidegrees. Adjunction gives 𝐾 𝑋 · 𝐸 𝑣 = 0 on every component, so 𝐾 𝑋 is trivial. Thus 𝐿 𝑋 ≃ O 𝑋 (− 𝐸 ). The map 𝐻 0 (𝑋, O𝑋 ) → 𝐻 0 (𝐸, O𝐸 ) = C
+
+is onto by constants. The sequence 0 → O 𝑋 (− 𝐸 ) → O 𝑋 → O 𝐸 → 0 and rationality give 
+
+𝐻 1 (𝑋, 𝐿 𝑋 ) = 0. □
+
+Rational double points of types 𝐷 and 𝐸 are weighted homogeneous: by Brieskorn [2, Theorems 2.10–2.11], they are quotients of C2 by finite linear groups, and scalar multiplica-tion induces a positive grading on the invariant ring. Wahl [12, Proposition 3.1] therefore gives the exact sequence 0 → O 𝑋 → 𝑆 𝑋 → 𝐿 𝑋 → 0.
+
+Rationality and Lemma 3.9 imply 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0. 
+
+Lemma 3.10. Assume 𝑏 = 2. The following numerical conditions are equivalent. (a) 𝑞 𝑘 + 𝑐 𝑘 ≥ 0 for 𝑘 = 1, 2, 4.(b) The arms belong to one of the three families in Theorem 3.11. (c) 𝑞 𝑘 ≥ − 1 and 𝑞 𝑘 + 𝑐 𝑘 ≥ 0 for every 𝑘 ≥ 1.Each of these three families is automatically negative definite. Proof. Assume the first condition. Since 𝑞 1 = −1, some arm satisfies 𝑎 𝑖 = 1, so it consists of a single curve [ 𝑝 ]. If another continued fraction is at least 2, then the first family occurs. Otherwise both other continued fractions are less than 2, and the integers ⌈2𝑎 𝑖 /𝑛 𝑖 ⌉ are 1, 2, 2. Hence 𝑞 2 = −1. The arm [ 𝑝 ] contributes nothing to 𝑐 2, so one of the two other arms satisfies 2 𝑎 ≡ 1 (mod 𝑛 ). Because 𝑛 < 2𝑎 < 2𝑛 , this is 2 𝑎 = 𝑛 + 1. Its unique Hirzebruch–Jung expansion is 
+
+𝑛 𝑎 = 2𝑚 − 1
+
+𝑚 = [2, 𝑚 ].16 H. PARK AND D. SHIN 
+
+If 𝑝 ≥ 3, the second family occurs. If 𝑝 = 2, write 𝑛 /𝑎 for the remaining continued fraction. If 𝑛 /𝑎 ≥ 4/3, then the first alternative of the third family holds. If 𝑛 /𝑎 < 4/3, then the integers ⌈4𝑎 𝑖 /𝑛 𝑖 ⌉ are 2 , 3, 4, so 𝑞 4 = −1. Neither [2] nor [2, 𝑚 ] contributes to 𝑐 4, because 4𝑚 ≡ 2 (mod 2 𝑚 − 1). Thus 4 𝑎 ≡ 1 (mod 𝑛 ). Since 3 𝑛 < 4𝑎 < 4𝑛 , one has 4 𝑎 = 3𝑛 + 1, which gives 
+
+(𝑛, 𝑎 ) = (4𝑡 + 1, 3𝑡 + 1), 𝑛 𝑎 = [2, 2, 2, 𝑡 + 1].
+
+This proves (1) ⇒ ( 2) using only the three specified degrees, without a rationality assumption. We prove the inequalities for every 𝑘 ≥ 1 in each family. In the first family, order the arms so that the first is [ 𝑝 ] and 𝑛 2/𝑎 2 ≥ 2. If 𝑝 ≥ 3, then for every 𝑘 ≥ 2, 
+
+ 𝑘 𝑝 
+
+
+
++
+
+ 𝑘𝑎 2
+
+𝑛 2
+
+
+
+≤
+
+ 𝑘 
+
+3
+
+
+
++
+
+ 𝑘 
+
+2
+
+
+
+≤ 𝑘. 
+
+The last inequality follows by writing 𝑘 as 2 𝑙 or 2 𝑙 + 1. Since 
+
+l 𝑘𝑎 3
+
+> 𝑛 3
+
+m
+
+≤ 𝑘 , this gives 𝑞 𝑘 ≥ 0. At degree one the arm [ 𝑝 ] contributes to 𝑐 1. If 𝑝 = 2, the sum 
+
+l 𝑘𝑎 1
+
+> 𝑛 1
+
+m
+
++
+
+l 𝑘𝑎 2
+
+> 𝑛 2
+
+m
+
+is at most 2⌈𝑘 /2⌉. Thus 𝑞 𝑘 ≥ 0 for even 𝑘 , while 𝑞 𝑘 ≥ − 1 for odd 𝑘 , when the arm [2] contributes to 
+
+𝑐 𝑘 . This proves both inequalities in the first family. In the second family put 𝑛 = 2𝑚 − 1. Since 𝑝 ≥ 3 and 𝑚 /𝑛 ≤ 2/3, 
+
+ 𝑘 𝑝 
+
+
+
++
+
+ 𝑘𝑚 𝑛 
+
+
+
+≤
+
+ 𝑘 
+
+3
+
+
+
++
+
+ 2𝑘 
+
+3
+
+
+
+≤ 𝑘 + 1.
+
+Hence 𝑞 𝑘 ≥ − 1. If 𝑞 𝑘 = −1, equality holds in this bound and 3 ∤ 𝑘 . For 𝑘 = 3𝑙 + 1, equality requires ⌈𝑘 /𝑝 ⌉ = 𝑙 + 1, hence ( 𝑝 − 3)𝑙 < 1. Thus 𝑙 = 0 or 𝑝 = 3, and 𝑘 ≡ 1 (mod 𝑝 );the arm [ 𝑝 ] contributes to 𝑐 𝑘 . For 𝑘 = 3𝑙 + 2, equality requires ⌈𝑘𝑚 /𝑛 ⌉ = 2𝑙 + 2, hence 
+
+𝑙 (𝑚 − 2) < 1. Thus 𝑙 = 0 or 𝑚 = 2, and 𝑘𝑚 ≡ 1 (mod 𝑛 ); the arm [2, 𝑚 ] contributes to 𝑐 𝑘 .This proves the inequalities in the second family. In the third family put 𝑛 = 2𝑚 − 1 and 𝑧 = 1 − 𝑎 3/𝑛 3. In its first alternative 𝑧 ≥ 1/4. In the second alternative 𝑧 = 𝑡 /( 4𝑡 + 1) ≥ 1/5. For odd 𝑘 , substitution in the definition of 𝑞 𝑘 
+
+gives 
+
+𝑞 𝑘 = ⌊𝑘 𝑧 ⌋ − 
+
+ 12 + 𝑘 
+
+2𝑛 
+
+
+
+≥
+
+ 𝑘 
+
+5
+
+
+
+−
+
+ 12 + 𝑘 
+
+6
+
+
+
+≥ − 1.
+
+Indeed, for odd 𝑘 ,  𝑘 
+
+6 − 12
+
+
+
+=
+
+ 𝑘 + 16
+
+
+
+≤
+
+ 𝑘 
+
+5
+
+
+
+.
+
+For 𝑘 ≥ 5 the last inequality follows from (𝑘 + 1)/ 6 ≤ 𝑘 /5, and 𝑘 = 1, 3 are immediate. The arm [2] contributes to 𝑐 𝑘 in every odd degree. For even 𝑘 = 2𝑙 , the formula becomes 
+
+𝑞 2𝑙 = ⌊2𝑙𝑧 ⌋ − 
+
+ 𝑙 𝑛 
+
+
+
+,
+
+and the arm [2, 𝑚 ] contributes to 𝑐 2𝑙 if and only if 𝑙 ≡ 1 (mod 𝑛 ). If 𝑛 ≥ 5, then 
+
+𝑞 2𝑙 ≥
+
+ 2𝑙 
+
+5
+
+
+
+−
+
+ 𝑙 
+
+5
+
+
+
+.
+
+Writing 𝑙 = 5𝑠 + 𝑟 , 0 ≤ 𝑟 < 5, the expression on the right is 𝑠 for 𝑟 = 0, 3, 4 and 𝑠 − 1for 𝑟 = 1, 2. It is nonnegative except at 𝑙 = 1, 2, where it is −1. At 𝑙 = 1 the arm [2, 𝑚 ]
+
+contributes to 𝑐 2. At 𝑙 = 2, either 𝑧 ≥ 1/4 gives 𝑞 4 ≥ 0, or the exceptional third arm contributes to 𝑐 4.It remains to take 𝑛 = 3. Define 
+
+𝑓 (𝑙 ) =
+
+ 2𝑙 
+
+5
+
+
+
+−
+
+ 𝑙 
+
+3
+
+
+
+.TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 17 
+
+One has 𝑓 (𝑙 + 15 ) = 𝑓 (𝑙 ) + 1, and for 1 ≤ 𝑙 ≤ 15 the values are 
+
+𝑓 (𝑙 ) =
+
+
+
+−1, 𝑙 ∈ { 1, 2, 4, 7},
+
+1, 𝑙 = 15 ,
+
+0, otherwise .
+
+At 𝑙 = 1, 4, 7, the arm [2, 2] contributes to 𝑐 2𝑙 ; the calculation for 𝑘 = 4 treats 𝑙 = 2. Thus the inequalities hold in every degree. This proves (2) ⇒ ( 3); the implication (3) ⇒ ( 1) is immediate. For negative definiteness, in the first two families one has 𝑎 1/𝑛 1 + 𝑎 2/𝑛 2 ≤ 1, while 
+
+𝑎 3/𝑛 3 < 1. In the third family, Í𝑖 𝑎 𝑖 /𝑛 𝑖 ≤ 1/2 + 2/3 + 4/5 = 59 /30 < 2. □
+
+Theorem 3.11. If 𝑏 ≥ 3, every negative definite graph Γ as above is rational and taut. If 
+
+𝑏 = 1, no such graph is taut. If 𝑏 = 2, the following conditions are equivalent. (a) The graph Γ is taut. (b) The inequalities 𝑞 𝑘 ≥ − 1 and 𝑞 𝑘 + 𝑐 𝑘 ≥ 0 hold for every 𝑘 ≥ 1.(c) Those inequalities hold for 𝑘 = 1, 2, 4.(d) After a permutation of the arms, one of the following holds: (d-1) the arms include [ 𝑝 ], 𝑝 ≥ 2, and an arm with continued fraction 𝑛 /𝑎 ≥ 2;(d-2) the arms include [ 𝑝 ], 𝑝 ≥ 3, and [2, 𝑚 ], 𝑚 ≥ 2;(d-3) the arms are [2], [2, 𝑚 ], 𝑚 ≥ 2, and an arm with continued fraction 𝑛 /𝑎 ≥ 4/3,or with expansion [2, 2, 2, 𝑡 + 1], 𝑡 ≥ 1.Every graph in the three displayed families is rational. The unspecified third arm in the first two families is arbitrary. Proof. Suppose first that 𝑏 = 1. In degree one with respect to the normal coordinate of 
+
+𝑃 , one has 𝑞 1 = −2, and 𝑐 1 counts the arms consisting of a single curve. If 𝑐 1 = 0, 1, 2, the restriction map from the central section space to the three jet quotients has cokernel of dimension 3 , 2, 1, respectively, by Corollary 3.5. If 𝑐 1 = 3, every arm consists of a single curve. In degree two, each integer ⌈2𝑎 𝑖 /𝑛 𝑖 ⌉ equals one and 𝑐 2 = 0. Thus 𝑞 2 = −1, and the same corollary gives a nonzero cokernel of the restriction map. Hence Γ is not taut. For 𝑏 = 2, tautness and Corollary 3.5 imply 𝑞 𝑘 + 𝑐 𝑘 ≥ 0 for 𝑘 = 1, 2, 4. Lemma 3.10 then gives the three families and both inequalities in every degree. The same lemma proves the equivalence of the second, third, and fourth conditions. Moreover, for 𝑏 = 1, or for 𝑏 = 2outside these families, the obstruction occurs in degree one, two, or four. Thus Corollary 3.5 gives a standard plumbing realization with 𝐻 1 (𝑟 𝐸, 𝑆 𝑋 |𝑟 𝐸 ) ≠ 0 for some 𝑟 ∈ { 2, 3, 5}.Conversely, suppose that 𝑏 = 2 and the arms belong to a displayed family. Lemma 3.10 gives 𝑞 𝑘 ≥ − 1 and 𝑞 𝑘 + 𝑐 𝑘 ≥ 0 for every 𝑘 ≥ 1. Proposition 3.8 gives 𝐻 1 (O 𝑋 w ) =
+
+𝐻 1 (𝐿 𝑋 w ) = 0. Rationality is a property of the weighted resolution graph by the numerical criterion for rational singularities of Artin [1, Theorem 3, p. 132]. For singularities other than rational double points, graph invariance gives 𝐻 1 (𝐿 𝑋 ) = 0, and (3.2) gives 𝐻 1 (𝑆 𝑋 ) = 0, for every realization. For rational double points, the argument following Lemma 3.9 gives 
+
+𝐻 1 (𝑆 𝑋 ) = 0 directly. The cohomological criterion for tautness proves sufficiency. If 𝑏 ≥ 3, then ⌈𝑘𝑎 𝑖 /𝑛 𝑖 ⌉ ≤ 𝑘 gives 𝑞 𝑘 ≥ ( 𝑏 − 3)𝑘 ≥ 0 and 𝑞 𝑘 + 𝑐 𝑘 ≥ 0 for every 𝑘 ≥ 1. The preceding cohomological argument again proves rationality and tautness. Lemma 3.10 also supplies the asserted negative definiteness of the three families. □
+
+In the first family, an arm with continued fraction 𝑛 /𝑎 ≥ 2 is either the single curve [2],or its first component has self-intersection at most −3. In the third family, the inequality 
+
+𝑛 /𝑎 ≥ 4/3 means that either the arm has at most three components, each with self-intersection 
+
+−2, or at most two initial components have self-intersection −2 before the first component with self-intersection at most −3. These equivalences follow by iterating 𝑟 ↦ → 2 − 1/𝑟 and impose no restriction on the remaining self-intersections. 18 H. PARK AND D. SHIN 
+
+4. Local restrictions at two branching components Let 𝐸 be a rational tree with exactly two trivalent components 𝑃 and 𝑄 . Write 𝑃 2 = −𝑏 𝑃 ,and let 𝑠 𝑃 be the number of its two outward arms containing at least two components; define 
+
+𝑏 𝑄 , 𝑠 𝑄 similarly. Let 𝐶 = 𝐶 1 + · · · + 𝐶 𝑚 be the reduced chain strictly between 𝑃 and 𝑄 , in that order, and write 𝐶 2 
+
+> 𝑗
+
+= −𝑐 𝑗 . Put 
+
+𝑑 =
+
+> 𝑚
+
+∑︁ 
+
+> 𝑗 =1
+
+(𝑐 𝑗 − 2).
+
+If the connecting chain is empty, set 𝑑 = 0. Sequences describing arms are read away from the branching component. Every component other than 𝑃, 𝑄 has self-intersection at most 
+
+−2. 4.1. Necessary local restrictions. Cohomology on cycles contained in 2 𝐸 gives necessary conditions on the node self-intersections and outward arms. One-node subgraphs impose further restrictions on initial components of self-intersection −2. 
+
+Proposition 4.1. Put 𝑅 end = Í 𝐸 𝑖 , where the sum is over the four end components, and set 
+
+𝐸 ′ = 𝐸 − 𝑅 end . Then 
+
+𝐻 0 (𝐸 ′, 𝑆 𝑋 |𝐸 ′ ) = 𝐻 1 (𝐸 ′, 𝑆 𝑋 |𝐸 ′ ) = 0.
+
+Consequently the cycle 𝑍 2 = 𝐸 + 𝐸 ′ ≤ 2𝐸 satisfies 
+
+𝐻 1 (𝑍 2, 𝑆 𝑋 |𝑍 2 ) ≃ 𝐻 1 (𝐸, 𝑆 𝑋 (− 𝐸 ′)| 𝐸 ).
+
+If 𝑏 𝑃 = 1, or if 𝑏 𝑃 = 2, 𝑠 𝑃 = 2, then every analytic realization has 𝐻 1 (𝑋, 𝑆 𝑋 ) ≠ 0.Proof. On a trivalent component 𝑆 𝑋 restricts to O ⊕ O(− 1); on a component of valency two it restricts to O⊕2. Removing the outward chains in the normalization sequence for 𝐸 ′
+
+leaves the two normal Euler lines and the chain joining them. In the ordered logarithmic bases the transport across a component of self-intersection −𝑏 is 
+
+𝑇 𝑏 =
+
+ 𝑏 1
+
+−1 0
+
+
+
+.
+
+The cone 𝛼 > 0, 𝛽 ≤ 0, 𝛼 + 𝛽 ≥ 0 is preserved by 𝑇 𝑏 for 𝑏 ≥ 2, since the image has coordinate sum (𝑏 − 2)𝛼 + 𝛼 + 𝛽 . The left normal Euler line starts at (1, 0), whereas the right line, in the ordered logarithmic bases at the crossing, is (0, 1). They cannot coincide after transport. Thus 𝐻 0 (𝐸 ′, 𝑆 𝑋 |𝐸 ′ ) = 0. The normalization sequence gives 𝜒 (𝐸 ′, 𝑆 𝑋 |𝐸 ′ ) = 0, so 𝐻 1 is also zero. The exact sequence 0 → 𝑆 𝑋 (− 𝐸 ′)| 𝐸 → 𝑆 𝑋 |𝐸 +𝐸 ′ → 𝑆 𝑋 |𝐸 ′ → 0gives the asserted isomorphism. Set 𝐹 = 𝑆 𝑋 (− 𝐸 ′). At 𝑃 , the equality 𝐸 ′ · 𝑃 = −𝑏 𝑃 + 1 + 𝑠 𝑃 gives 
+
+𝐹 |𝑃 ≃ O P1 (𝑏 𝑃 − 1 − 𝑠 𝑃 ) ⊕ O P1 (𝑏 𝑃 − 2 − 𝑠 𝑃 ).
+
+Normalization gives a natural surjection 𝐻 1 (𝐸, 𝐹 |𝐸 ) → 𝐻 1 (𝑃, 𝐹 |𝑃 ). For 𝑏 𝑃 = 2, 𝑠 𝑃 = 2, its target contains 𝐻 1 (O P1 (− 2)) . For 𝑏 𝑃 = 1, 𝑠 𝑃 ≥ 1, its dimension is 2 𝑠 𝑃 − 1. If 
+
+𝑏 𝑃 = 1, 𝑠 𝑃 = 0, project the normalization targets to the two edges joining 𝑃 to its outward end components. The target has dimension four, while the only contributing section spaces have total dimension three: one from 𝑃 and one from each end component. Thus its cokernel is nonzero. Restriction from 𝑋 to 𝑍 2 is surjective on 𝐻 1 by Lemma 2.1, proving the last assertion. □
+
+Lemma 4.2 (Boundary values after matching the outward arms) . Assume that 𝑏 𝑃 , 𝑏 𝑄 ≥ 2,and that 𝑠 𝑈 ≤ 1 whenever 𝑏 𝑈 = 2, for 𝑈 = 𝑃, 𝑄 . Put 𝐹 = 𝑆 𝑋 (− 𝐸 ′). Let 𝐸 𝑃 be the reduced TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 19 
+
+union of 𝑃 and its two outward arms, and let 𝑝 𝑃 be the point where 𝑃 meets the connecting path towards 𝑄 . Define 
+
+𝑊 𝑃 = im 
+
+
+
+𝐻 0 (𝐸 𝑃 , 𝐹 |𝐸 𝑃 ) → 𝐹 | 𝑝 𝑃 
+
+
+
+,
+
+and define 𝑊 𝑄 similarly. In ordered logarithmic bases, these spaces are 
+
+(𝑏 𝑃 , 𝑠 𝑃 ) 𝑊 𝑃 
+
+𝑏 𝑃 ≥ 4, or 𝑏 𝑃 = 3, 𝑠 𝑃 ≤ 1 C2
+
+𝑏 𝑃 = 3, 𝑠 𝑃 = 2 C(0, 1)
+
+𝑏 𝑃 = 2, 𝑠 𝑃 = 0 C(1, −𝜏 𝑃 )
+
+𝑏 𝑃 = 2, 𝑠 𝑃 = 1 0
+
+𝜏 𝑃 = 2 − 1
+
+𝑝 − 1
+
+𝑞 ≥ 1
+
+in the third row, where the two outward end components have self-intersections −𝑝, −𝑞 . If 
+
+𝑑 = 0, then 
+
+𝐻 1 (𝐸, 𝐹 |𝐸 ) ≃ C2/( 𝑄 𝑚 𝑊 𝑃 + 𝑊 𝑄 ),𝑄 𝑚 = 𝑇 𝑚  
+
+> 2
+
+𝐽 =
+
+ 𝑚 𝑚 + 11 − 𝑚 −𝑚 
+
+
+
+, 𝐽 =
+
+0 11 0
+
+
+
+.
+
+If 𝑑 > 0, then 𝐻 1 (𝐸, 𝐹 |𝐸 ) = 0. Consequently, if the graph is taut and 𝑏 𝑃 = 2, 𝑠 𝑃 = 1, 𝑑 = 0,then 
+
+𝑏 𝑄 ≥ 4, or 𝑏 𝑄 = 3, 𝑠 𝑄 ≤ 1. (4.1) 
+
+Proof. Choose the connecting attachment on 𝑃 to be 𝑥 = 0, and the outward attachments to be 𝑥 = 1, −1. A section of 𝐹 |𝑃 is 
+
+𝐴 (𝑥 )𝑥 (𝑥 2 − 1)𝜕 𝑥 + 𝐵 (𝑥 )𝑦𝜕 𝑦 ,
+
+after choosing a local generator of O𝑋 (− 𝐸 ′), with deg 𝐴 ≤ 𝑏 𝑃 − 2 − 𝑠 𝑃 , deg 𝐵 ≤ 𝑏 𝑃 − 𝑠 𝑃 , 𝐵 𝑏 𝑃 −𝑠 𝑃 = −𝑏 𝑃 𝐴 𝑏 𝑃 −2−𝑠 𝑃 .
+
+If the bound on 𝐴 is negative, 𝐴 = 0 and the degree of 𝐵 drops by one. Its value at the attachment to the connecting chain is (− 𝐴 (0), 𝐵 (0)) . An outward end component of self-intersection −𝑝 imposes 𝐵 (1) = −2𝐴 (1)/ 𝑝 ; at −1 the analogous equation is 
+
+𝐵 (− 1) = −2𝐴 (− 1)/ 𝑞 . An arm of length at least two imposes no condition: at its last nonterminal component the twist has positive degree, so its two values can be prescribed independently, while all preceding components have nonnegative degree and evaluation from its terminal component has one-dimensional image. These equations verify every row. If 𝑏 𝑃 = 2, 𝑠 𝑃 = 1, 𝐴 = 0, 𝐵 is constant, and the remaining end condition forces 𝐵 = 0. If 𝑏 𝑃 = 3, 𝑠 𝑃 = 2, 𝐴 = 0 and 𝐵 is an arbitrary constant. If 𝑏 𝑃 = 2, 𝑠 𝑃 = 0, 𝐴 = 𝑎 , 𝐵 = −2𝑎𝑥 2 + 𝑑𝑥 + 𝑐 , and the two equations give 
+
+𝑐 = (2 − 1/𝑝 − 1/𝑞 )𝑎 , hence the stated line. For 𝑏 𝑃 = 3, 𝑠 𝑃 = 1, choose 𝐴 constant and 
+
+𝐵 = −3𝐴𝑥 2 + 𝑑𝑥 + 𝑐 ; its free coefficient 𝑑 can be chosen to satisfy the condition at the outward attachment without changing 𝐴, 𝑐 . For 𝑏 𝑃 = 3, 𝑠 𝑃 = 0, choose 𝐴 constant and use the two free coefficients of a quadratic 𝐵 other than its prescribed constant to satisfy the conditions at both outward attachments. For 𝑏 𝑃 = 4, 𝑠 𝑃 = 2, the constant 𝐴 and 
+
+𝐵 = −4𝐴𝑥 2 + 𝑑𝑥 + 𝑐 already give arbitrary values at the connecting attachment. For all larger remaining values, interpolation with the same constant 𝐴 and quadratic 𝐵 satisfies the degree bounds and the conditions on the highest coefficients, giving the full fiber. All component first cohomology groups vanish under the hypotheses. When 𝑑 = 0, normalization therefore reduces the cohomology to the displayed quotient. The transport along the 𝑚 connecting components is 𝑇 𝑚  
+
+> 2
+
+; the final exchange of tangent and normal entries gives the factor 𝐽 . For the empty chain this reads 𝑄 0 = 𝐽 , so the same formula applies. If a connecting component has self-intersection at most −3, the twist has degree at least one on that component. Evaluation at its two attachment points is then surjective onto the product of the fibers, and the remaining cokernel is zero. Finally, when 𝑏 𝑃 = 2, 𝑠 𝑃 = 1, 𝑑 = 0, the 20 H. PARK AND D. SHIN 
+
+table gives 𝑊 𝑃 = 0. By Proposition 4.1 and the restriction surjection, tautness requires 
+
+𝑊 𝑄 = C2, which is exactly (4.1). □
+
+Lemma 4.3. Suppose every component of a negative-definite graph with two nodes has self-intersection at most −2. Let 𝑃 2 = −2, with outward arms [ 𝑝 ] and 𝐴 . Either of the following conditions gives an analytic realization and an effective cycle 𝑌 with 𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) ≠ 0:(a) 𝐴 has length at least three, and the first component of each of 𝐴 and the connecting chain has self-intersection −2;(b) 𝑝 = 2, 𝐴 = [2, 𝑎 ], and the first three components of the connecting chain have self-intersection −2.One may take 𝑌 ≤ 3𝐸 in the first case and 𝑌 ≤ 5𝐸 in the second. Consequently neither condition occurs in a taut graph. Proof. In the first case retain the arm consisting of a single component, the first three components of 𝐴 , and a three-component path starting along the connecting chain. If that path reaches the other node, continue along one of its outward arms. Such a path exists even when the connecting chain has only one component. The full subgraph on these components is a star-shaped graph 𝐷 with arms [ 𝑝 ], [2, 𝑢, 𝑣 ], [2, 𝑢 ′, 𝑣 ′]. Its matrix is a principal submatrix of the negative-definite intersection matrix, and every component has self-intersection at most −2. For 𝑛 /𝑎 = [2, 𝑢, 𝑣 ],
+
+𝑎 = 𝑢𝑣 − 1, 𝑛 = 2𝑢𝑣 − 𝑣 − 2, 2𝑎 − 𝑛 = 𝑣 ≥ 2.
+
+In degree two in the normal coordinate of the central component the three vanishing orders in Proposition 3.4 are therefore (1, 2, 2), and none of the three congruences 𝑘𝑎 𝑖 ≡ 1 (mod 𝑛 𝑖 )
+
+holds. Thus 𝑚 = 4 − 5 = −1, 𝑐 = 0, and 
+
+F2 ≃ O P1 (− 1) ⊕ O P1 (− 2), ℎ1 (F 2) = 1.
+
+Corollary 3.5 gives a nonzero obstruction on 3 𝐷 in the standard plumbing realization. In the second case retain the two outward arms and a five-component path starting along the connecting chain, again continuing along one outward arm at the other node when necessary. The path exists because the connecting chain has at least three components. The star-shaped full subgraph formed by these components has arms [2], [2, 𝑎 ], [2, 2, 2, 𝑢, 𝑣 ].For the last arm, 
+
+𝑛 ′/𝑎 ′ = [2, 2, 2, 𝑢, 𝑣 ], 𝑎 ′ = 3𝑢𝑣 − 2𝑣 − 3, 𝑛 ′ = 4𝑢𝑣 − 3𝑣 − 4,
+
+4𝑎 ′ − 3𝑛 ′ = 𝑣 ≥ 2.
+
+In degree four in the normal coordinate of the central component the vanishing orders are 
+
+(2, 3, 4). The first arm does not satisfy the congruence condition; on the second, 4 𝑎 ≡ 2
+
+(mod 2 𝑎 −1); and the displayed inequality excludes the congruence condition on the last arm. Hence 𝑚 = 8 − 9 = −1, 𝑐 = 0. The bundle F4 is again O(− 1) ⊕ O(− 2), and Corollary 3.5 gives a nonzero obstruction on 5 𝐷 .In either case extend this standard realization to the full graph by Lemma 2.7. Lemma 2.6 gives a surjection from 𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) to 𝐻 1 (𝑌 , Θ𝑋 (− log 𝐷 )| 𝑌 ), which is nonzero. This preserves the bounds 3 𝐷 ≤ 3𝐸 and 5 𝐷 ≤ 5𝐸 . Restriction from 𝑋 to that cycle and Theorem 2.5 prove the last assertion. □
+
+Proposition 4.4. For a taut graph with two nodes, every component has self-intersection at most −2. For each ordered pair (𝑃, 𝑄 ) with 𝑏 𝑃 = 2, one has 𝑠 𝑃 ≤ 1. At each such node, if 
+
+𝑠 𝑃 = 1, then the outward arms and the connecting chain have one of the forms in Table 1, without imposing its last column. If 𝑠 𝑃 = 1 and 𝑑 = 0, then (4.1) holds. Proof. Every nonbranching component has self-intersection at most −2, since the resolution is minimal and good. Proposition 4.1 excludes 𝑏 𝑃 = 1, and excludes 𝑠 𝑃 = 2 when 𝑏 𝑃 = 2. Apply the same argument at 𝑄 .TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 21 
+
+Suppose 𝑏 𝑃 = 2, 𝑠 𝑃 = 1, and write the outward arms as [ 𝑝 ] and 𝐴 . If the first component of 𝐴 has self-intersection at most −3, the first row with 𝑠 𝑃 = 1 in Table 1 applies. Otherwise 
+
+𝐴 begins with a component of self-intersection −2. For an arm of length two, 𝐴 = [2, 𝑎 ],the next row applies when 𝑝 ≥ 3. When 𝑝 = 2, the second condition in Lemma 4.3 excludes three initial connecting components of self-intersection −2. Thus their maximal initial sequence has length zero, one, or two, giving the next two rows of the table. If 𝐴 has length at least three, the first condition in that lemma forces the connecting chain to be empty or to begin with a component of self-intersection at most −3, giving the last row. These alternatives give all the required arm and chain forms without their last-column conditions. When 𝑠 𝑃 = 1, 𝑑 = 0, Lemma 4.2 gives (4.1). □
+
+4.2. A cycle assembled from eight local cases. We now assume that every component has self-intersection at most −2 and that the restrictions stated in Proposition 4.4 hold. At a branching component 𝑃 , consider the maximal initial sequence of connecting components, read from 𝑃 , all of self-intersection −2. Let 𝐾 1, . . . , 𝐾 ℎ be the connecting components included with 𝑃 below. In cases (i)–(iii) none is included, so ℎ = 0. In cases (iv)–(vii) include this entire maximal sequence; in cases (v)–(vii) its length is 0 , 1, 2, respectively, and the arm and chain forms in Table 1 exclude greater lengths. In case (viii) the maximal sequence is empty by the arm and chain forms in Table 1, and ℎ = 0. In the table, coefficients are cycle multiplicities, and 𝑝, 𝑎, 𝑏 𝑃 are defined by the self-intersections −𝑝, −𝑎, −𝑏 𝑃 . Put 
+
+𝑇 = 𝑃 + 𝐾 1 + · · · + 𝐾 ℎ.Case Local data Cycle 𝑊 𝐽 
+
+(i) 𝑏 𝑃 = 2, arms [ 𝑝 ], 𝐴 = 𝐴 1 + · · · + 
+
+𝐴 𝑙 , 𝑙 ≥ 2, first component of self-intersection at most −32𝑃 + 𝐵 1 + Í𝑙 𝑗 =1 𝐴 𝑗 2(ii) 𝑏 𝑃 = 2, two end components 
+
+𝐵 1, 𝐵 2
+
+2𝑃 + 𝐵 1 + 𝐵 2 2(iii) 𝑏 𝑃 ≥ 3, arbitrary two outward arms twice 𝑃 and every nonterminal outward component, once every outward end component 2(iv) 𝑏 𝑃 = 2, arms [ 𝑝 ], [2, 𝑎 ], 𝑝 ≥ 3 3𝑇 + 𝐵 1 + 2𝐴 1 + 𝐴 2 3(v) 𝑏 𝑃 = 2, arms [2], [2, 𝑎 ], ℎ = 0 3𝑃 + 2𝐵 1 + 2𝐴 1 + 𝐴 2 3(vi) same arms, ℎ = 1 4𝑃 + 2𝐵 1 + 3𝐴 1 + 2𝐴 2 + 3𝐾 1 3(vii) same arms, ℎ = 2 6𝑃 +3𝐵 1 +4𝐴 1 +2𝐴 2 +5𝐾 1 +4𝐾 2 4(viii) 𝑏 𝑃 = 2, arms [ 𝑝 ], 𝐴 1, . . . , 𝐴 𝑙 ,
+
+𝑙 ≥ 3, first component of self-intersection −24𝑃 + 2𝐵 1 + Í𝑙 𝑗 =1 min (4, 𝑙 + 1 −
+
+𝑗 ) 𝐴 𝑗 
+
+4Table 2. The eight effective cycles. The last column gives the coefficient of the last component of 𝑇 .The included sequences at the two ends do not overlap. If 𝑑 > 0, a component of self-intersection at most −3 separates them. If 𝑑 = 0, the restriction in (4.1) prevents both ends from including connecting components. These cases exhaust the possibilities allowed by the restrictions stated in Proposition 4.4. Indeed a branching component of self-intersection −2 has either two end components or one end component and one arm of length at least two. If the first component of that arm has self-intersection at most −3, use (i). Otherwise an arm of length two gives (iv)–(vii); an arm of greater length forces ℎ = 0, giving (viii). A branching component of self-intersection at most −3 gives (iii). 22 H. PARK AND D. SHIN 
+
+Let 𝑊 𝐿 , 𝑊 𝑅 be the resulting cycles at the two ends. If a nonempty connecting chain remains, denote its reduced cycle by 𝐾 , and set 
+
+𝑍 = 𝑊 𝐿 + 2𝐾 + 𝑊 𝑅 .
+
+If all connecting components have been included in 𝑊 𝐿 or 𝑊 𝑅 , put 𝑍 = 𝑊 𝐿 + 𝑊 𝑅 . The reduced supports meet transversely at the indicated points, and the cycles meet along the corresponding scheme-theoretic intersections. When 𝐾 = 0, one of 𝑊 𝐿 , 𝑊 𝑅 is of case (iii), unless both are of case (ii). This follows from the restriction in (4.1). 
+
+Proposition 4.5. Every coefficient of 𝑍 is at most six. If the condition in the last column of Table 1 also holds, then 𝑍 is anti-nef. The construction, including the restrictions of 𝑆 𝑋 ,is defined for every analytic realization and uses no choice of a weighted homogeneous structure on the full graph. Proof. The coefficient bound follows from Table 2. We first compute the intersections for an endpoint piece whose adjacent exterior component has coefficient two; direct intersections with an endpoint piece of larger coefficient are treated below. All outward intersections are nonpositive by direct substitution. For example case (vii) gives intersections zero at 
+
+𝑃, 𝐵 1, 𝐴 1, 𝐾 1, 4 − 2𝑎 at 𝐴 2, and −1 at 𝐾 2, when the adjacent remaining component has coefficient two. Case (viii) gives 𝑛 1 − 4 ≤ 0 at 𝑃 , 4 − 2𝑝 ≤ 0 at 𝐵 1, and nonpositive second differences along 𝑛 𝑗 = min (4, 𝑙 + 1 − 𝑗 ). In case (iv), the node intersection is −1 when 
+
+ℎ = 0, and zero when ℎ > 0; its last connecting component has intersection −1. Cases (v), (vi) give the same conclusion by their displayed coefficients. In case (i), the intersection with the first component of the arm of length at least two is 3 − 𝑏 𝐴 1 ≤ 0; in cases (ii), (iii), the node intersections are respectively zero and at most −2𝑏 𝑃 + 4 + 𝑠 𝑃 ≤ 0. If an endpoint contributes 𝐽 > 2, its adjacent component of 𝐾 , when present, has self-intersection at most −3, by maximality of the included sequence and the arm and chain forms in Table 1. Consequently every component of self-intersection −2 remaining in 
+
+𝐾 has neighboring cycle coefficients at most two. A component of self-intersection −𝑐 ,where 𝑐 ≥ 3, at an end of a connecting chain of length at least two has intersection at most 
+
+−2𝑐 + 4 + 2 ≤ 0. For a single remaining component the condition is 𝐽 𝐿 + 𝐽 𝑅 ≤ 2𝑐 . It is automatic for 𝑐 ≥ 4. For 𝑐 = 3, a piece of case (ii) or (iii) contributes 𝐽 = 2; if both branching components have self-intersection −2, the condition in the last column of Table 1 excludes cases (vii),(viii), leaving 𝐽 𝐿 , 𝐽 𝑅 ≤ 3. When 𝐾 = 0 and one branching component is of case (iii), the intersection with that component is 
+
+−2𝑏 𝑄 + 2 + 𝑠 𝑄 + 𝐽. 
+
+For 𝐽 ≤ 2 this is nonpositive. For 𝐽 = 3, the restriction in (4.1) gives 𝑠 𝑄 ≤ 1 when 𝑏 𝑄 = 3; for 𝐽 = 4, the condition in the last column of Table 1 gives 𝑠 𝑄 = 0 when 𝑏 𝑄 = 3. For 
+
+𝑏 𝑄 ≥ 4, the displayed intersection is nonpositive. When 𝐾 = 0 and both endpoint cycles are of case (ii), all intersections are also nonpositive. This proves anti-nefness. □
+
+4.3. Comparison with one-node configurations. We use taut one-node configurations to compute restriction maps near the endpoint cycles. The comparison also gives the cohomology vanishing and lifting sequences in Lemma 4.7. 
+
+Lemma 4.6. Let 𝑊 be an exceptional cycle, let 𝐶 be a component not contained in its support, and put 𝐷 = 𝑊 red + 𝐶 . Suppose that 𝐷 is connected, its graph is a negative-definite taut minimal good resolution graph, and every component of 𝐸 − 𝐷 is disjoint from 𝑊 red . A neighborhood of 𝐷 is analytically isomorphic to a neighborhood of the exceptional divisor in any fixed realization of its graph. Transport 𝑊, 𝐶 by this isomorphism. For every 𝑚 ≥ 1,the induced identifications of functions and logarithmic sections on 𝑊 and 𝑊 ∩ 𝑚𝐶 commute with their restriction maps, multiplication of functions, and multiplication of sections by functions. The logarithmic bundle on the fixed realization is taken with respect to its full TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 23 
+
+exceptional divisor. In the standard star-shaped realizations used below, the isomorphism may be chosen to preserve prescribed component labels. Proof. Contract 𝐷 on a sufficiently small neighborhood by the contraction theorem of Grauert [4]. The graph hypothesis makes this contraction the minimal good resolution of the resulting normal surface singularity. Tautness identifies this singularity with the one associated with the fixed realization. By the uniqueness of the minimal good resolution proved by Laufer [5, Chapter V], this isomorphism lifts to an analytic isomorphism of neighborhoods of the exceptional divisors. Indeed, composing a resolution map with the singularity isomorphism gives another minimal good resolution of the same singularity, so uniqueness identifies the resolutions. The lift is unique because its restriction outside the exceptional divisor is prescribed. Label the components of the target by their inverse images under this lift. In every application below, the fixed realization is a standard plumbing realization of a trivalent star with all arm self-intersections at most −2. If its components have already been labelled, the induced map differs from the prescribed labelling by a weighted graph automorphism 𝜎 . Compose the lift with the biholomorphism inducing 𝜎 −1
+
+from Lemma 3.2. In these applications the resulting lift preserves the prescribed labels, and hence the prescribed cycle 𝑊 and component 𝐶 .The omitted components are disjoint from the support of 𝑊 . Hence Θ𝑋 (− log 𝐸 ) =Θ𝑋 (− log 𝐷 ) on an open neighborhood of that support. The lift identifies the ambient logarithmic bundles and preserves the Cartier ideals defining 𝑊 and 𝑚𝐶 . It therefore identifies their scheme-theoretic intersection and both restriction maps. Since the identification comes from an analytic isomorphism, it also preserves multiplication of functions and its action on sections. □
+
+Lemma 4.7. For every cycle 𝑊 in Table 2, 
+
+𝐻 1 (𝑊, 𝑆 𝑋 |𝑊 ) = 𝐻 1 (𝑊, O𝑊 ) = 0.
+
+If 𝐾 ≠ 0, then 𝑆 𝑋 |𝐾 ≃ O ⊕2 
+
+> 𝐾
+
+, the line bundle 𝐼 = O𝐾 (− 𝐾 ) has nonnegative component degrees, and 
+
+𝐻 1 (2𝐾, 𝑆 𝑋 |2𝐾 ) = 𝐻 1 (2𝐾, O2𝐾 ) = 0.
+
+There are exact lifting sequences 
+
+0 → 𝐻 0 (𝐾, 𝐼 )⊕2 → 𝐻 0 (2𝐾, 𝑆 𝑋 |2𝐾 ) → 𝐻 0 (𝐾, 𝑆 𝑋 |𝐾 ) → 0,
+
+0 → 𝐻 0 (𝐾, 𝐼 ) → 𝐻 0 (2𝐾, O2𝐾 ) → C → 0.
+
+These conclusions do not require 𝑍 to be anti-nef. Proof. Let 𝐶 be the unique component outside 𝑊 red that meets 𝑊 red along the path between the nodes. Complete 𝑊 red by 𝐶 , with coefficient one, and omit the other branches incident to 𝐶 . This gives a one-node graph. The forgotten branches meet the added component away from 𝑊 , so the logarithmic pair on the completion agrees with the full pair in a formal neighborhood of 𝑊 .The completed graphs are taut by Theorem 3.11. In cases (i),(ii), one arm consists of a single component and another has continued fraction at least 2. In case (iii), the branching component has self-intersection at most −3. In case (iv), the arms [ 𝑝 ], [2, 𝑎 ], 𝑝 ≥ 3, permit an arbitrary third arm. In cases (v)–(vii) the third arm is [𝑐 ], [2, 𝑐 ], or [2, 2, 𝑐 ],with 𝑐 ≥ 3, whose continued fractions are at least 4 /3. In case (viii) the third arm is the single component [𝑐 ], 𝑐 ≥ 3. In cases (v)–(viii), if 𝐾 = 0, the observation following the definition of 𝑍 shows that 𝐶 is the opposite node of case (iii), so its self-intersection is at most −3. Each listed completion is rational by the same theorem, so restriction also gives 
+
+𝐻 1 (𝑊, O𝑊 ) = 0. Thus each completion has vanishing logarithmic 𝐻 1, and restriction to 𝑊 
+
+is surjective on 𝐻 1 by Lemma 2.1. This proves the first assertion. The completed divisor is a subconfiguration of the given resolution, and its intersection matrix is negative definite. Lemma 4.6 identifies its function and logarithmic restriction maps near 𝑊 with those in the 24 H. PARK AND D. SHIN 
+
+standard realization of the graph with one node. This analytic identification justifies the calculations below using Theorem 3.11. For the second assertion, each component of 𝐾 has valency two in the graph of the full exceptional divisor. Propagating trivializations through the rational tree gives 𝑆 𝑋 |𝐾 ≃ O ⊕2 
+
+> 𝐾
+
+.Set 𝐼 = O𝐾 (− 𝐾 ). Its degree on a component of self-intersection −𝑐 𝑖 is 𝑐 𝑖 − deg 𝐾 (𝐾 𝑖 ) ≥ 0, so 𝐻 1 (𝐾, 𝐼 ) = 0. The exact sequence 0 → 𝑆 𝑋 (− 𝐾 )| 𝐾 → 𝑆 𝑋 |2𝐾 → 𝑆 𝑋 |𝐾 → 0has both outer 𝐻 1 groups zero. The analogous sequence for the structure sheaf 0 → 𝐼 →O2𝐾 → O 𝐾 → 0 gives 𝐻 1 (O 2𝐾 ) = 0. Since 𝐻 1 (𝐾, 𝐼 ) = 0, taking global sections in both sequences gives the asserted lifting sequences. □
+
+4.4. Endpoint restriction images. Suppose first that 𝐾 ≠ 0; the case 𝐾 = 0 is treated in Remark 4.9. Write 𝐷 𝑖 = 𝑊 𝑖 ∩ 2𝐾 , 𝑖 = 𝐿, 𝑅 . At a crossing choose 𝑡 𝑖 tangent to 𝐾 , 𝑛 𝑖 normal to 𝐾 , so that the last component of 𝑊 𝑖 is 𝑡 𝑖 = 0. Then 
+
+𝑄 𝑖 = 𝐻 0 (𝐷 𝑖 , O𝐷 𝑖 ) = C[𝑡 𝑖 , 𝑛 𝑖 ]/( 𝑡 𝐽 𝑖  
+
+> 𝑖
+
+, 𝑛 2 
+
+> 𝑖
+
+), 𝑇 𝑖 = C[𝑡 𝑖 ]/( 𝑡 𝐽 𝑖  
+
+> 𝑖
+
+).
+
+Put 𝑃 𝑖 = 𝐻 0 (𝐷 𝑖 , 𝑆 𝑋 |𝐷 𝑖 ), a free rank-two 𝑄 𝑖 -module. Define the image algebras 
+
+𝐴 𝑖 = im 
+
+
+
+𝐻 0 (𝑊 𝑖 , O𝑊 𝑖 ) → 𝑄 𝑖 
+
+
+
+, 𝐴 𝐾 = im 
+
+
+
+𝐻 0 (2𝐾, O2𝐾 ) → 𝑄 𝐿 ⊕ 𝑄 𝑅 
+
+
+
+,
+
+and the images of the section restriction maps 
+
+𝑉 𝑖 = im 
+
+
+
+𝐻 0 (𝑊 𝑖 , 𝑆 𝑋 |𝑊 𝑖 ) → 𝑃 𝑖 
+
+
+
+, 𝑉 𝐾 = im 
+
+
+
+𝐻 0 (2𝐾, 𝑆 𝑋 |2𝐾 ) → 𝑃 𝐿 ⊕ 𝑃 𝑅 
+
+
+
+.
+
+They are modules over 𝐴 𝑖 , 𝐴 𝐾 , respectively: lift both an image function and an image section, multiply the lifts on the same cycle, and restrict. This proof gives no action by arbitrary elements of 𝑄 𝑖 . In general 𝑉 𝑖 is not a 𝑄 𝑖 -submodule. The maps defining 𝐴 𝐾 , 𝑉 𝐾 restrict simultaneously to 𝐷 𝐿 and 𝐷 𝑅 . For 𝐼 = O𝐾 (− 𝐾 ), the square-zero sequence gives 
+
+𝐴 𝐾 = C(1, 1) ⊕ im 
+
+
+
+𝐻 0 (𝐾, 𝐼 ) → 𝑛 𝐿 𝑇 𝐿 ⊕ 𝑛 𝑅 𝑇 𝑅 
+
+
+
+.
+
+The second summand has square zero; its two projections need not be independent. Let 𝑉 𝑖 be the reduction of 𝑉 𝑖 modulo 𝑛 𝑖 , and put 𝑁 𝑖 = 𝑉 𝑖 ∩ 𝑛 𝑖 𝑇 ⊕2 
+
+> 𝑖
+
+. Use the ordered logarithmic coefficient basis (𝑡 𝑖 𝜕 𝑡 𝑖 , 𝑛 𝑖 𝜕 𝑛 𝑖 ). Write 
+
+𝜏 = 2 − 1
+
+𝑝 − 1
+
+𝑞 
+
+in case (ii), and 𝑤 ℎ = (ℎ + 1, −ℎ) in case (iv). 
+
+Proposition 4.8. After compatible choices of local coordinates and a local frame of 𝑆 𝑋 ,
+
+𝑉 𝑖 = C𝑤 𝑖 + 𝑡 𝑖 𝑇 ⊕2 
+
+> 𝑖
+
+.
+
+Function restriction maps onto 𝑇 𝑖 , and 
+
+𝐴 𝑖 ∩ 𝑛 𝑖 𝑇 𝑖 = 𝑛 𝑖 𝑡 𝜌 𝑖  
+
+> 𝑖
+
+𝑇 𝑖 . (4.2) TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 25 
+
+The constant line vector 𝑤 𝑖 , the kernel 𝑁 𝑖 with its factor 𝑛 𝑖 suppressed, and the scalar order 
+
+𝜌 𝑖 are as follows: case 𝐽 𝑖 𝑤 𝑖 𝑛 −1 
+
+> 𝑖
+
+𝑁 𝑖 𝜌 𝑖 
+
+(i) 2 (1, 0) 0 2
+
+(ii) 2 (1, 0) 𝑡 𝑖 C(𝜏, −1) 2
+
+(iii) , 𝑏 𝑃 = 3, 𝑠 𝑃 = 2 2 (1, 0) 𝑡 𝑖 C(1, 0) 1
+
+(iii) , otherwise 2 (1, 0) 𝑡 𝑖 𝑇 ⊕2 
+
+> 𝑖
+
+1
+
+(iv) 3 𝑤 ℎ 𝑡 2 
+
+> 𝑖
+
+𝑇 ⊕2 
+
+> 𝑖
+
+2
+
+(v) 3 (1, 0) 𝑡 2 
+
+> 𝑖
+
+𝑇 ⊕2 
+
+> 𝑖
+
+2
+
+(vi) 3 (2, −1) 𝑡 2 
+
+> 𝑖
+
+𝑇 ⊕2 
+
+> 𝑖
+
+2
+
+(vii) 4 (3, −2) 𝑡 2 
+
+> 𝑖
+
+C(3, −2) + 𝑡 3 
+
+> 𝑖
+
+𝑇 ⊕2 
+
+> 𝑖
+
+2
+
+(viii) 4 (1, 0) 𝑡 2 
+
+> 𝑖
+
+C(1, 0) + 𝑡 3 
+
+> 𝑖
+
+𝑇 ⊕2 
+
+> 𝑖
+
+2(4.3) 
+
+Proof. Cases (i)–(iii) follow from Proposition 4.12; cases (iv)–(vii) follow from Propo-sition 4.13; and case (viii) is Lemma 4.14. These calculations use the full intersection schemes throughout. A coordinate change preserving the two ordered branches has the form 𝑡 ′ = 𝑡𝑈 (𝑡, 𝑛 ),
+
+𝑛 ′ = 𝑛𝑉 (𝑡, 𝑛 ), with 𝑈, 𝑉 units. In the ordered logarithmic frames its Jacobian is 
+
+𝐽 log =
+
+1 + 𝑡𝑈 𝑡 /𝑈 𝑛𝑈 𝑛 /𝑈 𝑡𝑉 𝑡 /𝑉 1 + 𝑛𝑉 𝑛 /𝑉 
+
+
+
+.
+
+On 𝑛𝑇 ⊕2, this matrix is reduced modulo 𝑛 , and its reduction modulo 𝑡 is the identity. After also changing the generators 𝑡, 𝑛 , it therefore acts on each quotient 𝑛𝑡 𝑟 𝑇 ⊕2/𝑛𝑡 𝑟 +1𝑇 ⊕2 by a common nonzero scalar. It preserves the filtration and the leading lines in the table. The reduced image contains 𝑡𝑇 ⊕2, so it is determined by its constant line. The scalar ideal in (4.2) is preserved as well: surjectivity onto 𝑇 𝑖 makes it a 𝑇 𝑖 -submodule, and branch-preserving changes preserve its colength in 𝑛 𝑖 𝑇 𝑖 . The analytic identification in Lemma 4.6 transports both incident function and section maps by this same coordinate and frame change; the maps are not normalized independently. □
+
+Remark 4.9. Suppose that 𝐾 = 0. Let 𝐶 𝑖 be the component of 𝑊 𝑖 meeting 𝑊 𝑗 , where 
+
+{𝑖, 𝑗 } = {𝐿, 𝑅 }. If the coefficient of 𝐶 𝑗 in 𝑊 𝑗 is two, then 
+
+𝐷 = 𝑊 𝑖 ∩ 𝑊 𝑗 = 𝑊 𝑖 ∩ 2𝐶 𝑗 , 𝐻 0 (𝐷, O𝐷 ) = C[𝑡, 𝑛 ]/( 𝑡 𝐽 𝑖 , 𝑛 2),
+
+where 𝐶 𝑖 = {𝑡 = 0} and 𝐶 𝑗 = {𝑛 = 0}. Proposition 4.8 computes the function and section restriction images from 𝑊 𝑖 . Indeed, Lemma 4.6 applies with 𝐶 = 𝐶 𝑗 , and the local calculations use only this intersection and the components of 𝑊 𝑖 .If both coefficients are two, apply the proposition to both pieces, interchanging 𝑡 and 𝑛 .Otherwise, the piece with coefficient two is of case (iii). Its restriction to the full intersection is computed by Proposition 4.12 with ℎ = 𝐽 𝑖 , and its logarithmic section image is described in Lemma 5.11. These alternatives exhaust the possibilities by the observation following the definition of 𝑍 .4.5. Local calculations. We prove the endpoint formulas in Proposition 4.8. Lemma 4.6 permits calculations in standard plumbing coordinates and transports both incident restriction maps by the same analytic isomorphism. All section spaces below are restrictions of the ambient logarithmic tangent bundle. 4.5.1. Monomial restrictions. The recurrence used along an arm also computes restrictions on cycles with unequal component multiplicities. 
+
+Lemma 4.10. Let successive components have self-intersections −𝑏 𝑖 , where 𝑏 𝑖 ≥ 2, and positive cycle multiplicities 𝜈 𝑖 . A monomial with initial exponents 𝑟 0 = 𝑘, 𝑟 1 = 𝑗 has 26 H. PARK AND D. SHIN 
+
+subsequent exponents and logarithmic coefficient transitions 
+
+𝑟 𝑖 +1 = 𝑏 𝑖 𝑟 𝑖 − 𝑟 𝑖 −1, 𝑇 𝑏 𝑖 =
+
+ 𝑏 𝑖 1
+
+−1 0
+
+
+
+.
+
+While the exponents on compact components satisfy 0 ≤ 𝑟 𝑖 < 𝜈 𝑖 , compatibility transports the coefficient vector by these invertible matrices. At the first compact component where this fails, the coefficient is arbitrary if 𝑟 𝑖 ≥ 𝜈 𝑖 , and zero if 𝑟 𝑖 < 0. If no compact cutoff occurs along a complete arm with continued fraction 𝑛 /𝑎 , regularity at the outer chart is imposed separately. Its terminal exponent is 𝑛 𝑗 − 𝑎𝑘 , and the permitted initial coefficient space is 𝑈 𝑘, 𝑗 from Lemma 3.3: terminal exponent −1 permits the line 𝑛𝐴 + 𝑎𝐵 = 0, terminal exponent at most −2 forces vanishing, and nonnegative terminal exponent permits every coefficient vector. For functions the terminal exponent must be nonnegative. The conditions for distinct monomials are independent. Proof. At a crossing, the intersection of components of multiplicities 𝜈 𝑖 , 𝜈 𝑖 +1 has ideal 
+
+(𝑢 𝜈 𝑖 , 𝑣 𝜈 𝑖 +1 ). A monomial survives precisely when its exponents are nonnegative and below these bounds. Reaching a compact multiplicity makes its restriction zero, so the remaining section extends by zero across the preceding intersection; a negative compact exponent violates regularity and forces its coefficient to vanish. The coordinate transition gives the recurrence and the invertible matrix above. If no compact cutoff occurs, Lemma 3.3 gives the terminal condition, including the exceptional line at exponent −1. These steps also construct every permitted section. Since transitions and cycle ideals are monomial, the compatibility equations for distinct monomials are independent. The same proof applies to functions, omitting the coefficient matrices and using nonnegative terminal exponent. □
+
+For a sequence of components of self-intersection −2, the recurrence has the following explicit form. 
+
+Lemma 4.11. Let 𝑃, 𝐾 1, . . . , 𝐾 ℎ be successive components, where 𝐾 2 
+
+> 𝑖
+
+= −2, with cycle multiplicities 𝜇 0, . . . , 𝜇 ℎ, and let the adjoining exterior multiplicity be 𝑎 . For an outgoing monomial 𝑣 𝑞 𝑢 ℓ , where 0 ≤ 𝑞 < 𝜇 ℎ and 0 ≤ ℓ < 𝑎 , its preceding exponents are 
+
+𝑟 𝑖 = (ℎ + 1 − 𝑖 )𝑞 − ( ℎ − 𝑖 )ℓ, 0 ≤ 𝑖 ≤ ℎ + 1.
+
+Apply Lemma 4.10 backwards. If no exponent becomes negative or reaches its multiplicity before 𝑃 , the outgoing coefficient is 𝑇 ℎ 
+
+> 2
+
+𝑎 𝑟 0 ,𝑟 1 , where 𝑎 𝑘, 𝑗 is the central coefficient of normal degree 𝑘 and tangent order 𝑗 . The central coefficients must also satisfy regularity at every intermediate chart. Proof. The displayed exponents solve 𝑟 𝑖 +1 = 2𝑟 𝑖 − 𝑟 𝑖 −1 with (𝑟 ℎ, 𝑟 ℎ+1) = (𝑞, ℓ ). The preceding lemma gives the coefficient rule and the regularity conditions. □
+
+4.5.2. Coefficients on the node. At a trivalent component 𝑃 2 = −𝑏 , put its outward attachments at 𝑧 = 0, 1 and its external attachment at infinity. A section of central normal degree 𝑘 is 
+
+𝑥 𝑘 ( 𝑓 𝑘 (𝑧 )𝑥𝜕 𝑥 + 𝑔 𝑘 (𝑧 )𝑧 (𝑧 − 1)𝜕 𝑧 ) , deg 𝑓 𝑘 ≤ 𝑏𝑘, deg 𝑔 𝑘 ≤ 𝑏𝑘 − 1. (4.4) A negative degree bound means zero. With 𝑢 = 𝑧 −1, 𝑣 = 𝑧 𝑏 𝑥 , its coefficient in the ordered frame (𝑒 𝑛 , 𝑒 𝑡 ) = (𝑣𝜕 𝑣 , 𝑢𝜕 𝑢 ) is 
+
+𝑣 𝑘 𝑢 𝑏𝑘 ( 𝑓 𝑘 (1/𝑢 ) + 𝑏 (1/𝑢 − 1)𝑔 𝑘 (1/𝑢 ), −( 1/𝑢 − 1)𝑔 𝑘 (1/𝑢 )) = 𝑣 𝑘 ∑︁ 
+
+> 𝑗
+
+𝑎 𝑘, 𝑗 𝑢 𝑗 . (4.5) Consequently 𝑎 𝑘, 0 = · · · = 𝑎 𝑘,𝑑 −1 = 0 if and only if deg 𝑓 𝑘 ≤ 𝑏𝑘 −𝑑 and deg 𝑔 𝑘 ≤ 𝑏𝑘 −𝑑 −1: first use the tangent coefficient and then the normal coefficient. 
+
+Proposition 4.12. Let 𝑊 = 2𝑃 + Í 𝑗 𝜈 𝑗 𝐶 𝑗 , where the 𝐶 𝑗 are the components of the two complete outward arms and 𝜈 𝑗 ≥ 1, and let 𝑠 count the arms of length at least two. The TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 27 
+
+bundle of section coefficients of normal degree one and its rank on jets of length ℎ at the external attachment are 
+
+F1 ≃ O P1 (𝑏 − 2) ⊕ O P1 (𝑏 − 𝑠 − 1), min (𝑏 − 1, ℎ ) + min (𝑏 − 𝑠, ℎ ).
+
+The function image on 𝑊 ∩ ℎ𝐶 , with ring R = C[𝑢, 𝑣 ]/( 𝑢 ℎ, 𝑣 2), is 𝐴 = C ⊕ 𝑣 (1 − 𝑢 )𝑃 𝑏 −2,where 𝑃 𝑑 is the image of polynomials of degree at most 𝑑 in C[𝑢 ]/( 𝑢 ℎ). For ℎ = 2 and 
+
+(𝑏, 𝑠 ) ≠ (2, 2), the reduced section image modulo 𝑢 is C𝑒 𝑛 + 𝑣 C2, and the kernel is 
+
+(𝑏, 𝑠 ) 𝑉 ∩ 𝑢 R⊕2
+
+(2, 1) 0
+
+(2, 0) 𝑢𝑣 C(2 − 1/𝑝 − 1/𝑞, −1)(3, 2) 𝑢𝑣 C(1, 0)
+
+𝑏 ≥ 3, (𝑏, 𝑠 ) ≠ (3, 2) 𝑢𝑣 C2.
+
+Here −𝑝, −𝑞 are the outward self-intersections when 𝑠 = 0.Proof. In central normal degree one, tangent exponent zero gives the initial exponents (1, 0).An arm of length at least two then gives exponent −1, so both coefficients must vanish at its attachment. A single component of self-intersection −𝑝 instead imposes the line condition 
+
+𝑝 𝐴 + 𝐵 = 0. Every tangent exponent at least one extends, since its subsequent exponents are nonnegative and nondecreasing. Thus the common vanishing order at the two attachments is 𝑠 , and there are 2 − 𝑠 additional line conditions. The proof of Proposition 3.4, now at two attachments, gives the displayed splitting. Evaluation of O( 𝑑 ) on jets of length ℎ has rank min (max (𝑑 + 1, 0), ℎ ), proving the rank formula. Functions in normal degree one are 𝑥𝑧 (𝑧 − 1)𝐻 (𝑧 ), with deg 𝐻 ≤ 𝑏 − 2; their image at infinity is 𝑣 (1 − 𝑢 )𝑢 𝑏 −2 𝐻 (1/𝑢 ), proving the formula for 𝐴 . Degree zero gives constants and the normal Euler vector. For 𝑏 = 2, 𝑠 = 1, put the short arm [ 𝑝 ] at zero. The sections are 
+
+𝑓 1 = (𝑧 − 1)( 𝛼𝑧 + 𝛽 ), 𝑔 1 = 𝑝𝛽 (𝑧 − 1), 𝑎 1,0 = (𝛼 + 2𝑝𝛽, −𝑝𝛽 ).
+
+This coefficient map is invertible, giving zero kernel. For 𝑏 = 2, 𝑠 = 0, write 𝑓 1 = 𝛼𝑧 2+𝛽𝑧 +𝛾 ,
+
+𝑔 1 = 𝛿𝑧 + 𝜂 . The arm equations are 𝜂 = 𝑝𝛾 , 𝛿 + 𝜂 = −𝑞 (𝛼 + 𝛽 + 𝛾 ). The constant coefficient 
+
+(𝛼 + 2𝛿, −𝛿 ) is arbitrary; setting it to zero leaves linear coefficient 𝜂 (2 − 1/𝑝 − 1/𝑞, −1).For 𝑏 = 3, 𝑠 = 2, write 𝑓 1 = 𝑧 (𝑧 − 1)( 𝛼𝑧 + 𝛽 ), 𝑔 1 = 𝛾𝑧 (𝑧 − 1). Vanishing of (𝛼 + 3𝛾, −𝛾 )
+
+leaves 𝛽𝑒 𝑛 in order one. In all other cases with 𝑏 ≥ 3, both summands have degree at least one, so evaluation on length-two jets is surjective. □
+
+4.5.3. Cases (iv)–(vii). For these cases 𝑏 = 2. Write 𝐵 21 = −𝑝 , 𝐴 21 = −2, 𝐴 22 = −𝑎 , and use the coefficients 𝑎 𝑘, 𝑗 in (4.5). 
+
+Proposition 4.13. In cases (iv)–(vii), the reduced section images and their nilpotent kernels are the corresponding rows of (4.3) . Function restriction is onto the reduced intersection algebra, and its nilpotent kernel has order two, as in (4.2) .Proof. We separate the central coefficient calculation, transport along the included string, and function restriction. 
+
+Central coefficients. In normal degree one use the (𝑏, 𝑠 ) = (2, 1) polynomials in Proposition 4.12. Their constant coefficient 𝑎 1,0 is arbitrary, and 𝑎 1,0 = 0 forces the entire degree-one section, including 𝑎 1,1, to vanish. In degree two, Lemma 4.10 gives 
+
+𝑓 2 = 𝑧 (𝑧 − 1)( 𝛼𝑧 2 + 𝛽𝑧 + 𝛾 ), 𝑔 2 = 𝑧 (𝑧 − 1)( 𝛿𝑧 + 𝜖 ),
+
+(2𝑎 − 1)( 𝛼 + 𝛽 + 𝛾 ) + 𝑎 (𝛿 + 𝜖 ) = 0.
+
+The short arm forces the common zero at zero. The other arm forces the common zero at one and the displayed line condition. The pair (𝑎 2,0, 𝑎 2,1) has four coordinates 
+
+(𝛼 + 2𝛿, −𝛿, 𝛽 − 𝛼 + 2𝜖 − 4𝛿, 2𝛿 − 𝜖 ).
+
+They are arbitrary: they determine 𝛼, 𝛽, 𝛿, 𝜖 , and the arm equation then determines 𝛾 .28 H. PARK AND D. SHIN 
+
+For cases (vi),(vii), the degree-three arm conditions are 
+
+𝑧 (𝑧 − 1)2 | 𝑓 3, 𝑔 3, 2 𝑓 ′ 
+
+> 3
+
+(0) − 𝑔 ′ 
+
+> 3
+
+(0) = 0.
+
+The short arm gives the zero and line condition at zero. On [2, 𝑎 ], tangent exponents zero and one are forbidden, whereas exponent two gives (3, 2, 1) with terminal exponent 
+
+𝑎 − 2 ≥ 0. Once the connecting-string conditions 𝑎 3,0 = 𝑎 3,1 = 0 are imposed, the solution is 
+
+𝑓 3 = 𝑧 (𝑧 − 1)2 (𝑐𝑧 + 𝑑 ), 𝑔 3 = 2𝑑𝑧 (𝑧 − 1)2, 𝑎 3,2 = (𝑐 + 4𝑑, −2𝑑 ).
+
+Thus 𝑎 3,2 is arbitrary. In case (vii), the degree-four arm rule is 𝑧 2 (𝑧 − 1)3 | 𝑓 4, 𝑔 4. At the short arm tangent exponents zero and one are forbidden. At the long arm exponent two gives terminal exponent −2, whereas exponent three reaches the multiplicity of 𝐴 2. The connecting-string conditions 𝑎 4,0 = 𝑎 4,1 = 𝑎 4,2 = 0 therefore leave precisely 
+
+𝑓 4 = 𝑐𝑧 2 (𝑧 − 1)3, 𝑔 4 = 0, 𝑎 4,3 = 𝑐 (1, 0).
+
+Transport to the external intersection. For ℎ = 0, degrees one and two already prove rows (iv),(v): reduction in degree one is onto and has zero kernel, and the two degree-two coefficients are independent. For the other cases, Lemma 4.11 gives the following regularity conditions: case coefficients required to vanish (iv), ℎ = 1 𝑎 1,0, 𝑎 2,0
+
+(iv), ℎ ≥ 2 𝑎 1,0, 𝑎 2,0, 𝑎 2,1
+
+(vi) 𝑎 1,0, 𝑎 2,0, 𝑎 3,0, 𝑎 3,1
+
+(vii) 𝑎 1,0, 𝑎 2,0, 𝑎 2,1, 𝑎 3,0, 𝑎 3,1, 𝑎 4,0, 𝑎 4,1, 𝑎 4,2, 𝑎 5,0, . . . , 𝑎 5,3.
+
+These are all the connecting-string conditions: the excluded exponent sequences decrease to a negative value, and every other sequence remains nonnegative until it reaches a multiplicity or the outgoing crossing. In case (vi), the degree-two calculation above still applies, since tangent exponent two reaches the multiplicity of 𝐴 2. In case (vii), degrees two and five may be set to zero, since neither contributes a required outgoing term. Write [𝑀 ] for the outgoing coefficient vector of a monomial 𝑀 , and let ∗ denote an independently arbitrary vector. Backward propagation gives case [𝑣 ] [𝑢𝑣 ] [𝑢𝑣 2]
+
+(iv), ℎ = 1 𝑇 2𝑎 2,1 𝑇 2𝑎 1,1 = 0 ∗
+
+(iv), ℎ ≥ 2 ∗ 𝑇 ℎ 
+
+> 2
+
+𝑎 1,1 = 0 ∗
+
+(vi) 𝑇 2𝑎 2,1 𝑇 2𝑎 1,1 = 0 𝑇 2𝑎 3,2
+
+(vii) 𝑇 22 𝑎 3,2 𝑇 22 𝑎 1,1 = 0 𝑇 22 𝑎 4,3.
+
+In addition, the coefficient of 𝑣 2 is free in every row, and those of 𝑣 3, 𝑢𝑣 3 are free in case (vii). For example, in case (vii) the three displayed transported coefficients have central pairs 
+
+(𝑘, 𝑗 ) = (3, 2), (1, 1), (4, 3). Every coefficient marked or described as free comes from a monomial that vanishes on a preceding intersection after reaching a cycle multiplicity. Such a monomial extends independently by zero across that intersection, by Lemma 4.10. The central coefficient maps above show that the other asserted parameters are independent as well. The constant line is transported to C𝑇 ℎ 
+
+> 2
+
+(1, 0), where 
+
+𝑇 ℎ 
+
+> 2
+
+(1, 0) = (ℎ + 1, −ℎ).
+
+The table therefore proves rows (iv)–(vii) of (4.3); in particular 𝑎 4,3 = 𝑐 (1, 0) gives the line 
+
+C(3, −2) in case (vii). 
+
+Function restriction. Put 𝐵 = C[𝑢 ]/( 𝑢 2). For cases (iv),(v), the central function spaces in degrees one and two are C𝑧 (𝑧 − 1) and 𝑧 (𝑧 − 1)2C[𝑧 ] ≤1. The latter has arbitrary first two TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 29 
+
+infinity coefficients. Applying the same exponent recurrence gives case function image (iv), ℎ = 0, or (v) C + C𝑣 (1 − 𝑢 ) + 𝑣 2 𝐵 
+
+(iv), ℎ ≥ 1, or (vi) C + C𝑣 + 𝑣 2 𝐵 
+
+(vii) C + C𝑣 + 𝑣 2 𝐵 + 𝑣 3 𝐵. 
+
+In case (vi), the degree-three polynomial 𝑧 2 (𝑧 −1)2 supplies 𝑢𝑣 2. In case (vii), that polynomial supplies 𝑣 , and the degree-four polynomial 𝑧 2 (𝑧 −1)3 supplies 𝑢𝑣 2; the remaining coefficients are free at preceding intersections. Each displayed algebra maps onto the reduced intersection algebra, and its kernel is 𝑢𝑣 2C[𝑣 ]/( 𝑣 𝐽 −2). With 𝑡 = 𝑣, 𝑛 = 𝑢 , this is exactly 𝑛𝑡 2𝑇 , as asserted in (4.2). □
+
+4.5.4. Case (viii). The last row follows from the same central coefficient calculation, without connecting components in the endpoint piece. 
+
+Lemma 4.14. The section and function restriction images in case (viii) satisfy (4.3) and 
+
+(4.2) for every arm length and self-intersection allowed in that case. Proof. Write 𝑊 = 4𝑃 + 2𝐵 1 + Í𝑙 𝑖 =1 min (4, 𝑙 + 1 − 𝑖 ) 𝐴 𝑖 , where 𝑙 ≥ 3, 𝐴 21 = −2, and 𝐵 21 = −𝑝 .Use C[𝑢, 𝑣 ]/( 𝑢 2, 𝑣 4) at the external attachment. Lemma 4.10 imposes a zero at zero in central degrees two and three and, if 𝑝 = 2, the additional condition 𝑔 ′ 
+
+> 3
+
+(0) = 2 𝑓 ′ 
+
+> 3
+
+(0). At the long arm, degree one requires a common zero at one; degree two requires a double zero there, because tangent exponent one gives the sequence (2, 1, 0, −1). In these two degrees, every tangent exponent at least the indicated vanishing order is permitted, either by nonnegative propagation or by reaching a cycle multiplicity. Degree zero gives C𝑒 𝑛 . Degree one is the (𝑏, 𝑠 ) = (2, 1) calculation above: its reduced coefficient map is invertible, so its nilpotent kernel is zero. In degree two the exact solution is 
+
+𝑓 2 = 𝑧 (𝑧 − 1)2 (𝑎𝑧 + 𝑏 ), 𝑔 2 = 𝑐𝑧 (𝑧 − 1)2.
+
+Its outgoing image is 
+
+𝑣 2 (𝑎 + 2𝑐 + 𝑢 (𝑏 − 2𝑎 − 6𝑐 ), −𝑐 + 3𝑐𝑢 ) .
+
+Reduction modulo 𝑢 is onto 𝑣 2C2, and its kernel is 𝑢𝑣 2C𝑒 𝑛 . In degree three the family 
+
+𝑓 3 = 𝑧 (𝑧 − 1)3 (𝑎𝑧 2 + 𝑏𝑧 + 𝑒 /2), 𝑔 3 = 𝑧 (𝑧 − 1)3 (𝑑𝑧 + 𝑒 )
+
+satisfies the short-arm condition and vanishes to order three at the long arm. Its exponents there are nonnegative and nondecreasing, so it extends for every permitted arm. Its outgoing jet coefficients are 
+
+(𝑎 + 2𝑑, 𝑏 − 3𝑎 + 2𝑒 − 8𝑑, −𝑑, 4𝑑 − 𝑒 ).
+
+This map is invertible: the last two coordinates determine 𝑑, 𝑒 , and the first two then determine 𝑎, 𝑏 . Thus degree three supplies all 𝑣 3 𝐵 ⊕2, where 𝐵 = C[𝑢 ]/( 𝑢 2). With 
+
+𝑡 = 𝑣, 𝑛 = 𝑢 , these images give precisely the reduced image and nilpotent kernel in the last row of (4.3). For functions, central degree one is C𝑧 (𝑧 − 1). In degrees two and three the extendable families 𝑧 (𝑧 − 1)2C[𝑧 ] ≤1 and 𝑧 2 (𝑧 − 1)3C[𝑧 ] ≤1 give the entire outgoing targets. Hence the function image is C + C𝑣 (1 − 𝑢 ) + 𝑣 2 𝐵 + 𝑣 3 𝐵 , which is onto the reduced algebra and has kernel 𝑢𝑣 2 𝐵 + 𝑢𝑣 3 𝐵 . □
+
+5. Representations and interpolation We express 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) as an extension group and compute it by interval decomposition and interpolation on the connecting chain. 30 H. PARK AND D. SHIN 
+
+5.1. Restriction representations. Let Λ be the path algebra of the quiver 1 → 2 ← 3 → 4 ← 5.
+
+For 1 ≤ 𝑖 ≤ 𝑗 ≤ 5, let 𝐼 [𝑖, 𝑗 ] have a one-dimensional space at vertices 𝑖, . . . , 𝑗 , zero elsewhere, and identity maps between its nonzero spaces. Put 𝐽 0 = 𝐼 [1, 5]. The algebra Λ
+
+and the module 𝐽 0 have dimensions nine and five. For the cycle 𝑍 = 𝑊 𝐿 + 2𝐾 + 𝑊 𝑅 constructed above, put 𝐷 𝑖 = 𝑊 𝑖 ∩ 2𝐾 and 𝑃 𝑖 =
+
+𝐻 0 (𝐷 𝑖 , 𝑆 𝑋 |𝐷 𝑖 ). Define 
+
+𝑉 𝑖 = im 
+
+
+
+𝐻 0 (𝑊 𝑖 , 𝑆 𝑋 |𝑊 𝑖 ) → 𝑃 𝑖 
+
+
+
+, 𝑉 𝐾 = im 
+
+
+
+𝐻 0 (2𝐾, 𝑆 𝑋 |2𝐾 ) → 𝑃 𝐿 ⊕ 𝑃 𝑅 
+
+
+
+.
+
+The inclusions and coordinate projections define a representation 
+
+𝑀 0 = (𝑉 𝐿 → 𝑃 𝐿 ← 𝑉 𝐾 → 𝑃 𝑅 ← 𝑉 𝑅 ) .
+
+In particular, 𝑉 𝐾 is the simultaneous image of the two restrictions. If 𝐾 is empty, use the representation of the two pieces and their single intersection at vertices one, two, and three, and put zero at vertices four and five. 
+
+Proposition 5.1. For every analytic realization and every cycle 𝑍 constructed above, there is a natural isomorphism 
+
+𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) ≃ Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0). (5.1) 
+
+The cycle 𝑍 need not be anti-nef. Proof. The module 𝐽 0 has the projective resolution 0 → Λ𝑒 2 ⊕ Λ𝑒 4 → Λ𝑒 1 ⊕ Λ𝑒 3 ⊕ Λ𝑒 5 → 𝐽 0 → 0. (5.2) At each source the last map is the identity. At a sink its map is addition from the two incident copies of C, and the first map sends a scalar to its two opposite values. This verifies exactness at every vertex. Applying Hom Λ (− , 𝑀 0) identifies the extension group with the cokernel of 
+
+𝑉 𝐿 ⊕ 𝑉 𝐾 ⊕ 𝑉 𝑅 → 𝑃 𝐿 ⊕ 𝑃 𝑅 , (𝑣 𝐿 , 𝑣 𝐾 , 𝑣 𝑅 ) ↦ →  𝑣 𝐿 − pr 𝐿 (𝑣 𝐾 ), 𝑣 𝑅 − pr 𝑅 (𝑣 𝐾 ) .
+
+The union sequence 0 → 𝑆 𝑋 |𝑍 → 𝑆 𝑋 |𝑊 𝐿 ⊕ 𝑆 𝑋 |2𝐾 ⊕ 𝑆 𝑋 |𝑊 𝑅 → 𝑆 𝑋 |𝐷 𝐿 ⊕ 𝑆 𝑋 |𝐷 𝑅 → 0is exact: locally at each intersection it is the sequence for two Cartier equations, and there is no triple intersection. Lemma 4.7 gives vanishing of first cohomology on all three pieces. The union sequence therefore identifies 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) with the same cokernel. Replacing global section spaces by the images of the restriction maps does not change this cokernel. If the two endpoint pieces meet directly, the corresponding union sequence and the representation supported on vertices one, two, and three give the same proof. □
+
+By Ringel [10, p. 1, Theorem], every finite-dimensional representation of a quiver of type 𝐴 𝑛 is a direct sum of interval representations. Its multiplicities are unique by the Krull–Schmidt theorem. 
+
+Proposition 5.2. Let 
+
+𝑀 =
+
+
+
+𝑀 1
+
+> 𝑎
+
+−→ 𝑀 2
+
+> 𝑏
+
+←− 𝑀 3
+
+> 𝑐
+
+−→ 𝑀 4
+
+> 𝑑
+
+←− 𝑀 5
+
+
+
+≃
+
+Ê 
+
+> 𝑖 ≤𝑗
+
+𝐼 [𝑖, 𝑗 ]⊕𝑚 𝑖 𝑗 .
+
+Put 𝐴 = 𝑀 2/im 𝑎 , 𝐵 = 𝑀 4/im 𝑑 , and let 𝑢 : 𝑀 3 → 𝐴 , 𝑣 : 𝑀 3 → 𝐵 be the induced maps. There is a canonical exact sequence 
+
+0 → 𝑀 3
+
+ker 𝑢 + ker 𝑣 → Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 ) → coker 𝑢 ⊕ coker 𝑣 → 0.TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 31 
+
+The first map sends the class of 𝑧 to the class of (𝑢 (𝑧 ), 0) under the identification 
+
+Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 ) = ( 𝐴 ⊕ 𝐵 )/ im (𝑢, 𝑣 ). The interval multiplicities satisfy 
+
+𝑚 22 = dim coker 𝑢, 𝑚 44 = dim coker 𝑣, 𝑚 24 = dim 𝑀 3
+
+ker 𝑢 + ker 𝑣 
+
+= rank 𝑢 + rank 𝑣 − rank (𝑢, 𝑣 ).
+
+In particular, dim Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 ) = 𝑚 22 + 𝑚 24 + 𝑚 44 .Proof. Resolution (5.2) identifies the extension group with ( 𝐴 ⊕ 𝐵 )/ im (𝑢, 𝑣 ). Projection gives the surjection in the statement. Its kernel is the image of 𝑧 ↦ → [( 𝑢 (𝑧 ), 0)] : arepresentative (𝑢 (𝑥 ), 𝑣 (𝑦 )) differs from (𝑢 (𝑥 − 𝑦 ), 0) by (𝑢 (𝑦 ), 𝑣 (𝑦 )) . The kernel of this map is ker 𝑢 + ker 𝑣 , since (𝑢 (𝑧 ), 0) = (𝑢 (𝑤 ), 𝑣 (𝑤 )) is equivalent to 𝑤 ∈ ker 𝑣 and 
+
+𝑧 − 𝑤 ∈ ker 𝑢 . This proves exactness. On an interval summand, coker 𝑢 is one-dimensional exactly for 𝐼 [2, 2], and coker 𝑣 
+
+exactly for 𝐼 [4, 4]. The quotient by ker 𝑢 + ker 𝑣 is one-dimensional exactly for 𝐼 [2, 4].Additivity gives the multiplicity formulas and the dimension of the extension group. The rank identity follows from the dimension formula for a sum of two subspaces. □
+
+When the remaining connecting chain is nonempty, 𝑎, 𝑑, (𝑏, 𝑐 ) are injective, so the interval representations 𝐼 [1, 1], 𝐼 [3, 3], 𝐼 [5, 5], each supported at a single source vertex, do not occur. If 𝑞 𝑖 = dim 𝐻 0 (𝐷 𝑖 , O𝐷 𝑖 ), then 𝑃 𝑖 has dimension 2 𝑞 𝑖 . The sum of the dimensions of the two endpoint restriction images is at most 2 (𝑞 𝐿 + 𝑞 𝑅 ), and the same bound holds for the image of simultaneous restriction from 2 𝐾 . Since 𝑞 𝐿 + 𝑞 𝑅 ≤ 16 for the cycles above, this gives dim 𝑀 0 ≤ 96. This bound is uniform over all two-node graphs satisfying the local restrictions, independently of the number of components and their self-intersections. When the endpoint cycles intersect and no connecting component remains, the same estimate gives dim 𝑀 0 ≤ 48, and only 𝐼 [2, 2] can contribute to the extension group. 5.2. Reduction to the ideal of 𝐾 in 2𝐾 . Assume the remaining connecting chain 𝐾 is nonempty. Write 𝑝 𝐿 , 𝑝 𝑅 for its marked endpoints, and put 𝐼 = O𝐾 (− 𝐾 ), 𝑆 𝐾 = 𝑆 𝑋 |𝐾 .We continue to use 𝑃 𝑖 = 𝐻 0 (𝐷 𝑖 , 𝑆 𝑋 |𝐷 𝑖 ). The endpoint restriction images are those of Proposition 4.8 and Table (4.3), with endpoint subscripts on their parameters when needed. Lemma 4.7 gives 𝑆 𝐾 ≃ O ⊕2 
+
+> 𝐾
+
+, 𝐻 1 (𝐾, 𝐼 ) = 0, and the surjectivity of restriction from 
+
+𝐻 0 (2𝐾, 𝑆 𝑋 |2𝐾 ) to 𝐻 0 (𝐾, 𝑆 𝐾 ), with kernel 𝐻 0 (𝐾, 𝐼 ⊗ 𝑆 𝐾 ).Set 𝑟 𝑖 = 1 in cases (ii),(iii), and 𝑟 𝑖 = 2 otherwise. The nilpotent image is either 
+
+𝑁 𝑖 = 𝑛 𝑖 𝑡 𝑟 𝑖  
+
+> 𝑖
+
+𝑇 ⊕2 
+
+> 𝑖
+
+, or 
+
+𝑁 𝑖 = 𝑛 𝑖 𝑡 𝑟 𝑖  
+
+> 𝑖
+
+ℓ𝑖 + 𝑛 𝑖 𝑡 𝑟 𝑖 +1 
+
+> 𝑖
+
+𝑇 ⊕2
+
+> 𝑖
+
+for a line ℓ𝑖 . Put 𝜖 𝑖 = 0 in the first case and 𝜖 𝑖 = 1 in the second. An additional line in the coefficient of 𝑛 𝑖 𝑡 2 
+
+> 𝑖
+
+occurs only in cases (vii) and (viii), by (4.3). In case (vii) the entire maximal initial sequence of connecting components of self-intersection −2 is included in the endpoint piece; in case (viii) that sequence is empty by the arm and chain conditions in Table 1. Thus in either case the adjacent component of 𝐾 has self-intersection at most −3. 
+
+Proposition 5.3. For either endpoint, the map 
+
+𝑉 𝑖 ⊕ 𝑉 𝐾 → 𝑃 𝑖 
+
+obtained by taking the difference of the restriction maps is surjective. Consequently 
+
+𝑚 22 = 𝑚 44 = 0, dim Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) = 𝑚 24 .
+
+Moreover, if 𝑢 : 𝑉 𝐾 → 𝑃 𝐿 /𝑉 𝐿 and 𝑣 : 𝑉 𝐾 → 𝑃 𝑅 /𝑉 𝑅 are the quotient restrictions, then 
+
+Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) ≃ 𝑉 𝐾 /( ker 𝑢 + ker 𝑣 ).32 H. PARK AND D. SHIN 
+
+Proof. The reduced endpoint image contains every positive-order coefficient, and evaluation of 𝐻 0 (𝐾, 𝑆 𝐾 ) supplies the constant coefficient. By Lemma 4.7, these sections lift to 2 𝐾 , so the reduced difference map is surjective. Its nilpotent cokernel is a quotient of 𝑛 𝑖 𝑇 ⊕2 
+
+> 𝑖
+
+/𝑁 𝑖 ,which requires jets of length at most 𝑟 𝑖 + 𝜖 𝑖 .On an end component 𝐾 𝑖 of self-intersection −𝑐 𝑖 , the degree of 𝐼 is 𝑐 𝑖 − 1, or 𝑐 𝑖 if 𝐾 has one component. This degree is at least 𝑟 𝑖 + 𝜖 𝑖 − 1: the only case requiring degree two has 
+
+𝑟 𝑖 = 2, 𝜖 𝑖 = 1, and 𝑐 𝑖 ≥ 3, as observed above. Evaluation on 𝐾 𝑖 therefore supplies arbitrary jets of the required length. Here no value is prescribed at the opposite endpoint. Each chosen section extends along the chain by matching one value at each successive attaching point, since all other component degrees of 𝐼 are nonnegative. Thus 𝐻 0 (𝐾, 𝐼 ⊗ 𝑆 𝐾 ), the kernel of reduction from 2 𝐾 , surjects onto 𝑛 𝑖 𝑇 ⊕2 
+
+> 𝑖
+
+/𝑁 𝑖 . The difference map is surjective, and Proposition 5.2 gives the remaining assertions. □
+
+5.3. Transport of the endpoint lines. We compute determinants of transported endpoint vectors using continuants. These formulas determine when the endpoint lines coincide. 
+
+Proposition 5.4. Let 𝑏 1, . . . , 𝑏 𝑚 ≥ 2, 𝑣 = (𝑎, −𝑐 ), and 𝑣 ′ = (𝑎 ′, −𝑐 ′), where 𝑎, 𝑎 ′ > 0,
+
+0 ≤ 𝑐 ≤ 𝑎 , and 0 ≤ 𝑐 ′ ≤ 𝑎 ′. Put 𝜌 = 𝑐 /𝑎 , 𝜌 ′ = 𝑐 ′/𝑎 ′, and 
+
+T = 𝑇 𝑏 𝑚 · · · 𝑇 𝑏 1 , 𝑇 𝑏 =
+
+ 𝑏 1
+
+−1 0
+
+
+
+, 𝐷 = det (T 𝑣, (− 𝑐 ′, 𝑎 ′)) 
+
+𝑎𝑎 ′ . (5.3) 
+
+Then 𝐷 ≥ 0, with equality if and only if 𝜌 = 𝜌 ′ = 1 and every 𝑏 𝑗 = 2. For 𝑚 = 0, take T to be the identity. Proof. For 𝑚 ≥ 1, let 𝐴 be the tridiagonal matrix with diagonal 𝑏 1, . . . , 𝑏 𝑚 and adjacent entries minus one, and set 𝐴 𝜌,𝜌 ′ = 𝐴 − 𝜌𝑒 1𝑒 T 
+
+> 1
+
+− 𝜌 ′𝑒 𝑚 𝑒 T
+
+> 𝑚
+
+. The continuant recurrence gives 
+
+𝐷 = det 𝐴 𝜌,𝜌 ′ ; when 𝑚 = 1, both sides are 𝑏 1 − 𝜌 − 𝜌 ′. For every 𝑥 ∈ R𝑚 ,
+
+𝑥 T 𝐴 𝜌,𝜌 ′ 𝑥 =
+
+> 𝑚 −1
+
+∑︁ 
+
+> 𝑗 =1
+
+(𝑥 𝑗 − 𝑥 𝑗 +1)2 +
+
+> 𝑚
+
+∑︁ 
+
+> 𝑗 =1
+
+(𝑏 𝑗 − 2)𝑥 2 
+
+> 𝑗
+
++ ( 1 − 𝜌 )𝑥 21 + ( 1 − 𝜌 ′)𝑥 2
+
+> 𝑚
+
+.
+
+All summands are nonnegative. A nonzero kernel vector must be constant, and exists if and only if both endpoint coefficients 1 − 𝜌, 1 − 𝜌 ′ and all 𝑏 𝑗 − 2 vanish. Otherwise the matrix is positive definite. This proves the assertion for 𝑚 ≥ 1, including 𝑚 = 1, when the two endpoint terms concern the same variable. For 𝑚 = 0, one has 𝐷 = 1 − 𝜌𝜌 ′. □
+
+Corollary 5.5. Suppose that both endpoint nodes have self-intersection −2 and that their four outward arms are single components of self-intersections −𝑝, −𝑞, −𝑝 ′, −𝑞 ′, where 
+
+𝑝, 𝑞, 𝑝 ′, 𝑞 ′ ≥ 2. Put 𝜏 = 2 − 1/𝑝 − 1/𝑞 , 𝜎 = 2 − 1/𝑝 ′ − 1/𝑞 ′, and let 𝐴 Γ be the negative of the intersection matrix of the full graph. If T = 𝑇 𝑏 𝑚 · · · 𝑇 𝑏 1 is the transport along the connecting chain, then 
+
+det (T ( 𝜏, −1), (− 1, 𝜎 )) = det 𝐴 Γ
+
+𝑝𝑞 𝑝 ′𝑞 ′ .
+
+If every component of the connecting chain has self-intersection −2, this common value is 
+
+(𝜏 − 1) + ( 𝜎 − 1) + ( 𝑚 + 1)( 𝜏 − 1)( 𝜎 − 1).
+
+Proof. The Schur complement of the four leaf entries gives the tridiagonal matrix with diagonal 𝜏, 𝑏 1, . . . , 𝑏 𝑚 , 𝜎 , whose determinant is det 𝐴 Γ/( 𝑝𝑞 𝑝 ′𝑞 ′). For 𝑚 ≥ 1, eliminating its first and last entries gives 𝜏𝜎 det 𝐴 1/𝜏, 1/𝜎 , which is the transported determinant by Proposition 5.4; for 𝑚 = 0, both are 𝜏𝜎 − 1. If all 𝑏 𝑗 = 2, the continuant of 𝑟 such entries is 
+
+𝑟 + 1, giving the last formula. □
+
+Corollary 5.6. The endpoint lines in (5.5) are distinct after transport through the remaining connecting chain by the logarithmic restriction maps, unless both endpoints are case (ii), all four outward leaves have self-intersection −2, and every component of the remaining connecting chain has self-intersection −2. The exceptional graph is not negative definite. TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 33 
+
+The one-dimensional images in the constant coefficient of the reduced restriction in (4.3) 
+
+are always distinct after the same comparison. Proof. In the convention of Proposition 5.4, the slopes of the additional lines are 
+
+𝜌 = 1
+
+𝜏 in case (ii) , 𝜌 = 0 in cases (iii) and (viii) , 𝜌 = 23 in case (vii) .
+
+Here 𝜏 = 2 − 1/𝑝 − 1/𝑞 ≥ 1. Thus 𝜌 ≤ 1, with equality if and only if the endpoint is case (ii) and 𝑝 = 𝑞 = 2. Proposition 5.4 gives the stated exceptional graph. The cycle with multiplicity two on the path between the nodes and multiplicity one on its four leaves has zero intersection with every component, so its intersection matrix is not negative definite. Every line in the constant coefficient of the reduced restriction has slope strictly less than one, including the slopes ℎ/( ℎ + 1) in case (iv), so the same proposition proves the last assertion. □
+
+Proposition 5.7. The quotient of the Mayer–Vietoris complex of the restriction maps by its nilpotent subcomplex, defined as the kernel of reduction modulo the ideal of 𝐾 , is acyclic in degrees zero and one. Consequently 
+
+Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) ≃ coker 
+
+"
+
+𝐻 0 (𝐾, 𝐼 ⊗ 𝑆 𝐾 ) → 𝑛 𝐿 𝑇 ⊕2
+
+> 𝐿
+
+𝑁 𝐿 
+
+⊕ 𝑛 𝑅 𝑇 ⊕2
+
+> 𝑅
+
+𝑁 𝑅 
+
+#
+
+. (5.4) 
+
+Here 𝑀 0 is defined by the simultaneous restriction maps on sections in Proposition 5.1. Proof. Use the two-term complex, placed in degrees zero and one, 
+
+C• = [𝑉 𝐿 ⊕ 𝑉 𝐾 ⊕ 𝑉 𝑅 → 𝑃 𝐿 ⊕ 𝑃 𝑅 ] ,
+
+whose differential is the difference of the restriction maps. Proposition 5.1 identifies its first cohomology with Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0). Reduction modulo 𝑛 𝐿 , 𝑛 𝑅 gives a quotient complex 
+
+C•. The reduction of 𝑉 𝐾 identifies with 𝐻 0 (𝐾, 𝑆 𝐾 ): every section on 𝐾 lifts to 2 𝐾 by Lemma 4.7, and evaluation at either endpoint is injective on 𝐻 0 (𝐾, 𝑆 𝐾 ).The endpoint summands of C• map isomorphically onto their images in the target. Canceling these summands leaves the complex 
+
+𝐻 0 (𝐾, 𝑆 𝐾 ) → C2/C𝑤 𝐿 ⊕ C2/C𝑤 𝑅 .
+
+Lemma 2.4 identifies the endpoint fibers by the product of the matrices 𝑇 𝑏 . Under this identification the two lines are distinct by Corollary 5.6, so the displayed map is an isomorphism. Thus C• is acyclic. Put N • = ker (C • → C •). The exact sequence of complexes identifies 𝐻 1 (C •) with 
+
+𝐻 1 (N •). Its endpoint summands have images 𝑁 𝐿 , 𝑁 𝑅 . Its middle summand is the restriction image of 𝐻 0 (𝐾, 𝐼 ⊗ 𝑆 𝐾 ): a section on 2 𝐾 whose endpoint reductions vanish has zero reduction on all of 𝐾 , by the injectivity just noted. Quotienting the target of this nilpotent complex by 𝑁 𝐿 ⊕ 𝑁 𝑅 gives (5.4). □
+
+5.4. Interpolation at the two ends. The nilpotent images in (4.3) can be written as follows. Assign an integer 𝑟 𝑖 and, in some cases, a line ℓ𝑖 :case 𝑟 𝑖 additional line (ii) 1 C(𝜏 𝑖 , −1)
+
+(iii), 𝑏 𝑃 = 3, 𝑠 𝑃 = 2 1 C(1, 0)
+
+(iii), otherwise 1 none (i), (iv), (v), (vi) 2 none (vii) 2 C(3, −2)
+
+(viii) 2 C(1, 0)
+
+(5.5) Thus one first prescribes all vector coefficients below order 𝑟 𝑖 ; if a line occurs, one also prescribes the coefficient of order 𝑟 𝑖 modulo that line. Write 𝐾 = 𝐾 1 + · · · + 𝐾 𝑚 , with 34 H. PARK AND D. SHIN 
+
+𝐾 2 
+
+> 𝑗
+
+= −𝑏 𝑗 . Only components of self-intersection −2 have been absorbed into the endpoint cycles, so Í 𝑗 (𝑏 𝑗 − 2) = 𝑑 , with 𝑑 as defined for the original connecting chain. Moreover, deg 𝐼 = −𝐾 2 = 𝑑 + 2. Let 𝑓 be the number of additional lines, and put 
+
+𝐵 = 𝐼 (− 𝑟 𝐿 𝑝 𝐿 − 𝑟 𝑅 𝑝 𝑅 ), 𝛿 = deg 𝐵 = 𝑑 + 2 − 𝑟 𝐿 − 𝑟 𝑅 .
+
+Lemma 5.8. Let 𝐶 be a reduced rational chain and A a line bundle. If 𝐶 has at least two components, assume that its internal degrees are nonnegative and its end degrees are at least minus one. Then 
+
+ℎ1 (𝐶, A) = max {− deg A − 1, 0}.
+
+In particular, this applies to 𝐼 (− 𝑎 𝑝 𝐿 − 𝑏 𝑝 𝑅 ) for any 𝑎, 𝑏 ∈ { 1, 2}. It also applies to the line bundle summands in (5.7) , obtained from 𝐵 ⊗ 𝑆 𝐾 by the additional line conditions in (5.5) .Proof. For one component this is the cohomology formula on P1. On a chain with more than one component, a section vanishes on an end of degree minus one. The normalization sequence identifies both cohomology groups with those of the remaining chain after subtracting its attaching point. The total degree is unchanged. Repeat while an end component of degree minus one remains. The process either ends with one component, or leaves nonnegative component degrees, in which case normalization gives 𝐻 1 = 0. In the latter case the total degree is nonnegative. This proves the formula. The end degrees of 𝐼 are 𝑏 𝑖 − 1, and its internal degrees are 𝑏 𝑗 − 2. Subtracting an order at most two therefore leaves end degrees at least minus one. An additional vanishing condition from a line in (5.5) can lower an end degree once more only when the prescribed order is two; the adjacent component of 𝐾 then has self-intersection at most −3, as shown before Proposition 5.3. Thus every summand used below satisfies the same bound. On a chain consisting of one component there is no restriction on the degree. □
+
+Proposition 5.9. Assume that the endpoint cycles are those of Proposition 4.5, that 
+
+𝐻 1 (𝑊 𝑖 , 𝑆 𝑋 |𝑊 𝑖 ) = 0, and that the remaining connecting chain is nonempty. For a negative-definite graph, 
+
+dim C Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) =
+
+
+
+2, 𝛿 = −2,𝑓 , 𝛿 = −1,
+
+0, 𝛿 ≥ 0.
+
+(5.6) 
+
+In particular, inserting components of self-intersection −2 into the connecting chain leaves the displayed dimension unchanged whenever the resulting graph is negative definite and satisfies the same endpoint hypotheses. Proof. Let F be the kernel of the sheaf morphism inducing the evaluation map in (5.4). Since 𝐻 1 (𝐾, 𝐼 ⊗ 𝑆 𝐾 ) = 0, the cokernel of evaluation on global sections is 𝐻 1 (𝐾, F ) . The kernel of evaluation below the two prescribed orders is 𝐵 ⊗ 𝑆 𝐾 , where deg 𝐵 = 𝛿 . The additional line conditions are elementary modifications at the two smooth marked points of 𝐾 . Trivialize 𝑆 𝐾 globally, so these lines belong to one vector space. A constant basis adapted to them gives additional lines F
+
+none 𝐵 ⊕ 𝐵 
+
+one, at 𝑝 𝐵 ⊕ 𝐵 (− 𝑝 )
+
+two, distinct 𝐵 (− 𝑝 𝐿 ) ⊕ 𝐵 (− 𝑝 𝑅 )
+
+two, equal 𝐵 ⊕ 𝐵 (− 𝑝 𝐿 − 𝑝 𝑅 ).
+
+(5.7) For example, with distinct lines choose one basis vector in each; the coefficient in the opposite line must vanish at each marked point. Corollary 5.6 excludes equal lines in the negative-definite cases. Lemma 5.8 computes the cohomology of each summand. For 
+
+𝛿 = −2, both orders are two and every component of 𝐾 has self-intersection −2, so the adjacency requirement excludes any additional line. The dimension is two. For 𝛿 = −1, TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 35 
+
+each additional line contributes one and the dimension is 𝑓 . For 𝛿 ≥ 0, all summands have zero 𝐻 1. □
+
+Corollary 5.10. Every graph satisfying the two-node conditions of Theorem I and having a nonempty remaining connecting chain satisfies 
+
+Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) = 0
+
+for every analytic realization. Proof. The extension group can be nonzero only when 𝛿 = −2, −1. If 𝑟 𝐿 + 𝑟 𝑅 = 4, then 
+
+𝛿 = 𝑑 − 2. The value 𝑑 = 0 is excluded by the restriction in (4.1) at a node of self-intersection 
+
+−2 with one short and one long outward arm. If 𝑑 = 1, an additional line occurs only in case (vii) or (viii), and the condition in the last column of Table 1 excludes both because the opposite node has self-intersection −2 and one long outward arm. Thus 𝑓 = 0. If 𝑟 𝐿 + 𝑟 𝑅 = 3, only 𝑑 = 0 needs consideration. The order-two endpoint is then case (i): cases (iv), (vi), and (vii) include the maximal initial sequence of components of self-intersection −2, whereas cases (v) and (viii) require the next component to have self-intersection at most −3. The restriction in (4.1) makes the opposite endpoint case (iii) with a surjective order-one coefficient map. Thus 𝑓 = 0. If 𝑟 𝐿 + 𝑟 𝑅 = 2, then 𝛿 = 𝑑 ≥ 0. Proposition 5.9 proves every case. □
+
+5.5. Direct intersections of the two endpoint pieces. When no connecting component remains, the two pieces meet in one intersection scheme. Except when both ends are case (ii), the restriction in (4.1) leaves a case (iii) endpoint. Write its node self-intersection as −𝑏 , where 𝑏 ≥ 3, and let 𝑠 be its number of long outward arms. The intersection ring is C[𝑡, 𝑛 ]/( 𝑡 𝐽 , 𝑛 2), where 𝑛 is normal to this node and 𝑡 is tangent to it. The ordered logarithmic basis is (𝑡𝜕 𝑡 , 𝑛𝜕 𝑛 ). Its reduced restriction image is C(0, 1), whereas the reduced restriction image of the other endpoint is C𝑤 + 𝑡𝑇 ⊕2 with first coordinate of 𝑤 nonzero. Their reduced differential is an isomorphism. The cokernel of the restriction complex is consequently the cokernel of the subcomplex consisting of kernels of reduction, by the same long exact cohomology sequence as in Proposition 5.7. 
+
+Lemma 5.11. In case (iii), without a line bundle twist, evaluation onto vector-valued jets of length two is surjective if and only if 𝑏 ≥ 4, or 𝑏 = 3 and 𝑠 ≤ 1. For 𝑏 = 3, 𝑠 = 2, after setting the order-zero coefficient to zero, the order-one image is the normal Euler line. Evaluation onto jets of length three is surjective for 𝑏 ≥ 5, and for 𝑏 = 4, 𝑠 ≤ 1. For 
+
+𝑏 = 4, 𝑠 = 2, its cokernel is one-dimensional; after the coefficients of orders zero and one have been set to zero, the order-two image is the normal Euler line. For 𝑏 = 3, the image modulo 𝑛𝑡 3 of sections vanishing on the reduced node has dimension 5 − 𝑠 .When 𝑏 = 3, 𝑠 = 0, set the coefficients of orders zero and one to zero. The annihilator of the resulting order-two image is spanned by the linear functional on (𝛼, 𝛽 ) given by 
+
+𝛽 +
+
+
+
+3 − 1
+
+𝑝 − 1
+
+𝑞 
+
+
+
+𝛼, (5.8) 
+
+where −𝑝, −𝑞 are the self-intersections of its two outward arms, each consisting of one component. Proof. By Proposition 4.12, the conditions at the two outward arms in order one in the normal coordinate give the bundle 
+
+OP1 (𝑏 − 2) ⊕ O P1 (𝑏 − 𝑠 − 1).
+
+Evaluation on its global sections at the marked endpoint onto jets of length 𝑎 has rank min (𝑏 − 1, 𝑎 ) + min (𝑏 − 𝑠, 𝑎 ). For 𝑎 = 2, this is four except when 𝑏 = 3, 𝑠 = 2, when it is three; the corresponding row of (4.3), with the two branches interchanged, identifies the remaining order-one image with the normal Euler line. For 𝑎 = 3, the rank is six for 𝑏 ≥ 5and for 𝑏 = 4, 𝑠 ≤ 1, five for 𝑏 = 4, 𝑠 = 2, and 5 − 𝑠 for 𝑏 = 3. 36 H. PARK AND D. SHIN 
+
+For 𝑏 = 4, 𝑠 = 2, both polynomials in (4.4) are divisible by 𝑥 (𝑥 − 1). Vanishing of the first two outgoing coefficients gives deg 𝑓 ≤ 2 and deg 𝑔 ≤ 1, by (4.5). Thus 𝑔 = 0, whereas 
+
+𝑓 may be a multiple of 𝑥 (𝑥 − 1). The resulting order-two image is the normal Euler line, as asserted. For the last assertion, put the attachment points of the two short arms at 𝑥 = 0, 1. Write the section of order one in the normal coordinate using 
+
+𝑓 = 𝑎𝑥 3 + 𝑐𝑥 2 + 𝑒𝑥 + ℎ, 𝑔 = 𝑑𝑥 2 + 𝑧𝑥 + 𝑗 . 
+
+The leaf equations are 𝑗 = 𝑝ℎ and 𝑑 + 𝑧 + 𝑗 = −𝑞 (𝑎 + 𝑐 + 𝑒 + ℎ). Changing to the infinity chart, the first three coefficient columns are 
+
+(− 𝑑, 𝑎 + 3𝑑 ), (𝑑 − 𝑧, 𝑐 + 3(𝑧 − 𝑑 )) , (𝑧 − 𝑗, 𝑒 + 3( 𝑗 − 𝑧 )) .
+
+Vanishing of the first two gives 𝑎 = 𝑐 = 𝑑 = 𝑧 = 0. The last is (𝛼, 𝛽 ) = (− 𝑗, 𝑒 + 3 𝑗 ), while the leaf equations give 𝑒 = − 𝑗 (1/𝑝 + 1/𝑞 ). Thus this image is the kernel of the functional (5.8). □
+
+For an opposite endpoint at 𝑃 , the nilpotent quotient has the following form, by Remark 4.9. A line in the last column is quotiented from the highest coefficient of the indicated vector-valued jets; all lower coefficients are unrestricted. opposite endpoint jet length line in the highest coefficient (iii), (𝑏 𝑃 , 𝑠 𝑃 ) ≠ (3, 2) 1 none (i), (iv), (v), (vi) 2 none (ii) 2 C(𝜏, −1)
+
+(iii), 𝑏 𝑃 = 3, 𝑠 𝑃 = 2 2 C(1, 0)
+
+(vii) 3 C(3, −2)
+
+(viii) 3 C(1, 0)
+
+(5.9) When the lower coefficients vanish, a change preserving the ordered branches multiplies the leading coefficient vector by a common nonzero scalar, by Proposition 4.8. Thus the lines in the table can be compared in the ordered basis fixed above. 
+
+Proposition 5.12. For every analytic realization satisfying the two-node conditions of Theorem I and having no remaining connecting component, Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) = 0.Proof. Except when both endpoints are case (ii), choose a case-(iii) endpoint as above and use Table (5.9). Length-one evaluation is always surjective. For the second row, Lemma 5.11 gives surjectivity by (4.1). For the next two rows, the only possible cokernel of length-two evaluation occurs at 𝑏 = 3, 𝑠 = 2; it is the tangent coefficient in order one. Both displayed lines have nonzero tangent coefficient and therefore remove this cokernel. For the last two rows, length-three evaluation is surjective when 𝑏 ≥ 5. At 𝑏 = 4, Lemma 5.11 shows that the only possible cokernel is the tangent coefficient in order two, and both displayed lines remove it. At 𝑏 = 3, the graph conditions require 𝑠 = 0. Formula (5.8) is nonzero on (1, 0), and on (3, −2) its value is 7 − 3
+
+𝑝 − 3
+
+𝑞 ≥ 4.
+
+The additional line therefore surjects onto the one-dimensional cokernel. It remains to consider two case-(ii) endpoints. Write their parameters as 𝜏, 𝜎 ≥ 1. After eliminating the reduced differential and the constant coefficient of the nilpotent restriction, the remaining quotient is C2 modulo the sum of the lines spanned by (𝜏, −1) and (− 1, 𝜎 ).Their determinant is 𝜏𝜎 − 1. It vanishes only if all four outward leaves have self-intersection 
+
+−2, when the graph is not negative definite. Thus the difference of the two restriction maps is surjective in every admissible case. □TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 37 
+
+5.6. The last necessary inequality. We prove the last two-node restriction on a cycle contained in 5 𝐸 . The same calculation gives nonvanishing of the extension group and supplies the final obstruction used in Theorem 6.7. 
+
+Proposition 5.13. Assume that every component has self-intersection at most −2 and that the restrictions stated in Proposition 4.4 hold. If an endpoint has case (vii) or (viii) ,
+
+𝑠 𝑄 ≥ 1, and 𝑏 𝑄 + 𝑑 < 4, then there is an effective cycle 𝑌 ≤ 𝑍 , with 𝑌 ≤ 5𝐸 , such that 
+
+𝜒 (𝑌 , 𝑆 𝑋 |𝑌 ) = −1. Consequently, 𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) ≠ 0 and Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) ≠ 0 for every analytic realization. Anti-nefness of 𝑍 is not required. Proof. The local restrictions give 𝑠 𝑄 ≤ 1 when 𝑏 𝑄 = 2, while (4.1) excludes (𝑏 𝑄 , 𝑑 ) = (2, 0)
+
+and (𝑏 𝑄 , 𝑑, 𝑠 𝑄 ) = (3, 0, 2). Hence 
+
+(𝑏 𝑄 , 𝑑, 𝑠 𝑄 ) = (3, 0, 1) or (2, 1, 1). (5.10) Write the outward arms at 𝑃 as 𝐵 and 𝐴 1 + · · · + 𝐴 ℓ , and let 𝐷 1, 𝐷 2 be the first components of the outward arms at 𝑄 . Denote the entire connecting chain by 𝐶 1, . . . , 𝐶 ℎ, read from 𝑃 ,with 𝐶 2 
+
+> 𝑖
+
+= −𝑐 𝑖 and 𝑑 = Í𝑖 (𝑐 𝑖 − 2). Define 𝑌 by (viii) : 𝑌 = 3𝑃 + 𝐵 + 2𝐴 1 + 𝐴 2 + 2
+
+> ℎ
+
+∑︁ 
+
+> 𝑖 =1
+
+𝐶 𝑖 + 2𝑄 + 𝐷 1 + 𝐷 2,
+
+(vii) : 𝑌 = 5𝑃 + 2𝐵 + 3𝐴 1 + 𝐴 2 + 4𝐶 1 + 3𝐶 2 + 2
+
+> ℎ
+
+∑︁ 
+
+> 𝑖 =3
+
+𝐶 𝑖 + 2𝑄 + 𝐷 1 + 𝐷 2.
+
+An empty sum is zero. In case (viii), ℓ ≥ 3, so 𝐴 2 has valency two. In case (vii), ℎ ≥ 2and 𝑐 1 = 𝑐 2 = 2. Table 2 gives 𝑌 ≤ 𝑍 in both cases; the displayed multiplicities also give 
+
+𝑌 ≤ 5𝐸 .For a rank-two bundle G, Riemann–Roch gives 𝜒 (𝑌 , G| 𝑌 ) = −𝑌 · ( 𝑌 + 𝐾 𝑋 ) + 𝑌 · det G;see Wahl [13, proof of Proposition 2.6]. Since det 𝑆 𝑋 = O𝑋 (− 𝐾 𝑋 − 𝐸 ), adjunction gives, for 𝑌 = Í𝑣 𝑦 𝑣 𝐸 𝑣 ,
+
+𝜒 (𝑌 , 𝑆 𝑋 |𝑌 ) =∑︁ 
+
+> 𝑣
+
+[𝑏 𝑣 𝑦 𝑣 (𝑦 𝑣 − 1) + ( 4 − 𝑡 𝑣 )𝑦 𝑣 ] − 2∑︁   
+
+> {𝑣,𝑤 }an edge
+
+𝑦 𝑣 𝑦 𝑤 , (5.11) where 𝐸 2 
+
+> 𝑣
+
+= −𝑏 𝑣 and 𝑡 𝑣 is its valency in the graph of 𝐸 . Group the terms in this formula into the two endpoint configurations and the connecting terms. Include internal edges with their endpoint configuration, and include the two attaching edges with the connecting chain. Direct substitution gives case near 𝑃 connecting terms 𝑄 + 𝐷 1 + 𝐷 2
+
+(viii) 6 2𝑑 − 12 2𝑏 𝑄 − 𝑠 𝑄 
+
+(vii) 20 2𝑑 − 26 2𝑏 𝑄 − 𝑠 𝑄 
+
+If the connecting chain is empty in case (viii), its column consists of the edge joining 𝑃 and 
+
+𝑄 , which contributes −12. Both rows give 
+
+𝜒 (𝑌 , 𝑆 𝑋 |𝑌 ) = −6 + 2𝑏 𝑄 − 𝑠 𝑄 + 2𝑑 = −1, (5.12) by (5.10). Thus ℎ1 (𝑌 , 𝑆 𝑋 |𝑌 ) = ℎ0 (𝑌 , 𝑆 𝑋 |𝑌 ) + 1 > 0. Since 𝑌 ≤ 𝑍 , Lemma 2.1 gives nonvanishing on 𝑍 . Lemma 4.7 and Proposition 5.1 identify this cohomology with the stated extension group without using anti-nefness. □
+
+6. Vanishing and the classification theorem We extend the vanishing on 𝑍 to the resolution, complete the classification, and prove the optimal criterion on 5 𝐸 .38 H. PARK AND D. SHIN 
+
+6.1. Restriction maps for O𝑍 . Use the decomposition of 𝑍 from Proposition 4.5, the endpoint algebras 𝐴 𝑖 ⊂ 𝑄 𝑖 = 𝑇 𝑖 [𝑛 𝑖 ]/( 𝑛 2 
+
+> 𝑖
+
+), and the scalar orders 𝜌 𝑖 of Table (4.3). If the remaining connecting chain 𝐾 is nonempty, put 𝐼 = O𝐾 (− 𝐾 ).
+
+Proposition 6.1. For every two-node graph satisfying the two-node conditions of Theorem I, 
+
+ℎ1 (𝑍, O𝑍 ) =
+
+(
+
+1, case (ii) at both ends, all connecting self-intersections − 2,
+
+0, otherwise .
+
+The first alternative includes the case in which no connecting component lies between the nodes. If 𝐾 ≠ 0, the more precise formula is 
+
+ℎ1 (𝑍, O𝑍 ) = max {𝜌 𝐿 + 𝜌 𝑅 − 𝑑 − 3, 0}, 𝑑 =∑︁ 
+
+> 𝑗
+
+(𝑏 𝑗 − 2),
+
+where the remaining connecting components have self-intersections −𝑏 𝑗 .Proof. Suppose first that 𝐾 ≠ 0. Lemma 4.7 gives 𝐻 1 (𝑊, O𝑊 ) = 𝐻 1 (2𝐾, O2𝐾 ) = 0 for 
+
+𝑊 = 𝑊 𝐿 , 𝑊 𝑅 . The Mayer–Vietoris sequence for O𝑍 therefore computes 𝐻 1 (𝑍, O𝑍 ) as the cokernel of the restriction maps on functions. Since 𝐴 𝑖 → 𝑇 𝑖 is onto, inclusion of the square-zero ideal 𝑛 𝑖 𝑇 𝑖 induces 
+
+𝑄 𝑖 /𝐴 𝑖 ≃ 𝑛 𝑖 𝑇 𝑖 /( 𝐴 𝑖 ∩ 𝑛 𝑖 𝑇 𝑖 ).
+
+This quotient isomorphism does not require a splitting of the algebra extension. Functions on 2 𝐾 are constants plus sections of 𝐼 ; constants lie in both endpoint algebras. Thus 
+
+𝐻 1 (𝑍, O𝑍 ) ≃ coker 𝐻 0 (𝐾, 𝐼 ) → 𝐼 |𝜌 𝐿 𝑝 𝐿 ⊕ 𝐼 |𝜌 𝑅 𝑝 𝑅 
+
+ . (6.1) The cokernel in (6.1) is 𝐻 1 (𝐾, 𝐼 (− 𝜌 𝐿 𝑝 𝐿 − 𝜌 𝑅 𝑝 𝑅 )) . Lemma 5.8 gives its dimension as max {𝜌 𝐿 + 𝜌 𝑅 −𝑑 −3, 0}, where 𝑑 = Í 𝑗 (𝑏 𝑗 −2). Since 𝜌 𝐿 , 𝜌 𝑅 ≤ 2 and 𝑑 ≥ 0, this dimension is one if both vanishing orders are two and every connecting curve has self-intersection −2, and is zero otherwise. If every component of 𝐾 has self-intersection −2 and neither end has case (iii), the graph conditions force both ends to have case (ii). A node of self-intersection −2 with one outward arm of length at least two would require the opposite node to have self-intersection at most 
+
+−3. In cases (iv), (vi), and (vii), the initial connecting components of self-intersection −2are included in 𝑊 𝐿 or 𝑊 𝑅 . Thus these cases leave no nonempty 𝐾 whose components all have self-intersection −2. Suppose now that 𝐾 = 0. By the observation preceding Proposition 4.5, either one endpoint has case (iii) or both have case (ii). In the first alternative, choose 𝑛 normal to the node of case (iii). The restriction image of functions vanishing on the reduced node maps surjectively to 𝑛𝑇 /( 𝑛𝑡 2𝑇 ): the corresponding line bundle on the node has degree 
+
+𝑏 − 2 ≥ 1, and its sections extend along the outward chains, where the line bundle has nonnegative component degrees. The function algebra from the opposite end maps onto 𝑇 
+
+and contains 𝑛𝑡 2𝑇 in its intersection with 𝑛𝑇 . The sum of the two images is therefore the entire intersection algebra. If both endpoints have case (ii), the intersection ring is C[𝑡, 𝑛 ]/( 𝑡 2, 𝑛 2). The two function images have the form C + C(𝑡 + 𝛼𝑡𝑛 ) and C + C(𝑛 + 𝛽𝑡𝑛 ), after rescaling their generators. Their intersection consists of the constants, so their sum has dimension three and its cokernel has dimension one. □
+
+Proposition 6.2. Let (𝑋, 𝐸 ) be any analytic realization of a two-node graph satisfying the conditions of Theorem I, other than the exceptional family in Proposition 6.1. For the anti-nef cycle 𝑍 of Proposition 4.5, 
+
+𝐻 1 (𝑋, 𝑆 𝑋 ) = 0 ⇐⇒ 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) = 0 ⇐⇒ Ext 1 
+
+> Λ
+
+(𝐽 0, 𝑀 0) = 0.TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 39 
+
+Proof. Proposition 5.1 gives the comparison with the extension group. By Proposition 6.1, 
+
+𝐻 1 (𝑍, O𝑍 ) = 0. Anti-nefness makes O𝑍 (− 𝑘 𝑍 ) have nonnegative component degrees. By Lemma 2.8, if 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ) = 0, then 𝐻 1 (𝑍, 𝑆 𝑋 (− 𝑘 𝑍 )| 𝑍 ) = 0 for all 𝑘 ≥ 0. So Lemma 2.2 gives 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0. Conversely, restriction is onto on first cohomology by Lemma 2.1. □
+
+6.2. The nonrational family with four arms of length one. Let both nodes have self-intersection −2, let their four outward arms be single curves 𝐵 1, . . . , 𝐵 4 with 𝐵 2 
+
+> 𝑖
+
+= −𝑝 𝑖 , and let every connecting curve have self-intersection −2. Denote by 𝑇 the reduced path between the nodes, including both nodes. Put 
+
+𝐸 = 𝑇 +
+
+> 4
+
+∑︁ 
+
+> 𝑖 =1
+
+𝐵 𝑖 , 𝑍 = 𝐸 + 𝑇 . 
+
+Negative definiteness excludes 𝑝 1 = · · · = 𝑝 4 = 2: the cycle with multiplicity two on 𝑇 and one on each leaf would otherwise have zero intersection with every component. Thus at least one 𝑝 𝑖 > 2. Directly, 
+
+𝑍 · 𝑇 𝑗 = 0, 𝑍 · 𝐵 𝑖 = 2 − 𝑝 𝑖 ≤ 0. (6.2) In particular 𝑍 is anti-nef. 
+
+Lemma 6.3. Put 𝐹 = 𝑆 𝑋 (− 𝑇 )| 𝐸 . At either end of 𝑇 , let 𝑅 = 𝑃 + 𝐵 + 𝐵 ′ consist of the node and its two outward leaves, with 𝐵 2 = −𝑝 and (𝐵 ′)2 = −𝑞 . Then 𝐻 1 (𝑅, 𝐹 |𝑅 ) = 0, and the image of restriction from 𝐻 0 (𝑅, 𝐹 |𝑅 ) to the fiber at the attachment to the rest of 𝑇 is 
+
+C(1, −𝜏 ), 𝜏 = 2 − 1
+
+𝑝 − 1
+
+𝑞 ,
+
+in the ordered tangent and normal logarithmic basis on 𝑃 , after choosing a frame for 
+
+O𝑃 (− 𝑇 ). These assertions hold for every analytic realization. Proof. The component restrictions of 𝐹 on 𝑃, 𝐵, 𝐵 ′ are respectively O( 1) ⊕ O , O(− 1) ⊕ O ,and O(− 1) ⊕ O , so their first cohomology vanishes. Place the two outward attachment points on 𝑃 at 𝑧 = 0, 1, and the path attachment at 𝑢 = 1/𝑧 = 0. The first-order normalization of Lemma 2.4 applies while preserving these three marked branches: its obstruction lies in 
+
+𝐻 1 
+
+P1, ΘP1 (−[ 0] − [ 1] − [∞]) ⊗ O P1 (2)
+
+
+
+= 𝐻 1 (P1, OP1 (1)) = 0.
+
+Thus the normal transition is 𝑦 ′ = 𝑧 2 𝑦 . Let 𝑒 be the frame of O𝑃 (− 𝑇 ) induced by 𝑦 , and let 
+
+𝑒 ∞ be induced by 𝑢𝑦 ′ at the path attachment; then 𝑒 = 𝑢𝑒 ∞. The sections of 𝐹 |𝑃 are 
+
+𝑒  𝛼𝑧 (𝑧 − 1)𝜕 𝑧 + ( 𝛽𝑧 + 𝛾 )𝑦𝜕 𝑦 
+
+ , 𝛼, 𝛽, 𝛾 ∈ C.
+
+The tangent quotient is O𝑃 , and the normal Euler subbundle is O𝑃 (1); their sections give the constant coefficient 𝛼 and the linear expression 𝛽𝑧 + 𝛾 . At the path attachment, the value in the stated basis and frame 𝑒 ∞ is 
+
+(− 𝛼, 𝛽 + 2𝛼 ).
+
+On the leaf of self-intersection −𝑝 , choose tangent coordinate 𝑤 , with the attachment at 𝑤 = 0, and normal coordinate 𝑟 . The transition 𝑟 ′ = 𝑤 𝑝 𝑟 shows that the sections of 𝑆 𝑋 
+
+restricted to the leaf and vanishing at the attachment are 𝑤𝜆 (𝑤𝜕 𝑤 − 𝑝𝑟𝜕 𝑟 ), where 𝜆 ∈ C.Dividing by the frame 𝑤 of O𝐵 (− 𝑇 ) and exchanging tangent and normal entries gives the line C(1, −1/𝑝 ) in the node fiber. The two matching equations are therefore 
+
+𝛾 = 𝛼 /𝑝, 𝛽 + 𝛾 = −𝛼 /𝑞. 
+
+They are independent. Thus 𝛽 = −𝛼 (1/𝑝 + 1/𝑞 ), and the remaining path value is the line 
+
+C(1, −𝜏 ), 𝜏 = 2 − 1
+
+𝑝 − 1
+
+𝑞 .
+
+The normalization map for 𝑅 has source dimension five and target dimension four. The two independent leaf equations leave the one-dimensional kernel just computed, so the map is 40 H. PARK AND D. SHIN 
+
+surjective and 𝐻 1 (𝑅, 𝐹 |𝑅 ) = 0. Its kernel has the asserted boundary image. The calculation uses only first-order normal transitions preserving the marked branches, and therefore holds for every analytic realization. □
+
+Lemma 6.4. For this family, 
+
+𝐻 1 (𝑇, 𝑆 𝑋 |𝑇 ) = 0, 𝐻 1 (𝐸, 𝑆 𝑋 (− 𝑇 )| 𝐸 ) = 0.
+
+Proof. Let 𝑚 be the number of internal components of 𝑇 . The restrictions of 𝑆 𝑋 to the nodes are O ⊕ O(− 1), and its restrictions to the internal components are trivial of rank two. The normalization map therefore has source and target of equal dimension. At the left node the Euler line, after exchanging tangent and normal entries at the first crossing, is represented by (1, 0). Its transport to the right node is 
+
+𝑇 𝑚  
+
+> 2
+
+(1, 0) = (𝑚 + 1, −𝑚 ).
+
+The right node’s Euler line is represented by (0, 1); the determinant is 𝑚 + 1 ≠ 0, also when 
+
+𝑚 = 0. The normalization map is thus an isomorphism, proving 𝐻 1 (𝑇, 𝑆 𝑋 |𝑇 ) = 0. For the second assertion, put 𝐹 = 𝑆 𝑋 (− 𝑇 )| 𝐸 . Lemma 6.3 eliminates the two outward leaves at each node and supplies its boundary line. On each internal component 𝐹 is trivial of rank two, and O(− 𝑇 ) has multidegree zero along the internal chain. A trivialization of this line bundle makes the transport there the same as for 𝑆 𝑋 . With the fiber conventions of Corollary 5.5, the two boundary lines admit representatives (𝜏, −1) and (− 1, 𝜎 ). Their transported determinant is det 𝐴 Γ
+
+𝑝 1 𝑝 2 𝑝 3 𝑝 4
+
+> 0,
+
+where 𝐴 Γ is the negative intersection matrix. The normalization map after eliminating the leaves has source and target of equal dimension, so this nonzero determinant makes it an isomorphism. This proves 𝐻 1 (𝐸, 𝐹 ) = 0. □
+
+Proposition 6.5. Every graph in this family satisfies 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0 for every analytic realization. Proof. For every 𝑘 ≥ 0, the cycle sequence is 0 → 𝑆 𝑋 (− 𝑇 − 𝑘 𝑍 )| 𝐸 → 𝑆 𝑋 (− 𝑘 𝑍 )| 𝑍 → 𝑆 𝑋 (− 𝑘 𝑍 )| 𝑇 → 0.
+
+By (6.2), the line bundle O𝑇 (− 𝑘 𝑍 ) has multidegree zero. It is trivial because 𝑇 is a rational tree. Thus the right term has zero 𝐻 1 by Lemma 6.4. The left term is 𝑆 𝑋 (− 𝑇 )| 𝐸 tensored with the nef line bundle O𝐸 (− 𝑘 𝑍 ) on the reduced rational tree 𝐸 . Lemma 2.8, applied to 𝐸 ,gives its 𝐻 1-vanishing for every 𝑘 . Hence 𝐻 1 (𝑍, 𝑆 𝑋 (− 𝑘 𝑍 )| 𝑍 ) = 0 for all 𝑘 . Lemma 2.2 finishes the proof. □
+
+6.3. Completion of the classification. We combine the necessary restrictions and the vanishing results to prove Theorem I. The same cycle calculations determine which of the taut graphs are rational. 
+
+Proof of Theorem I. Theorem 2.11 leaves chains, cycles, and trees of rational components with one or two trivalent nodes. Propositions 2.12 and 2.14 and Theorem 3.11 prove the first three classes. For two nodes, Propositions 4.4 and 5.13 prove necessity. Conversely, Proposition 4.5 constructs an anti-nef cycle 𝑍 . Corollary 5.10 and Proposition 5.12 give a vanishing extension group, according as the remaining connecting chain is nonempty or empty. Proposition 5.1 identifies this group with 𝐻 1 (𝑍, 𝑆 𝑋 |𝑍 ). Propositions 6.2 and 6.5 then give 
+
+𝐻 1 (𝑋, 𝑆 𝑋 ) = 0 for every analytic realization. Theorem 2.5 proves tautness. Every listed graph has an analytic realization by Lemma 2.7, and its self-intersections ensure that the resolution is minimal and good. □TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 41 
+
+Corollary 6.6. Among the graphs in Theorem I, the nonrational graphs are the cycles and the trees with four arms of length one in which every curve on the path between the nodes, including the nodes, has self-intersection −2. In particular, taut surface singularities need not be rational. Proof. Chains and the graphs with one node listed in the theorem are rational by Propo-sition 2.12 and Theorem 3.11. Outside the exceptional two-node family, Proposition 6.1 gives 𝐻 1 (𝑍, O𝑍 ) = 0; anti-nefness, Lemma 2.8, and Lemma 2.2, applied to O𝑋 , give 
+
+𝐻 1 (𝑋, O𝑋 ) = 0. In the exceptional family, ℎ1 (O 𝑍 ) = 1, so restriction gives 𝑝 𝑔 ≥ 1. For a reduced cycle 𝐸 , normalization gives 𝜒 (O 𝐸 ) = #{vertices } − #{edges } = 0 and ℎ0 (O 𝐸 ) = 1, hence ℎ1 (O 𝐸 ) = 1; restriction again gives 𝑝 𝑔 ≥ 1. □
+
+6.4. Comparison with Laufer’s list. The families and parameter ranges agree with those in Laufer [7, pp. 136–139]; this comparison is not used in the proof. Chains give families I and II, and cycles give (V.1)–(V.2). For one node, central self-intersection at most −3gives (III.1); with central self-intersection −2, the three families correspond to (III.2)–(III.3), (III.4), and (III.5)–(III.9), respectively. Terminal parameters equal to two are included. Laufer also requires the components of a good resolution to be smooth. For two nodes, the endpoint patterns correspond as follows: case in Table 2 (iii) (ii) (i) (iv) (v) (vi) (vii) (viii) Laufer’s row 𝐿 1 𝐿 2 𝐿 3 𝐿 4 𝐿 5 𝐿 6 𝐿 7 𝐿 8.
+
+At an end of case (iii), put 𝛼 = 1 if (𝑏, 𝑠 ) = (3, 2), and 𝛼 = 0 otherwise. Put 𝛽 = 1 if 𝑏 = 3and 𝑠 ≥ 1, and 𝛽 = 0 otherwise. The least allowed value of 𝑑 is (ii) (i), (iv)–(vi) (vii), (viii) (iii) (ii) 0 1 1 0(i), (iv)–(vi) 1 1 2 𝛼 
+
+(vii), (viii) 1 2 2 𝛽 
+
+(iii) 0 𝛼 𝛽 0.
+
+In an entry involving case (iii), use its parameters 𝑏, 𝑠 . The local restrictions of Table 2 and negative definiteness are still imposed. The matrix is equivalent to (4.1) and the condition in the last column of Table 1, applied in both orientations. In particular, opposite case (vii) or (viii), a node with 𝑏 = 3 requires 𝑠 = 0 when 𝑑 = 0; when 𝑑 ≥ 1, either outward arm may have any length. The joiner 𝐽 1 permits an arbitrary chain, whereas 𝐽 2 requires an entry at least 3. Each of 
+
+𝐿 5, . . . , 𝐿 8 already contains one such entry. The operation 𝐶 1 replaces two such entries by one entry at least 3, while 𝐶 2 replaces them by one entry at least 4. Together with 𝐶 3 and 
+
+𝐶 4, these rules give the displayed bounds on 𝑑 from Laufer’s Table (IV). The operations 
+
+𝐶 3, 𝐶 4 permit 𝑑 = 0 opposite case (iii), with the alternatives encoded by 𝛼, 𝛽 . These are the combinatorial substitutions specified by Laufer. Our case (iv) includes the maximal initial sequence of connecting components of self-intersection −2, which Laufer leaves in the joiner. His uncontracted 𝐿 5, . . . , 𝐿 8 additionally include the first subsequent component of self-intersection at most −3, whereas we leave that component in the remaining chain. When no such component exists, 𝐶 3 or 𝐶 4 gives the corresponding full graph. Thus the comparison includes an empty remaining chain and pieces meeting directly. Including components of self-intersection −2 does not change 𝑑 .Finally, the nonrational exceptions in Laufer [7, p. 139] are exactly those in Corollary 6.6. 6.5. A criterion on 5𝐸 . Every excluded graph has an obstruction on a cycle contained in 5𝐸 . This gives a uniform criterion for tautness. 
+
+Theorem 6.7. Let Γ be a connected negative-definite graph of a minimal good resolution of a normal complex surface singularity. Then Γ is taut if and only if 𝐻 1 (5𝐸, 𝑆 𝑋 |5𝐸 ) = 0 for every analytic realization (𝑋, 𝐸 ) of Γ.42 H. PARK AND D. SHIN 
+
+Proof. If Γ is taut, Theorem 2.5 gives 𝐻 1 (𝑋, 𝑆 𝑋 ) = 0 for every realization. Restriction is onto by Lemma 2.1, proving vanishing on 5 𝐸 .Conversely, it suffices to find one analytic realization with nonzero restriction cohomology for each excluded graph. The exclusions in the proof of Theorem I have the following exhaustive bounds on their obstruction cycles.                       
+
+> Excluded configuration Bound Calculation Genus, valency, or reduced incidence 𝑌 ≤𝐸 Section 2.6 First restrictions at two nodes 𝑌 ≤2𝐸 Proposition 4.1 and (4.1) Arm restrictions at one node 𝑌 ≤5𝐸 Theorem 3.11, Corollary 3.5 Excluded initial self-intersection sequences 𝑌 ≤5𝐸 Lemma 4.3 Last column of Table 1 𝑌 ≤5𝐸 Proposition 5.13
+
+For the second row, the boundary calculation after Proposition 4.1 proves (4.1) on 
+
+𝑍 2 ≤ 2𝐸 . For the third and fourth rows, use the standard plumbing realizations of the one-node graph and of the chosen star-shaped subgraph, respectively. In the latter case, Lemma 2.7 extends the realization, and Lemma 2.6 preserves the obstruction. Since the chosen reduced subgraph is contained in 𝐸 , these operations preserve the bound 𝑌 ≤ 5𝐸 .The final row gives an obstruction for every realization. Negative-definite chains and cycles that occur as dual graphs of minimal good resolutions are already among the taut classes. Thus every non-taut graph has an analytic realization and a cycle 𝑌 ≤ 5𝐸 with 
+
+𝐻 1 (𝑌 , 𝑆 𝑋 |𝑌 ) ≠ 0. Lemma 2.1 gives a surjection from 𝐻 1 (5𝐸, 𝑆 𝑋 |5𝐸 ) onto this group, contradicting vanishing for every realization. □
+
+Example 6.8. Let Γ0 be the star-shaped graph with central weight −2 and arms 
+
+[2], [2, 3], [2, 2, 2, 2, 2],
+
+read from the central vertex towards their ends. Then Γ0 is not taut, but 
+
+𝐻 1 (𝑟 𝐸, 𝑆 𝑋 |𝑟 𝐸 ) = 0 for 1 ≤ 𝑟 ≤ 4for every analytic realization (𝑋, 𝐸 ) of Γ0. Its weighted homogeneous realization (𝑋 w, 𝐸 w)
+
+satisfies 
+
+ℎ1 (5𝐸 w, 𝑆 𝑋 w |5𝐸 w ) = 1.
+
+Consequently, the integer 5 in Theorem 6.7 cannot be replaced by a smaller positive integer. 
+
+Proof. The Seifert invariants are (𝑛 1, 𝑎 1) = (2, 1), (𝑛 2, 𝑎 2) = (5, 3), and (𝑛 3, 𝑎 3) = (6, 5).The graph is negative definite because 2 − 12 − 35 − 56 = 115 > 0.
+
+Let (𝑋 w, 𝐸 w) be the minimal good resolution of Pinkham’s weighted homogeneous model, and write 𝑆 w = 𝑆 𝑋 w . By Lemma 3.6, its exceptional neighborhood and grading agree with those of the standard plumbing realization. The integers 𝑞 𝑘 , 𝑐 𝑘 of Section 3 satisfy 
+
+𝑞 𝑘 +30 = 𝑞 𝑘 + 2, 𝑐 𝑘 +30 = 𝑐 𝑘 .
+
+For 0 ≤ 𝑘 < 30, the negative values of 𝑞 𝑘 are all −1, at exactly the following indices: 
+
+𝑘 1 2 3 4 5 7 9 11 17 
+
+𝑐 𝑘 1 1 1 0 2 2 1 2 3.
+
+Thus 𝑞 𝑘 ≥ − 1 in every nonnegative degree, and 𝑞 𝑘 + 𝑐 𝑘 < 0 only at 𝑘 = 4, where its value is −1. Proposition 3.8 gives 𝐻 1 (𝑋 w, O𝑋 w ) = 0, and its Euler sequence gives dim 𝐻 1 (𝑋 w, 𝐿 𝑋 w )𝑘 = dim 𝐻 1 (𝑋 w, 𝑆 w)𝑘 =
+
+(
+
+1, 𝑘 = 4,
+
+0, 𝑘 ≠ 4.
+
+Here degree is measured in the normal coordinate of the central component. TAUT SURFACE SINGULARITIES AND REPRESENTATIONS 43 
+
+Write 𝐸 w = 𝑃 + 𝐴 1 + 𝐴 2 + 𝐴 3, where 𝑃 is central and 𝐴 𝑖 are the reduced arms. On 𝑃 ,the successive layers for 4 𝑃 are 
+
+𝑆 w (− 𝑗 𝑃 )| 𝑃 ≃ O P1 (2 𝑗 ) ⊕ O P1 (2 𝑗 − 1), 0 ≤ 𝑗 ≤ 3,
+
+so they have vanishing first cohomology. On each arm, 𝑆 w has component restrictions O⊕2
+
+or O ⊕ O( 1), and O𝐴 𝑖 (− 𝐴 𝑖 ) has nonnegative component degrees. Normalization of the chain therefore gives 𝐻 1 ( 𝐴 𝑖 , 𝑆 w (− 𝑗 𝐴 𝑖 )| 𝐴 𝑖 ) = 0 for 𝑗 ≥ 0. The thickening sequences yield 
+
+𝐻 1 (4𝑃, 𝑆 w |4𝑃 ) = 𝐻 1 (4𝐴 𝑖 , 𝑆 w |4𝐴 𝑖 ) = 0.
+
+Put 𝐻 = 𝐻 1 (4𝐸 w, 𝑆 w |4𝐸 w ) and 𝑇 𝑖 = 4𝑃 ∩ 4𝐴 𝑖 . Since the pieces have zero first cohomology, the equivariant Mayer–Vietoris sequence presents 𝐻 as a quotient of É 
+
+> 𝑖
+
+𝐻 0 (𝑇 𝑖 , 𝑆 w |𝑇 𝑖 ). In coordinates 𝑃 = (𝑥 = 0), 𝐴 𝑖 = (𝑡 = 0), one has 
+
+O𝑇 𝑖 ≃ C{𝑥, 𝑡 }/( 𝑥 4, 𝑡 4).
+
+The central normal scaling gives 𝑥 degree one and 𝑡 degree zero; the logarithmic frame 
+
+𝑥𝜕 𝑥 , 𝑡𝜕 𝑡 is invariant. Every monomial in the displayed intersection ring therefore has normal degree 0 , 1, 2, or 3, so these are the only possible weights of 𝐻 . On the other hand, restriction gives an equivariant surjection 
+
+𝐻 1 (𝑋 w, 𝑆 w) ↠ 𝐻. 
+
+Its source is concentrated in degree 4, so 𝐻 can have weight only 4. The two weight sets are disjoint; hence 𝐻 = 0. Since 𝑞 4 = −1 and 𝑐 4 = 0, Corollary 3.5 gives nonzero first cohomology on 5 𝐸 w.Restriction from the one-dimensional space 𝐻 1 (𝑋 w, 𝑆 w) is surjective, so ℎ1 (5𝐸 w, 𝑆 w |5𝐸 w ) =
+
+1. In particular, Γ0 is not taut. It remains to prove vanishing on 4 𝐸 for every analytic realization. Every realization is rational because rationality depends only on the graph. Wahl [12, Corollary 4.5(iii)] gives 
+
+ℎ1 (𝑋, 𝐿 𝑋 ) = 1 for all of them. By Wahl [12, Proposition 4.8], a realization which is not quasi-homogeneous satisfies ℎ1 (𝑋, 𝑆 𝑋 ) < 1, hence ℎ1 (𝑋, 𝑆 𝑋 ) = 0. Restriction then gives vanishing on every exceptional cycle of that realization. For a quasi-homogeneous realization, Pinkham’s data have the form 
+
+D = 𝐵 − 12 𝑝 1 − 35 𝑝 2 − 56 𝑝 3, deg 𝐵 = 2.
+
+An automorphism of P1 takes the three marked points to 0 , 1, ∞, and 𝐵 is linearly equivalent to 2 [∞] . Replacing 𝐵 by a linearly equivalent divisor gives an isomorphic graded ring. Thus the quasi-homogeneous realization is unique up to analytic isomorphism, and the preceding calculation applies to it. We have proved vanishing on 4 𝐸 for every realization. Restriction gives vanishing on 𝑟 𝐸 for 1 ≤ 𝑟 ≤ 4, proving optimality. □
+
+Schüller [11, Corollary 2.11 and Propositions 3.15–3.16] gives finite criteria with graph-dependent multiplicities and the intrinsic tangent sheaf of a plumbing scheme. Theorem 6.7 uses the fixed cycle 5 𝐸 , the ambient logarithmic tangent bundle, and vanishing for every analytic realization. References                       
+
+> [1] M. Artin, On isolated rational singularities of surfaces , Amer. J. Math. 88 (1966), no. 1, 129–136. [2] E. Brieskorn, Rationale Singularitäten komplexer Flächen , Invent. Math. 4(1968), 336–358. [3] H. Grauert, Ein Theorem der analytischen Garbentheorie und die Modulräume komplexer Strukturen , Publ. Math. Inst. Hautes Études Sci. 5(1960), 5–64. doi:10.1007/BF02684746. [4] H. Grauert, Über Modifikationen und exzeptionelle analytische Mengen , Math. Ann. 146 (1962), 331–368. doi:10.1007/BF01441136. [5] H. B. Laufer, Normal Two-Dimensional Singularities , Annals of Mathematics Studies 71 , Princeton University Press, Princeton, NJ, 1971. [6] H. B. Laufer, Deformations of resolutions of two-dimensional singularities , in Complex Analysis, 1972, Vol. I: Geometry of Singularities , Rice Univ. Studies 59 (1973), no. 1, 53–96. [7] H. B. Laufer, Taut two-dimensional singularities , Math. Ann. 205 (1973), 131–164. doi:10.1007/BF01350842. 44 H. PARK AND D. SHIN
+
+[8] J. Lipman, Rational singularities, with applications to algebraic surfaces and unique factorization , Inst. Hautes Études Sci. Publ. Math. 36 (1969), 195–279. doi:10.1007/BF02684604. [9] H. Pinkham, Normal surface singularities with C∗ action , Math. Ann. 227 (1977), no. 2, 183–193. doi:10.1007/BF01350195. [10] C. M. Ringel, The representations of quivers of type 𝐴 𝑛 . A fast approach , arXiv:1304.5720 (2013). 
+
+https://arxiv.org/abs/1304.5720 .[11] F. Schüller, On taut singularities in arbitrary characteristics , arXiv:1303.6128 (2013). https://arxiv. org/abs/1303.6128 .[12] J. Wahl, Milnor and Tjurina numbers for smoothings of surface singularities , Algebr. Geom. 2 (2015), no. 3, 315–331. doi:10.14231/AG-2015-014. [13] J. Wahl, The number of equisingular moduli of a rational surface singularity , Methods Appl. Anal. 24 (2017), no. 1, 125–154. doi:10.4310/MAA.2017.v24.n1.a9. https://arxiv.org/abs/1603.07935 .Department of Mathematics, Konkuk University, Seoul, Republic of Korea 
+
+Email address : HeesangPark@konkuk.ac.kr 
+
+Department of Mathematics, Chungnam National University, Daejeon, Republic of Korea 
+
+Email address : dsshin@cnu.ac.kr
