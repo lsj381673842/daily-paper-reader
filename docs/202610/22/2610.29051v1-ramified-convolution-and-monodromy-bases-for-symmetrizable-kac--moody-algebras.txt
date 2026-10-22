@@ -1,0 +1,2713 @@
+Title: Ramified convolution and monodromy bases for symmetrizable Kac–Moody algebras
+
+URL Source: https://arxiv.org/pdf/2610.29051v1
+
+Published Time: Thu, 22 Oct 2026 00:33:37 GMT
+
+Number of Pages: 35
+
+Markdown Content:
+RAMIFIED CONVOLUTION AND MONODROMY BASES FOR SYMMETRIZABLE KAC–MOODY ALGEBRAS 
+
+JIARUI FEI 
+
+Abstract. We realize the positive enveloping algebra of a symmetrizable Kac–Moody algebra by convolution on a ramified preprojective species over C(( t)). The coefficients are alternating traces of tame monodromy on representation flag varieties. We prove the relative Serre relations modulo classes induced from proper finite extensions. Monodromy evaluations at compatible generic points of the central reductions yield an integral basis respecting the top and socle crystals. The basis is unchanged by scaling the symmetrizer, induces bases of integrable representation lattices, and agrees with Lusztig’s semicanonical basis when the Cartan matrix is symmetric. We prove the acyclic convolution conjecture of Geiß–Leclerc–Schröer for all symmetrizable Cartan matrices and all positive integral symmetrizers. Finally, we give a counterexample to the Support Conjecture of Geiß–Leclerc–Schröer and compute a ramified lift for which monodromy restores the Serre relation. 
+
+Contents 
+
+Introduction 11. The standard integral algebra 52. Constructible classes modulo induced classes 83. The relative Serre relation 11 4. Geometric composition and the Hopf structure 13 5. Integral charts and reduction of components 15 6. Generic monodromy evaluations and the integral basis 18 7. Crystal compatibility and integrable modules 22 8. Changes of coordinates 24 9. The symmetric case and direct sums 26 10. The Serre quotient and generic evaluation 28 Appendix A. The acyclic realization 32 Declaration of AI-assisted research and manuscript preparation 35 References 35 
+
+Introduction 
+
+0.1. Historical background. The geometric study of the positive part of a Kac–Moody enveloping algebra through quiver representations began with Lusztig’s work on convolution [14]. Let C = ( cij )i,j ∈I be a symmetrizable generalized Cartan matrix, where I is finite. We write n(C)for the positive nilpotent subalgebra of the associated Lie algebra, ei for its Chevalley generators, and U + 
+
+> Q
+
+= UQ(n(C)). For symmetric C, Kashiwara and Saito gave a geometric realization 
+
+2020 Mathematics Subject Classification. Primary 17B67; Secondary 16G20, 14F20, 14D05. 
+
+Key words and phrases. Symmetrizable Cartan matrix, preprojective species, convolution algebra, monodromy, semicanonical basis, crystal. The author was supported in part by National Natural Science Foundation of China (Nos. 12131015 and 12571038).  
+
+> 1arXiv:2610.29051v1 [math.RT] 21 Oct 2026 2JIARUI FEI
+
+of the crystal using nilpotent preprojective representations [13], and Lusztig constructed the 
+
+semicanonical basis from the irreducible components of their varieties [15]. Geiß, Leclerc and Schröer (GLS) studied the dual semicanonical basis and its multiplication [5]. They subsequently related generating functions of Euler characteristics of partial composition series to cluster characters and generic bases associated with unipotent cells [6]. The extension of this geometry to nonsymmetric Cartan matrices requires a symmetrizer. Fix positive integers d = ( di)i∈I with dicij = dj cji , and put D = diag( di). For an acyclic orientation Ω of the underlying graph, GLS introduced the algebras H(C, D, Ω) and Π( C, D )in [7]. The subsequent papers treat changes of symmetrizers [8], convolution algebras [9], and nilpotent varieties, crystal structures, and semicanonical functions [10]. The dimension theorem, component count, and crystal on maximal components established there are basic ingredients of this paper. To obtain a basis from generic Euler-characteristic evaluations, GLS proposed a support condition on the Serre relations [10, Conjecture 1.4]. We follow the terminology “Support Conjecture” used in [4, Proposition 5.11]. A power-series construction of hereditary species with the same ramified vertex fields and equivalent arrow bimodules appears in [11, Section 4]. That paper also studies rigid modules, that is, modules without self-extensions, and their relation to Schur roots. Nandakumar and Tingley obtained another geometric realization of symmetrizable crystals through modulated graphs [16]. In earlier work [3], we introduced monodromy characters for ramified quivers with potentials by taking alternating traces of tame inertia on quiver Grassmannians. That paper establishes mutation formulas and, under its stated hypotheses, cluster bases. The present paper concerns preprojective representations and their flags instead. We use the coefficient-field comparison, the trace calculation for cyclically permuted strata, and the ramified Grassmannian formula of [3, Proposition 7.2 and Lemmas 7.3–7.4]. These results allow us to replace ordinary Euler-characteristic evaluations by monodromy traces in the preprojective construction. 0.2. Ramification and monodromy. The need for monodromy is visible already in the Grassmannians at a single vertex. We put 
+
+O = C[[ t]] , K = C(( t)) , Ki = C(( t1/d i )) ,
+
+and choose an algebraic closure K containing compatible roots of t. A representation of a species has a Ki-vector space at vertex i. Over K, the field Ki splits into di copies of K. This changes the Euler characteristics of the relevant Grassmannians and accounts for the difference between ordinary Euler characteristic and the invariant we use. Fix a prime ℓ and a topological generator σ of the tame inertia group of K. For a separated scheme X of finite type over K, define its monodromy trace by 
+
+χσ(X) = ∑
+
+> q
+
+(−1) q Tr (σ | Hqc (XK , Qℓ)),
+
+where Hqc denotes compactly supported ℓ-adic cohomology. We write χc for the corresponding alternating sum of cohomology dimensions, or for the usual compactly supported Euler charac-teristic of a complex variety. By Nicaise’s trace formula, χσ(X) is an integer independent of ℓ
+
+and of the chosen generator [17, Corollary 6.5]. For a finite extension L/K , let Res L/K denote Weil restriction , and write Gr a(V ) for the Grassmannian of a-dimensional subspaces of V . For 0 ≤ a ≤ r we have 
+
+χc
+
+> (
+
+(Res Ki/K Gr a(Kri )) K 
+
+> )
+
+=
+
+> (
+
+ra
+
+> )di
+
+, χσ
+
+> (
+
+Res Ki/K Gr a(Kri )) =
+
+> (
+
+ra
+
+> )
+
+.RAMIFIED CONVOLUTION AND MONODROMY BASES 3
+
+Indeed, after passing to K the Weil restriction becomes a product of di Grassmannians, and inertia cyclically permutes its factors. The second equality follows from the Künneth formula; see [3, Lemma 7.4]. Representation flag varieties are subvarieties of similar products, defined by the conditions that the arrows preserve the flags. Their monodromy traces will give the Serre relations. We use the vertex valuation rings Oi = O[xi]/(xdi 
+
+> i
+
+− t) and the standard integral preprojective algebra Pd defined in Section 1. Its generic fibre is Γ d = K ⊗O Pd. We work with right modules and multiply paths from left to right. For k ≥ 1, its central reduction is Πk := Pd/t kPd ∼= Π( C, kD )op ,
+
+where Π( C, kD ) is the GLS preprojective algebra. We call a Pd-module a locally free lattice if its vertex modules are free of finite rank over the Oi.0.3. Main results. Let J be the ideal of Γ d generated by its nonloop arrows. A finite-dimensional right Γ d-module M is nilpotent if M J n = 0 for some n. The module Si has vertex space Ki at i
+
+and zero spaces elsewhere. For a word w = ( i1, . . . , i h) in I, let Fl Rw (M ) be the projective scheme of ascending submodule flags with successive quotients Si1 , . . . , S ih . In families, each quotient has rank one over its vertex field, a condition we call balanced . Set 
+
+Fw(M ) = χσ(Fl Rw (M )) ,
+
+with value zero when the word has the wrong rank and F∅(0) = 1. Write Mσ(Γ d) for the Q-span of these functions on nilpotent modules. 
+
+Theorem A (Ramified convolution) . For every symmetrizable Cartan matrix C and every positive integral symmetrizer D = diag( di), geometric convolution makes Mσ(Γ d) a graded connected cocommutative Hopf algebra, and the assignment ei 7 → Fi induces an isomorphism 
+
+U +
+
+> Q
+> ∼
+
+−→ M σ(Γ d).
+
+The coproduct is given by evaluation on direct sums of representations. 
+
+The vertex ring of Π k at i is Hi,k = C[xi]/(xkd i 
+
+> i
+
+). Let Ei,k be the module supported at i
+
+with vertex module Hi,k and with all nonloop arrows acting as zero. A module is locally free if its vertex modules are free over these rings; it is E-filtered if it has a filtration with successive quotients among the Ei,k . For a rank vector r = ( ri) ∈ NI , where N = {0, 1, 2, . . . }, let Bkd (r) be the set of irreducible components of largest dimension in the closure of the E-filtered locus on the fixed vertex modules Hri
+
+> i,k
+
+. For k = 1 we simply write Bd(r), and put 
+
+qd(r) = 12 rTDC r, Nd(r) = ∑
+
+> i
+
+dir2 
+
+> i
+
+− qd(r).
+
+The largest quotient and submodule supported at i are called its i-top and i-socle ; the corre-sponding operations on components give the two crystal structures of GLS. Let U + 
+
+> Z
+
+be the divided-power integral form of U + 
+
+> Q
+
+, generated by e(p) 
+
+> i
+
+= epi /p !. A subscript r
+
+indicates the homogeneous part of rank r, with deg ei = αi, the ith coordinate vector of ZI .
+
+Theorem B (Generic monodromy basis) . Reduction modulo tk induces compatible bijections 
+
+Bkd (r) ∼
+
+−→ B d(r), k ≥ 1,
+
+which preserve the two crystal structures. For components corresponding under these bijections, reduction from level k to level l ≤ k is dominant. Their compatible generic points determine functionals λmon  
+
+> Z
+
+, independent of the choices used in their construction, and evaluation is an isomorphism 
+
+U +
+
+> Z,r
+> ∼
+
+−→ ZBd(r), u 7 −→ (λmon  
+
+> Z
+
+(u)) 
+
+> Z
+
+.4 JIARUI FEI 
+
+Consequently there is an integral basis {bmon  
+
+> Z
+
+} characterized by λmon  
+
+> Y
+
+(bmon  
+
+> Z
+
+) = δY,Z .
+
+The basis is compatible with both crystal structures and gives bases of integrable represen-tation lattices (Theorem 7.2 and Proposition 7.3). It is invariant under common scaling of the symmetrizer and under the coordinate changes considered in Section 8. For symmetric C it recovers Lusztig’s semicanonical basis (Proposition 9.1). The multiplication formula for its dual holds when the two generic cross-Ext 1 spaces vanish (Proposition 9.2). The classical special-fibre convolution has a different behaviour. Let TQ = Q⟨zi : i ∈ I⟩ be the free associative algebra, and let JC be the two-sided ideal generated by the Serre elements (ad zi)1−cij zj , where (ad x)( y) = xy − yx . The quotient TQ/J C is U + 
+
+> Q
+
+. A monodromy functional is therefore also a functional on TQ. For a maximal component Z of Π 1, let λsp  
+
+> Z
+
+denote the generic value of the corresponding special-fibre convolution functions, before imposing the Serre relations. The Support Conjecture of [10, Conjecture 1.4] requires every function in the Serre ideal to have support of dimension strictly below the maximal-component dimension in its degree. 
+
+Theorem C (A counterexample to the Support Conjecture) . For 
+
+C∗ =
+
+> 
+
+2 −2 0
+
+−1 2 −10 −2 2 
+
+> 
+
+, d∗ = (1 , 2, 1) , D∗ = diag( d∗),
+
+there is a maximal E-filtered component Z of rank (2 , 3, 2) such that 
+
+f = (ad z2)2(z1) z1z3z2z3 ∈ JC∗ , λsp  
+
+> Z
+
+(f ) = −2, λmon  
+
+> Z
+
+(f ) = 0 .
+
+This component contains a dense orbit of a rigid module. In particular, the Support Conjecture fails even for the minimal symmetrizer. 
+
+The proof is an explicit calculation of three flag varieties and the endomorphism algebra of a module. For its ramified lift, the corresponding relative flag scheme explains why special-fibre Euler characteristic and monodromy trace give different answers. There is also an acyclic realization. If Ω is an acyclic orientation, let H = H(C, D, Ω) op , and let Λd be the corresponding acyclic quotient of Γ d. With MQ(H) denoting the Euler-characteristic convolution algebra generated by the vertex modules, we obtain the following result. 
+
+Theorem D (Acyclic convolution and the GLS conjecture) . For every symmetrizable Cartan matrix C, every positive integral symmetrizer D, and every acyclic orientation Ω, the vertex-generator maps yield graded Hopf algebra isomorphisms 
+
+U +
+
+> Q
+> ∼
+
+−→ M Q(H), U +
+
+> Q
+> ∼
+
+−→ M σ(Λ d).
+
+The first isomorphism proves [9, Conjecture 7.2] , including the corresponding identification of primitive Lie algebras. 
+
+The Dynkin case of the first isomorphism was established in [9, Theorem 7.1]. The proof of the general case in Appendix A uses an auxiliary acyclic quiver and does not depend on the component charts. The same identification gives the canonical Serre quotient of the ordinary preprojective convolution algebra: restriction to any acyclic orientation has kernel exactly the Serre ideal (Theorem 10.1). 0.4. Proof and organization. To prove the Serre relations, we retain the flag data on both sides of the subquotient where a Serre relation is applied. On a locus where the relevant linear maps have constant rank, the remaining flag variety is a Grassmann bundle with two complete-flag refinements. The Galois action on its cohomology reduces the Serre expression to an alternating binomial sum modulo properly induced classes. RAMIFIED CONVOLUTION AND MONODROMY BASES 5
+
+For the basis, we construct integral families using the kernels of the incoming maps. Compatible families give generic representations at every central length, and successive maximal-top removals produce a unitriangular evaluation matrix. This proves both the integral basis theorem and faithfulness of convolution. Sections 1–3 give the algebra and the relative Serre theorem; Section 4 constructs convolution. Sections 5–6 establish the component correspondence and the basis, including a calculation in type B2. Sections 7–9 establish its structural properties. Section 10 identifies the canonical Serre quotient and contrasts it with ordinary generic evaluation through the affine counterexample and its ramified lift. The appendix proves the acyclic realization. 1. The standard integral algebra 
+
+We keep the Cartan matrix C, the symmetrizer D = diag( di), and the fields and rings from Section . Choose an acyclic orientation Ω of the underlying graph. For adjacent vertices set 
+
+ϵij = 1 if i → j belongs to Ω, and ϵji = −ϵij . Put 
+
+gij = gcd( |cij |, |cji |), fij = |cij |/g ij , eij = gcd( di, d j ).
+
+These numbers are used only when cij < 0. Symmetrizability gives 
+
+di = eij fji , dj = eij fij .
+
+Take a quiver with vertex set I, a loop xi at each vertex, and gij arrows a(c) 
+
+> ij
+
+: i → j for every ordered adjacent pair, where 1 ≤ c ≤ gij . Let 1 i be its vertex idempotents. We define Pd as the quotient of its path algebra over O by 
+
+xdi 
+
+> i
+
+= t1i,xfji  
+
+> i
+
+a(c) 
+
+> ij
+
+= a(c) 
+
+> ij
+
+xfij  
+
+> j
+
+, (1.1) 
+
+ρi := ∑  
+
+> j:cij <0
+
+ϵij gij 
+
+∑
+
+> c=1
+> fji −1
+
+∑
+
+> q=0
+
+xqi a(c) 
+
+> ij
+
+a(c) 
+
+> ji
+
+xfji −1−qi = 0 .
+
+We call the last relations the moment relations . The right-module convention gives a(c) 
+
+> ij
+
+∈ 1iPd1j ,with action Mi = M 1i → Mj , v 7 → va (c) 
+
+> ij
+
+. The path ab first follows a and then b. When we write matrices of linear maps, we use column vectors: the matrix of right multiplication by ab is the matrix of b times the matrix of a.These are the opposite GLS relations after relabelling arrows. The equivalence from GLS left modules to our right modules is m · aop = am . It preserves submodules, so ascending flag words have the same order on the two sides. The generic and special algebras are Γd = K ⊗O Pd, Πk = Pd/t kPd ∼= Π( C, kD )op .
+
+A locally free lattice is a right Pd-module whose space at each vertex i is finite free over Oi.1.1. Modules and their flags. For a module M over Γ d, a locally free module over Π k, or a locally free lattice, rank M = ( ri(M )) i∈I denotes the ranks over the corresponding vertex fields or rings. We write |r| = ∑ 
+
+> i
+
+ri. For a lattice or a Π k-module, nilpotence means annihilation by some power of the ideal generated by the nonloop arrows, as for Γ d. The vertex parameters are not included in that ideal. We use the simple generic modules Si and the special modules Ei,k defined in Section ; put 
+
+Ei = Ei, 1. An integral E-filtration has successive quotients supported at a single vertex and free of rank one over its vertex ring, with zero nonloop action. Every such filtration gives a nilpotent generic fibre. 6 JIARUI FEI 
+
+For a word w = ( i1, . . . , i h) of rank ∑ 
+
+> a
+
+αia , the balanced flag scheme Fl R
+
+> w
+
+(M ) has the following functorial meaning. On a K-scheme Y , it parametrizes flags 0 = M 0 ⊂ M 1 ⊂ · · · ⊂ M h = M ⊗K OY , rank( M a/M a−1) = αia ,
+
+where all members are arrow-stable and, at each vertex, are subbundles over Ki ⊗K OY with locally free quotients. Thus the specified ranks hold at every geometric point, including at each split vertex. The superscript R refers to R = ∏ 
+
+> i
+
+Ki. Arrow stability defines a closed subscheme of the product of the vertex flag varieties obtained by Weil restriction. In particular, Fl R
+
+> w
+
+(M ) is projective over K.We similarly write Fl lf 
+
+> w
+
+(M ) for special-fibre flags with successive quotients Ei1,k , . . . , E ih,k ; the superscript lf means locally free. These flag schemes need not be proper. Their compactly sup-ported Euler characteristics give the special-fibre convolution words. Our convolution convention evaluates the left factor on a submodule, so word order records successive quotients in ascending order. A partial flag allows a successive quotient Spi , or Epi,k , in place of p consecutive quotients of rank one; exponent zero means that the quotient is omitted. The grading on the free algebra TQ is deg zi = αi. We use the linear evaluation map ev σ : TQ −→ M σ(Γ d), zi1 · · · zih 7 −→ Fw.
+
+Section 3 proves that it annihilates the Serre ideal JC . We use the same word notation for the Euler-characteristic evaluations at a central reduction. 1.2. The component geometry used below. With d fixed, abbreviate Bkd (r) to Bk(r). These are the maximal components in the closure of the E-filtered locus on the fixed vertex modules 
+
+Hri
+
+> i,k
+
+. We take their reduced structures when forming function fields. The vertex change-of-basis group is ∏ 
+
+> i
+
+GL ri (Hi,k ), of complex dimension k ∑ 
+
+> i
+
+dir2 
+
+> i
+
+.For a module M , write sub i(M ) for its largest submodule supported at i, and fac i(M ) for its largest quotient supported at i. Thus these are the i-socle and i-top introduced above. Put 
+
+Ki(M ) = ker( M → fac i(M )). The two canonical removals are Ki(M ) and M/ sub i(M ). Following [10, Section 4.2], an E-filtered module is a crystal module if all its i-tops and i-socles are locally free and both canonical removals are recursively crystal. The zero module starts the recursion. The supported tops and socles need not be semisimple. The GLS dimension, generic-crystallinity, and component-count theorems give, for Z ∈ B k(r), dim Z = kN d(r), |B k(r)| = dim Q U +
+
+> Q,r
+
+, Nd(r) = ∑
+
+> i<j
+
+di(−cij )rirj . (1.2) Here i < j uses any fixed ordering of I; the summand is symmetric in the two endpoints. A dense open subset of every maximal component consists of crystal modules. We use [10, Theorem 4.1, Proposition 4.4, and Theorems 5.4 and 7.2] for these statements. We also use the following maximal-top correspondence. If the generic free i-top of a maximal component has rank p, removing that entire top gives a maximal component of rank r − pα i
+
+whose generic i-top is zero. Conversely, the associated extension stratum has irreducible fibres over that smaller component. There is an analogous correspondence for socles. For tops, see [10, Sections 3.7–3.9 and 5.3, Corollary 4.6]; socles follow by duality. Repeated extensions by Ei,k 
+
+give the two crystal operators, with the geometric convention that adding Ei,k raises the rank by 
+
+αi.1.3. Incoming and outgoing maps. For an adjacent pair i, j , let 
+
+Oij = O[z]/(zeij − t), z 7 −→ xfji  
+
+> i
+
+in Oi, z 7 −→ xfij  
+
+> j
+
+in Oj .RAMIFIED CONVOLUTION AND MONODROMY BASES 7
+
+The power basis 1 , x i, . . . , x fji −1 
+
+> i
+
+makes Oi free over Oij . Define 
+
+ℓij : Oi −→ O ij , ℓij 
+
+
+
+> fji −1
+
+∑
+
+> q=0
+
+cqxqi
+
+ = cfji −1, cq ∈ O ij .
+
+This is a Frobenius functional : the pairing ( u, v ) 7 → ℓij (uv ) is perfect over Oij . Its matrix in the power basis has ones on the anti-diagonal and zeros elsewhere. Indeed, a power xp+qi with 
+
+p + q ≥ fji reduces to a multiple of a power of exponent at most fji − 2. The pairing remains perfect after every base change. It gives the integral adjunction underlying [7, Section 5] and [10, Section 2.3]. For a locally free representation U of Pd, set 
+
+Wi(U ) = ⊕  
+
+> j:cij <0
+> gij
+
+⊕
+
+> c=1
+
+Uj ⊗Oij Oi.
+
+It is free over Oi of rank ∑ 
+
+> j̸=i
+
+(−cij )rj , where r = rank U . The incoming map Ai : Wi(U ) → Ui
+
+sends u ⊗ a in the ( j, c ) summand to ( ua (c) 
+
+> ji
+
+)a. The outgoing arrows determine, by the Frobenius adjunction, a map Bi : Ui → Wi(U ) whose ( j, c ) component is 
+
+Bi(v)j,c = ϵij fji −1
+
+∑
+
+> q=0
+
+(vx fji −1−qi a(c)
+
+> ij
+
+) ⊗ xqi .
+
+Thus 
+
+Wi(U ) Ai
+
+−→ Ui Bi
+
+−→ Wi(U ), (Ai ◦ Bi)( v) = vρ i.
+
+We write AiBi for Ai ◦ Bi. The moment relation is AiBi = 0; it does not require BiAi = 0. The map Bi and the outgoing arrow maps determine one another. The construction is valid over the generic fibre and all central reductions, and commutes with scalar extension. 1.4. Duality. The anti-involution ∗ of Pd fixes 1 i, x i and interchanges a(c) 
+
+> ij
+
+with a(c) 
+
+> ji
+
+. Reversing the summation index preserves each moment relation. For a locally free lattice M over k[[ t]], with k ⊇ C algebraically closed, put 
+
+M ∨ = Hom k[[ t]] (M, k[[ t]]) , (φa )( m) = φ(ma ∗).
+
+The coefficient Frobenius pairings make M ∨ vertexwise free of the same ranks. Duality commutes with reduction; at length k, composition with the coefficient of tk−1 identifies the relative dual with the ordinary k-linear dual. It is exact on lattice sequences with locally free quotients. At finite length it preserves E-filtrations and maximal components, inducing Z 7 → Z∗.Annihilators reverse admissible flags, over their ground field. For crystal modules at finite length they give fac i(M ∨) ∼= sub i(M )∨, Ki(M ∨) ∼= ( M/ sub i(M )) ∨.
+
+Thus top and socle correspondences are dual. The integral splitting needed for canonical removals is established in Section 7. 1.5. Splitting the vertex fields. Put L = lcm i di and K(L) = C(( t1/L )). After scalar extension to K(L), each Ki is a product of di copies of K(L), indexed by the eigenvalues ξ of xi, with ξdi = t.The commutation relation (1.1) permits an arrow from ξ at i to η at j precisely when ξfji = ηfij .A fixed vertex above i is incident with gij fij = −cij arrows joining it to vertices above j.8 JIARUI FEI 
+
+For two distinct eigenvalues ξ, ξ ′ above i, the coefficient in the i-moment relation is 
+
+> a−1∑
+> q=0
+
+ξq(ξ′)a−1−q = ξa − (ξ′)a
+
+ξ − ξ′ , a = fji .
+
+It vanishes on an allowed two-arrow path, since its endpoints have the same ath power. For equal eigenvalues, the coefficient is aξ a−1. Multiplying the i-equation by xi/d i makes the edge coefficient zij /e ij , where zij = ξfji = ηfij . The coefficient is the same at the opposite endpoint. Rescaling one arrow of each doubled pair by this nonzero coefficient gives the ordinary signed preprojective relations. We thereby identify the split algebra with the ordinary preprojective algebra of this split quiver, compatibly with Galois descent. The acyclic vertex and arrow construction is that of [11, Section 4]; its arrow bimodules are the composita of the vertex fields and agree with Ki ⊗Kij Kj here because fij and fji are coprime. 2. Constructible classes modulo induced classes 
+
+In this section and Sections 3–4, we allow K = k(( t)) with k ⊇ C algebraically closed, and keep the notation for the algebras after this coefficient extension. For any field extension L/K 
+
+and K-scheme Y , write YL = Y ×K Spec L. Choose compatible roots of t and set 
+
+K(e) = k(( t1/e )) , Ki = K(di).
+
+Every finite extension of K in the chosen algebraic closure is one of the K(e). Its absolute Galois group GK = Gal( K/K ) is isomorphic to the profinite completion ̂ Z of Z. We choose a topological generator σ; the subgroup GK(e) corresponds to ê Z.Here Ind GK 
+
+> GK(e)
+
+denotes induction of continuous representations along this finite-index inclusion. If e > 1, the trace of σ on an induced representation is zero, since it permutes the coset summands without fixing one. This motivates the quotient by properly induced classes defined below. The following example explains the calculation. 
+
+Example 2.1. For the quadratic extension K(2) /K , the geometric fibre of Res K(2) /K P1 is ( P1)2.Its cohomology is concentrated in even degrees. We use Qℓ(m) for the mth Tate twist; its Galois action is trivial here because K contains all roots of unity. As an ungraded Galois representation, the total cohomology is 
+
+H∗(( P1)2, Qℓ) ∼= Q⊕2 
+
+> ℓ
+
+⊕ Ind GK 
+
+> GK(2)
+
+Qℓ.
+
+The two classes in degree two are exchanged by inertia. The induced summand has trace zero, so the monodromy trace is 2, whereas the geometric Euler characteristic is 4. 2.1. The quotient of Grothendieck groups. Let Y be a separated finite-type K-scheme. We write Dbc(Y, Qℓ) for the bounded derived category of ℓ-adic complexes on Y with constructible cohomology sheaves. A sheaf is constructible if it is locally constant of finite rank on each member of a finite stratification. Set 
+
+K (Y ) = K0(Dbc(Y, Qℓ)) .
+
+This Grothendieck group is generated by classes [ A], with [ B] = [ A] + [ C] for a distinguished triangle A → B → C → A [1]. Derived tensor product makes it a ring. We write Qℓ,Y for the constant sheaf on Y , omitting Y when its meaning is clear. For a morphism f , f ∗ denotes pullback and Rf ! denotes derived direct image with proper support. These are the constructible étale operations of [2]. For e ≥ 1, let πe,Y : YK(e) → Y be the finite étale projection; write πe = πe, Spec K . A properly induced class is a class [Rπ e,Y !A], e > 1, A ∈ Dbc(YK(e) , Qℓ). (2.1) RAMIFIED CONVOLUTION AND MONODROMY BASES 9
+
+Thus “properly” refers to an extension of degree greater than one. Let N (Y ) be the subgroup generated by these classes, and set 
+
+K (Y ) = K (Y )/N (Y ).
+
+A subscript Q on either group means tensor product with Q. All parameter-scheme morphisms below are over the fixed field K.
+
+Proposition 2.2. The subgroup N (Y ) is an ideal for tensor product. Pullback, direct image with proper support, and exterior products preserve induced classes. Hence they descend to the groups K .Proof. For B ∈ Dbc(Y, Qℓ), the projection formula gives (Rπ e,Y !A) ⊗L B ∼= Rπ e,Y !(A ⊗ L π∗ 
+
+> e,Y
+
+B).
+
+This proves the ideal assertion. If f : X → Y is separated and of finite type, let fe : XK(e) → YK(e)
+
+be its scalar extension. Base change for the finite map πe,Y gives 
+
+f ∗Rπ e,Y ! ∼= Rπ e,X !f ∗ 
+
+> e
+
+.
+
+The identity f π e,X = πe,Y fe also gives 
+
+Rf !Rπ e,X ! ∼= Rπ e,Y !Rf e!.
+
+These formulas prove preservation under pullback and direct image. For an exterior product, write A ⊠ B = p∗ 
+
+> X
+
+A ⊗ L p∗ 
+
+> Y
+
+B on X ×K Y , where pX , p Y are the projections, and apply the same statements. □
+
+For A ∈ Dbc(Y, Qℓ), define the trace with coefficients by 
+
+χσ(Y, A) = ∑
+
+> q
+
+(−1) q Tr 
+
+(
+
+σ | Hqc (YK , A| YK )
+
+)
+
+.
+
+Constant coefficients recover χσ(Y ). 
+
+Lemma 2.3. The functional χσ(Y, −) factors through K (Y ).Proof. The compactly supported cohomology of Rπ e,Y !A is induced from GK(e) . For e > 1, the generator σ moves every coset summand to a different summand, so its trace is zero in every degree. This is the induced-representation form of [3, Lemma 7.3]. □
+
+Remark 2.4. The quotient is a quotient of groups, not of triangulated categories. Indeed, 
+
+Rπ 2! Qℓ contains Qℓ as a direct summand. A thick tensor subcategory containing the induced objects would therefore contain the tensor unit. In our quotient, [ Qℓ]̸ = 0 because its trace is one. 2.2. Cyclic permutations and traces. We begin with an elementary calculation for a graded vector space concentrated in even degrees. Its dimension means the sum of the dimensions of its graded parts. 
+
+Lemma 2.5. Let V be a finite-dimensional graded Qℓ-vector space concentrated in even degrees, with trivial Galois action. For an integer n ≥ 1, let σ act on V ⊗n by cyclic permutation of the factors. Then 
+
+[V ⊗n] ≡ (dim V )[ Qℓ] (mod N (Spec K)) .
+
+Proof. Choose a homogeneous basis. The action permutes the tensor basis without signs. A basis tensor is fixed by the cyclic generator only when all its factors are the same basis vector, giving dim V fixed tensors. Every other orbit has length e > 1 dividing n. Its span is the permutation representation of GK /G K(e) , induced from GK(e) . □10 JIARUI FEI 
+
+For the flag varieties used below, cohomology is concentrated in even degrees and each graded part is a direct sum of Tate twists. Since these twists have trivial Galois action over K, their alternating cohomology class is the class of their total cohomology. This allows us to apply Lemma 2.5. We also need the graded trace identity when odd cohomology is present. A super vector space is a Z/2Z-graded vector space V = V0 ⊕V1. A homogeneous vector v has parity |v| ∈ { 0, 1}. An even endomorphism preserves these two summands, and its supertrace is str( T ) = Tr( T |V0 ) − Tr( T |V1 ). 
+
+Lemma 2.6 (Cyclic supertrace) . Let V be a finite-dimensional super vector space, let T be an even endomorphism, and let n ≥ 1. Define on homogeneous tensors 
+
+CT (v1 ⊗ · · · ⊗ vn) = ( −1) |vn|(|v1|+··· +|vn−1|)T (vn) ⊗ v1 ⊗ · · · ⊗ vn−1.
+
+Then str( CT | V ⊗n) = str( T | V ). In particular, if t = un and X is a quasi-projective k(( u)) -scheme, then 
+
+χσt
+
+> (
+
+Res k(( u)) /k(( t)) X
+
+> )
+
+= χσu (X), σu = σnt , (2.2) 
+
+where σt and σu are compatible tame generators over k(( t)) and k(( u)) , respectively. Proof. A diagonal entry of CT in a homogeneous tensor basis uses the same basis vector in every factor. If that vector has parity p, the permutation contributes ( −1) (n−1) p and the supertrace contributes ( −1) np . Their product is ( −1) p, proving the first assertion. Over an algebraic closure, the Weil restriction is the product of the n conjugates of X. The Künneth formula gives the cyclic action on their cohomology, and its nth power on one factor is σu. Apply the first assertion. This extends the Grassmannian calculation of [3, Lemma 7.4]. □
+
+2.3. Relative flag cohomology. We extend the relative Grassmannian calculation of [3, Lemma 7.4] to the two flag refinements needed for the Serre relation. Fix integers m, a, b ≥ 0with a + b ≤ m, an m-dimensional complex vector space V0, and subspaces V− ⊆ V+ ⊆ V0
+
+of dimensions a and m − b. For 0 ≤ r ≤ m, let Pr(a, b ; m) parametrize V− ⊆ U ⊆ V+ with dim U = r, together with complete flags in U and V0/U . It is empty unless a ≤ r ≤ m − b.Otherwise, forgetting the two flags makes it a pair of flag bundles over Gr r−a(V+/V −). Its cohomology is concentrated in even degrees and is a sum of Tate twists, and 
+
+hr := χc(Pr(a, b ; m)) = r!( m − r)! 
+
+> (
+
+m − a − br − a
+
+> )
+
+.
+
+We set a binomial coefficient equal to zero when its lower index is outside the usual range. 
+
+Proposition 2.7 (Relative cyclic reduction) . Let Y be a separated finite-type K-scheme. On 
+
+YKi , let A ⊂ B ⊂ V be subbundles of ranks a, m − b, m , with locally free quotients. Let Pr → YKi
+
+be the associated relative flag scheme of the preceding paragraph, and let 
+
+pr : Fr = Res YKi /Y Pr −→ Y. 
+
+Thus an S-point of Fr, for a Y -scheme S, is such a flag over S ×Y YKi . Then 
+
+[Rp r!Qℓ] = hr[Qℓ,Y ] in K (Y ). (2.3) 
+
+In particular, for every L ∈ Dbc(Y, Qℓ),
+
+χσ(Fr, p ∗ 
+
+> r
+
+L) = hrχσ(Y, L). (2.4) 
+
+Proof. Over a finite splitting extension, Fr is the product over Y of the flag families indexed by the embeddings of Ki. For each embedding, the family is a Grassmann bundle for B/A, followed by the complete-flag bundles of its universal subbundle U and the quotient V/U .RAMIFIED CONVOLUTION AND MONODROMY BASES 11 
+
+The Schur polynomials in the Chern classes of the tautological Grassmann bundle, indexed by partitions in the appropriate rectangle, give a basis on each geometric fibre. Products with the usual Chern monomials of the two flag bundles give a basis of the entire fibre cohomology. These classes are defined on the total family. Proper base change identifies the resulting maps from constant Tate sheaves to the higher direct images as isomorphisms on every geometric stalk, hence as isomorphisms of sheaves. This is the relative Leray–Hirsch argument used in [3, Lemma 7.4]; smoothness of Y is not required. Put Vr = ⊕ 
+
+> q
+
+Hq(Pr(a, b ; m), Qℓ). The classes are natural under isomorphisms of the three bundles. Consequently, Galois descent permutes the factors indexed by embeddings, and σdi fixes the classes in each factor. The Künneth formula identifies the arithmetic higher direct images with the graded parts of V ⊗di 
+
+> r
+
+pulled back from K. Their degrees are even, and the Tate twists are trivial over K. If aY : Y → Spec K is the structure map, then [Rp r!Qℓ] = a∗ 
+
+> Y
+
+[V ⊗di 
+
+> r
+
+] in K (Y ).
+
+Lemma 2.5 and Proposition 2.2 give (2.3). Tensoring with L, applying the projection formula, and taking compactly supported cohomology give (2.4). All constructions commute with base change. Nilpotent structure on the base does not affect the étale cohomology or these identities. □
+
+3. The relative Serre relation 
+
+We keep the field K = k(( t)) and the quotient K (Y ) of Section 2. Fix distinct vertices i, j 
+
+and put m = 1 − cij . Let Y be a separated finite-type K-scheme, and let M be a family of right Γd-modules on Y . Its vertex bundles have rank m at i, rank one at j, and rank zero elsewhere, over the corresponding vertex algebras. For 0 ≤ r ≤ m, let pr : Fr → Y be the scheme of balanced flags in M with successive quotients prescribed by the word irji m−r. Here ir means r consecutive occurrences of i. With our ascending flag convention, 
+
+> m∑
+> r=0
+
+(−1) r
+
+> (
+
+mr
+
+> )
+
+zri zj zm−ri = ( −1) m(ad zi)mzj .
+
+Thus the alternating sum below represents a Serre relation, up to the constant sign ( −1) m.
+
+Theorem 3.1 (Serre relation modulo induced classes) . For the family above, 
+
+> m∑
+> r=0
+
+(−1) r
+
+> (
+
+mr
+
+> )
+
+[Rp r!Qℓ] = 0 in K (Y ). (3.1) 
+
+The equality remains valid after pullback along a morphism of K-schemes, tensoring with a constructible complex on Y , or direct image with proper support. Proof. We may replace Y by its reduction, since this does not change the constructible êtale categories. After splitting the vertex fields, the incoming and outgoing maps at each vertex above 
+
+i have the form 
+
+W A
+
+−→ V B
+
+−→ W, AB = 0 , dim V = m, dim W = −cij = m − 1.
+
+These dimensions are the ranks of the respective vector bundles. At a geometric point, put 
+
+a = rank A and b = rank B. Since im B ⊆ ker A in W , we have a + b ≤ m − 1. Let U be the i-subspace just before the quotient at j is inserted. Before that insertion, arrow stability requires U ⊆ ker B; after it, stability requires im A ⊆ U . Thus im A ⊆ U ⊆ ker B and dim U = r. Such a subspace can exist only when BA = 0. On the locus where BA ̸ = 0 at some vertex above i, every Fr is empty. We therefore restrict to the complementary locus. Once U is 12 JIARUI FEI 
+
+chosen, the remaining choices are complete flags in U and V /U ; the one-dimensional space at j
+
+has no flag choices. We stratify this locus by the ranks of A and B at all vertices above i. Label the embeddings of Ki cyclically by ν ∈ Z/d iZ, so that the tame generator acts by a cyclic shift, and write 
+
+τ = (( aν , b ν )) ν∈Z/d iZ
+
+for a tuple of ranks. This gives a finite locally closed stratification. Indeed, first fix the total ∑ 
+
+> ν
+
+(aν + bν ), which is the rank of a direct sum of bundle maps. On this locus, imposing the corresponding lower bounds on all the individual ranks is an open condition and forces equality. Each tuple stratum is therefore open and closed in the locus with fixed total rank. The unions over cyclic orbits are locally closed and defined over K.If the cyclic orbit of τ has length e > 1, its stabilizer is GK(e) . The individual stratum and its restricted flag families descend to K(e), since their rank conditions are preserved by this subgroup. Extend the resulting constructible class by zero to YK(e) and push it forward by πe,Y .After splitting, this pushforward is the sum over the e distinct conjugate strata. It is exactly the flag contribution over the orbit union, and hence belongs to N (Y ) for each r.It remains to consider constant tuples, with aν = a and bν = b for every ν. Denote the corresponding stratum by Ya,b . On ( Ya,b )Ki , the bundles im Ai, ker Bi, and Mi have ranks 
+
+a, m − b, m . Their quotients are locally free: locally an appropriate minor is invertible, while the larger minors vanish on the reduced rank stratum. The restricted flag family is therefore the family in Proposition 2.7, with A = im Ai and B = ker Bi.Put h = m − a − b ≥ 1. Proposition 2.7 gives the following contribution on Ya,b :
+
+> m∑
+> r=0
+
+(−1) r
+
+> (
+
+mr
+
+> )
+
+r!( m − r)!  
+
+> (
+
+hr − a
+
+> )
+
+[Qℓ,Y a,b ]=m!( −1) ah∑
+
+> q=0
+
+(−1) q
+
+> (
+
+hq
+
+> )
+
+[Qℓ,Y a,b ] = 0 .
+
+We view a class on a locally closed stratum as a class on Y by extension by zero. Additivity for a finite stratification then proves (3.1). The compatibility with the three operations follows from Proposition 2.2. □
+
+Corollary 3.2 (Trace Serre relations) . For the family above and every L ∈ Dbc(Y, Qℓ),
+
+> m∑
+> r=0
+
+(−1) r
+
+> (
+
+mr
+
+> )
+
+χσ(Fr, p ∗ 
+
+> r
+
+L) = 0 .
+
+For every nilpotent Γd-module M and every pair of words u, v,
+
+> m∑
+> r=0
+
+(−1) r
+
+> (
+
+mr
+
+> )
+
+Fu ir ji m−r v(M ) = 0 .
+
+Consequently, the linear evaluation map ev σ : TQ → M σ(Γ d) annihilates JC .Proof. Tensor (3.1) with [ L], take direct image with proper support to Spec K, and apply Lemma 2.3. The projection formula gives the first identity. For the second identity, the expression vanishes unless the word has the rank of M . In the matching degree, use the partial-flag scheme in which the quotients prescribed by u and v
+
+remain refined, while the intervening subquotient is left unrefined. The latter is a family of rank 
+
+mα i + αj . Its relative flags are precisely the full flags in the second identity, so the first identity with constant coefficients applies. As i, j, u, v vary, these expressions span the two-sided Serre ideal. □RAMIFIED CONVOLUTION AND MONODROMY BASES 13 
+
+The proof also respects changes of vertex bases: the rank conditions and the tautological cohomology classes are preserved. We use this equivariance in the construction of convolution below. 4. Geometric composition and the Hopf structure 
+
+We construct convolution from subrepresentations, using Lusztig’s induction correspondence [14]. We continue to work over the field K = k(( t)) of Section 2. 4.1. Representation spaces and equivariant classes. For r ∈ NI , set n(r) = ∑ 
+
+> i
+
+diri, the dimension over K of the vertex space ⊕ 
+
+> i
+
+Kri 
+
+> i
+
+. Let Rr be the affine K-scheme of Γ d-representations on these fixed vertex spaces satisfying M J n(r) = 0. The arrow maps, the defining algebra relations, and this nilpotence condition give finitely many polynomial equations. We put R0 = Spec K.The bound M J n(r) = 0 holds for every geometric nilpotent representation, since its simple factors are one-dimensional after the vertex fields split. A nilpotent module defined over K
+
+has the smaller composition length |r| = ∑ 
+
+> i
+
+ri, since its simple factors are the Si. Moreover, a balanced full flag forces M J |r| = 0 even in families, because J sends each member of the flag into its predecessor. Thus the full-flag complexes are supported on the closed subscheme M J |r| = 0. Extension by zero identifies their classes whether this subscheme or M J n(r) = 0 is used as the ambient representation space. The group Gr = ∏ 
+
+> i
+
+Res Ki/K GL ri acts on Rr by changes of vertex bases. More generally, if an algebraic group G acts on a K-scheme X, let KG(X) be the Grothendieck group of constructible 
+
+Qℓ-sheaves with a G-equivariant structure . Such a structure is an isomorphism between the pullbacks by the action and projection maps G × X → X, satisfying the cocycle condition. Derived operations on classes are taken as alternating sums of their higher direct images. Define NG(X) by the finite pushforwards in (2.1), using sheaves on XK(e) equivariant for the algebraic group G ×K Spec K(e). We use the rational quotient 
+
+K G(X)Q = (KG(X)/NG(X)) ⊗Z Q.
+
+4.2. Induction and convolution. Fix a, b ∈ NI and put r = a + b. Let Ea,b parametrize pairs (M, U ), where M ∈ R r and U ⊆ M is a subrepresentation of balanced rank a. We require 
+
+U J n(a) = 0 , (M/U )Jn(b) = 0 .
+
+Choose vertex bases in U and M/U to obtain the scheme ˜Ea,b and the maps 
+
+Ra × R b
+
+> p1
+
+←−− ˜Ea,b
+
+> p2
+
+−−→ E a,b
+
+> p3
+
+−−→ R r.
+
+Here p1 gives the two representations in the chosen bases, p2 forgets those bases, and p3 forgets 
+
+U . The map p2 is a principal Ga × Gb-bundle: its fibres are the pairs of choices of vertex bases. The map p3 is proper, because the balanced vertex subspaces form a product of Weil restrictions of Grassmannians, and arrow stability and the two nilpotence conditions are closed conditions. Let A and B be equivariant constructible sheaves on Ra and Rb. The sheaf p∗
+
+> 1
+
+(A⊠B) descends through p2 to a sheaf H on Ea,b. We define their convolution by [A] ∗ [B] = [ Rp 3! H].
+
+The first factor is evaluated on the submodule, so this convention agrees with the ascending flags used throughout. We insert no cohomological shifts. Associativity follows from the common three-step flag correspondence of [14]. If a submodule is annihilated by Ja and its quotient by Jb, the whole module is annihilated by Ja+b. Since 
+
+n(a + b) = n(a) + n(b), both iterated products use the same flags 0 ⊂ M 1 ⊂ M 2 ⊂ M with the 14 JIARUI FEI 
+
+prescribed successive quotients. Proper base change identifies their pushforwards. The unit is the constant class at the zero representation. 
+
+Proposition 4.1. The convolution descends to ⊕ 
+
+> r
+
+K Gr (Rr)Q. The composition algebra Cd is the unital subalgebra generated by the constant classes at the simple representations Si. Sending 
+
+ei to the class at Si gives a surjective algebra homomorphism U + 
+
+> Q
+
+−→ Cd.Proof. Exterior products, pullback, and proper pushforward preserve induced classes by Proposi-tion 2.2. Descent through p2 preserves them as well. To see this, write q = p2 and let qe be its scalar extension to K(e). The Cartesian square gives q∗Rπ e, Ea,b! ∼= Rπ e, ˜Ea,b!q∗ 
+
+> e
+
+. The equivalence between sheaves on the base of a principal bundle and equivariant sheaves on its total space therefore identifies the descent of an induced class with an induced class. The action of Gr is preserved throughout. This proves that convolution descends to the quotient. The scheme Rαi is the point representing Si. An iterated convolution of these constant classes is the proper pushforward from the universal balanced full-flag scheme. The rank strata and tautological classes in Theorem 3.1 are invariant under vertex changes of bases, so its proof gives the same relation in the equivariant Grothendieck group. Thus the simple classes satisfy the Serre relations. The homomorphism from TQ factors through U + 
+
+> Q
+
+= TQ/J C , and it is surjective onto Cd by definition. □
+
+For a K-rational representation M , restriction to M followed by tame trace defines a linear evaluation on Cd. Proper base change identifies the value of the class of a word w with Fw(M ). For K = C(( t)), Section 6 proves that the composite U + 
+
+> Q
+
+−→ Cd −→ M σ(Γ d) is injective, by triangular evaluations on representations over this field. Both maps are surjective onto their indicated targets. They are therefore isomorphisms, and the geometric convolution induces multiplication of the trace functions. 4.3. Direct sums. We next compute the coproduct. If w = ( i1, . . . , i h) and S ⊆ { 1, . . . , h }, let 
+
+w|S be the subword with positions in S, in their original order, and let Sc be its complementary set of positions. 
+
+Proposition 4.2 (Geometric coproduct) . For nilpotent Γd-modules M, N and any word w,
+
+Fw(M ⊕ N ) = ∑
+
+> S⊆{ 1,...,h }
+
+Fw|S (M )Fw|Sc (N ). (4.1) 
+
+Proof. We use the argument of [3, Proposition 7.6] for flags; compare [5, Section 6]. Given a flag (La)ha=0 in M ⊕N , project it to M and intersect it with N : Ua = pr M (La) and Va = La ∩N . After splitting the vertex fields, stratify by the dimensions of these submodules. Fix the resulting flags (Ua) and ( Va), allowing repeated members. A submodule La giving them is uniquely determined by a map 
+
+ϕa : Ua −→ N/V a, La = {(u, n ) : u ∈ Ua, n + Va = ϕa(u)}.
+
+It is arrow-stable exactly when ϕa is a module homomorphism. For a ≤ b, let qa,b : N/V a → N/V b
+
+be the quotient map. The inclusion La ⊆ Lb is equivalent to qa,b ϕa = ϕb|Ua . These are homogeneous linear equations. Their solution spaces form vector bundles after stratifying further by the ranks of the equations. The zero maps give a section. An affine fibre of dimension v has compactly supported cohomology Qℓ(−v) in degree 2 v and zero in other degrees, so it contributes trace one. At each position of w, the one-dimensional quotient at a split vertex is assigned either to the projected flag in M or to the intersection flag in N . Consider the entire tuple of assignments at all word positions. If an assignment differs among the sheets above some original vertex, inertia moves it in a nontrivial cyclic orbit. Its contribution is induced from a proper finite extension and RAMIFIED CONVOLUTION AND MONODROMY BASES 15 
+
+has trace zero, by [3, Lemma 7.3]. A constant tuple assigns each letter wholly to one summand and hence determines a subset S of positions. The corresponding base is the product of the balanced flag schemes for w|S in M and w|Sc in N . The Künneth formula and the affine-fibre calculation prove (4.1). □
+
+The relative complete-flag variety refining a successive quotient Spi has monodromy trace 
+
+p!, by Proposition 2.7. Applying (4.1) to complete refinements therefore also gives the partial-flag formula. For each decomposition p = a + b, the choice of the a letters assigned to M
+
+contributes (pa
+
+> )
+
+, and the two refinement factors are a! and b!. Their product is p!, which cancels the normalization by the complete refinement. Thus the coproduct ∆ on divided powers is ∆( e(p) 
+
+> i
+
+) = ∑
+
+> a+b=p
+
+e(a) 
+
+> i
+
+⊗ e(b) 
+
+> i
+
+.
+
+Once faithfulness is proved, (4.1) identifies ∆ with the standard coproduct of U + 
+
+> Q
+
+. The counit is evaluation at the zero module. The degree-zero part is Q, so the graded bialgebra has an antipode S, given on words by 
+
+S(Fi1··· ih ) = ( −1) hFih··· i1 .
+
+The image of U + 
+
+> Z
+
+is consequently an integral Hopf algebra. 5. Integral charts and reduction of components 
+
+We return to O = C[[ t]] and compare the maximal components of Π k = Pd/t kPd. Their vertex modules Hri 
+
+> i,k
+
+and power bases are fixed. We first lift extensions by a full i-top, then construct compatible affine charts, and finally identify the component sets at different lengths. The special-fibre result used is the maximal-top correspondence recalled in Section 1. 5.1. Extensions by a full vertex-supported quotient. Lemma 5.1 (Free maximal-top extension) . Let U be a locally free Pd-lattice, fix i ∈ I and 
+
+p ≥ 0, and assume that Ai(U ) is surjective. Consider extensions of U by the module supported at i with vertex space Opi . Fix the inclusion of U , the quotient identification, and the splitting 
+
+Mi = Ui ⊕ O pi . The possible arrow actions are parametrized by 
+
+γ ∈ Hom Oi (Opi , ker Ai(U )) , Ai(M ) = 
+
+> (
+
+Ai(U )0
+
+> )
+
+, Bi(M ) = ( Bi(U ) γ).
+
+For every such extension, fac i(M ) ∼= Opi . The same description holds modulo tk and in families on any open subset where a fixed maximal minor of Ai(U ) is invertible. Proof. All vertex modules except the one at i are unchanged, so Wi(M ) = Wi(U ). The inclusion of U fixes the old outgoing maps, and there is no incoming component in the new quotient. The moment relation at i is therefore Ai(U )γ = 0. At another vertex, a path passing through i
+
+enters the old summand Ui, so its moment relation is unchanged. The Frobenius adjunction of Section 1.3 reconstructs the outgoing arrows from γ. Since the incoming image is precisely Ui,the full i-top is the prescribed quotient. A surjection onto a free module splits. On the open set where a chosen maximal minor is invertible, its columns allow us to express the corresponding coordinates in terms of the remaining ones and thereby give a basis of the kernel. The norm of its determinant means the determinant of multiplication by that element on the finite free vertex algebra over the scalar base. This norm is invertible exactly when the element is invertible. It therefore defines the required open subset over the scalar base. All the formulas commute with scalar extension, since the kernel is defined by a split exact sequence there. □16 JIARUI FEI 
+
+Corollary 5.2. Every crystal Π1-module has a locally free Pd-lattice reducing to it. The lift can be chosen along any prescribed complete sequence of free maximal-top removals, with the successive top ranks unchanged on the generic fibre. Proof. We induct on total rank. A nonzero E-filtered module has a quotient isomorphic to some 
+
+Ei. For a crystal module its entire i-top is free and nonzero. Let U = Ki(M ) be the kernel of that top. It is crystal of smaller rank, and Ai(U ) is onto: the other vertices are unchanged and 
+
+Ui is the incoming image in Mi.Lift U by induction. The incoming map of the lift is surjective modulo t, hence surjective over 
+
+Oi by Nakayama’s lemma. Its kernel is free and commutes with reduction. Choose a splitting at vertex i for the special extension. Its parameter γ0 then lifts to a map into the integral kernel, and Lemma 5.1 reconstructs a lift of M . Its full top is exactly the chosen free quotient. Repeating along the prescribed sequence proves the assertion about ranks. The resulting integral filtration refines to quotients supported at one vertex and free of rank one there, so its generic fibre is nilpotent. □
+
+5.2. Compatible affine charts. Proposition 5.3 (Dense compatible charts) . For Z ∈ B 1(r), put n = Nd(r). There is a principal open subscheme XZ = D(fZ ) ⊂ An
+
+> O
+
+, defined by inverting a polynomial fZ whose reduction modulo t is nonzero, with a universal locally free Pd-module and an E-filtration. Its special fibre maps isomorphically onto a dense locally closed subset of Z.For k ≥ 1, let XZ,k be the complex scheme representing the functor 
+
+XZ,k (A) = XZ (A[t]/(tk)) for a commutative C-algebra A. 
+
+The right side uses the O-algebra structure sending t to its residue class. In particular, XZ, 1 is the special fibre of XZ . At every length, the universal matrices identify XZ,k with a locally closed subset of the E-filtered locus for Πk, and 
+
+XZ,k ∼= XZ, 1 × A(k−1) n 
+
+> C
+
+. (5.1) 
+
+The chart maps and their inverses commute with reduction to every smaller length. Proof. The rank-zero case is X0 = Spec O. For positive rank, choose a nonzero generic full top at a vertex i, of rank p, and let Z′ be the component obtained by its canonical removal. Its generic i-top is zero. We put 
+
+q = ri − p, w = ∑ 
+
+> j̸=i
+
+(−cij )rj .
+
+Choose the chart for Z′ by induction and restrict it so that a maximal minor of its incoming map is invertible. Embed the old i-vertex as the graph of a map Oqi → O pi . In these coordinates, Lemma 5.1 supplies the extension parameters γ. The graph has dipq scalar coordinates, and γ
+
+has dip(w − q), since the incoming kernel has rank w − q. Their total is 
+
+dipq + dip(w − q) = dipw = Nd(r) − Nd(r − pα i).
+
+The GLS maximal-top correspondence shows that the image modulo t is dense in Z.To recover the chart parameters from a representation in its image, order the new vertex coordinates so that the graph projects onto the first q. Write the incoming matrix as 
+
+AM =
+
+> (
+
+A0
+
+A1
+
+> )
+
+, (A0)J ∈ GL q(Oi),
+
+where A0 has q rows, A1 has p rows, and J is a fixed set of q columns. The graph matrix is 
+
+X = ( A1)J
+
+> (
+
+(A0)J
+
+> )−1
+
+, A1 = XA 0.RAMIFIED CONVOLUTION AND MONODROMY BASES 17 
+
+Let BM be the outgoing matrix and set gX =  
+
+> (Iq0
+> X I p
+> )
+
+. Then 
+
+g−1 
+
+> X
+
+AM =
+
+> (
+
+A0
+
+0
+
+> )
+
+, BM gX = ( Bi(U ) γ).
+
+The first q vertex coordinates and the unchanged vertices recover U ; the last p outgoing columns recover γ. The Frobenius adjunction recovers the individual arrows. These formulas give mutually inverse regular maps between the parameter chart and its image, which is defined by the graph equations and the equations of the smaller chart. Thus the image is locally closed. When q = 0, the empty determinant is one and the same formulas apply. As in Lemma 5.1, invert the scalar norms of the finitely many required determinants. Their product, together with the earlier denominators, defines fZ . All these functions are nonzero at the generic special-fibre point, so fZ mod t̸ = 0. The dimension increments sum to n.To describe XZ,k , write each of the n scalar coordinates as za, 0 + za, 1t + · · · + za,k −1tk−1. The value of fZ is invertible precisely when fZ (0 , z 1,0, . . . , z n, 0) is invertible. The constant coefficients therefore belong to XZ, 1, and the remaining coefficients are unrestricted. This proves (5.1) and representability of the stated functor. Reduction forgets the final coefficients. The inverse graph formulas commute with this operation, and the universal E-filtration puts every image in the required locus. □
+
+5.3. Reduction of components. The following elementary consequence of Smith normal form controls the supported tops and socles under reduction. 
+
+Lemma 5.4. Let k be a field, let R0 = k[x]/(xn) with n ≥ 1, and let A : Ra 
+
+> 0
+
+→ Rb 
+
+> 0
+
+be a matrix. If either ker A or coker A is free, then bases of the source and target identify A with a rectangular matrix diag( Iq, 0) . Its kernel, image, and cokernel are free, and their formation commutes with reduction to k[x]/(xn′
+
+) for every 1 ≤ n′ ≤ n.Proof. In Smith normal form, a nonzero nonunit factor xv, with 0 < v < n , contributes xn−vR0
+
+to the kernel and R0/(xv) to the cokernel. Neither is free. Freeness of either the kernel or the cokernel therefore excludes such factors. Only unit and zero factors remain, giving the asserted matrix and split exact sequences. Reduction preserves these sequences. □
+
+Theorem 5.5. Central reduction gives compatible bijections 
+
+Bk(r) ∼
+
+−→ B 1(r).
+
+If Zk corresponds to Z, reduction Zk 99K Zl is dominant for every 1 ≤ l ≤ k. Each Zk contains 
+
+XZ,k as a dense locally closed subset. The identifications commute with the top and socle crystal operators. Proof. By (5.1), the closure of XZ,k has dimension kN d(r). The bound (1.2) makes it a maximal component, denoted Zk, and its reduction is dominant onto Z. Reduction preserves E-filtrations: their successive quotients are free over C[t]/(tk), so tensoring each filtration sequence with a shorter quotient preserves exactness. Suppose two components Z, ˜Z ∈ B 1(r) gave the same component at length k. The closure of the reduction of its dense E-filtered part would be irreducible, lie in the closure of the length-one 
+
+E-filtered locus, and contain both Z and ˜Z. Its dimension is at most Nd(r), so these two maximal components would be equal. The construction is therefore injective on component labels. The two finite sets have the same cardinality by (1.2), so it is bijective. An alternative chart above Z, using any maximal-top removal sequence, also has a maximal component as its closure. The bijection just proved labels that component by its reduction, so its label must be Z. This proves independence of the choices. For l ≤ k, the coefficient projection 18 JIARUI FEI 
+
+XZ,k → XZ,l is dominant by (5.1). Its image therefore has the unique component closure labelled by Z, proving compatibility of all reductions. It remains to compare the crystal operators. Since reduction is dominant, the generic point of 
+
+Zk maps to the generic point of Zl. Both generic representations are crystal. Their incoming maps have free cokernels and their outgoing maps have free kernels. Lemma 5.4 shows that the supported tops and socles, and the corresponding canonical removals, commute with reduction and have the same free ranks. We must also identify the components of the removed modules. Choose a chart beginning with the given maximal-top removal. Its projection to the smaller chart is dominant: the remaining parameters are the graph and extension coordinates. Thus the removed module is generic in the smaller component at both lengths, and uniqueness of the reduction label identifies those components. The socle statement follows from the finite-level duality of Section 1.4. A crystal string is determined by the component with zero supported top or socle and the number of successive extensions. These data are preserved, so both crystal operators commute with reduction. □
+
+6. Generic monodromy evaluations and the integral basis 
+
+Throughout this section, fix a rank vector r and a component Z ∈ B 1(r). For each k ≥ 1, let 
+
+Zk ∈ B k(r) be the component corresponding to Z under Theorem 5.5; thus Z1 = Z.6.1. Generic integral representations. A representation over an algebraically closed extension 
+
+k ⊇ C is generic in Zk if its point Spec k → Zk has image the generic point of Zk. Equivalently, evaluation of rational functions gives an embedding C(Zk) ↪→ k. We require this property at every central length, not merely membership in a chosen dense open subset of Z1.The dominant reduction maps Zk+1 99K Zk induce embeddings of function fields. Put 
+
+κZ = lim 
+
+−→
+
+> k
+
+C(Zk). (6.1) We describe a generic lattice in coordinates. Let n = Nd(r) and choose the chart XZ ⊂ An 
+
+> O
+
+of Proposition 5.3, with coordinates ξ1, . . . , ξ n. By (5.1), this chart identifies κZ with 
+
+C(ξa,m : 1 ≤ a ≤ n, m ≥ 0) ,
+
+where the ξa,m are algebraically independent. The assignments 
+
+ξa 7 −→ ∑
+
+> m≥0
+
+ξa,m tm, 1 ≤ a ≤ n, 
+
+define a κZ [[ t]]-point of XZ : the constant term fZ (0 , ξ 1,0, . . . , ξ n, 0) is nonzero and hence invertible. Its reduction modulo tk is generic in Zk for every k.Equivalently, in the fixed vertex power bases, the arrow matrices at the generic point of Zk
+
+have entries in C(Zk)[ t]/(tk). After embedding these fields into κZ , the matrices are compatible under reduction. Their inverse limit defines a locally free Pd-module over κZ [[ t]]. Its relations hold because they hold modulo every power of t. The same argument proves nilpotence: the ideal generated by the nonloop arrows has power |r| = ∑ 
+
+> i
+
+ri acting as zero at every truncation, and therefore on the inverse limit. Choose an algebraic closure kZ of κZ . We write MZ for the resulting lattice over kZ [[ t]] and 
+
+KZ = kZ (( t)) , M gen  
+
+> Z
+
+= KZ ⊗kZ [[ t]] MZ .
+
+Thus M gen  
+
+> Z
+
+is a nilpotent module for the scalar extension of Γ d to KZ . The coordinate construction above gives this representation after a coefficient-field embedding. Monodromy traces over KZ
+
+are taken with the compatible roots of t fixed, as in Section 2. RAMIFIED CONVOLUTION AND MONODROMY BASES 19 
+
+Lemma 6.1. For a word w, define 
+
+λmon  
+
+> Z
+
+(w) = Fw(M gen  
+
+> Z
+
+).
+
+This value is unchanged if MZ is replaced by a locally free lattice over k[[ t]] , with k ⊇ C
+
+algebraically closed, whose reduction modulo tk is generic in Zk for every k. It is independent of the chart, the algebraic closure, and further algebraically closed coefficient-field extensions. Proof. Such a lattice gives compatible embeddings C(Zk) → k, hence an embedding κZ → k.Under this embedding, the universal arrow matrices agree with those of the chosen lattice. Extend it from kZ to an algebraically closed coefficient field containing the two choices. The generic flag schemes are then identified by coefficient extension with t and its compatible roots fixed. Their traces agree by [3, Proposition 7.2]. The definition of κZ uses only the component reductions, not a chart. □
+
+6.2. The integral basis and faithfulness. Corollary 3.2 shows that λmon  
+
+> Z
+
+annihilates the Serre ideal, also over the enlarged coefficient field kZ . We henceforth use the same notation for the resulting linear functional on U + 
+
+> Q
+
+, extended by zero outside degree r.To explain its integral values, let i = ( i1, . . . , i v) and p = ( p1, . . . , p v), where each pa is a nonnegative integer and ∑ 
+
+> a
+
+paαia = r. Denote by Fl R
+
+> i,p
+
+(M ) the balanced partial-flag scheme 
+
+whose successive quotients are S⊕p1 
+
+> i1
+
+, . . . , S ⊕pv 
+
+> iv
+
+; quotients with pa = 0 are omitted. Here the simples and the flag scheme are understood over the coefficient field of M . The complete-flag refinement has trace p!, as established in Section 4; thus 
+
+λmon  
+
+> Z
+
+(e(p1) 
+
+> i1
+
+· · · e(pv ) 
+
+> iv
+
+) = χσ
+
+> (
+
+Fl R
+
+> i,p
+
+(M gen  
+
+> Z
+
+)
+
+> )
+
+∈ Z. (6.2) The integrality is [17, Corollary 6.5]. Since these divided-power monomials generate U + 
+
+> Z
+
+additively, every element of U + 
+
+> Z
+
+has integral evaluation. We use the triangular argument of Lusztig [15], in the form of [10, Lemma 7.1]. Choose an ordering of I, repeat it periodically, and take the first s = |I| | r| terms i1, . . . , i s. Starting from a generic module in Z, remove the entire ia-top at stage a, and let pa(Z) be its rank. Every canonical kernel is again crystal. A nonzero E-filtered module has a nonzero supported quotient, so each full cycle contains a positive removal until the module becomes zero. This occurs within 
+
+s terms. We put all subsequent pa(Z) equal to zero; for r = 0 we use the empty sequence and the monomial 1. The maximal-top correspondences recover Z from p(Z) = ( p1(Z), . . . , p s(Z)). We call 
+
+mZ = e(ps(Z))  
+
+> is
+
+· · · e(p1(Z)) 
+
+> i1
+
+its adapted divided-power monomial . The order is reversed because the first removed top is the last quotient of an ascending flag. We compare the sequences lexicographically: the first unequal entry determines their order. Use a chart constructed along this removal sequence. For any of its integral points, the incoming map at each removal stage is surjective onto the vertex space of the canonical kernel. Hence the generic fibre has the prescribed successive full-top ranks. 
+
+Lemma 6.2. For components Z, Z ′ ∈ B 1(r), we have 
+
+λmon  
+
+> Z
+
+(mZ ) = 1 , λmon  
+
+> Z′
+
+(mZ ) = 0 if p(Z) >lex p(Z′).
+
+The same diagonal and vanishing identities hold if, for each component, we use any integral point of its adapted chart, including points over C[[ t]] .Proof. A quotient supported at i cannot have rank greater than the full i-top. A quotient with rank equal to that top has the canonical kernel. For unequal sequences, the preceding equal ranks force the same canonical removals, and the first larger requested rank makes the flag scheme 20 JIARUI FEI 
+
+empty. For equal sequences the partial flag is unique, and its divided-power evaluation equals one by (6.2). □
+
+Thus, if rows and columns are ordered by increasing p(Z), the matrix ( λmon  
+
+> Y
+
+(mZ )) Y,Z is lower unitriangular: it has diagonal entries one and zeros above the diagonal. 
+
+Theorem 6.3 (Integral monodromy basis) . The evaluation map 
+
+U + 
+
+> Z,r
+
+−→ ZB1(r), u 7 −→ (λmon  
+
+> Z
+
+(u)) Z (6.3) 
+
+is an isomorphism. For each Z, let bmon  
+
+> Z
+
+be the inverse image of the coordinate vector that is one at Z and zero at the other components. The elements bmon  
+
+> Z
+
+, in all degrees, form the monodromy basis of U + 
+
+> Z
+
+. They satisfy 
+
+λmon  
+
+> Y
+
+(bmon  
+
+> Z
+
+) = δY,Z 
+
+and do not depend on the periodic vertex order used to construct the adapted monomials. Proof. By Lemma 6.2 and (6.2), the evaluation matrix on the mZ is integral unitriangular. Its size is dim Q U + 
+
+> Q,r
+
+by (1.2). Hence the mZ form a rational basis and the rational evaluation map is an isomorphism. The inverse matrix is integral. Given u ∈ U +
+
+> Z,r
+
+, its evaluations are integers by (6.2). Applying that inverse matrix gives an integral combination of the mZ with the same evaluations as u.Rational injectivity makes this combination equal to u. The mZ are therefore an integral basis, and (6.3) is an integral isomorphism. The functionals were defined from the component reductions before choosing a periodic vertex order, so their dual basis has the same independence. □
+
+Together with Theorem 5.5 and Lemma 6.1, this proves Theorem B. Let ω be the involutive anti-automorphism of U + 
+
+> Q
+
+fixing each ei; it preserves U + 
+
+> Z
+
+. By Section 1.4, duality carries compatible generic lattices for Z to those for Z∗. The ground-field flag isomorphism and Lemma 6.1 give 
+
+λmon  
+
+> Z∗
+
+(u) = λmon  
+
+> Z
+
+(ω(u)) , ω(bmon  
+
+> Z
+
+) = bmon  
+
+> Z∗
+
+. (6.4) The second identity follows from the defining duality of the basis. Independence of ℓ and of the tame generator is [17, Corollary 6.5]. 
+
+Corollary 6.4. The geometric convolution and evaluation maps are isomorphisms 
+
+U +
+
+> Q
+> ∼
+
+−→ Cd ∼
+
+−→ M σ(Γ d).
+
+Together with Proposition 4.2, this proves Theorem A. Proof. Both maps are surjective onto their stated targets by construction. To prove injectivity using modules over the original field K = C(( t)), fix a degree. In the special fibre of each adapted chart, choose a complex point and lift its coordinates to C[[ t]]. The defining polynomial remains invertible. Lemma 6.2 gives a unitriangular evaluation matrix on the mZ for these actual 
+
+K-modules. Since the mZ are a basis, these evaluations separate U +
+
+> Q,r
+
+. This proves injectivity in every degree. The coproduct formula then identifies the geometric coproduct with the one for which every ei is primitive. □
+
+6.3. A calculation in type B2. In this subsection, take 
+
+C = 
+
+> (
+
+2 −1
+
+−2 2
+
+> )
+
+, d = (2 , 1) , R = O[x]/(x2 − t).
+
+Thus the two vertex rings are O1 = R and O2 = O. We compute the four basis elements in degree (2 , 2). The relevant special-fibre modules are discussed in [10, Sections 5.5, 8.2.2 and 8.2.5]; the integral formulas below calculate their monodromy evaluations. In this degree the RAMIFIED CONVOLUTION AND MONODROMY BASES 21 
+
+monodromy and special-fibre evaluations coincide on all convolution words. Write a : 1 → 2 and 
+
+b : 2 → 1. The relations are ba = 0 and x(ab ) + ( ab )x = 0, together with x2 = t at vertex 1. Let E have vertex modules ( R, 0). The table defines four further lattices. Every arrow value not specified is zero. The maps are O-linear; a map from uR is specified on the O-basis u, ux .Lattice Vertex 1 Vertex 2 Nonzero arrow values 
+
+T+ uR Oz zb = u
+
+T− uR Oz (ux )a = z
+
+Q2 uR Oz0 ⊕ O z1 z0b = u, (ux )a = z1
+
+Q1 uR ⊕ vR Oz0 ⊕ O z1 ua = z0, (ux )a = z1,z0b = v, z1b = −vx 
+
+These maps satisfy the relations. For example, on u ∈ Q1, the two terms of x(ab ) + ( ab )x give 
+
+−vx and vx . Set 
+
+M1 = T ⊕2 
+
+> −
+
+, M2 = Q1, M3 = E ⊕ Q2, M4 = T ⊕2+ .
+
+All four lattices have rank (2 , 2). Their endomorphism modules are free of rank four over O, and the same equations hold after every central reduction. For T ⊕2 
+
+> ±
+
+the endomorphism algebra is Mat 2(O). For E ⊕ Q2, both cross Hom spaces vanish. The endomorphisms of E form R, while an endomorphism of Q2 has the form 
+
+u 7 → αu, z0 7 → αz 0 + βz 1, z1 7 → αz 1, α, β ∈ O .
+
+An endomorphism of Q1 is determined by 
+
+u 7 −→ uf + vg, v 7 −→ vf (−x), f, g ∈ R, 
+
+where f (−x) is the image of f (x) ∈ R under the involution x 7 → − x; the arrow equations determine its values on z0, z 1.At length k, the change-of-basis group is GL 2(R/t kR) × GL 2(O/t k), of dimension 12 k. The stabilizer is open in the 4 k-dimensional endomorphism space. Each orbit therefore has dimension 8k = kN d(2 , 2) and closes to a maximal component. The four closures are distinct, since successive full-top removals in the order 1 , 2, 1, 2 give (2 , 2, 0, 0) , (1 , 2, 1, 0) , (1 , 1, 1, 1) , (0 , 2, 2, 0) respectively. All later entries are zero. The positive roots are α1, α 2, α 1 + α2, α 1 + 2 α2. There are four ways to express (2 , 2) as a nonnegative integer sum of these roots. The Poincaré–Birkhoff–Witt theorem and (1.2) therefore show that these are all the maximal components. Denote their compatible labels by Z1, . . . , Z 4. A change of vertex bases with generic power-series coefficients gives a representation generic in each orbit at every length, without changing its flag schemes. Hence the traces of Mj compute λmon  
+
+> Zj
+
+.The only nonempty full flag schemes of the generic fibres of E , T+, T−, Q2 have words 1, 12 , 21 , 212, respectively, and each is a point. For Q1, injectivity of b excludes a flag beginning with 2, and surjectivity of a excludes one ending with 2. The only remaining word is 1221. Its first submodule is vK 1, and the intermediate line at vertex 2 is arbitrary. This flag scheme is 
+
+P1 
+
+> K
+
+, whose monodromy trace is two. Proposition 4.2 determines the direct-sum evaluations. The adapted divided-power monomials are 
+
+m1 = e(2) 2 e(2) 1 , m2 = e1e(2) 2 e1, m3 = e2e1e2e1, m4 = e(2) 1 e(2) 2 .
+
+With rows indexed by Z1, . . . , Z 4 and columns by m1, . . . , m 4, the evaluation matrix is 
+
+> (
+
+λmon  
+
+> Zj
+
+(ml))4 
+
+> j,l =1
+
+=
+
+> 
+
+1 0 2 00 1 0 00 0 1 00 0 0 1 
+
+> 
+
+. (6.5) 22 JIARUI FEI 
+
+For instance, there are two ways to interleave two copies of 21, preserving the order in each, to obtain 2121. Thus λmon  
+
+> Z1
+
+(m3) = 2. Inverting (6.5) gives 
+
+bmon  
+
+> Z1
+
+= m1, bmon  
+
+> Z2
+
+= m2, bmon  
+
+> Z3
+
+= m3 − 2m1 = e2e(2) 1 e2, bmon  
+
+> Z4
+
+= m4.
+
+The alternative expression for bmon  
+
+> Z3
+
+follows by multiplying the Serre relation e21e2 −2e1e2e1 +e2e21 =0 on the left by e2. The example thus determines the basis elements, including the integral normalization of the nontrivial correction. 7. Crystal compatibility and integrable modules 
+
+We return to arbitrary ( C, d ). For Z ∈ B 1(r), let ti(Z) and si(Z) be the ranks of fac i(M ) and sub i(M ) for a generic module M in Z. These are the full vertex-supported top and socle defined in Section 1. Their ranks are constant on a dense open of Z.Write KiZ for the component obtained by removing the entire i-top, and QiZ for the component obtained by quotienting by the entire i-socle. The GLS correspondences give 
+
+KiZ ∈ B 1(r − ti(Z)αi), QiZ ∈ B 1(r − si(Z)αi).
+
+The first component has zero generic i-top, and the second has zero generic i-socle. If the relevant rank is zero, the corresponding removal leaves Z unchanged. We use zero for a homogeneous component of U + 
+
+> Q
+
+whose degree has a negative coordinate. Throughout this section we prove the top/right-multiplication statements; the socle/left-multiplication statements follow from (6.4) and si(Z) = ti(Z∗), QiZ = ( KiZ∗)∗, by Section 1.4. 7.1. Canonical removals and multiplication. We explain why the canonical removals of MZ
+
+compute the functionals of these smaller components. By Theorem 5.5, all generic truncations have the same free top and socle ranks. Smith normal form over kZ [[ xi]], with t = xdi 
+
+> i
+
+, then gives only unit and zero invariant factors for the integral incoming and outgoing maps. Indeed, a nonzero factor xai with a > 0 would produce a nonfree top or socle at every central length k with 
+
+kd i > a .The integral incoming and outgoing maps therefore split onto their images, and their kernels and cokernels commute with reduction. In the proof of Theorem 5.5, the charts beginning with the prescribed removal have dominant projections to the smaller components. Hence the full-top kernel and the full-socle quotient of the generic lattice represent KiZ and QiZ, respectively, at every central length. Lemma 6.1 identifies their evaluations with the canonical generic evaluations. The following is the monodromy version of the full-top restriction in [10, Lemma 7.1]. 
+
+Lemma 7.1. Let Z ∈ B 1(r), p = ti(Z), and q = si(Z). Then 
+
+λmon  
+
+> Z
+
+(ue (p) 
+
+> i
+
+) = λmon  
+
+> KiZ
+
+(u), u ∈ U + 
+
+> Q,r−pα i
+
+,
+
+and 
+
+λmon  
+
+> Z
+
+(e(q) 
+
+> i
+
+v) = λmon  
+
+> QiZ
+
+(v), v ∈ U + 
+
+> Q,r−qα i
+
+.
+
+If a > p , then λmon  
+
+> Z
+
+(ue (a) 
+
+> i
+
+) = 0 for u ∈ U + 
+
+> Q,r−aα i
+
+. If a > q , then λmon  
+
+> Z
+
+(e(a) 
+
+> i
+
+u) = 0 in the same degree. Proof. A supported quotient of rank p has the canonical full-top kernel. Its divided-power normalization is one by (6.2), while a quotient of greater rank is impossible. The genericity of this canonical removal identifies the remaining evaluations with those of KiZ. □
+
+We denote the raising operators of the two component crystals by Ftop  
+
+> i
+
+and Fsoc  
+
+> i
+
+. Concretely, 
+
+Ftop  
+
+> i
+
+Z is the unique component of rank r + αi with 
+
+Ki(Ftop  
+
+> i
+
+Z) = KiZ, ti(Ftop  
+
+> i
+
+Z) = ti(Z) + 1 .RAMIFIED CONVOLUTION AND MONODROMY BASES 23 
+
+Similarly, Fsoc  
+
+> i
+
+Z has the same full-socle quotient component as Z and has socle rank si(Z) + 1. These are the component correspondences of [10, Section 5.3]. Their ath powers mean a successive applications, with the zeroth power the identity. The spans in the next theorem range over components in all degrees. 
+
+Theorem 7.2 (Two-sided crystal compatibility) . For every i ∈ I and integer a ≥ 0,
+
+U + 
+
+> Q
+
+e(a) 
+
+> i
+
+= span Q{bmon  
+
+> Z
+
+: ti(Z) ≥ a},e(a) 
+
+> i
+
+U + 
+
+> Q
+
+= span Q{bmon  
+
+> Z
+
+: si(Z) ≥ a}.
+
+(7.1) 
+
+The first subspace is a left ideal and the second a right ideal. If Z has rank r and p = ti(Z), then 
+
+bmon  
+
+> Z
+
+e(a) 
+
+> i
+
+=
+
+(p + aa
+
+)
+
+bmon (Ftop   
+
+> i)aZ
+
++ ∑ 
+
+> ti(Y)>p +a
+
+cY bmon  
+
+> Y
+
+, cY ∈ Z, (7.2) 
+
+where the sum is over Y ∈ B 1(r + aα i). The corresponding formula for left multiplication is 
+
+e(a) 
+
+> i
+
+bmon  
+
+> Z
+
+=
+
+(si(Z) + aa
+
+)
+
+bmon (Fsoc   
+
+> i)aZ
+
++ ∑ 
+
+> si(Y)>s i(Z)+ a
+
+c′ 
+
+> Y
+
+bmon  
+
+> Y
+
+, c′ 
+
+> Y
+
+∈ Z,
+
+with the same rank for Y .Proof. The vanishing in Lemma 7.1 puts U + 
+
+> Q
+
+e(a) 
+
+> i
+
+in the span on the right of the first identity. The Poincaré–Birkhoff–Witt theorem gives an associated graded algebra equal to the symmetric algebra of n(C), which is a domain. Thus multiplication by eai is injective. In degree r, its source has dimension dim U + 
+
+> Q,r−aα i
+
+. The map Z 7 → (Ftop  
+
+> i
+
+)aZ is a bijection from components of that smaller rank to the components of rank r with ti ≥ a. Equation (1.2) therefore gives equality of dimensions and proves the first identity. Put Z0 = KiZ, so ti(Z0) = 0. Full-top recursion gives 
+
+bmon  
+
+> Z0
+
+e(p) 
+
+> i
+
+≡ bmon  
+
+> Z
+
+(mod U + 
+
+> Q
+
+e(p+1)  
+
+> i
+
+).
+
+Indeed, its evaluations on components with top rank less than p vanish, and those with top rank 
+
+p are zero except at Z, where the value is one. Multiplying the congruence on the right by e(a)
+
+> i
+
+and using e(p) 
+
+> i
+
+e(a) 
+
+> i
+
+= (p+aa
+
+)e(p+a) 
+
+> i
+
+gives the leading term in (7.2). The error belongs to U + 
+
+> Q
+
+e(p+a+1)  
+
+> i
+
+,whose basis vectors are identified by (7.1). All coefficients are integers because both the divided powers and the monodromy basis belong to U + 
+
+> Z
+
+. □
+
+7.2. Integral strings and representation lattices. For a ≥ 0, define additive subgroups of 
+
+U + 
+
+> Z
+
+by 
+
+F ai = U + 
+
+> Z
+
+∩ (U + 
+
+> Q
+
+e(a) 
+
+> i
+
+) = ⊕
+
+> ti(Z)≥a
+
+Zbmon  
+
+> Z
+
+, U + 
+
+> i, 0
+
+= ⊕
+
+> ti(Z)=0
+
+Zbmon  
+
+> Z
+
+.
+
+The equality for F ai follows from (7.1) and Theorem 6.3. These groups form a decreasing filtration. In each degree, F ai is saturated : the quotient of the ambient free abelian group by it has no nonzero torsion. For integrable representations we use left modules over the Kac–Moody algebra g(C). Let h
+
+be its Cartan subalgebra, hi ∈ h the simple coroots, and fi the negative Chevalley generators. A weight λ ∈ h∗ is dominant integral if λi := λ(hi) is a nonnegative integer for every i. Let 
+
+L(−λ) be the irreducible integrable lowest-weight module over Q with lowest weight −λ. Here integrability means that each ei and fi acts locally nilpotently. Choose a nonzero lowest-weight vector v−λ; thus fiv−λ = 0 and hv −λ = −λ(h)v−λ for h ∈ h. Its cyclic Kostant lattice is 
+
+LZ(−λ) = U + 
+
+> Z
+
+v−λ ⊂ L(−λ).24 JIARUI FEI 
+
+The map from U + 
+
+> Z
+
+to this lattice sends u to uv −λ.
+
+Proposition 7.3. Multiplication gives an isomorphism of graded abelian groups 
+
+⊕
+
+> p≥0
+
+U + 
+
+> i, 0
+
+⊗Z Ze(p)
+
+> i
+> ∼
+
+−→ U + 
+
+> Z
+
+, v ⊗ e(p) 
+
+> i
+
+7 −→ ve (p) 
+
+> i
+
+,
+
+where Ze(p) 
+
+> i
+
+is the free rank-one subgroup generated by e(p) 
+
+> i
+
+. Moreover, 
+
+F ai = ∑
+
+> p≥a
+
+U + 
+
+> Z
+
+e(p) 
+
+> i
+
+. (7.3) 
+
+For every dominant integral λ,
+
+ker (U + 
+
+> Z
+
+−→ LZ(−λ)) = ∑
+
+> i
+
+∑
+
+> p>λ i
+
+U + 
+
+> Z
+
+e(p) 
+
+> i
+
+. (7.4) 
+
+The vectors bmon  
+
+> Z
+
+v−λ with ti(Z) ≤ λi for every i form a Z-basis of LZ(−λ). There are analogous decompositions with the divided powers on the left, using the socle filtration. Proof. For ti(Z0) = 0, (7.2) gives 
+
+bmon  
+
+> Z0
+
+e(p) 
+
+> i
+
+= bmon (Ftop   
+
+> i)pZ0
+
++ ∑ 
+
+> ti(Y)>p
+
+cY bmon  
+
+> Y
+
+, cY ∈ Z.
+
+Every label is determined by its zero-top predecessor and its top rank. In each degree these products therefore give an integral unitriangular change of basis. This proves the direct-sum decomposition. Restricting to labels with top rank at least a proves (7.3). The standard rational presentation is [12, Chapter 10] 
+
+L(−λ) ∼= U +
+
+> Q
+
+/ ∑ 
+
+> i
+
+U + 
+
+> Q
+
+e(λi+1)  
+
+> i
+
+.
+
+By (7.1), the denominator is spanned by exactly those basis elements for which ti(Z) > λ i for at least one i. Its intersection with U + 
+
+> Z
+
+is the integral span of the same elements. Equation (7.3) identifies this subgroup with the right side of (7.4). The other labels give the claimed basis of the quotient. □
+
+The Chevalley involution of g(C) sends ei to fi, fi to ei, and h ∈ h to −h. Applying it to the preceding construction gives the corresponding basis of an integrable highest-weight lattice. All sums above are finite in each homogeneous degree. The sum over every p > λ i in (7.4) is necessary: in rank one and degree n ≥ a,(U + 
+
+> Z
+
+e(a) 
+
+> i
+
+)n = Z
+
+(na
+
+)
+
+e(n) 
+
+> i
+
+,
+
+whereas its saturation is Ze(n) 
+
+> i
+
+. Finally, the quotient in (7.4) is free. For any commutative coefficient ring B, extension of scalars therefore gives a B-basis of B ⊗Z LZ(−λ) with the same labels and the induced divided-power action. In positive characteristic this module need not be irreducible. 8. Changes of coordinates 
+
+The following transport statement applies to the coordinate changes used in this section. Let 
+
+φ : P → P′ be an isomorphism between two copies of the standard integral algebra for ( C, d ), possibly with different coordinates or orientation signs. If M is a right P-module, its transport to P′ has action m · a′ = mφ −1(a′); when φ is semilinear, the scalar structure is transported as well. We write φ∗Z for the induced component label. RAMIFIED CONVOLUTION AND MONODROMY BASES 25 
+
+Proposition 8.1. Assume that φ preserves the vertex idempotents and carries each prescribed vertex ring onto its counterpart. It may be semilinear for a C-algebra automorphism ϕ of O,meaning that φ(ca ) = ϕ(c)φ(a) for c ∈ O . Then it identifies the component systems and their flag schemes after the corresponding change of scalars. For u ∈ U + 
+
+> Q
+
+,
+
+λmon  
+
+> φ∗Z
+
+(u) = λmon  
+
+> Z
+
+(u), bmon  
+
+> φ∗Z
+
+= bmon  
+
+> Z
+
+.
+
+The left sides are computed for P′ and the right sides for P. The basis equality uses the identifications with U + 
+
+> Q
+
+that send the vertex-simple functions to the same generators ei.Proof. Twisting by φ−1 preserves precisely the stable vertex submodules and the ranks of their successive quotients. This is functorial over parameter rings, with scalar structure changed by ϕ
+
+when necessary. It identifies representation schemes, flag schemes, and central reductions. Hence it transports maximal components, their dominant reduction maps, and their compatible generic points. Every automorphism of O = C[[ t]] sends t to t times a unit. Extending it to the chosen algebraic closures identifies the absolute Galois groups and carries a tame generator to a tame generator. The generic flag cohomology is identified under this transport, and its trace is unchanged. This proves the functional equality; the defining duality of the bases proves the other one. □
+
+8.1. Common scaling of the symmetrizer. Fix an integer m ≥ 1. We write Γ md (t) to indicate that the tuple is md = ( md i)i∈I and the base parameter is t. In this algebra, put 
+
+u = ∑
+
+> i
+
+xdi 
+
+> i
+
+, Kt = C(( t)) .
+
+The edge commutation relation raised to the eij th power gives xdi 
+
+> i
+
+aij = aij xdj 
+
+> j
+
+. Thus u is central and satisfies um = t. The polynomial Xm − t is irreducible over Kt by Eisenstein’s criterion, so 
+
+u defines a central subfield Ku = C(( u)). As a Ku-algebra, Γ md (t) is Γ d(u): on the ith vertex, u
+
+acts as xdi 
+
+> i
+
+.Since t = um, reduction modulo tk for the tuple md agrees with reduction modulo umk for the tuple d. Thus, if ( Zk)k≥1 is a component system for d, the corresponding system for md is (Zmk )k≥1. Passing to these indices leaves the direct-limit field (6.1) unchanged. The compatible generic matrices describe the same representation, now considered over Kt ⊂ Ku. Its balanced flag scheme over Kt is the restriction of scalars of its balanced flag scheme over Ku.Choose compatible tame generators with σu = σmt . Applying (2.2), including after the coefficient extension used for a generic representation, gives 
+
+λmon  
+
+> Zm,md
+
+= λmon  
+
+> Z,d
+
+, bmon  
+
+> Zm,md
+
+= bmon  
+
+> Z,d
+
+. (8.1) The tuple following the comma indicates which ramification data define the evaluation. For connected C, every integral symmetrizer is a positive integer multiple of the primitive one, whose entries have greatest common divisor one. Hence the basis is independent of that multiple. For disconnected C, apply the argument separately on each connected component; the flag schemes decompose accordingly and their traces satisfy the Künneth formula. 8.2. Orientation signs and arrow bases. Changing an orientation sign is implemented by negating one arrow in the corresponding doubled pair. This is an integral isomorphism preserving the vertex rings, so Proposition 8.1 applies. Negating the other arrow differs by a simultaneous rescaling of the pair. These rescalings form a connected multiplicative group and therefore fix every irreducible component. The two choices give the same correspondence of labels. Fix an edge {i, j } and put g = gij . List its forward arrows, in the chosen orientation, as a column a = ( a1, . . . , a g)T, and the paired reverse arrows as b = ( b1, . . . , b g)T. For G ∈ GL g(Oij ), 26 JIARUI FEI 
+
+replace them by a 7 → Ga and b 7 → (G−1)Tb. Here T denotes matrix transpose, and the common edge ring Oij acts through its prescribed embeddings in the two vertex rings. Its coefficients commute through the arrows by (1.1). The change preserves ∑ 
+
+> c
+
+acbc and the corresponding sum at the other endpoint, so every moment relation is preserved. A vertex flag is stable under the new arrows if and only if it is stable under the old ones, since G is invertible over the same coefficient ring. At length k, these changes form GL g(C[z]/(zke ij )), where z is the parameter of Oij and t = zeij .Reduction modulo z has connected affine fibres over GL g(C), so this group is connected. Aconnected algebraic group fixes every irreducible component. Thus these changes leave each component label unchanged, and Proposition 8.1 gives equality of the labelled bases. 8.3. Formal changes of uniformizer. Let ϕ be the automorphism of O defined by 
+
+ϕ(t) = tη (t), η(t) ∈ C[[ t]] ×.
+
+Put L = lcm i di, wi = L/d i, and hij = L/e ij . Hensel’s lemma gives a unit v(t) with v(t)L = η(t), since the constant coefficient has an Lth root in C and L is invertible. Use the forward arrow of each doubled pair fixed in the preceding subsection. Define 
+
+t 7 → ϕ(t), xi 7 → v(t)wi xi, aforward 7 → aforward , areverse 7 → v(t)−hij areverse , (8.2) where the exponent hij belongs to the edge containing the arrow. These assignments define a 
+
+ϕ-semilinear isomorphism. Indeed, diwi = L verifies the power relations, and fji wi = fij wj = hij 
+
+verifies the commutation relations. Each summand in the i-moment relation is multiplied by 
+
+v−wi , since ( fji − 1) wi − hij = −wi. The inverse uses ϕ−1 and the unit ( v ◦ ϕ−1)−1.The isomorphism preserves every ideal ( tk). On the special fibre, replacing v(0) in (8.2) by a variable z̸ = 0 defines an action of the multiplicative group Gm = Spec C[z, z −1]. Changing the vertex power bases identifies the rescaled loop matrices with the prescribed ones. This gives a connected-group action on the fixed-vertex representation variety and fixes each component. Proposition 8.1 therefore preserves the labelled basis. Any other choice of v differs by a constant 
+
+Lth root of unity in the same action, so the result is independent of this choice. 9. The symmetric case and direct sums 
+
+9.1. The symmetric case. For an ordinary preprojective module M , the Euler characteristics of its composition-series varieties define a linear form on U + 
+
+> Q
+
+. These are the linear forms encoded by the GLS functions φM [6, Section 1.2]. Their descending series M = X0 ⊇ · · · ⊇ Xh = 0 becomes our ascending series with successive quotients Xh−1/X h, . . . , X 0/X 1. We use this correspondence of conventions throughout the comparison. 
+
+Proposition 9.1. If C is symmetric, the monodromy basis agrees with Lusztig’s semicanonical basis in U + 
+
+> Z
+
+. More precisely, if fZ denotes Lusztig’s semicanonical basis element labelled by the component Z in his convolution convention, then fZ = bmon  
+
+> Z∗
+
+.Proof. First take di = 1 for every i, so D is the identity matrix. The relations xi = t1i identify 
+
+Pd with the scalar extension to O of the ordinary preprojective algebra. Let Z ∈ B 1(r). Since the remaining relations have coefficients in C, the chart of Proposition 5.3 can be chosen as the scalar extension of a complex chart of Z.Apply the generic formal-arc construction of Section 6 to this chart over an algebraically closed coefficient field k ⊇ C. It gives a morphism 
+
+γ : Spec k[[ t]] −→ Z
+
+whose special point maps to the generic point of Z. Its reductions are generic in the corresponding components, so Lemma 6.1 allows us to use this lattice to compute λmon  
+
+> Z
+
+.RAMIFIED CONVOLUTION AND MONODROMY BASES 27 
+
+Fix a word w of rank r, and let pw : Fw → Z be the projective family of ordinary representation flags of type w. There is a dense open Z◦ ⊆ Z on which all the sheaves Rq(pw)∗Qℓ are lisse , that is, locally constant constructible sheaves in the étale topology. The morphism γ factors through 
+
+Z◦, since its special point does. Their pullbacks to Spec k[[ t]] are constant: this complete local ring has algebraically closed residue field and is strictly henselian. Thus inertia acts trivially on the generic flag cohomology. If η is a geometric generic point of Z, proper base change gives 
+
+λmon  
+
+> Z
+
+(w) = χc(( Fw)η).
+
+Lusztig’s convolution is quotient-first [5, Section 5.2], so its generic functional at Z is λmon  
+
+> Z
+
+◦ ω.Equation (6.4) therefore identifies its dual basis element with ω(bmon  
+
+> Z
+
+) = bmon  
+
+> Z∗
+
+. For connected symmetric C, every symmetrizer is a common multiple of the identity, so (8.1) proves the result for all d. For disconnected C, apply the same argument to each connected component. □
+
+9.2. Multiplication under direct sum. We work in the graded dual 
+
+(U + 
+
+> Q
+
+)◦ = ⊕
+
+> r∈NI
+
+Hom Q(U +
+
+> Q,r
+
+, Q).
+
+Its multiplication is dual to the coproduct: ( λμ )( u) = ( λ ⊗ μ)(∆ u). We extend a homogeneous functional by zero in the other degrees. The monodromy functionals λmon  
+
+> Z
+
+belong to this dual. Let Z ∈ B 1(r) and W ∈ B 1(s). We call them generically Ext-orthogonal if Ext 1Π1 (M, N ) = Ext 1Π1 (N, M ) = 0 on a dense open subset of Z × W . For k ≥ 1 and a rank vector a, write 
+
+Gk(a) = ∏
+
+> i
+
+GL ai (Hi,k ).
+
+Using fixed decompositions at the vertices, let Z ⊕ W denote the closure of the union of the 
+
+G1(r + s)-orbits of M ⊕ N for ( M, N ) ∈ Z × W . This is an irreducible subvariety. The next proposition extends the classical multiplicative property of the dual semicanonical basis [5, Theorem 1.1]. 
+
+Proposition 9.2. If Z and W are generically Ext-orthogonal, then Z ⊕ W is a maximal component and λmon  
+
+> Z
+
+λmon  
+
+> W
+
+= λmon  
+
+> Z⊕W
+
+in (U + 
+
+> Q
+
+)◦.Proof. Choose locally free lattices M , N over a common algebraically closed coefficient field 
+
+k ⊇ C, with independent generic coordinates for the charts of Z and W . Put Mk = M /t kM
+
+and Nk = N /t kN . All Hom and Ext dimensions in the proof are over k, for the corresponding scalar extension of Π k. Write Oi, k = k[[ t]][ xi]/(xdi 
+
+> i
+
+− t), and similarly define Oij, k.A module homomorphism is a tuple fi ∈ Hom Oi, k (Mi, Ni) satisfying fj ◦ Ma = Na ◦ fi for 
+
+a : i → j, where Ma, N a are the arrow maps and a ranges over all nonloop arrows, with their multiplicities. The differences on the two sides lie in Hom Oij, k (Mi, Nj ). Thus these equations define a linear map between finite free k[[ t]]-modules, whose reduced kernel is Hom( Mk, N k)at length k. A nonzero Smith factor tv contributes min( k, v ) to this kernel dimension, while a zero factor contributes k. Since min( k, v ) ≤ k min(1 , v ), we obtain dim Hom( Mk, N k) ≤
+
+k dim Hom( M1, N 1), and the analogous inequality with M, N interchanged. Define ( r, s)d = rTDC s. The GLS Hom–Ext formula [10, Lemma 2.1] gives dim Ext 1(Mk, N k) = dim Hom( Mk, N k) + dim Hom( Nk, M k) − k(r, s)d.
+
+At k = 1 the Ext term is zero. The two Hom bounds therefore make the right side nonpositive for every k. Nonnegativity forces equality in both bounds and Ext 1(Mk, N k) = 0; the same holds in the opposite direction. 28 JIARUI FEI 
+
+Let Zk ⊕ Wk be the direct-sum closure defined using Gk in place of G1. The direct-sum dimension formula of [1, Section 1], in these fixed vertex coordinates, is dim( Zk ⊕ Wk) = dim Zk + dim Wk + 2 k ∑
+
+> i
+
+dirisi − dim Hom( Mk, N k) − dim Hom( Nk, M k).
+
+The group contribution is dim Gk(r + s) − dim Gk(r) − dim Gk(s) = 2 k ∑ 
+
+> i
+
+dirisi. Indeed, Gk(a)is an open subset of ∏ 
+
+> i
+
+End Hi,k (Hai
+
+> i,k
+
+), of dimension k ∑ 
+
+> i
+
+dia2 
+
+> i
+
+. Substitution of the Hom–Ext formula and (1.2) gives dim( Zk ⊕ Wk) = kN d(r + s) − dim Ext 1(Mk, N k) = kN d(r + s).
+
+Thus each direct-sum closure is maximal. Reduction is compatible with direct sum, so Theorem 5.5 identifies these as the component system of Z ⊕ W .Choose independent generic power-series coordinates for a vertex change of basis. At each length, the direct-sum map from the product of the two component charts and the vertex change-of-basis group is dominant onto the direct-sum closure. These choices therefore give a lattice generic in Zk ⊕ Wk for every k. Its flag evaluations are unchanged by the vertex change of basis. Proposition 4.2 now gives the required identity of functionals. If Z = W , we use two independent generic members of the component, not two copies of one fixed module. □
+
+10. The Serre quotient and generic evaluation 
+
+We first identify the ordinary Serre quotient, then use one affine module to compare special-fibre generic evaluation with monodromy. 10.1. The canonical Serre quotient. For arbitrary ( C, d ), let A = ˜MQ(Π 1) be the ordinary Euler-characteristic convolution algebra generated by Ti = 1 Ei . This is the rational form of GLS’s ˜M(Π); their notation M(Π) denotes its quotient by the Serre ideal. With ascending flags, (Ti1 · · · Tih )( M ) = χc Fl lf  
+
+> i1··· ih
+
+(M ).
+
+Let ev Π : TQ ↠ A send zi to Ti, and put I = ev Π(JC ). The direct-sum coproduct satisfies (∆ g)( M, N ) = g(M ⊕ N ), ∆( Ti) = Ti ⊗ 1 + 1 ⊗ Ti;see [9, Section 4.3 and Propositions 4.5 and 4.7] for the direct-sum formula for H, and [10, Section 2.5] for the preprojective coproduct. Here 1 = 1 0. Since commutators of primitive elements are primitive, I is a Hopf ideal. The Serre relations therefore give a canonical surjection 
+
+ηΠ : U + 
+
+> Q
+
+↠ A/I.
+
+Theorem 10.1 (The canonical Serre quotient) . For every (C, d ), the map 
+
+ηΠ : U +
+
+> Q
+> ∼
+
+−→ A /I, ei 7 −→ Ti + I,
+
+is an isomorphism of graded Hopf algebras. For any acyclic orientation Ω, restriction to modules over H = H(C, D, Ω) op gives a surjective Hopf homomorphism 
+
+res Ω : A −→ M Q(H), ker res Ω = I.
+
+Proof. The quotient Π 1 ↠ H sets the opposite arrows to zero. Every locally free H-module is 
+
+E-filtered: order vertices with arrows pointing to earlier vertices, then filter by vertex sums and refine the free factors. Inflation preserves submodules and flags. Hence restriction preserves convolution and coproduct, sends Ti to θi, and is surjective. The acyclic Serre relations [9, Proposition 4.9] give I ⊆ ker res Ω. By Theorem A.1, the composite 
+
+U +
+
+> Q
+> ηΠ
+
+−→ A /I res Ω
+
+−−→ M Q(H)is an isomorphism. Thus both arrows are isomorphisms, proving the kernel equality. □RAMIFIED CONVOLUTION AND MONODROMY BASES 29 
+
+After scalar extension, this proves [10, Theorem 7.4(i)] without the Support Conjecture. The proof uses only the acyclic realization in Appendix A, not generic component evaluations. Theorem 10.2 shows that the equivalence in [10, Theorem 7.4(iii)] fails without the Support Conjecture; it does not contradict that conditional theorem. The basis assertion in part (ii) is a separate question. Corollary 10.4 shows that generic values alone do not determine quotient classes. 10.2. A counterexample to the Support Conjecture. For the rest of this section, use (C∗, d ∗) from Theorem C. Its quadratic form is qd∗ (r1, r 2, r 3) = ( r1 − r2)2 + ( r3 − r2)2, so C∗ is affine with null root (1 , 1, 1). Put S21 = (ad T2)2(T1) and 
+
+f = (ad z2)2(z1) z1z3z2z3 ∈ JC∗ , F = ev Π(f ) = S21 T1T3T2T3.
+
+Its rank degree is r = (2 , 3, 2), with ordinary dimension vector v = (2 , 6, 2). To compare with [10, Conjecture 1.4], we allow the loops to vary and use G(v) = GL 2(C) × GL 6(C) × GL 2(C). Support means the constructible nonzero locus, with the dimension of its closure. In type B2,[10, Section 8.2.4] already explains the role of Euler-characteristic cancellation and the failure of non-maximal support to define an ideal in the larger function algebra. 
+
+Theorem 10.2. The Serre-ideal function F is generically nonzero on a maximal E-filtered component of rank (2 , 3, 2) . This component contains a dense orbit of a rigid, locally free module 
+
+M with F (M ) = −2. Consequently, [10, Conjecture 1.4] fails even for the minimal symmetrizer of an affine Cartan matrix. Proof. Set R0 = C[ε]/(ε2) and use arrows a : 1 → 2, b : 2 → 1, c : 2 → 3, d : 3 → 2. With our right-module convention and suitable orientation signs, the relations are 
+
+ab = 0 , dc = 0 , ε(ba − cd ) + ( ba − cd )ε = 0; the edge commutation relations follow from ε2 = 0. Take 
+
+M1 = Cu1 ⊕ Cu2, M2 = pR 0 ⊕ qR 0 ⊕ rR 0, M3 = Cv1 ⊕ Cv2,
+
+with nonzero arrow values u1a = q, u2a = −qε, pb = u1, (pε )b = u2,v1d = p, v2d = r + pε. 
+
+(10.1) These specify the C-linear maps on vector-space bases; all other values are zero. Only pba = q
+
+and ( pε )ba = −qε are nonzero, so the relations hold. The chain 0 ⊂ (0 , qR 0, 0) ⊂ (M1, qR 0, 0) ⊂ (M1, M 2, 0) ⊂ M
+
+has quotients E2, E ⊕21 , E ⊕22 , E ⊕23 and refines to an E-filtration. In these bases, the endomorphism equations give exactly 
+
+Q1 = Q3 =
+
+> (
+
+α 0
+
+β α
+
+> )
+
+, P =
+
+> 
+
+α + βε 0 00 α − βε 0
+
+β 0 α − βε  
+
+> 
+
+, α, β ∈ C.
+
+Indeed, a, b determine Q1, the first row and second column of P ; d determines the remaining four entries and Q3. The choices ( α, β ) = (1 , 0) , (0 , 1) give the identity and a nonzero square-zero endomorphism. Thus dim End( M ) = 2, and the orbit has dimension 44 − 2 = 42, attaining the bound in [10, Theorem 1.1]. The Hom–Ext formula [10, Lemma 2.1] gives dim Ext 1(M, M ) = 2 dim End( M ) − 2qd∗ (r) = 0. With the loop fixed, the orbit has dimension 26 − 2 = 24 = Nd∗ (r); denote its closure by Z.30 JIARUI FEI 
+
+Write words as strings of vertex labels and set 
+
+w+ = 2211323 , w0 = 2121323 , w− = 1221323 .
+
+Then F (M ) = χc Fl lf  
+
+> w+
+
+(M ) − 2χc Fl lf  
+
+> w0
+
+(M ) + χc Fl lf  
+
+> w−
+
+(M ). The word w− is impossible because a
+
+is injective. For w+, the first two factors force the middle submodule to be 
+
+K = ker( ·b) = qR 0 ⊕ rR 0.
+
+The later vertex-3 line would map into K, but M3d ∩ K = 0. Thus this flag scheme is also empty. For w0, let U, N, L 3 be the vertex-1 line after step two, the middle plane after step three, and the vertex-3 line after step five. Stability requires 
+
+qR 0 ⊆ N, N b ⊆ U, L3d ⊆ N. 
+
+The identity ( vε )b = ν(vb ), where ν(u1) = u2 and ν(u2) = 0, makes N b invariant under ν. It is nonzero, since otherwise N = K. Hence N b = U = Cu2. Modulo qR 0, a primitive generator of 
+
+N normalizes to r + λpε , giving 
+
+Nλ = qR 0 ⊕ (r + λpε )R0, λ ∈ C×.
+
+The condition on L3 forces λ = 1 and L3 = Cv2. The first middle line must be killed by b and contain −qε ; its possibilities are exactly 
+
+Lz = ( q + zrε )R0, z ∈ C.
+
+These choices determine the entire flag, and each z gives free successive quotients of the prescribed ranks. The parametrization and its inverse are regular on this graph chart. Thus Fl lf  
+
+> w+
+
+(M ) = ∅, (Fl lf  
+
+> w0
+
+(M )) red ∼= A1
+
+> C
+
+, Fl lf  
+
+> w−
+
+(M ) = ∅. (10.2) Thus F equals −2 on the dense orbit of M . Its support has dimension 42 = dim G(v) − qd∗ (r), contradicting the strict bound in [10, Conjecture 1.4]. □
+
+Proposition 10.3. Let Θ = [[[[ S21 , T 1], T 3], T 2], T 3] and Ψ = − 12 Θ. Then Ψ ∈ I is primitive and 
+
+Ψ( M ) = 1 . Thus the support bound in [10, Conjecture 1.4] fails even for primitive elements of the Serre ideal. Proof. Every bracket preserves primitivity and membership in I. A contributing word must begin with 2 and end with 3: a, d are injective, b is surjective, and ( M1a)R0 + ( M3d)R0 = M2.A prefix 23 is excluded by M3d ∩ K = 0. Of the remaining words, 2211323 was excluded above, while 2212133 and 2221133 insert all of M2 before all of M1. The remaining terms are Word w 2112233 2121233 2121323 Coefficient in Θ 1 −2 −2
+
+χc Fl lf 
+
+> w
+
+(M ) 8 4 1For 2112233, the first middle line is qR 0; flags in M1, M 3 and a free line in R20 each contribute Euler characteristic 2. For 2121233, use the notation L, U, N above. If N = K, the cases U̸ = Cu2
+
+and U = Cu2 each form an affine line. Otherwise U = Cu2, N = Nλ and L = Lz , giving C× × A1.The final flag in M3 contributes 2, so the value is (1 + 1 + 0) · 2 = 4. The last entry is (10.2). Hence Θ( M ) = 8 − 8 − 2 = −2. □
+
+This is consistent with [10, Corollary 6.5], which establishes the support bound for the individual Serre generators. For Y ∈ B d∗ (s), let ρY : As → Q be generic evaluation, so λsp  
+
+> Y
+
+= ρY ev Π. Put 
+
+Nsp ,s = ⋂  
+
+> Y∈B d∗(s)
+
+ker ρY , Nsp = ⊕
+
+> s
+
+Nsp ,s.RAMIFIED CONVOLUTION AND MONODROMY BASES 31 
+
+Corollary 10.4. The subspace Nsp is not a right ideal. In degree r = (2 , 3, 2) , neither Ir nor 
+
+Nsp ,r contains the other. Special-fibre generic values on maximal components therefore do not determine a class in A/I.Proof. By [10, Corollary 6.5], S21 ∈ N sp , whereas S21 T1T3T2T3 = F ∈ I and ρZ (F ) = −2. Thus 
+
+Nsp is not a right ideal and Ir ⊈ Nsp ,r.By [10, Theorem 7.3], the generic-evaluation matrix of convolution words has full row rank over 
+
+C. Its entries are integers, so it has the same rank over Q. Together with (1.2) and Theorem 10.1, this gives codim As Is = dim Q U + 
+
+> Q,s
+
+= |B d∗ (s)| = codim As Nsp ,s.
+
+The two subspaces in degree r are distinct and have equal codimension, so neither contains the other. Adding an element of Nsp ,r \ I r to a normalized lift preserves its generic values but changes its quotient class. □
+
+10.3. The ramified lift and monodromy. Put R = O[x]/(x2 − t). On vertex lattices 
+
+O2, R 3, O2, define the arrow actions by (10.1), replacing ε by x; specify b on the O-basis 
+
+p, px, q, qx, r, rx . Denote the resulting lattice by M . The relation x(ba − cd ) + ( ba − cd )x = 0 holds on p, px by cancellation; all other relations and the filtration above persist. Thus M lifts 
+
+M and has nilpotent generic fibre. Let Fw(M ) be the relative flag scheme over O. Over an O-algebra B, its flags are locally direct summands over the vertex rings B, R B , B , where RB = B[x]/(x2 − t), with locally free successive quotients of the ranks prescribed by w. Its generic fibre is the balanced flag scheme of 
+
+MK .
+
+Proposition 10.5. The schemes Fw+ (M ) and Fw− (M ) are empty, and 
+
+Fw0 (M ) ∼= Spec O[λ, z ]/(λ2 − t, λz ). (10.3) 
+
+Its reduced special fibre is A1 
+
+> C
+
+and its generic fibre is Spec K(√t).Proof. The exclusions of w+, w − hold in both geometric fibres. For w0, use L, U, N, L 3 as above. The line L3 cannot be spanned by v1 at a geometric point: then pR B ⊆ N would force N b = M1.Thus the chart L3 = B(λv 1 + v2) covers the scheme. Since N contains qR B and L3d, it equals 
+
+N = qR B ⊕ nR B , n = r + p(λ + x).
+
+Now nb = λu 1 + u2 forces U = B(λu 1 + u2), and ( nx )b = tu 1 + λu 2 ∈ U is equivalent to λ2 = t.The projection L → qR B along nR B is an isomorphism at every geometric point. On the special fibre this follows from L = Lz . On the generic fibre, U a ⊆ L forces the q-line in the 
+
+x = −λ eigenspace, and Lb = 0 forces it in the x = λ eigenspace. Hence the graph chart covers the scheme, and we may write L = ( q + n(h0 + xh 1)) RB . The conditions Lb = 0 and U a ⊆ L
+
+give, respectively, h0 + λh 1 = 0 , λh 0 + th 1 = 0 ,λh 0 − th 1 = 0 , λh 1 − h0 = 0 .
+
+Together with λ2 = t, these are equivalent to h0 = 0 and λh 1 = 0, since 2 is invertible. Setting 
+
+z = h1 gives regular coordinates λ, z that reconstruct each flag over B, proving the scheme isomorphism (10.3). □
+
+The relative scheme is not flat: tz = 0 although z̸ = 0. Its special fibre is Spec C[λ, z ]/(λ2, λz ); the reduction is A1 and the nilradical ( λ) is supported at the origin. Its Euler characteristic is 1. The two geometric generic points are exchanged by tame inertia; their cohomology is the induced representation H0 ∼= Ind GK
+
+> GK(√t)
+
+Qℓ, whose monodromy trace is zero. Thus ev σ(f )( MK ) = 0, although the geometric generic-fibre Euler characteristic is 2. 32 JIARUI FEI 
+
+To identify the component-generic values, put Mk = M /t kM . Solving the arrow-intertwining equations over O/(tk), without inverting t, gives 
+
+Q1 = Q3 =
+
+> (
+
+α tβ β α
+
+> )
+
+, P =
+
+> 
+
+α + βx 0 00 α − βx 0
+
+β 0 α − βx  
+
+> 
+
+, α, β ∈ O /t k.
+
+Hence dim C End Πk (Mk) = 2 k and dim Gk(r) = 26 k. The orbit closures Zk are maximal of dimension 24 k, and correspond to Z under reduction. Applying a vertex-basis change with algebraically independent power-series coefficients places every reduction at the generic point of its dense orbit without changing the flag schemes. Therefore 
+
+λsp  
+
+> Z
+
+(f ) = −2 but λmon  
+
+> Z
+
+(f ) = 0 ,
+
+proving Theorem C. For k ≥ 2, the three ordinary flag varieties of Mk are empty: the middle one would require 
+
+λ2 = t in C[t]/(tk), impossible by comparing constant and linear coefficients. Thus ordinary generic values can change under common scaling of the symmetrizer, while the canonical Serre quotient remains U + 
+
+> Q
+
+. The monodromy functional, unlike the special-fibre one, descends to this quotient. 
+
+Appendix A. The acyclic realization 
+
+We return to arbitrary ( C, d ) and the acyclic orientation Ω fixed in Section 1. We give a proof of the acyclic realization that does not use the component charts. Let H = H(C, D, Ω) op , and let 
+
+MQ(H) be the rational convolution algebra generated by the characteristic functions θi = 1 Ei of its locally free vertex-supported modules. Thus MQ(H) is the rational form of the algebra in [9]. Let Λ d be the quotient of Γ d obtained by setting the arrows opposite to Ω equal to zero. We write Mσ(Λ d) for the rational span of its balanced flag-trace functions, as for Γ d.
+
+Theorem A.1. The assignments ei 7 → θi and ei 7 → Fi give Hopf algebra isomorphisms 
+
+U +
+
+> Q
+> ∼
+
+−→ M Q(H), U +
+
+> Q
+> ∼
+
+−→ M σ(Λ d).
+
+The first map is surjective by [9, Corollary 4.10]; its injectivity is [9, Conjecture 7.2]. We prove both injectivity statements by comparing flag evaluations with those for an ordinary acyclic quiver. A.1. An auxiliary quiver and its Lie algebra. Put L = lcm i di, wi = L/d i, and hij =
+
+L/e ij = lcm( wi, w j ) for adjacent i, j . Define a quiver Qc with vertex set 
+
+Ic = {(i, p ) : i ∈ I, 0 ≤ p < w i}, π : Ic → I, π(i, p ) = i. 
+
+Write Ic 
+
+> i
+
+= π−1(i). For every arrow a = a(c) 
+
+> ji
+
+: j → i that survives in the acyclic quotient, and every 0 ≤ r < h ij , put an arrow ar : ( j, r mod wj ) −→ (i, r mod wi). This is done separately for each 1 ≤ c ≤ gij , so all parallel arrows are included. A directed cycle would project to one in Ω; hence Qc is acyclic. Let ˜C = ( ˜cuv )u,v ∈Ic be its symmetric Cartan matrix: the diagonal entries are 2, and for u̸ = v,
+
+−˜cuv is the number of arrows joining u and v. There are no arrows between vertices in a single 
+
+Ic 
+
+> i
+
+, and ∑
+
+> u∈Ic
+> i
+> ˜
+
+cuv = cij (v ∈ Ic 
+
+> j
+
+). (A.1) For i̸ = j, a fixed vertex above j is incident with hij /w j = fij arrows above each original arrow. Multiplication by gij gives −cij . For i = j, the sum is 2. The fibre sizes here are L/d i, rather than the di vertices obtained by splitting the generic species in Section 1. RAMIFIED CONVOLUTION AND MONODROMY BASES 33 
+
+Denote the Chevalley generators and simple coroots of g( ˜C) by ˜eu, ˜fu, ˜hu. Put 
+
+E′ 
+
+> i
+
+= ∑
+
+> u∈Ic
+> i
+> ˜
+
+eu, F ′ 
+
+> i
+
+= ∑
+
+> u∈Ic
+> i
+> ˜
+
+fu, H′ 
+
+> i
+
+= ∑
+
+> u∈Ic
+> i
+> ˜
+
+hu.
+
+Lemma A.2. The assignment ei 7 → E′ 
+
+> i
+
+gives an injection n(C) ↪→ n( ˜C), and therefore an injection of their enveloping algebras. Proof. Equation (A.1) gives the required Cartan and Chevalley commutators for E′
+
+> i
+
+, F ′ 
+
+> i
+
+, H ′ 
+
+> i
+
+. The operators ad ˜eu, for u ∈ Ic 
+
+> i
+
+, commute. Fix i̸ = j and v ∈ Ic 
+
+> j
+
+. In the expansion of (ad E′
+
+> i
+
+)1−cij ˜ev, a term has total degree 1 − cij = 1 + ∑ 
+
+> u∈Ic
+> i
+
+(−˜cuv ). At least one factor ad ˜eu therefore occurs more than −˜cuv times. Since the operators commute, the corresponding Serre relation makes the term zero. This proves the positive Serre identities; the negative identities follow in the same way. To obtain injectivity also when C is singular, use minimal Cartan realizations hC and h ˜C [12, Chapters 1 and 9]. In such a realization the simple roots and simple coroots are each linearly independent, and dim hC = 2 |I| − rank C. Here we also regard each αj as the corresponding linear form on hC , and write ˜αv for the target simple roots. Extend hi 7 → H′ 
+
+> i
+
+to a linear map 
+
+ψ : hC → h ˜C satisfying ˜αv(ψ(h)) = απ(v)(h) where h ∈ hC and v ∈ Ic. These conditions agree on the coroot span by (A.1). They can be prescribed on a complementary basis because the target simple roots are independent. If ψ(h) = 0, then every αj (h) = 0. In a minimal realization, this common kernel is contained in the simple-coroot span: both spaces of solutions, in hC and in that span, have dimension 
+
+|I| − rank C. The vectors H′ 
+
+> i
+
+are independent, since their supports in the independent target coroots are disjoint. Hence h = 0. The Chevalley–Serre presentation now gives a homomorphism g(C) → g( ˜C) injective on the Cartan subalgebra. By the defining maximal-ideal property of a contragredient Lie algebra, its kernel is zero: no nonzero ideal has zero intersection with the Cartan subalgebra [12, Chapters 1 and 9]. Restriction to the positive parts proves the first assertion. The Poincaré–Birkhoff–Witt theorem gives the assertion about enveloping algebras. □
+
+A.2. Integral representations and ordinary flag evaluations. Let V be a finite-dimensional representation of Qc over C. Write Vi,p for its vertex spaces and V (ar) for its arrow maps. Define 
+
+N (V )i =
+
+> wi−1⊕
+> p=0
+
+Vi,p ⊗C Oi.
+
+Its rank over Oi is ∑ 
+
+> p
+
+dim C Vi,p . Decompose each vertex lattice into the O-summands Vi,p ⊗ xbi O,indexed by 
+
+r = p + bw i, 0 ≤ p < w i, 0 ≤ b < d i, 0 ≤ r < L. 
+
+Multiplication by xi increases r by wi, with a factor t whenever the index passes L − 1. For a surviving arrow a : j → i, its action from the summand indexed by r at j to the summand with the same index at i is V (ar mod hij ), extended O-linearly. All opposite arrows act as zero. Both sides of the edge relation (1.1) increase the index by hij and have the same factor of t if the index passes L − 1. The arrow matrix is unchanged by this increase, because its index is taken modulo hij . The moment relations hold because the opposite arrows are zero. Thus these formulas define a locally free Pd-lattice, with nilpotent generic fibre by acyclicity. Put Φ( V ) = N (V )/t N (V ).
+
+Fix a word i = ( i1, . . . , i h) whose rank equals that of N (V ). Give the summand indexed by r
+
+weight r for an action of Gm. This action commutes with the arrow maps and conjugates each loop map to a nonzero scalar multiple of itself, so it preserves the locally free flag varieties of 34 JIARUI FEI 
+
+Φ( V ). A submodule fixed by this action is a direct sum of its weight subspaces. At vertex i, loop stability describes those subspaces by chains Up, 0 ⊆ · · · ⊆ Up,d i−1 ⊆ Vi,p (0 ≤ p < w i). If this submodule is free over Hi, 1, its dimension is di times the dimension of the kernel of xi on it. The latter kernel is the sum of the last terms of the chains. Therefore 
+
+> ∑
+> p,b
+
+dim Up,b = di
+
+> ∑
+> p
+
+dim Up,d i−1.
+
+Every inclusion in each chain must be an equality. Conversely, constant chains give free submodules with free quotients. Their arrow conditions are precisely the subrepresentation conditions for V .Let Fl v(V ) denote the ordinary representation flag variety with one-dimensional simple successive quotients at the vertices listed in the word v of Ic. Extend π to words letter by letter. Each successive quotient Ei in a fixed flag of Φ( V ) chooses one vertex in Ic 
+
+> i
+
+. Thus its fixed locus is the disjoint union of the Fl v(V ) with π(v) = i.Stratify the nonfixed locus into invariant locally closed pieces admitting geometric quotients. Their fibres are Gm/μ n, with Euler characteristic zero, so Euler integration gives equality with the Euler characteristic of the fixed locus. We obtain 
+
+χc Fl lf  
+
+> i
+
+(Φ( V )) = ∑
+
+> π(v)= i
+
+χc Fl v(V ). (A.2) A.3. Generic flag traces and faithfulness. The matrices of N (V ) are defined over C[t]. After the base change t = uL, multiply the basis vectors in the summand indexed by r by u−r.The loop matrix becomes uwi times its value at t = 1, and each arrow matrix becomes its value at t = 1. These nonzero scalar factors do not change invariant subspaces. Let Fi(V ) be the complex projective variety of flags stable under the matrices at t = 1 and satisfying the balanced dimension conditions. The preceding change of basis identifies the generic flag scheme, over C(( u)), with the scalar extension of Fi(V ). Write σ(u) = ζu for the chosen tame generator; then ζ ∈ C is a primitive Lth root of unity. In these coordinates its action on the constant flag variety is induced by τ (v) = ζ−rv (on the summand indexed by r). The distinct eigenvalues of τ force a fixed flag to be homogeneous in r. The loop at t = 1 is invertible and cyclically permutes the summands with a fixed residue modulo wi. Its invariant flags therefore have equal subspaces in all those summands. They are balanced and correspond exactly to the ordinary flags on the right side of (A.2). For a finite-order automorphism of a complex projective variety, an equivariant triangulation gives the Lefschetz formula: after subdivision, only pointwise fixed simplices contribute to the alternating trace. Hence this trace is the Euler characteristic of the fixed locus. Applying this formula to τ and using comparison with étale cohomology gives 
+
+Fi(N (V )K ) = ∑
+
+> π(v)= i
+
+χc Fl v(V ). (A.3) 
+
+Proof of Theorem A.1. Let ˜θv be the characteristic function of the simple representation at v ∈ Ic
+
+in the ordinary-quiver convolution algebra. Schofield’s ordinary-quiver realization, recalled in [9, Introduction and Section 7], identifies the composition algebra with UQ(n( ˜C)). By Lemma A.2, the algebra homomorphism from TQ to the ordinary-quiver composition algebra, sending zi to 
+
+> ∑
+> v∈Ic
+> i
+> ˜
+
+θv, has kernel exactly JC .If a word polynomial evaluates to zero on every H-module, it evaluates to zero on every Φ( V ). Equation (A.2) shows that its image under this homomorphism is zero, so it belongs to JC .The opposite inclusion is the acyclic Serre identity of [9, Proposition 4.9]. This proves the first isomorphism. RAMIFIED CONVOLUTION AND MONODROMY BASES 35 
+
+For Λ d, (A.3) gives the same reverse inclusion of kernels. The forward inclusion is Corollary 3.2, applied to modules with all opposite arrows zero. Thus both evaluation kernels are JC . The direct-sum flag identities identify the coproducts with the usual coproduct on U + 
+
+> Q
+
+, proving both Hopf isomorphisms. Since the same generic modules are Γ d-modules, they also prove faithfulness for Γ d independently of the component construction. □
+
+The ordinary isomorphism proved here is used in the proof of Theorem 10.1, which identifies restriction to H with the canonical Serre quotient of preprojective convolution. 
+
+Declaration of AI-assisted research and manuscript preparation 
+
+The author used ChatGPT 6.0 during the development of this work to explore examples, suggest and examine possible proof strategies, assist with computational checks, and improve the exposition and L ATEX presentation. The author takes sole responsibility for all mathematical claims, proofs, references, and the final content of the manuscript. 
+
+References 
+
+[1] W. Crawley-Boevey and J. Schröer, Irreducible components of varieties of modules , J. Reine Angew. Math. 
+
+553 (2002), 201–220. [2] P. Deligne, Cohomologie étale (SGA 4 12 ), Lecture Notes in Mathematics, vol. 569, Springer-Verlag, Berlin–New York, 1977. [3] J. Fei, Ramified quivers with potentials, monodromy characters, and cluster bases I , preprint, 2026, arXiv:2610.09868v2. [4] C. Geiß, Quivers with relations for symmetrizable Cartan matrices and algebraic Lie theory , 2018, arXiv:1803.11398. [5] C. Geiß, B. Leclerc, and J. Schröer, Semicanonical bases and preprojective algebras , Ann. Sci. École Norm. Sup. (4) 38 (2005), no. 2, 193–253. [6] C. Geiß, B. Leclerc, and J. Schröer, Generic bases for cluster algebras and the Chamber Ansatz , J. Amer. Math. Soc. 25 (2012), no. 1, 21–76. [7] C. Geiß, B. Leclerc, and J. Schröer, Quivers with relations for symmetrizable Cartan matrices I: Foundations ,Invent. Math. 209 (2017), no. 1, 61–158. [8] C. Geiß, B. Leclerc, and J. Schröer, Quivers with relations for symmetrizable Cartan matrices II: Change of symmetrizers , Int. Math. Res. Not. IMRN 2018 , no. 9, 2866–2898. [9] C. Geiß, B. Leclerc, and J. Schröer, Quivers with relations for symmetrizable Cartan matrices III: Convolution algebras , Represent. Theory 20 (2016), 375–413. [10] C. Geiß, B. Leclerc, and J. Schröer, Quivers with relations for symmetrizable Cartan matrices IV: Crystal graphs and semicanonical functions , Selecta Math. (N.S.) 24 (2018), no. 4, 3283–3348. [11] C. Geiß, B. Leclerc, and J. Schröer, Rigid modules and Schur roots , Math. Z. 295 (2020), no. 3–4, 1245–1277. [12] V. G. Kac, Infinite-Dimensional Lie Algebras , 3rd ed., Cambridge University Press, Cambridge, 1990. [13] M. Kashiwara and Y. Saito, Geometric construction of crystal bases , Duke Math. J. 89 (1997), no. 1, 9–36. [14] G. Lusztig, Quivers, perverse sheaves, and quantized enveloping algebras , J. Amer. Math. Soc. 4 (1991), no. 2, 365–421. [15] G. Lusztig, Semicanonical bases arising from enveloping algebras , Adv. Math. 151 (2000), no. 2, 129–139. [16] V. Nandakumar and P. Tingley, Quiver varieties and crystals in symmetrizable type via modulated graphs ,Math. Res. Lett. 25 (2018), no. 1, 159–180. [17] J. Nicaise, A trace formula for varieties over a discretely valued field , J. Reine Angew. Math. 650 (2011), 193–238. 
+
+School of Mathematical Sciences, Shanghai Jiao Tong University, China 
+
+Email address : jiarui@sjtu.edu.cn

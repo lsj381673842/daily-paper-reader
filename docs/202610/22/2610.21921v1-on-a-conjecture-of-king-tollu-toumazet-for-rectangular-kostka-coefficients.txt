@@ -1,0 +1,1154 @@
+Title: On a conjecture of King-Tollu-Toumazet for rectangular Kostka coefficients
+
+URL Source: https://arxiv.org/pdf/2610.21921v1
+
+Published Time: Fri, 16 Oct 2026 01:30:42 GMT
+
+Number of Pages: 22
+
+Markdown Content:
+ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 
+
+DEEPANSHU PRASAD Abstract. A conjecture of King, Tollu and Toumazet predicts the behavior of small Littlewood– Richardson coefficients under stretching: if cνλ,μ “ 3, then cM ν M λ,M μ equals 2M ` 1 or `M `22
+
+˘ for every positive integers M . This corresponds to the Hilbert functions of a conic, or of the projective plane. We prove their conjecture for all rectangular Kostka coefficients Kλ, a. We realize them as the weight multiplicities of the homogeneous coordinate ring of the Grassmannian Gr pk, n q, or equivalently the weight spaces of semi-invariants of the n-subspace quiver with dimension vector β “ p k, 1, 1, . . . , 1q.For a weight σ, we show that if β is σ-stable, then the dimension of the corresponding weight space is at least n ´ 2 when k “ 2 and at least 4 for every Grassmannian other than Gr p2, 4q, Gr p2, 5q and 
+
+Gr p3, 5q. These three cases are precisely when the associated moduli space of σ-stable representations has dimension at most two. Via σ-stable decomposition, the two alternatives are determined as follows: 
+
+2M ` 1 for Gr p2, 4q, and `M `22
+
+˘ for Gr p2, 5q and Gr p3, 5q.
+
+1. Introduction Let K be an algebraically closed field of characteristic zero and Q a finite, connected, acyclic quiver with vertex set Q0 and arrow set Q1. For a dimension vector β P N|Q0|, the group GL β :“ś 
+
+> xPQ0
+
+GL βpxq acts on the representation space rep β pQq by g ¨ V “ p gha V paqg´1 
+
+> ta
+
+qaPQ1 , and the ring of semi-invariants is 
+
+SI pQ, β q :“ Krrep β pQqs SL β , SL β :“ ź
+
+> xPQ0
+
+SL βpxq .
+
+Every integral weight σ P Z|Q0| defines a multiplicative character χσ of GL β , and SI pQ, β q “ À 
+
+> σ
+
+SI pQ, β qσ decomposes into the weight spaces SI pQ, β qσ “ t f | g ¨ f “ χσpgqf for all g P GL β u.The occurring weights form the cone of weights ΣpQ, β q [DW00], whose study yielded a proof of the saturation and Fulton conjectures for Littlewood–Richardson coefficients. Moreover, for each weight σ the ring À  
+
+> Mě0
+
+SI pQ, β qM σ is the homogeneous coordinate ring of King’s moduli space of 
+
+σ-semistable representations [Kin94], so the weight-space dimensions are the Hilbert function of this moduli space. A recurring theme in the study of Littlewood–Richardson coefficients is their behaviour under scaling the partitions, i.e. under replacing a triple pλ, μ, ν q of partitions by pM λ, M μ, M ν q for a positive integer M . Derksen and Weyman showed that for the triple flag quiver T with its standard dimension vector β, we have cνλ,μ “ dim K SI pT, β qσ, where the weight σ “ σpλ, μ, ν q is determined from the three partitions [DW00]. Scaling the partitions multiplies the weight by M ,
+
+cM ν M λ,M μ “ dim K SI pT, β qM σ ,
+
+so each statement below concerns the function M Þ Ñ dim K SI pQ, β qM σ , which makes sense for any quiver Q without oriented cycles, any dimension vector β and any weight σ. This correspondence allows one to transfer structural results between Littlewood–Richardson coefficients and quiver semi-invariants [DW11]. 1arXiv:2610.21921v1 [math.CO] 15 Oct 2026 2 DEEPANSHU PRASAD 
+
+The first result of this kind is the saturation theorem of Knutson and Tao [KT99]: if cM ν M λ,M μ ą 0
+
+for some M , then cνλ,μ ą 0. In [DW00], Derksen and Weyman proved it for arbitrary quivers, i.e. if 
+
+SI pQ, β qM σ ‰ 0 for some M ě 1, then SI pQ, β qσ ‰ 0. Fulton conjectured that if cνλ,μ “ 1, then 
+
+cM ν M λ,M μ “ 1 for all M ě 1. This was proved by Knutson, Tao and Woodward [KTW04], and Belkale later gave a geometric proof [Bel07], which carries over to quivers. In particular, if dim K SI pQ, β qσ “ 1,then dim K SI pQ, β qM σ “ 1 for all M ě 1 [DW11, Appendix]. King, Tollu and Toumazet conjectured that a coefficient equal to 2 grows linearly. More precisely, if cνλ,μ “ 2, then cM ν M λ,M μ “ M ` 1 for all M ě 1 [KTT04, Conjecture 3.3]. Thius was proved by Ikenmeyer [Ike16], and Sherman proved the quiver version, i.e. if dim K SI pQ, β qσ “ 2, then 
+
+dim K SI pQ, β qM σ “ M ` 1 for all M ě 1 [She17]. In the cνλ,μ “ 3 case, the expected behaviour is no longer uniform. King, Tollu and Toumazet conjecture that if cνλ,μ “ 3, then cM ν M λ,M μ “ 2M ` 1 or `M `22
+
+˘ for all M ě 1 [KTT04, Conjecture 3.3]. These two alternatives are the Hilbert functions of a conic and of the projective plane. The following conjecture in the quiver setting is proposed by Chindris. 
+
+Conjecture 1.1 (King, Tollu, Toumazet; Chindris) . Let Q be a quiver without oriented cycles. Fix a dimension vector β, and a weight σ P ΣpQ, β q. If dim K SI pQ, β qσ “ 3, then dim K SI pQ, β qM σ “ 2M ` 1 or `M `22
+
+˘ for all positive integers M .
+
+The above conjecture is particularly significant for understanding the structure of semi-invariant rings and, hence, the associated quiver moduli spaces in the sense of King. In [PPW23] it was shown that the 2-dimensional weight spaces play an important role in determining the structure of the semi-invariant ring when the maximal GL β -orbits in rep β pQq are of codimension 1. We believe that a similar important role will be played by 3-dimensional weight spaces when the maximal GL β -orbits in 
+
+rep β pQq are of codimension 2. Denote by SSYT pλ, aq the set of semistandard Young tableau (SSYT) of shape λ and content a.Recall that 
+
+Kλ, a :“ # SSYT pλ, aq,
+
+is the Kostka coefficient . We call Kλ, a a rectangular Kostka coefficient if the partition λ gives a Young diagram of rectangular shape. In this article we prove the above Conjecture 1.1 for all the rectangular Kostka coefficients, which is a special case of Littlewood-Richardson coefficients. More precisely, we consider the n-subspace quiver 
+
+Q :1 2 ¨¨¨   
+
+> nvertices
+
+n ´ 1 n
+
+0
+
+with dimension vector β “ `k, 
+
+> n-many
+
+hkkkkikkkkj 
+
+1, 1, . . . , 1˘, where n ě k. By the First and Second Fundamental Theorems of invariant theory, we get that the semi-invariant ring SI pQ, β q is isomorphic to the homogeneous coordinate ring KrGr pk, n qs of the Grassmannian Gr pk, n q of k-dimensional linear subspaces of n-dimensional space. In this case we show that 
+
+Proposition A (see Proposition 3.4) . Fix n ě k ě 2 and a non-negative integer d. The dimension of the weight spaces of SI pQ, β q is given by the rectangular Kostka coefficients, i.e., 
+
+dim K SI pQ, β qσ “ Kpdk q, a where a “ p a1, . . . , a nq is a content and σ “ p´ d, a 1, . . . , a nq.ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 3
+
+Due to the above Proposition, we will interchangeably use SI Gr pk,n qpd;aq and SI pQ, β qσ. With regard to Conjecture 1.1, the relevant range of parameters is k ě 2 and n ě k ` 2, see Remark 6.3. 
+
+Theorem B (see Theorem 7.6) . Let k ě 2, n ě k ` 2, d ě 1, and a be a content for pk, n, d q. If 
+
+Kpdk q, a “ 3, then Kpp M d qk q, M a “ `M `22
+
+˘ or 2M ` 1, for every positive integer M .In terms of the weight spaces we get that if dim K SI Gr pk,n qpd;aq “ 3, then dim K SI Gr pk,n qpM d ;M aq “ `M `22
+
+˘ or 
+
+2M ` 1, for every positive integer M .The proof of above Theorem relies on finding certain lower bounds for these rectangular Kostka coefficients, or equivalently, dimension of weight spaces dim K SI Gr pk,n qpd;aq .
+
+Theorem C (see Proposition 5.5 and Theorem 6.2) . Let k ě 2, n ě k ` 2, d ě 1, and let a be a nondegenerate content for pk, n, d q, i.e. ř 
+
+> i
+
+ai “ kd and 1 ď ai ď d ´ 1 for all i. We obtain the following bounds on the weight spaces determined by the nondegenerate content a
+
+dim K SI Gr pk,n qpd;aq “ Kpdk q, a ě
+
+$’’&’’%
+
+n ´ 2, pk, n q “ p 2, n q
+
+3, pk, n q “ p 3, 5q
+
+4, otherwise This, together with the σ-stable decomposition (see Section 2), reduces the proof to the study of only three Grassmannians: Gr p2, 4q, Gr p2, 5q, and Gr p3, 5q. The last of these is isomorphic to Gr p2, 5q by duality. 
+
+Remark 1.2. With regards to Theorem C, it has a geometric meaning. If a is nondegenerate, then β is 
+
+σ-stable by Proposition 3.1, so King’s moduli space [Kin94] 
+
+Mσ :“ Proj ` à  
+
+> Mě0
+
+SI pQ, β qM σ 
+
+˘
+
+of σ-semistable representations has dimension 1 ´ x β, β y “ kpn ´ kq ´ n ` 1, see [CC15, Section 3]. The Hilbert function M Þ Ñ dim K SI pQ, β qM σ , which is a polynomial by [DW02], has this degree. The two alternatives in Conjecture 1.1 are polynomials of degree 1 and 2, and kpn ´ kq ´ n ` 1 ď 2 holds precisely for pk, n q P tp 2, 4q, p2, 5q, p3, 5qu . Other than these three Grassmannians the conjecture therefore predicts that a nondegenerate content is never 3-dimensional, and this is the theme of Theorem C. We stress that this does not follow from the dimension count since the homogeneous coordinate ring of Mσ need not be generated in degree one. The paper is organized as follows. In Section 2, we introduce the preliminary notions concerning quiver representations and semi-invariant rings that will be used throughout the paper. In Section 3, we establish a connection between the semi-invariant ring of the subspace quiver and rectangular Kostka coefficients. Section 4 is devoted to reduction methods for Kostka coefficients, along with several of their properties that play a key role in the proofs of the main results presented later in the paper. In Sections 5 and 6, we establish certain lower bounds for the weight spaces of the semi-invariant rings associated with the Grassmannians Gr pk, n q. Finally, in Section 7, we prove the King–Tollu–Toumazet conjecture for rectangular Kostka coefficients and give examples illustrating the idea of the proof. 2. Quiver representations and semi-invariant rings We recall some important notions on quiver representations and semi-invariant rings. We refer the readers to [DW17] for a more detailed exposition. 4 DEEPANSHU PRASAD 
+
+Throughout this article K denotes an algebraically closed field of characteristic zero, and N is the set of non-negative integers. A quiver Q “ p Q0, Q 1q is a directed (multi-)graph where Q0 is the set of vertices and Q1 is the set of arrows. For an arrow a P Q1, we write ta for the tail of the arrow a and 
+
+ha for the head of the arrow a. A non-trivial path in the quiver Q is a sequence p “ anan´1 ¨ ¨ ¨ a1 of arrows in Q1 such that ta i`1 “ ha i for every 1 ď i ď n ´ 1. The head and tail of path p are defined as 
+
+hp :“ ha n and tp :“ ta 1, respectively. An oriented cycle in Q is a non-trivial path p such that hp “ tp .For the rest of the article, we assume Q is a quiver without any oriented cycles. A (finite-dimensional) representation V of Q over K is given by V “ pt VxuxPQ0 , tV paqu aPQ1 q where the Vx are finite dimensional K-vector spaces and V paq : Vta Ñ Vha is a K-linear map for each arrow a P Q1. The dimension vector β P N|Q0| of a representation V , denoted by dim V , is defined as 
+
+βpxq “ dim K Vx. A representation W of Q is called a subrepresentation of a representation V if Wx is a subspace of Vx for all x P Q0 and W paq : Wta Ñ Wha is the restriction of V paq : Vta Ñ Vha , for all 
+
+a P Q1.Fix a dimension vector β P N|Q0|. The affine representation space rep β pQq parametrizes the β-dimensional representations of Q along with a fixed basis. Denote by Mat a,b the set of a ˆ b matrices with entries in K. Hence, we have 
+
+rep β pQq “ ź
+
+> aPQ1
+
+Mat βpha q,β pta q
+
+We have a regular action of the algebraic group 
+
+GL β :“ ź
+
+> xPQ0
+
+GL βpxq
+
+on rep β pQq given by g ¨ V “ p gha V paqg´1 
+
+> ta
+
+qaPQ1 where V “ p V paqq aPQ1 P rep β pQq and g “pgxqxPQ0 P GL β . The orbits correspond to isomorphism classes of β-dimensional representations of Q.The action of GL β on rep β pQq induces an action on the elements of the coordinate ring Krrep β pQqs 
+
+as follows: for every g P GL β , f P Krrep β pQqs and x P rep β pQq, we have g ¨ f pxq :“ f pg´1xq. We define 
+
+SI pQ, β q :“ Krrep β pQqs SL β , where SL β :“ ź
+
+> xPQ0
+
+SL βpxq
+
+as the ring of semi-invariant functions on rep β pQq.For every weight σ P Z|Q0|, we can define a multiplicative character of GL β as follows: 
+
+χσ : GL β ÝÑ K˚
+
+pgxqxPQ0 Þ ÝÑ ś 
+
+> xPQ0
+
+det pgxqσpxq
+
+The semi-invariant ring SI pQ, β q has a decomposition into weight spaces, 
+
+SI pQ, β q “ à
+
+> σPZ|Q0|
+
+SI pQ, β qσ
+
+where 
+
+SI pQ, β qσ :“ t f P Krrep β pQqs | g ¨ f “ χσpgq f, for every g P GL β u
+
+is called the space of semi-invariants of weight σ. A semi-invariant in a given weight space is said to be 
+
+homogeneous . We define the cone of weights 
+
+ΣpQ, β q :“ t σ P ZQ0 | SI pQ, β qσ ‰ 0uON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 5
+
+As a consequence of the Hilbert Finiteness Theorem [DW17, see Theorem 9.2.6 and Corollary 9.2.8], it follows that SI pQ, β q is a finitely generated K-algebra. Thus, the cone of weights ΣpQ, β q is a finitely generated semigroup. For a quiver Q “ p Q0, Q 1q, we define the Euler form x¨ , ¨y on the Grothendieck group K0pKQq of the path algebra KQ of quiver Q, which can be identified with Z|Q0|, as 
+
+xα, β y :“ ÿ
+
+> xPQ0
+
+αpxqβpxq ´ ÿ
+
+> aPQ1
+
+αpta qβpha q, where α, β P Z|Q0|.
+
+We can also define weights using dimension vectors. Let α be a dimension vector. We define a function 
+
+σ “ x α, ¨y : Z|Q0| Ñ Z
+
+as follows 
+
+σpxq “ αpxq ´ ÿ
+
+> aPQ1
+> ha “x
+
+αpta q for every vertex x P Q0
+
+A dimension vector α is said to be a generic subdimension vector of dimension vector β, written as 
+
+α ãÑ β, if every representation in rep β pQq has a subrepresentation of dimension vector α. For a weight 
+
+σ “ p σ1, . . . , σ ℓq and dimension vector β “ p β1, . . . , β ℓq, we use σpβq “ řℓi“1 σiβi to denote the usual dot product of the two vectors in Zℓ. We have the following description of the cone of weights due to Derksen-Weyman. 
+
+Theorem 2.1 (Theorem 10.7.8 [DW17]) . The cone of weights ΣpQ, β q is a rational polyhedral cone described as follows: 
+
+ΣpQ, β q “ t σ “ x α, ¨y : σpβq “ 0 and for all δ ãÑ β, σ pδq ď 0u
+
+In particular ΣpQ, β q is saturated, i.e. if nσ P ΣpQ, β q, for some positive integer n, then σ P ΣpQ, β q.
+
+A representation V P rep β pQq is said to be a general representation with respect to a property P if there is an open (dense) subset U Ď rep β pQq such that V P U and every representation in U satisfies the property P. We call a representation V P rep β pQq to be a Schur representation if End pV q – K as a 
+
+K-algebra. A dimension vector β is called a Schur root if a general representation in rep β pQq is a Schur representation, i.e. there is an open non-empty set U Ď rep β pQq such that any representation in U is a Schur representation. Let β be a Schur root. We call β a real Schur root if xβ, β y “ 1, we call β an isotropic Schur root if 
+
+xβ, β y “ 0, and we call β an imaginary Schur root if xβ, β y ă 0. A fact about real Schur root that we will use often is that if β is a real Schur root then dim K SI pQ, β qσ ď 1 for every weight σ, see [DW17, Lemma 9.4.2] or [CKW15]. Due to [Kin94], we have the following notion of σ-(semi)stability with respect to a weight σ P Z|Q0|.Fix a weight σ P Z|Q0|. A representation V P rep β pQq is called σ-semistable (resp. σ-stable ) if σpβq “ 0
+
+and σpdim W q ď 0 (resp. σpdim W q ă 0) for every subrepresentation W Ď V (resp. every nonzero proper subrepresentation 0 ‰ W Ĺ V ). From [DW11, Section 3.2] we know that a dimension vector β is called σ-(semi)stable if a gen-eral representation in rep β pQq is σ-(semi)stable. Suppose β is a σ-semistable dimension vector. A decomposition 
+
+β “ β1 ` β2 ` . . . ` βt
+
+is called the σ-stable decomposition of β if a general representation in rep β pQq has a Jordan-Hölder filtration with factors of dimension vector β1, β 2, . . . , β t in some order. We write the σ-stable decom-position of β as 
+
+β “ β1 ` β2 ` . . . ` βt6 DEEPANSHU PRASAD 
+
+3. Grassmannians and rectangular Kostka coefficients Consider the n-subspace quiver 
+
+1 2 ¨¨¨   
+
+> nvertices
+
+n ´ 1 n
+
+0
+
+with dimension vector β “ `k, 
+
+> n-many
+
+hkkkkikkkkj 
+
+1, 1, . . . , 1˘, where n ě k. As a consequence of the First and Second Fundamental Theorems of invariant theory (also see [Dol03, Chapter 2, Section 2.2 & 2.3]), we get that the semi-invariant ring 
+
+SI pQ, β q – KrGr pk, n qs 
+
+the homogeneous coordinate ring of the Grassmannian Gr pk, n q of k-dimensional linear subspaces of 
+
+n-dimensional space. For I Ď t 1, . . . , n u, we will write 1I P Zn for its indicator vector so that p1I qi “ 1 if i P I, and 0
+
+otherwise. Hence, we have 1∅ “ 0, 1tiu “ ei and 1t1,...,n u “ 1.
+
+Proposition 3.1. Let k ě 2.(a) Any weight σ P ΣpQ, β q is of the form σ “ p´ d, a 1, a 2, . . . , a nq where d, a i P N with ř 
+
+> i
+
+ai “ kd 
+
+and ai ď d
+
+(b) For such a weight σ P ΣpQ, β q, the dimension vector β is (i) σ-semistable if and only if 0 ď ai ď d for all i
+
+(ii) σ-stable if and only if 1 ď ai ď d ´ 1 for all i (assume d ě 2). Proof. The possible generic subdimension vectors are 
+
+γ “ p r, 1I q with |I| ď r ď k ´ 1 and γ “ p k, 1I q with I Ď t 1, . . . , n u arbitrary ,
+
+along with γ “ 0 and γ “ β.(a) Consider the following three subdimension vectors 
+
+pk, 0, . . . , 0q, pk, 1 ´ eiq, p1, e iq
+
+Let σ “ p σ0, σ 1, . . . , σ nq P ΣpQ, β q. Using the description of the cone of weights ΣpQ, β q as in Theorem 2.1, the equality σpβq “ 0 and the above subdimension vectors give the following 
+
+kσ 0 ` ÿ
+
+> j
+
+σj “ 0, kσ 0 ď 0, kσ 0 ` ÿ
+
+> j‰i
+
+σj ď 0, σ0 ` σi ď 0.
+
+The first inequality gives σ0 ď 0. We will write σ0 “ ´ d with d ě 0. If we subtract the second inequality from the equality we get σi ě 0. Let us write ai “ σi. The third inequality says ai ď d, and the equality gives ř 
+
+> i
+
+ai “ kd . Conversely, it is easy to check that any weight σ of this form lies in the cone of weights ΣpQ, β q.(b) We will only prove part pii q. The proof of part piq is similar. 
+
+pùñq Taking γ “ p 1, e iq gives σpγq “ ai ´ d ă 0. Hence, ai ď d ´ 1. If we take γ “pk, 1t1,...,n u∖tiuq, which is a proper subrepresentation, then we get σpγq “ ´ kd `p kd ´aiq “ ´ ai ă 0.Hence, ai ě 1.
+
+pðùq Assume 1 ď ai ď d ´ 1. For γ “ p r, 1I q with 1 ď r ď k ´ 1 and |I| ď r,
+
+σpγq “ ´ rd ` ÿ
+
+> iPI
+
+ai ď ´ rd ` | I|p d ´ 1q ď ´ rd ` rpd ´ 1q “ ´ r ă 0.ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 7
+
+For γ “ p k, 1I q with I Ĺ t 1, 2, . . . , n u, we get that σpγq “ ´ kd ` ř 
+
+> iPI
+
+ai “ ´ ř 
+
+> iRI
+
+ai ă 0 since some ai ě 1. ■
+
+This leads to the following definition: 
+
+Definition 3.2. Fix n ě k ě 2 and a non-negative integer d. A content for pk, n, d q is a sequence 
+
+a “ p a1, . . . , a nq of non-negative integers such that ai ď d and řni“1 ai “ kd . Additionally, if the content a satisfies 1 ď ai ď d ´ 1 for all 1 ď i ď n, then it is said to be nondegenerate (assume d ě 2). We recall the definition of Kostka coefficients. 
+
+Definition 3.3. Let λ be a partition and n ě 1. A semistandard Young tableau (SSYT) T of shape λ in the letters t1, . . . , n u is a filling of the Young diagram corresponding to λ such that (i) along each row from left to right the entries are weakly increasing, and (ii) along each column the entries are strictly increasing. The content of T is a sequence of non-negative integers pa1, . . . , a nq where ai is the number of cells of 
+
+T containing the letter i. We will write SSYT pλ, aq for the set of semistandard Young tableau (SSYT) of shape λ and content a. Hence, 
+
+Kλ, a :“ # SSYT pλ, aq,
+
+is the Kostka coefficient . If the partition λ is a Young diagram of rectangular shape, then we will call 
+
+Kλ, a a rectangular Kostka coefficient .As a consequence of [Sta24, Theorem 7.10.2] we know that Kλ, a does not change if the entries of a
+
+are permuted, so, when needed, we will sort the entries of a.Let W – Km be a m-dimensional vector space. Recall that for a partition ρ with at most m parts, the Schur module SρW is the irreducible representation of the general linear group GL pW q – GL m
+
+with highest weight ρ.
+
+Proposition 3.4. Fix n ě k ě 2 and a non-negative integer d. The dimension of the weight spaces of SI pQ, β q
+
+is given by the rectangular Kostka coefficients, i.e., 
+
+dim K SI pQ, β qσ “ Kpdk q, a where a is a content for pk, n, d q.
+
+Proof. For calculating dim K SI pQ, β qσ we will use the description from [DW17, Section 10.4]. Let V
+
+be a representation of Q with dim V “ β. Now dim K SI pQ, β qσ is the multiplicity of 
+
+Spp´ dqk qV p0q b Spp a1q1qV p1q b Spp a2q1qV p2q b ¨ ¨ ¨ b Spp anq1qV pnq– Spp dqk qV p0q˚ b Spp a1q1qV p1q b Spp a2q1qV p2q b ¨ ¨ ¨ b Spp anq1qV pnq
+
+in 
+
+Krrep β pQqs “ à
+
+> λp1q,...,λ pnq
+> partitions
+> n
+
+â
+
+> i“1
+
+´
+
+Sλpiq V piq b Sλpiq V p0q˚
+
+¯
+
+– à
+
+> λp1q, ... ,λ pnq
+> partitions
+
+´ nâ
+
+> i“1
+
+Sλpiq V piq
+
+¯
+
+b
+
+´ nâ
+
+> i“1
+
+Sλpiq V p0q˚
+
+¯
+
+Therefore, we get that λpiq “ p aiq1 for every 1 ď i ď n. Hence, we are looking for the multiplicity of 
+
+Spp dqk qV p0q˚8 DEEPANSHU PRASAD 
+
+in nâ
+
+> i“1
+
+SpaiqV p0q˚
+
+Hence, we conclude that 
+
+dim K SI pQ, β qσ “ Kpdk q, a
+
+■
+
+Remark 3.5. We have two consequences of Proposition 3.4 that we will use throughout. (1) The term content has been used in two ways: for weights of the subspace quiver, see Defini-tion 3.2, and for tableaux, see Definition 3.3. We note that both the notions agree. Indeed, by Proposition 3.1 and Proposition 3.4, a sequence a is a content for pk, n, d q if and only if 
+
+Kpdk q, a ‰ 0, i.e., if and only if a is the content of some semistandard tableau of shape pdkq.(2) We will often write SI Gr pk,n qpd;aq for the weight space SI pQ, β qσ with σ “ p´ d, a 1, . . . , a nq and use them interchangeably. We drop the superscript when pk, n q is clear from the context. 4. Some properties of Kostka coefficients via semi-invariants Below we record some reduction methods for Kostka coefficients, along with their interpretation in terms of the semi-invariant ring. We also recall some well-known properties of the Kostka coefficients. 
+
+Lemma 4.1. Let σ “ p´ d, a 1, a 2, . . . , a nq be a weight. If ai “ 0 for some i, then SI Gr pk,n qpd;aq – SI Gr pk,n ´1qpd;a1q ,where a1 is obtained by deleting the i-th entry of a. Combinatorially, let a be a content for pk, n, d q with 
+
+ai “ 0, and let a1 be the content obtained by deleting the i-th entry. Then Kpdk q, a “ Kpdk q, a1 .Proof. A tableau of content a, with ai “ 0, never uses the letter i. So, it is a tableau in the alphabet 
+
+t1, . . . , n u ∖ tiu. We relabel that alphabet order-preservingly as t1, . . . , n ´ 1u to get the desired result. ■
+
+Using the duality of the Grassmannians Gr pk, n q – Gr pn ´ k, n q we get 
+
+Lemma 4.2. Let a be a content for pk, n, d q. Define a_ :“ p d ´ a1, . . . , d ´ anq. For every integer m ě 1,we have 
+
+dim K SI Gr pk,n qpmd ;maq “ dim K SI Gr pn´k,n qpmd ;ma_q
+
+In terms of Kostka coefficients we get 
+
+Kpdk q, a “ Kpd n´k q, a_
+
+Moreover, a is nondegenerate if and only if a_ is. 
+
+For a given content a of pk, n, d q, if one of the entries ai “ d, then we can use a projection method to reduce to a “smaller” Grassmannian. 
+
+Lemma 4.3. Suppose a is a content for pk, n, d q with ai “ d for some i. Let a1 be obtained by deleting the i-th entry. For every integer m ě 1, we have 
+
+dim K SI Gr pk,n qpmd ;maq “ dim K SI Gr pk´1,n ´1qpmd ;ma1q
+
+Combinatorially, we get 
+
+Kpdk q, a “ Kpd k´1q, a1ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 9
+
+Proof. Let σ “ p´ d, a 1, . . . , a nq be the weight corresponding to the content a. Consider the dimension vector γ “ p 1, e iq, i.e. 1 at central vertex and 1 at the i-th vertex. Since ai “ d, the content a is not nondegenerate, i.e. β is not σ-stable. Notice that γ is a real Schur root and it is σ-stable. Moreover, the 
+
+σ-stable decomposition of β will have γ as one of its summands, which will occur with multiplicity one since β “ p k, 1, 1, . . . , 1q. Therefore, as a consequence of [DW11, Theorem 3.20] we get 
+
+SI pQ, β qmσ – SI pQ, γ qmσ b SI pQ, β ´ γqmσ 
+
+We have SI pQ, β ´ γq – KrGr pk ´ 1, n ´ 1qs . Hence, the result follows since γ is a real Schur root and so dim K SI pQ, γ qmσ ď 1. ■
+
+We further investigate some properties of the Kostka coefficients. We recall some well-known notions from [Mac95, Chapter I, Section 1]. 
+
+Definition 4.4. Let μ Ď λ be partitions. The skew diagram λ{μ is a horizontal strip if it has at most one cell in each column. 
+
+Lemma 4.5. Let μ Ď λ be partitions. The skew diagram λ{μ is a horizontal strip if and only if 
+
+(1) λ1 ě μ1 ě λ2 ě μ2 ě λ3 ě μ3 ě ¨ ¨ ¨ 
+
+The next observations are worth isolating. 
+
+Lemma 4.6. Let λ{μ be a horizontal strip and let pi, j q P λ{μ. Then pi ` 1, j q R λ.Proof. Suppose pi ` 1, j q P λ, i.e. j ď λi`1. Since λ{μ has at most one cell per column and pi, j q P λ{μ,the cell pi ` 1, j q must lie in μ, i.e. j ď μi`1. But μi`1 ď μi ă j, since pi, j q R μ. Contradiction. ■
+
+Remark 4.7. The above Lemma 4.6 says that a cell of a horizontal strip has no cell of λ directly below it, and hence it sits at the bottom of its column in λ.
+
+Lemma 4.8. Let λ{μ be a horizontal strip. If pi, j q and pi1, j 1q are cells of λ{μ with i ă i1, then j1 ă j. In particular, cells in the lower rows of a horizontal strip occupy strictly smaller columns. Proof. The cells of λ{μ in row r occupy the columns μr ` 1, . . . , λ r. So j1 ď λi1 ď λi`1 ď μi ă j,using (1) in the middle. ■
+
+We recall another well-known property of elements in SSYT pλ, aq.
+
+Lemma 4.9. Let T P SSYT pλ, aq. For 0 ď j ď n, if we define 
+
+λpjq :“ t cells of λ whose entry is ď ju,
+
+then each λpjq is the Young diagram of a partition. Additionally, we have 
+
+∅ “ λp0q Ď λp1q Ď ¨ ¨ ¨ Ď λpnq “ λ, 
+
+with λpjq{λpj´1q a horizontal strip of size aj for every j.
+
+The result of Lemma 4.10 below follows from the monotonicity of Kostka coefficients, see [Whi80, Section II, Theorem]. However, we include a proof here since the idea is useful for Proposition 4.12 below. Let a “ p a1, . . . , a m, p, q q be a content in the letters 1, . . . , m ` 2. Its merge (in the last two letters) is the content 
+
+a mrg :“ p a1, . . . , a m, p ` qq
+
+in the letters 1, . . . , m ` 1. We will write ℓ “ m ` 1 for the largest letter for the content a mrg , and for the content a the two largest letters are ℓ “ m ` 1 and ℓ ` 1 “ m ` 2.10 DEEPANSHU PRASAD 
+
+Lemma 4.10. With the notation as above, for every partition λ, and all p, q ě 0, we have 
+
+Kλ, pa1,...,a m, p, q q ě Kλ, pa1,...,a m, p `qq.
+
+Proof. Let T 1 P SSYT pλ, a mrg q. By Lemma 4.9 the cells of T 1 containing ℓ form a horizontal strip. We denote this horizontal strip by S :“ λ{μ, where μ is the shape occupied by the letters ď m. Note that it has p ` q cells. Since S is a horizontal strip, its cells lie in distinct columns. We list them in the increasing order of column index 
+
+s1, s 2, . . . , s p`q.
+
+By Lemma 4.8, cells in lower rows come earlier since they occupy strictly smaller columns. Define ΦpT 1q to be the tableau obtained from T 1 by relabelling 
+
+s1, . . . , s p Þ ÝÑ ℓ, sp`1, . . . , s p`q Þ ÝÑ ℓ ` 1,
+
+and leaving all other cells unchanged. We note that its content is pa1, . . . , a m, p, q q by construction. We check semistandardness condition for rows. Only the entries in the cells of S have changed, and their labels are ℓ or ℓ ` 1, both of which are larger than every letter ď m. Hence, a row will fail the semistandardness condition only if some ℓ ` 1 occurs strictly to the left of an ℓ within the same row. We note that the cells of S occupy a set of consecutive columns within a row, namely μr ` 1, . . . , λ r in row r. Therefore, they are consecutive, and the relabeling assigns them ℓ’s followed by ℓ ` 1’s from left to right. Hence, the rows are weakly increasing. We check semistandardness condition for columns. By Lemma 4.6, each cell of S has no cell of λ
+
+directly below it. Therefore, a cell of S is the bottom cell of its column. Thus, for columns to be strictly increasing, we need to check that the entry in the relabeled cell exceeds the entry in the cell directly above it, which lies in μ. Hence, it has an entry ď m ă ℓ. Therefore, all columns are strictly increasing. Finally Φ is injective since relabelling every ℓ ` 1 back to ℓ recovers T 1. ■
+
+In terms of semi-invariants, the above Lemma 4.10 can be interpreted as follows. 
+
+Corollary 4.11. Let a “ p a1, . . . , a n´2, p, q q and a mrg “ p a1, . . . , a n´2, p ` qq be defined as above, with 
+
+p, q ě 0. If λ is a rectangular partition, then there is an injective linear map 
+
+F : SI Gr pk,n ´1qpd;a mrg q ÝÑ SI Gr pk,n qpd;aq
+
+In particular, dim K SI Gr pk,n qpd;aq ě dim K SI Gr pk,n ´1qpd;a mrg q .
+
+If the partition λ is rectangular, then the map Φ is a bijection and we have a complete description of its image. 
+
+Proposition 4.12. Let λ “ p dkq be a rectangle, and a “ p a1, . . . , a ℓ´1, p, q q be a content with ℓ and ℓ ` 1
+
+as the two largest letters. In such a case, the injection Φ of Lemma 4.10 is a bijection. More precisely, 
+
+Φ : SSYT `pdkq, a mrg ˘ „
+
+ÝÝÑ ␣T P SSYT `pdkq, a˘ : no column of T contains both ℓ and ℓ ` 1(.
+
+In particular, 
+
+(2) Kpdk q, a “ Kpdk q, a mrg ` #␣T P SSYT pp dkq, aq : some column contains both ℓ and ℓ ` 1(.
+
+Proof. We refer to the same construction as in the proof of Lemma 4.10. 
+
+pĎq If T “ ΦpT 1q then the cells of T carrying ℓ or ℓ ` 1 are exactly the cells of the horizontal strip 
+
+S of T 1, and hence lie in distinct columns. Therefore, no column contains both ℓ and ℓ ` 1.
+
+pĚq Let T P SSYT pp dkq, aq have no column containing both ℓ and ℓ ` 1. Suppose μ is the diagram occupied by the letters ď ℓ ´ 1, which we know is a partition, by Lemma 4.9. The skew diagram λ{μ
+
+consists of the cells filled with letters ℓ or ℓ ` 1. Since columns are strictly increasing, each column ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 11 
+
+contains at most one ℓ and at most one ℓ ` 1 and, by hypothesis, not both. Therefore, λ{μ has at most one cell per column, and hence is a horizontal strip. Since λ “ p dkq, the interlacing property in Lemma 4.5 forces μi “ d for i ď k ´ 1. Hence, λ{μ lies in row k and consists of the last p ` q cells of that row. Since row k is weakly increasing, the letters ℓ’s precede the letters ℓ ` 1’s along this row. Since there are p of the former and q of the latter, T assigns ℓ to the first p and ℓ ` 1 to the last q cells of the horizontal strip in column order. Relabelling every ℓ ` 1 to ℓ therefore gives a semistandard tableau T 1
+
+of merged content a mrg with ΦpT 1q “ T . ■
+
+We obtain certain bounds on the entries ai which will be useful for the proofs in the later sections. 
+
+Lemma 4.13. Let a1 ě a2 ě ¨ ¨ ¨ ě an ě 1 with ř 
+
+> i
+
+ai “ A and n ě 2. We have 
+
+an´1 ` an ď 2An ,
+
+with equality only if a1 “ a2 “ ¨ ¨ ¨ “ an.Proof. Since the sequence is sorted, an´1 and an are the two smallest entries. Therefore, every pair 
+
+ti, j u with i ă j satisfies ai ` aj ě an´1 ` an. Summing over all such `n
+
+> 2
+
+˘ pairs, and noting that each index occurs in exactly n ´ 1 such pairs, we get 
+
+pn ´ 1qA “ ÿ
+
+> iăj
+
+pai ` aj q ě 
+
+ˆn
+
+2
+
+˙
+
+pan´1 ` anq “ npn ´ 1q
+
+2 pan´1 ` anq
+
+This proves the claim. For the equality case, note that every pair sum has to be equal to an´1 ` an. In particular, if n ě 3,and j ‰ l are both distinct from some i, then we get ai ` aj “ ai ` al. Therefore, aj “ al. Letting j
+
+vary, we get that all entries are equal. For n “ 2 the statement is vacuously true since a1 ` a2 “ A. ■
+
+Corollary 4.14. Let a be a content for pk, n, d q, sorted decreasingly, with all ai ě 1. We have 
+
+an´1 ` an ď 2kd n .
+
+In particular, if n ě 2k ` 1, then an´1 ` an ă d. Additionally, if n “ 2k, then an´1 ` an ď d, with d
+
+even, and equality occurs only when all ai are equal, necessarily to d{2.Proof. We will use the above Lemma 4.13 with A “ kd . For n ě 2k ` 1 we get an´1 ` an ď 2kd {n ď
+
+2kd {p 2k ` 1q ă d. For n “ 2k we get an´1 ` an ď d with the stated equality case, and if all ai “ a,then 2ka “ kd , so d “ 2a, which is even. Hence, a “ d{2. ■
+
+5. A lower bound in Grassmannian Gr p2, n q and Gr p3, 6q
+
+In this section we establish a certain lower bound for the dimensions of the weight spaces of SI Gr p2,n qpd;aq
+
+and SI Gr p3,6qpd;aq for nondegenerate content a, as defined in Definition 3.2. 5.1. Grassmannian Gr p2, n q. Throughout this subsection k “ 2. For a content a “ p a1, . . . , a nq of 
+
+p2, n, d q we will write 
+
+d “ 12
+
+ř 
+
+> i
+
+ai
+
+For simplicity, we write F paq :“ Kpd,d q, a. Hence, F paq “ 0 if ř 
+
+> i
+
+ai is odd. We will write Vm :“ Sym m V for the unique pm`1q-dimensional irreducible representation of SL 2,which is the m-th symmetric power of the standard representation V – K2. Recall the Clebsch-Gordan decomposition for SL 2 representations, see [FH91, Section 11.2] or [Kas95, Proposition V.5.1]. 12 DEEPANSHU PRASAD 
+
+Lemma 5.1. For a, b ě 0,
+
+Va b Vb –
+
+> min pa,b q
+
+à
+
+> t“0
+
+Va`b´2t as SL 2-representations 
+
+Remark 5.2. Note that dim pVa b VbqSL 2 “ δa,b . Indeed, because Va is self-dual and irreducible, so 
+
+dim pVa b VbqSL 2 “ dim Hom SL 2 pVa, V bq “ δa,b .
+
+Proposition 5.3. For n ě 3,
+
+(3) F pa1, . . . , a nq “ 
+
+> min pan´1,a nq
+
+ÿ
+
+> t“0
+
+F `a1, . . . , a n´2, j t
+
+˘, jt :“ an´1 ` an ´ 2t. 
+
+The t-th summand is a content in n ´ 1 letters whose half-sum is d ´ t.Proof. Apply Lemma 5.1 to the last two tensor factors and use that taking SL 2-invariants is additive over direct sums. The half-sum of pa1, . . . , a n´2, j tq is 12 p2d ´ 2tq “ d ´ t. ■
+
+Lemma 5.4. If a is a content for p2, n, d q with ai “ d for some i, then F paq “ 1.Proof. By Lemma 4.3, F paq “ Kpd1q, a1 “ Kpdq, a1 where a1 deletes the i-th entry. A tableau with a single row of length d is determined by its content by writing the letters in weakly increasing order. Hence, F paq “ 1. ■
+
+Proposition 5.5. Let n ě 3. If a is a nondegenerate content for p2, n, d q, then 
+
+F paq ě n ´ 2.
+
+Proof. As a consequence of [Sta24, Theorem 7.10.2], we assume a1 ě a2 ě ¨ ¨ ¨ ě an ě 1. Hence, 
+
+a1 ď d ´ 1. We use induction on n.Assume n “ 3. We claim F paq “ 1. By Proposition 5.3 and Lemma 5.1, 
+
+F pa1, a 2, a 3q “ ÿ
+
+> t
+
+dim `Vjt b Va1
+
+˘SL 2
+
+is 1 if a1 occurs among the jt which is equivalent to |a2 ´a3| ď a1 ď a2 `a3 with a1 ” a2 `a3 mod 2 ;and 0 otherwise. Now a1 ` a2 ` a3 “ 2d is even, giving the parity condition. The inequality 
+
+a1 ď a2 ` a3 “ 2d ´ a1 is equivalent to a1 ď d, which is true. Using a2 ě a3, we get that a2 ´ a3 ď a1
+
+is equivalent to a2 ď a1 ` a3 “ 2d ´ a2, i.e. a2 ď d, which is true. Hence, F paq “ 1 “ n ´ 2.Now we assume n ě 4. Since k “ 2, by Corollary 4.14 we get, (4) an´1 ` an ď 4dn ď d, 
+
+and the second inequality is an equality only if n “ 4. Additionally, the first is an equality only if all ai
+
+are equal. In other words, (5) an´1 ` an ď d, and an´1 ` an ď d ´ 1 unless n “ 4 and a1 “ a2 “ a3 “ a4.
+
+We consider the following two cases according to the size of a1 ` an.
+
+Case A: a1 ` an ď d ´ 1. Consider the summand for t “ 0 in (3), whose content is b0 “pa1, . . . , a n´2, a n´1 ` anq with half-sum d. We check the nondegeneracy of the content b0. All entries of b0 are ě 1. The entries of b0 are also ď d ´ 1, since ai ď a1 ď d ´ 1 for i ď n ´ 2 and 
+
+an´1 ` an ď a1 ` an ď d ´ 1. So b0 is a nondegenerate content for p2, n ´ 1, d q. Hence, by induction hypothesis, F pb0q ě p n ´ 1q ´ 2 “ n ´ 3.ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 13 
+
+Now, assume an´1 ě 2. Consider also the summand for t “ 1 whose content is b1 “ p a1, . . . , a n´2, j 1q
+
+with j1 “ an´1 ` an ´ 2, and half-sum d ´ 1. We check the nondegeneracy of the content b1. We have j1 ě an´1 ` 1 ´ 2 ě 1. Each ai ď a1 ď d ´ 1 ´ an ď d ´ 2 “ p d ´ 1q ´ 1; and 
+
+j1 ď a1 ` an ´ 2 ď d ´ 3 ď p d ´ 1q ´ 1. So b1 is a nondegenerate content for p2, n ´ 1, d ´ 1q. By induction hypothesis, we get F pb1q ě n ´ 3. Hence, 
+
+F paq ě F pb0q ` F pb1q ě 2pn ´ 3q ě n ´ 2 pn ě 4q.
+
+On the other hand if an´1 “ 1, then an “ 1 as well. The hypothesis of Case A gives a1 ď d ´ 2.We cannot have n “ 4. Indeed, the sorting condition gives a1 ě a2 and a1 ` a2 “ 2d ´ 2, so 
+
+a2 “ 2d ´ 2 ´ a1 ě 2d ´ 2 ´ p d ´ 2q “ d ě a1 ` 2 ą a1, a contradiction. Therefore, n ě 5. The summand for t “ 1 has j1 “ 0. Hence, by Lemma 4.1 we may delete that letter. Therefore, we get the content pa1, . . . , a n´2q with half-sum d ´ 1, all entries in r1, d ´ 2s, i.e. a nondegenerate content for 
+
+p2, n ´ 2, d ´ 1q with n ´ 2 ě 3 letters. By induction hypothesis, it contributes ě p n ´ 2q ´ 2 “ n ´ 4.Hence, 
+
+F paq ě p n ´ 3q ` p n ´ 4q “ 2n ´ 7 ě n ´ 2 pn ě 5q.
+
+Case B: a1 ` an ě d. Put 
+
+T :“ d ´ 1 ´ a1.
+
+Since a is nondegenerate content, we get T ě 0. Rearranging the Case B hypothesis gives T ď an ´ 1.In particular, every t with 0 ď t ď T ` 1 satisfies t ď an “ min pan´1, a nq, and hence contributes a summand in (3). We show that for each 0 ď t ď T the corresponding summand in (3) contributes ě n ´ 3.Indeed, fix such a t. The summand has content bt “ p a1, . . . , a n´2, j tq and half-sum d ´ t. We check nondegeneracy. First, we check the lower bound on jt: since t ď T ,
+
+jt ě jT “ an´1 ` an ´ 2pd ´ 1 ´ a1q “ p a1 ` an´1q ` p a1 ` anq ´ 2d ` 2 ě d ` d ´ 2d ` 2 “ 2,
+
+using a1 ` an´1 ě a1 ` an ě d twice. The other entries are ě 1 by hypothesis. Next, we check the upper bound on the ai: ai ď a1 “ d ´ 1 ´ T ď d ´ 1 ´ t “ p d ´ tq ´ 1. Finally, we check the upper bound on jt: jt ď p d ´ tq ´ 1 is equivalent to an´1 ` an ď d ´ 1 ` t. For t ě 1 this follows from (5). For t “ 0 it follows from (5) unless n “ 4 and all ai are equal. We handle this exceptional case separately below. Therefore, apart from the exceptional case, each such bt is a nondegenerate content for p2, n ´ 1, d ´ tq, and contributes F pbtq ě n ´ 3 by induction hypothesis. Suppose n “ 4 and a1 “ a2 “ a3 “ a4 “: a, so d “ 2a. Then the summand for t “ 0 has content 
+
+pa, a, 2aq with half-sum 2a. Its last entry equals its half-sum, so F “ 1 by Lemma 5.4. Since n ´ 3 “ 1,we see that the summand still contributes at least n ´ 3, as required. For 1 ď t ď T “ a ´ 1 the arguments above apply verbatim. Now consider t “ T `1 “ d´a1 ď an. Its content is bt “ p a1, . . . , a n´2, j tq with jt “ jT ´2 ě 0
+
+and half-sum d ´ t “ a1. The entry a1 equals the half-sum, so F pbtq “ 1 by Lemma 5.4. Adding up the T ` 1 summands with 0 ď t ď T and the summand for t “ T ` 1,
+
+F paq ě p T ` 1qp n ´ 3q ` 1 ě p n ´ 3q ` 1 “ n ´ 2,
+
+using T ` 1 ě 1 and n ´ 3 ě 1. ■
+
+5.2. Grassmannian Gr p3, 6q. For rectangular shapes there is a second description of SSYT which will be used in the proof of the main result of this subsection. 14 DEEPANSHU PRASAD 
+
+Definition 5.6. For k-element subsets A, B Ď t 1, . . . , n u, written in increasing order as A “ t α1 ă
+
+α2 ă ¨ ¨ ¨ ă αku and B “ t β1 ă ¨ ¨ ¨ ă βku, define 
+
+A ď B ðñ αi ď βi for all i “ 1, . . . , k. 
+
+This is a partial order. 
+
+Definition 5.7. A multichain of length d is a sequence C1 ď C2 ď ¨ ¨ ¨ ď Cd of k-subsets of t1, . . . , n u
+
+(repetitions allowed). Its content is a “ p a1, . . . , a nq, where ai “ #tj : i P Cj u is the number of members of the chain that contain the letter i.
+
+Lemma 5.8. Let λ “ p dkq. The map sending an SSYT T to the sequence of its columns C1, . . . , C d, read as subsets of t1, . . . , n u, is a bijection 
+
+SSYT `pdkq, a˘ „
+
+ÝÝÑ t multichains C1 ď ¨ ¨ ¨ ď Cd of k-subsets with content au.
+
+For two partitions λ “ p λ1, . . . , λ mq and μ “ p μ1, . . . , μ mq of an integer ℓ P N, we say λ dominates 
+
+μ, written as λ İ μ, if and only if λ1 ` . . . ` λi ě μ1 ` . . . ` μi for all 1 ď i ď m. Recall the Kostka positivity condition. 
+
+Theorem 5.9 (see Theorem 1 in [Lam78], or [LV73]) . Let λ be a partition and a “ p a1 ě a2 ě ¨ ¨ ¨ ě amq
+
+a weakly decreasing sequence of non-negative integers with |λ| “ |a|. If λ İ a, then Kλ, a ě 1.
+
+We need the following proposition to prove the main result of this subsection. 
+
+Proposition 5.10. Let a “ p a1, a 2, a 3, a 4, a 5, a 6q be a nondegenerate content for p3, 6, d q. If a5 `a6 ď d´1,then there exists T ˚ P SSYT pp d3q, aq having a column that contains both the letters 5 and 6.Proof. Without loss of generality we assume a1 ě a2 ě ¨ ¨ ¨ ě a6 ě 1. Since a is nondegenerate content and a5 ` a6 ď d ´ 1, notice that d ě 3. Set 
+
+μ :“ `d, d ´ 1, d ´ a5 ´ a6 ` 1˘.
+
+We have d ě d ´ 1, and d ´ 1 ě d ´ a5 ´ a6 ` 1 because a5 ` a6 ě 2. Moreover, since a5 ` a6 ď d ´ 1,we have μ3 “ d ´ a5 ´ a6 ` 1 ě 2. Hence, we conclude that μ is a partition with three rows. We check the dominance condition μ İ p a1, a 2, a 3, a 4q. For this we check the three nontrivial inequalities. 
+
+μ1 “ d ě a1, μ1 ` μ2 “ 2d ´ 1 ě a1 ` a2, μ1 ` μ2 ` μ3 “ | μ| ě a1 ` a2 ` a3
+
+Using the fact that a1 ď d ´ 1, a1 ` a2 ď 2d ´ 2, and |μ| “ a1 ` ¨ ¨ ¨ ` a4 ě a1 ` a2 ` a3 gives the first, second, and third inequalities above, respectively. The fourth condition is the equality of sizes: we have |μ| “ 3d ´ a5 ´ a6 “ a1 ` a2 ` a3 ` a4.By Theorem 5.9 there is a semistandard tableau U of shape μ in the letters t1, 2, 3, 4u with content 
+
+pa1, a 2, a 3, a 4q. Now define T ˚ of shape pd3q in the following way: (1) on the cells of μ, put the entries of U ;(2) in cell p2, d q, put 5;(3) in the cells p3, d ´ a5 ´ a6 ` 2q, . . . , p3, d ´ a6q, put 5. There are a5 ´ 1 such cells; (4) in the cells p3, d ´ a6 ` 1q, . . . , p3, d q, put 6. There are a6 such cells. We check the row lengths. Row 1 has μ1 “ d cells; row 2 has μ2`1 “ d; row 3 has μ3`p a5´1q` a6 “ d.So the shape is the rectangle pd3q, and the content is pa1, a 2, a 3, a 4, a 5, a 6q “ a.We check the semistandardness of rows. Row 1 is a row of U . Row 2 is a row of U (entries ď 4)followed by a 5. Row 3 is a row of U (entries ď 4), then a5 ´ 1 copies of 5, then a6 copies of 6. All weakly increasing. ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 15 
+
+We check the semistandardness of columns. Let j be a column index. If j ď μ3, all three cells of column j belong to μ and carry the entries of U , which satisfies the strictly increasing column condition. If μ3 ă j ď d ´ 1, then rows 1 and 2 of column j lie in μ (indeed j ď d ´ 1 “ μ2 ď μ1) and carry entries ď 4, strictly increasing; row 3 carries 5 or 6, which is larger. Finally, if j “ d, the column reads 
+
+U1,d , then 5, then 6. Since U1,d ď 4 ă 5 ă 6, the column is strictly increasing. Finally, column d contains both 5 (in row 2) and 6 (in row 3). ■
+
+We present the main theorem of this subsection. 
+
+Theorem 5.11. Every nondegenerate content a for p3, 6, d q satisfies Kpd3q, a ě 4.Proof. Without loss of generality we assume a1 ě a2 ě ¨ ¨ ¨ ě a6 ě 1. We consider the following two cases. 
+
+Case A: a5 ` a6 ď d ´ 1. The merged content a mrg “ p a1, a 2, a 3, a 4, a 5 ` a6q is a nondegenerate content for p3, 5, d q. Indeed, the merged content has five entries summing to 3d. Its first four entries lie in r1, d ´ 1s since a is a nondegenerate content for p3, 6, d q, and the fifth entry is a5 ` a6, which is 
+
+ě 2 and ď d ´ 1 by hypothesis. So it is a nondegenerate content for p3, 5, d q. Therefore, we get 
+
+Kpd3q, a ě Kpd3q, a mrg ě 3.
+
+The first inequality follows from Lemma 4.10, and by using duality of Gr p2, 5q and Gr p3, 5q and Proposition 5.5, we get Kpd3q, a mrg ě 3.Therefore, by Proposition 4.12 the image of the merging injection Φ contains at least 3 tableaux, all of which have no column containing both 5 and 6. By Proposition 5.10 there is at least one more tableau of the same content which does have such a column, and hence lies outside the image of Φ.Therefore, Kpd3q, a ě 3 ` 1 “ 4.
+
+Case B: a5 ` a6 ě d. We have pk, n q “ p 3, 6q, so n “ 2k. By using Lemma 4.13 and Corollary 4.14, we conclude d is even and a1 “ ¨ ¨ ¨ “ a6 “ d{2. We write d “ 2a with a ě 1, and a “ p a, a, a, a, a, a q.We will use Lemma 5.8 and exhibit four multichains. For a pair pA, B q of complementary 3-subsets of t1, . . . , 6u with A ď B, the sequence 
+
+A ď A ď ¨ ¨ ¨ ď Alooooooooomooooooooon 
+
+> a
+
+ď B ď B ď ¨ ¨ ¨ ď Bloooooooooomoooooooooon 
+
+> a
+
+is a multichain of length 2a “ d, and each letter lies in exactly a of its members, namely in the a copies of whichever of A, B contains it. So its content is pa6q “ a. Distinct A’s give distinct multichains. We have at least four valid choices: 
+
+A “ t 1, 2, 3u, B “ t 4, 5, 6u : 1 ď 4, 2 ď 5, 3 ď 6
+
+A “ t 1, 2, 4u, B “ t 3, 5, 6u : 1 ď 3, 2 ď 5, 4 ď 6
+
+A “ t 1, 2, 5u, B “ t 3, 4, 6u : 1 ď 3, 2 ď 4, 5 ď 6
+
+A “ t 1, 3, 4u, B “ t 2, 5, 6u : 1 ď 2, 3 ď 5, 4 ď 6
+
+Hence Kpd3q, a “ Kpd3q, pa6q ě 4. ■
+
+6. Main result In this section we obtain a lower bound on the dimension of the weight spaces of dim K SI Gr pk,n qpd;aq
+
+which is needed for proving Conjecture 1.1 for the rectangular Kostka coefficients. Let 
+
+D :“ tp k, n q : k ě 2, n ě k ` 2u, E :“ tp 2, 4q, p2, 5q, p3, 5qu , N :“ DzE
+
+We order N lexicographically, i.e., pk1, n 1q ă lex pk, n q means k1 ă k, or k1 “ k and n1 ă n.16 DEEPANSHU PRASAD 
+
+Lemma 6.1. The lexicographic order on N is well-founded. Proof. Let pk1, n 1q ą p k2, n 2q ą ¨ ¨ ¨ be a strictly decreasing chain. The integers ki are non-increasing and bounded below by 2, and hence has to be eventually constant. Say ki “ k for i ě i0. For i ě i0 the integers ni has to be strictly decreasing while remaining bounded below by k ` 2, contradiction. ■
+
+Theorem 6.2. Let k ě 2, n ě k ` 2, d ě 1, and let a be a nondegenerate content for pk, n, d q, i.e. ř 
+
+> i
+
+ai “ kd and 1 ď ai ď d ´ 1 for all i. We obtain the following bounds on the weight spaces determined by the nondegenerate content a
+
+dim K SI Gr pk,n qpd;aq “ Kpdk q, a ě
+
+$’’&’’%
+
+2, pk, n q “ p 2, 4q,
+
+3, pk, n q P tp 2, 5q, p3, 5qu ,
+
+4, otherwise Proof. Let the sets D, E , and N be as above. For pk, n q P E, the result follows from Proposition 5.5, and by using the duality of the Grassmannians Gr p2, 5q and Gr p3, 5q.For pk, n q P N , let Ppk, n q be the statement: for every d ě 1 and every nondegenerate content a
+
+for pk, n, d q one has Kpdk q, a ě 4. In order to prove the statement P on all of N , by Lemma 6.1 and well-founded induction, it suffices to prove that for each x P N , if Ppyq holds for every y P N with 
+
+y ălex x, then Ppxq holds. Fix x “ p k, n q P N and assume 
+
+Ppk1, n 1q for every pk1, n 1q P N with pk1, n 1q ă lex pk, n q.
+
+Let d ě 1 and let a be a nondegenerate content for pk, n, d q. Without loss of generality we may assume 
+
+a1 ě a2 ě ¨ ¨ ¨ ě an. We will show Kpdk q, a ě 4 by considering the following cases: Let k “ 2. Since p2, 4q, p2, 5q R N , we have n ě 6. Proposition 5.5 gives 
+
+Kpd,d q,a ě n ´ 2 ě 4.
+
+Let k “ 3. If pk, n q “ p 3, 6q, then Theorem 5.11 gives Kpd3q,a ě 4. Therefore, assume n ě 7. By Corollary 4.14, 
+
+an´1 ` an ď 6dn ď 6d
+
+7 ă d
+
+so an´1 ` an ď d ´ 1. Hence, amrg has ai P r 1, d ´ 1s for i ď n ´ 2, and merged entry an´1 ` an Pr2, d ´ 1s. We see that it is a nondegenerate content for p3, n ´ 1, d q. Since n ´ 1 ě 6, we have 
+
+p3, n ´ 1q P N . Moreover p3, n ´ 1q ă lex p3, n q. Therefore, by Lemma 4.10 and induction hypothesis, we get 
+
+Kpd3q,a ě Kpd3q,amrg ě 4.
+
+For the rest of the proof we assume k ě 4. We will consider n in different ranges: n ě 2k ` 1, n “ 2k,and k ` 2 ď n ď 2k ´ 1.Suppose n ě 2k ` 1. Identical to the case above, with 
+
+an´1 ` an ď 2kd n ď 2kd 
+
+2k ` 1 ă d
+
+we see that amrg is a nondegenerate content for pk, n ´ 1, d q. We have pk, n ´ 1q in N because 
+
+n ´ 1 ě 2k ě k ` 2 and k ě 4 excludes E, and is lexicographically smaller. So 
+
+Kpdk q,a ě Kpdk q,amrg ě 4.ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 17 
+
+Next, we suppose n “ 2k. If an´1 ` an ď d ´ 1, then merging gives a nondegenerate content for pk, 2k ´ 1, d q. We have pk, 2k ´ 1q P N because 2k ´ 1 ě k ` 2 (k ě 3) and k ě 4 and is lexicographically smaller. So 
+
+Kpdk q,a ě Kpdk q,amrg ě 4.
+
+On the other hand, if an´1 ` an ě d, then by Corollary 4.14 we get that d is even and 
+
+a “ `pd 
+
+> 2
+
+q2k˘
+
+with d ě 2. If we merge the last two letters, then we get the content `pd{2q2k´2, d ˘, which has an entry equal to d. Using Lemma 4.10 and Lemma 4.3, we get 
+
+Kpdk q, a ě Kpdk q,
+
+`pd{2q2k´2,d 
+
+˘ “ Kpd k´1q,
+
+`pd{2q2k´2
+
+˘.
+
+The content `pd{2q2k´2˘ has 2k ´ 2 entries summing to pk ´ 1qd, each equal to d{2 P r 1, d ´ 1s.Therefore, it is a nondegenerate content for pk ´ 1, 2k ´ 2, d q. Moreover, pk ´ 1, 2k ´ 2q P N ; indeed 
+
+2k ´ 2 ě p k ´ 1q ` 2 since k ě 3, and pk ´ 1, 2k ´ 2q R E since k ´ 1 ě 3. In the boundary case 
+
+k ´ 1 “ 3, one has 2k ´ 2 “ 6 ‰ 5. It is lexicographically smaller since k ´ 1 ă k. Hence, the induction hypothesis gives ě 4.Finally, we suppose k ` 2 ď n ď 2k ´ 1. By Lemma 4.2, 
+
+Kpdk q, a “ Kpd n´k q, a_ where a_ :“ p d ´ a1, . . . , d ´ anq
+
+and a_ is nondegenerate for pn ´ k, n, d q. We have pn ´ k, n q P N . Indeed, n ´ k ě 2 because 
+
+n ě k ` 2, and n ě p n ´ kq ` 2 because k ě 2. Additionally, since n ě k ` 2 ě 6, we have 
+
+pn ´ k, n q R E. Since n ´ k ď k ´ 1 ă k, it is lexicographically smaller. Hence, the induction hypothesis gives ě 4. ■
+
+Remark 6.3. In our setting, the relevant range of parameters is k ě 2 and n ě k ` 2. In all other cases, we obtain dim K SI Gr pk,n qpd;aq “ Kpdk q, a ď 1. Indeed, for k “ 1 a tableau with one row is determined by its content. For n “ k, the only filling of pdkq has row i filled with the letter i. For n “ k ` 1 use duality of Grassmannians Gr pk, n q – Gr pn ´ k, n q to reduce to k “ 1 case. 7. King, Tollu, Toumazet conjecture for rectangular Kostka coefficients A conjecture of King, Tollu, Toumazet [KTT04, see Conj. 3.3] states that for partitions λ, μ and ν, if the Littlewood-Richardson coefficient cνλ,μ “ 3, then cM ν M λ,M μ “ `M `22
+
+˘ or 2M ` 1 for every positive integers M . In this section we will prove this conjecture for rectangular Kostka coefficients, which are a special case of Littlewood-Richardson coefficients. 7.1. Grassmannian Gr p2, 5q. We will first prove the King, Tollu, Toumazet conjecture for Gr p2, 5q by using the idea of Gelfand-Tsetlin polytope. Let T be a semistandard tableau of shape pd, d q with entries in t1, . . . , 5u and content a. Let xi be the number of i’s in the first row and set 
+
+Xj :“ x1 ` ¨ ¨ ¨ ` xj , Aj :“ a1 ` ¨ ¨ ¨ ` aj , X0 “ A0 “ 0.
+
+The second row then contains yi “ ai ´ xi copies of i, with partial sums Yj “ Aj ´ Xj .
+
+Lemma 7.1. The assignment T Þ Ñ p X1, . . . , X 4q is a bijection from the set of such tableaux onto the set of integer vectors satisfying 
+
+(6) X5 “ d, 0 ď Xj ´ Xj´1 ď aj p1 ď j ď 5q, Xj´1 ` Xj ě Aj p1 ď j ď 5q.18 DEEPANSHU PRASAD 
+
+Proof. A tableau of shape pd, d q is determined by its two rows, and each row is determined by its multiset of entries since rows are weakly increasing. So T is determined by px1, . . . , x 5q, equivalently by pX1, . . . , X 5q with X5 “ d; the conditions 0 ď xj ď aj are the middle inequalities in (6). Now we will check the column strictness condition. The entry of row 1 in column p of the tableau T
+
+is min tj : Xj ě pu and the entry of row 2 in column p is min tj : Yj ě pu. Column strictness means that the row-2 entry exceeds the row-1 entry in every column. For fixed j, the columns whose row-2
+
+entry is ď j are exactly p “ 1, . . . , Y j and for each of these we need the row-1 entry to be ď j ´ 1, i.e., 
+
+p ď Xj´1. Hence column strictness is equivalent to Yj ď Xj´1 for all j, which is Aj ´ Xj ď Xj´1.This is the last family of inequalities in (6). Conversely, these inequalities give column strictness. ■
+
+Remark 7.2. Notice that two of the four coordinates are fixed. Indeed, taking j “ 1 in (6) gives 
+
+X1 ě a1, while X1 “ x1 ď a1; so X1 “ a1. Taking j “ 5 gives X4 ě A5 ´ X5 “ 2d ´ d “ d, while 
+
+X4 ď X5 “ d; so X4 “ d. Since X5 “ d, we conclude that x5 “ 0, i.e. no 5’s occur in the first row. Therefore, there are only two free entries 
+
+u :“ X2, v :“ X3.
+
+We use the above inequalities to define a polytope whose number of lattice points gives the dimension of the weight spaces dim K SI Gr p2,5qpd;aq . Substituting X1 “ a1, X4 “ X5 “ d into (6) and writing u “ X2,
+
+v “ X3 turns the above inequalities into exactly (C1)–(C9) below. 
+
+Definition 7.3. For a content a with ř ai “ 2d let Pa Ă R2 be the polyhedron cut out by (C1) u ě a1, (C2) u ě a2, (C3) u ď a1 ` a2, (C4) u ` v ě A3,
+
+(C5) v ě u, (C6) v ď u ` a3, (C7) v ě d ´ a4, (C8) v ě d ´ a5,
+
+(C9) v ď d. 
+
+Theorem 7.4. For every content a of p2, 5, d q, Pa is a lattice polytope. Proof. Every extreme point p of Pa is the unique solution of a pair of constraints from (C1)–(C9) whose normal vectors are linearly independent. The normal vectors occurring in Definition 7.3 are 
+
+p1, 0q (C1,C2) , p´ 1, 0q (C3) , p1, 1q (C4) , p´ 1, 1q (C5) ,
+
+p1, ´1q (C6) , p0, 1q (C7,C8) , p0, ´1q (C9) ,
+
+and every right-hand side is an integer. If a pair of independent normals has determinant ˘1, then by Cramer’s rule we get an integral solution. Inspecting all pairs, we get determinant of absolute value 2
+
+only for the following two pairs 
+
+tp 1, 1q, p´ 1, 1qu “ t C4 , C5 u and tp 1, 1q, p1, ´1qu “ t C4 , C6 u
+
+All other pairs hav determinant ˘1 or are parallel. Consider the pair (C4),(C6). Solving u ` v “ A3 and v ´ u “ a3 gives 
+
+u “ A3´a3 
+
+> 2
+
+“ a1`a2 
+
+> 2
+
+, v “ A3`a3 
+
+> 2
+
+.
+
+If this point lies in Pa then (C1) gives a1`a2 
+
+> 2
+
+ě a1, i.e., a2 ě a1, and (C2) gives a1`a2 
+
+> 2
+
+ě a2, i.e., 
+
+a1 ě a2. Hence a1 “ a2. Therefore, u “ a1 P Z and v “ a1 ` a3 P Z.Now consider the pair (C4),(C5). Solving u ` v “ A3 and v “ u gives u “ v “ A3 
+
+> 2
+
+. Since 
+
+2d “ A3 ` a4 ` a5 we have d ´ a4 “ A3`a5´a4 
+
+> 2
+
+and d ´ a5 “ A3`a4´a5 
+
+> 2
+
+. If the point lies in Pa then (C7) gives A3 
+
+> 2
+
+ě A3`a5´a4 
+
+> 2
+
+, i.e., a4 ě a5, and (C8) gives a5 ě a4. Hence a4 “ a5. So A3 “ 2d ´ 2a4 is even and u “ v “ d ´ a4 P Z.ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 19 
+
+In both cases the point is integral whenever it belongs to Pa, or otherwise it is not a vertex. Hence all vertices are integral. ■
+
+Corollary 7.5. Let a be a content for p2, 5, d q with d ě 1. If dim K SI Gr p2,5qpd;aq “ 3, then dim K SI Gr p2,5qpM d ;M aq “
+
+`M `22
+
+˘ or 2M ` 1, for every positive integer M .Proof. Since dim K SI Gr p2,5qpd;aq “ 3, the lattice polytope Pa is either a line segment or a triangle with 3
+
+lattice points. The result follows. ■
+
+7.2. Grassmannian Gr pk, n q. Now we will prove the King, Tollu, Toumazet conjecture for all Grass-mannians Gr pk, n q.
+
+Theorem 7.6. Let k ě 2, n ě k ` 2, d ě 1, and a be a content for pk, n, d q. If dim K SI Gr pk,n qpd;aq “ 3, then 
+
+dim K SI Gr pk,n qpM d ;M aq “ `M `22
+
+˘ or 2M ` 1, for every positive integer M .Proof. Let Q be the subspace quiver with n arms and β “ p k, 1, 1, . . . , 1q, so that SI pQ, β q is the homogeneous coordinate ring of Gr pk, n q, and let σ “ p´ d, a 1, . . . , a nq be the weight associated with the content a. Since dim K SI pQ, β qσ “ 3 ‰ 0 we have σ P ΣpQ, β q, i.e. β is σ-semistable. Write 
+
+σ “ e σ 0, e :“ gcd `d, a 1, . . . , a n
+
+˘,
+
+so that σ0 is an indivisible weight. Let 
+
+β “ c1 ¨ α1 ` c2 ¨ α2 ` ¨ ¨ ¨ ` cr ¨ αr
+
+be the σ0-stable decomposition of β, with the αi distinct. Since β “ p k, 1, 1, . . . , 1q, we conclude that all ci “ 1 and 
+
+β “ α1 ` ¨ ¨ ¨ ` αr, where αi “ p ki, 1Si q, with ğ
+
+> i
+
+Si “ t 1, . . . , n u and ÿ
+
+> i
+
+ki “ k
+
+Moreover, notice that SI pQ, α iq is the homogeneous coordinate ring of Gr pki, |Si|q . The weight is the restriction of σ itself, whose value at the central vertex is still ´d. Hence, by Proposition 3.4 the number of rows is ki, the number of letters is |Si|, and the content is the restriction a|Si “ p aj qjPSi .Using σ0pαiq “ 0 we get ÿ
+
+> jPSi
+
+aj “ ki d
+
+Additionally, aj ď d. So a|Si is indeed a content for pki, |Si|, d q.Applying [DW11, Theorem 3.20] to the indivisible weight σ0 and using ci “ 1, we get 
+
+SI pQ, β qmσ 0 –
+
+> r
+
+â
+
+> i“1
+
+Sym ci
+
+`SI pQ, α iqmσ 0
+
+˘ “
+
+> r
+
+â
+
+> i“1
+
+SI pQ, α iqmσ 0 pm ě 0q.
+
+Substituting m “ eM gives, for every integer M ě 1,(7) dim K SI pQ, β qM σ “
+
+> r
+
+ź
+
+> i“1
+
+dim K SI pQ, α iqM σ .
+
+Take M “ 1. Since 3 is prime, we get that there is exactly one index i with dim K SI pQ, α iqσ “
+
+3, all other factors having dimension 1, and by Fulton’s property [DW11, Appendix] these factors stay 1-dimensional on scaling by M . Write αi “ p k1, 1S q with S :“ Si and n1 :“ |S|. Since 20 DEEPANSHU PRASAD 
+
+dim K SI pQ, α iqσ “ 3 ą 1, we conclude that k1 ě 2 and n1 ě k1 ` 2 by Remark 6.3. Additionally, since αi is σ0-stable, and hence σ-stable, by using Proposition 3.1(b)(ii) we get 
+
+1 ď aj ď d ´ 1 for all j P S, 
+
+i.e. a|S is a nondegenerate content for pk1, n 1, d q.We have dim K SI pQ, α iqσ “ 3 ă 4. Therefore, by using Theorem 6.2 we conclude that 
+
+pk1, n 1q P ␣p2, 4q, p2, 5q, p3, 5q(.
+
+The result is true for Gr p2, 5q by Corollary 7.5, and for Gr p3, 5q via duality of Grassmannians Gr p2, 5q
+
+and Gr p3, 5q. In this case, we get the dimension of the scaled weight space as `M `22
+
+˘. If pk1, n 1q “ p 2, 4q,then the dimension vector αi is an isotropic Schur root. Hence, as a consequence of [PPW23, Section 3.2 & Proposition 3.2.6], we conclude that σ “ 2χ ` rem pσq, and gives the result for Gr p2, 4q. In this case, we get the dimension of the scaled weight space as 2M ` 1.Hence, for every integer M ě 1 we get that 
+
+dim K SI Gr pk,n qpM d ;M aq “ dim K SI pQ, β qM σ “
+
+ˆM ` 22
+
+˙
+
+or 2M ` 1
+
+■
+
+Remark 7.7. We believe that the methods in this paper can be generalized to prove the conjecture for all Kostka coefficient. This will be dealt with in the upcoming future work. Below we give some examples to illustrate the main idea of the proof. 
+
+Example 7.8. Consider the 6-subspace quiver 
+
+1 2 3 4 5 60
+
+with dimension vector β “ p 3, 1, 1, 1, 1, 1, 1q. The semi-invariant ring is isomorphic to the homoge-neous coordinate ring of Gr p3, 6q. Let σ “ p´ 3, 3, 2, 1, 1, 1, 1q. Here d “ 3 and a “ p a1, . . . , a 6q “ p3, 2, 1, 1, 1, 1q. Notice that since a1 “ 3 “ d, β is not σ-stable. Up to reordering, the σ-stable decomposition of β is 
+
+β “ p 1, 1, 0, 0, 0, 0, 0q ` p2, 0, 1, 1, 1, 1, 1q
+
+The summand α1 :“ p 1, 1, 0, 0, 0, 0, 0q is a real Schur root. For α2 :“ p 2, 0, 1, 1, 1, 1, 1q “ p 2, 1S2 q
+
+where S2 “ t 2, 3, 4, 5, 6u, we have SI pQ, α 2q – KrGr p2, 5qs . We see that the content a|S2 “p2, 1, 1, 1, 1q is a nondegenerate content for pk1, n 1, d q “ p 2, 5, 3q. Moreover, it can be checked that 
+
+Kp3,3q, p2,1,1,1,1q “ 3
+
+Hence, dim K SI pQ, β qσ “ 3. Consequently, we get dim K SI pQ, β qM σ “ `M `22
+
+˘ for every positive integer M .ON A CONJECTURE OF KING-TOLLU-TOUMAZET FOR RECTANGULAR KOSTKA COEFFICIENTS 21 
+
+Example 7.9. Consider the 8-subspace quiver 
+
+1 2 3 4 5 6 7 80
+
+with dimension vector β “ p 4, 1, 1, 1, 1, 1, 1, 1, 1q. The semi-invariant ring is isomorphic to the homogeneous coordinate ring of Gr p4, 8q. Let σ “ p´ 4, 4, 4, 2, 2, 2, 2, 0, 0q. Here d “ 4 and a “pa1, . . . , a 8q “ p 4, 4, 2, 2, 2, 2, 0, 0q. Let σ “ 2σ0 with σ0 “ p´ 2, 2, 2, 1, 1, 1, 1, 0, 0q, and d0 :“
+
+d{2 “ 2. Hence, corresponding to σ0, we get a content a1 “ p 2, 2, 1, 1, 1, 1, 0, 0q for p4, 8, 2q. Up to reordering, the σ0-stable decomposition of β is 
+
+β “ p 1, e 1q ` p1, e 2q ` p2, 1t3,4,5,6uq ` p0, e 7q ` p0, e 8q
+
+Let α3 :“ p 2, 1t3,4,5,6uq. We have SI pQ, α 3q – KrGr p2, 4qs . The other dimension vectors in the above decomposition are real Schur roots. We see that p1, 1, 1, 1q is a nondegenerate content for pk1, n 1, d 0q “ p 2, 4, 2q. In particular, a|1t3,4,5,6u “
+
+2 ˆ p 1, 1, 1, 1q “ p 2, 2, 2, 2q is a nondegenerate content for pk1, n 1, d q “ p 2, 4, 4q. Moreover, it can be checked that 
+
+Kp2,2q, p1,1,1,1q “ 2 and Kp4,4q, p2,2,2,2q “ 3
+
+Hence, dim K SI pQ, β qσ “ 3. Consequently, we get dim K SI pQ, β qM σ “ 2M ` 1 for every positive integer M .Acknowledgment The author would like to thank Prof. Calin Chindris for suggesting this problem, and for many stimulating and fruitful discussions. Disclosure of AI use Claude was used for editorial and paraphrasing purposes in various parts of the paper. The author takes responsibility for the mathematical content of the paper. References 
+
+[Bel07] Prakash Belkale. Geometric proof of a conjecture of fulton. Advances in Mathematics , 216(1):346–357, 2007. [CC15] Andrew T. Carroll and Calin Chindris. On the invariant theory for acyclic gentle algebras. Trans. Amer. Math. Soc. , 367(5):3481–3508, 2015. [CKW15] Calin Chindris, Ryan Kinser, and Jerzy Weyman. Module varieties and representation type of finite-dimensional algebras. Int. Math. Res. Not. IMRN , 2015(3):631–650, 2015. [Dol03] Igor Dolgachev. Lectures on invariant theory , volume 296 of London Mathematical Society Lecture Note Series . Cam-bridge University Press, Cambridge, 2003. [DW00] Harm Derksen and Jerzy Weyman. Semi-invariants of quivers and saturation for littlewood-richardson coeffi-cients. Journal of the American Mathematical Society , 13(3):467–479, 2000. [DW02] Harm Derksen and Jerzy Weyman. On the Littlewood-Richardson polynomials. J. Algebra , 255(2):247–257, 2002. [DW11] Harm Derksen and Jerzy Weyman. The combinatorics of quiver representations. Ann. Inst. Fourier (Grenoble) ,61(3):1061–1131, 2011. [DW17] Harm Derksen and Jerzy Weyman. An introduction to quiver representations , volume 184 of Graduate Studies in Mathematics . American Mathematical Society, Providence, RI, 2017. [FH91] William Fulton and Joe Harris. Representation theory , volume 129 of Graduate Texts in Mathematics . Springer-Verlag, New York, 1991. A first course, Readings in Mathematics. 22 DEEPANSHU PRASAD 
+
+[Ike16] Christian Ikenmeyer. Small littlewood–richardson coefficients. Journal of Algebraic Combinatorics , 44(1):1–29, February 2016. [Kas95] Christian Kassel. Quantum Groups . Springer New York, 1995. [Kin94] A. D. King. Moduli Of Representations Of Finite Dimensional Algebras. The Quarterly Journal of Mathematics ,45(4):515–530, 12 1994. [KT99] Allen Knutson and Terence Tao. The honeycomb model of GL npCq tensor products i: Proof of the saturation conjecture. Journal of the American Mathematical Society , 12(4):1055–1090, 1999. [KTT04] R.C. King, C. Tollu, and F. Toumazet. Stretched littlewood-richardson coefficients and kostka coefficients. In P. Winternitz, J. Harnard, C.S. Lam, and J. Patera, editors, Symmetry in Physics: In Memory of Robert T. Sharp , 34, pages 99–112. American Mathematical Society, 2004. [KTW04] Allen Knutson, Terence Tao, and Christopher Woodward. The honeycomb model of GL npCq tensor products ii: Puzzles determine facets of the littlewood-richardson cone. Journal of the American Mathematical Society ,17(1):19–48, 2004. [Lam78] T. Y. Lam. Young diagrams, Schur functions, the Gale-Ryser theorem and a conjecture of Snapper. J. Pure Appl. Algebra , 10(1):81–94, 1977/78. [LV73] R. A. Liebler and M. R. Vitale. Ordering the partition characters of the symmetric group. J. Algebra , 25:487–489, 1973. [Mac95] I. G. Macdonald. Symmetric functions and Hall polynomials . Oxford Mathematical Monographs. The Clarendon Press, Oxford University Press, New York, second edition, 1995. With contributions by A. Zelevinsky, Oxford Science Publications. [PPW23] Charles Paquette, Deepanshu Prasad, and David Wehlau. Semi-invariant rings: Ufd and codimension one orbits, 2023. arXiv:2306.08263. [She17] Cass Sherman. Quiver generalization of a conjecture of king, tollu, and toumazet. Journal of Algebra , 480:487–504, 2017. [Sta24] Richard P. Stanley. Enumerative combinatorics. Vol. 2 , volume 208 of Cambridge Studies in Advanced Mathematics .Cambridge University Press, Cambridge, second edition, 2024. [Whi80] Dennis E. White. Monotonicity and unimodality of the pattern inventory. Adv. in Math. , 38(1):101–108, 1980. School of Mathematics and Statistics, Carleton University, Ottawa, Canada 
+
+Email address : deepanshu.prasad@gmail.com

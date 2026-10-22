@@ -48,17 +48,17 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-10-21</span>
+      <span class="dpr-home-dashboard-kicker">2026-10-22</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">共 5 篇</strong>
+    <strong class="dpr-home-dashboard-count">共 4 篇</strong>
   </div>
   <dl class="dpr-home-dashboard-stats">
     <div class="dpr-home-dashboard-stat"><dt>累计更新</dt><dd>1 次</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>1</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>4</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>2</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>2</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-10-21 20:16:06 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-10-22 20:05:03 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -69,9 +69,9 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>今日扫读5篇表示论相关论文，精读1篇、速读4篇，锁定唯一8分精读。</p>
-<p>最值得看的是《Harder-Narasimhan Filtrations of Hyperquiver Representations》的超箭图表示方向，其次可关注分圆Hecke代数与箭图簇上同调、Taft代数2-表示理论两篇7分速读。</p>
-<p>普通读者建议先读8分精读抓主线，再用两篇7分速读补背景。</p>
+<p>今日共读4篇代数表示论方向论文，精读2篇、速读2篇，精读均分8.0。</p>
+<p>最值得看的是两篇8.0精读：对称可化Kac–Moody代数的分叉卷积与单值基，以及驯顺箭图的Lusztig层，二者构成同一主题的互补视角。</p>
+<p>建议普通读者先读这两篇的引言与主定理把握框架，再按兴趣用7.0的反射函子速读补非单连通箭图工具。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -80,12 +80,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">精读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">1 篇</strong>
+    <strong class="dpr-home-dashboard-count">2 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Harder-Narasimhan Filtrations of Hyperquiver Representations">Harder-Narasimhan Filtrations of Hyperquiver Representations</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Ramified convolution and monodromy bases for symmetrizable Kac--Moody algebras">Ramified convolution and monodromy bases for symmetrizable Kac--Moody algebras</span></li><li><span class="dpr-home-dashboard-paper-title" title="On Lusztig Sheaves for Tame Quivers">On Lusztig Sheaves for Tame Quivers</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>1</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>2</strong></span></div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-skim-card">
   <div class="dpr-home-dashboard-header">
@@ -93,12 +93,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">速读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">4 篇</strong>
+    <strong class="dpr-home-dashboard-count">2 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="The center conjecture for cyclotomic Hecke algebras and cohomology of quiver varieties">The center conjecture for cyclotomic Hecke algebras and cohomology of quiver varieties</span></li><li><span class="dpr-home-dashboard-paper-title" title="2-representation theory of the Taft algebra">2-representation theory of the Taft algebra</span></li><li><span class="dpr-home-dashboard-paper-title" title="The classification of taut surface singularities via representations from logarithmic vector fields">The classification of taut surface singularities via representations from logarithmic vector fields</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Reflection functors for non-simply-laced quiver varieties">Reflection functors for non-simply-laced quiver varieties</span></li><li><span class="dpr-home-dashboard-paper-title" title="On a conjecture of King-Tollu-Toumazet for rectangular Kostka coefficients">On a conjecture of King-Tollu-Toumazet for rectangular Kostka coefficients</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>4</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">algebra-rep <strong>2</strong></span></div>
 </section>
 </div>
 

@@ -1,0 +1,161 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-22T20:02:11.661931+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2610.29051v1",
+      "source": "arxiv",
+      "title": "Ramified convolution and monodromy bases for symmetrizable Kac--Moody algebras",
+      "abstract": "We realize the positive enveloping algebra of a symmetrizable Kac--Moody algebra by convolution on a ramified preprojective species over $\\mathbb{C}((t))$. The coefficients are alternating traces of tame monodromy on representation flag varieties. We prove the relative Serre relations modulo classes induced from proper finite extensions. Monodromy evaluations at compatible generic points of the central reductions yield an integral basis respecting the top and socle crystals. The basis is unchanged by scaling the symmetrizer, induces bases of integrable representation lattices, and agrees with Lusztig's semicanonical basis when the Cartan matrix is symmetric. We prove the acyclic convolution conjecture of Geiß--Leclerc--Schröer for all symmetrizable Cartan matrices and all positive integral symmetrizers. Finally, we give a counterexample to the Support Conjecture of Geiß--Leclerc--Schröer and compute a ramified lift for which monodromy restores the Serre relation.",
+      "authors": [
+        "Jiarui Fei"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.RA"
+      ],
+      "published": "2026-10-21T01:27:54+00:00",
+      "link": "https://arxiv.org/pdf/2610.29051v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Realizes Kac-Moody algebras via convolution on preprojective species and representation varieties, tied to quiver representation theory",
+      "llm_evidence_cn": "通过预投射species与表示簇的卷积实现Kac-Moody代数，属箭图表示论范畴",
+      "llm_evidence": "通过预投射species与表示簇的卷积实现Kac-Moody代数，属箭图表示论范畴",
+      "canonical_evidence": "通过预投射species与表示簇的卷积实现Kac-Moody代数，属箭图表示论范畴",
+      "llm_tldr_en": "Realizes the positive enveloping algebra of symmetrizable Kac-Moody algebras by convolution on a ramified preprojective species, proving relative Serre relations and constructing monodromy bases matching Lusztig's semicanonical basis.",
+      "llm_tldr_cn": "论文研究对称化Kac-Moody代数正包络代数的范畴化实现问题。作者利用在C((t))上分歧预投射species上的卷积构造该代数，系数取自表示簇上驯服单值群的交错迹。结果证明相对Serre关系并得到与Lusztig半典范基一致的整基，从而验证了Geiß-Leclerc-Schröer的无环卷积猜想。",
+      "llm_tldr": "论文研究对称化Kac-Moody代数正包络代数的范畴化实现问题。作者利用在C((t))上分歧预投射species上的卷积构造该代数，系数取自表示簇上驯服单值群的交错迹。结果证明相对Serre关系并得到与Lusztig半典范基一致的整基，从而验证了Geiß-Leclerc-Schröer的无环卷积猜想。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "algebraic representation theory of finite-dimensional algebras and quivers",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2610.29750v1",
+      "source": "arxiv",
+      "title": "On Lusztig Sheaves for Tame Quivers",
+      "abstract": "Let $Q$ be a connected quiver of tame type, and let $U_v^-$ be the positive part of the corresponding quantized affine algebra. In Lusztig's construction of the canonical basis of $U_v^-$, the simple perverse sheaves occurring, up to shift, as direct summands of the flag sheaf complexes are given by intersection cohomology complexes $\\operatorname{IC}(X(c,m),\\mathcal{L}_χ)$.   We study the restrictions of these intersection cohomology complexes to the locally closed subsets $Y(c,m)$ obtained by fixing the preprojective, non-homogeneous regular, and preinjective summands in the category $\\operatorname{rep} Q$. We prove pointwise purity on the loci where the homogeneous regular part is a direct sum of pairwise non-isomorphic quasi-simple modules, and establish a semisimple decomposition of the restrictions to the corresponding larger strata.   The graded multiplicities of the local systems associated with irreducible characters of symmetric groups determine the transition coefficients from the canonical basis to the PBW basis constructed via quiver representations. This gives a geometric explanation of the positivity of these coefficients and the unitriangularity of the transition matrix.",
+      "authors": [
+        "Yumeng Wu",
+        "Jie Xiao"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.QA"
+      ],
+      "published": "2026-10-21T13:49:43+00:00",
+      "link": "https://arxiv.org/pdf/2610.29750v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "intersection cohomology complexes over tame quiver representation category rep Q",
+      "llm_evidence_cn": "驯顺箭图表示范畴rep Q上的相交上同调复形研究",
+      "llm_evidence": "驯顺箭图表示范畴rep Q上的相交上同调复形研究",
+      "canonical_evidence": "驯顺箭图表示范畴rep Q上的相交上同调复形研究",
+      "llm_tldr_en": "Studies Lusztig sheaves for connected tame quivers, restricting intersection cohomology complexes to loci fixing preprojective, regular and preinjective summands in rep Q, proving pointwise purity and semisimple decomposition.",
+      "llm_tldr_cn": "本文针对驯顺型箭图在Lusztig典范基构造中的层论描述问题，研究连接驯顺箭图对应的相交上同调复形，将其限制到按预投射、非齐次正则与预内射直和项划分的局部闭子集上。作者在齐次正则部分为互不同构拟单模直和的轨迹上证明了逐点纯性，并建立半单分解，从而加深了对箭图表示空间与典范基几何构造的理解。",
+      "llm_tldr": "本文针对驯顺型箭图在Lusztig典范基构造中的层论描述问题，研究连接驯顺箭图对应的相交上同调复形，将其限制到按预投射、非齐次正则与预内射直和项划分的局部闭子集上。作者在齐次正则部分为互不同构拟单模直和的轨迹上证明了逐点纯性，并建立半单分解，从而加深了对箭图表示空间与典范基几何构造的理解。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2610.30065v1",
+      "source": "arxiv",
+      "title": "Reflection functors for non-simply-laced quiver varieties",
+      "abstract": "We prove the braid relations between reflection functors on non-simply-laced analogues of Nakajima quiver varieties, which are defined as critical loci of certain quivers with potential. We extend this framework to categories of matrix factorizations and critical $K$-theory.",
+      "authors": [
+        "Andrei Neguţ"
+      ],
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.AG"
+      ],
+      "published": "2026-10-21T17:24:21+00:00",
+      "link": "https://arxiv.org/pdf/2610.30065v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "reflection functors on quiver varieties and quivers with potential",
+      "llm_evidence_cn": "研究非单箭图簇上的反射函子与带势箭图",
+      "llm_evidence": "研究非单箭图簇上的反射函子与带势箭图",
+      "canonical_evidence": "研究非单箭图簇上的反射函子与带势箭图",
+      "llm_tldr_en": "The paper proves braid relations between reflection functors on non-simply-laced analogues of Nakajima quiver varieties defined as critical loci of quivers with potential, extending the framework to matrix factorization categories and critical K-theory.",
+      "llm_tldr_cn": "论文关注非单箭图版本的Nakajima箭图簇上反射函子之间关系尚不清楚的问题。作者将箭图簇视为带势箭图的临界轨迹，证明其反射函子满足辫关系，并把框架推广到矩阵分解范畴与临界K理论。结果把经典的箭图表示论反射函子思想移植到箭图簇与矩阵分解的语境中，为研究非单箭图簇的对称性与导出结构提供了统一工具。",
+      "llm_tldr": "论文关注非单箭图版本的Nakajima箭图簇上反射函子之间关系尚不清楚的问题。作者将箭图簇视为带势箭图的临界轨迹，证明其反射函子满足辫关系，并把框架推广到矩阵分解范畴与临界K理论。结果把经典的箭图表示论反射函子思想移植到箭图簇与矩阵分解的语境中，为研究非单箭图簇的对称性与导出结构提供了统一工具。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.21921v1",
+      "source": "arxiv",
+      "title": "On a conjecture of King-Tollu-Toumazet for rectangular Kostka coefficients",
+      "abstract": "A conjecture of King, Tollu and Toumazet predicts the behavior of small Littlewood--Richardson coefficients under stretching: if $c^ν_{λ,μ}=3$, then $c^{Mν}_{Mλ,Mμ}$ equals $2M+1$ or $\\binom{M+2}{2}$ for every positive integers $M$. This corresponds to the Hilbert functions of a conic, or of the projective plane. We prove their conjecture for all rectangular Kostka coefficients $K_{λ,\\mathbf{a}}$. We realize them as the weight multiplicities of the homogeneous coordinate ring of the Grassmannian $\\mathrm{Gr}(k,n)$, or equivalently the weight spaces of semi-invariants of the $n$-subspace quiver with dimension vector $β=(k,1,1,\\dotsc,1)$. For a weight $σ$, we show that if $β$ is $σ$-stable, then the dimension of the corresponding weight space is at least $n-2$ when $k=2$ and at least $4$ for every Grassmannian other than $\\mathrm{Gr}(2,4)$, $\\mathrm{Gr}(2,5)$ and $\\mathrm{Gr}(3,5)$. These three cases are precisely when the associated moduli space of $σ$-stable representations has dimension at most two. Via $σ$-stable decomposition, the two alternatives are determined as follows: $2M+1$ for $\\mathrm{Gr}(2,4)$, and $\\binom{M+2}{2}$ for $\\mathrm{Gr}(2,5)$ and $\\mathrm{Gr}(3,5)$.",
+      "authors": [
+        "Deepanshu Prasad"
+      ],
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.RT"
+      ],
+      "published": "2026-10-15T14:04:46+00:00",
+      "link": "https://arxiv.org/pdf/2610.21921v1",
+      "tags": [
+        "keyword:algebra-rep",
+        "query:algebra-rep"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "realizes Kostka coefficients as semi-invariant weight spaces of the n-subspace quiver",
+      "llm_evidence_cn": "将Kostka系数实现为n子空间箭图的半不变权空间",
+      "llm_evidence": "将Kostka系数实现为n子空间箭图的半不变权空间",
+      "canonical_evidence": "将Kostka系数实现为n子空间箭图的半不变权空间",
+      "llm_tldr_en": "Proves the King-Tollu-Toumazet stretching conjecture for rectangular Kostka coefficients by realizing them as weight multiplicities and semi-invariants of the n-subspace quiver.",
+      "llm_tldr_cn": "本文针对King-Tollu-Toumazet关于矩形Kostka系数在拉伸下行为的猜想，将其实现为Grassmannian齐次坐标环的权重数，等价地实现为n子空间箭图在给定维数向量下的半不变权空间。作者利用稳定性条件证明当维数向量为σ-稳定时相应权空间维数具有预期行为，从而对全部矩形Kostka系数验证该猜想。",
+      "llm_tldr": "本文针对King-Tollu-Toumazet关于矩形Kostka系数在拉伸下行为的猜想，将其实现为Grassmannian齐次坐标环的权重数，等价地实现为n子空间箭图在给定维数向量下的半不变权空间。作者利用稳定性条件证明当维数向量为σ-稳定时相应权空间维数具有预期行为，从而对全部矩形Kostka系数验证该猜想。",
+      "llm_tags": [
+        "query:algebra-rep"
+      ],
+      "matched_query_tag": "query:algebra-rep",
+      "matched_query_text": "representations of quivers and path algebras",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

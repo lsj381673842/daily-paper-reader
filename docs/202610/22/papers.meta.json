@@ -1,0 +1,69 @@
+{
+  "label": "2026-10-22",
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T20:05:05",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202610/22/2610.29051v1-ramified-convolution-and-monodromy-bases-for-symmetrizable-kac--moody-algebras",
+      "section": "deep",
+      "title_en": "Ramified convolution and monodromy bases for symmetrizable Kac--Moody algebras",
+      "authors": "Jiarui Fei",
+      "date": "2026-10-21",
+      "pdf": "https://arxiv.org/pdf/2610.29051v1",
+      "score": "8.0",
+      "evidence": "通过预投射species与表示簇的卷积实现Kac-Moody代数，属箭图表示论范畴",
+      "tldr": "针对可对称化 Kac–Moody 代数的正包络代数，本文在 C((t)) 上的分叉预投射 species 上用卷积实现其乘法。系数取表示旗簇上驯服单值群的交错迹，并证明模去真有限扩张诱导类的相对 Serre 关系。在中心约化的相容一般点作单值赋值，得到尊重 top 与 socle 晶体的整基，且与 Lusztig 半典范基在对称 Cartan 情形一致。还证明 Geiß–Leclerc–Schröer 无环卷积猜想，并给出 Support 猜想反例及恢复 Serre 关系的分叉提升。",
+      "tags": "query:algebra-rep",
+      "abstract_en": "We realize the positive enveloping algebra of a symmetrizable Kac--Moody algebra by convolution on a ramified preprojective species over $\\mathbb{C}((t))$. The coefficients are alternating traces of tame monodromy on representation flag varieties. We prove the relative Serre relations modulo classes induced from proper finite extensions. Monodromy evaluations at compatible generic points of the central reductions yield an integral basis respecting the top and socle crystals. The basis is unchanged by scaling the symmetrizer, induces bases of integrable representation lattices, and agrees with Lusztig's semicanonical basis when the Cartan matrix is symmetric. We prove the acyclic convolution conjecture of Geiß--Leclerc--Schröer for all symmetrizable Cartan matrices and all positive integral symmetrizers. Finally, we give a counterexample to the Support Conjecture of Geiß--Leclerc--Schröer and compute a ramified lift for which monodromy restores the Serre relation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/22/2610.29750v1-on-lusztig-sheaves-for-tame-quivers",
+      "section": "deep",
+      "title_en": "On Lusztig Sheaves for Tame Quivers",
+      "authors": "Yumeng Wu, Jie Xiao",
+      "date": "2026-10-21",
+      "pdf": "https://arxiv.org/pdf/2610.29750v1",
+      "score": "8.0",
+      "evidence": "驯顺箭图表示范畴rep Q上的相交上同调复形研究",
+      "tldr": "针对驯顺箭图对应的量子仿射代数正部分，研究Lusztig典范基构造中旗层复形的直和项——交上同调复形在按预投射、非齐次正则、预内射直和项分层的局部闭子集上的限制。证明当齐次正则部分为两两不同构拟单模直和时具有逐点纯性，并在相应更大分层上得到半单分解。利用对称群不可约特征对应局部系统的分次重数，确定典范基到由箭图表示构造的PBW基的过渡系数。由此为这些系数的正性与过渡矩阵的单位三角性提供几何解释。",
+      "tags": "query:algebra-rep",
+      "abstract_en": "Let $Q$ be a connected quiver of tame type, and let $U_v^-$ be the positive part of the corresponding quantized affine algebra. In Lusztig's construction of the canonical basis of $U_v^-$, the simple perverse sheaves occurring, up to shift, as direct summands of the flag sheaf complexes are given by intersection cohomology complexes $\\operatorname{IC}(X(c,m),\\mathcal{L}_χ)$.   We study the restrictions of these intersection cohomology complexes to the locally closed subsets $Y(c,m)$ obtained by fixing the preprojective, non-homogeneous regular, and preinjective summands in the category $\\operatorname{rep} Q$. We prove pointwise purity on the loci where the homogeneous regular part is a direct sum of pairwise non-isomorphic quasi-simple modules, and establish a semisimple decomposition of the restrictions to the corresponding larger strata.   The graded multiplicities of the local systems associated with irreducible characters of symmetric groups determine the transition coefficients from the canonical basis to the PBW basis constructed via quiver representations. This gives a geometric explanation of the positivity of these coefficients and the unitriangularity of the transition matrix.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/22/2610.30065v1-reflection-functors-for-non-simply-laced-quiver-varieties",
+      "section": "quick",
+      "title_en": "Reflection functors for non-simply-laced quiver varieties",
+      "authors": "Andrei Neguţ",
+      "date": "2026-10-21",
+      "pdf": "https://arxiv.org/pdf/2610.30065v1",
+      "score": "7.0",
+      "evidence": "研究非单箭图簇上的反射函子与带势箭图",
+      "tldr": "非单边箭图簇上反射函子的辫子关系此前缺乏系统证明。本文把非单边 Nakajima 箭图簇实现为带势箭图的临界轨迹，并在此框架下构造反射函子。作者证明这些反射函子满足辫子关系，并将整套框架推广到矩阵分解范畴与临界 K-理论。该结果把单边箭图簇中的重要函子性结构扩展到非单边情形，也为相关范畴提供统一处理框架。",
+      "tags": "query:algebra-rep",
+      "abstract_en": "We prove the braid relations between reflection functors on non-simply-laced analogues of Nakajima quiver varieties, which are defined as critical loci of certain quivers with potential. We extend this framework to categories of matrix factorizations and critical $K$-theory.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/22/2610.21921v1-on-a-conjecture-of-king-tollu-toumazet-for-rectangular-kostka-coefficients",
+      "section": "quick",
+      "title_en": "On a conjecture of King-Tollu-Toumazet for rectangular Kostka coefficients",
+      "authors": "Deepanshu Prasad",
+      "date": "2026-10-15",
+      "pdf": "https://arxiv.org/pdf/2610.21921v1",
+      "score": "6.0",
+      "evidence": "将Kostka系数实现为n子空间箭图的半不变权空间",
+      "tldr": "论文研究King–Tollu–Toumazet关于小Littlewood–Richardson系数在拉伸下行为的猜想，核心是当原系数等于3时，拉伸系数应呈线性或二次增长，并聚焦矩形Kostka系数。作者将矩形Kostka系数实现为Grassmannian齐次坐标环的权重重数，同时解释为n-子空间quiver半不变量的权重空间。借助σ-稳定分解与稳定权重维数下界，作者证明该猜想对所有矩形Kostka系数成立。结果还精确刻画三个例外Grassmannian，并判定相应拉伸系数对应2M+1或二项式(M+2,2)，从而统一解释两类Hilbert函数。",
+      "tags": "query:algebra-rep",
+      "abstract_en": "A conjecture of King, Tollu and Toumazet predicts the behavior of small Littlewood--Richardson coefficients under stretching: if $c^ν_{λ,μ}=3$, then $c^{Mν}_{Mλ,Mμ}$ equals $2M+1$ or $\\binom{M+2}{2}$ for every positive integers $M$. This corresponds to the Hilbert functions of a conic, or of the projective plane. We prove their conjecture for all rectangular Kostka coefficients $K_{λ,\\mathbf{a}}$. We realize them as the weight multiplicities of the homogeneous coordinate ring of the Grassmannian $\\mathrm{Gr}(k,n)$, or equivalently the weight spaces of semi-invariants of the $n$-subspace quiver with dimension vector $β=(k,1,1,\\dotsc,1)$. For a weight $σ$, we show that if $β$ is $σ$-stable, then the dimension of the corresponding weight space is at least $n-2$ when $k=2$ and at least $4$ for every Grassmannian other than $\\mathrm{Gr}(2,4)$, $\\mathrm{Gr}(2,5)$ and $\\mathrm{Gr}(3,5)$. These three cases are precisely when the associated moduli space of $σ$-stable representations has dimension at most two. Via $σ$-stable decomposition, the two alternatives are determined as follows: $2M+1$ for $\\mathrm{Gr}(2,4)$, and $\\binom{M+2}{2}$ for $\\mathrm{Gr}(2,5)$ and $\\mathrm{Gr}(3,5)$.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

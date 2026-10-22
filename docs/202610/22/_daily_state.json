@@ -1,0 +1,73 @@
+{
+  "date": "20261022",
+  "date_label": "",
+  "generated_at": "2026-10-22 20:05:03 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2610.29051v1",
+      "route": "202610/22/2610.29051v1-ramified-convolution-and-monodromy-bases-for-symmetrizable-kac--moody-algebras",
+      "title": "Ramified convolution and monodromy bases for symmetrizable Kac--Moody algebras",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "通过预投射species与表示簇的卷积实现Kac-Moody代数，属箭图表示论范畴",
+      "first_seen_at": "2026-10-22 20:05:03 UTC",
+      "updated_at": "2026-10-22 20:05:03 UTC"
+    },
+    {
+      "paper_id": "2610.29750v1",
+      "route": "202610/22/2610.29750v1-on-lusztig-sheaves-for-tame-quivers",
+      "title": "On Lusztig Sheaves for Tame Quivers",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "驯顺箭图表示范畴rep Q上的相交上同调复形研究",
+      "first_seen_at": "2026-10-22 20:05:03 UTC",
+      "updated_at": "2026-10-22 20:05:03 UTC"
+    },
+    {
+      "paper_id": "2610.30065v1",
+      "route": "202610/22/2610.30065v1-reflection-functors-for-non-simply-laced-quiver-varieties",
+      "title": "Reflection functors for non-simply-laced quiver varieties",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "研究非单箭图簇上的反射函子与带势箭图",
+      "first_seen_at": "2026-10-22 20:05:03 UTC",
+      "updated_at": "2026-10-22 20:05:03 UTC"
+    },
+    {
+      "paper_id": "2610.21921v1",
+      "route": "202610/22/2610.21921v1-on-a-conjecture-of-king-tollu-toumazet-for-rectangular-kostka-coefficients",
+      "title": "On a conjecture of King-Tollu-Toumazet for rectangular Kostka coefficients",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "algebra-rep"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "将Kostka系数实现为n子空间箭图的半不变权空间",
+      "first_seen_at": "2026-10-22 20:05:03 UTC",
+      "updated_at": "2026-10-22 20:05:03 UTC"
+    }
+  ]
+}
